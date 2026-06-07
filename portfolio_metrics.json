@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-06",
+  "timestamp": "2026-06-06T16:28:52Z",
+  "window_days": 1328,
+  "avg_trades_per_year": 289.8,
+  "avg_trades_per_year_sym": 0,
+  "metrics": {
+    "cumulative_return": 13.0955,
+    "annualized_return": 0.6521,
+    "sharpe_ratio": 3.9538,
+    "max_drawdown": -0.0667,
+    "win_rate": 0.6182,
+    "profit_factor": 1.8987
+  },
+  "metrics_symmetric": {
+    "cumulative_return": 10.065,
+    "annualized_return": 0.578,
+    "sharpe_ratio": 3.9846,
+    "max_drawdown": -0.0531,
+    "win_rate": 0.6167,
+    "profit_factor": 1.9088
+  }
+}

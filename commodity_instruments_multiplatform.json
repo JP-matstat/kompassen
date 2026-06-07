@@ -1,0 +1,2155 @@
+{
+  "metadata": {
+    "analysis_date": "2026-06-07T20:21:07.220077",
+    "period": "5 years",
+    "platforms": [
+      "avanza",
+      "nordnet",
+      "savr",
+      "montrose"
+    ]
+  },
+  "commodities": [
+    {
+      "name": "Gold",
+      "regional": {
+        "nordic": {
+          "ticker": "BOL.ST",
+          "name": "Boliden",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.3019,
+          "beta": 0.6181,
+          "r_squared": 0.0912,
+          "n_observations": 1222
+        },
+        "european": {
+          "ticker": "AAL.L",
+          "name": "Anglo American",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.2953,
+          "beta": 0.6542,
+          "r_squared": 0.0872,
+          "n_observations": 1231
+        },
+        "world": {
+          "ticker": "NEM",
+          "name": "Newmont Corporation",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.6372,
+          "beta": 1.3188,
+          "r_squared": 0.4061,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.3019,
+            "beta": 0.6181,
+            "r_squared": 0.0912,
+            "n_observations": 1222
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.3019,
+            "beta": 0.6181,
+            "r_squared": 0.0912,
+            "n_observations": 1222
+          },
+          {
+            "ticker": "NEM",
+            "name": "Newmont Corporation",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6372,
+            "beta": 1.3188,
+            "r_squared": 0.4061,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "AEM",
+            "name": "Agnico Eagle Mines",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6921,
+            "beta": 1.3996,
+            "r_squared": 0.479,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "WPM",
+            "name": "Wheaton Precious Metals",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6862,
+            "beta": 1.3265,
+            "r_squared": 0.4709,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "AGI",
+            "name": "Alamos Gold",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6485,
+            "beta": 1.4644,
+            "r_squared": 0.4206,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "KGC",
+            "name": "Kinross Gold",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6398,
+            "beta": 1.5424,
+            "r_squared": 0.4093,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "AU",
+            "name": "AngloGold Ashanti",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6747,
+            "beta": 1.8087,
+            "r_squared": 0.4552,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "FCX",
+            "name": "Freeport-McMoRan",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.3326,
+            "beta": 0.8189,
+            "r_squared": 0.1106,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.3019,
+            "beta": 0.6181,
+            "r_squared": 0.0912,
+            "n_observations": 1222
+          }
+        ],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [
+          {
+            "ticker": "SGLD.L",
+            "name": "Invesco Physical Gold ETC",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.9151,
+            "beta": 0.8779,
+            "r_squared": 0.8374,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "4GLD.DE",
+            "name": "Xetra-Gold EUR",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.8274,
+            "beta": 0.7347,
+            "r_squared": 0.6846,
+            "n_observations": 1238
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "SGLD.L",
+            "name": "Invesco Physical Gold ETC",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.9151,
+            "beta": 0.8779,
+            "r_squared": 0.8374,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "4GLD.DE",
+            "name": "Xetra-Gold EUR",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.8274,
+            "beta": 0.7347,
+            "r_squared": 0.6846,
+            "n_observations": 1238
+          },
+          {
+            "ticker": "GDX",
+            "name": "VanEck Gold Miners ETF",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.7393,
+            "beta": 1.4803,
+            "r_squared": 0.5465,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [
+          {
+            "ticker": "SGLD.L",
+            "name": "Invesco Physical Gold ETC",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.9151,
+            "beta": 0.8779,
+            "r_squared": 0.8374,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "PHAU.L",
+            "name": "WisdomTree Physical Gold",
+            "platform": "avanza",
+            "brokers": [
+              "A"
+            ],
+            "correlation": 0.9142,
+            "beta": 0.8746,
+            "r_squared": 0.8359,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "XGLD.L",
+            "name": "Xtrackers Physical Gold ETC",
+            "platform": "avanza",
+            "brokers": [
+              "A"
+            ],
+            "correlation": 0.9125,
+            "beta": 0.8711,
+            "r_squared": 0.8326,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "GLD",
+            "name": "SPDR Gold Trust",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.9259,
+            "beta": 0.9153,
+            "r_squared": 0.8572,
+            "n_observations": 1255
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "GLD",
+            "name": "SPDR Gold Trust",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.9259,
+            "beta": 0.9153,
+            "r_squared": 0.8572,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "GLD",
+            "name": "SPDR Gold Trust",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.9259,
+            "beta": 0.9153,
+            "r_squared": 0.8572,
+            "n_observations": 1255
+          }
+        ],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Silver",
+      "regional": {
+        "nordic": {
+          "ticker": "BOL.ST",
+          "name": "Boliden",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.4001,
+          "beta": 0.3912,
+          "r_squared": 0.1601,
+          "n_observations": 1222
+        },
+        "european": {
+          "ticker": "AAL.L",
+          "name": "Anglo American",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.3883,
+          "beta": 0.4056,
+          "r_squared": 0.1508,
+          "n_observations": 1231
+        },
+        "world": {
+          "ticker": "NEM",
+          "name": "Newmont Corporation",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.5863,
+          "beta": 0.5744,
+          "r_squared": 0.3437,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4001,
+            "beta": 0.3912,
+            "r_squared": 0.1601,
+            "n_observations": 1222
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4001,
+            "beta": 0.3912,
+            "r_squared": 0.1601,
+            "n_observations": 1222
+          },
+          {
+            "ticker": "AEM",
+            "name": "Agnico Eagle Mines",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6064,
+            "beta": 0.5805,
+            "r_squared": 0.3677,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "WPM",
+            "name": "Wheaton Precious Metals",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6463,
+            "beta": 0.5915,
+            "r_squared": 0.4177,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "PAAS",
+            "name": "Pan American Silver",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6522,
+            "beta": 0.809,
+            "r_squared": 0.4253,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "FCX",
+            "name": "Freeport-McMoRan",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4436,
+            "beta": 0.5171,
+            "r_squared": 0.1968,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "HL",
+            "name": "Hecla Mining",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.61,
+            "beta": 0.9367,
+            "r_squared": 0.3721,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4001,
+            "beta": 0.3912,
+            "r_squared": 0.1601,
+            "n_observations": 1222
+          }
+        ],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [
+          {
+            "ticker": "PHAG.L",
+            "name": "WisdomTree Physical Silver",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.8991,
+            "beta": 0.8345,
+            "r_squared": 0.8085,
+            "n_observations": 1231
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "PHAG.L",
+            "name": "WisdomTree Physical Silver",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.8991,
+            "beta": 0.8345,
+            "r_squared": 0.8085,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "SIL",
+            "name": "Global X Silver Miners ETF",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.71,
+            "beta": 0.726,
+            "r_squared": 0.5041,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [
+          {
+            "ticker": "PHAG.L",
+            "name": "WisdomTree Physical Silver",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.8991,
+            "beta": 0.8345,
+            "r_squared": 0.8085,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "SLV",
+            "name": "iShares Silver Trust",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.9108,
+            "beta": 0.8569,
+            "r_squared": 0.8296,
+            "n_observations": 1255
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "SLV",
+            "name": "iShares Silver Trust",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.9108,
+            "beta": 0.8569,
+            "r_squared": 0.8296,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "SLV",
+            "name": "iShares Silver Trust",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.9108,
+            "beta": 0.8569,
+            "r_squared": 0.8296,
+            "n_observations": 1255
+          }
+        ],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Copper",
+      "regional": {
+        "nordic": {
+          "ticker": "BOL.ST",
+          "name": "Boliden",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.5209,
+          "beta": 0.6961,
+          "r_squared": 0.2714,
+          "n_observations": 1223
+        },
+        "european": {
+          "ticker": "AAL.L",
+          "name": "Anglo American",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.5084,
+          "beta": 0.7367,
+          "r_squared": 0.2585,
+          "n_observations": 1232
+        },
+        "world": {
+          "ticker": "FCX",
+          "name": "Freeport-McMoRan",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.5686,
+          "beta": 0.916,
+          "r_squared": 0.3234,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5209,
+            "beta": 0.6961,
+            "r_squared": 0.2714,
+            "n_observations": 1223
+          },
+          {
+            "ticker": "ANTO.L",
+            "name": "Antofagasta",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.6094,
+            "beta": 0.8782,
+            "r_squared": 0.3714,
+            "n_observations": 1232
+          },
+          {
+            "ticker": "AAL.L",
+            "name": "Anglo American",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5084,
+            "beta": 0.7367,
+            "r_squared": 0.2585,
+            "n_observations": 1232
+          },
+          {
+            "ticker": "RIO.L",
+            "name": "Rio Tinto",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4746,
+            "beta": 0.4634,
+            "r_squared": 0.2253,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "GLEN.L",
+            "name": "Glencore",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.49,
+            "beta": 0.575,
+            "r_squared": 0.2401,
+            "n_observations": 1229
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5209,
+            "beta": 0.6961,
+            "r_squared": 0.2714,
+            "n_observations": 1223
+          },
+          {
+            "ticker": "ANTO.L",
+            "name": "Antofagasta",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.6094,
+            "beta": 0.8782,
+            "r_squared": 0.3714,
+            "n_observations": 1232
+          },
+          {
+            "ticker": "AAL.L",
+            "name": "Anglo American",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5084,
+            "beta": 0.7367,
+            "r_squared": 0.2585,
+            "n_observations": 1232
+          },
+          {
+            "ticker": "RIO.L",
+            "name": "Rio Tinto",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4746,
+            "beta": 0.4634,
+            "r_squared": 0.2253,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "GLEN.L",
+            "name": "Glencore",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.49,
+            "beta": 0.575,
+            "r_squared": 0.2401,
+            "n_observations": 1229
+          },
+          {
+            "ticker": "VALE",
+            "name": "Vale SA",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4435,
+            "beta": 0.5621,
+            "r_squared": 0.1967,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "FCX",
+            "name": "Freeport-McMoRan",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5686,
+            "beta": 0.916,
+            "r_squared": 0.3234,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "SCCO",
+            "name": "Southern Copper",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5826,
+            "beta": 0.8279,
+            "r_squared": 0.3394,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "BHP",
+            "name": "BHP Group",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.524,
+            "beta": 0.588,
+            "r_squared": 0.2746,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "BOL.ST",
+            "name": "Boliden",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5209,
+            "beta": 0.6961,
+            "r_squared": 0.2714,
+            "n_observations": 1223
+          },
+          {
+            "ticker": "ANTO.L",
+            "name": "Antofagasta",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.6094,
+            "beta": 0.8782,
+            "r_squared": 0.3714,
+            "n_observations": 1232
+          },
+          {
+            "ticker": "AAL.L",
+            "name": "Anglo American",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5084,
+            "beta": 0.7367,
+            "r_squared": 0.2585,
+            "n_observations": 1232
+          },
+          {
+            "ticker": "RIO.L",
+            "name": "Rio Tinto",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4746,
+            "beta": 0.4634,
+            "r_squared": 0.2253,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "GLEN.L",
+            "name": "Glencore",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.49,
+            "beta": 0.575,
+            "r_squared": 0.2401,
+            "n_observations": 1229
+          }
+        ],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "XME",
+            "name": "SPDR S&P Metals & Mining ETF",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4493,
+            "beta": 0.5262,
+            "r_squared": 0.2019,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "COPX",
+            "name": "Global X Copper Miners ETF",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6586,
+            "beta": 0.8672,
+            "r_squared": 0.4337,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "PICK",
+            "name": "iShares MSCI Global Metals & Mining",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.6023,
+            "beta": 0.6029,
+            "r_squared": 0.3628,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "JJC",
+            "name": "iPath Bloomberg Copper",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9075,
+            "beta": 0.8775,
+            "r_squared": 0.8235,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "JJC",
+            "name": "iPath Bloomberg Copper",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9075,
+            "beta": 0.8775,
+            "r_squared": 0.8235,
+            "n_observations": 534
+          },
+          {
+            "ticker": "CPER",
+            "name": "United States Copper Index Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.8308,
+            "beta": 0.8035,
+            "r_squared": 0.6902,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Sugar",
+      "regional": {
+        "nordic": {
+          "ticker": "EQNR.OL",
+          "name": "Equinor",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.1491,
+          "beta": 0.184,
+          "r_squared": 0.0222,
+          "n_observations": 1225
+        },
+        "european": {
+          "ticker": "BP.L",
+          "name": "BP",
+          "region": "european",
+          "brokers": [
+            "A"
+          ],
+          "correlation": 0.1718,
+          "beta": 0.19,
+          "r_squared": 0.0295,
+          "n_observations": 1231
+        },
+        "world": {
+          "ticker": "XOM",
+          "name": "Exxon Mobil",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.1691,
+          "beta": 0.1719,
+          "r_squared": 0.0286,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [],
+        "nordnet": [],
+        "savr": [],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "CANE",
+            "name": "Teucrium Sugar Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9078,
+            "beta": 0.7266,
+            "r_squared": 0.8241,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "SGG",
+            "name": "iPath Bloomberg Sugar",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.7663,
+            "beta": 0.7921,
+            "r_squared": 0.5872,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [
+          {
+            "ticker": "AIGS.L",
+            "name": "WisdomTree Softs",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.5125,
+            "beta": 0.4184,
+            "r_squared": 0.2626,
+            "n_observations": 1232
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "DBA",
+            "name": "Invesco DB Agriculture Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.3658,
+            "beta": 0.1959,
+            "r_squared": 0.1338,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "CANE",
+            "name": "Teucrium Sugar Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9078,
+            "beta": 0.7266,
+            "r_squared": 0.8241,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "SGG",
+            "name": "iPath Bloomberg Sugar",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.7663,
+            "beta": 0.7921,
+            "r_squared": 0.5872,
+            "n_observations": 534
+          },
+          {
+            "ticker": "AIGS.L",
+            "name": "WisdomTree Softs",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.5125,
+            "beta": 0.4184,
+            "r_squared": 0.2626,
+            "n_observations": 1232
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Oil Brent",
+      "regional": {
+        "nordic": {
+          "ticker": "EQNR.OL",
+          "name": "Equinor",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.4896,
+          "beta": 0.4191,
+          "r_squared": 0.2397,
+          "n_observations": 1225
+        },
+        "european": {
+          "ticker": "BP.L",
+          "name": "BP",
+          "region": "european",
+          "brokers": [
+            "A"
+          ],
+          "correlation": 0.5329,
+          "beta": 0.4056,
+          "r_squared": 0.284,
+          "n_observations": 1231
+        },
+        "world": {
+          "ticker": "XOM",
+          "name": "Exxon Mobil",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.596,
+          "beta": 0.4204,
+          "r_squared": 0.3553,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [
+          {
+            "ticker": "EQNR.OL",
+            "name": "Equinor",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4896,
+            "beta": 0.4191,
+            "r_squared": 0.2397,
+            "n_observations": 1225
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "EQNR.OL",
+            "name": "Equinor",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4896,
+            "beta": 0.4191,
+            "r_squared": 0.2397,
+            "n_observations": 1225
+          },
+          {
+            "ticker": "XOM",
+            "name": "Exxon Mobil",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.596,
+            "beta": 0.4204,
+            "r_squared": 0.3553,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "CVX",
+            "name": "Chevron",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5354,
+            "beta": 0.3548,
+            "r_squared": 0.2867,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "COP",
+            "name": "ConocoPhillips",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5903,
+            "beta": 0.5096,
+            "r_squared": 0.3485,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "CNQ.TO",
+            "name": "Canadian Natural Resources",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.615,
+            "beta": 0.4975,
+            "r_squared": 0.3783,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "CVE.TO",
+            "name": "Cenovus Energy",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5911,
+            "beta": 0.5995,
+            "r_squared": 0.3494,
+            "n_observations": 1231
+          },
+          {
+            "ticker": "EOG",
+            "name": "EOG Resources",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5806,
+            "beta": 0.5041,
+            "r_squared": 0.337,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "EQNR.OL",
+            "name": "Equinor",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4896,
+            "beta": 0.4191,
+            "r_squared": 0.2397,
+            "n_observations": 1225
+          }
+        ],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "XLE",
+            "name": "Energy Select Sector SPDR",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.5977,
+            "beta": 0.4103,
+            "r_squared": 0.3572,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "CRUD.L",
+            "name": "WisdomTree WTI Crude Oil",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.8054,
+            "beta": 0.7494,
+            "r_squared": 0.6486,
+            "n_observations": 1232
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "USO",
+            "name": "United States Oil Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9006,
+            "beta": 0.8577,
+            "r_squared": 0.8111,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "BNO",
+            "name": "United States Brent Oil Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9136,
+            "beta": 0.8535,
+            "r_squared": 0.8346,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Natural Gas",
+      "regional": {
+        "nordic": {
+          "ticker": "EQNR.OL",
+          "name": "Equinor",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.1032,
+          "beta": 0.04,
+          "r_squared": 0.0106,
+          "n_observations": 1225
+        },
+        "european": {
+          "ticker": "RIO.L",
+          "name": "Rio Tinto",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.0504,
+          "beta": 0.0163,
+          "r_squared": 0.0025,
+          "n_observations": 1231
+        },
+        "world": {
+          "ticker": "CVX",
+          "name": "Chevron",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.1466,
+          "beta": 0.044,
+          "r_squared": 0.0215,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "EQT",
+            "name": "EQT Corporation",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4514,
+            "beta": 0.2308,
+            "r_squared": 0.2038,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "AR",
+            "name": "Antero Resources",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4354,
+            "beta": 0.2511,
+            "r_squared": 0.1896,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "NGAS.L",
+            "name": "WisdomTree Natural Gas",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.621,
+            "beta": 0.4353,
+            "r_squared": 0.3856,
+            "n_observations": 1232
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "UNG",
+            "name": "United States Natural Gas Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.8164,
+            "beta": 0.6255,
+            "r_squared": 0.6665,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Cotton",
+      "regional": {
+        "nordic": {
+          "ticker": "BOL.ST",
+          "name": "Boliden",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.1595,
+          "beta": 0.2176,
+          "r_squared": 0.0254,
+          "n_observations": 1223
+        },
+        "european": {
+          "ticker": "AAL.L",
+          "name": "Anglo American",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.1941,
+          "beta": 0.2656,
+          "r_squared": 0.0377,
+          "n_observations": 1232
+        },
+        "world": {
+          "ticker": "BHP",
+          "name": "BHP Group",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.202,
+          "beta": 0.215,
+          "r_squared": 0.0408,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [],
+        "nordnet": [],
+        "savr": [],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "BAL",
+            "name": "iPath Bloomberg Cotton",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.7777,
+            "beta": 0.7483,
+            "r_squared": 0.6048,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [
+          {
+            "ticker": "AIGS.L",
+            "name": "WisdomTree Softs",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.3484,
+            "beta": 0.2525,
+            "r_squared": 0.1214,
+            "n_observations": 1232
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "BAL",
+            "name": "iPath Bloomberg Cotton",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.7777,
+            "beta": 0.7483,
+            "r_squared": 0.6048,
+            "n_observations": 534
+          },
+          {
+            "ticker": "AIGS.L",
+            "name": "WisdomTree Softs",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.3484,
+            "beta": 0.2525,
+            "r_squared": 0.1214,
+            "n_observations": 1232
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Coffee",
+      "regional": {
+        "nordic": {
+          "ticker": "BOL.ST",
+          "name": "Boliden",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.1431,
+          "beta": 0.1458,
+          "r_squared": 0.0205,
+          "n_observations": 1223
+        },
+        "european": {
+          "ticker": "RIO.L",
+          "name": "Rio Tinto",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.1493,
+          "beta": 0.1107,
+          "r_squared": 0.0223,
+          "n_observations": 1231
+        },
+        "world": {
+          "ticker": "VALE",
+          "name": "Vale SA",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.173,
+          "beta": 0.1673,
+          "r_squared": 0.0299,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [],
+        "nordnet": [],
+        "savr": [],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "JO",
+            "name": "iPath Bloomberg Coffee",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9269,
+            "beta": 0.8767,
+            "r_squared": 0.8592,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [
+          {
+            "ticker": "AIGS.L",
+            "name": "WisdomTree Softs",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.6993,
+            "beta": 0.4073,
+            "r_squared": 0.489,
+            "n_observations": 1232
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "DBA",
+            "name": "Invesco DB Agriculture Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4595,
+            "beta": 0.1767,
+            "r_squared": 0.2111,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "JO",
+            "name": "iPath Bloomberg Coffee",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9269,
+            "beta": 0.8767,
+            "r_squared": 0.8592,
+            "n_observations": 534
+          },
+          {
+            "ticker": "AIGS.L",
+            "name": "WisdomTree Softs",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.6993,
+            "beta": 0.4073,
+            "r_squared": 0.489,
+            "n_observations": 1232
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Cocoa",
+      "regional": {
+        "nordic": {
+          "ticker": "BOL.ST",
+          "name": "Boliden",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.0654,
+          "beta": 0.0517,
+          "r_squared": 0.0043,
+          "n_observations": 1222
+        },
+        "european": {
+          "ticker": "RIO.L",
+          "name": "Rio Tinto",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.0801,
+          "beta": 0.0457,
+          "r_squared": 0.0064,
+          "n_observations": 1230
+        },
+        "world": {
+          "ticker": "BHP",
+          "name": "BHP Group",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.0896,
+          "beta": 0.0588,
+          "r_squared": 0.008,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [],
+        "nordnet": [],
+        "savr": [],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "NIB",
+            "name": "iPath Bloomberg Cocoa",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.8431,
+            "beta": 0.8613,
+            "r_squared": 0.7109,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "DBA",
+            "name": "Invesco DB Agriculture Fund",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4767,
+            "beta": 0.1407,
+            "r_squared": 0.2273,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "NIB",
+            "name": "iPath Bloomberg Cocoa",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.8431,
+            "beta": 0.8613,
+            "r_squared": 0.7109,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    },
+    {
+      "name": "Aluminium",
+      "regional": {
+        "nordic": {
+          "ticker": "NHY.OL",
+          "name": "Norsk Hydro",
+          "region": "nordic",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.5412,
+          "beta": 0.7677,
+          "r_squared": 0.2929,
+          "n_observations": 1223
+        },
+        "european": {
+          "ticker": "RIO.L",
+          "name": "Rio Tinto",
+          "region": "european",
+          "brokers": [
+            "A",
+            "N",
+            "S"
+          ],
+          "correlation": 0.4452,
+          "beta": 0.4843,
+          "r_squared": 0.1982,
+          "n_observations": 1229
+        },
+        "world": {
+          "ticker": "AA",
+          "name": "Alcoa Corporation",
+          "region": "world",
+          "brokers": [
+            "N"
+          ],
+          "correlation": 0.4905,
+          "beta": 1.1068,
+          "r_squared": 0.2406,
+          "n_observations": 1255
+        },
+        "negatives": []
+      },
+      "stocks": {
+        "avanza": [
+          {
+            "ticker": "NHY.OL",
+            "name": "Norsk Hydro",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5412,
+            "beta": 0.7677,
+            "r_squared": 0.2929,
+            "n_observations": 1223
+          },
+          {
+            "ticker": "RIO.L",
+            "name": "Rio Tinto",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4452,
+            "beta": 0.4843,
+            "r_squared": 0.1982,
+            "n_observations": 1229
+          },
+          {
+            "ticker": "GLEN.L",
+            "name": "Glencore",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4376,
+            "beta": 0.5721,
+            "r_squared": 0.1915,
+            "n_observations": 1227
+          }
+        ],
+        "nordnet": [
+          {
+            "ticker": "NHY.OL",
+            "name": "Norsk Hydro",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5412,
+            "beta": 0.7677,
+            "r_squared": 0.2929,
+            "n_observations": 1223
+          },
+          {
+            "ticker": "RIO.L",
+            "name": "Rio Tinto",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4452,
+            "beta": 0.4843,
+            "r_squared": 0.1982,
+            "n_observations": 1229
+          },
+          {
+            "ticker": "GLEN.L",
+            "name": "Glencore",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4376,
+            "beta": 0.5721,
+            "r_squared": 0.1915,
+            "n_observations": 1227
+          },
+          {
+            "ticker": "VALE",
+            "name": "Vale SA",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.3481,
+            "beta": 0.4962,
+            "r_squared": 0.1212,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "BHP",
+            "name": "BHP Group",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.3971,
+            "beta": 0.501,
+            "r_squared": 0.1577,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "AA",
+            "name": "Alcoa Corporation",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4905,
+            "beta": 1.1068,
+            "r_squared": 0.2406,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "CENX",
+            "name": "Century Aluminum",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4305,
+            "beta": 1.2484,
+            "r_squared": 0.1854,
+            "n_observations": 1255
+          }
+        ],
+        "savr": [
+          {
+            "ticker": "NHY.OL",
+            "name": "Norsk Hydro",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.5412,
+            "beta": 0.7677,
+            "r_squared": 0.2929,
+            "n_observations": 1223
+          },
+          {
+            "ticker": "RIO.L",
+            "name": "Rio Tinto",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4452,
+            "beta": 0.4843,
+            "r_squared": 0.1982,
+            "n_observations": 1229
+          },
+          {
+            "ticker": "GLEN.L",
+            "name": "Glencore",
+            "platform": "savr",
+            "brokers": [
+              "A",
+              "N",
+              "S"
+            ],
+            "correlation": 0.4376,
+            "beta": 0.5721,
+            "r_squared": 0.1915,
+            "n_observations": 1227
+          }
+        ],
+        "montrose": []
+      },
+      "etfs": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "XME",
+            "name": "SPDR S&P Metals & Mining ETF",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.3388,
+            "beta": 0.4461,
+            "r_squared": 0.1148,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "PICK",
+            "name": "iShares MSCI Global Metals & Mining",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.4405,
+            "beta": 0.4958,
+            "r_squared": 0.1941,
+            "n_observations": 1255
+          },
+          {
+            "ticker": "JJU",
+            "name": "iPath Bloomberg Aluminum",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.839,
+            "beta": 0.8948,
+            "r_squared": 0.7039,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      },
+      "trackers": {
+        "avanza": [],
+        "nordnet": [
+          {
+            "ticker": "JJU",
+            "name": "iPath Bloomberg Aluminum",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.839,
+            "beta": 0.8948,
+            "r_squared": 0.7039,
+            "n_observations": 534
+          }
+        ],
+        "savr": [],
+        "montrose": []
+      }
+    }
+  ]
+}

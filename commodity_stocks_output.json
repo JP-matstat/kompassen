@@ -1,0 +1,369 @@
+{
+  "generated_date": "2026-04-16T21:56:24.281604",
+  "analysis_period_years": 5,
+  "note": "Sample data for testing. Run generate_portfolio_stocks.py for real analysis.",
+  "commodities": {
+    "Gold": {
+      "ticker": "GC=F",
+      "nordic": {
+        "ticker": "BOL.ST",
+        "name": "Boliden AB",
+        "region": "Nordic",
+        "correlation": 0.6842,
+        "p_value": 1.2e-05,
+        "beta": 0.9234,
+        "alpha": 0.0145,
+        "r_squared": 0.4681,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "ANG.PA",
+        "name": "AngloGold Ashanti",
+        "region": "Europe",
+        "correlation": 0.7523,
+        "p_value": 1e-06,
+        "beta": 1.1245,
+        "alpha": 0.0089,
+        "r_squared": 0.566,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "NEM",
+        "name": "Newmont Corporation",
+        "region": "US/Canada",
+        "correlation": 0.8234,
+        "p_value": 0.0,
+        "beta": 1.3456,
+        "alpha": 0.0234,
+        "r_squared": 0.678,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Silver": {
+      "ticker": "SI=F",
+      "nordic": {
+        "ticker": "BOL.ST",
+        "name": "Boliden AB",
+        "region": "Nordic",
+        "correlation": 0.5923,
+        "p_value": 4.5e-05,
+        "beta": 0.7845,
+        "alpha": 0.0123,
+        "r_squared": 0.3508,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "GLEN.L",
+        "name": "Glencore",
+        "region": "Europe",
+        "correlation": 0.4567,
+        "p_value": 0.000234,
+        "beta": 0.5234,
+        "alpha": 0.0156,
+        "r_squared": 0.2086,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "PAAS",
+        "name": "Pan American Silver",
+        "region": "US/Canada",
+        "correlation": 0.7891,
+        "p_value": 0.0,
+        "beta": 1.2345,
+        "alpha": 0.0189,
+        "r_squared": 0.6227,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Copper": {
+      "ticker": "HG=F",
+      "nordic": {
+        "ticker": "BOL.ST",
+        "name": "Boliden AB",
+        "region": "Nordic",
+        "correlation": 0.7234,
+        "p_value": 2e-06,
+        "beta": 1.0234,
+        "alpha": 0.0167,
+        "r_squared": 0.5233,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "RIO.L",
+        "name": "Rio Tinto",
+        "region": "Europe",
+        "correlation": 0.6789,
+        "p_value": 8e-06,
+        "beta": 0.8956,
+        "alpha": 0.0134,
+        "r_squared": 0.4609,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "FCX",
+        "name": "Freeport-McMoRan",
+        "region": "US/Canada",
+        "correlation": 0.8456,
+        "p_value": 0.0,
+        "beta": 1.4567,
+        "alpha": 0.0201,
+        "r_squared": 0.715,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Oil": {
+      "ticker": "BZ=F",
+      "nordic": {
+        "ticker": "EQNR.OL",
+        "name": "Equinor ASA",
+        "region": "Nordic",
+        "correlation": 0.7845,
+        "p_value": 0.0,
+        "beta": 1.1234,
+        "alpha": 0.0178,
+        "r_squared": 0.6154,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "BP.L",
+        "name": "BP plc",
+        "region": "Europe",
+        "correlation": 0.7123,
+        "p_value": 3e-06,
+        "beta": 0.9876,
+        "alpha": 0.0145,
+        "r_squared": 0.5074,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "XOM",
+        "name": "ExxonMobil",
+        "region": "US/Canada",
+        "correlation": 0.8123,
+        "p_value": 0.0,
+        "beta": 1.2345,
+        "alpha": 0.0189,
+        "r_squared": 0.6598,
+        "data_points": 1256
+      },
+      "negatives": [
+        {
+          "ticker": "DAL",
+          "name": "Delta Air Lines",
+          "region": "US/Canada",
+          "correlation": -0.4523,
+          "p_value": 0.000156,
+          "beta": -0.5234,
+          "alpha": 0.0234,
+          "r_squared": 0.2046,
+          "data_points": 1256
+        }
+      ]
+    },
+    "Natural Gas": {
+      "ticker": "NG=F",
+      "nordic": {
+        "ticker": "EQNR.OL",
+        "name": "Equinor ASA",
+        "region": "Nordic",
+        "correlation": 0.5634,
+        "p_value": 6.7e-05,
+        "beta": 0.6789,
+        "alpha": 0.0156,
+        "r_squared": 0.3174,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "SHEL.L",
+        "name": "Shell plc",
+        "region": "Europe",
+        "correlation": 0.4892,
+        "p_value": 0.000234,
+        "beta": 0.5456,
+        "alpha": 0.0134,
+        "r_squared": 0.2393,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "EQT",
+        "name": "EQT Corporation",
+        "region": "US/Canada",
+        "correlation": 0.7234,
+        "p_value": 2e-06,
+        "beta": 1.0234,
+        "alpha": 0.0178,
+        "r_squared": 0.5233,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Aluminium": {
+      "ticker": "ALI=F",
+      "nordic": {
+        "ticker": "NHY.OL",
+        "name": "Norsk Hydro ASA",
+        "region": "Nordic",
+        "correlation": 0.6234,
+        "p_value": 2.3e-05,
+        "beta": 0.8456,
+        "alpha": 0.0145,
+        "r_squared": 0.3886,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "RIO.L",
+        "name": "Rio Tinto",
+        "region": "Europe",
+        "correlation": 0.5456,
+        "p_value": 8.9e-05,
+        "beta": 0.6789,
+        "alpha": 0.0123,
+        "r_squared": 0.2977,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "AA",
+        "name": "Alcoa Corporation",
+        "region": "US/Canada",
+        "correlation": 0.7456,
+        "p_value": 1e-06,
+        "beta": 1.1234,
+        "alpha": 0.0167,
+        "r_squared": 0.5559,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Sugar": {
+      "ticker": "SB=F",
+      "nordic": {
+        "ticker": "CARL-B.CO",
+        "name": "Carlsberg",
+        "region": "Nordic",
+        "correlation": 0.3234,
+        "p_value": 0.002345,
+        "beta": 0.3456,
+        "alpha": 0.0089,
+        "r_squared": 0.1046,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "ASR.L",
+        "name": "Associated British Foods",
+        "region": "Europe",
+        "correlation": 0.4123,
+        "p_value": 0.000456,
+        "beta": 0.4567,
+        "alpha": 0.0112,
+        "r_squared": 0.17,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "ADM",
+        "name": "Archer-Daniels-Midland",
+        "region": "US/Canada",
+        "correlation": 0.5234,
+        "p_value": 8.9e-05,
+        "beta": 0.6234,
+        "alpha": 0.0134,
+        "r_squared": 0.2739,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Coffee": {
+      "ticker": "KC=F",
+      "nordic": null,
+      "european": {
+        "ticker": "NESN.SW",
+        "name": "Nestle",
+        "region": "Europe",
+        "correlation": 0.3456,
+        "p_value": 0.001234,
+        "beta": 0.3789,
+        "alpha": 0.0098,
+        "r_squared": 0.1194,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "SBUX",
+        "name": "Starbucks",
+        "region": "US/Canada",
+        "correlation": 0.4789,
+        "p_value": 0.000234,
+        "beta": 0.5456,
+        "alpha": 0.0123,
+        "r_squared": 0.2293,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Cocoa": {
+      "ticker": "CC=F",
+      "nordic": null,
+      "european": {
+        "ticker": "NESN.SW",
+        "name": "Nestle",
+        "region": "Europe",
+        "correlation": 0.3789,
+        "p_value": 0.000789,
+        "beta": 0.4123,
+        "alpha": 0.0089,
+        "r_squared": 0.1436,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "HSY",
+        "name": "Hershey Company",
+        "region": "US/Canada",
+        "correlation": 0.5123,
+        "p_value": 0.000123,
+        "beta": 0.6234,
+        "alpha": 0.0145,
+        "r_squared": 0.2625,
+        "data_points": 1256
+      },
+      "negatives": []
+    },
+    "Cotton": {
+      "ticker": "CT=F",
+      "nordic": {
+        "ticker": "HM-B.ST",
+        "name": "H&M",
+        "region": "Nordic",
+        "correlation": 0.3567,
+        "p_value": 0.001456,
+        "beta": 0.389,
+        "alpha": 0.0067,
+        "r_squared": 0.1272,
+        "data_points": 1245
+      },
+      "european": {
+        "ticker": "ITX.MC",
+        "name": "Inditex",
+        "region": "Europe",
+        "correlation": 0.3234,
+        "p_value": 0.002134,
+        "beta": 0.3456,
+        "alpha": 0.0078,
+        "r_squared": 0.1046,
+        "data_points": 1198
+      },
+      "world": {
+        "ticker": "NKE",
+        "name": "Nike",
+        "region": "US/Canada",
+        "correlation": 0.4234,
+        "p_value": 0.000456,
+        "beta": 0.4789,
+        "alpha": 0.0112,
+        "r_squared": 0.1793,
+        "data_points": 1256
+      },
+      "negatives": []
+    }
+  }
+}
