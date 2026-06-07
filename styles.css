@@ -2144,9 +2144,50 @@ tr:hover td {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 0.75rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .card {
+        padding: 1rem;
+        border-radius: 0.75rem;
+    }
+
     .tab-btn {
         padding: 0.75rem 0.5rem;
         font-size: 0.8rem;
+    }
+
+    .allocation-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .signal-dots-grid {
+        grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+        gap: 0.4rem;
+    }
+
+    .signal-dot-circle {
+        width: 34px;
+        height: 34px;
+        font-size: 0.6rem;
+    }
+
+    .signal-dot {
+        padding: 0.4rem 0.3rem;
+    }
+
+    .performance-canvas {
+        height: 180px;
     }
 
     .stats-grid {
@@ -2154,7 +2195,97 @@ tr:hover td {
     }
 
     .stat-value {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .lang-btn, .theme-toggle {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 1rem;
+    }
+
+    .lang-switcher {
+        top: 0.4rem;
+        right: 0.4rem;
+    }
+
+    .theme-toggle {
+        top: 0.4rem;
+        left: 0.4rem;
+    }
+
+    .toast-container {
+        top: 3.5rem;
+    }
+
+    .related-stocks-table {
+        font-size: 0.75rem;
+    }
+
+    .related-stocks-table th,
+    .related-stocks-table td {
+        padding: 0.4rem 0.25rem;
+    }
+
+    .unified-related-table th:nth-child(3),
+    .unified-related-table td:nth-child(3),
+    .unified-related-table th:nth-child(4),
+    .unified-related-table td:nth-child(4),
+    .unified-related-table th:nth-child(6),
+    .unified-related-table td:nth-child(6),
+    .unified-related-table th:nth-child(7),
+    .unified-related-table td:nth-child(7) {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 0.5rem 0.35rem;
+    }
+
+    .card {
+        padding: 0.85rem;
+    }
+
+    header h1 {
+        font-size: 1.1rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .signal-dots-grid {
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+        gap: 0.3rem;
+    }
+
+    .signal-dot-circle {
+        width: 28px;
+        height: 28px;
+        font-size: 0.5rem;
+    }
+
+    .signal-dot-label {
+        font-size: 0.6rem;
+    }
+
+    .signal-dot-value {
+        font-size: 0.55rem;
+    }
+
+    .performance-canvas {
+        height: 150px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
     }
 }
 
@@ -2299,5 +2430,33 @@ tr:hover td {
 .risk-tab-active:hover {
     background: #1d4ed8;
     border-color: #1d4ed8;
+}
+
+/* ── Touch / iOS improvements ── */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button, a, .clickable-stock, .inst-pick, .lang-btn {
+    touch-action: manipulation;
+}
+
+input, textarea, select {
+    font-size: 16px;
+}
+
+.lang-switcher {
+    right: max(1rem, env(safe-area-inset-right));
+    top: max(1rem, env(safe-area-inset-top));
+}
+
+.theme-toggle {
+    left: max(1rem, env(safe-area-inset-left));
+    top: max(1rem, env(safe-area-inset-top));
+}
+
+.toast-container {
+    right: max(1rem, env(safe-area-inset-right));
+    top: max(5rem, calc(1rem + env(safe-area-inset-top)));
 }
 

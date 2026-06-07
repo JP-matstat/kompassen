@@ -758,12 +758,28 @@
     }
 }
 
+@media (max-width: 768px) {
+.cv-preview-root { padding: 0.75rem; }
+}
+@media (max-width: 480px) {
+.cv-preview-root { padding: 0.5rem; }
+.cv-preview-root .sidebar { padding: 1rem 0.75rem; }
+.cv-preview-root .name { font-size: 1.1rem; }
+.cv-preview-root .role { font-size: 0.65rem; }
+.cv-preview-root .info-list { font-size: 0.7rem; }
+.cv-preview-root .info-row { grid-template-columns: 1fr; gap: 0.1rem; padding: 0.25rem 0; }
+.cv-preview-root .ring { width: 28px; height: 28px; }
+.cv-preview-root .hero-body { padding: 1.5rem 1rem; }
+.cv-preview-root .hero-cta-circle { padding: 1rem; }
+.cv-preview-root .entry { gap: 0.5rem; }
+.cv-preview-root .entry time { font-size: 0.7rem; }
+}
                 </style>
                 <div class="cv-preview-root">
 <div class="page-frame">
         <aside class="sidebar">
             <div class="profile">
-                <div class="avatar"><img src="img/profile.jpg" alt="Johan Persson" class="avatar-img"></div>
+                <div class="avatar"><img src="CVclkd.png" alt="Johan Persson" class="avatar-img"></div>
                 <h1 class="name" data-i18n="cv_name">Johan Persson</h1>
                 <p class="role" data-i18n="cv_role">Data Scientist / AI Developer</p>
             </div>
