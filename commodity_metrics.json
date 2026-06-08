@@ -1,44 +1,50 @@
 {
   "date": "2026-06-08",
-  "timestamp": "2026-06-08T01:57:29Z",
+  "timestamp": "2026-06-08T12:39:56Z",
   "commodities": [
     {
       "key": "oil_brent",
       "label": "Oil Brent",
       "in_market_pct": 0,
-      "trades": 54,
-      "avg_hold": 113.0,
-      "std_hold": 119.7,
+      "trades": 101,
+      "avg_hold": 58.1,
+      "std_hold": 96.6,
+      "trades_sym": 22,
+      "avg_hold_sym": 61.6,
+      "std_hold_sym": 79.0,
       "semi_vol": {
-        "cum_ret": 3.9519,
-        "ann_ret": 0.3544,
-        "sharpe": 1.1438,
-        "max_dd": -0.2716
+        "cum_ret": 4.1105,
+        "ann_ret": 0.3625,
+        "sharpe": 1.1955,
+        "max_dd": -0.2626
       },
       "symmetric_vol": {
-        "cum_ret": 3.8958,
-        "ann_ret": 0.3515,
-        "sharpe": 1.1953,
-        "max_dd": -0.2304
+        "cum_ret": 3.9618,
+        "ann_ret": 0.3549,
+        "sharpe": 1.2411,
+        "max_dd": -0.225
       }
     },
     {
       "key": "gold",
       "label": "Gold",
       "in_market_pct": 0,
-      "trades": 56,
-      "avg_hold": 118.9,
-      "std_hold": 159.1,
+      "trades": 116,
+      "avg_hold": 55.7,
+      "std_hold": 118.6,
+      "trades_sym": 26,
+      "avg_hold_sym": 51.4,
+      "std_hold_sym": 175.5,
       "semi_vol": {
-        "cum_ret": 2.1586,
-        "ann_ret": 0.2437,
-        "sharpe": 1.5834,
+        "cum_ret": 2.0747,
+        "ann_ret": 0.2374,
+        "sharpe": 1.5538,
         "max_dd": -0.1339
       },
       "symmetric_vol": {
-        "cum_ret": 2.0932,
-        "ann_ret": 0.2388,
-        "sharpe": 1.6907,
+        "cum_ret": 2.02,
+        "ann_ret": 0.2332,
+        "sharpe": 1.662,
         "max_dd": -0.1022
       }
     },
@@ -46,19 +52,22 @@
       "key": "silver",
       "label": "Silver",
       "in_market_pct": 0,
-      "trades": 73,
-      "avg_hold": 81.7,
-      "std_hold": 95.7,
+      "trades": 139,
+      "avg_hold": 43.4,
+      "std_hold": 88.2,
+      "trades_sym": 29,
+      "avg_hold_sym": 49.6,
+      "std_hold_sym": 106.7,
       "semi_vol": {
-        "cum_ret": 3.9697,
-        "ann_ret": 0.3553,
-        "sharpe": 1.203,
+        "cum_ret": 3.6892,
+        "ann_ret": 0.3405,
+        "sharpe": 1.1866,
         "max_dd": -0.2151
       },
       "symmetric_vol": {
-        "cum_ret": 3.6327,
-        "ann_ret": 0.3374,
-        "sharpe": 1.2765,
+        "cum_ret": 3.3638,
+        "ann_ret": 0.3223,
+        "sharpe": 1.2632,
         "max_dd": -0.1612
       }
     },
@@ -66,99 +75,114 @@
       "key": "copper",
       "label": "Copper",
       "in_market_pct": 0,
-      "trades": 71,
-      "avg_hold": 79.8,
-      "std_hold": 125.6,
+      "trades": 129,
+      "avg_hold": 44.1,
+      "std_hold": 100.6,
+      "trades_sym": 27,
+      "avg_hold_sym": 45.7,
+      "std_hold_sym": 73.6,
       "semi_vol": {
-        "cum_ret": 1.3202,
-        "ann_ret": 0.173,
-        "sharpe": 0.8396,
-        "max_dd": -0.2042
+        "cum_ret": 1.3469,
+        "ann_ret": 0.1756,
+        "sharpe": 0.8612,
+        "max_dd": -0.1984
       },
       "symmetric_vol": {
-        "cum_ret": 1.2441,
-        "ann_ret": 0.1656,
-        "sharpe": 0.8809,
-        "max_dd": -0.1899
+        "cum_ret": 1.2713,
+        "ann_ret": 0.1683,
+        "sharpe": 0.9085,
+        "max_dd": -0.1898
       }
     },
     {
       "key": "aluminium",
       "label": "Aluminium",
       "in_market_pct": 0,
-      "trades": 19,
-      "avg_hold": 144.4,
-      "std_hold": 205.5,
+      "trades": 93,
+      "avg_hold": 28.2,
+      "std_hold": 96.7,
+      "trades_sym": 49,
+      "avg_hold_sym": 26.6,
+      "std_hold_sym": 53.9,
       "semi_vol": {
-        "cum_ret": 4.2157,
-        "ann_ret": 0.3678,
-        "sharpe": 1.6688,
-        "max_dd": -0.151
+        "cum_ret": 2.7583,
+        "ann_ret": 0.2854,
+        "sharpe": 1.3746,
+        "max_dd": -0.1762
       },
       "symmetric_vol": {
-        "cum_ret": 2.6035,
-        "ann_ret": 0.2752,
-        "sharpe": 1.6912,
-        "max_dd": -0.1082
+        "cum_ret": 1.8518,
+        "ann_ret": 0.2198,
+        "sharpe": 1.4229,
+        "max_dd": -0.1121
       }
     },
     {
       "key": "cocoa",
       "label": "Cocoa",
       "in_market_pct": 0,
-      "trades": 72,
-      "avg_hold": 87.9,
-      "std_hold": 122.2,
+      "trades": 230,
+      "avg_hold": 26.4,
+      "std_hold": 63.1,
+      "trades_sym": 51,
+      "avg_hold_sym": 27.5,
+      "std_hold_sym": 84.9,
       "semi_vol": {
-        "cum_ret": 13.6421,
-        "ann_ret": 0.6635,
-        "sharpe": 1.8212,
-        "max_dd": -0.2556
+        "cum_ret": 12.2893,
+        "ann_ret": 0.6332,
+        "sharpe": 1.7301,
+        "max_dd": -0.2822
       },
       "symmetric_vol": {
-        "cum_ret": 9.2525,
-        "ann_ret": 0.5548,
-        "sharpe": 1.9907,
-        "max_dd": -0.1807
+        "cum_ret": 8.6172,
+        "ann_ret": 0.536,
+        "sharpe": 1.9081,
+        "max_dd": -0.1841
       }
     },
     {
       "key": "cotton",
       "label": "Cotton",
       "in_market_pct": 0,
-      "trades": 57,
-      "avg_hold": 117.0,
-      "std_hold": 153.6,
+      "trades": 179,
+      "avg_hold": 36.9,
+      "std_hold": 98.3,
+      "trades_sym": 27,
+      "avg_hold_sym": 49.7,
+      "std_hold_sym": 99.6,
       "semi_vol": {
-        "cum_ret": 3.6364,
-        "ann_ret": 0.3376,
-        "sharpe": 1.2487,
-        "max_dd": -0.2053
+        "cum_ret": 1.6505,
+        "ann_ret": 0.203,
+        "sharpe": 0.9172,
+        "max_dd": -0.2577
       },
       "symmetric_vol": {
-        "cum_ret": 2.9336,
-        "ann_ret": 0.2965,
-        "sharpe": 1.2658,
-        "max_dd": -0.1637
+        "cum_ret": 1.5963,
+        "ann_ret": 0.1983,
+        "sharpe": 0.983,
+        "max_dd": -0.1713
       }
     },
     {
       "key": "coffee",
       "label": "Coffee",
       "in_market_pct": 0,
-      "trades": 77,
-      "avg_hold": 81.7,
-      "std_hold": 108.1,
+      "trades": 227,
+      "avg_hold": 28.1,
+      "std_hold": 65.7,
+      "trades_sym": 46,
+      "avg_hold_sym": 33.0,
+      "std_hold_sym": 90.2,
       "semi_vol": {
-        "cum_ret": 13.1828,
-        "ann_ret": 0.6535,
-        "sharpe": 1.7381,
+        "cum_ret": 8.8554,
+        "ann_ret": 0.5432,
+        "sharpe": 1.4786,
         "max_dd": -0.2215
       },
       "symmetric_vol": {
-        "cum_ret": 11.0714,
-        "ann_ret": 0.6037,
-        "sharpe": 1.7911,
+        "cum_ret": 7.5934,
+        "ann_ret": 0.5036,
+        "sharpe": 1.5224,
         "max_dd": -0.2097
       }
     },
@@ -166,19 +190,22 @@
       "key": "natural_gas",
       "label": "Natural Gas",
       "in_market_pct": 0,
-      "trades": 62,
-      "avg_hold": 103.3,
-      "std_hold": 105.6,
+      "trades": 193,
+      "avg_hold": 32.6,
+      "std_hold": 70.2,
+      "trades_sym": 28,
+      "avg_hold_sym": 51.9,
+      "std_hold_sym": 77.1,
       "semi_vol": {
-        "cum_ret": 22.3088,
-        "ann_ret": 0.8168,
-        "sharpe": 1.2189,
+        "cum_ret": 32.3207,
+        "ann_ret": 0.9442,
+        "sharpe": 1.3254,
         "max_dd": -0.5057
       },
       "symmetric_vol": {
-        "cum_ret": 14.7992,
-        "ann_ret": 0.6876,
-        "sharpe": 1.3291,
+        "cum_ret": 20.0967,
+        "ann_ret": 0.7828,
+        "sharpe": 1.453,
         "max_dd": -0.3154
       }
     },
@@ -186,19 +213,22 @@
       "key": "sugar",
       "label": "Sugar",
       "in_market_pct": 0,
-      "trades": 58,
-      "avg_hold": 119.0,
-      "std_hold": 156.5,
+      "trades": 119,
+      "avg_hold": 57.2,
+      "std_hold": 103.1,
+      "trades_sym": 17,
+      "avg_hold_sym": 92.5,
+      "std_hold_sym": 114.6,
       "semi_vol": {
-        "cum_ret": 2.6547,
-        "ann_ret": 0.2786,
-        "sharpe": 1.1402,
+        "cum_ret": 3.13,
+        "ann_ret": 0.3086,
+        "sharpe": 1.2289,
         "max_dd": -0.1823
       },
       "symmetric_vol": {
-        "cum_ret": 2.4832,
-        "ann_ret": 0.267,
-        "sharpe": 1.116,
+        "cum_ret": 2.9226,
+        "ann_ret": 0.2958,
+        "sharpe": 1.2032,
         "max_dd": -0.1807
       }
     }
