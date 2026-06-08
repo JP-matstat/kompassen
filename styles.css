@@ -1778,6 +1778,15 @@ tr:hover td {
 .signal-dot-value.negative { color: var(--danger-color); }
 .signal-dot-value.neutral { color: var(--neutral-color); }
 
+.signal-forecast-info {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-left: 0.75rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 @media (max-width: 768px) {
     .signal-dots-grid {
         grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));

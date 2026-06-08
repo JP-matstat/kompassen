@@ -63,6 +63,7 @@ const DEFAULT_SIGNALS = {
 // State
 let signals = { ...DEFAULT_SIGNALS };
 let signalsDate = '';
+let signalsTimestamp = ''; // Full ISO timestamp from signals.json
 let showHistory = false; // Toggle for 5-day history
 let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
@@ -165,6 +166,7 @@ async function loadDailySignals() {
         
         const data = await response.json();
         signalsDate = data.date;
+        signalsTimestamp = data.timestamp || data.date;
         
         // Update signals (high risk)
         COMMODITIES.forEach(commodity => {
@@ -195,7 +197,6 @@ async function loadDailySignals() {
         const timestamp = new Date(data.timestamp || data.date).toLocaleString();
         console.log(`Signals loaded from ${timestamp}`);
         
-        showSignalUpdateBanner(data.date);
         renderAllocation();
         
     } catch (error) {
@@ -215,19 +216,60 @@ function getAllocationDate(dateStr) {
     return d.toLocaleDateString(locale, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
 }
 
-// Show banner when signals are loaded
-function showSignalUpdateBanner(date) {
-    const banner = document.createElement('div');
-    banner.className = 'signal-update-banner';
-    const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
-    banner.innerHTML = `
-        <span>📊 ${t('signalsUpdated')} ${new Date(date).toLocaleDateString(locale)}</span>
-        <button onclick="this.parentElement.remove()">×</button>
-    `;
-    document.body.insertBefore(banner, document.body.firstChild);
+// Calculate forecast date based on pipeline run timestamp
+// Market hours: ~13:00-21:00 UTC (9:30 AM - 5:00 PM ET).
+// yfinance daily bar for date D represents session 18:00 ET (D-1) to 17:00 ET (D).
+// The bar becomes available in yfinance during the day but only finalizes after 17:00 ET (21:00 UTC).
+// Logic:
+// - If pipeline runs before ~13:00 UTC (9:30 AM ET) on a trading day → 
+//   last complete bar is previous trading day → forecast for THIS day (the day starting)
+// - If pipeline runs at/after ~13:00 UTC on a trading day → 
+//   last bar is today's (forming or complete) → forecast for NEXT trading day
+// - If pipeline runs on weekend → forecast for Monday
+function getForecastDate(dateStr, timestampStr) {
+    const ts = timestampStr ? new Date(timestampStr) : new Date(dateStr);
+    const date = new Date(dateStr);
     
-    // Auto-hide after 5 seconds
-    setTimeout(() => banner.remove(), 5000);
+    // Market opens ~13:30 UTC (9:30 AM ET). Use 13:00 UTC as cutoff.
+    const marketOpenHourUTC = 13;
+    const dayOfWeek = ts.getUTCDay(); // 0=Sun, 1=Mon, ..., 6=Sat
+    const hourUTC = ts.getUTCHours();
+    const minuteUTC = ts.getUTCMinutes();
+    
+    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+    const isBeforeMarketOpen = hourUTC < marketOpenHourUTC || 
+        (hourUTC === marketOpenHourUTC && minuteUTC === 0);
+    
+    if (isWeekend) {
+        // Weekend: forecast for Monday
+        const d = new Date(date);
+        const day = d.getDay();
+        if (day === 5) d.setDate(d.getDate() + 3); // Friday -> Monday
+        else if (day === 6) d.setDate(d.getDate() + 2); // Saturday -> Monday
+        else if (day === 0) d.setDate(d.getDate() + 1); // Sunday -> Monday
+        else d.setDate(d.getDate() + 1);
+        return d;
+    }
+    
+    // Trading day (Mon-Fri)
+    if (isBeforeMarketOpen) {
+        // Before market open: last complete bar is previous trading day
+        // Forecast for THIS day (the day starting)
+        return date;
+    }
+    
+    // At/after market open: last bar is today's (forming or complete)
+    // Forecast for NEXT trading day
+    const d = new Date(dateStr);
+    const day = d.getDay();
+    if (day === 5) { // Friday
+        d.setDate(d.getDate() + 3); // Monday
+    } else if (day === 6) { // Saturday (shouldn't happen on trading day)
+        d.setDate(d.getDate() + 2); // Monday
+    } else {
+        d.setDate(d.getDate() + 1); // Next day
+    }
+    return d;
 }
 
 // Hide all skeleton loaders
@@ -462,6 +504,28 @@ function renderSignalDots() {
     if (headingEl) headingEl.textContent = t('signalStrength');
     if (infoEl) infoEl.textContent = t('signalStrengthInfo');
 
+    // Add forecast date info next to heading
+    if (headingEl && signalsDate) {
+        let forecastInfoEl = document.getElementById('signalForecastInfo');
+        if (!forecastInfoEl) {
+            forecastInfoEl = document.createElement('span');
+            forecastInfoEl.id = 'signalForecastInfo';
+            forecastInfoEl.className = 'signal-forecast-info';
+            headingEl.insertAdjacentElement('afterend', forecastInfoEl);
+        }
+        const updatedDate = new Date(signalsTimestamp || signalsDate);
+        const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
+        const forecastDate = getForecastDate(signalsDate, signalsTimestamp);
+        const updatedStr = updatedDate.toLocaleString(locale, {
+            year: 'numeric', month: '2-digit', day: '2-digit',
+            hour: '2-digit', minute: '2-digit', hour12: false
+        }).replace(',', '');
+        const forecastStr = forecastDate.toLocaleDateString(locale, {
+            year: 'numeric', month: '2-digit', day: '2-digit'
+        });
+        forecastInfoEl.textContent = `  ${t('signalsUpdated')} ${updatedStr} ${t('forForecastOf')} ${forecastStr}`;
+    }
+
     const hasData = COMMODITIES.some(c => activeSignals[c] !== 0);
 
     container.innerHTML = '';
@@ -693,6 +757,8 @@ function activateTab(targetTab) {
     });
     tabContents.forEach(c => c.classList.remove('active'));
     panel.classList.add('active');
+
+    setupRiskModelBar();
 
     if (targetTab === 'history') {
         setTimeout(drawPerformanceChart, 50);
@@ -1066,8 +1132,8 @@ function renderPerformanceStats() {
     
     const overallAccuracy = totalPredictions > 0 ? (correctPredictions / totalPredictions * 100) : 0;
     
-    // Live statistics (since 2026-06-08)
-    const LIVE_DATE = '2026-06-08';
+    // Live statistics (since 2026-06-09)
+    const LIVE_DATE = '2026-06-09';
     let liveTotalPredictions = 0;
     let liveCorrectPredictions = 0;
     
@@ -1972,6 +2038,13 @@ function switchRiskTab(tab) {
 function setupRiskModelBar() {
     const bar = document.getElementById('riskModelBar');
     if (!bar) return;
+
+    const activeTab = document.querySelector('.tab-btn.active')?.dataset.tab;
+    if (activeTab !== 'portfolio' && activeTab !== 'history') {
+        bar.innerHTML = '';
+        return;
+    }
+
     const isSv = window.I18n && I18n.getLang() === 'sv';
     const highLabel = isSv ? 'Högriskmodell' : 'High risk model';
     const lowLabel = isSv ? 'Lågriskmodell' : 'Low risk model';

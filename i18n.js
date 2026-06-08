@@ -55,6 +55,7 @@ const TRANSLATIONS = {
         aboutSite: 'About this site',
         aboutSiteP: 'Local portfolio sheet for commodity sentiment signals. Data files in <code>portfolio_sheet/</code> are updated by the TrendTrading pipeline; reload the page after refreshing <code>signals.json</code>.',
         signalsUpdated: 'Signals updated:',
+        forForecastOf: 'for forecast of',
         noPositions: 'No positions',
 
         thCommodity: 'Commodity',
@@ -341,6 +342,7 @@ const TRANSLATIONS = {
         aboutSite: 'Om webbplatsen',
         aboutSiteP: 'Lokal portföljvy för råvarusignaler. Filer i <code>portfolio_sheet/</code> uppdateras av TrendTrading; ladda om sidan efter <code>signals.json</code>.',
         signalsUpdated: 'Signaler uppdaterade:',
+        forForecastOf: 'för prognos av',
         noPositions: 'Inga positioner',
 
         thCommodity: 'Råvara',
