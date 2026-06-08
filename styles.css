@@ -2425,16 +2425,16 @@ tr:hover td {
     transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .risk-tab:hover {
-    border-color: #2563eb;
+    border-color: #94a3b8;
 }
 .risk-tab-active {
-    background: #2563eb;
+    background: #334155;
     color: #fff;
-    border-color: #2563eb;
+    border-color: #334155;
 }
 .risk-tab-active:hover {
-    background: #1d4ed8;
-    border-color: #1d4ed8;
+    background: #1e293b;
+    border-color: #1e293b;
 }
 
 /* ── Touch / iOS improvements ── */

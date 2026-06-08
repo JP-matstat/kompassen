@@ -68,6 +68,11 @@ let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
 let signalHistory = []; // Historical signals from localStorage: [{date, signals}]
 
+// Risk model toggle
+let currentRiskModel = 'high'; // 'high' | 'low'
+let signalsLowRisk = { ...DEFAULT_SIGNALS };
+let historicalDataLowRisk = [];
+
 // Historical performance data
 // Format: { date: 'YYYY-MM-DD', predictions: { commodity: signal }, actuals: { commodity: priceChange } }
 let historicalData = [];
@@ -75,6 +80,9 @@ let bestAnnualizedReturn = 0;
 
 // Pre-computed equity curves from Python pipeline
 let equityCurveData = null;
+let metricsDataGlobal = null; // cached portfolio_metrics.json for risk model switching
+let annReturnHigh = 0;
+let annReturnLow = 0;
 
 // Load signal history from localStorage
 function loadSignalHistory() {
@@ -109,7 +117,7 @@ function computeAllocationChange() {
     if (!yesterdaySignals) return null;
 
     const mode = longOnlyMode ? 'longOnly' : 'longShort';
-    const todayResult = calculatePortfolio(signals);
+    const todayResult = calculatePortfolio(getActiveSignals());
     const yesterdayResult = calculatePortfolio(yesterdaySignals);
 
     const todayMap = {};
@@ -158,12 +166,20 @@ async function loadDailySignals() {
         const data = await response.json();
         signalsDate = data.date;
         
-        // Update signals
+        // Update signals (high risk)
         COMMODITIES.forEach(commodity => {
             if (data.signals.hasOwnProperty(commodity)) {
                 signals[commodity] = data.signals[commodity];
             }
         });
+        // Update low-risk signals
+        if (data.signals_low_risk) {
+            COMMODITIES.forEach(commodity => {
+                if (data.signals_low_risk.hasOwnProperty(commodity)) {
+                    signalsLowRisk[commodity] = data.signals_low_risk[commodity];
+                }
+            });
+        }
         
         // Store in history if not already present
         const existingIdx = signalHistory.findIndex(e => e.date === data.date);
@@ -311,6 +327,7 @@ window.addEventListener('resize', () => {
 // Initialize the application
 function refreshLanguageUI() {
     if (window.I18n) I18n.apply();
+    setupRiskModelBar();
     renderAllocation();
     renderHistoryAllocations();
     renderHistoryTable();
@@ -346,6 +363,7 @@ async function init() {
         setupEventListeners();
         setupTabNavigation();
         setupPersonalPage();
+        setupRiskModelBar();
         await initializeHistoricalPerformance();
         loadRelatedStocks();
         loadDailySignals();
@@ -425,21 +443,31 @@ const COMMODITY_ABBR = {
 };
 
 // Render signal strength dots
+function getActiveSignals() {
+    return currentRiskModel === 'high' ? signals : signalsLowRisk;
+}
+
+function getActiveHistoricalData() {
+    return currentRiskModel === 'high' ? historicalData : historicalDataLowRisk;
+}
+
 function renderSignalDots() {
     const container = document.getElementById('signalDots');
     if (!container) return;
+
+    const activeSignals = getActiveSignals();
 
     const headingEl = document.getElementById('signalStrengthHeading');
     const infoEl = document.getElementById('signalStrengthInfo');
     if (headingEl) headingEl.textContent = t('signalStrength');
     if (infoEl) infoEl.textContent = t('signalStrengthInfo');
 
-    const hasData = COMMODITIES.some(c => signals[c] !== 0);
+    const hasData = COMMODITIES.some(c => activeSignals[c] !== 0);
 
     container.innerHTML = '';
 
     COMMODITIES.forEach(commodity => {
-        const signal = signals[commodity];
+        const signal = activeSignals[commodity];
         const absSignal = Math.abs(signal);
 
         const dot = document.createElement('div');
@@ -482,7 +510,7 @@ function renderSignalDots() {
 
 // Render current allocation
 function renderAllocation() {
-    const result = calculatePortfolio(signals);
+    const result = calculatePortfolio(getActiveSignals());
     const mode = longOnlyMode ? 'longOnly' : 'longShort';
     const alloc = result[mode];
     
@@ -724,22 +752,35 @@ async function loadHistoricalData() {
         const resp = await fetch('daily_predictions.json');
         if (!resp.ok) {
             historicalData = [];
+            historicalDataLowRisk = [];
             return;
         }
         const data = await resp.json();
         if (!data.entries || data.entries.length === 0) {
             historicalData = [];
+            historicalDataLowRisk = [];
             return;
         }
-        historicalData = data.entries;
+        historicalData = data.entries.map(e => ({
+            date: e.date,
+            predictions: e.predictions,
+            actuals: e.actuals,
+        }));
+        historicalDataLowRisk = data.entries.map(e => ({
+            date: e.date,
+            predictions: e.predictions_low_risk || e.predictions,
+            actuals: e.actuals,
+        }));
     } catch (e) {
         console.warn('Failed to load historical data:', e);
-        historicalData = [
+        const fallback = [
             { date: '2026-04-01', predictions: { 'Gold': 0.5, 'Silver': 0.3, 'Copper': -0.2, 'Sugar': 0, 'Oil Brent': 0.4, 'Natural Gas': -0.3, 'Cotton': 0.1, 'Coffee': 0, 'Cocoa': -0.1, 'Aluminium': 0.2 }, actuals: { 'Gold': 1.2, 'Silver': 0.8, 'Copper': -0.5, 'Sugar': -0.1, 'Oil Brent': 0.9, 'Natural Gas': 0.3, 'Cotton': 0.2, 'Coffee': -0.2, 'Cocoa': -0.3, 'Aluminium': 0.4 } },
             { date: '2026-04-02', predictions: { 'Gold': 0.7, 'Silver': 0.4, 'Copper': 0.2, 'Sugar': -0.1, 'Oil Brent': 0.6, 'Natural Gas': -0.5, 'Cotton': 0, 'Coffee': 0.3, 'Cocoa': 0.1, 'Aluminium': -0.2 }, actuals: { 'Gold': 0.5, 'Silver': 0.3, 'Copper': 0.4, 'Sugar': 0.2, 'Oil Brent': 0.7, 'Natural Gas': -0.8, 'Cotton': 0.1, 'Coffee': 0.5, 'Cocoa': 0.2, 'Aluminium': -0.3 } },
             { date: '2026-04-03', predictions: { 'Gold': 0.8, 'Silver': 0.6, 'Copper': -0.4, 'Sugar': 0, 'Oil Brent': 0, 'Natural Gas': 0, 'Cotton': 0, 'Coffee': 0, 'Cocoa': 0, 'Aluminium': 0 }, actuals: { 'Gold': 1.5, 'Silver': 0.9, 'Copper': -0.6, 'Sugar': 0, 'Oil Brent': 0, 'Natural Gas': 0, 'Cotton': 0, 'Coffee': 0, 'Cocoa': 0, 'Aluminium': 0 } },
             { date: '2026-04-04', predictions: { 'Gold': 0.6, 'Silver': 0.5, 'Copper': -0.3, 'Sugar': 0.2, 'Oil Brent': -0.4, 'Natural Gas': 0.3, 'Cotton': 0, 'Coffee': -0.2, 'Cocoa': 0.4, 'Aluminium': 0.1 }, actuals: null },
         ];
+        historicalData = fallback;
+        historicalDataLowRisk = fallback;
     }
 }
 
@@ -788,14 +829,15 @@ function computeAccuracy(entries) {
     return total > 0 ? { total, correct, pct: (correct / total * 100) } : { total: 0, correct: 0, pct: 0 };
 }
 
-function getFilteredHistoricalData() {
-    if (!historicalData || historicalData.length === 0) return [];
-    const sorted = [...historicalData].sort((a, b) => a.date.localeCompare(b.date));
+function getFilteredHistoricalData(data) {
+    const src = data || historicalData;
+    if (!src || src.length === 0) return [];
+    const sorted = [...src].sort((a, b) => a.date.localeCompare(b.date));
     const newestDate = new Date(sorted[sorted.length - 1].date);
     const yearsToShow = 5;
     const cutoffDate = new Date(newestDate);
     cutoffDate.setFullYear(cutoffDate.getFullYear() - yearsToShow);
-    return historicalData.filter(e => new Date(e.date) >= cutoffDate);
+    return src.filter(e => new Date(e.date) >= cutoffDate);
 }
 
 // Render the historical performance table with year→month accordion
@@ -803,14 +845,16 @@ function renderHistoryTable() {
     const container = document.querySelector('.history-table-container');
     if (!container) return;
 
+    const activeData = getActiveHistoricalData();
+
     container.innerHTML = '';
 
-    if (historicalData.length === 0) {
+    if (!activeData || activeData.length === 0) {
         container.innerHTML = `<div class="history-empty">${t('noHistoryData')}</div>`;
         return;
     }
 
-    const filteredData = getFilteredHistoricalData();
+    const filteredData = getFilteredHistoricalData(activeData);
     const grouped = groupEntriesByYearMonth(filteredData);
 
     const accordion = document.createElement('div');
@@ -986,8 +1030,9 @@ function renderHistoryTable() {
 function renderPerformanceStats() {
     const container = document.getElementById('performanceStats');
     container.innerHTML = '';
-    
-    const filteredData = getFilteredHistoricalData();
+
+    const activeData = getActiveHistoricalData();
+    const filteredData = getFilteredHistoricalData(activeData);
     
     // Calculate statistics
     let totalPredictions = 0;
@@ -1039,9 +1084,10 @@ function renderPerformanceStats() {
     plLabel.className = 'stat-label';
     plLabel.textContent = t('avgPortfolioPerf');
     portfolioCard.appendChild(plLabel);
+    const currentAnnRet = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
     const plValue = document.createElement('div');
     plValue.className = 'stat-value success';
-    plValue.textContent = `${bestAnnualizedReturn >= 0 ? '+' : ''}${bestAnnualizedReturn.toFixed(2)}%`;
+    plValue.textContent = `${currentAnnRet >= 0 ? '+' : ''}${(currentAnnRet * 100).toFixed(2)}%`;
     portfolioCard.appendChild(plValue);
     container.appendChild(portfolioCard);
 
@@ -1240,8 +1286,13 @@ function drawPerformanceChart() {
         ctx.fill();
     }
 
+    const highAlpha = currentRiskModel === 'high' ? 1 : 0.25;
+    const lowAlpha = currentRiskModel === 'low' ? 1 : 0.25;
+    ctx.globalAlpha = highAlpha;
     drawCurve(highRisk, HIGH_COLOR);
+    ctx.globalAlpha = lowAlpha;
     drawCurve(lowRisk, LOW_COLOR);
+    ctx.globalAlpha = 1;
 
     // Legend
     const legendX = pad.left + 8;
@@ -1251,6 +1302,7 @@ function drawPerformanceChart() {
     ctx.lineCap = 'round';
     ctx.lineWidth = 2.5;
 
+    ctx.globalAlpha = highAlpha;
     ctx.strokeStyle = HIGH_COLOR;
     ctx.beginPath();
     ctx.moveTo(legendX, legendY + 6);
@@ -1261,12 +1313,14 @@ function drawPerformanceChart() {
     ctx.textAlign = 'left';
     ctx.fillText(isSv ? 'Högriskmodell' : 'High risk', legendX + 24, legendY + 10);
 
+    ctx.globalAlpha = lowAlpha;
     ctx.strokeStyle = LOW_COLOR;
     ctx.beginPath();
     ctx.moveTo(legendX + 120, legendY + 6);
     ctx.lineTo(legendX + 140, legendY + 6);
     ctx.stroke();
     ctx.fillText(isSv ? 'Lågriskmodell' : 'Low risk', legendX + 144, legendY + 10);
+    ctx.globalAlpha = 1;
 
     ctx.fillStyle = textColor;
     ctx.font = '11px system-ui, sans-serif';
@@ -1462,6 +1516,14 @@ function displayRelatedStocks(commodities) {
                         hasRegionalPicks = true;
                     }
                 });
+                // Also include negatively correlated picks ("negatives")
+                const reg = commodityData.regional;
+                if (reg && Array.isArray(reg["negatives"])) {
+                    reg["negatives"].forEach(pick => {
+                        allInstruments.push({ ...pick, region: "negatives" });
+                        hasRegionalPicks = true;
+                    });
+                }
             }
             if (!hasRegionalPicks) {
                 // Fall back to platform-based lookup
@@ -1490,6 +1552,12 @@ function displayRelatedStocks(commodities) {
                     const pick = commodityData.regional?.[region];
                     if (pick) regionalPicks.push({ ...pick, region });
                 });
+                const reg2 = commodityData.regional;
+                if (reg2 && Array.isArray(reg2["negatives"])) {
+                    reg2["negatives"].forEach(pick => {
+                        regionalPicks.push({ ...pick, region: "negatives" });
+                    });
+                }
                 regionalPicks.sort((a, b) => Math.abs(b.correlation) - Math.abs(a.correlation));
                 // If no explicit regional picks, infer region from ticker suffix
                 if (regionalPicks.length === 0) {
@@ -1720,6 +1788,9 @@ async function loadModelPerformance() {
         }
 
         const metricsData = await metricsResp.json();
+        metricsDataGlobal = metricsData;
+        annReturnHigh = metricsData.metrics ? (metricsData.metrics.annualized_return || 0) : 0;
+        annReturnLow = metricsData.metrics_symmetric ? (metricsData.metrics_symmetric.annualized_return || 0) : 0;
         const commData = commResp.ok ? await commResp.json() : null;
         if (eqResp.ok) {
             equityCurveData = await eqResp.json();
@@ -1777,15 +1848,10 @@ async function loadModelPerformance() {
 
         // ── Per-commodity table with tabs ──
         if (commData && commData.commodities && commData.commodities.length > 0) {
-            const riskTabId = 'riskTabHigh';
             const riskTabPanelHigh = 'riskPanelHigh';
             const riskTabPanelLow = 'riskPanelLow';
 
             html += `<h4 style="margin:0.75rem 0 0.4rem;color:var(--text-primary);font-size:0.95rem">${t('perCommoditySummary')}</h4>`;
-            html += `<div style="display:flex;gap:8px;margin-bottom:6px">`;
-            html += `<button id="${riskTabId}" class="risk-tab risk-tab-active" onclick="switchRiskTab('high')">${highRiskLabel}</button>`;
-            html += `<button id="riskTabLow" class="risk-tab" onclick="switchRiskTab('low')">${lowRiskLabel}</button>`;
-            html += `</div>`;
 
             // High risk table
             html += `<div id="${riskTabPanelHigh}" class="risk-panel">`;
@@ -1818,9 +1884,9 @@ async function loadModelPerformance() {
                     <td class="${riskClass(sym.ann_ret)}">${fmtPct(sym.ann_ret)}</td>
                     <td class="${riskClass(sym.sharpe)}">${fmtNum(sym.sharpe)}</td>
                     <td class="${riskClass(sym.max_dd)}">${fmtPct(sym.max_dd)}</td>
-                    <td>${c.trades != null ? c.trades : '—'}</td>
-                    <td>${c.avg_hold != null ? c.avg_hold : '—'}</td>
-                    <td>${c.std_hold != null ? c.std_hold : '—'}</td>
+                    <td>${c.trades_sym != null ? c.trades_sym : (c.trades != null ? c.trades : '—')}</td>
+                    <td>${c.avg_hold_sym != null ? c.avg_hold_sym : (c.avg_hold != null ? c.avg_hold : '—')}</td>
+                    <td>${c.std_hold_sym != null ? c.std_hold_sym : (c.std_hold != null ? c.std_hold : '—')}</td>
                 </tr>`;
             });
             html += `</tbody></table></div></div>`;
@@ -1829,16 +1895,14 @@ async function loadModelPerformance() {
         hideSkeletons();
         container.innerHTML = html;
 
-        bestAnnualizedReturn = Math.max(
-            metricsData.metrics ? (metricsData.metrics.annualized_return || 0) : 0,
-            metricsData.metrics_symmetric ? (metricsData.metrics_symmetric.annualized_return || 0) : 0
-        );
+        bestAnnualizedReturn = Math.max(annReturnHigh, annReturnLow);
         const avgCard = document.getElementById('avgPortfolioCard');
         if (avgCard) {
             const valueDiv = avgCard.querySelector('.stat-value');
             if (valueDiv) {
-                valueDiv.textContent = `${bestAnnualizedReturn >= 0 ? '+' : ''}${(bestAnnualizedReturn * 100).toFixed(2)}%`;
-                valueDiv.className = `stat-value ${bestAnnualizedReturn >= 0 ? 'success' : 'danger'}`;
+                const currentAnnRet2 = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
+                valueDiv.textContent = `${currentAnnRet2 >= 0 ? '+' : ''}${(currentAnnRet2 * 100).toFixed(2)}%`;
+                valueDiv.className = `stat-value ${currentAnnRet2 >= 0 ? 'success' : 'danger'}`;
             }
         }
 
@@ -1851,23 +1915,35 @@ async function loadModelPerformance() {
     }
 }
 
+function switchRiskModel(model) {
+    currentRiskModel = model;
+    document.querySelectorAll('.risk-tab').forEach(btn => {
+        btn.classList.toggle('risk-tab-active', btn.dataset.model === model);
+    });
+    document.querySelectorAll('.risk-panel').forEach(p => {
+        p.style.display = 'none';
+    });
+    const panel = document.getElementById(model === 'high' ? 'riskPanelHigh' : 'riskPanelLow');
+    if (panel) panel.style.display = '';
+    renderSignalDots();
+    renderAllocation();
+    renderPerformanceStats();
+    renderHistoryTable();
+    drawPerformanceChart();
+}
+
 function switchRiskTab(tab) {
+    switchRiskModel(tab);
+}
+
+function setupRiskModelBar() {
+    const bar = document.getElementById('riskModelBar');
+    if (!bar) return;
     const isSv = window.I18n && I18n.getLang() === 'sv';
-    const highRiskLabel = isSv ? 'Högriskmodell' : 'High risk model';
-    const lowRiskLabel = isSv ? 'Lågriskmodell' : 'Low risk model';
-    const btnHigh = document.getElementById('riskTabHigh');
-    const btnLow = document.getElementById('riskTabLow');
-    const panelHigh = document.getElementById('riskPanelHigh');
-    const panelLow = document.getElementById('riskPanelLow');
-    if (tab === 'high') {
-        btnHigh.className = 'risk-tab risk-tab-active';
-        btnLow.className = 'risk-tab';
-        panelHigh.style.display = '';
-        panelLow.style.display = 'none';
-    } else {
-        btnLow.className = 'risk-tab risk-tab-active';
-        btnHigh.className = 'risk-tab';
-        panelLow.style.display = '';
-        panelHigh.style.display = 'none';
-    }
+    const highLabel = isSv ? 'Högriskmodell' : 'High risk model';
+    const lowLabel = isSv ? 'Lågriskmodell' : 'Low risk model';
+    bar.innerHTML = `
+        <button class="risk-tab risk-tab-active" data-model="high" onclick="switchRiskModel('high')">${highLabel}</button>
+        <button class="risk-tab" data-model="low" onclick="switchRiskModel('low')">${lowLabel}</button>
+    `;
 }
