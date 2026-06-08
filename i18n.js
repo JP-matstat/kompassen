@@ -457,7 +457,7 @@ function detectDefaultLang() {
     const stored = localStorage.getItem(I18N_STORAGE_KEY);
     if (stored === 'en' || stored === 'sv') return stored;
     const nav = (navigator.language || '').toLowerCase();
-    return nav.startsWith('sv') ? 'sv' : 'sv';
+    return nav.startsWith('sv') ? 'sv' : 'en';
 }
 
 function t(key, vars = {}) {
