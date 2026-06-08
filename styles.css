@@ -2237,6 +2237,11 @@ tr:hover td {
     .unified-related-table td:nth-child(7) {
         display: none;
     }
+
+    .comm-perf-table th:nth-child(n+6),
+    .comm-perf-table td:nth-child(n+6) {
+        display: none;
+    }
 }
 
 @media (max-width: 375px) {
