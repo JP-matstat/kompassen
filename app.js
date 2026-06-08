@@ -1066,13 +1066,46 @@ function renderPerformanceStats() {
     
     const overallAccuracy = totalPredictions > 0 ? (correctPredictions / totalPredictions * 100) : 0;
     
-    // Overall accuracy card
+    // Live statistics (since 2026-06-08)
+    const LIVE_DATE = '2026-06-08';
+    let liveTotalPredictions = 0;
+    let liveCorrectPredictions = 0;
+    
+    activeData.forEach(entry => {
+        if (entry.date < LIVE_DATE) return;
+        if (!entry.actuals) return;
+        
+        COMMODITIES.forEach(commodity => {
+            const prediction = entry.predictions[commodity] || 0;
+            const actual = entry.actuals[commodity] || 0;
+            
+            if (prediction === 0) return;
+            
+            liveTotalPredictions++;
+            
+            if (Math.sign(prediction) === Math.sign(actual)) {
+                liveCorrectPredictions++;
+            }
+        });
+    });
+    
+    const liveAccuracy = liveTotalPredictions > 0 ? (liveCorrectPredictions / liveTotalPredictions * 100) : 0;
+    
+    // Overall accuracy card (training)
     const overallCard = createStatCard(t('overallAccuracy'), `${overallAccuracy.toFixed(1)}%`, overallAccuracy >= 50 ? 'success' : 'danger', overallAccuracy);
     overallCard.querySelector('.stat-label').title = t('accuracyHint');
     container.appendChild(overallCard);
     
-    // Total predictions card
-    const totalCard = createStatCard(t('totalPredictions'), totalPredictions.toString(), '', totalPredictions, t('totalPredictionsHint'));
+    // Live accuracy card
+    const liveValue = liveTotalPredictions > 0 ? `${liveAccuracy.toFixed(1)}%` : '-';
+    const liveClass = liveTotalPredictions > 0 ? (liveAccuracy >= 50 ? 'success' : 'danger') : '';
+    const liveCard = createStatCard(t('liveAccuracy'), liveValue, liveClass, liveTotalPredictions > 0 ? liveAccuracy : null);
+    liveCard.querySelector('.stat-label').title = t('liveAccuracyHint');
+    container.appendChild(liveCard);
+    
+    // Total predictions card (live)
+    const liveCount = liveTotalPredictions > 0 ? liveTotalPredictions : 0;
+    const totalCard = createStatCard(t('totalPredictions'), liveCount.toString(), '', liveCount, t('livePredictionsHint'));
     container.appendChild(totalCard);
     
     // Correct predictions card — removed per user request
