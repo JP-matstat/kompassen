@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-09",
+  "prediction_based_on": "2026-05-30",
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "pred_up": 0.6,
+      "pred_down": 0.1,
+      "pred_no_trend": 0.3,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.5
+    }
+  ]
+}
