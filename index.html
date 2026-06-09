@@ -40,7 +40,7 @@
             <section class="card" id="signalStrengthCard">
                 <div class="signal-strength-header">
                     <h2 id="signalStrengthHeading">📊 Signal Strength</h2>
-                    <button type="button" id="forecastInfoBtn" class="btn-info-link" title="When does the forecast apply?">When is the forecast for?</button>
+                    <button type="button" id="siteUpdateBtn" class="btn-info-link" title="When is the site updated?" data-i18n="siteUpdatedBtn">When is the site updated?</button>
                 </div>
                 <p class="info" id="signalStrengthInfo">Color intensity shows signal strength. Green = long, Red = short.</p>
                 <div id="signalDots" class="signal-dots-grid">
@@ -76,7 +76,7 @@
             <!-- Related Instruments Section -->
             <section class="card">
                 <h2 data-i18n="relatedTitle">📈 Related Instruments</h2>
-                <p class="info" data-i18n="relatedInfo">Instruments with the strongest correlations to commodities, based on 5-year regression analysis of stocks, ETFs and ETCs traded on Avanza and/or Nordnet. It is hard to find stocks with a strong negative correlation to any of these commodities, therefore, if you want to go short, either short a stock or preferably a tracker. All instruments presented here can be traded on either Avanza or Nordnet.</p>
+                <p class="info" data-i18n="relatedInfo">Instruments with the strongest correlations to commodities, based on 5-year regression analysis of stocks, CETFs and CETCs traded on Avanza and/or Nordnet. It is hard to find stocks with a strong negative correlation to any of these commodities, therefore, if you want to go short, either short a stock or preferably a tracker. All instruments presented here can be traded on either Avanza or Nordnet.</p>
                 
                 
                 <div id="unifiedInstrumentsContainer" class="unified-instruments-container">
@@ -1135,74 +1135,13 @@
     </script>
 
 <!-- Forecast Date Explanation Modal -->
-<div id="forecastInfoModal" class="modal-overlay hidden">
-    <div class="modal-content forecast-info-modal">
-        <button class="modal-close" onclick="closeForecastInfoModal()">&times;</button>
-        <h3>When is the forecast for?</h3>
+<div id="siteUpdateModal" class="modal-overlay hidden">
+    <div class="modal-content site-update-modal">
+        <button class="modal-close" onclick="closeSiteUpdateModal()">&times;</button>
+        <h3 data-i18n="siteUpdatedTitle">When is the site updated?</h3>
         
-        <p>The forecast date depends on <strong>when the pipeline runs</strong> relative to market hours.</p>
-        
-        <h4>Market Hours (Commodity Futures)</h4>
-        <ul>
-            <li><strong>Opens:</strong> Sunday 18:00 ET (22:00 UTC / 00:00 CET Mon)</li>
-            <li><strong>Closes:</strong> Friday 17:00 ET (21:00 UTC / 23:00 CET Fri)</li>
-            <li><strong>Daily bar finalizes:</strong> ~17:00 ET (after session ends)</li>
-        </ul>
+        <p data-i18n="siteUpdatedDesc">Trading data for commodity futures is available a few minutes after 17:00 CET each trading day. Loading and processing currently takes around 2 hours, so new signals should appear no later than 20:00 CET. In the near future the signals will probably appear before 19:00.</p>
 
-        <h4>Decision Logic</h4>
-        <table class="forecast-table">
-            <thead>
-                <tr>
-                    <th>Pipeline runs...</th>
-                    <th>Market status</th>
-                    <th>Forecast is for</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Mon–Thu before ~09:00 ET (13:00 UTC)</td>
-                    <td>Before market open</td>
-                    <td><strong>Same day</strong> (the session starting)</td>
-                </tr>
-                <tr>
-                    <td>Mon–Thu at/after ~09:00 ET (13:00 UTC)</td>
-                    <td>During/after market hours</td>
-                    <td><strong>Next trading day</strong></td>
-                </tr>
-                <tr>
-                    <td>Friday before ~09:00 ET</td>
-                    <td>Before market open</td>
-                    <td><strong>Friday</strong> (same day)</td>
-                </tr>
-                <tr>
-                    <td>Friday at/after ~09:00 ET</td>
-                    <td>After market close</td>
-                    <td><strong>Monday</strong> (skips weekend)</td>
-                </tr>
-                <tr>
-                    <td>Saturday or Sunday</td>
-                    <td>Market closed</td>
-                    <td><strong>Monday</strong></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h4>How it works</h4>
-        <p>Yahoo Finance provides daily bars where each bar represents the session from <strong>18:00 ET (previous day) to 17:00 ET (current day)</strong>. The bar timestamp is 00:00 ET (start of session).</p>
-        
-        <p>The pipeline writes a <code>timestamp</code> (UTC) when it completes. The frontend uses this timestamp to determine:</p>
-        <ul>
-            <li><strong>Before ~13:00 UTC (09:00 ET):</strong> Last complete bar is previous trading day → forecast for <em>today</em></li>
-            <li><strong>At/after ~13:00 UTC (09:00 ET):</strong> Last bar is today's (forming or complete) → forecast for <em>next trading day</em></li>
-            <li><strong>Weekend:</strong> Always forecasts for Monday</li>
-        </ul>
-
-        <h4>Example</h4>
-        <p>If <code>signals.json</code> shows:</p>
-        <pre>{ "date": "2026-06-08", "timestamp": "2026-06-08T17:45:18Z", ... }</pre>
-        <p>Pipeline ran Monday at 17:45 UTC (13:45 ET, market open) → <strong>Forecast for Tuesday 2026-06-09</strong></p>
-        
-        <p class="note"><strong>Note:</strong> Holiday Mondays are not handled (would require a market calendar).</p>
     </div>
 </div>
 

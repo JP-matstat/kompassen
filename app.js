@@ -216,60 +216,98 @@ function getAllocationDate(dateStr) {
     return d.toLocaleDateString(locale, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
 }
 
-// Calculate forecast date based on pipeline run timestamp
-// Market hours: ~13:00-21:00 UTC (9:30 AM - 5:00 PM ET).
-// yfinance daily bar for date D represents session 18:00 ET (D-1) to 17:00 ET (D).
-// The bar becomes available in yfinance during the day but only finalizes after 17:00 ET (21:00 UTC).
-// Logic:
-// - If pipeline runs before ~13:00 UTC (9:30 AM ET) on a trading day → 
-//   last complete bar is previous trading day → forecast for THIS day (the day starting)
-// - If pipeline runs at/after ~13:00 UTC on a trading day → 
-//   last bar is today's (forming or complete) → forecast for NEXT trading day
-// - If pipeline runs on weekend → forecast for Monday
 function getForecastDate(dateStr, timestampStr) {
     const ts = timestampStr ? new Date(timestampStr) : new Date(dateStr);
     const date = new Date(dateStr);
-    
-    // Market opens ~13:30 UTC (9:30 AM ET). Use 13:00 UTC as cutoff.
     const marketOpenHourUTC = 13;
-    const dayOfWeek = ts.getUTCDay(); // 0=Sun, 1=Mon, ..., 6=Sat
+    const dayOfWeek = ts.getUTCDay();
     const hourUTC = ts.getUTCHours();
     const minuteUTC = ts.getUTCMinutes();
-    
     const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-    const isBeforeMarketOpen = hourUTC < marketOpenHourUTC || 
+    const isBeforeMarketOpen = hourUTC < marketOpenHourUTC ||
         (hourUTC === marketOpenHourUTC && minuteUTC === 0);
-    
     if (isWeekend) {
-        // Weekend: forecast for Monday
         const d = new Date(date);
         const day = d.getDay();
-        if (day === 5) d.setDate(d.getDate() + 3); // Friday -> Monday
-        else if (day === 6) d.setDate(d.getDate() + 2); // Saturday -> Monday
-        else if (day === 0) d.setDate(d.getDate() + 1); // Sunday -> Monday
+        if (day === 5) d.setDate(d.getDate() + 3);
+        else if (day === 6) d.setDate(d.getDate() + 2);
+        else if (day === 0) d.setDate(d.getDate() + 1);
         else d.setDate(d.getDate() + 1);
         return d;
     }
-    
-    // Trading day (Mon-Fri)
     if (isBeforeMarketOpen) {
-        // Before market open: last complete bar is previous trading day
-        // Forecast for THIS day (the day starting)
         return date;
     }
-    
-    // At/after market open: last bar is today's (forming or complete)
-    // Forecast for NEXT trading day
     const d = new Date(dateStr);
     const day = d.getDay();
-    if (day === 5) { // Friday
-        d.setDate(d.getDate() + 3); // Monday
-    } else if (day === 6) { // Saturday (shouldn't happen on trading day)
-        d.setDate(d.getDate() + 2); // Monday
+    if (day === 5) {
+        d.setDate(d.getDate() + 3);
+    } else if (day === 6) {
+        d.setDate(d.getDate() + 2);
     } else {
-        d.setDate(d.getDate() + 1); // Next day
+        d.setDate(d.getDate() + 1);
     }
     return d;
+}
+
+function openSiteUpdateModal() {
+    const modal = document.getElementById('siteUpdateModal');
+    if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeSiteUpdateModal() {
+    const modal = document.getElementById('siteUpdateModal');
+    if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeSiteUpdateModal();
+    }
+});
+
+// Close modal on overlay click
+document.addEventListener('click', (e) => {
+    if (e.target.id === 'siteUpdateModal') {
+        closeSiteUpdateModal();
+    }
+});
+
+// Initialize site update button — also set up inline as a fallback
+function initSiteUpdateButton() {
+    const btn = document.getElementById('siteUpdateBtn');
+    if (btn) {
+        btn.addEventListener('click', openSiteUpdateModal);
+    }
+}
+
+// Direct onclick fallback for the button
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('siteUpdateBtn');
+    if (btn && !btn._handlerAttached) {
+        btn.addEventListener('click', openSiteUpdateModal);
+        btn._handlerAttached = true;
+    }
+});
+
+// Show banner when signals / related stocks are loaded
+function showSignalUpdateBanner(date) {
+    const banner = document.createElement('div');
+    banner.className = 'signal-update-banner';
+    const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
+    banner.innerHTML = `
+        <span>📊 ${t('signalsUpdated')} ${new Date(date).toLocaleDateString(locale)}</span>
+        <button onclick="this.parentElement.remove()">×</button>
+    `;
+    document.body.insertBefore(banner, document.body.firstChild);
+    setTimeout(() => banner.remove(), 5000);
 }
 
 // Hide all skeleton loaders
@@ -406,6 +444,7 @@ async function init() {
         setupTabNavigation();
         setupPersonalPage();
         setupRiskModelBar();
+        initSiteUpdateButton();
         await initializeHistoricalPerformance();
         loadRelatedStocks();
         loadDailySignals();
@@ -504,14 +543,14 @@ function renderSignalDots() {
     if (headingEl) headingEl.textContent = t('signalStrength');
     if (infoEl) infoEl.textContent = t('signalStrengthInfo');
 
-    // Add forecast date info next to heading
+    // Add update timestamp info next to heading
     if (headingEl && signalsDate) {
-        let forecastInfoEl = document.getElementById('signalForecastInfo');
-        if (!forecastInfoEl) {
-            forecastInfoEl = document.createElement('span');
-            forecastInfoEl.id = 'signalForecastInfo';
-            forecastInfoEl.className = 'signal-forecast-info';
-            headingEl.insertAdjacentElement('afterend', forecastInfoEl);
+        let updateInfoEl = document.getElementById('signalUpdateInfo');
+        if (!updateInfoEl) {
+            updateInfoEl = document.createElement('span');
+            updateInfoEl.id = 'signalUpdateInfo';
+            updateInfoEl.className = 'signal-update-info';
+            headingEl.insertAdjacentElement('afterend', updateInfoEl);
         }
         const updatedDate = new Date(signalsTimestamp || signalsDate);
         const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
@@ -523,7 +562,7 @@ function renderSignalDots() {
         const forecastStr = forecastDate.toLocaleDateString(locale, {
             year: 'numeric', month: '2-digit', day: '2-digit'
         });
-        forecastInfoEl.textContent = `  ${t('signalsUpdated')} ${updatedStr} ${t('forForecastOf')} ${forecastStr}`;
+        updateInfoEl.textContent = `  ${t('signalsUpdated')} ${updatedStr} ${t('forForecastOf')} ${forecastStr}`;
     }
 
     const hasData = COMMODITIES.some(c => activeSignals[c] !== 0);
