@@ -297,19 +297,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Show banner when signals / related stocks are loaded
-function showSignalUpdateBanner(date) {
-    const banner = document.createElement('div');
-    banner.className = 'signal-update-banner';
-    const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
-    banner.innerHTML = `
-        <span>📊 ${t('signalsUpdated')} ${new Date(date).toLocaleDateString(locale)}</span>
-        <button onclick="this.parentElement.remove()">×</button>
-    `;
-    document.body.insertBefore(banner, document.body.firstChild);
-    setTimeout(() => banner.remove(), 5000);
-}
-
 // Hide all skeleton loaders
 function hideSkeletons() {
     document.querySelectorAll('.skeleton').forEach(el => el.remove());
@@ -1570,10 +1557,8 @@ async function loadRelatedStocks() {
         hideSkeletons();
         displayRelatedStocks(relatedStocksData);
         
-        // Update banner with correct date from metadata
         if (data.metadata && data.metadata.analysis_date) {
             console.log('Data updated:', data.metadata.analysis_date);
-            showSignalUpdateBanner(data.metadata.analysis_date);
         }
     } catch (error) {
         console.error('Error loading related stocks:', error);
