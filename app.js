@@ -1140,16 +1140,14 @@ function renderPerformanceStats() {
         
         COMMODITIES.forEach(commodity => {
             const prediction = entry.predictions[commodity] || 0;
-            const actual = entry.actuals[commodity] || 0;
-            
-            if (prediction === 0) return; // skip flat predictions
+            if (prediction === 0) return;
+            const actual = entry.actuals[commodity];
+            if (actual == null) return;
             
             totalPredictions++;
             commodityStats[commodity].total++;
             
-            const isCorrect = Math.sign(prediction) === Math.sign(actual);
-            
-            if (isCorrect) {
+            if (Math.sign(prediction) === Math.sign(actual)) {
                 correctPredictions++;
                 commodityStats[commodity].correct++;
             }
@@ -1169,9 +1167,9 @@ function renderPerformanceStats() {
         
         COMMODITIES.forEach(commodity => {
             const prediction = entry.predictions[commodity] || 0;
-            const actual = entry.actuals[commodity] || 0;
-            
             if (prediction === 0) return;
+            const actual = entry.actuals[commodity];
+            if (actual == null) return;
             
             liveTotalPredictions++;
             

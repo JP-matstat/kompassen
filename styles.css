@@ -154,26 +154,19 @@ body.dark {
 }
 
 .theme-toggle {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 1100;
     width: 2.75rem;
     height: 2.75rem;
     border: 2px solid transparent;
-    border-radius: 0.75rem;
-    background: var(--card-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--card-border);
-    box-shadow: var(--card-shadow);
+    border-radius: 0.5rem;
+    background: transparent;
     color: var(--text-primary);
     font-size: 1.25rem;
+    line-height: 2.75rem;
+    text-align: center;
+    padding: 0;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: border-color 0.2s, transform 0.15s, background 0.2s;
+    flex-shrink: 0;
 }
 
 .theme-toggle:hover {
@@ -2088,11 +2081,10 @@ tr:hover td {
     }
 
     .theme-toggle {
-        top: 0.5rem;
-        left: 0.5rem;
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1.1rem;
+        line-height: 2.5rem;
     }
 
     header h1 {
@@ -2210,6 +2202,7 @@ tr:hover td {
         width: 2.25rem;
         height: 2.25rem;
         font-size: 1rem;
+        line-height: 2.25rem;
     }
 
     .lang-switcher {
@@ -2217,10 +2210,7 @@ tr:hover td {
         right: 0.4rem;
     }
 
-    .theme-toggle {
-        top: 0.4rem;
-        left: 0.4rem;
-    }
+
 
     .toast-container {
         top: 3.5rem;
@@ -2460,11 +2450,6 @@ input, textarea, select {
 
 .lang-switcher {
     right: max(1rem, env(safe-area-inset-right));
-    top: max(1rem, env(safe-area-inset-top));
-}
-
-.theme-toggle {
-    left: max(1rem, env(safe-area-inset-left));
     top: max(1rem, env(safe-area-inset-top));
 }
 
