@@ -136,12 +136,13 @@ const TRANSLATIONS = {
         modelValidityText: 'The model is trained on historical data and the results shown reflect its ability to predict commodity prices over the last five years. No data leakage has occurred. The model was trained and selected without ever seeing the test data. Therefore, it is very possible that its annualised return will persist in the future.',
         courtageTitle: 'Courtage',
         courtageText: 'Transaction costs of 0.15% per buy/sell (0.3% per round-trip) are included. This is typical for Avanza and Nordnet. Lower fees are available at international brokers, along with a wider range of commodity instruments, but tax rules become more complicated compared to ISK or KF.',
-
         tradingBotCta: 'If you want to run this model as a trading bot, then send me an email and I might be able to help you out.',
         historyAllocTitle: 'Previous Days',
         noHistoryData: 'No historical data yet — check back after more signal days.',
         langSv: 'Svenska',
         langEn: 'English',
+        aboutHeading: 'Recommendation',
+        aboutModelDesc: 'This website gives you buy and sell indicators for ten commodities. It also suggests three ways to trade the commodities: through stocks, ETFs and trackers. Under <a href="javascript:void(0)" onclick="activateTab(\'history\');window.scrollTo(0,0)">historical performance</a> you can see how this model has performed over about five years of backtesting. Since the measured model predicts the price change of the commodities, you come the closest to trading in accordance with it by buying trackers.',
 
         cv_name: 'Johan Persson',
         cv_role: 'Data Scientist / AI Developer',
@@ -424,12 +425,13 @@ const TRANSLATIONS = {
         modelValidityText: 'Modellen har tränats på historisk data och resultaten som presenteras är dess förmåga att prognostisera råvarupriserna de senaste fem åren. Inget dataläckage har skett, dvs modellen har tränats och valts utan någon titt på testdatan. Således är det mycket möjligt att dess årliga avkastning kommer att fortsätta även i framtiden.',
         courtageTitle: 'Courtage',
         courtageText: 'I beräkningarna har jag inkluderat courtage på 0,15% per köp/sälj, dvs 0,3% totalt per position. Detta motsvarar ett typiskt courtage på Avanza och Nordnet. Du kan få betydligt lägre courtage hos internationella mäklare, och dessutom tillgå fler instrument som följer råvarupriser, men skattereglerna blir då komplicerade jämfört med ISK eller KF.',
-
         tradingBotCta: 'Om du vill köra denna modell som en tradingbot, skicka mig ett mejl så kan jag kanske hjälpa dig.',
         historyAllocTitle: 'Tidigare dagar',
         noHistoryData: 'Ingen historik än – kom tillbaka efter fler signaldagar.',
         langSv: 'Svenska',
         langEn: 'English',
+        aboutHeading: 'Rekommendation',
+        aboutModelDesc: 'Den här webbplatsen ger dig köp- och säljindikatorer för tio råvaror.\nDen föreslår också tre sätt att handla råvarorna: genom aktier, ETF:er och trackers.\nUnder historisk utveckling kan du se hur modellen har presterat under cirka fem års backtesting.\nEftersom modellen mäter och förutsäger prisrörelser hos råvarorna, så kommer \ndu närmast att handla i enlighet med den genom att köpa trackers.',
     },
 };
 

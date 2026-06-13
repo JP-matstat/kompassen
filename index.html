@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="lang-switcher" role="group" aria-label="Language">
-        <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SE</button>
+        <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
         <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English">EN</button>
         <button type="button" class="theme-toggle" id="themeToggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
     </div>
@@ -85,11 +85,9 @@
 
             <!-- Explanation Section -->
             <section class="card explanation">
-                <div class="explanation-grid">
-                </div>
                 <div class="advice-section">
-                    <h4>About</h4>
-                    <p>This website gives you buy and sell indicators for ten commodities. It also suggests three ways to trade the commodities: stocks, ETFs and trackers. Under <a href="javascript:void(0)" onclick="activateTab('history');window.scrollTo(0,0)">historical performance</a> you can see how this model has performed over about five years of backtesting. The test shows a return of about 60% per year over the last five years, fees included.</p>
+                    <h4 data-i18n="aboutHeading">About</h4>
+                    <p data-i18n-html="aboutModelDesc">This website gives you buy and sell indicators for ten commodities. It also suggests three ways to trade the commodities: stocks, ETFs and trackers. Under <a href="javascript:void(0)" onclick="activateTab('history');window.scrollTo(0,0)">historical performance</a> you can see how this model has performed over about five years of backtesting. The test shows a return of about 60% per year over the last five years, fees included.</p>
                 </div>
                 <div class="advice-section">
                     <h4 data-i18n="adviceTitle">Rådgivning</h4>

@@ -1019,7 +1019,7 @@ function renderHistoryTable() {
 
                 const dateCell = document.createElement('td');
                 dateCell.className = 'hist-strip-date-cell';
-                const d = new Date(entry.date);
+                const d = (() => { const x = new Date(entry.date); const w = x.getDay(); if (w === 5) x.setDate(x.getDate() + 3); else if (w === 6) x.setDate(x.getDate() + 2); else x.setDate(x.getDate() + 1); return x; })();
                 dateCell.innerHTML = `
                     <span class="strip-date-dow">${d.toLocaleDateString('en-US', { weekday: 'short' })}</span>
                     <span class="strip-date-num">${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
