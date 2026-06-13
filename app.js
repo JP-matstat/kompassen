@@ -1284,7 +1284,7 @@ function drawPerformanceChart() {
     const textColor = isDark ? '#94a3b8' : '#64748b';
     const gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
     const HIGH_COLOR = '#dc2626';
-    const LOW_COLOR = '#2563eb';
+    const LOW_COLOR = '#769EAB';
     const zeroLineColor = isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.08)';
 
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -1511,7 +1511,7 @@ function drawPerformanceChart() {
         tooltip.innerHTML =
             '<div>' + state.dates[closest] + '</div>'
             + '<div style="color:#dc2626">' + hrLabel + ': ' + hVal.toFixed(2) + '</div>'
-            + '<div style="color:#2563eb">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
+            + '<div style="color:#769EAB">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
         tooltip.style.display = 'block';
         tooltip.style.left = Math.min(xVal + 12, state.w - 130) + 'px';
         tooltip.style.top = Math.max(0, state.yScale(Math.max(hVal, lVal)) - 8) + 'px';
