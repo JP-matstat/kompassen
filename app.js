@@ -107,6 +107,27 @@ function saveSignalHistory() {
     }
 }
 
+function saveAllocationSnapshot() {
+    try {
+        const result = calculatePortfolio(getActiveSignals());
+        const snapshot = {
+            date: signalsDate,
+            longShort: {},
+            longOnly: {}
+        };
+        result.longShort.forEach(a => { snapshot.longShort[a.commodity] = a.percentage; });
+        result.longOnly.forEach(a => { snapshot.longOnly[a.commodity] = a.percentage; });
+        let history = JSON.parse(localStorage.getItem('allocationHistory') || '[]');
+        const existingIdx = history.findIndex(e => e.date === snapshot.date);
+        if (existingIdx === -1) {
+            history.unshift(snapshot);
+            localStorage.setItem('allocationHistory', JSON.stringify(history.slice(0, 30)));
+        }
+    } catch (e) {
+        console.warn('Failed to save allocation snapshot:', e);
+    }
+}
+
 // Get last N trading days from history (excluding current)
 function getRecentHistory(count) {
     return signalHistory.slice(1, count + 1);
@@ -114,47 +135,24 @@ function getRecentHistory(count) {
 
 // Compute allocation % change vs previous trading day
 function computeAllocationChange() {
-    const yesterdaySignals = getAllocationChangeSignals();
-    if (!yesterdaySignals) return null;
-
     const mode = longOnlyMode ? 'longOnly' : 'longShort';
     const todayResult = calculatePortfolio(getActiveSignals());
-    const yesterdayResult = calculatePortfolio(yesterdaySignals);
-
     const todayMap = {};
-    const yesterdayMap = {};
-
     todayResult[mode].forEach(a => { todayMap[a.commodity] = a.percentage; });
-    yesterdayResult[mode].forEach(a => { yesterdayMap[a.commodity] = a.percentage; });
 
+    const history = JSON.parse(localStorage.getItem('allocationHistory') || '[]');
+    if (history.length < 2) return null;
+
+    const yesterday = history[1][mode] || {};
     const changes = {};
     COMMODITIES.forEach(c => {
-        changes[c] = (todayMap[c] || 0) - (yesterdayMap[c] || 0);
+        changes[c] = (todayMap[c] || 0) - (yesterday[c] || 0);
     });
     return changes;
 }
 
 // Find yesterday's signals: try localStorage history first,
 // fall back to most recent entry in daily_predictions.json
-function getAllocationChangeSignals() {
-    // Prefer localStorage history
-    if (signalHistory.length >= 2) {
-        const s = signalHistory[1].signals;
-        if (s) return s;
-    }
-
-    // Fallback: most recent historicalData entry from a different date than today
-    if (historicalData.length > 0) {
-        const sorted = [...historicalData].sort((a, b) => b.date.localeCompare(a.date));
-        const latest = sorted[0];
-        if (latest && latest.predictions && latest.date !== signalsDate) {
-            return latest.predictions;
-        }
-    }
-
-    return null;
-}
-
 // Load daily signals from external source
 async function loadDailySignals() {
     try {
@@ -197,6 +195,7 @@ async function loadDailySignals() {
         const timestamp = new Date(data.timestamp || data.date).toLocaleString();
         console.log(`Signals loaded from ${timestamp}`);
         
+        saveAllocationSnapshot();
         renderAllocation();
         
     } catch (error) {
