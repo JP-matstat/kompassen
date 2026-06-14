@@ -1273,7 +1273,7 @@ function drawPerformanceChart() {
     const textColor = isDark ? '#94a3b8' : '#64748b';
     const gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
     const HIGH_COLOR = '#dc2626';
-    const LOW_COLOR = '#769EAB';
+    const LOW_COLOR = '#4682B4';
     const zeroLineColor = isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.08)';
 
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -1398,8 +1398,8 @@ function drawPerformanceChart() {
         ctx.fill();
     }
 
-    const highAlpha = currentRiskModel === 'high' ? 1 : 0.25;
-    const lowAlpha = currentRiskModel === 'low' ? 1 : 0.25;
+    const highAlpha = currentRiskModel === 'high' ? 1 : 0.5;
+    const lowAlpha = currentRiskModel === 'low' ? 1 : 0.5;
     ctx.globalAlpha = highAlpha;
     drawCurve(highRisk, HIGH_COLOR);
     ctx.globalAlpha = lowAlpha;
@@ -1428,11 +1428,11 @@ function drawPerformanceChart() {
     ctx.globalAlpha = lowAlpha;
     ctx.strokeStyle = LOW_COLOR;
     ctx.beginPath();
-    ctx.moveTo(legendX + 120, legendY + 6);
-    ctx.lineTo(legendX + 140, legendY + 6);
+    ctx.moveTo(legendX, legendY + 22);
+    ctx.lineTo(legendX + 20, legendY + 22);
     ctx.stroke();
-    ctx.fillText(isSv ? 'Lågriskmodell' : 'Low risk', legendX + 144, legendY + 10);
     ctx.globalAlpha = 1;
+    ctx.fillText(isSv ? 'Lågriskmodell' : 'Low risk', legendX + 24, legendY + 26);
 
     ctx.fillStyle = textColor;
     ctx.font = '11px system-ui, sans-serif';
@@ -1500,7 +1500,7 @@ function drawPerformanceChart() {
         tooltip.innerHTML =
             '<div>' + state.dates[closest] + '</div>'
             + '<div style="color:#dc2626">' + hrLabel + ': ' + hVal.toFixed(2) + '</div>'
-            + '<div style="color:#769EAB">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
+            + '<div style="color:#4682B4">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
         tooltip.style.display = 'block';
         tooltip.style.left = Math.min(xVal + 12, state.w - 130) + 'px';
         tooltip.style.top = Math.max(0, state.yScale(Math.max(hVal, lVal)) - 8) + 'px';

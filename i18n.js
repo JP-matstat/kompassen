@@ -138,7 +138,6 @@ const TRANSLATIONS = {
         courtageTitle: 'Courtage',
         courtageText: 'Transaction costs of 0.15% per buy/sell (0.3% per round-trip) are included. This is typical for Avanza and Nordnet. Lower fees are available at international brokers, along with a wider range of commodity instruments, but tax rules become more complicated compared to ISK or KF.',
         predictionGitProof: 'To provide proof of the model\'s prediction accuracy, all daily prediction results are uploaded to the project\'s Git repository every weekday. <a href="https://github.com/JP-matstat/kompassen/tree/main/predictions" target="_blank">Browse the prediction history on GitHub &rarr;</a>',
-
         tradingBotCta: 'If you want to run this model as a trading bot, then send me an email and I might be able to help you out.',
         historyAllocTitle: 'Previous Days',
         noHistoryData: 'No historical data yet — check back after more signal days.',
@@ -430,14 +429,13 @@ const TRANSLATIONS = {
         courtageTitle: 'Courtage',
         courtageText: 'I beräkningarna har jag inkluderat courtage på 0,15% per köp/sälj, dvs 0,3% totalt per position. Detta motsvarar ett typiskt courtage på Avanza och Nordnet. Du kan få betydligt lägre courtage hos internationella mäklare, och dessutom tillgå fler instrument som följer råvarupriser, men skattereglerna blir då komplicerade jämfört med ISK eller KF.',
         predictionGitProof: 'För att ge bevis på modellens prognosträffsäkerhet så laddas alla dagliga prognosresultat upp till projektets Git-repository varje vardag. <a href="https://github.com/JP-matstat/kompassen/tree/main/predictions" target="_blank">Bläddra i prognoshistoriken på GitHub &rarr;</a>',
-
         tradingBotCta: 'Om du vill köra denna modell som en tradingbot, skicka mig ett mejl så kan jag kanske hjälpa dig.',
         historyAllocTitle: 'Tidigare dagar',
         noHistoryData: 'Ingen historik än – kom tillbaka efter fler signaldagar.',
         langSv: 'Svenska',
         langEn: 'English',
         aboutHeading: 'Rekommendation',
-        aboutModelDesc: 'Den här webbplatsen ger dig köp- och säljindikatorer för tio råvaror.\nDen föreslår också tre sätt att handla råvarorna: genom aktier, ETF:er och trackers.\nUnder historisk utveckling kan du se hur modellen har presterat under cirka fem års backtesting.\nEftersom modellen mäter och förutsäger prisrörelser hos råvarorna, så kommer \ndu närmast att handla i enlighet med den genom att köpa trackers.',
+        aboutModelDesc: 'Den här webbplatsen ger dig köp- och säljindikatorer för tio råvaror.\nDen föreslår också tre sätt att handla råvarorna: genom aktier, ETF:er och trackers.\nUnder historisk utveckling kan du se hur modellen har presterat under cirka fem års backtesting.\nEftersom modellen mäter och förutsäger prisrörelser hos råvarorna, så kommer \ndu närmast att handla i enlighet med modellen, genom att köpa trackers.',
     },
 };
 
