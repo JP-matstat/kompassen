@@ -377,28 +377,6 @@ header h1 {
     white-space: nowrap;
 }
 
-.btn-history-toggle {
-    margin-left: auto;
-    width: 2.25rem;
-    height: 2.25rem;
-    border: 2px solid var(--border-color);
-    border-radius: 0.5rem;
-    background: var(--card-bg);
-    color: var(--text-primary);
-    font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-}
-
-.btn-history-toggle:hover {
-    border-color: var(--primary-color);
-    background: var(--primary-light);
-    color: var(--primary-color);
-}
 
 .signal-grid {
     display: grid;
@@ -664,6 +642,15 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
+}
+
+#currentDayTable table {
+    table-layout: fixed;
+}
+
+#currentDayTable th,
+#currentDayTable td {
+    width: 20%;
 }
 
 thead {
@@ -2019,9 +2006,6 @@ tr:hover td {
 }
 
 /* History allocation toggle */
-.history-allocations.hidden + .btn-history-toggle {
-    transform: rotate(0deg);
-}
 
 .email-wrap {
     margin-top: 0.5rem;

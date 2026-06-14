@@ -64,7 +64,7 @@ const DEFAULT_SIGNALS = {
 let signals = { ...DEFAULT_SIGNALS };
 let signalsDate = '';
 let signalsTimestamp = ''; // Full ISO timestamp from signals.json
-let showHistory = false; // Toggle for 5-day history
+
 let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
 let signalHistory = []; // Historical signals from localStorage: [{date, signals}]
@@ -412,8 +412,6 @@ function refreshLanguageUI() {
         themeBtn.title = isDark ? t('switchLight') : t('switchDark');
         themeBtn.setAttribute('aria-label', isDark ? t('switchLight') : t('switchDark'));
     }
-    const histBtn = document.getElementById('showHistoryBtn');
-    if (histBtn) histBtn.title = t('showHistory');
     const closeBtn = document.getElementById('modalCloseBtn');
     if (closeBtn) closeBtn.setAttribute('aria-label', t('modalCancel'));
     updateAllocModeLabel();
@@ -455,15 +453,6 @@ function getSignalClass(value) {
 function setupEventListeners() {
 
     
-    const historyBtn = document.getElementById('showHistoryBtn');
-    if (historyBtn) {
-        historyBtn.addEventListener('click', () => {
-            showHistory = !showHistory;
-            historyBtn.textContent = showHistory ? '−' : '+';
-            renderAllocation();
-        });
-    }
-
     const allocToggle = document.getElementById('allocModeToggle');
     if (allocToggle) {
         allocToggle.addEventListener('click', () => {
@@ -611,7 +600,7 @@ function renderAllocation() {
         dateEl.textContent = getAllocationDate(signalsDate);
     }
     
-    const changes = showHistory ? computeAllocationChange() : null;
+    const changes = computeAllocationChange() || {};
     displayAllocation(alloc, 'currentDayChart', 'currentDayTable', changes);
 }
 
@@ -660,7 +649,7 @@ function displayAllocation(allocations, chartId, tableId, changes) {
             <th>${t('thAllocation')}</th>
             <th>${t('thPosition')}</th>`;
     if (changes) {
-        headerHtml += `<th class="change-col">${t('allocChange')}</th>`;
+        headerHtml += `<th class="change-col" title="${t('allocChangeTooltip')}">${t('allocChange')}</th>`;
     }
     headerHtml += '</tr>';
     thead.innerHTML = headerHtml;
