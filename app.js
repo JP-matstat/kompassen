@@ -600,7 +600,7 @@ function renderAllocation() {
         dateEl.textContent = getAllocationDate(signalsDate);
     }
     
-    const changes = computeAllocationChange();
+    const changes = computeAllocationChange() || {};
     displayAllocation(alloc, 'currentDayChart', 'currentDayTable', changes);
 }
 
