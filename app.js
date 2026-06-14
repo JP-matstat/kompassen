@@ -64,7 +64,7 @@ const DEFAULT_SIGNALS = {
 let signals = { ...DEFAULT_SIGNALS };
 let signalsDate = '';
 let signalsTimestamp = ''; // Full ISO timestamp from signals.json
-let showHistory = false; // Toggle for 5-day history
+
 let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
 let signalHistory = []; // Historical signals from localStorage: [{date, signals}]
@@ -412,8 +412,6 @@ function refreshLanguageUI() {
         themeBtn.title = isDark ? t('switchLight') : t('switchDark');
         themeBtn.setAttribute('aria-label', isDark ? t('switchLight') : t('switchDark'));
     }
-    const histBtn = document.getElementById('showHistoryBtn');
-    if (histBtn) histBtn.title = t('showHistory');
     const closeBtn = document.getElementById('modalCloseBtn');
     if (closeBtn) closeBtn.setAttribute('aria-label', t('modalCancel'));
     updateAllocModeLabel();
@@ -455,15 +453,6 @@ function getSignalClass(value) {
 function setupEventListeners() {
 
     
-    const historyBtn = document.getElementById('showHistoryBtn');
-    if (historyBtn) {
-        historyBtn.addEventListener('click', () => {
-            showHistory = !showHistory;
-            historyBtn.textContent = showHistory ? '−' : '+';
-            renderAllocation();
-        });
-    }
-
     const allocToggle = document.getElementById('allocModeToggle');
     if (allocToggle) {
         allocToggle.addEventListener('click', () => {
@@ -611,7 +600,7 @@ function renderAllocation() {
         dateEl.textContent = getAllocationDate(signalsDate);
     }
     
-    const changes = showHistory ? computeAllocationChange() : null;
+    const changes = computeAllocationChange();
     displayAllocation(alloc, 'currentDayChart', 'currentDayTable', changes);
 }
 
@@ -660,7 +649,7 @@ function displayAllocation(allocations, chartId, tableId, changes) {
             <th>${t('thAllocation')}</th>
             <th>${t('thPosition')}</th>`;
     if (changes) {
-        headerHtml += `<th class="change-col">${t('allocChange')}</th>`;
+        headerHtml += `<th class="change-col" title="${t('allocChangeTooltip')}">${t('allocChange')}</th>`;
     }
     headerHtml += '</tr>';
     thead.innerHTML = headerHtml;
@@ -1284,7 +1273,7 @@ function drawPerformanceChart() {
     const textColor = isDark ? '#94a3b8' : '#64748b';
     const gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
     const HIGH_COLOR = '#dc2626';
-    const LOW_COLOR = '#769EAB';
+    const LOW_COLOR = '#4682B4';
     const zeroLineColor = isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.08)';
 
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -1409,8 +1398,8 @@ function drawPerformanceChart() {
         ctx.fill();
     }
 
-    const highAlpha = currentRiskModel === 'high' ? 1 : 0.25;
-    const lowAlpha = currentRiskModel === 'low' ? 1 : 0.25;
+    const highAlpha = currentRiskModel === 'high' ? 1 : 0.5;
+    const lowAlpha = currentRiskModel === 'low' ? 1 : 0.5;
     ctx.globalAlpha = highAlpha;
     drawCurve(highRisk, HIGH_COLOR);
     ctx.globalAlpha = lowAlpha;
@@ -1439,11 +1428,11 @@ function drawPerformanceChart() {
     ctx.globalAlpha = lowAlpha;
     ctx.strokeStyle = LOW_COLOR;
     ctx.beginPath();
-    ctx.moveTo(legendX + 120, legendY + 6);
-    ctx.lineTo(legendX + 140, legendY + 6);
+    ctx.moveTo(legendX, legendY + 22);
+    ctx.lineTo(legendX + 20, legendY + 22);
     ctx.stroke();
-    ctx.fillText(isSv ? 'Lågriskmodell' : 'Low risk', legendX + 144, legendY + 10);
     ctx.globalAlpha = 1;
+    ctx.fillText(isSv ? 'Lågriskmodell' : 'Low risk', legendX + 24, legendY + 26);
 
     ctx.fillStyle = textColor;
     ctx.font = '11px system-ui, sans-serif';
@@ -1511,7 +1500,7 @@ function drawPerformanceChart() {
         tooltip.innerHTML =
             '<div>' + state.dates[closest] + '</div>'
             + '<div style="color:#dc2626">' + hrLabel + ': ' + hVal.toFixed(2) + '</div>'
-            + '<div style="color:#769EAB">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
+            + '<div style="color:#4682B4">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
         tooltip.style.display = 'block';
         tooltip.style.left = Math.min(xVal + 12, state.w - 130) + 'px';
         tooltip.style.top = Math.max(0, state.yScale(Math.max(hVal, lVal)) - 8) + 'px';

@@ -50,10 +50,10 @@
 }
 
 body.dark {
-    --primary-color: #769EAB;
+    --primary-color: #4682B4;
     --primary-hover: #5A7E8B;
     --primary-light: rgba(118, 158, 171, 0.1);
-    --pending-color: #769EAB;
+    --pending-color: #4682B4;
 
     --bg-gradient-start: #0f172a;
     --bg-gradient-mid: #1e293b;
@@ -377,28 +377,6 @@ header h1 {
     white-space: nowrap;
 }
 
-.btn-history-toggle {
-    margin-left: auto;
-    width: 2.25rem;
-    height: 2.25rem;
-    border: 2px solid var(--border-color);
-    border-radius: 0.5rem;
-    background: var(--card-bg);
-    color: var(--text-primary);
-    font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-}
-
-.btn-history-toggle:hover {
-    border-color: var(--primary-color);
-    background: var(--primary-light);
-    color: var(--primary-color);
-}
 
 .signal-grid {
     display: grid;
@@ -664,6 +642,15 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
+}
+
+#currentDayTable table {
+    table-layout: fixed;
+}
+
+#currentDayTable th,
+#currentDayTable td {
+    width: 20%;
 }
 
 thead {
@@ -1851,7 +1838,7 @@ tr:hover td {
 }
 
 .toast-info {
-    background: linear-gradient(135deg, #769EAB, #5A7E8B);
+    background: linear-gradient(135deg, #4682B4, #5A7E8B);
 }
 
 @keyframes toastIn {
@@ -2018,10 +2005,6 @@ tr:hover td {
     margin-bottom: 1rem;
 }
 
-/* History allocation toggle */
-.history-allocations.hidden + .btn-history-toggle {
-    transform: rotate(0deg);
-}
 
 .email-wrap {
     margin-top: 0.5rem;
@@ -2485,7 +2468,7 @@ input, textarea, select {
 .btn-info-link {
     background: none;
     border: none;
-    color: var(--primary-color, #769EAB);
+    color: var(--primary-color, #4682B4);
     font-size: 0.85rem;
     font-weight: 500;
     cursor: pointer;
