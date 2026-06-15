@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-15",
+  "prediction_based_on": "2026-06-15",
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "pred_up": 0.08531,
+      "pred_down": 0.12392,
+      "pred_no_trend": 0.79077,
+      "volatility_size": 0.50207,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Gold",
+      "pred_up": 0.07257,
+      "pred_down": 0.09142,
+      "pred_no_trend": 0.836,
+      "volatility_size": 0.69229,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Silver",
+      "pred_up": 0.28096,
+      "pred_down": 0.08866,
+      "pred_no_trend": 0.63038,
+      "volatility_size": 0.71211,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Copper",
+      "pred_up": 0.81895,
+      "pred_down": 0.0051,
+      "pred_no_trend": 0.17595,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.81895
+    },
+    {
+      "commodity": "Aluminium",
+      "pred_up": 0.41958,
+      "pred_down": 0.03919,
+      "pred_no_trend": 0.54124,
+      "volatility_size": 0.60254,
+      "signal_x_inv_vol": 0.25281
+    },
+    {
+      "commodity": "Cocoa",
+      "pred_up": 0.02508,
+      "pred_down": 0.58653,
+      "pred_no_trend": 0.38839,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Cotton",
+      "pred_up": 0.72944,
+      "pred_down": 0.00186,
+      "pred_no_trend": 0.2687,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.72944
+    },
+    {
+      "commodity": "Coffee",
+      "pred_up": 0.00311,
+      "pred_down": 0.79661,
+      "pred_no_trend": 0.20029,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": -0.79661
+    },
+    {
+      "commodity": "Natural Gas",
+      "pred_up": 0.10371,
+      "pred_down": 0.44646,
+      "pred_no_trend": 0.44983,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Sugar",
+      "pred_up": 0.00967,
+      "pred_down": 0.88861,
+      "pred_no_trend": 0.10172,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": -0.88861
+    }
+  ]
+}
