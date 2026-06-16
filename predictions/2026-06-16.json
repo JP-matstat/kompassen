@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-16",
+  "prediction_based_on": "2026-06-16",
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "pred_up": 0.04123,
+      "pred_down": 0.20625,
+      "pred_no_trend": 0.75252,
+      "volatility_size": 0.51126,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Gold",
+      "pred_up": 0.07624,
+      "pred_down": 0.08686,
+      "pred_no_trend": 0.8369,
+      "volatility_size": 0.69234,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Silver",
+      "pred_up": 0.273,
+      "pred_down": 0.08965,
+      "pred_no_trend": 0.63736,
+      "volatility_size": 0.70568,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Copper",
+      "pred_up": 0.81319,
+      "pred_down": 0.00519,
+      "pred_no_trend": 0.18162,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.81319
+    },
+    {
+      "commodity": "Aluminium",
+      "pred_up": 0.46063,
+      "pred_down": 0.03394,
+      "pred_no_trend": 0.50543,
+      "volatility_size": 0.60258,
+      "signal_x_inv_vol": 0.27757
+    },
+    {
+      "commodity": "Cocoa",
+      "pred_up": 0.03719,
+      "pred_down": 0.52103,
+      "pred_no_trend": 0.44178,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Cotton",
+      "pred_up": 0.7351,
+      "pred_down": 0.00175,
+      "pred_no_trend": 0.26315,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.7351
+    },
+    {
+      "commodity": "Coffee",
+      "pred_up": 0.008,
+      "pred_down": 0.72685,
+      "pred_no_trend": 0.26514,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": -0.72685
+    },
+    {
+      "commodity": "Natural Gas",
+      "pred_up": 0.15218,
+      "pred_down": 0.34073,
+      "pred_no_trend": 0.5071,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": 0.0
+    },
+    {
+      "commodity": "Sugar",
+      "pred_up": 0.01221,
+      "pred_down": 0.86704,
+      "pred_no_trend": 0.12075,
+      "volatility_size": 1.0,
+      "signal_x_inv_vol": -0.86704
+    }
+  ]
+}
