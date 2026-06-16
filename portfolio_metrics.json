@@ -1,23 +1,23 @@
 {
-  "date": "2026-06-15",
-  "timestamp": "2026-06-15T22:50:15Z",
-  "window_days": 1335,
-  "avg_trades_per_year": 122.3,
+  "date": "2026-06-16",
+  "timestamp": "2026-06-16T23:09:15Z",
+  "window_days": 1336,
+  "avg_trades_per_year": 122.2,
   "avg_trades_per_year_sym": 24.9,
   "metrics": {
-    "cumulative_return": 13.8175,
-    "annualized_return": 0.6634,
-    "sharpe_ratio": 4.0124,
+    "cumulative_return": 13.6291,
+    "annualized_return": 0.6588,
+    "sharpe_ratio": 3.9877,
     "max_drawdown": -0.0699,
-    "win_rate": 0.621,
-    "profit_factor": 1.9082
+    "win_rate": 0.6205,
+    "profit_factor": 1.9004
   },
   "metrics_symmetric": {
-    "cumulative_return": 10.4502,
-    "annualized_return": 0.5844,
-    "sharpe_ratio": 4.0455,
+    "cumulative_return": 10.3143,
+    "annualized_return": 0.5803,
+    "sharpe_ratio": 4.0197,
     "max_drawdown": -0.0541,
-    "win_rate": 0.6217,
-    "profit_factor": 1.9157
+    "win_rate": 0.6213,
+    "profit_factor": 1.9076
   }
 }
