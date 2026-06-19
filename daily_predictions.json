@@ -222752,7 +222752,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.7205,
-        "Natural Gas": 0.656,
+        "Natural Gas": 0.6558,
         "Sugar": 0.5667
       },
       "predictions_low_risk": {
@@ -222764,7 +222764,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6526,
-        "Natural Gas": 0.5589,
+        "Natural Gas": 0.5588,
         "Sugar": 0.5163
       },
       "actuals": {
@@ -222791,7 +222791,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.7205,
-        "Natural Gas": 0.6583,
+        "Natural Gas": 0.6581,
         "Sugar": 0.57
       },
       "predictions_low_risk": {
@@ -222803,7 +222803,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6506,
-        "Natural Gas": 0.5612,
+        "Natural Gas": 0.5611,
         "Sugar": 0.5374
       },
       "actuals": {
@@ -222830,7 +222830,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.7205,
-        "Natural Gas": 0.6617,
+        "Natural Gas": 0.6615,
         "Sugar": 0.5699
       },
       "predictions_low_risk": {
@@ -222842,7 +222842,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6465,
-        "Natural Gas": 0.5299,
+        "Natural Gas": 0.5297,
         "Sugar": 0.5312
       },
       "actuals": {
@@ -222869,7 +222869,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.7205,
-        "Natural Gas": 0.6622,
+        "Natural Gas": 0.662,
         "Sugar": 0.5644
       },
       "predictions_low_risk": {
@@ -222881,7 +222881,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6481,
-        "Natural Gas": 0.5369,
+        "Natural Gas": 0.5367,
         "Sugar": 0.526
       },
       "actuals": {
@@ -222908,7 +222908,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4533,
+        "Natural Gas": 0.453,
         "Sugar": 0.5834
       },
       "predictions_low_risk": {
@@ -222920,7 +222920,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5376,
-        "Natural Gas": 0.368,
+        "Natural Gas": 0.3678,
         "Sugar": 0.5453
       },
       "actuals": {
@@ -222947,7 +222947,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4508,
+        "Natural Gas": 0.4505,
         "Sugar": 0.5842
       },
       "predictions_low_risk": {
@@ -222959,7 +222959,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5316,
-        "Natural Gas": 0.3661,
+        "Natural Gas": 0.3659,
         "Sugar": 0.5442
       },
       "actuals": {
@@ -222986,7 +222986,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4497,
+        "Natural Gas": 0.4494,
         "Sugar": 0.5891
       },
       "predictions_low_risk": {
@@ -222998,7 +222998,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5311,
-        "Natural Gas": 0.3678,
+        "Natural Gas": 0.3676,
         "Sugar": 0.5482
       },
       "actuals": {
@@ -223025,7 +223025,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4532,
+        "Natural Gas": 0.4529,
         "Sugar": 0.5884
       },
       "predictions_low_risk": {
@@ -223037,7 +223037,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5327,
-        "Natural Gas": 0.3678,
+        "Natural Gas": 0.3676,
         "Sugar": 0.5461
       },
       "actuals": {
@@ -223064,7 +223064,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4544,
+        "Natural Gas": 0.4541,
         "Sugar": 0.5909
       },
       "predictions_low_risk": {
@@ -223076,7 +223076,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5453,
-        "Natural Gas": 0.366,
+        "Natural Gas": 0.3657,
         "Sugar": 0.5516
       },
       "actuals": {
@@ -223103,7 +223103,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4488,
+        "Natural Gas": 0.4485,
         "Sugar": 0.5788
       },
       "predictions_low_risk": {
@@ -223115,7 +223115,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.549,
-        "Natural Gas": 0.3616,
+        "Natural Gas": 0.3613,
         "Sugar": 0.5407
       },
       "actuals": {
@@ -223142,7 +223142,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4508,
+        "Natural Gas": 0.4505,
         "Sugar": 0.5802
       },
       "predictions_low_risk": {
@@ -223154,7 +223154,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5487,
-        "Natural Gas": 0.3632,
+        "Natural Gas": 0.3629,
         "Sugar": 0.5416
       },
       "actuals": {
@@ -223181,7 +223181,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4492,
+        "Natural Gas": 0.4489,
         "Sugar": 0.5763
       },
       "predictions_low_risk": {
@@ -223193,7 +223193,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5477,
-        "Natural Gas": 0.3629,
+        "Natural Gas": 0.3627,
         "Sugar": 0.5401
       },
       "actuals": {
@@ -223220,7 +223220,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.449,
+        "Natural Gas": 0.4487,
         "Sugar": 0.5766
       },
       "predictions_low_risk": {
@@ -223232,7 +223232,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5525,
-        "Natural Gas": 0.3738,
+        "Natural Gas": 0.3736,
         "Sugar": 0.5483
       },
       "actuals": {
@@ -223259,7 +223259,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4517,
+        "Natural Gas": 0.4514,
         "Sugar": 0.5764
       },
       "predictions_low_risk": {
@@ -223271,7 +223271,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5402,
-        "Natural Gas": 0.3703,
+        "Natural Gas": 0.37,
         "Sugar": 0.5488
       },
       "actuals": {
@@ -223298,7 +223298,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6029,
-        "Natural Gas": 0.4485,
+        "Natural Gas": 0.4482,
         "Sugar": 0.5768
       },
       "predictions_low_risk": {
@@ -223310,7 +223310,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.537,
-        "Natural Gas": 0.3786,
+        "Natural Gas": 0.3784,
         "Sugar": 0.5488
       },
       "actuals": {
@@ -223337,7 +223337,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6582,
-        "Natural Gas": 0.4538,
+        "Natural Gas": 0.4535,
         "Sugar": 0.5765
       },
       "predictions_low_risk": {
@@ -223349,7 +223349,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5888,
-        "Natural Gas": 0.3801,
+        "Natural Gas": 0.3799,
         "Sugar": 0.5382
       },
       "actuals": {
@@ -223376,7 +223376,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6578,
-        "Natural Gas": 0.4533,
+        "Natural Gas": 0.453,
         "Sugar": 0.5712
       },
       "predictions_low_risk": {
@@ -223388,7 +223388,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5918,
-        "Natural Gas": 0.3795,
+        "Natural Gas": 0.3793,
         "Sugar": 0.5363
       },
       "actuals": {
@@ -223415,7 +223415,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.659,
-        "Natural Gas": 0.4553,
+        "Natural Gas": 0.455,
         "Sugar": 0.5664
       },
       "predictions_low_risk": {
@@ -223427,7 +223427,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5958,
-        "Natural Gas": 0.3843,
+        "Natural Gas": 0.384,
         "Sugar": 0.5373
       },
       "actuals": {
@@ -223454,7 +223454,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6619,
-        "Natural Gas": 0.4533,
+        "Natural Gas": 0.453,
         "Sugar": 0.5695
       },
       "predictions_low_risk": {
@@ -223466,7 +223466,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5963,
-        "Natural Gas": 0.3833,
+        "Natural Gas": 0.383,
         "Sugar": 0.5375
       },
       "actuals": {
@@ -223493,7 +223493,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6628,
-        "Natural Gas": 0.4525,
+        "Natural Gas": 0.4522,
         "Sugar": 0.5657
       },
       "predictions_low_risk": {
@@ -223505,7 +223505,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6081,
-        "Natural Gas": 0.385,
+        "Natural Gas": 0.3847,
         "Sugar": 0.5364
       },
       "actuals": {
@@ -223532,7 +223532,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6616,
-        "Natural Gas": 0.4494,
+        "Natural Gas": 0.4491,
         "Sugar": 0.5653
       },
       "predictions_low_risk": {
@@ -223544,7 +223544,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6082,
-        "Natural Gas": 0.3852,
+        "Natural Gas": 0.3849,
         "Sugar": 0.5457
       },
       "actuals": {
@@ -223571,7 +223571,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6626,
-        "Natural Gas": 0.4517,
+        "Natural Gas": 0.4514,
         "Sugar": 0.5649
       },
       "predictions_low_risk": {
@@ -223583,7 +223583,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6051,
-        "Natural Gas": 0.3775,
+        "Natural Gas": 0.3773,
         "Sugar": 0.5473
       },
       "actuals": {
@@ -223610,7 +223610,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6612,
-        "Natural Gas": 0.4472,
+        "Natural Gas": 0.4469,
         "Sugar": 0.5623
       },
       "predictions_low_risk": {
@@ -223622,7 +223622,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6027,
-        "Natural Gas": 0.3798,
+        "Natural Gas": 0.3795,
         "Sugar": 0.5545
       },
       "actuals": {
@@ -223649,7 +223649,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6597,
-        "Natural Gas": 0.4517,
+        "Natural Gas": 0.4514,
         "Sugar": 0.5639
       },
       "predictions_low_risk": {
@@ -223661,7 +223661,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5993,
-        "Natural Gas": 0.3835,
+        "Natural Gas": 0.3833,
         "Sugar": 0.555
       },
       "actuals": {
@@ -223688,7 +223688,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6584,
-        "Natural Gas": 0.4549,
+        "Natural Gas": 0.4546,
         "Sugar": 0.561
       },
       "predictions_low_risk": {
@@ -223700,7 +223700,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5957,
-        "Natural Gas": 0.3901,
+        "Natural Gas": 0.3899,
         "Sugar": 0.5537
       },
       "actuals": {
@@ -223727,7 +223727,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.6617,
-        "Natural Gas": 0.4576,
+        "Natural Gas": 0.4574,
         "Sugar": 0.5581
       },
       "predictions_low_risk": {
@@ -223739,7 +223739,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5994,
-        "Natural Gas": 0.3345,
+        "Natural Gas": 0.3343,
         "Sugar": 0.5581
       },
       "actuals": {
@@ -223766,7 +223766,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.663,
-        "Natural Gas": 0.4593,
+        "Natural Gas": 0.459,
         "Sugar": 0.5582
       },
       "predictions_low_risk": {
@@ -223778,7 +223778,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": 0.5996,
-        "Natural Gas": 0.3317,
+        "Natural Gas": 0.3315,
         "Sugar": 0.5582
       },
       "actuals": {
@@ -223805,7 +223805,7 @@
         "Cocoa": 0.2409,
         "Cotton": 0.0,
         "Coffee": 0.7959,
-        "Natural Gas": 0.7865,
+        "Natural Gas": 0.7864,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -223817,7 +223817,7 @@
         "Cocoa": 0.2557,
         "Cotton": 0.0,
         "Coffee": 0.7235,
-        "Natural Gas": 0.5677,
+        "Natural Gas": 0.5676,
         "Sugar": 0.0
       },
       "actuals": {
@@ -223844,7 +223844,7 @@
         "Cocoa": 0.2435,
         "Cotton": 0.0,
         "Coffee": 0.7972,
-        "Natural Gas": 0.7876,
+        "Natural Gas": 0.7875,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -223856,7 +223856,7 @@
         "Cocoa": 0.2574,
         "Cotton": 0.0,
         "Coffee": 0.7459,
-        "Natural Gas": 0.5672,
+        "Natural Gas": 0.5671,
         "Sugar": 0.0
       },
       "actuals": {
@@ -223883,7 +223883,7 @@
         "Cocoa": 0.247,
         "Cotton": 0.0,
         "Coffee": 0.795,
-        "Natural Gas": 0.7919,
+        "Natural Gas": 0.7918,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -223895,7 +223895,7 @@
         "Cocoa": 0.2595,
         "Cotton": 0.0,
         "Coffee": 0.7636,
-        "Natural Gas": 0.5703,
+        "Natural Gas": 0.5702,
         "Sugar": 0.0
       },
       "actuals": {
@@ -223922,7 +223922,7 @@
         "Cocoa": 0.2471,
         "Cotton": 0.0,
         "Coffee": 0.7964,
-        "Natural Gas": 0.7917,
+        "Natural Gas": 0.7916,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -223934,7 +223934,7 @@
         "Cocoa": 0.2597,
         "Cotton": 0.0,
         "Coffee": 0.7649,
-        "Natural Gas": 0.569,
+        "Natural Gas": 0.5689,
         "Sugar": 0.0
       },
       "actuals": {
@@ -223961,7 +223961,7 @@
         "Cocoa": 0.247,
         "Cotton": 0.0,
         "Coffee": 0.7957,
-        "Natural Gas": 0.7911,
+        "Natural Gas": 0.791,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -223973,7 +223973,7 @@
         "Cocoa": 0.268,
         "Cotton": 0.0,
         "Coffee": 0.7681,
-        "Natural Gas": 0.5675,
+        "Natural Gas": 0.5674,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224000,7 +224000,7 @@
         "Cocoa": 0.2472,
         "Cotton": 0.0,
         "Coffee": 0.7947,
-        "Natural Gas": 0.7896,
+        "Natural Gas": 0.7895,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224012,7 +224012,7 @@
         "Cocoa": 0.2686,
         "Cotton": 0.0,
         "Coffee": 0.7662,
-        "Natural Gas": 0.5668,
+        "Natural Gas": 0.5667,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224117,7 +224117,7 @@
         "Cocoa": 0.2384,
         "Cotton": 0.0,
         "Coffee": 0.7873,
-        "Natural Gas": 0.7869,
+        "Natural Gas": 0.7868,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224129,7 +224129,7 @@
         "Cocoa": 0.2596,
         "Cotton": 0.0,
         "Coffee": 0.7595,
-        "Natural Gas": 0.5517,
+        "Natural Gas": 0.5516,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224156,7 +224156,7 @@
         "Cocoa": 0.2385,
         "Cotton": 0.0,
         "Coffee": 0.7863,
-        "Natural Gas": 0.7898,
+        "Natural Gas": 0.7897,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224168,7 +224168,7 @@
         "Cocoa": 0.256,
         "Cotton": 0.0,
         "Coffee": 0.7564,
-        "Natural Gas": 0.5462,
+        "Natural Gas": 0.5461,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224195,7 +224195,7 @@
         "Cocoa": 0.2418,
         "Cotton": 0.0,
         "Coffee": 0.7855,
-        "Natural Gas": 0.7876,
+        "Natural Gas": 0.7875,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224234,7 +224234,7 @@
         "Cocoa": 0.2459,
         "Cotton": 0.0,
         "Coffee": 0.7855,
-        "Natural Gas": 0.7861,
+        "Natural Gas": 0.786,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224246,7 +224246,7 @@
         "Cocoa": 0.2604,
         "Cotton": 0.0,
         "Coffee": 0.7564,
-        "Natural Gas": 0.5445,
+        "Natural Gas": 0.5444,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224273,7 +224273,7 @@
         "Cocoa": 0.2459,
         "Cotton": 0.0,
         "Coffee": 0.7861,
-        "Natural Gas": 0.7848,
+        "Natural Gas": 0.7847,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224285,7 +224285,7 @@
         "Cocoa": 0.2601,
         "Cotton": 0.0,
         "Coffee": 0.7567,
-        "Natural Gas": 0.5441,
+        "Natural Gas": 0.544,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224324,7 +224324,7 @@
         "Cocoa": 0.2596,
         "Cotton": 0.0,
         "Coffee": 0.7244,
-        "Natural Gas": 0.5484,
+        "Natural Gas": 0.5483,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224351,7 +224351,7 @@
         "Cocoa": 0.2499,
         "Cotton": 0.0,
         "Coffee": 0.7862,
-        "Natural Gas": 0.7876,
+        "Natural Gas": 0.7875,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224363,7 +224363,7 @@
         "Cocoa": 0.2596,
         "Cotton": 0.0,
         "Coffee": 0.727,
-        "Natural Gas": 0.5463,
+        "Natural Gas": 0.5462,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224390,7 +224390,7 @@
         "Cocoa": 0.25,
         "Cotton": 0.0,
         "Coffee": 0.785,
-        "Natural Gas": 0.7894,
+        "Natural Gas": 0.7893,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224402,7 +224402,7 @@
         "Cocoa": 0.2568,
         "Cotton": 0.0,
         "Coffee": 0.7222,
-        "Natural Gas": 0.5406,
+        "Natural Gas": 0.5405,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224429,7 +224429,7 @@
         "Cocoa": 0.2495,
         "Cotton": 0.0,
         "Coffee": 0.787,
-        "Natural Gas": 0.7849,
+        "Natural Gas": 0.7848,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224441,7 +224441,7 @@
         "Cocoa": 0.2569,
         "Cotton": 0.0,
         "Coffee": 0.7281,
-        "Natural Gas": 0.5319,
+        "Natural Gas": 0.5318,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224468,7 +224468,7 @@
         "Cocoa": 0.2466,
         "Cotton": 0.0,
         "Coffee": 0.7874,
-        "Natural Gas": 0.7847,
+        "Natural Gas": 0.7846,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224480,7 +224480,7 @@
         "Cocoa": 0.2565,
         "Cotton": 0.0,
         "Coffee": 0.7274,
-        "Natural Gas": 0.5317,
+        "Natural Gas": 0.5316,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224507,7 +224507,7 @@
         "Cocoa": 0.247,
         "Cotton": 0.0,
         "Coffee": 0.7856,
-        "Natural Gas": 0.788,
+        "Natural Gas": 0.7879,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224519,7 +224519,7 @@
         "Cocoa": 0.2563,
         "Cotton": 0.0,
         "Coffee": 0.723,
-        "Natural Gas": 0.5397,
+        "Natural Gas": 0.5396,
         "Sugar": 0.0
       },
       "actuals": {
@@ -224546,7 +224546,7 @@
         "Cocoa": 0.2471,
         "Cotton": 0.0,
         "Coffee": 0.7833,
-        "Natural Gas": 0.7883,
+        "Natural Gas": 0.7882,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -224585,7 +224585,7 @@
         "Cocoa": 0.2826,
         "Cotton": 0.0,
         "Coffee": 0.7814,
-        "Natural Gas": 0.786,
+        "Natural Gas": 0.7859,
         "Sugar": -0.7495
       },
       "predictions_low_risk": {
@@ -224597,7 +224597,7 @@
         "Cocoa": 0.2909,
         "Cotton": 0.0,
         "Coffee": 0.661,
-        "Natural Gas": 0.5319,
+        "Natural Gas": 0.5318,
         "Sugar": -0.7495
       },
       "actuals": {
@@ -224624,7 +224624,7 @@
         "Cocoa": 0.2826,
         "Cotton": 0.0,
         "Coffee": 0.783,
-        "Natural Gas": 0.7866,
+        "Natural Gas": 0.7865,
         "Sugar": -0.7453
       },
       "predictions_low_risk": {
@@ -224636,7 +224636,7 @@
         "Cocoa": 0.2909,
         "Cotton": 0.0,
         "Coffee": 0.6623,
-        "Natural Gas": 0.5277,
+        "Natural Gas": 0.5276,
         "Sugar": -0.7453
       },
       "actuals": {
@@ -224663,7 +224663,7 @@
         "Cocoa": 0.2826,
         "Cotton": 0.0,
         "Coffee": 0.782,
-        "Natural Gas": 0.7825,
+        "Natural Gas": 0.7824,
         "Sugar": -0.7311
       },
       "predictions_low_risk": {
@@ -224675,7 +224675,7 @@
         "Cocoa": 0.29,
         "Cotton": 0.0,
         "Coffee": 0.6564,
-        "Natural Gas": 0.5285,
+        "Natural Gas": 0.5284,
         "Sugar": -0.7311
       },
       "actuals": {
@@ -224702,7 +224702,7 @@
         "Cocoa": 0.279,
         "Cotton": 0.0,
         "Coffee": 0.7779,
-        "Natural Gas": 0.7798,
+        "Natural Gas": 0.7797,
         "Sugar": -0.7432
       },
       "predictions_low_risk": {
@@ -224741,7 +224741,7 @@
         "Cocoa": 0.2791,
         "Cotton": 0.0,
         "Coffee": 0.7813,
-        "Natural Gas": 0.7795,
+        "Natural Gas": 0.7794,
         "Sugar": -0.7303
       },
       "predictions_low_risk": {
@@ -224780,7 +224780,7 @@
         "Cocoa": 0.2746,
         "Cotton": 0.0,
         "Coffee": 0.7838,
-        "Natural Gas": 0.7807,
+        "Natural Gas": 0.7806,
         "Sugar": -0.7328
       },
       "predictions_low_risk": {
@@ -224792,7 +224792,7 @@
         "Cocoa": 0.289,
         "Cotton": 0.0,
         "Coffee": 0.6508,
-        "Natural Gas": 0.5318,
+        "Natural Gas": 0.5317,
         "Sugar": -0.7328
       },
       "actuals": {
@@ -224819,7 +224819,7 @@
         "Cocoa": 0.2746,
         "Cotton": 0.0,
         "Coffee": 0.7771,
-        "Natural Gas": 0.7769,
+        "Natural Gas": 0.7768,
         "Sugar": -0.7314
       },
       "predictions_low_risk": {
@@ -224858,7 +224858,7 @@
         "Cocoa": 0.2703,
         "Cotton": 0.0,
         "Coffee": 0.7798,
-        "Natural Gas": 0.7804,
+        "Natural Gas": 0.7803,
         "Sugar": -0.719
       },
       "predictions_low_risk": {
@@ -224870,7 +224870,7 @@
         "Cocoa": 0.2898,
         "Cotton": 0.0,
         "Coffee": 0.6298,
-        "Natural Gas": 0.5272,
+        "Natural Gas": 0.5271,
         "Sugar": -0.719
       },
       "actuals": {
@@ -224936,7 +224936,7 @@
         "Cocoa": 0.6331,
         "Cotton": 0.0,
         "Coffee": 0.7846,
-        "Natural Gas": 0.7797,
+        "Natural Gas": 0.7796,
         "Sugar": -0.7032
       },
       "predictions_low_risk": {
@@ -225014,7 +225014,7 @@
         "Cocoa": 0.6236,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7771,
+        "Natural Gas": 0.777,
         "Sugar": -0.6978
       },
       "predictions_low_risk": {
@@ -225053,7 +225053,7 @@
         "Cocoa": 0.6183,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7755,
+        "Natural Gas": 0.7754,
         "Sugar": -0.6925
       },
       "predictions_low_risk": {
@@ -225092,7 +225092,7 @@
         "Cocoa": 0.6191,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.775,
+        "Natural Gas": 0.7749,
         "Sugar": -0.6979
       },
       "predictions_low_risk": {
@@ -225131,7 +225131,7 @@
         "Cocoa": 0.627,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7746,
+        "Natural Gas": 0.7745,
         "Sugar": -0.7132
       },
       "predictions_low_risk": {
@@ -225170,7 +225170,7 @@
         "Cocoa": 0.6375,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.775,
+        "Natural Gas": 0.7749,
         "Sugar": -0.7126
       },
       "predictions_low_risk": {
@@ -225182,7 +225182,7 @@
         "Cocoa": 0.3934,
         "Cotton": 0.0,
         "Coffee": 0.6395,
-        "Natural Gas": 0.5216,
+        "Natural Gas": 0.5215,
         "Sugar": -0.7126
       },
       "actuals": {
@@ -225209,7 +225209,7 @@
         "Cocoa": 0.6375,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7708,
+        "Natural Gas": 0.7703,
         "Sugar": -0.7292
       },
       "predictions_low_risk": {
@@ -225221,7 +225221,7 @@
         "Cocoa": 0.3934,
         "Cotton": 0.0,
         "Coffee": 0.6395,
-        "Natural Gas": 0.5116,
+        "Natural Gas": 0.5113,
         "Sugar": -0.7292
       },
       "actuals": {
@@ -225248,7 +225248,7 @@
         "Cocoa": 0.5972,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7724,
+        "Natural Gas": 0.7719,
         "Sugar": -0.7287
       },
       "predictions_low_risk": {
@@ -225260,7 +225260,7 @@
         "Cocoa": 0.3788,
         "Cotton": 0.0,
         "Coffee": 0.6395,
-        "Natural Gas": 0.5066,
+        "Natural Gas": 0.5063,
         "Sugar": -0.7287
       },
       "actuals": {
@@ -225287,7 +225287,7 @@
         "Cocoa": 0.5454,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7693,
+        "Natural Gas": 0.7689,
         "Sugar": -0.7159
       },
       "predictions_low_risk": {
@@ -225299,7 +225299,7 @@
         "Cocoa": 0.3612,
         "Cotton": 0.0,
         "Coffee": 0.6426,
-        "Natural Gas": 0.5193,
+        "Natural Gas": 0.519,
         "Sugar": -0.7159
       },
       "actuals": {
@@ -225326,7 +225326,7 @@
         "Cocoa": 0.5658,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7676,
+        "Natural Gas": 0.7672,
         "Sugar": -0.7283
       },
       "predictions_low_risk": {
@@ -225338,7 +225338,7 @@
         "Cocoa": 0.3424,
         "Cotton": 0.0,
         "Coffee": 0.642,
-        "Natural Gas": 0.4984,
+        "Natural Gas": 0.4981,
         "Sugar": -0.7283
       },
       "actuals": {
@@ -225365,7 +225365,7 @@
         "Cocoa": 0.6585,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.7709,
+        "Natural Gas": 0.7705,
         "Sugar": -0.7158
       },
       "predictions_low_risk": {
@@ -225377,7 +225377,7 @@
         "Cocoa": 0.3617,
         "Cotton": 0.0,
         "Coffee": 0.6477,
-        "Natural Gas": 0.49,
+        "Natural Gas": 0.4897,
         "Sugar": -0.7158
       },
       "actuals": {
@@ -225404,7 +225404,7 @@
         "Cocoa": 0.6561,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4244,
+        "Natural Gas": 0.4242,
         "Sugar": -0.6545
       },
       "predictions_low_risk": {
@@ -225416,7 +225416,7 @@
         "Cocoa": 0.3555,
         "Cotton": 0.0,
         "Coffee": 0.6546,
-        "Natural Gas": 0.2699,
+        "Natural Gas": 0.2698,
         "Sugar": -0.6545
       },
       "actuals": {
@@ -225443,7 +225443,7 @@
         "Cocoa": 0.657,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4308,
+        "Natural Gas": 0.4306,
         "Sugar": -0.6709
       },
       "predictions_low_risk": {
@@ -225455,7 +225455,7 @@
         "Cocoa": 0.3558,
         "Cotton": 0.0,
         "Coffee": 0.6509,
-        "Natural Gas": 0.2682,
+        "Natural Gas": 0.268,
         "Sugar": -0.6709
       },
       "actuals": {
@@ -225482,7 +225482,7 @@
         "Cocoa": 0.6571,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4343,
+        "Natural Gas": 0.434,
         "Sugar": -0.6519
       },
       "predictions_low_risk": {
@@ -225494,7 +225494,7 @@
         "Cocoa": 0.3558,
         "Cotton": 0.0,
         "Coffee": 0.6536,
-        "Natural Gas": 0.2659,
+        "Natural Gas": 0.2657,
         "Sugar": -0.6519
       },
       "actuals": {
@@ -225521,7 +225521,7 @@
         "Cocoa": 0.6536,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4398,
+        "Natural Gas": 0.4394,
         "Sugar": -0.6644
       },
       "predictions_low_risk": {
@@ -225533,7 +225533,7 @@
         "Cocoa": 0.3567,
         "Cotton": 0.0,
         "Coffee": 0.6838,
-        "Natural Gas": 0.2673,
+        "Natural Gas": 0.2671,
         "Sugar": -0.6644
       },
       "actuals": {
@@ -225560,7 +225560,7 @@
         "Cocoa": 0.6161,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4424,
+        "Natural Gas": 0.442,
         "Sugar": -0.6514
       },
       "predictions_low_risk": {
@@ -225572,7 +225572,7 @@
         "Cocoa": 0.3456,
         "Cotton": 0.0,
         "Coffee": 0.6819,
-        "Natural Gas": 0.2669,
+        "Natural Gas": 0.2667,
         "Sugar": -0.6514
       },
       "actuals": {
@@ -225599,7 +225599,7 @@
         "Cocoa": 0.6161,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4413,
+        "Natural Gas": 0.4409,
         "Sugar": -0.6605
       },
       "predictions_low_risk": {
@@ -225611,7 +225611,7 @@
         "Cocoa": 0.3453,
         "Cotton": 0.0,
         "Coffee": 0.682,
-        "Natural Gas": 0.267,
+        "Natural Gas": 0.2667,
         "Sugar": -0.6605
       },
       "actuals": {
@@ -225638,7 +225638,7 @@
         "Cocoa": 0.6263,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4414,
+        "Natural Gas": 0.441,
         "Sugar": -0.6702
       },
       "predictions_low_risk": {
@@ -225650,7 +225650,7 @@
         "Cocoa": 0.3431,
         "Cotton": 0.0,
         "Coffee": 0.6826,
-        "Natural Gas": 0.2636,
+        "Natural Gas": 0.2634,
         "Sugar": -0.6702
       },
       "actuals": {
@@ -225677,7 +225677,7 @@
         "Cocoa": 0.6264,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4449,
+        "Natural Gas": 0.4444,
         "Sugar": -0.671
       },
       "predictions_low_risk": {
@@ -225689,7 +225689,7 @@
         "Cocoa": 0.3426,
         "Cotton": 0.0,
         "Coffee": 0.6849,
-        "Natural Gas": 0.2658,
+        "Natural Gas": 0.2655,
         "Sugar": -0.671
       },
       "actuals": {
@@ -225716,7 +225716,7 @@
         "Cocoa": 0.6187,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4397,
+        "Natural Gas": 0.4394,
         "Sugar": -0.6639
       },
       "predictions_low_risk": {
@@ -225728,7 +225728,7 @@
         "Cocoa": 0.3435,
         "Cotton": 0.0,
         "Coffee": 0.696,
-        "Natural Gas": 0.2654,
+        "Natural Gas": 0.2652,
         "Sugar": -0.6639
       },
       "actuals": {
@@ -225755,7 +225755,7 @@
         "Cocoa": 0.6237,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.4429,
+        "Natural Gas": 0.4425,
         "Sugar": -0.655
       },
       "predictions_low_risk": {
@@ -225767,7 +225767,7 @@
         "Cocoa": 0.3454,
         "Cotton": 0.0,
         "Coffee": 0.6971,
-        "Natural Gas": 0.2671,
+        "Natural Gas": 0.2668,
         "Sugar": -0.655
       },
       "actuals": {
@@ -225794,7 +225794,7 @@
         "Cocoa": 0.6242,
         "Cotton": 0.0,
         "Coffee": 0.8002,
-        "Natural Gas": 0.444,
+        "Natural Gas": 0.4436,
         "Sugar": -0.6676
       },
       "predictions_low_risk": {
@@ -225806,7 +225806,7 @@
         "Cocoa": 0.3446,
         "Cotton": 0.0,
         "Coffee": 0.7442,
-        "Natural Gas": 0.2698,
+        "Natural Gas": 0.2696,
         "Sugar": -0.6676
       },
       "actuals": {
@@ -225833,7 +225833,7 @@
         "Cocoa": 0.6242,
         "Cotton": 0.0,
         "Coffee": 0.7999,
-        "Natural Gas": 0.45,
+        "Natural Gas": 0.4495,
         "Sugar": -0.67
       },
       "predictions_low_risk": {
@@ -225845,7 +225845,7 @@
         "Cocoa": 0.3389,
         "Cotton": 0.0,
         "Coffee": 0.7467,
-        "Natural Gas": 0.2686,
+        "Natural Gas": 0.2683,
         "Sugar": -0.67
       },
       "actuals": {
@@ -225872,7 +225872,7 @@
         "Cocoa": 0.6185,
         "Cotton": 0.0,
         "Coffee": 0.8005,
-        "Natural Gas": 0.447,
+        "Natural Gas": 0.4465,
         "Sugar": -0.6685
       },
       "predictions_low_risk": {
@@ -225884,7 +225884,7 @@
         "Cocoa": 0.3417,
         "Cotton": 0.0,
         "Coffee": 0.7472,
-        "Natural Gas": 0.266,
+        "Natural Gas": 0.2658,
         "Sugar": -0.6685
       },
       "actuals": {
@@ -225911,7 +225911,7 @@
         "Cocoa": 0.617,
         "Cotton": 0.0,
         "Coffee": 0.7982,
-        "Natural Gas": 0.4482,
+        "Natural Gas": 0.4477,
         "Sugar": -0.6514
       },
       "predictions_low_risk": {
@@ -225923,7 +225923,7 @@
         "Cocoa": 0.3421,
         "Cotton": 0.0,
         "Coffee": 0.7363,
-        "Natural Gas": 0.2656,
+        "Natural Gas": 0.2653,
         "Sugar": -0.6514
       },
       "actuals": {
@@ -225950,7 +225950,7 @@
         "Cocoa": 0.6114,
         "Cotton": 0.0,
         "Coffee": 0.7984,
-        "Natural Gas": 0.446,
+        "Natural Gas": 0.4456,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -225962,7 +225962,7 @@
         "Cocoa": 0.3448,
         "Cotton": 0.0,
         "Coffee": 0.7383,
-        "Natural Gas": 0.2643,
+        "Natural Gas": 0.264,
         "Sugar": 0.0
       },
       "actuals": {
@@ -225989,7 +225989,7 @@
         "Cocoa": 0.6014,
         "Cotton": 0.0,
         "Coffee": 0.7979,
-        "Natural Gas": 0.4424,
+        "Natural Gas": 0.442,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226001,7 +226001,7 @@
         "Cocoa": 0.3461,
         "Cotton": 0.0,
         "Coffee": 0.7379,
-        "Natural Gas": 0.2621,
+        "Natural Gas": 0.2619,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226028,7 +226028,7 @@
         "Cocoa": 0.6017,
         "Cotton": 0.0,
         "Coffee": 0.7999,
-        "Natural Gas": 0.4401,
+        "Natural Gas": 0.4397,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226040,7 +226040,7 @@
         "Cocoa": 0.3484,
         "Cotton": 0.0,
         "Coffee": 0.7533,
-        "Natural Gas": 0.258,
+        "Natural Gas": 0.2578,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226067,7 +226067,7 @@
         "Cocoa": 0.6018,
         "Cotton": 0.0,
         "Coffee": 0.7989,
-        "Natural Gas": 0.4421,
+        "Natural Gas": 0.4417,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226079,7 +226079,7 @@
         "Cocoa": 0.3483,
         "Cotton": 0.0,
         "Coffee": 0.749,
-        "Natural Gas": 0.2562,
+        "Natural Gas": 0.256,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226106,7 +226106,7 @@
         "Cocoa": 0.6018,
         "Cotton": 0.0,
         "Coffee": 0.7973,
-        "Natural Gas": 0.4438,
+        "Natural Gas": 0.4433,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226118,7 +226118,7 @@
         "Cocoa": 0.3476,
         "Cotton": 0.0,
         "Coffee": 0.7442,
-        "Natural Gas": 0.265,
+        "Natural Gas": 0.2647,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226145,7 +226145,7 @@
         "Cocoa": 0.604,
         "Cotton": 0.0,
         "Coffee": 0.7959,
-        "Natural Gas": 0.4417,
+        "Natural Gas": 0.4413,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226157,7 +226157,7 @@
         "Cocoa": 0.3453,
         "Cotton": 0.0,
         "Coffee": 0.7478,
-        "Natural Gas": 0.2498,
+        "Natural Gas": 0.2496,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226184,7 +226184,7 @@
         "Cocoa": 0.6139,
         "Cotton": 0.0,
         "Coffee": 0.7973,
-        "Natural Gas": 0.4369,
+        "Natural Gas": 0.4364,
         "Sugar": -0.6507
       },
       "predictions_low_risk": {
@@ -226196,7 +226196,7 @@
         "Cocoa": 0.3443,
         "Cotton": 0.0,
         "Coffee": 0.7488,
-        "Natural Gas": 0.2755,
+        "Natural Gas": 0.2752,
         "Sugar": -0.6507
       },
       "actuals": {
@@ -226223,7 +226223,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8263,
         "Coffee": 0.7987,
-        "Natural Gas": 0.7519,
+        "Natural Gas": 0.7514,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226235,7 +226235,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8263,
         "Coffee": 0.7561,
-        "Natural Gas": 0.4742,
+        "Natural Gas": 0.4739,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226262,7 +226262,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8264,
         "Coffee": 0.798,
-        "Natural Gas": 0.7586,
+        "Natural Gas": 0.7581,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226274,7 +226274,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8264,
         "Coffee": 0.7602,
-        "Natural Gas": 0.4729,
+        "Natural Gas": 0.4726,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226301,7 +226301,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8258,
         "Coffee": 0.7959,
-        "Natural Gas": 0.7575,
+        "Natural Gas": 0.757,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226313,7 +226313,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8258,
         "Coffee": 0.7474,
-        "Natural Gas": 0.4732,
+        "Natural Gas": 0.4729,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226340,7 +226340,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8264,
         "Coffee": 0.797,
-        "Natural Gas": 0.7425,
+        "Natural Gas": 0.742,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226352,7 +226352,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8264,
         "Coffee": 0.7489,
-        "Natural Gas": 0.4745,
+        "Natural Gas": 0.4742,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226379,7 +226379,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8263,
         "Coffee": 0.7984,
-        "Natural Gas": 0.7552,
+        "Natural Gas": 0.7547,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226391,7 +226391,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8263,
         "Coffee": 0.7521,
-        "Natural Gas": 0.4754,
+        "Natural Gas": 0.4751,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226418,7 +226418,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8266,
         "Coffee": 0.7974,
-        "Natural Gas": 0.7471,
+        "Natural Gas": 0.7466,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226430,7 +226430,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8266,
         "Coffee": 0.7363,
-        "Natural Gas": 0.4726,
+        "Natural Gas": 0.4723,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226457,7 +226457,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8263,
         "Coffee": 0.7957,
-        "Natural Gas": 0.7499,
+        "Natural Gas": 0.7495,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226469,7 +226469,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8263,
         "Coffee": 0.7259,
-        "Natural Gas": 0.4716,
+        "Natural Gas": 0.4713,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226496,7 +226496,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.819,
         "Coffee": 0.7942,
-        "Natural Gas": 0.7521,
+        "Natural Gas": 0.7516,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226508,7 +226508,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.819,
         "Coffee": 0.7106,
-        "Natural Gas": 0.4827,
+        "Natural Gas": 0.4824,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226535,7 +226535,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8186,
         "Coffee": 0.7949,
-        "Natural Gas": 0.7624,
+        "Natural Gas": 0.7619,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226547,7 +226547,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8186,
         "Coffee": 0.715,
-        "Natural Gas": 0.4817,
+        "Natural Gas": 0.4814,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226574,7 +226574,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8197,
         "Coffee": 0.795,
-        "Natural Gas": 0.7626,
+        "Natural Gas": 0.7621,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226586,7 +226586,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8197,
         "Coffee": 0.6921,
-        "Natural Gas": 0.4819,
+        "Natural Gas": 0.4816,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226613,7 +226613,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8207,
         "Coffee": 0.7949,
-        "Natural Gas": 0.7522,
+        "Natural Gas": 0.7517,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226625,7 +226625,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8207,
         "Coffee": 0.6953,
-        "Natural Gas": 0.4829,
+        "Natural Gas": 0.4826,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226652,7 +226652,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8193,
         "Coffee": 0.7948,
-        "Natural Gas": 0.7538,
+        "Natural Gas": 0.7533,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226664,7 +226664,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8193,
         "Coffee": 0.6945,
-        "Natural Gas": 0.4792,
+        "Natural Gas": 0.4789,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226691,7 +226691,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8196,
         "Coffee": 0.7935,
-        "Natural Gas": 0.7643,
+        "Natural Gas": 0.7638,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226703,7 +226703,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8196,
         "Coffee": 0.6603,
-        "Natural Gas": 0.4801,
+        "Natural Gas": 0.4798,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226730,7 +226730,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8199,
         "Coffee": 0.7926,
-        "Natural Gas": 0.7638,
+        "Natural Gas": 0.7633,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226742,7 +226742,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8199,
         "Coffee": 0.66,
-        "Natural Gas": 0.4795,
+        "Natural Gas": 0.4792,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226769,7 +226769,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8191,
         "Coffee": 0.7932,
-        "Natural Gas": 0.7761,
+        "Natural Gas": 0.7756,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226781,7 +226781,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8191,
         "Coffee": 0.6783,
-        "Natural Gas": 0.4788,
+        "Natural Gas": 0.4785,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226808,7 +226808,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8151,
         "Coffee": 0.7898,
-        "Natural Gas": 0.7779,
+        "Natural Gas": 0.7774,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226820,7 +226820,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8151,
         "Coffee": 0.6623,
-        "Natural Gas": 0.48,
+        "Natural Gas": 0.4797,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226847,7 +226847,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.79,
-        "Natural Gas": 0.7779,
+        "Natural Gas": 0.7774,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226859,7 +226859,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6651,
-        "Natural Gas": 0.4798,
+        "Natural Gas": 0.4795,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226886,7 +226886,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7751,
-        "Natural Gas": 0.7749,
+        "Natural Gas": 0.7744,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226898,7 +226898,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6527,
-        "Natural Gas": 0.4848,
+        "Natural Gas": 0.4845,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226925,7 +226925,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7721,
-        "Natural Gas": 0.7756,
+        "Natural Gas": 0.7751,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -226937,7 +226937,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.651,
-        "Natural Gas": 0.4845,
+        "Natural Gas": 0.4842,
         "Sugar": 0.0
       },
       "actuals": {
@@ -226964,7 +226964,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7661,
-        "Natural Gas": 0.7781,
+        "Natural Gas": 0.7775,
         "Sugar": -0.6661
       },
       "predictions_low_risk": {
@@ -226976,7 +226976,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6515,
-        "Natural Gas": 0.4866,
+        "Natural Gas": 0.4862,
         "Sugar": -0.6604
       },
       "actuals": {
@@ -227003,7 +227003,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7631,
-        "Natural Gas": 0.7764,
+        "Natural Gas": 0.7759,
         "Sugar": -0.6649
       },
       "predictions_low_risk": {
@@ -227015,7 +227015,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6462,
-        "Natural Gas": 0.4848,
+        "Natural Gas": 0.4845,
         "Sugar": -0.6649
       },
       "actuals": {
@@ -227042,7 +227042,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7626,
-        "Natural Gas": 0.7618,
+        "Natural Gas": 0.7613,
         "Sugar": -0.6898
       },
       "predictions_low_risk": {
@@ -227054,7 +227054,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6982,
-        "Natural Gas": 0.4882,
+        "Natural Gas": 0.4878,
         "Sugar": -0.6898
       },
       "actuals": {
@@ -227081,7 +227081,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7385,
-        "Natural Gas": 0.7611,
+        "Natural Gas": 0.7606,
         "Sugar": -0.6928
       },
       "predictions_low_risk": {
@@ -227093,7 +227093,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6408,
-        "Natural Gas": 0.4917,
+        "Natural Gas": 0.4914,
         "Sugar": -0.6928
       },
       "actuals": {
@@ -227120,7 +227120,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7393,
-        "Natural Gas": 0.761,
+        "Natural Gas": 0.7605,
         "Sugar": -0.6944
       },
       "predictions_low_risk": {
@@ -227132,7 +227132,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6453,
-        "Natural Gas": 0.4913,
+        "Natural Gas": 0.491,
         "Sugar": -0.6944
       },
       "actuals": {
@@ -227159,7 +227159,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7587,
+        "Natural Gas": 0.7582,
         "Sugar": -0.6909
       },
       "predictions_low_risk": {
@@ -227171,7 +227171,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6493,
-        "Natural Gas": 0.4895,
+        "Natural Gas": 0.4892,
         "Sugar": -0.6809
       },
       "actuals": {
@@ -227198,7 +227198,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.766,
+        "Natural Gas": 0.7656,
         "Sugar": -0.6823
       },
       "predictions_low_risk": {
@@ -227210,7 +227210,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6679,
-        "Natural Gas": 0.4885,
+        "Natural Gas": 0.4881,
         "Sugar": -0.6823
       },
       "actuals": {
@@ -227237,7 +227237,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7619,
+        "Natural Gas": 0.7614,
         "Sugar": -0.7014
       },
       "predictions_low_risk": {
@@ -227249,7 +227249,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6635,
-        "Natural Gas": 0.4788,
+        "Natural Gas": 0.4785,
         "Sugar": -0.7014
       },
       "actuals": {
@@ -227276,7 +227276,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7717,
+        "Natural Gas": 0.7712,
         "Sugar": -0.6885
       },
       "predictions_low_risk": {
@@ -227288,7 +227288,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6636,
-        "Natural Gas": 0.4785,
+        "Natural Gas": 0.4782,
         "Sugar": -0.6885
       },
       "actuals": {
@@ -227315,7 +227315,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7572,
+        "Natural Gas": 0.7567,
         "Sugar": -0.7083
       },
       "predictions_low_risk": {
@@ -227327,7 +227327,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6788,
-        "Natural Gas": 0.4843,
+        "Natural Gas": 0.484,
         "Sugar": -0.7083
       },
       "actuals": {
@@ -227354,7 +227354,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7625,
+        "Natural Gas": 0.762,
         "Sugar": -0.7016
       },
       "predictions_low_risk": {
@@ -227366,7 +227366,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6761,
-        "Natural Gas": 0.4841,
+        "Natural Gas": 0.4837,
         "Sugar": -0.6844
       },
       "actuals": {
@@ -227393,7 +227393,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7457,
+        "Natural Gas": 0.7453,
         "Sugar": -0.6984
       },
       "predictions_low_risk": {
@@ -227405,7 +227405,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6761,
-        "Natural Gas": 0.4864,
+        "Natural Gas": 0.4861,
         "Sugar": -0.6821
       },
       "actuals": {
@@ -227432,7 +227432,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7422,
+        "Natural Gas": 0.7417,
         "Sugar": -0.7057
       },
       "predictions_low_risk": {
@@ -227444,7 +227444,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6782,
-        "Natural Gas": 0.4857,
+        "Natural Gas": 0.4854,
         "Sugar": -0.6861
       },
       "actuals": {
@@ -227471,7 +227471,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7544,
+        "Natural Gas": 0.7539,
         "Sugar": -0.7076
       },
       "predictions_low_risk": {
@@ -227483,7 +227483,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6792,
-        "Natural Gas": 0.4809,
+        "Natural Gas": 0.4806,
         "Sugar": -0.7076
       },
       "actuals": {
@@ -227510,7 +227510,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.754,
+        "Natural Gas": 0.7536,
         "Sugar": -0.71
       },
       "predictions_low_risk": {
@@ -227522,7 +227522,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6837,
-        "Natural Gas": 0.481,
+        "Natural Gas": 0.4807,
         "Sugar": -0.71
       },
       "actuals": {
@@ -227549,7 +227549,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7551,
+        "Natural Gas": 0.7547,
         "Sugar": -0.6994
       },
       "predictions_low_risk": {
@@ -227561,7 +227561,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.695,
-        "Natural Gas": 0.4848,
+        "Natural Gas": 0.4845,
         "Sugar": -0.6945
       },
       "actuals": {
@@ -227588,7 +227588,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7572,
+        "Natural Gas": 0.7568,
         "Sugar": -0.7036
       },
       "predictions_low_risk": {
@@ -227600,7 +227600,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6939,
-        "Natural Gas": 0.4856,
+        "Natural Gas": 0.4853,
         "Sugar": -0.6966
       },
       "actuals": {
@@ -227627,7 +227627,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7463,
+        "Natural Gas": 0.7459,
         "Sugar": -0.7137
       },
       "predictions_low_risk": {
@@ -227639,7 +227639,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6896,
-        "Natural Gas": 0.4844,
+        "Natural Gas": 0.4841,
         "Sugar": -0.7056
       },
       "actuals": {
@@ -227666,7 +227666,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7482,
+        "Natural Gas": 0.7481,
         "Sugar": -0.723
       },
       "predictions_low_risk": {
@@ -227678,7 +227678,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6746,
-        "Natural Gas": 0.4932,
+        "Natural Gas": 0.4931,
         "Sugar": -0.712
       },
       "actuals": {
@@ -227705,7 +227705,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7349,
+        "Natural Gas": 0.7348,
         "Sugar": -0.726
       },
       "predictions_low_risk": {
@@ -227744,7 +227744,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.7179,
+        "Natural Gas": 0.7178,
         "Sugar": -0.7382
       },
       "predictions_low_risk": {
@@ -227756,7 +227756,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6778,
-        "Natural Gas": 0.4991,
+        "Natural Gas": 0.499,
         "Sugar": -0.7299
       },
       "actuals": {
@@ -227783,7 +227783,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3433,
+        "Natural Gas": 0.3432,
         "Sugar": -0.7244
       },
       "predictions_low_risk": {
@@ -227795,7 +227795,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.6735,
-        "Natural Gas": 0.2424,
+        "Natural Gas": 0.2423,
         "Sugar": -0.708
       },
       "actuals": {
@@ -227822,7 +227822,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8223,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3455,
+        "Natural Gas": 0.3453,
         "Sugar": -0.7142
       },
       "predictions_low_risk": {
@@ -227834,7 +227834,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8223,
         "Coffee": 0.6739,
-        "Natural Gas": 0.2489,
+        "Natural Gas": 0.2488,
         "Sugar": -0.6964
       },
       "actuals": {
@@ -227861,7 +227861,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.821,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3435,
+        "Natural Gas": 0.3434,
         "Sugar": -0.7078
       },
       "predictions_low_risk": {
@@ -227873,7 +227873,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.821,
         "Coffee": 0.6763,
-        "Natural Gas": 0.2472,
+        "Natural Gas": 0.2471,
         "Sugar": -0.6899
       },
       "actuals": {
@@ -227900,7 +227900,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8205,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3528,
+        "Natural Gas": 0.3527,
         "Sugar": -0.6935
       },
       "predictions_low_risk": {
@@ -227939,7 +227939,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8192,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3637,
+        "Natural Gas": 0.3636,
         "Sugar": -0.7048
       },
       "predictions_low_risk": {
@@ -227951,7 +227951,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8192,
         "Coffee": 0.6205,
-        "Natural Gas": 0.2599,
+        "Natural Gas": 0.2598,
         "Sugar": -0.6872
       },
       "actuals": {
@@ -227978,7 +227978,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8189,
         "Coffee": 0.7358,
-        "Natural Gas": 0.37,
+        "Natural Gas": 0.3699,
         "Sugar": -0.7013
       },
       "predictions_low_risk": {
@@ -227990,7 +227990,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8189,
         "Coffee": 0.6203,
-        "Natural Gas": 0.2643,
+        "Natural Gas": 0.2642,
         "Sugar": -0.6789
       },
       "actuals": {
@@ -228017,7 +228017,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8193,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3694,
+        "Natural Gas": 0.3692,
         "Sugar": -0.6823
       },
       "predictions_low_risk": {
@@ -228029,7 +228029,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8193,
         "Coffee": 0.6218,
-        "Natural Gas": 0.2581,
+        "Natural Gas": 0.258,
         "Sugar": -0.6556
       },
       "actuals": {
@@ -228056,7 +228056,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8199,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3747,
+        "Natural Gas": 0.3746,
         "Sugar": -0.6869
       },
       "predictions_low_risk": {
@@ -228068,7 +228068,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8199,
         "Coffee": 0.622,
-        "Natural Gas": 0.2562,
+        "Natural Gas": 0.2561,
         "Sugar": -0.6583
       },
       "actuals": {
@@ -228095,7 +228095,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8206,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3711,
+        "Natural Gas": 0.3709,
         "Sugar": -0.681
       },
       "predictions_low_risk": {
@@ -228107,7 +228107,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8206,
         "Coffee": 0.6102,
-        "Natural Gas": 0.2592,
+        "Natural Gas": 0.2591,
         "Sugar": -0.6529
       },
       "actuals": {
@@ -228134,7 +228134,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8201,
         "Coffee": 0.7592,
-        "Natural Gas": 0.3729,
+        "Natural Gas": 0.3728,
         "Sugar": -0.6966
       },
       "predictions_low_risk": {
@@ -228146,7 +228146,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8201,
         "Coffee": 0.6295,
-        "Natural Gas": 0.2575,
+        "Natural Gas": 0.2574,
         "Sugar": -0.671
       },
       "actuals": {
@@ -228173,7 +228173,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8201,
         "Coffee": 0.7563,
-        "Natural Gas": 0.3709,
+        "Natural Gas": 0.3707,
         "Sugar": -0.6807
       },
       "predictions_low_risk": {
@@ -228185,7 +228185,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8201,
         "Coffee": 0.6246,
-        "Natural Gas": 0.2562,
+        "Natural Gas": 0.2561,
         "Sugar": -0.6638
       },
       "actuals": {
@@ -228212,7 +228212,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8195,
         "Coffee": 0.7973,
-        "Natural Gas": 0.368,
+        "Natural Gas": 0.3678,
         "Sugar": -0.6686
       },
       "predictions_low_risk": {
@@ -228224,7 +228224,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8195,
         "Coffee": 0.6613,
-        "Natural Gas": 0.2548,
+        "Natural Gas": 0.2547,
         "Sugar": -0.6505
       },
       "actuals": {
@@ -228251,7 +228251,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8188,
         "Coffee": 0.7972,
-        "Natural Gas": 0.3613,
+        "Natural Gas": 0.3611,
         "Sugar": -0.6833
       },
       "predictions_low_risk": {
@@ -228263,7 +228263,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8188,
         "Coffee": 0.6623,
-        "Natural Gas": 0.252,
+        "Natural Gas": 0.2519,
         "Sugar": -0.6719
       },
       "actuals": {
@@ -228290,7 +228290,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8193,
         "Coffee": 0.7951,
-        "Natural Gas": 0.368,
+        "Natural Gas": 0.3678,
         "Sugar": -0.6901
       },
       "predictions_low_risk": {
@@ -228302,7 +228302,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8193,
         "Coffee": 0.6551,
-        "Natural Gas": 0.257,
+        "Natural Gas": 0.2569,
         "Sugar": -0.6795
       },
       "actuals": {
@@ -228329,7 +228329,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8183,
         "Coffee": 0.7932,
-        "Natural Gas": 0.3646,
+        "Natural Gas": 0.3645,
         "Sugar": -0.7007
       },
       "predictions_low_risk": {
@@ -228341,7 +228341,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8183,
         "Coffee": 0.6476,
-        "Natural Gas": 0.2596,
+        "Natural Gas": 0.2595,
         "Sugar": -0.6974
       },
       "actuals": {
@@ -228368,7 +228368,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8181,
         "Coffee": 0.7843,
-        "Natural Gas": 0.3635,
+        "Natural Gas": 0.3634,
         "Sugar": -0.7092
       },
       "predictions_low_risk": {
@@ -228380,7 +228380,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8181,
         "Coffee": 0.6425,
-        "Natural Gas": 0.2618,
+        "Natural Gas": 0.2617,
         "Sugar": -0.7092
       },
       "actuals": {
@@ -228407,7 +228407,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8178,
         "Coffee": 0.7821,
-        "Natural Gas": 0.3722,
+        "Natural Gas": 0.372,
         "Sugar": -0.7149
       },
       "predictions_low_risk": {
@@ -228419,7 +228419,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8178,
         "Coffee": 0.6302,
-        "Natural Gas": 0.2646,
+        "Natural Gas": 0.2645,
         "Sugar": -0.7149
       },
       "actuals": {
@@ -228446,7 +228446,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3696,
+        "Natural Gas": 0.3695,
         "Sugar": -0.706
       },
       "predictions_low_risk": {
@@ -228458,7 +228458,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.5934,
-        "Natural Gas": 0.2633,
+        "Natural Gas": 0.2632,
         "Sugar": -0.706
       },
       "actuals": {
@@ -228485,7 +228485,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3726,
+        "Natural Gas": 0.3725,
         "Sugar": -0.7007
       },
       "predictions_low_risk": {
@@ -228497,7 +228497,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.5874,
-        "Natural Gas": 0.2657,
+        "Natural Gas": 0.2656,
         "Sugar": -0.7007
       },
       "actuals": {
@@ -228524,7 +228524,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3741,
+        "Natural Gas": 0.374,
         "Sugar": -0.6949
       },
       "predictions_low_risk": {
@@ -228536,7 +228536,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.5864,
-        "Natural Gas": 0.2662,
+        "Natural Gas": 0.2661,
         "Sugar": -0.6949
       },
       "actuals": {
@@ -228563,7 +228563,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.7358,
-        "Natural Gas": 0.3696,
+        "Natural Gas": 0.3695,
         "Sugar": -0.7095
       },
       "predictions_low_risk": {
@@ -228575,7 +228575,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.8025,
         "Coffee": 0.5902,
-        "Natural Gas": 0.2631,
+        "Natural Gas": 0.263,
         "Sugar": -0.7095
       },
       "actuals": {
@@ -228602,7 +228602,7 @@
         "Cocoa": 0.3829,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3982,
+        "Natural Gas": 0.3979,
         "Sugar": -0.8889
       },
       "predictions_low_risk": {
@@ -228614,7 +228614,7 @@
         "Cocoa": 0.2671,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3074,
+        "Natural Gas": 0.3072,
         "Sugar": -0.8889
       },
       "actuals": {
@@ -228641,7 +228641,7 @@
         "Cocoa": 0.3783,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.4,
+        "Natural Gas": 0.3997,
         "Sugar": -0.8926
       },
       "predictions_low_risk": {
@@ -228653,7 +228653,7 @@
         "Cocoa": 0.2669,
         "Cotton": -0.8063,
         "Coffee": 0.0,
-        "Natural Gas": 0.3067,
+        "Natural Gas": 0.3065,
         "Sugar": -0.8926
       },
       "actuals": {
@@ -228680,7 +228680,7 @@
         "Cocoa": 0.3835,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3974,
+        "Natural Gas": 0.3971,
         "Sugar": -0.8953
       },
       "predictions_low_risk": {
@@ -228692,7 +228692,7 @@
         "Cocoa": 0.2651,
         "Cotton": -0.8063,
         "Coffee": 0.0,
-        "Natural Gas": 0.3162,
+        "Natural Gas": 0.316,
         "Sugar": -0.8953
       },
       "actuals": {
@@ -228719,7 +228719,7 @@
         "Cocoa": 0.3823,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3974,
+        "Natural Gas": 0.3972,
         "Sugar": -0.8959
       },
       "predictions_low_risk": {
@@ -228731,7 +228731,7 @@
         "Cocoa": 0.262,
         "Cotton": -0.7997,
         "Coffee": 0.0,
-        "Natural Gas": 0.3167,
+        "Natural Gas": 0.3165,
         "Sugar": -0.8959
       },
       "actuals": {
@@ -228758,7 +228758,7 @@
         "Cocoa": 0.3766,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.4002,
+        "Natural Gas": 0.4,
         "Sugar": -0.8949
       },
       "predictions_low_risk": {
@@ -228770,7 +228770,7 @@
         "Cocoa": 0.2627,
         "Cotton": -0.7941,
         "Coffee": 0.0,
-        "Natural Gas": 0.3177,
+        "Natural Gas": 0.3174,
         "Sugar": -0.8949
       },
       "actuals": {
@@ -228797,7 +228797,7 @@
         "Cocoa": 0.3745,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3955,
+        "Natural Gas": 0.3952,
         "Sugar": -0.8962
       },
       "predictions_low_risk": {
@@ -228809,7 +228809,7 @@
         "Cocoa": 0.2644,
         "Cotton": -0.7346,
         "Coffee": 0.0,
-        "Natural Gas": 0.314,
+        "Natural Gas": 0.3138,
         "Sugar": -0.8962
       },
       "actuals": {
@@ -228836,7 +228836,7 @@
         "Cocoa": 0.3732,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3974,
+        "Natural Gas": 0.3971,
         "Sugar": -0.8965
       },
       "predictions_low_risk": {
@@ -228848,7 +228848,7 @@
         "Cocoa": 0.2643,
         "Cotton": -0.7353,
         "Coffee": 0.0,
-        "Natural Gas": 0.3129,
+        "Natural Gas": 0.3126,
         "Sugar": -0.8961
       },
       "actuals": {
@@ -228875,7 +228875,7 @@
         "Cocoa": 0.3677,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.4026,
+        "Natural Gas": 0.4023,
         "Sugar": -0.8941
       },
       "predictions_low_risk": {
@@ -228887,7 +228887,7 @@
         "Cocoa": 0.2654,
         "Cotton": -0.7385,
         "Coffee": 0.0,
-        "Natural Gas": 0.3166,
+        "Natural Gas": 0.3164,
         "Sugar": -0.8941
       },
       "actuals": {
@@ -228914,7 +228914,7 @@
         "Cocoa": 0.3678,
         "Cotton": -0.8103,
         "Coffee": 0.0,
-        "Natural Gas": 0.3987,
+        "Natural Gas": 0.3984,
         "Sugar": -0.8899
       },
       "predictions_low_risk": {
@@ -228926,7 +228926,7 @@
         "Cocoa": 0.2585,
         "Cotton": -0.741,
         "Coffee": 0.0,
-        "Natural Gas": 0.3141,
+        "Natural Gas": 0.3139,
         "Sugar": -0.8803
       },
       "actuals": {
@@ -228953,7 +228953,7 @@
         "Cocoa": 0.3656,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.4049,
+        "Natural Gas": 0.4046,
         "Sugar": -0.8939
       },
       "predictions_low_risk": {
@@ -228965,7 +228965,7 @@
         "Cocoa": 0.2591,
         "Cotton": -0.732,
         "Coffee": 0.0,
-        "Natural Gas": 0.3166,
+        "Natural Gas": 0.3164,
         "Sugar": -0.8835
       },
       "actuals": {
@@ -228992,7 +228992,7 @@
         "Cocoa": 0.3657,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.4051,
+        "Natural Gas": 0.4048,
         "Sugar": -0.8939
       },
       "predictions_low_risk": {
@@ -229004,7 +229004,7 @@
         "Cocoa": 0.2606,
         "Cotton": -0.7336,
         "Coffee": 0.0,
-        "Natural Gas": 0.3153,
+        "Natural Gas": 0.3151,
         "Sugar": -0.8854
       },
       "actuals": {
@@ -229031,7 +229031,7 @@
         "Cocoa": 0.3606,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.4066,
+        "Natural Gas": 0.4063,
         "Sugar": -0.8911
       },
       "predictions_low_risk": {
@@ -229043,7 +229043,7 @@
         "Cocoa": 0.2569,
         "Cotton": -0.733,
         "Coffee": 0.0,
-        "Natural Gas": 0.3175,
+        "Natural Gas": 0.3172,
         "Sugar": -0.8862
       },
       "actuals": {
@@ -229070,7 +229070,7 @@
         "Cocoa": 0.3606,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.4078,
+        "Natural Gas": 0.4075,
         "Sugar": -0.8901
       },
       "predictions_low_risk": {
@@ -229082,7 +229082,7 @@
         "Cocoa": 0.2571,
         "Cotton": -0.7313,
         "Coffee": 0.0,
-        "Natural Gas": 0.3205,
+        "Natural Gas": 0.3203,
         "Sugar": -0.8863
       },
       "actuals": {
@@ -229109,7 +229109,7 @@
         "Cocoa": 0.361,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.414,
+        "Natural Gas": 0.4137,
         "Sugar": -0.8914
       },
       "predictions_low_risk": {
@@ -229121,7 +229121,7 @@
         "Cocoa": 0.2571,
         "Cotton": -0.7364,
         "Coffee": 0.0,
-        "Natural Gas": 0.3182,
+        "Natural Gas": 0.318,
         "Sugar": -0.8898
       },
       "actuals": {
@@ -229148,7 +229148,7 @@
         "Cocoa": 0.3611,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.4144,
+        "Natural Gas": 0.4141,
         "Sugar": -0.8838
       },
       "predictions_low_risk": {
@@ -229160,7 +229160,7 @@
         "Cocoa": 0.2571,
         "Cotton": -0.7367,
         "Coffee": 0.0,
-        "Natural Gas": 0.3193,
+        "Natural Gas": 0.3191,
         "Sugar": -0.8793
       },
       "actuals": {
@@ -229187,7 +229187,7 @@
         "Cocoa": 0.4307,
         "Cotton": -0.803,
         "Coffee": 0.0,
-        "Natural Gas": 0.4165,
+        "Natural Gas": 0.4162,
         "Sugar": -0.879
       },
       "predictions_low_risk": {
@@ -229199,7 +229199,7 @@
         "Cocoa": 0.2739,
         "Cotton": -0.736,
         "Coffee": 0.0,
-        "Natural Gas": 0.3203,
+        "Natural Gas": 0.3201,
         "Sugar": -0.8752
       },
       "actuals": {
@@ -229226,7 +229226,7 @@
         "Cocoa": 0.4423,
         "Cotton": -0.8313,
         "Coffee": 0.0,
-        "Natural Gas": 0.4203,
+        "Natural Gas": 0.42,
         "Sugar": -0.8893
       },
       "predictions_low_risk": {
@@ -229238,7 +229238,7 @@
         "Cocoa": 0.2768,
         "Cotton": -0.7619,
         "Coffee": 0.0,
-        "Natural Gas": 0.3263,
+        "Natural Gas": 0.3261,
         "Sugar": -0.8864
       },
       "actuals": {
@@ -229265,7 +229265,7 @@
         "Cocoa": 0.4411,
         "Cotton": -0.8305,
         "Coffee": 0.0,
-        "Natural Gas": 0.4123,
+        "Natural Gas": 0.4121,
         "Sugar": -0.8911
       },
       "predictions_low_risk": {
@@ -229277,7 +229277,7 @@
         "Cocoa": 0.2787,
         "Cotton": -0.7614,
         "Coffee": 0.0,
-        "Natural Gas": 0.3226,
+        "Natural Gas": 0.3224,
         "Sugar": -0.8911
       },
       "actuals": {
@@ -229304,7 +229304,7 @@
         "Cocoa": 0.4445,
         "Cotton": -0.8315,
         "Coffee": 0.0,
-        "Natural Gas": 0.4136,
+        "Natural Gas": 0.4133,
         "Sugar": -0.8854
       },
       "predictions_low_risk": {
@@ -229316,7 +229316,7 @@
         "Cocoa": 0.2818,
         "Cotton": -0.7635,
         "Coffee": 0.0,
-        "Natural Gas": 0.3249,
+        "Natural Gas": 0.3247,
         "Sugar": -0.8854
       },
       "actuals": {
@@ -229343,7 +229343,7 @@
         "Cocoa": 0.4424,
         "Cotton": -0.8308,
         "Coffee": 0.0,
-        "Natural Gas": 0.4106,
+        "Natural Gas": 0.4103,
         "Sugar": -0.8866
       },
       "predictions_low_risk": {
@@ -229355,7 +229355,7 @@
         "Cocoa": 0.277,
         "Cotton": -0.7619,
         "Coffee": 0.0,
-        "Natural Gas": 0.3099,
+        "Natural Gas": 0.3096,
         "Sugar": -0.8866
       },
       "actuals": {
@@ -229382,7 +229382,7 @@
         "Cocoa": 0.4386,
         "Cotton": -0.8307,
         "Coffee": 0.0,
-        "Natural Gas": 0.4114,
+        "Natural Gas": 0.4111,
         "Sugar": -0.8917
       },
       "predictions_low_risk": {
@@ -229394,7 +229394,7 @@
         "Cocoa": 0.27,
         "Cotton": -0.7694,
         "Coffee": 0.0,
-        "Natural Gas": 0.3107,
+        "Natural Gas": 0.3105,
         "Sugar": -0.8917
       },
       "actuals": {
@@ -229421,7 +229421,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7825,
         "Coffee": 0.0,
-        "Natural Gas": 0.3922,
+        "Natural Gas": 0.3919,
         "Sugar": -0.8873
       },
       "predictions_low_risk": {
@@ -229433,7 +229433,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7206,
         "Coffee": 0.0,
-        "Natural Gas": 0.2968,
+        "Natural Gas": 0.2966,
         "Sugar": -0.8873
       },
       "actuals": {
@@ -229460,7 +229460,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7823,
         "Coffee": 0.0,
-        "Natural Gas": 0.3885,
+        "Natural Gas": 0.3882,
         "Sugar": -0.8921
       },
       "predictions_low_risk": {
@@ -229472,7 +229472,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7415,
         "Coffee": 0.0,
-        "Natural Gas": 0.2979,
+        "Natural Gas": 0.2977,
         "Sugar": -0.8921
       },
       "actuals": {
@@ -229499,7 +229499,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7814,
         "Coffee": 0.0,
-        "Natural Gas": 0.3855,
+        "Natural Gas": 0.3852,
         "Sugar": -0.8865
       },
       "predictions_low_risk": {
@@ -229511,7 +229511,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7358,
         "Coffee": 0.0,
-        "Natural Gas": 0.2965,
+        "Natural Gas": 0.2962,
         "Sugar": -0.8865
       },
       "actuals": {
@@ -229538,7 +229538,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7807,
         "Coffee": 0.0,
-        "Natural Gas": 0.3792,
+        "Natural Gas": 0.3789,
         "Sugar": -0.8894
       },
       "predictions_low_risk": {
@@ -229550,7 +229550,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7454,
         "Coffee": 0.0,
-        "Natural Gas": 0.2927,
+        "Natural Gas": 0.2925,
         "Sugar": -0.8894
       },
       "actuals": {
@@ -229577,7 +229577,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7809,
         "Coffee": 0.0,
-        "Natural Gas": 0.3849,
+        "Natural Gas": 0.3846,
         "Sugar": -0.8948
       },
       "predictions_low_risk": {
@@ -229589,7 +229589,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7488,
         "Coffee": 0.0,
-        "Natural Gas": 0.2967,
+        "Natural Gas": 0.2965,
         "Sugar": -0.8948
       },
       "actuals": {
@@ -229616,7 +229616,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7796,
         "Coffee": 0.0,
-        "Natural Gas": 0.3808,
+        "Natural Gas": 0.3805,
         "Sugar": -0.8956
       },
       "predictions_low_risk": {
@@ -229628,7 +229628,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.754,
         "Coffee": 0.0,
-        "Natural Gas": 0.2925,
+        "Natural Gas": 0.2923,
         "Sugar": -0.8956
       },
       "actuals": {
@@ -229655,7 +229655,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7792,
         "Coffee": 0.0,
-        "Natural Gas": 0.3806,
+        "Natural Gas": 0.3803,
         "Sugar": -0.8952
       },
       "predictions_low_risk": {
@@ -229667,7 +229667,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7523,
         "Coffee": 0.0,
-        "Natural Gas": 0.2916,
+        "Natural Gas": 0.2914,
         "Sugar": -0.8952
       },
       "actuals": {
@@ -229694,7 +229694,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7797,
         "Coffee": 0.0,
-        "Natural Gas": 0.3798,
+        "Natural Gas": 0.3795,
         "Sugar": -0.9025
       },
       "predictions_low_risk": {
@@ -229706,7 +229706,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7572,
         "Coffee": 0.0,
-        "Natural Gas": 0.3,
+        "Natural Gas": 0.2998,
         "Sugar": -0.9025
       },
       "actuals": {
@@ -229733,7 +229733,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7805,
         "Coffee": 0.0,
-        "Natural Gas": 0.3743,
+        "Natural Gas": 0.374,
         "Sugar": -0.9006
       },
       "predictions_low_risk": {
@@ -229745,7 +229745,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7585,
         "Coffee": 0.0,
-        "Natural Gas": 0.2957,
+        "Natural Gas": 0.2955,
         "Sugar": -0.9006
       },
       "actuals": {
@@ -229772,7 +229772,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7801,
         "Coffee": 0.0,
-        "Natural Gas": 0.3711,
+        "Natural Gas": 0.3708,
         "Sugar": -0.9013
       },
       "predictions_low_risk": {
@@ -229784,7 +229784,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7612,
         "Coffee": 0.0,
-        "Natural Gas": 0.2923,
+        "Natural Gas": 0.2921,
         "Sugar": -0.9013
       },
       "actuals": {
@@ -229811,7 +229811,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7809,
         "Coffee": 0.0,
-        "Natural Gas": 0.372,
+        "Natural Gas": 0.3717,
         "Sugar": -0.8988
       },
       "predictions_low_risk": {
@@ -229823,7 +229823,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7625,
         "Coffee": 0.0,
-        "Natural Gas": 0.2906,
+        "Natural Gas": 0.2904,
         "Sugar": -0.8988
       },
       "actuals": {
@@ -229850,7 +229850,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7804,
         "Coffee": 0.0,
-        "Natural Gas": 0.3695,
+        "Natural Gas": 0.3692,
         "Sugar": -0.8946
       },
       "predictions_low_risk": {
@@ -229862,7 +229862,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7625,
         "Coffee": 0.0,
-        "Natural Gas": 0.2878,
+        "Natural Gas": 0.2875,
         "Sugar": -0.8946
       },
       "actuals": {
@@ -229889,7 +229889,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7809,
         "Coffee": 0.0,
-        "Natural Gas": 0.3671,
+        "Natural Gas": 0.3668,
         "Sugar": -0.8957
       },
       "predictions_low_risk": {
@@ -229901,7 +229901,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.763,
         "Coffee": 0.0,
-        "Natural Gas": 0.2871,
+        "Natural Gas": 0.2869,
         "Sugar": -0.8957
       },
       "actuals": {
@@ -229928,7 +229928,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7794,
         "Coffee": 0.0,
-        "Natural Gas": 0.3685,
+        "Natural Gas": 0.3683,
         "Sugar": -0.9046
       },
       "predictions_low_risk": {
@@ -229940,7 +229940,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7589,
         "Coffee": 0.0,
-        "Natural Gas": 0.2922,
+        "Natural Gas": 0.292,
         "Sugar": -0.9046
       },
       "actuals": {
@@ -229967,7 +229967,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7801,
         "Coffee": 0.0,
-        "Natural Gas": 0.3702,
+        "Natural Gas": 0.3699,
         "Sugar": -0.9093
       },
       "predictions_low_risk": {
@@ -229979,7 +229979,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7625,
         "Coffee": 0.0,
-        "Natural Gas": 0.2916,
+        "Natural Gas": 0.2914,
         "Sugar": -0.9093
       },
       "actuals": {
@@ -230006,7 +230006,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7795,
         "Coffee": 0.0,
-        "Natural Gas": 0.3756,
+        "Natural Gas": 0.3753,
         "Sugar": -0.9057
       },
       "predictions_low_risk": {
@@ -230018,7 +230018,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7424,
         "Coffee": 0.0,
-        "Natural Gas": 0.2937,
+        "Natural Gas": 0.2935,
         "Sugar": -0.9057
       },
       "actuals": {
@@ -230045,7 +230045,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7799,
         "Coffee": 0.0,
-        "Natural Gas": 0.3812,
+        "Natural Gas": 0.3809,
         "Sugar": -0.9033
       },
       "predictions_low_risk": {
@@ -230057,7 +230057,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7424,
         "Coffee": 0.0,
-        "Natural Gas": 0.2968,
+        "Natural Gas": 0.2966,
         "Sugar": -0.9033
       },
       "actuals": {
@@ -230084,7 +230084,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7511,
         "Coffee": 0.0,
-        "Natural Gas": 0.3815,
+        "Natural Gas": 0.3812,
         "Sugar": -0.906
       },
       "predictions_low_risk": {
@@ -230096,7 +230096,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7147,
         "Coffee": 0.0,
-        "Natural Gas": 0.2949,
+        "Natural Gas": 0.2947,
         "Sugar": -0.906
       },
       "actuals": {
@@ -230123,7 +230123,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7511,
         "Coffee": 0.0,
-        "Natural Gas": 0.399,
+        "Natural Gas": 0.3988,
         "Sugar": -0.9044
       },
       "predictions_low_risk": {
@@ -230135,7 +230135,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7219,
         "Coffee": 0.0,
-        "Natural Gas": 0.2863,
+        "Natural Gas": 0.2861,
         "Sugar": -0.9044
       },
       "actuals": {
@@ -230162,7 +230162,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7511,
         "Coffee": 0.0,
-        "Natural Gas": 0.4006,
+        "Natural Gas": 0.4003,
         "Sugar": -0.9041
       },
       "predictions_low_risk": {
@@ -230174,7 +230174,7 @@
         "Cocoa": 0.0,
         "Cotton": -0.7157,
         "Coffee": 0.0,
-        "Natural Gas": 0.2823,
+        "Natural Gas": 0.2821,
         "Sugar": -0.9041
       },
       "actuals": {
@@ -231098,7 +231098,7 @@
         "Cocoa": -0.5634,
         "Cotton": -0.7617,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6573,
+        "Natural Gas": -0.6575,
         "Sugar": -0.7557
       },
       "predictions_low_risk": {
@@ -231110,7 +231110,7 @@
         "Cocoa": -0.3021,
         "Cotton": -0.7617,
         "Coffee": 0.7034,
-        "Natural Gas": -0.535,
+        "Natural Gas": -0.5351,
         "Sugar": -0.7557
       },
       "actuals": {
@@ -231137,7 +231137,7 @@
         "Cocoa": -0.5634,
         "Cotton": -0.7613,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7507
       },
       "predictions_low_risk": {
@@ -231149,7 +231149,7 @@
         "Cocoa": -0.3042,
         "Cotton": -0.7613,
         "Coffee": 0.7007,
-        "Natural Gas": -0.5304,
+        "Natural Gas": -0.5305,
         "Sugar": -0.7507
       },
       "actuals": {
@@ -231176,7 +231176,7 @@
         "Cocoa": -0.5678,
         "Cotton": -0.7592,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6573,
         "Sugar": -0.7506
       },
       "predictions_low_risk": {
@@ -231188,7 +231188,7 @@
         "Cocoa": -0.3059,
         "Cotton": -0.7592,
         "Coffee": 0.6828,
-        "Natural Gas": -0.5295,
+        "Natural Gas": -0.5297,
         "Sugar": -0.7506
       },
       "actuals": {
@@ -231215,7 +231215,7 @@
         "Cocoa": -0.588,
         "Cotton": -0.7586,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7511
       },
       "predictions_low_risk": {
@@ -231227,7 +231227,7 @@
         "Cocoa": -0.3212,
         "Cotton": -0.7586,
         "Coffee": 0.6814,
-        "Natural Gas": -0.5336,
+        "Natural Gas": -0.5338,
         "Sugar": -0.7511
       },
       "actuals": {
@@ -231254,7 +231254,7 @@
         "Cocoa": -0.5941,
         "Cotton": -0.7578,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6573,
+        "Natural Gas": -0.6575,
         "Sugar": -0.7513
       },
       "predictions_low_risk": {
@@ -231266,7 +231266,7 @@
         "Cocoa": -0.3198,
         "Cotton": -0.7578,
         "Coffee": 0.6779,
-        "Natural Gas": -0.5338,
+        "Natural Gas": -0.5339,
         "Sugar": -0.7513
       },
       "actuals": {
@@ -231293,7 +231293,7 @@
         "Cocoa": -0.5904,
         "Cotton": -0.7591,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6573,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7496
       },
       "predictions_low_risk": {
@@ -231305,7 +231305,7 @@
         "Cocoa": -0.3193,
         "Cotton": -0.7591,
         "Coffee": 0.6582,
-        "Natural Gas": -0.5412,
+        "Natural Gas": -0.5413,
         "Sugar": -0.7496
       },
       "actuals": {
@@ -231332,7 +231332,7 @@
         "Cocoa": -0.6005,
         "Cotton": -0.7603,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6573,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7531
       },
       "predictions_low_risk": {
@@ -231344,7 +231344,7 @@
         "Cocoa": -0.3178,
         "Cotton": -0.7603,
         "Coffee": 0.6542,
-        "Natural Gas": -0.5446,
+        "Natural Gas": -0.5447,
         "Sugar": -0.7531
       },
       "actuals": {
@@ -231371,7 +231371,7 @@
         "Cocoa": -0.6571,
         "Cotton": -0.7599,
         "Coffee": 0.7121,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7538
       },
       "predictions_low_risk": {
@@ -231383,7 +231383,7 @@
         "Cocoa": -0.3297,
         "Cotton": -0.7599,
         "Coffee": 0.6529,
-        "Natural Gas": -0.5387,
+        "Natural Gas": -0.5389,
         "Sugar": -0.7538
       },
       "actuals": {
@@ -231410,7 +231410,7 @@
         "Cocoa": -0.6556,
         "Cotton": -0.7456,
         "Coffee": 0.7791,
-        "Natural Gas": -0.6571,
+        "Natural Gas": -0.6573,
         "Sugar": -0.7448
       },
       "predictions_low_risk": {
@@ -231422,7 +231422,7 @@
         "Cocoa": -0.328,
         "Cotton": -0.7456,
         "Coffee": 0.7188,
-        "Natural Gas": -0.5425,
+        "Natural Gas": -0.5427,
         "Sugar": -0.7448
       },
       "actuals": {
@@ -231449,7 +231449,7 @@
         "Cocoa": -0.6522,
         "Cotton": -0.7458,
         "Coffee": 0.7763,
-        "Natural Gas": -0.6571,
+        "Natural Gas": -0.6573,
         "Sugar": -0.7398
       },
       "predictions_low_risk": {
@@ -231461,7 +231461,7 @@
         "Cocoa": -0.326,
         "Cotton": -0.7458,
         "Coffee": 0.7212,
-        "Natural Gas": -0.5457,
+        "Natural Gas": -0.5458,
         "Sugar": -0.7398
       },
       "actuals": {
@@ -231488,7 +231488,7 @@
         "Cocoa": -0.6629,
         "Cotton": -0.7459,
         "Coffee": 0.7725,
-        "Natural Gas": -0.6571,
+        "Natural Gas": -0.6572,
         "Sugar": -0.7305
       },
       "predictions_low_risk": {
@@ -231500,7 +231500,7 @@
         "Cocoa": -0.3338,
         "Cotton": -0.7459,
         "Coffee": 0.6974,
-        "Natural Gas": -0.5436,
+        "Natural Gas": -0.5437,
         "Sugar": -0.7305
       },
       "actuals": {
@@ -231527,7 +231527,7 @@
         "Cocoa": -0.6654,
         "Cotton": -0.7466,
         "Coffee": 0.7718,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7336
       },
       "predictions_low_risk": {
@@ -231539,7 +231539,7 @@
         "Cocoa": -0.3337,
         "Cotton": -0.7466,
         "Coffee": 0.6962,
-        "Natural Gas": -0.5561,
+        "Natural Gas": -0.5562,
         "Sugar": -0.7336
       },
       "actuals": {
@@ -231566,7 +231566,7 @@
         "Cocoa": -0.6655,
         "Cotton": -0.7457,
         "Coffee": 0.7694,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6573,
         "Sugar": -0.7329
       },
       "predictions_low_risk": {
@@ -231578,7 +231578,7 @@
         "Cocoa": -0.3339,
         "Cotton": -0.7457,
         "Coffee": 0.6829,
-        "Natural Gas": -0.5804,
+        "Natural Gas": -0.5805,
         "Sugar": -0.7329
       },
       "actuals": {
@@ -231605,7 +231605,7 @@
         "Cocoa": -0.6659,
         "Cotton": -0.745,
         "Coffee": 0.7706,
-        "Natural Gas": -0.6574,
+        "Natural Gas": -0.6575,
         "Sugar": -0.7183
       },
       "predictions_low_risk": {
@@ -231617,7 +231617,7 @@
         "Cocoa": -0.3316,
         "Cotton": -0.745,
         "Coffee": 0.6827,
-        "Natural Gas": -0.5812,
+        "Natural Gas": -0.5813,
         "Sugar": -0.7183
       },
       "actuals": {
@@ -231644,7 +231644,7 @@
         "Cocoa": -0.6656,
         "Cotton": -0.7455,
         "Coffee": 0.7697,
-        "Natural Gas": -0.6573,
+        "Natural Gas": -0.6575,
         "Sugar": -0.7137
       },
       "predictions_low_risk": {
@@ -231656,7 +231656,7 @@
         "Cocoa": -0.3326,
         "Cotton": -0.7455,
         "Coffee": 0.6724,
-        "Natural Gas": -0.5817,
+        "Natural Gas": -0.5818,
         "Sugar": -0.7137
       },
       "actuals": {
@@ -231683,7 +231683,7 @@
         "Cocoa": -0.6756,
         "Cotton": -0.7456,
         "Coffee": 0.7695,
-        "Natural Gas": -0.6571,
+        "Natural Gas": -0.6572,
         "Sugar": -0.7182
       },
       "predictions_low_risk": {
@@ -231695,7 +231695,7 @@
         "Cocoa": -0.3356,
         "Cotton": -0.7456,
         "Coffee": 0.6578,
-        "Natural Gas": -0.5778,
+        "Natural Gas": -0.5779,
         "Sugar": -0.7182
       },
       "actuals": {
@@ -231722,7 +231722,7 @@
         "Cocoa": -0.6726,
         "Cotton": -0.7449,
         "Coffee": 0.77,
-        "Natural Gas": -0.6571,
+        "Natural Gas": -0.6572,
         "Sugar": -0.7268
       },
       "predictions_low_risk": {
@@ -231734,7 +231734,7 @@
         "Cocoa": -0.33,
         "Cotton": -0.7449,
         "Coffee": 0.6582,
-        "Natural Gas": -0.5794,
+        "Natural Gas": -0.5795,
         "Sugar": -0.7268
       },
       "actuals": {
@@ -231761,7 +231761,7 @@
         "Cocoa": -0.6718,
         "Cotton": -0.7461,
         "Coffee": 0.77,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6573,
         "Sugar": -0.73
       },
       "predictions_low_risk": {
@@ -231773,7 +231773,7 @@
         "Cocoa": -0.3252,
         "Cotton": -0.7461,
         "Coffee": 0.6632,
-        "Natural Gas": -0.5894,
+        "Natural Gas": -0.5896,
         "Sugar": -0.73
       },
       "actuals": {
@@ -231800,7 +231800,7 @@
         "Cocoa": -0.6609,
         "Cotton": -0.7465,
         "Coffee": 0.7676,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7402
       },
       "predictions_low_risk": {
@@ -231812,7 +231812,7 @@
         "Cocoa": -0.3178,
         "Cotton": -0.7465,
         "Coffee": 0.6574,
-        "Natural Gas": -0.6122,
+        "Natural Gas": -0.6124,
         "Sugar": -0.7402
       },
       "actuals": {
@@ -231839,7 +231839,7 @@
         "Cocoa": -0.6837,
         "Cotton": -0.7448,
         "Coffee": 0.7655,
-        "Natural Gas": -0.6572,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7472
       },
       "predictions_low_risk": {
@@ -231851,7 +231851,7 @@
         "Cocoa": -0.3277,
         "Cotton": -0.7448,
         "Coffee": 0.6561,
-        "Natural Gas": -0.6103,
+        "Natural Gas": -0.6104,
         "Sugar": -0.7472
       },
       "actuals": {
@@ -231878,7 +231878,7 @@
         "Cocoa": -0.6837,
         "Cotton": -0.7456,
         "Coffee": 0.7645,
-        "Natural Gas": -0.6573,
+        "Natural Gas": -0.6574,
         "Sugar": -0.7456
       },
       "predictions_low_risk": {
@@ -231890,7 +231890,7 @@
         "Cocoa": -0.3291,
         "Cotton": -0.7456,
         "Coffee": 0.6515,
-        "Natural Gas": -0.6292,
+        "Natural Gas": -0.6294,
         "Sugar": -0.7456
       },
       "actuals": {
@@ -232736,7 +232736,7 @@
         "Cocoa": -0.8147,
         "Cotton": 0.0,
         "Coffee": 0.7433,
-        "Natural Gas": 0.7516,
+        "Natural Gas": 0.7517,
         "Sugar": -0.8974
       },
       "predictions_low_risk": {
@@ -232748,7 +232748,7 @@
         "Cocoa": -0.4749,
         "Cotton": 0.0,
         "Coffee": 0.5507,
-        "Natural Gas": 0.7516,
+        "Natural Gas": 0.7517,
         "Sugar": -0.8974
       },
       "actuals": {
@@ -232814,7 +232814,7 @@
         "Cocoa": -0.812,
         "Cotton": 0.0,
         "Coffee": 0.7441,
-        "Natural Gas": 0.7558,
+        "Natural Gas": 0.7559,
         "Sugar": -0.9072
       },
       "predictions_low_risk": {
@@ -232826,7 +232826,7 @@
         "Cocoa": -0.4658,
         "Cotton": 0.0,
         "Coffee": 0.5583,
-        "Natural Gas": 0.7558,
+        "Natural Gas": 0.7559,
         "Sugar": -0.9072
       },
       "actuals": {
@@ -232970,7 +232970,7 @@
         "Cocoa": -0.8089,
         "Cotton": 0.0,
         "Coffee": 0.7534,
-        "Natural Gas": 0.7618,
+        "Natural Gas": 0.7619,
         "Sugar": -0.8993
       },
       "predictions_low_risk": {
@@ -232982,7 +232982,7 @@
         "Cocoa": -0.4697,
         "Cotton": 0.0,
         "Coffee": 0.5559,
-        "Natural Gas": 0.7618,
+        "Natural Gas": 0.7619,
         "Sugar": -0.8993
       },
       "actuals": {
@@ -233126,7 +233126,7 @@
         "Cocoa": -0.8089,
         "Cotton": 0.0,
         "Coffee": 0.7695,
-        "Natural Gas": 0.7675,
+        "Natural Gas": 0.7676,
         "Sugar": -0.8886
       },
       "predictions_low_risk": {
@@ -233138,7 +233138,7 @@
         "Cocoa": -0.5553,
         "Cotton": 0.0,
         "Coffee": 0.5822,
-        "Natural Gas": 0.7675,
+        "Natural Gas": 0.7676,
         "Sugar": -0.8886
       },
       "actuals": {
@@ -233438,7 +233438,7 @@
         "Cocoa": -0.8098,
         "Cotton": 0.0,
         "Coffee": 0.7664,
-        "Natural Gas": 0.7614,
+        "Natural Gas": 0.7615,
         "Sugar": -0.8732
       },
       "predictions_low_risk": {
@@ -233528,7 +233528,7 @@
         "Cocoa": -0.6082,
         "Cotton": 0.0,
         "Coffee": 0.585,
-        "Natural Gas": 0.7158,
+        "Natural Gas": 0.7159,
         "Sugar": -0.8801
       },
       "actuals": {
@@ -233555,7 +233555,7 @@
         "Cocoa": -0.8106,
         "Cotton": 0.0,
         "Coffee": 0.7722,
-        "Natural Gas": 0.7638,
+        "Natural Gas": 0.7639,
         "Sugar": -0.885
       },
       "predictions_low_risk": {
@@ -233594,7 +233594,7 @@
         "Cocoa": -0.812,
         "Cotton": 0.0,
         "Coffee": 0.7751,
-        "Natural Gas": 0.7621,
+        "Natural Gas": 0.7622,
         "Sugar": -0.8855
       },
       "predictions_low_risk": {
@@ -233633,7 +233633,7 @@
         "Cocoa": -0.8422,
         "Cotton": -0.8173,
         "Coffee": 0.7877,
-        "Natural Gas": 0.7761,
+        "Natural Gas": 0.7759,
         "Sugar": -0.7024
       },
       "predictions_low_risk": {
@@ -233645,7 +233645,7 @@
         "Cocoa": -0.6084,
         "Cotton": -0.8173,
         "Coffee": 0.6117,
-        "Natural Gas": 0.6437,
+        "Natural Gas": 0.6436,
         "Sugar": -0.7024
       },
       "actuals": {
@@ -233672,7 +233672,7 @@
         "Cocoa": -0.8422,
         "Cotton": -0.8161,
         "Coffee": 0.7898,
-        "Natural Gas": 0.7744,
+        "Natural Gas": 0.7742,
         "Sugar": -0.6905
       },
       "predictions_low_risk": {
@@ -233684,7 +233684,7 @@
         "Cocoa": -0.6098,
         "Cotton": -0.8161,
         "Coffee": 0.6165,
-        "Natural Gas": 0.6426,
+        "Natural Gas": 0.6425,
         "Sugar": -0.6905
       },
       "actuals": {
@@ -233711,7 +233711,7 @@
         "Cocoa": -0.8425,
         "Cotton": -0.8157,
         "Coffee": 0.7897,
-        "Natural Gas": 0.7724,
+        "Natural Gas": 0.7722,
         "Sugar": -0.6995
       },
       "predictions_low_risk": {
@@ -233723,7 +233723,7 @@
         "Cocoa": -0.6091,
         "Cotton": -0.8157,
         "Coffee": 0.6155,
-        "Natural Gas": 0.6382,
+        "Natural Gas": 0.638,
         "Sugar": -0.6995
       },
       "actuals": {
@@ -233750,7 +233750,7 @@
         "Cocoa": -0.8421,
         "Cotton": -0.8145,
         "Coffee": 0.7888,
-        "Natural Gas": 0.7733,
+        "Natural Gas": 0.7731,
         "Sugar": -0.6999
       },
       "predictions_low_risk": {
@@ -233762,7 +233762,7 @@
         "Cocoa": -0.6032,
         "Cotton": -0.8145,
         "Coffee": 0.6079,
-        "Natural Gas": 0.6402,
+        "Natural Gas": 0.6401,
         "Sugar": -0.6999
       },
       "actuals": {
@@ -233789,7 +233789,7 @@
         "Cocoa": -0.8418,
         "Cotton": -0.814,
         "Coffee": 0.788,
-        "Natural Gas": 0.7717,
+        "Natural Gas": 0.7716,
         "Sugar": -0.7033
       },
       "predictions_low_risk": {
@@ -233801,7 +233801,7 @@
         "Cocoa": -0.6082,
         "Cotton": -0.814,
         "Coffee": 0.6106,
-        "Natural Gas": 0.6392,
+        "Natural Gas": 0.6391,
         "Sugar": -0.7033
       },
       "actuals": {
@@ -233828,7 +233828,7 @@
         "Cocoa": -0.8413,
         "Cotton": -0.8134,
         "Coffee": 0.7892,
-        "Natural Gas": 0.7756,
+        "Natural Gas": 0.7754,
         "Sugar": -0.7214
       },
       "predictions_low_risk": {
@@ -233840,7 +233840,7 @@
         "Cocoa": -0.6051,
         "Cotton": -0.8134,
         "Coffee": 0.6136,
-        "Natural Gas": 0.653,
+        "Natural Gas": 0.6529,
         "Sugar": -0.7214
       },
       "actuals": {
@@ -233867,7 +233867,7 @@
         "Cocoa": -0.8399,
         "Cotton": -0.813,
         "Coffee": 0.7896,
-        "Natural Gas": 0.7745,
+        "Natural Gas": 0.7744,
         "Sugar": -0.7314
       },
       "predictions_low_risk": {
@@ -233879,7 +233879,7 @@
         "Cocoa": -0.5954,
         "Cotton": -0.813,
         "Coffee": 0.6131,
-        "Natural Gas": 0.6459,
+        "Natural Gas": 0.6458,
         "Sugar": -0.7314
       },
       "actuals": {
@@ -233906,7 +233906,7 @@
         "Cocoa": -0.839,
         "Cotton": -0.8126,
         "Coffee": 0.7872,
-        "Natural Gas": 0.7735,
+        "Natural Gas": 0.7733,
         "Sugar": -0.7294
       },
       "predictions_low_risk": {
@@ -233918,7 +233918,7 @@
         "Cocoa": -0.5971,
         "Cotton": -0.8126,
         "Coffee": 0.5967,
-        "Natural Gas": 0.6445,
+        "Natural Gas": 0.6443,
         "Sugar": -0.7294
       },
       "actuals": {
@@ -233945,7 +233945,7 @@
         "Cocoa": -0.8392,
         "Cotton": -0.8116,
         "Coffee": 0.786,
-        "Natural Gas": 0.7716,
+        "Natural Gas": 0.7714,
         "Sugar": -0.7345
       },
       "predictions_low_risk": {
@@ -233957,7 +233957,7 @@
         "Cocoa": -0.5952,
         "Cotton": -0.8116,
         "Coffee": 0.6073,
-        "Natural Gas": 0.6432,
+        "Natural Gas": 0.643,
         "Sugar": -0.7345
       },
       "actuals": {
@@ -233984,7 +233984,7 @@
         "Cocoa": -0.8398,
         "Cotton": -0.8121,
         "Coffee": 0.7875,
-        "Natural Gas": 0.7667,
+        "Natural Gas": 0.7666,
         "Sugar": -0.7366
       },
       "predictions_low_risk": {
@@ -233996,7 +233996,7 @@
         "Cocoa": -0.5908,
         "Cotton": -0.8121,
         "Coffee": 0.6082,
-        "Natural Gas": 0.6381,
+        "Natural Gas": 0.638,
         "Sugar": -0.7366
       },
       "actuals": {
@@ -234023,7 +234023,7 @@
         "Cocoa": -0.8397,
         "Cotton": -0.8117,
         "Coffee": 0.7901,
-        "Natural Gas": 0.7664,
+        "Natural Gas": 0.7663,
         "Sugar": -0.7476
       },
       "predictions_low_risk": {
@@ -234035,7 +234035,7 @@
         "Cocoa": -0.5907,
         "Cotton": -0.8117,
         "Coffee": 0.618,
-        "Natural Gas": 0.6373,
+        "Natural Gas": 0.6371,
         "Sugar": -0.7476
       },
       "actuals": {
@@ -234062,7 +234062,7 @@
         "Cocoa": -0.8398,
         "Cotton": -0.8118,
         "Coffee": 0.7907,
-        "Natural Gas": 0.7646,
+        "Natural Gas": 0.7645,
         "Sugar": -0.7549
       },
       "predictions_low_risk": {
@@ -234074,7 +234074,7 @@
         "Cocoa": -0.6003,
         "Cotton": -0.8118,
         "Coffee": 0.6132,
-        "Natural Gas": 0.6362,
+        "Natural Gas": 0.6361,
         "Sugar": -0.7549
       },
       "actuals": {
@@ -234101,7 +234101,7 @@
         "Cocoa": -0.8399,
         "Cotton": -0.8127,
         "Coffee": 0.7879,
-        "Natural Gas": 0.7695,
+        "Natural Gas": 0.7693,
         "Sugar": -0.7636
       },
       "predictions_low_risk": {
@@ -234113,7 +234113,7 @@
         "Cocoa": -0.5825,
         "Cotton": -0.8127,
         "Coffee": 0.6161,
-        "Natural Gas": 0.638,
+        "Natural Gas": 0.6379,
         "Sugar": -0.7636
       },
       "actuals": {
@@ -234140,7 +234140,7 @@
         "Cocoa": -0.8395,
         "Cotton": -0.8134,
         "Coffee": 0.7892,
-        "Natural Gas": 0.771,
+        "Natural Gas": 0.7709,
         "Sugar": -0.764
       },
       "predictions_low_risk": {
@@ -234152,7 +234152,7 @@
         "Cocoa": -0.5765,
         "Cotton": -0.8134,
         "Coffee": 0.6283,
-        "Natural Gas": 0.6468,
+        "Natural Gas": 0.6467,
         "Sugar": -0.764
       },
       "actuals": {
@@ -234179,7 +234179,7 @@
         "Cocoa": -0.8378,
         "Cotton": -0.8123,
         "Coffee": 0.7917,
-        "Natural Gas": 0.7741,
+        "Natural Gas": 0.774,
         "Sugar": -0.771
       },
       "predictions_low_risk": {
@@ -234191,7 +234191,7 @@
         "Cocoa": -0.5962,
         "Cotton": -0.8123,
         "Coffee": 0.6283,
-        "Natural Gas": 0.649,
+        "Natural Gas": 0.6489,
         "Sugar": -0.771
       },
       "actuals": {
@@ -234218,7 +234218,7 @@
         "Cocoa": -0.8384,
         "Cotton": -0.8123,
         "Coffee": 0.79,
-        "Natural Gas": 0.7787,
+        "Natural Gas": 0.7785,
         "Sugar": -0.7851
       },
       "predictions_low_risk": {
@@ -234230,7 +234230,7 @@
         "Cocoa": -0.614,
         "Cotton": -0.8123,
         "Coffee": 0.6265,
-        "Natural Gas": 0.6521,
+        "Natural Gas": 0.652,
         "Sugar": -0.7851
       },
       "actuals": {
@@ -234257,7 +234257,7 @@
         "Cocoa": -0.8399,
         "Cotton": -0.7906,
         "Coffee": 0.788,
-        "Natural Gas": 0.7781,
+        "Natural Gas": 0.7779,
         "Sugar": -0.7857
       },
       "predictions_low_risk": {
@@ -234269,7 +234269,7 @@
         "Cocoa": -0.6227,
         "Cotton": -0.7906,
         "Coffee": 0.6275,
-        "Natural Gas": 0.6546,
+        "Natural Gas": 0.6544,
         "Sugar": -0.7857
       },
       "actuals": {
@@ -234296,7 +234296,7 @@
         "Cocoa": -0.8139,
         "Cotton": -0.7906,
         "Coffee": 0.7876,
-        "Natural Gas": 0.7769,
+        "Natural Gas": 0.7768,
         "Sugar": -0.7724
       },
       "predictions_low_risk": {
@@ -234308,7 +234308,7 @@
         "Cocoa": -0.6037,
         "Cotton": -0.7906,
         "Coffee": 0.6287,
-        "Natural Gas": 0.6532,
+        "Natural Gas": 0.6531,
         "Sugar": -0.7724
       },
       "actuals": {
@@ -234335,7 +234335,7 @@
         "Cocoa": -0.7322,
         "Cotton": -0.7906,
         "Coffee": 0.7594,
-        "Natural Gas": 0.7781,
+        "Natural Gas": 0.7779,
         "Sugar": -0.7667
       },
       "predictions_low_risk": {
@@ -234347,7 +234347,7 @@
         "Cocoa": -0.5529,
         "Cotton": -0.7906,
         "Coffee": 0.6098,
-        "Natural Gas": 0.6449,
+        "Natural Gas": 0.6447,
         "Sugar": -0.7667
       },
       "actuals": {
@@ -234452,7 +234452,7 @@
         "Cocoa": -0.6573,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3522,
+        "Natural Gas": 0.3518,
         "Sugar": -0.7389
       },
       "predictions_low_risk": {
@@ -234464,7 +234464,7 @@
         "Cocoa": -0.4951,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2904,
+        "Natural Gas": 0.29,
         "Sugar": -0.7389
       },
       "actuals": {
@@ -234686,7 +234686,7 @@
         "Cocoa": -0.6105,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3531,
+        "Natural Gas": 0.3526,
         "Sugar": -0.7393
       },
       "predictions_low_risk": {
@@ -234698,7 +234698,7 @@
         "Cocoa": -0.4752,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2676,
+        "Natural Gas": 0.2672,
         "Sugar": -0.7393
       },
       "actuals": {
@@ -234725,7 +234725,7 @@
         "Cocoa": -0.6025,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3548,
+        "Natural Gas": 0.3544,
         "Sugar": -0.7306
       },
       "predictions_low_risk": {
@@ -234737,7 +234737,7 @@
         "Cocoa": -0.4808,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2686,
+        "Natural Gas": 0.2683,
         "Sugar": -0.7306
       },
       "actuals": {
@@ -234764,7 +234764,7 @@
         "Cocoa": -0.6026,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3621,
+        "Natural Gas": 0.3617,
         "Sugar": -0.7383
       },
       "predictions_low_risk": {
@@ -234776,7 +234776,7 @@
         "Cocoa": -0.4628,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2734,
+        "Natural Gas": 0.2731,
         "Sugar": -0.7383
       },
       "actuals": {
@@ -234803,7 +234803,7 @@
         "Cocoa": -0.6078,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3617,
+        "Natural Gas": 0.3613,
         "Sugar": -0.7329
       },
       "predictions_low_risk": {
@@ -234815,7 +234815,7 @@
         "Cocoa": -0.458,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2717,
+        "Natural Gas": 0.2714,
         "Sugar": -0.7329
       },
       "actuals": {
@@ -234842,7 +234842,7 @@
         "Cocoa": -0.6078,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3652,
+        "Natural Gas": 0.3648,
         "Sugar": -0.7259
       },
       "predictions_low_risk": {
@@ -234854,7 +234854,7 @@
         "Cocoa": -0.4594,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.277,
+        "Natural Gas": 0.2767,
         "Sugar": -0.7259
       },
       "actuals": {
@@ -234881,7 +234881,7 @@
         "Cocoa": -0.6057,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3641,
+        "Natural Gas": 0.3637,
         "Sugar": -0.7125
       },
       "predictions_low_risk": {
@@ -234893,7 +234893,7 @@
         "Cocoa": -0.4594,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2755,
+        "Natural Gas": 0.2751,
         "Sugar": -0.7125
       },
       "actuals": {
@@ -234920,7 +234920,7 @@
         "Cocoa": -0.6057,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3594,
+        "Natural Gas": 0.359,
         "Sugar": -0.6957
       },
       "predictions_low_risk": {
@@ -234932,7 +234932,7 @@
         "Cocoa": -0.4651,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.273,
+        "Natural Gas": 0.2726,
         "Sugar": -0.6957
       },
       "actuals": {
@@ -234959,7 +234959,7 @@
         "Cocoa": -0.6075,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3583,
+        "Natural Gas": 0.3579,
         "Sugar": -0.6898
       },
       "predictions_low_risk": {
@@ -234971,7 +234971,7 @@
         "Cocoa": -0.4649,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2722,
+        "Natural Gas": 0.2718,
         "Sugar": -0.6898
       },
       "actuals": {
@@ -234998,7 +234998,7 @@
         "Cocoa": -0.6098,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.3607,
+        "Natural Gas": 0.3603,
         "Sugar": -0.6738
       },
       "predictions_low_risk": {
@@ -235010,7 +235010,7 @@
         "Cocoa": -0.4645,
         "Cotton": -0.7906,
         "Coffee": 0.0,
-        "Natural Gas": 0.2634,
+        "Natural Gas": 0.2631,
         "Sugar": -0.6738
       },
       "actuals": {
@@ -235037,7 +235037,7 @@
         "Cocoa": -0.6118,
         "Cotton": -0.8219,
         "Coffee": 0.0,
-        "Natural Gas": 0.374,
+        "Natural Gas": 0.3738,
         "Sugar": -0.6652
       },
       "predictions_low_risk": {
@@ -235049,7 +235049,7 @@
         "Cocoa": -0.4656,
         "Cotton": -0.8219,
         "Coffee": 0.0,
-        "Natural Gas": 0.2712,
+        "Natural Gas": 0.271,
         "Sugar": -0.6652
       },
       "actuals": {
@@ -235076,7 +235076,7 @@
         "Cocoa": -0.6118,
         "Cotton": -0.8216,
         "Coffee": 0.0,
-        "Natural Gas": 0.3797,
+        "Natural Gas": 0.3794,
         "Sugar": -0.6711
       },
       "predictions_low_risk": {
@@ -235088,7 +235088,7 @@
         "Cocoa": -0.4656,
         "Cotton": -0.8216,
         "Coffee": 0.0,
-        "Natural Gas": 0.2757,
+        "Natural Gas": 0.2755,
         "Sugar": -0.6711
       },
       "actuals": {
@@ -235115,7 +235115,7 @@
         "Cocoa": -0.5973,
         "Cotton": -0.8211,
         "Coffee": 0.0,
-        "Natural Gas": 0.3792,
+        "Natural Gas": 0.3789,
         "Sugar": -0.6755
       },
       "predictions_low_risk": {
@@ -235127,7 +235127,7 @@
         "Cocoa": -0.4554,
         "Cotton": -0.8211,
         "Coffee": 0.0,
-        "Natural Gas": 0.2914,
+        "Natural Gas": 0.2912,
         "Sugar": -0.6755
       },
       "actuals": {
@@ -235154,7 +235154,7 @@
         "Cocoa": -0.5973,
         "Cotton": -0.821,
         "Coffee": 0.0,
-        "Natural Gas": 0.3767,
+        "Natural Gas": 0.3765,
         "Sugar": -0.6783
       },
       "predictions_low_risk": {
@@ -235166,7 +235166,7 @@
         "Cocoa": -0.4574,
         "Cotton": -0.821,
         "Coffee": 0.0,
-        "Natural Gas": 0.2597,
+        "Natural Gas": 0.2595,
         "Sugar": -0.6783
       },
       "actuals": {
@@ -235193,7 +235193,7 @@
         "Cocoa": -0.5981,
         "Cotton": -0.8209,
         "Coffee": 0.0,
-        "Natural Gas": 0.3858,
+        "Natural Gas": 0.3855,
         "Sugar": -0.6852
       },
       "predictions_low_risk": {
@@ -235205,7 +235205,7 @@
         "Cocoa": -0.4578,
         "Cotton": -0.8209,
         "Coffee": 0.0,
-        "Natural Gas": 0.2628,
+        "Natural Gas": 0.2626,
         "Sugar": -0.6852
       },
       "actuals": {
@@ -235232,7 +235232,7 @@
         "Cocoa": -0.6781,
         "Cotton": -0.8202,
         "Coffee": 0.0,
-        "Natural Gas": 0.796,
+        "Natural Gas": 0.7957,
         "Sugar": -0.6906
       },
       "predictions_low_risk": {
@@ -235244,7 +235244,7 @@
         "Cocoa": -0.5182,
         "Cotton": -0.8202,
         "Coffee": 0.0,
-        "Natural Gas": 0.5418,
+        "Natural Gas": 0.5416,
         "Sugar": -0.6906
       },
       "actuals": {
@@ -235271,7 +235271,7 @@
         "Cocoa": -0.6853,
         "Cotton": -0.8191,
         "Coffee": 0.0,
-        "Natural Gas": 0.7945,
+        "Natural Gas": 0.7942,
         "Sugar": -0.6827
       },
       "predictions_low_risk": {
@@ -235283,7 +235283,7 @@
         "Cocoa": -0.5221,
         "Cotton": -0.8191,
         "Coffee": 0.0,
-        "Natural Gas": 0.5418,
+        "Natural Gas": 0.5416,
         "Sugar": -0.6827
       },
       "actuals": {
@@ -235310,7 +235310,7 @@
         "Cocoa": -0.6749,
         "Cotton": -0.8183,
         "Coffee": 0.0,
-        "Natural Gas": 0.798,
+        "Natural Gas": 0.7977,
         "Sugar": -0.6848
       },
       "predictions_low_risk": {
@@ -235322,7 +235322,7 @@
         "Cocoa": -0.5213,
         "Cotton": -0.8183,
         "Coffee": 0.0,
-        "Natural Gas": 0.5399,
+        "Natural Gas": 0.5396,
         "Sugar": -0.6848
       },
       "actuals": {
@@ -235349,7 +235349,7 @@
         "Cocoa": -0.6749,
         "Cotton": -0.8177,
         "Coffee": 0.0,
-        "Natural Gas": 0.7985,
+        "Natural Gas": 0.7982,
         "Sugar": -0.6687
       },
       "predictions_low_risk": {
@@ -235361,7 +235361,7 @@
         "Cocoa": -0.5225,
         "Cotton": -0.8177,
         "Coffee": 0.0,
-        "Natural Gas": 0.5388,
+        "Natural Gas": 0.5386,
         "Sugar": -0.6687
       },
       "actuals": {
@@ -235388,7 +235388,7 @@
         "Cocoa": -0.7113,
         "Cotton": -0.8168,
         "Coffee": 0.0,
-        "Natural Gas": 0.795,
+        "Natural Gas": 0.7948,
         "Sugar": -0.6772
       },
       "predictions_low_risk": {
@@ -235400,7 +235400,7 @@
         "Cocoa": -0.5425,
         "Cotton": -0.8168,
         "Coffee": 0.0,
-        "Natural Gas": 0.5386,
+        "Natural Gas": 0.5384,
         "Sugar": -0.6772
       },
       "actuals": {
@@ -235427,7 +235427,7 @@
         "Cocoa": -0.71,
         "Cotton": -0.8182,
         "Coffee": 0.0,
-        "Natural Gas": 0.801,
+        "Natural Gas": 0.8007,
         "Sugar": -0.687
       },
       "predictions_low_risk": {
@@ -235439,7 +235439,7 @@
         "Cocoa": -0.4709,
         "Cotton": -0.8182,
         "Coffee": 0.0,
-        "Natural Gas": 0.5343,
+        "Natural Gas": 0.534,
         "Sugar": -0.687
       },
       "actuals": {
@@ -235466,7 +235466,7 @@
         "Cocoa": -0.7207,
         "Cotton": -0.8177,
         "Coffee": 0.0,
-        "Natural Gas": 0.7967,
+        "Natural Gas": 0.7964,
         "Sugar": -0.6892
       },
       "predictions_low_risk": {
@@ -235478,7 +235478,7 @@
         "Cocoa": -0.4699,
         "Cotton": -0.8177,
         "Coffee": 0.0,
-        "Natural Gas": 0.5271,
+        "Natural Gas": 0.5269,
         "Sugar": -0.6892
       },
       "actuals": {
@@ -235505,7 +235505,7 @@
         "Cocoa": -0.7197,
         "Cotton": -0.8175,
         "Coffee": 0.0,
-        "Natural Gas": 0.7935,
+        "Natural Gas": 0.7932,
         "Sugar": -0.6999
       },
       "predictions_low_risk": {
@@ -235517,7 +235517,7 @@
         "Cocoa": -0.4639,
         "Cotton": -0.8175,
         "Coffee": 0.0,
-        "Natural Gas": 0.525,
+        "Natural Gas": 0.5248,
         "Sugar": -0.6999
       },
       "actuals": {
@@ -235544,7 +235544,7 @@
         "Cocoa": -0.7091,
         "Cotton": -0.8175,
         "Coffee": 0.0,
-        "Natural Gas": 0.7927,
+        "Natural Gas": 0.7924,
         "Sugar": -0.6975
       },
       "predictions_low_risk": {
@@ -235556,7 +235556,7 @@
         "Cocoa": -0.4621,
         "Cotton": -0.8175,
         "Coffee": 0.0,
-        "Natural Gas": 0.5129,
+        "Natural Gas": 0.5127,
         "Sugar": -0.6975
       },
       "actuals": {
@@ -235583,7 +235583,7 @@
         "Cocoa": -0.7096,
         "Cotton": -0.8178,
         "Coffee": 0.0,
-        "Natural Gas": 0.7869,
+        "Natural Gas": 0.7866,
         "Sugar": -0.7017
       },
       "predictions_low_risk": {
@@ -235595,7 +235595,7 @@
         "Cocoa": -0.4613,
         "Cotton": -0.8178,
         "Coffee": 0.0,
-        "Natural Gas": 0.5088,
+        "Natural Gas": 0.5086,
         "Sugar": -0.7017
       },
       "actuals": {
@@ -235622,7 +235622,7 @@
         "Cocoa": -0.7115,
         "Cotton": -0.8188,
         "Coffee": 0.0,
-        "Natural Gas": 0.7756,
+        "Natural Gas": 0.7754,
         "Sugar": -0.697
       },
       "predictions_low_risk": {
@@ -235634,7 +235634,7 @@
         "Cocoa": -0.463,
         "Cotton": -0.8188,
         "Coffee": 0.0,
-        "Natural Gas": 0.5081,
+        "Natural Gas": 0.5079,
         "Sugar": -0.697
       },
       "actuals": {
@@ -235661,7 +235661,7 @@
         "Cocoa": -0.7109,
         "Cotton": -0.8179,
         "Coffee": 0.0,
-        "Natural Gas": 0.7762,
+        "Natural Gas": 0.776,
         "Sugar": -0.6937
       },
       "predictions_low_risk": {
@@ -235673,7 +235673,7 @@
         "Cocoa": -0.4405,
         "Cotton": -0.8179,
         "Coffee": 0.0,
-        "Natural Gas": 0.4445,
+        "Natural Gas": 0.4444,
         "Sugar": -0.6937
       },
       "actuals": {
@@ -235700,7 +235700,7 @@
         "Cocoa": -0.7114,
         "Cotton": -0.8187,
         "Coffee": 0.0,
-        "Natural Gas": 0.7819,
+        "Natural Gas": 0.7816,
         "Sugar": -0.7153
       },
       "predictions_low_risk": {
@@ -235712,7 +235712,7 @@
         "Cocoa": -0.4363,
         "Cotton": -0.8187,
         "Coffee": 0.0,
-        "Natural Gas": 0.4172,
+        "Natural Gas": 0.417,
         "Sugar": -0.7153
       },
       "actuals": {
@@ -235739,7 +235739,7 @@
         "Cocoa": -0.7129,
         "Cotton": -0.8182,
         "Coffee": 0.0,
-        "Natural Gas": 0.7785,
+        "Natural Gas": 0.7782,
         "Sugar": -0.7046
       },
       "predictions_low_risk": {
@@ -235751,7 +235751,7 @@
         "Cocoa": -0.436,
         "Cotton": -0.8182,
         "Coffee": 0.0,
-        "Natural Gas": 0.4149,
+        "Natural Gas": 0.4148,
         "Sugar": -0.7046
       },
       "actuals": {
@@ -235778,7 +235778,7 @@
         "Cocoa": -0.7489,
         "Cotton": -0.8191,
         "Coffee": 0.0,
-        "Natural Gas": 0.7738,
+        "Natural Gas": 0.7735,
         "Sugar": -0.7
       },
       "predictions_low_risk": {
@@ -235790,7 +235790,7 @@
         "Cocoa": -0.4401,
         "Cotton": -0.8191,
         "Coffee": 0.0,
-        "Natural Gas": 0.4122,
+        "Natural Gas": 0.412,
         "Sugar": -0.7
       },
       "actuals": {
@@ -235817,7 +235817,7 @@
         "Cocoa": -0.7506,
         "Cotton": -0.8193,
         "Coffee": 0.0,
-        "Natural Gas": 0.7632,
+        "Natural Gas": 0.763,
         "Sugar": -0.7141
       },
       "predictions_low_risk": {
@@ -235829,7 +235829,7 @@
         "Cocoa": -0.4356,
         "Cotton": -0.8193,
         "Coffee": 0.0,
-        "Natural Gas": 0.3724,
+        "Natural Gas": 0.3723,
         "Sugar": -0.7141
       },
       "actuals": {
@@ -235856,7 +235856,7 @@
         "Cocoa": -0.7628,
         "Cotton": -0.8179,
         "Coffee": 0.0,
-        "Natural Gas": 0.7529,
+        "Natural Gas": 0.7527,
         "Sugar": -0.7205
       },
       "predictions_low_risk": {
@@ -235868,7 +235868,7 @@
         "Cocoa": -0.4334,
         "Cotton": -0.8179,
         "Coffee": 0.0,
-        "Natural Gas": 0.3699,
+        "Natural Gas": 0.3698,
         "Sugar": -0.7205
       },
       "actuals": {
@@ -235895,7 +235895,7 @@
         "Cocoa": -0.7626,
         "Cotton": -0.8182,
         "Coffee": 0.0,
-        "Natural Gas": 0.7514,
+        "Natural Gas": 0.7512,
         "Sugar": -0.7113
       },
       "predictions_low_risk": {
@@ -235907,7 +235907,7 @@
         "Cocoa": -0.4243,
         "Cotton": -0.8182,
         "Coffee": 0.0,
-        "Natural Gas": 0.3677,
+        "Natural Gas": 0.3676,
         "Sugar": -0.7113
       },
       "actuals": {
@@ -235934,7 +235934,7 @@
         "Cocoa": -0.7687,
         "Cotton": -0.8179,
         "Coffee": 0.0,
-        "Natural Gas": 0.224,
+        "Natural Gas": 0.2239,
         "Sugar": -0.7317
       },
       "predictions_low_risk": {
@@ -235946,7 +235946,7 @@
         "Cocoa": -0.4257,
         "Cotton": -0.8179,
         "Coffee": 0.0,
-        "Natural Gas": 0.2426,
+        "Natural Gas": 0.2425,
         "Sugar": -0.7317
       },
       "actuals": {
@@ -235973,7 +235973,7 @@
         "Cocoa": -0.7632,
         "Cotton": -0.8172,
         "Coffee": 0.0,
-        "Natural Gas": 0.2235,
+        "Natural Gas": 0.2234,
         "Sugar": -0.7216
       },
       "predictions_low_risk": {
@@ -235985,7 +235985,7 @@
         "Cocoa": -0.4263,
         "Cotton": -0.8172,
         "Coffee": 0.0,
-        "Natural Gas": 0.2403,
+        "Natural Gas": 0.2402,
         "Sugar": -0.7216
       },
       "actuals": {
@@ -236012,7 +236012,7 @@
         "Cocoa": -0.7722,
         "Cotton": -0.8173,
         "Coffee": -0.7859,
-        "Natural Gas": -0.4274,
+        "Natural Gas": -0.427,
         "Sugar": -0.7375
       },
       "predictions_low_risk": {
@@ -236024,7 +236024,7 @@
         "Cocoa": -0.4258,
         "Cotton": -0.8173,
         "Coffee": -0.7477,
-        "Natural Gas": -0.2337,
+        "Natural Gas": -0.2334,
         "Sugar": -0.7375
       },
       "actuals": {
@@ -236051,7 +236051,7 @@
         "Cocoa": -0.7745,
         "Cotton": -0.8171,
         "Coffee": -0.7841,
-        "Natural Gas": -0.4261,
+        "Natural Gas": -0.4256,
         "Sugar": -0.731
       },
       "predictions_low_risk": {
@@ -236063,7 +236063,7 @@
         "Cocoa": -0.4254,
         "Cotton": -0.8171,
         "Coffee": -0.7199,
-        "Natural Gas": -0.2339,
+        "Natural Gas": -0.2336,
         "Sugar": -0.731
       },
       "actuals": {
@@ -236090,7 +236090,7 @@
         "Cocoa": -0.8307,
         "Cotton": -0.8176,
         "Coffee": -0.7857,
-        "Natural Gas": -0.427,
+        "Natural Gas": -0.4266,
         "Sugar": -0.7195
       },
       "predictions_low_risk": {
@@ -236102,7 +236102,7 @@
         "Cocoa": -0.4337,
         "Cotton": -0.8176,
         "Coffee": -0.7343,
-        "Natural Gas": -0.2339,
+        "Natural Gas": -0.2337,
         "Sugar": -0.7195
       },
       "actuals": {
@@ -236129,7 +236129,7 @@
         "Cocoa": -0.8368,
         "Cotton": -0.8172,
         "Coffee": -0.7868,
-        "Natural Gas": -0.4267,
+        "Natural Gas": -0.4263,
         "Sugar": -0.7211
       },
       "predictions_low_risk": {
@@ -236141,7 +236141,7 @@
         "Cocoa": -0.4298,
         "Cotton": -0.8172,
         "Coffee": -0.7352,
-        "Natural Gas": -0.2342,
+        "Natural Gas": -0.2339,
         "Sugar": -0.7211
       },
       "actuals": {
@@ -236168,7 +236168,7 @@
         "Cocoa": -0.8369,
         "Cotton": -0.8175,
         "Coffee": -0.783,
-        "Natural Gas": -0.4269,
+        "Natural Gas": -0.4264,
         "Sugar": -0.7105
       },
       "predictions_low_risk": {
@@ -236180,7 +236180,7 @@
         "Cocoa": -0.4315,
         "Cotton": -0.8175,
         "Coffee": -0.7252,
-        "Natural Gas": -0.2343,
+        "Natural Gas": -0.234,
         "Sugar": -0.7105
       },
       "actuals": {
@@ -236207,7 +236207,7 @@
         "Cocoa": -0.8379,
         "Cotton": -0.8162,
         "Coffee": -0.7861,
-        "Natural Gas": -0.4215,
+        "Natural Gas": -0.4211,
         "Sugar": -0.7056
       },
       "predictions_low_risk": {
@@ -236219,7 +236219,7 @@
         "Cocoa": -0.4333,
         "Cotton": -0.8162,
         "Coffee": -0.7412,
-        "Natural Gas": -0.2334,
+        "Natural Gas": -0.2332,
         "Sugar": -0.7056
       },
       "actuals": {
@@ -236246,7 +236246,7 @@
         "Cocoa": -0.8376,
         "Cotton": -0.8173,
         "Coffee": -0.7839,
-        "Natural Gas": -0.4218,
+        "Natural Gas": -0.4213,
         "Sugar": -0.6968
       },
       "predictions_low_risk": {
@@ -236258,7 +236258,7 @@
         "Cocoa": -0.4219,
         "Cotton": -0.8173,
         "Coffee": -0.7497,
-        "Natural Gas": -0.2336,
+        "Natural Gas": -0.2333,
         "Sugar": -0.6968
       },
       "actuals": {
@@ -236285,7 +236285,7 @@
         "Cocoa": -0.8255,
         "Cotton": -0.8163,
         "Coffee": -0.7845,
-        "Natural Gas": -0.4233,
+        "Natural Gas": -0.4228,
         "Sugar": -0.6788
       },
       "predictions_low_risk": {
@@ -236297,7 +236297,7 @@
         "Cocoa": -0.4234,
         "Cotton": -0.8163,
         "Coffee": -0.7559,
-        "Natural Gas": -0.2337,
+        "Natural Gas": -0.2334,
         "Sugar": -0.6788
       },
       "actuals": {
@@ -236324,7 +236324,7 @@
         "Cocoa": -0.8277,
         "Cotton": -0.7966,
         "Coffee": -0.7865,
-        "Natural Gas": -0.4217,
+        "Natural Gas": -0.4213,
         "Sugar": -0.6835
       },
       "predictions_low_risk": {
@@ -236336,7 +236336,7 @@
         "Cocoa": -0.4264,
         "Cotton": -0.7966,
         "Coffee": -0.7595,
-        "Natural Gas": -0.2343,
+        "Natural Gas": -0.2341,
         "Sugar": -0.6835
       },
       "actuals": {
@@ -236363,7 +236363,7 @@
         "Cocoa": -0.8274,
         "Cotton": -0.7974,
         "Coffee": -0.7876,
-        "Natural Gas": -0.4248,
+        "Natural Gas": -0.4244,
         "Sugar": -0.6859
       },
       "predictions_low_risk": {
@@ -236375,7 +236375,7 @@
         "Cocoa": -0.4283,
         "Cotton": -0.7974,
         "Coffee": -0.7832,
-        "Natural Gas": -0.2343,
+        "Natural Gas": -0.2341,
         "Sugar": -0.6859
       },
       "actuals": {
@@ -236402,7 +236402,7 @@
         "Cocoa": -0.8266,
         "Cotton": -0.7962,
         "Coffee": -0.7849,
-        "Natural Gas": -0.4199,
+        "Natural Gas": -0.4195,
         "Sugar": -0.6971
       },
       "predictions_low_risk": {
@@ -236414,7 +236414,7 @@
         "Cocoa": -0.4223,
         "Cotton": -0.7962,
         "Coffee": -0.7497,
-        "Natural Gas": -0.234,
+        "Natural Gas": -0.2337,
         "Sugar": -0.6971
       },
       "actuals": {
@@ -236441,7 +236441,7 @@
         "Cocoa": -0.8273,
         "Cotton": -0.7965,
         "Coffee": -0.7871,
-        "Natural Gas": -0.4203,
+        "Natural Gas": -0.4198,
         "Sugar": -0.6908
       },
       "predictions_low_risk": {
@@ -236453,7 +236453,7 @@
         "Cocoa": -0.4208,
         "Cotton": -0.7965,
         "Coffee": -0.7487,
-        "Natural Gas": -0.2342,
+        "Natural Gas": -0.2339,
         "Sugar": -0.6908
       },
       "actuals": {
@@ -236480,7 +236480,7 @@
         "Cocoa": -0.8259,
         "Cotton": -0.7955,
         "Coffee": -0.7875,
-        "Natural Gas": -0.4207,
+        "Natural Gas": -0.4202,
         "Sugar": -0.6859
       },
       "predictions_low_risk": {
@@ -236492,7 +236492,7 @@
         "Cocoa": -0.4066,
         "Cotton": -0.7955,
         "Coffee": -0.7507,
-        "Natural Gas": -0.2347,
+        "Natural Gas": -0.2344,
         "Sugar": -0.6859
       },
       "actuals": {
@@ -236519,7 +236519,7 @@
         "Cocoa": -0.8313,
         "Cotton": -0.7951,
         "Coffee": -0.7847,
-        "Natural Gas": -0.4225,
+        "Natural Gas": -0.422,
         "Sugar": -0.6959
       },
       "predictions_low_risk": {
@@ -236531,7 +236531,7 @@
         "Cocoa": -0.4021,
         "Cotton": -0.7951,
         "Coffee": -0.7649,
-        "Natural Gas": -0.2344,
+        "Natural Gas": -0.2342,
         "Sugar": -0.6959
       },
       "actuals": {
@@ -236558,7 +236558,7 @@
         "Cocoa": -0.8304,
         "Cotton": -0.7951,
         "Coffee": -0.78,
-        "Natural Gas": -0.416,
+        "Natural Gas": -0.4156,
         "Sugar": -0.709
       },
       "predictions_low_risk": {
@@ -236570,7 +236570,7 @@
         "Cocoa": -0.4076,
         "Cotton": -0.7951,
         "Coffee": -0.7611,
-        "Natural Gas": -0.2346,
+        "Natural Gas": -0.2343,
         "Sugar": -0.709
       },
       "actuals": {
@@ -236597,7 +236597,7 @@
         "Cocoa": -0.7935,
         "Cotton": -0.7953,
         "Coffee": -0.7799,
-        "Natural Gas": -0.416,
+        "Natural Gas": -0.4156,
         "Sugar": -0.7008
       },
       "predictions_low_risk": {
@@ -236609,7 +236609,7 @@
         "Cocoa": -0.3982,
         "Cotton": -0.7953,
         "Coffee": -0.7502,
-        "Natural Gas": -0.2345,
+        "Natural Gas": -0.2343,
         "Sugar": -0.7008
       },
       "actuals": {
@@ -236636,7 +236636,7 @@
         "Cocoa": -0.7935,
         "Cotton": -0.7737,
         "Coffee": -0.7814,
-        "Natural Gas": -0.4154,
+        "Natural Gas": -0.4149,
         "Sugar": -0.6914
       },
       "predictions_low_risk": {
@@ -236648,7 +236648,7 @@
         "Cocoa": -0.3981,
         "Cotton": -0.7737,
         "Coffee": -0.7528,
-        "Natural Gas": -0.2345,
+        "Natural Gas": -0.2343,
         "Sugar": -0.6914
       },
       "actuals": {
@@ -236675,7 +236675,7 @@
         "Cocoa": -0.801,
         "Cotton": -0.7737,
         "Coffee": -0.7814,
-        "Natural Gas": -0.4154,
+        "Natural Gas": -0.4149,
         "Sugar": -0.6992
       },
       "predictions_low_risk": {
@@ -236687,7 +236687,7 @@
         "Cocoa": -0.3979,
         "Cotton": -0.7737,
         "Coffee": -0.7602,
-        "Natural Gas": -0.2342,
+        "Natural Gas": -0.234,
         "Sugar": -0.6992
       },
       "actuals": {
@@ -236714,7 +236714,7 @@
         "Cocoa": -0.8011,
         "Cotton": -0.7737,
         "Coffee": -0.7803,
-        "Natural Gas": -0.4194,
+        "Natural Gas": -0.4189,
         "Sugar": -0.6825
       },
       "predictions_low_risk": {
@@ -236726,7 +236726,7 @@
         "Cocoa": -0.392,
         "Cotton": -0.7737,
         "Coffee": -0.7658,
-        "Natural Gas": -0.2345,
+        "Natural Gas": -0.2342,
         "Sugar": -0.6825
       },
       "actuals": {
@@ -236753,7 +236753,7 @@
         "Cocoa": -0.7921,
         "Cotton": 0.7822,
         "Coffee": -0.6579,
-        "Natural Gas": -0.4093,
+        "Natural Gas": -0.4088,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236765,7 +236765,7 @@
         "Cocoa": -0.3857,
         "Cotton": 0.7822,
         "Coffee": -0.6416,
-        "Natural Gas": -0.2286,
+        "Natural Gas": -0.2283,
         "Sugar": 0.0
       },
       "actuals": {
@@ -236792,7 +236792,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": -0.6564,
-        "Natural Gas": -0.4091,
+        "Natural Gas": -0.4086,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236804,7 +236804,7 @@
         "Cocoa": -0.4029,
         "Cotton": 0.7822,
         "Coffee": -0.6411,
-        "Natural Gas": -0.2293,
+        "Natural Gas": -0.229,
         "Sugar": 0.0
       },
       "actuals": {
@@ -236831,7 +236831,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": -0.6626,
-        "Natural Gas": -0.4047,
+        "Natural Gas": -0.4042,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236843,7 +236843,7 @@
         "Cocoa": -0.4024,
         "Cotton": 0.7822,
         "Coffee": -0.6433,
-        "Natural Gas": -0.2289,
+        "Natural Gas": -0.2287,
         "Sugar": 0.0
       },
       "actuals": {
@@ -236870,7 +236870,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4099,
+        "Natural Gas": -0.4095,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236882,7 +236882,7 @@
         "Cocoa": -0.4023,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2287,
+        "Natural Gas": -0.2284,
         "Sugar": 0.0
       },
       "actuals": {
@@ -236909,7 +236909,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4103,
+        "Natural Gas": -0.4099,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236921,7 +236921,7 @@
         "Cocoa": -0.393,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2281,
+        "Natural Gas": -0.2279,
         "Sugar": 0.0
       },
       "actuals": {
@@ -236948,7 +236948,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4065,
+        "Natural Gas": -0.4061,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236960,7 +236960,7 @@
         "Cocoa": -0.3914,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2281,
+        "Natural Gas": -0.2279,
         "Sugar": 0.0
       },
       "actuals": {
@@ -236987,7 +236987,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4008,
+        "Natural Gas": -0.4004,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -236999,7 +236999,7 @@
         "Cocoa": -0.389,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2287,
+        "Natural Gas": -0.2285,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237026,7 +237026,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4068,
+        "Natural Gas": -0.4064,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237038,7 +237038,7 @@
         "Cocoa": -0.3892,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2285,
+        "Natural Gas": -0.2282,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237065,7 +237065,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4098,
+        "Natural Gas": -0.4093,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237077,7 +237077,7 @@
         "Cocoa": -0.3913,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2291,
+        "Natural Gas": -0.2288,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237104,7 +237104,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4069,
+        "Natural Gas": -0.4065,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237116,7 +237116,7 @@
         "Cocoa": -0.4013,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2288,
+        "Natural Gas": -0.2285,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237143,7 +237143,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4064,
+        "Natural Gas": -0.4059,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237155,7 +237155,7 @@
         "Cocoa": -0.3971,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2292,
+        "Natural Gas": -0.2289,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237182,7 +237182,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4088,
+        "Natural Gas": -0.4083,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237194,7 +237194,7 @@
         "Cocoa": -0.3966,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2293,
+        "Natural Gas": -0.2291,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237221,7 +237221,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4124,
+        "Natural Gas": -0.412,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237233,7 +237233,7 @@
         "Cocoa": -0.4036,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2295,
+        "Natural Gas": -0.2293,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237260,7 +237260,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4181,
+        "Natural Gas": -0.4176,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237272,7 +237272,7 @@
         "Cocoa": -0.405,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2295,
+        "Natural Gas": -0.2293,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237299,7 +237299,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4127,
+        "Natural Gas": -0.4122,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237311,7 +237311,7 @@
         "Cocoa": -0.4046,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2298,
+        "Natural Gas": -0.2296,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237338,7 +237338,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4128,
+        "Natural Gas": -0.4123,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237350,7 +237350,7 @@
         "Cocoa": -0.4043,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2294,
+        "Natural Gas": -0.2291,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237377,7 +237377,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4129,
+        "Natural Gas": -0.4124,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237389,7 +237389,7 @@
         "Cocoa": -0.4027,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2295,
+        "Natural Gas": -0.2293,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237416,7 +237416,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.8269,
         "Coffee": 0.0,
-        "Natural Gas": -0.4153,
+        "Natural Gas": -0.4148,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237428,7 +237428,7 @@
         "Cocoa": -0.4022,
         "Cotton": 0.8269,
         "Coffee": 0.0,
-        "Natural Gas": -0.2295,
+        "Natural Gas": -0.2293,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237455,7 +237455,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.8249,
         "Coffee": 0.0,
-        "Natural Gas": -0.4188,
+        "Natural Gas": -0.4183,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237467,7 +237467,7 @@
         "Cocoa": -0.4025,
         "Cotton": 0.8249,
         "Coffee": 0.0,
-        "Natural Gas": -0.2314,
+        "Natural Gas": -0.2312,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237494,7 +237494,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.8248,
         "Coffee": 0.0,
-        "Natural Gas": -0.4147,
+        "Natural Gas": -0.4143,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237506,7 +237506,7 @@
         "Cocoa": -0.4025,
         "Cotton": 0.8248,
         "Coffee": 0.0,
-        "Natural Gas": -0.2261,
+        "Natural Gas": -0.2259,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237533,7 +237533,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.8232,
         "Coffee": 0.0,
-        "Natural Gas": -0.4103,
+        "Natural Gas": -0.4099,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237545,7 +237545,7 @@
         "Cocoa": -0.4026,
         "Cotton": 0.8232,
         "Coffee": 0.0,
-        "Natural Gas": -0.2262,
+        "Natural Gas": -0.226,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237572,7 +237572,7 @@
         "Cocoa": -0.8117,
         "Cotton": 0.823,
         "Coffee": 0.0,
-        "Natural Gas": -0.4048,
+        "Natural Gas": -0.4045,
         "Sugar": 0.0
       },
       "predictions_low_risk": {
@@ -237584,7 +237584,7 @@
         "Cocoa": -0.4032,
         "Cotton": 0.823,
         "Coffee": 0.0,
-        "Natural Gas": -0.2269,
+        "Natural Gas": -0.2266,
         "Sugar": 0.0
       },
       "actuals": {
@@ -237611,7 +237611,7 @@
         "Cocoa": -0.736,
         "Cotton": 0.8219,
         "Coffee": 0.0,
-        "Natural Gas": -0.3918,
+        "Natural Gas": -0.3914,
         "Sugar": -0.7052
       },
       "predictions_low_risk": {
@@ -237623,7 +237623,7 @@
         "Cocoa": -0.3653,
         "Cotton": 0.8219,
         "Coffee": 0.0,
-        "Natural Gas": -0.2231,
+        "Natural Gas": -0.2229,
         "Sugar": -0.7052
       },
       "actuals": {
@@ -237650,7 +237650,7 @@
         "Cocoa": -0.736,
         "Cotton": 0.825,
         "Coffee": 0.0,
-        "Natural Gas": -0.3913,
+        "Natural Gas": -0.391,
         "Sugar": -0.6862
       },
       "predictions_low_risk": {
@@ -237662,7 +237662,7 @@
         "Cocoa": -0.3646,
         "Cotton": 0.825,
         "Coffee": 0.0,
-        "Natural Gas": -0.2235,
+        "Natural Gas": -0.2233,
         "Sugar": -0.6862
       },
       "actuals": {
@@ -237689,7 +237689,7 @@
         "Cocoa": -0.736,
         "Cotton": 0.8229,
         "Coffee": 0.0,
-        "Natural Gas": -0.3941,
+        "Natural Gas": -0.3937,
         "Sugar": -0.7025
       },
       "predictions_low_risk": {
@@ -237701,7 +237701,7 @@
         "Cocoa": -0.3657,
         "Cotton": 0.8229,
         "Coffee": 0.0,
-        "Natural Gas": -0.2234,
+        "Natural Gas": -0.2232,
         "Sugar": -0.7025
       },
       "actuals": {
@@ -237728,7 +237728,7 @@
         "Cocoa": -0.736,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.3989,
+        "Natural Gas": -0.3986,
         "Sugar": -0.7005
       },
       "predictions_low_risk": {
@@ -237740,7 +237740,7 @@
         "Cocoa": -0.3633,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.2235,
+        "Natural Gas": -0.2233,
         "Sugar": -0.7005
       },
       "actuals": {
@@ -237767,7 +237767,7 @@
         "Cocoa": -0.736,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.3998,
+        "Natural Gas": -0.3995,
         "Sugar": -0.6887
       },
       "predictions_low_risk": {
@@ -237779,7 +237779,7 @@
         "Cocoa": -0.355,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.224,
+        "Natural Gas": -0.2238,
         "Sugar": -0.6887
       },
       "actuals": {
@@ -237806,7 +237806,7 @@
         "Cocoa": -0.7736,
         "Cotton": 0.8209,
         "Coffee": 0.0,
-        "Natural Gas": -0.3944,
+        "Natural Gas": -0.394,
         "Sugar": -0.6751
       },
       "predictions_low_risk": {
@@ -237818,7 +237818,7 @@
         "Cocoa": -0.3733,
         "Cotton": 0.8209,
         "Coffee": 0.0,
-        "Natural Gas": -0.2244,
+        "Natural Gas": -0.2242,
         "Sugar": -0.6751
       },
       "actuals": {
@@ -237845,7 +237845,7 @@
         "Cocoa": -0.7718,
         "Cotton": 0.821,
         "Coffee": 0.0,
-        "Natural Gas": -0.3948,
+        "Natural Gas": -0.3944,
         "Sugar": -0.6768
       },
       "predictions_low_risk": {
@@ -237857,7 +237857,7 @@
         "Cocoa": -0.3725,
         "Cotton": 0.821,
         "Coffee": 0.0,
-        "Natural Gas": -0.2248,
+        "Natural Gas": -0.2246,
         "Sugar": -0.6768
       },
       "actuals": {
@@ -237884,7 +237884,7 @@
         "Cocoa": -0.7713,
         "Cotton": 0.8212,
         "Coffee": 0.0,
-        "Natural Gas": -0.3948,
+        "Natural Gas": -0.3944,
         "Sugar": -0.665
       },
       "predictions_low_risk": {
@@ -237896,7 +237896,7 @@
         "Cocoa": -0.4051,
         "Cotton": 0.8212,
         "Coffee": 0.0,
-        "Natural Gas": -0.2255,
+        "Natural Gas": -0.2253,
         "Sugar": -0.665
       },
       "actuals": {
@@ -237923,7 +237923,7 @@
         "Cocoa": -0.7251,
         "Cotton": 0.8231,
         "Coffee": 0.0,
-        "Natural Gas": -0.3896,
+        "Natural Gas": -0.3893,
         "Sugar": -0.6681
       },
       "predictions_low_risk": {
@@ -237935,7 +237935,7 @@
         "Cocoa": -0.3856,
         "Cotton": 0.8231,
         "Coffee": 0.0,
-        "Natural Gas": -0.226,
+        "Natural Gas": -0.2258,
         "Sugar": -0.6681
       },
       "actuals": {
@@ -237962,7 +237962,7 @@
         "Cocoa": -0.7255,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.39,
+        "Natural Gas": -0.3896,
         "Sugar": -0.6682
       },
       "predictions_low_risk": {
@@ -237974,7 +237974,7 @@
         "Cocoa": -0.388,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.2261,
+        "Natural Gas": -0.2259,
         "Sugar": -0.6682
       },
       "actuals": {
@@ -238001,7 +238001,7 @@
         "Cocoa": -0.7266,
         "Cotton": 0.8206,
         "Coffee": 0.0,
-        "Natural Gas": -0.3947,
+        "Natural Gas": -0.3943,
         "Sugar": -0.6803
       },
       "predictions_low_risk": {
@@ -238013,7 +238013,7 @@
         "Cocoa": -0.3879,
         "Cotton": 0.8206,
         "Coffee": 0.0,
-        "Natural Gas": -0.2275,
+        "Natural Gas": -0.2273,
         "Sugar": -0.6803
       },
       "actuals": {
@@ -238040,7 +238040,7 @@
         "Cocoa": -0.7267,
         "Cotton": 0.8215,
         "Coffee": 0.0,
-        "Natural Gas": -0.3956,
+        "Natural Gas": -0.3953,
         "Sugar": -0.6811
       },
       "predictions_low_risk": {
@@ -238052,7 +238052,7 @@
         "Cocoa": -0.3833,
         "Cotton": 0.8215,
         "Coffee": 0.0,
-        "Natural Gas": -0.2275,
+        "Natural Gas": -0.2273,
         "Sugar": -0.6811
       },
       "actuals": {
@@ -238079,7 +238079,7 @@
         "Cocoa": -0.7238,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.3989,
+        "Natural Gas": -0.3986,
         "Sugar": -0.6999
       },
       "predictions_low_risk": {
@@ -238091,7 +238091,7 @@
         "Cocoa": -0.3808,
         "Cotton": 0.8222,
         "Coffee": 0.0,
-        "Natural Gas": -0.2274,
+        "Natural Gas": -0.2272,
         "Sugar": -0.6999
       },
       "actuals": {
@@ -238118,7 +238118,7 @@
         "Cocoa": -0.7238,
         "Cotton": 0.8213,
         "Coffee": 0.0,
-        "Natural Gas": -0.4612,
+        "Natural Gas": -0.4608,
         "Sugar": -0.7136
       },
       "predictions_low_risk": {
@@ -238130,7 +238130,7 @@
         "Cocoa": -0.3958,
         "Cotton": 0.8213,
         "Coffee": 0.0,
-        "Natural Gas": -0.236,
+        "Natural Gas": -0.2358,
         "Sugar": -0.7136
       },
       "actuals": {
@@ -238157,7 +238157,7 @@
         "Cocoa": -0.7339,
         "Cotton": 0.8205,
         "Coffee": 0.0,
-        "Natural Gas": -0.5662,
+        "Natural Gas": -0.5657,
         "Sugar": -0.7183
       },
       "predictions_low_risk": {
@@ -238169,7 +238169,7 @@
         "Cocoa": -0.3954,
         "Cotton": 0.8205,
         "Coffee": 0.0,
-        "Natural Gas": -0.2454,
+        "Natural Gas": -0.2452,
         "Sugar": -0.7183
       },
       "actuals": {
@@ -238196,7 +238196,7 @@
         "Cocoa": -0.7416,
         "Cotton": 0.8223,
         "Coffee": 0.0,
-        "Natural Gas": -0.5587,
+        "Natural Gas": -0.5582,
         "Sugar": -0.7259
       },
       "predictions_low_risk": {
@@ -238208,7 +238208,7 @@
         "Cocoa": -0.3961,
         "Cotton": 0.8223,
         "Coffee": 0.0,
-        "Natural Gas": -0.2458,
+        "Natural Gas": -0.2456,
         "Sugar": -0.7259
       },
       "actuals": {
@@ -238235,7 +238235,7 @@
         "Cocoa": -0.7079,
         "Cotton": 0.8225,
         "Coffee": 0.0,
-        "Natural Gas": -0.5525,
+        "Natural Gas": -0.552,
         "Sugar": -0.7118
       },
       "predictions_low_risk": {
@@ -238247,7 +238247,7 @@
         "Cocoa": -0.3863,
         "Cotton": 0.8225,
         "Coffee": 0.0,
-        "Natural Gas": -0.2467,
+        "Natural Gas": -0.2465,
         "Sugar": -0.7118
       },
       "actuals": {
@@ -238274,7 +238274,7 @@
         "Cocoa": -0.6972,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.7369,
+        "Natural Gas": -0.7362,
         "Sugar": -0.7097
       },
       "predictions_low_risk": {
@@ -238286,7 +238286,7 @@
         "Cocoa": -0.3868,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2616,
+        "Natural Gas": -0.2613,
         "Sugar": -0.7097
       },
       "actuals": {
@@ -238313,7 +238313,7 @@
         "Cocoa": -0.6991,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.7356,
+        "Natural Gas": -0.735,
         "Sugar": -0.6991
       },
       "predictions_low_risk": {
@@ -238325,7 +238325,7 @@
         "Cocoa": -0.3858,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2614,
+        "Natural Gas": -0.2611,
         "Sugar": -0.6991
       },
       "actuals": {
@@ -238352,7 +238352,7 @@
         "Cocoa": -0.7012,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.7365,
+        "Natural Gas": -0.7358,
         "Sugar": -0.6786
       },
       "predictions_low_risk": {
@@ -238364,7 +238364,7 @@
         "Cocoa": -0.3954,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.2629,
+        "Natural Gas": -0.2626,
         "Sugar": -0.6786
       },
       "actuals": {
@@ -238391,7 +238391,7 @@
         "Cocoa": -0.7024,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.7366,
+        "Natural Gas": -0.7359,
         "Sugar": -0.6748
       },
       "predictions_low_risk": {
@@ -238403,7 +238403,7 @@
         "Cocoa": -0.3891,
         "Cotton": 0.7822,
         "Coffee": 0.0,
-        "Natural Gas": -0.4939,
+        "Natural Gas": -0.4934,
         "Sugar": -0.6748
       },
       "actuals": {
@@ -239206,10 +239206,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8509,
-        "Aluminium": 0.3701,
+        "Aluminium": 0.4252,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.7243,
+        "Coffee": -0.7643,
         "Natural Gas": 0.0,
         "Sugar": -0.884
       },
@@ -239218,10 +239218,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7546,
-        "Aluminium": 0.2814,
+        "Aluminium": 0.3233,
         "Cocoa": 0.0,
         "Cotton": 0.7346,
-        "Coffee": -0.7243,
+        "Coffee": -0.7643,
         "Natural Gas": 0.0,
         "Sugar": -0.8648
       },
@@ -239245,10 +239245,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8518,
-        "Aluminium": 0.3701,
+        "Aluminium": 0.4252,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.7217,
+        "Coffee": -0.7619,
         "Natural Gas": 0.0,
         "Sugar": -0.8905
       },
@@ -239257,10 +239257,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7604,
-        "Aluminium": 0.2814,
+        "Aluminium": 0.3232,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.7217,
+        "Coffee": -0.7619,
         "Natural Gas": 0.0,
         "Sugar": -0.8706
       },
@@ -239284,10 +239284,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8535,
-        "Aluminium": 0.3757,
+        "Aluminium": 0.4315,
         "Cocoa": 0.0,
         "Cotton": 0.7747,
-        "Coffee": -0.7192,
+        "Coffee": -0.7596,
         "Natural Gas": 0.0,
         "Sugar": -0.8898
       },
@@ -239296,10 +239296,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7484,
-        "Aluminium": 0.2862,
+        "Aluminium": 0.3287,
         "Cocoa": 0.0,
         "Cotton": 0.7747,
-        "Coffee": -0.7192,
+        "Coffee": -0.7596,
         "Natural Gas": 0.0,
         "Sugar": -0.8723
       },
@@ -239323,10 +239323,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8414,
-        "Aluminium": 0.3754,
+        "Aluminium": 0.4312,
         "Cocoa": 0.0,
         "Cotton": 0.7725,
-        "Coffee": -0.7253,
+        "Coffee": -0.7652,
         "Natural Gas": 0.0,
         "Sugar": -0.8939
       },
@@ -239335,10 +239335,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7457,
-        "Aluminium": 0.2885,
+        "Aluminium": 0.3314,
         "Cocoa": 0.0,
         "Cotton": 0.7603,
-        "Coffee": -0.7253,
+        "Coffee": -0.7652,
         "Natural Gas": 0.0,
         "Sugar": -0.8764
       },
@@ -239362,10 +239362,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8511,
-        "Aluminium": 0.3822,
+        "Aluminium": 0.439,
         "Cocoa": 0.0,
         "Cotton": 0.7723,
-        "Coffee": -0.7328,
+        "Coffee": -0.772,
         "Natural Gas": 0.0,
         "Sugar": -0.8964
       },
@@ -239374,10 +239374,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.721,
-        "Aluminium": 0.2928,
+        "Aluminium": 0.3364,
         "Cocoa": 0.0,
         "Cotton": 0.7534,
-        "Coffee": -0.7328,
+        "Coffee": -0.772,
         "Natural Gas": 0.0,
         "Sugar": -0.8914
       },
@@ -239401,10 +239401,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8519,
-        "Aluminium": 0.3757,
+        "Aluminium": 0.4315,
         "Cocoa": 0.0,
         "Cotton": 0.7745,
-        "Coffee": -0.7327,
+        "Coffee": -0.7719,
         "Natural Gas": 0.0,
         "Sugar": -0.8953
       },
@@ -239413,10 +239413,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7208,
-        "Aluminium": 0.294,
+        "Aluminium": 0.3377,
         "Cocoa": 0.0,
         "Cotton": 0.7548,
-        "Coffee": -0.7327,
+        "Coffee": -0.7719,
         "Natural Gas": 0.0,
         "Sugar": -0.8953
       },
@@ -239440,10 +239440,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8388,
-        "Aluminium": 0.382,
+        "Aluminium": 0.4388,
         "Cocoa": 0.0,
         "Cotton": 0.7746,
-        "Coffee": -0.7414,
+        "Coffee": -0.7798,
         "Natural Gas": 0.0,
         "Sugar": -0.8963
       },
@@ -239452,10 +239452,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7143,
-        "Aluminium": 0.2916,
+        "Aluminium": 0.335,
         "Cocoa": 0.0,
         "Cotton": 0.7476,
-        "Coffee": -0.7414,
+        "Coffee": -0.7798,
         "Natural Gas": 0.0,
         "Sugar": -0.8963
       },
@@ -239479,10 +239479,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8501,
-        "Aluminium": 0.3843,
+        "Aluminium": 0.4414,
         "Cocoa": 0.0,
         "Cotton": 0.7763,
-        "Coffee": -0.74,
+        "Coffee": -0.7785,
         "Natural Gas": 0.0,
         "Sugar": -0.8893
       },
@@ -239491,10 +239491,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7245,
-        "Aluminium": 0.2878,
+        "Aluminium": 0.3306,
         "Cocoa": 0.0,
         "Cotton": 0.7493,
-        "Coffee": -0.74,
+        "Coffee": -0.7785,
         "Natural Gas": 0.0,
         "Sugar": -0.8893
       },
@@ -239518,10 +239518,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8353,
-        "Aluminium": 0.3667,
+        "Aluminium": 0.4244,
         "Cocoa": 0.0,
         "Cotton": 0.7743,
-        "Coffee": -0.7348,
+        "Coffee": -0.7738,
         "Natural Gas": 0.0,
         "Sugar": -0.8945
       },
@@ -239530,10 +239530,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7123,
-        "Aluminium": 0.2782,
+        "Aluminium": 0.322,
         "Cocoa": 0.0,
         "Cotton": 0.7413,
-        "Coffee": -0.7348,
+        "Coffee": -0.7738,
         "Natural Gas": 0.0,
         "Sugar": -0.8945
       },
@@ -239557,10 +239557,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8347,
-        "Aluminium": 0.3009,
+        "Aluminium": 0.3516,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.7244,
+        "Coffee": -0.7643,
         "Natural Gas": 0.0,
         "Sugar": -0.8848
       },
@@ -239569,10 +239569,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7104,
-        "Aluminium": 0.246,
+        "Aluminium": 0.2874,
         "Cocoa": 0.0,
         "Cotton": 0.6631,
-        "Coffee": -0.7244,
+        "Coffee": -0.7643,
         "Natural Gas": 0.0,
         "Sugar": -0.8848
       },
@@ -239596,10 +239596,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.819,
-        "Aluminium": 0.2819,
+        "Aluminium": 0.3294,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.7166,
+        "Coffee": -0.7573,
         "Natural Gas": 0.0,
         "Sugar": -0.8886
       },
@@ -239608,10 +239608,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6968,
-        "Aluminium": 0.2375,
+        "Aluminium": 0.2775,
         "Cocoa": 0.0,
         "Cotton": 0.6806,
-        "Coffee": -0.7166,
+        "Coffee": -0.7573,
         "Natural Gas": 0.0,
         "Sugar": -0.8886
       },
@@ -239635,10 +239635,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8132,
-        "Aluminium": 0.3007,
+        "Aluminium": 0.3479,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.74,
+        "Coffee": -0.7785,
         "Natural Gas": 0.0,
         "Sugar": -0.867
       },
@@ -239647,10 +239647,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6949,
-        "Aluminium": 0.2533,
+        "Aluminium": 0.2931,
         "Cocoa": 0.0,
         "Cotton": 0.6779,
-        "Coffee": -0.7389,
+        "Coffee": -0.7773,
         "Natural Gas": 0.0,
         "Sugar": -0.867
       },
@@ -239674,10 +239674,10 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8008,
-        "Aluminium": 0.2991,
+        "Aluminium": 0.3459,
         "Cocoa": 0.0,
         "Cotton": 0.7351,
-        "Coffee": -0.7361,
+        "Coffee": -0.7749,
         "Natural Gas": 0.0,
         "Sugar": -0.8718
       },
@@ -239686,12 +239686,51 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7051,
-        "Aluminium": 0.2537,
+        "Aluminium": 0.2934,
         "Cocoa": 0.0,
         "Cotton": 0.6696,
-        "Coffee": -0.7351,
+        "Coffee": -0.774,
         "Natural Gas": 0.0,
         "Sugar": -0.8718
+      },
+      "actuals": {
+        "Oil Brent": 0.391263,
+        "Gold": -3.292467,
+        "Silver": -6.735524,
+        "Copper": -1.640736,
+        "Aluminium": 1.74797,
+        "Cocoa": 0.949217,
+        "Cotton": -0.501695,
+        "Coffee": -2.189517,
+        "Natural Gas": 2.671752,
+        "Sugar": -1.600554
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "predictions": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7878,
+        "Aluminium": 0.3788,
+        "Cocoa": 0.0,
+        "Cotton": 0.7351,
+        "Coffee": -0.7754,
+        "Natural Gas": 0.0,
+        "Sugar": -0.8738
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.6985,
+        "Aluminium": 0.32,
+        "Cocoa": 0.0,
+        "Cotton": 0.6737,
+        "Coffee": -0.7754,
+        "Natural Gas": 0.0,
+        "Sugar": -0.8738
       },
       "actuals": {
         "Oil Brent": null,
