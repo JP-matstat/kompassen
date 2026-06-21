@@ -1106,46 +1106,45 @@ function renderHistoryTable() {
     container.appendChild(accordion);
 }
 
-// Render performance statistics
+function computeLiveAnnualizedReturn(liveDate) {
+    if (!equityCurveData || !equityCurveData.dates || equityCurveData.dates.length < 2) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
+    const dates = equityCurveData.dates;
+    const values = equityCurveData[curveKey];
+    if (!values || values.length < 2) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const liveIdx = dates.indexOf(liveDate);
+    if (liveIdx === -1 || liveIdx >= values.length - 1) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const eqLive = values[liveIdx];
+    const eqLast = values[values.length - 1];
+    if (!eqLive || eqLive === 0) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const days = values.length - 1 - liveIdx;
+    if (days <= 0) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const totalReturn = eqLast / eqLive - 1;
+    const annReturn = Math.pow(1 + totalReturn, 252 / days) - 1;
+    const cssClass = annReturn >= 0 ? 'success' : 'danger';
+    const formatted = `${annReturn >= 0 ? '+' : ''}${(annReturn * 100).toFixed(2)}%`;
+    return { formatted, cssClass, numericValue: annReturn };
+}
+
 function renderPerformanceStats() {
     const container = document.getElementById('performanceStats');
     container.innerHTML = '';
 
     const activeData = getActiveHistoricalData();
     const filteredData = getFilteredHistoricalData(activeData);
-    
-    // Calculate statistics
-    let totalPredictions = 0;
-    let correctPredictions = 0;
-    const commodityStats = {};
-    
-    COMMODITIES.forEach(commodity => {
-        commodityStats[commodity] = { total: 0, correct: 0 };
-    });
-    
-    filteredData.forEach(entry => {
-        if (!entry.actuals) return;
-        
-        COMMODITIES.forEach(commodity => {
-            const prediction = entry.predictions[commodity] || 0;
-            if (prediction === 0) return;
-            const actual = entry.actuals[commodity];
-            if (actual == null) return;
-            
-            totalPredictions++;
-            commodityStats[commodity].total++;
-            
-            if (Math.sign(prediction) === Math.sign(actual)) {
-                correctPredictions++;
-                commodityStats[commodity].correct++;
-            }
-        });
-    });
-    
-    const overallAccuracy = totalPredictions > 0 ? (correctPredictions / totalPredictions * 100) : 0;
-    
-    // Live statistics (since 2026-06-09)
     const LIVE_DATE = '2026-06-09';
+    
+    // Live statistics (date >= LIVE_DATE)
     let liveTotalPredictions = 0;
     let liveCorrectPredictions = 0;
     
@@ -1160,7 +1159,6 @@ function renderPerformanceStats() {
             if (actual == null) return;
             
             liveTotalPredictions++;
-            
             if (Math.sign(prediction) === Math.sign(actual)) {
                 liveCorrectPredictions++;
             }
@@ -1169,38 +1167,61 @@ function renderPerformanceStats() {
     
     const liveAccuracy = liveTotalPredictions > 0 ? (liveCorrectPredictions / liveTotalPredictions * 100) : 0;
     
-    // Overall accuracy card (training)
-    const overallCard = createStatCard(t('overallAccuracy'), `${overallAccuracy.toFixed(1)}%`, overallAccuracy >= 50 ? 'success' : 'danger', overallAccuracy);
-    overallCard.querySelector('.stat-label').title = t('accuracyHint');
-    container.appendChild(overallCard);
-    
-    // Live accuracy card
+    // Row 1: Live stats
     const liveValue = liveTotalPredictions > 0 ? `${liveAccuracy.toFixed(1)}%` : '-';
     const liveClass = liveTotalPredictions > 0 ? (liveAccuracy >= 50 ? 'success' : 'danger') : '';
     const liveCard = createStatCard(t('liveAccuracy'), liveValue, liveClass, liveTotalPredictions > 0 ? liveAccuracy : null);
     liveCard.querySelector('.stat-label').title = t('liveAccuracyHint');
     container.appendChild(liveCard);
     
-    // Total predictions card (live)
-    const liveCount = liveTotalPredictions > 0 ? liveTotalPredictions : 0;
-    const totalCard = createStatCard(t('totalPredictions'), liveCount.toString(), '', liveCount, t('livePredictionsHint'));
+    const totalCard = createStatCard(t('totalPredictions'), liveTotalPredictions.toString(), '', liveTotalPredictions, t('livePredictionsHint'));
     container.appendChild(totalCard);
     
-    // Correct predictions card — removed per user request
+    const liveAnnRet = computeLiveAnnualizedReturn(LIVE_DATE);
+    const livePerfCard = createStatCard(t('liveAvgPortfolioPerf'), liveAnnRet.formatted, liveAnnRet.cssClass, liveAnnRet.numericValue);
+    livePerfCard.id = 'livePortfolioCard';
+    container.appendChild(livePerfCard);
     
-    const portfolioCard = document.createElement('div');
-    portfolioCard.className = 'stat-card';
-    portfolioCard.id = 'avgPortfolioCard';
-    const plLabel = document.createElement('div');
-    plLabel.className = 'stat-label';
-    plLabel.textContent = t('avgPortfolioPerf');
-    portfolioCard.appendChild(plLabel);
+    // Test statistics (date < LIVE_DATE within filteredData)
+    let testTotalPredictions = 0;
+    let testCorrectPredictions = 0;
+    
+    filteredData.forEach(entry => {
+        if (entry.date >= LIVE_DATE) return;
+        if (!entry.actuals) return;
+        
+        COMMODITIES.forEach(commodity => {
+            const prediction = entry.predictions[commodity] || 0;
+            if (prediction === 0) return;
+            const actual = entry.actuals[commodity];
+            if (actual == null) return;
+            
+            testTotalPredictions++;
+            if (Math.sign(prediction) === Math.sign(actual)) {
+                testCorrectPredictions++;
+            }
+        });
+    });
+    
+    const testAccuracy = testTotalPredictions > 0 ? (testCorrectPredictions / testTotalPredictions * 100) : 0;
+    
+    // Row 2: Test stats
+    const testValue = testTotalPredictions > 0 ? `${testAccuracy.toFixed(1)}%` : '-';
+    const testClass = testTotalPredictions > 0 ? (testAccuracy >= 50 ? 'success' : 'danger') : '';
+    const testCard = createStatCard(t('testAccuracy'), testValue, testClass, testTotalPredictions > 0 ? testAccuracy : null);
+    testCard.querySelector('.stat-label').title = t('testAccuracyHint');
+    container.appendChild(testCard);
+    
+    const testCountCard = createStatCard(t('testPredictions'), testTotalPredictions.toString(), '', testTotalPredictions);
+    container.appendChild(testCountCard);
+    
     const currentAnnRet = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
-    const plValue = document.createElement('div');
-    plValue.className = 'stat-value success';
-    plValue.textContent = `${currentAnnRet >= 0 ? '+' : ''}${(currentAnnRet * 100).toFixed(2)}%`;
-    portfolioCard.appendChild(plValue);
-    container.appendChild(portfolioCard);
+    const testPerfCard = createStatCard(t('testAvgPortfolioPerf'),
+        `${currentAnnRet >= 0 ? '+' : ''}${(currentAnnRet * 100).toFixed(2)}%`,
+        currentAnnRet >= 0 ? 'success' : 'danger',
+        currentAnnRet);
+    testPerfCard.id = 'testPortfolioCard';
+    container.appendChild(testPerfCard);
 
     drawPerformanceChart();
 }
@@ -1351,6 +1372,30 @@ function drawPerformanceChart() {
     ctx.textBaseline = 'bottom';
     ctx.fillText(t('startEqual100'), startLabelX, startLabelY);
     ctx.restore();
+
+    // Vertical dashed line for "Went live" date
+    const GO_LIVE_DATE = '2026-06-09';
+    const liveIdx = dates.indexOf(GO_LIVE_DATE);
+    if (liveIdx !== -1) {
+        const liveX = xScale(liveIdx);
+        ctx.save();
+        ctx.strokeStyle = textColor;
+        ctx.globalAlpha = 0.6;
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath();
+        ctx.moveTo(liveX, pad.top);
+        ctx.lineTo(liveX, pad.top + chartH);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = textColor;
+        ctx.font = '11px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(t('goLiveLabel'), liveX, pad.top - 4);
+        ctx.restore();
+    }
 
     ctx.textAlign = 'right';
     ctx.font = '10px system-ui, sans-serif';
@@ -2005,13 +2050,22 @@ async function loadModelPerformance() {
         container.innerHTML = html;
 
         bestAnnualizedReturn = Math.max(annReturnHigh, annReturnLow);
-        const avgCard = document.getElementById('avgPortfolioCard');
-        if (avgCard) {
-            const valueDiv = avgCard.querySelector('.stat-value');
+        const testPerfCardEl = document.getElementById('testPortfolioCard');
+        if (testPerfCardEl) {
+            const valueDiv = testPerfCardEl.querySelector('.stat-value');
             if (valueDiv) {
-                const currentAnnRet2 = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
-                valueDiv.textContent = `${currentAnnRet2 >= 0 ? '+' : ''}${(currentAnnRet2 * 100).toFixed(2)}%`;
-                valueDiv.className = `stat-value ${currentAnnRet2 >= 0 ? 'success' : 'danger'}`;
+                const r = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
+                valueDiv.textContent = `${r >= 0 ? '+' : ''}${(r * 100).toFixed(2)}%`;
+                valueDiv.className = `stat-value ${r >= 0 ? 'success' : 'danger'}`;
+            }
+        }
+        const livePerfCardEl = document.getElementById('livePortfolioCard');
+        if (livePerfCardEl) {
+            const valueDiv = livePerfCardEl.querySelector('.stat-value');
+            if (valueDiv) {
+                const result = computeLiveAnnualizedReturn('2026-06-09');
+                valueDiv.textContent = result.formatted;
+                valueDiv.className = `stat-value ${result.cssClass}`;
             }
         }
 
