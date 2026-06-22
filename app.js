@@ -426,7 +426,6 @@ async function init() {
         loadSignalHistory();
         setupEventListeners();
         setupTabNavigation();
-        setupAboutModelPage();
         setupRiskModelBar();
         initSiteUpdateButton();
         await initializeHistoricalPerformance();
@@ -793,12 +792,6 @@ function setupTabNavigation() {
     const hashTab = window.location.hash.replace('#', '');
     if (hashTab && document.getElementById(`${hashTab}Tab`)) {
         activateTab(hashTab);
-    }
-}
-
-function setupAboutModelPage() {
-    if (window.Chatbot && document.getElementById('chatbot-container')) {
-        window.Chatbot.init('chatbot-container');
     }
 }
 

@@ -660,106 +660,19 @@
 .cv-preview-root .entry { gap: 0.5rem; }
 .cv-preview-root .entry time { font-size: 0.7rem; }
 }
-
-.chatbot-disclaimer {
-    font-size: 0.75rem;
-    color: var(--muted);
-    font-style: italic;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0.5rem;
-    background: rgb(255 255 255 / 0.04);
-    border-radius: 6px;
-    line-height: 1.4;
-}
-
-.chatbot-messages {
-    max-height: 320px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    background: var(--bg-card);
-    border-radius: 8px;
-    border: 1px solid rgb(255 255 255 / 0.08);
-}
-
-.chat-message {
-    max-width: 85%;
-    padding: 0.5rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    line-height: 1.45;
-    word-wrap: break-word;
-}
-
-.chat-message-bot {
-    align-self: flex-start;
-    background: rgb(45 212 191 / 0.1);
-    color: var(--text);
-    border-bottom-left-radius: 4px;
-}
-
-.chat-message-user {
-    align-self: flex-end;
-    background: rgb(6 182 212 / 0.15);
-    color: var(--text);
-    border-bottom-right-radius: 4px;
-}
-
-.chatbot-input-area {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.chatbot-input {
-    flex: 1;
-    padding: 0.55rem 0.75rem;
-    border: 1px solid rgb(255 255 255 / 0.15);
-    border-radius: 8px;
-    background: var(--bg-card);
-    color: var(--text);
-    font-size: 0.85rem;
-    outline: none;
-}
-
-.chatbot-input:focus {
-    border-color: var(--accent);
-}
-
-.chatbot-send-btn {
-    padding: 0.55rem 1rem;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent);
-    color: #111;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.chatbot-send-btn:hover {
-    background: #5eead4;
-}
-
-.chatbot-send-btn:disabled {
-    opacity: 0.5;
-    cursor: default;
-}
     </style>
 </head>
 <body>
 
-<div class="ls" role="group" aria-label="Language">
-    <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
-    <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English">EN</button>
-</div>
-
 <div class="cv-preview-root">
 <div class="page-frame">
     <aside class="sidebar">
+        <div class="lang-switcher" style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
+            <div class="lang-switcher" role="group" aria-label="Language" style="position:static;background:transparent;border:none;padding:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;">
+                <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
+                <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English">EN</button>
+            </div>
+        </div>
         <div class="profile">
             <div class="avatar"><img src="img/profile.jpg" alt="Johan Persson" class="avatar-img"></div>
             <h1 class="name" data-i18n="cv_name">Johan Persson</h1>
@@ -1007,11 +920,7 @@
             </ul>
         </section>
 
-        <section class="services" style="padding-top:0">
-            <h2 data-i18n="cv_chatbot_heading">Ask the model assistant</h2>
-            <div id="chatbot-container"></div>
-        </section>
-    </main>
+        </main>
 
     <nav class="rail" aria-label="Section navigation">
         <a href="#home" class="rail-link active" data-i18n="cv_nav_home">HOME</a>
@@ -1095,7 +1004,6 @@
     cv_nav_work: 'WORK',
     cv_nav_edu: 'EDU',
     cv_location_gothenburg: 'Gothenburg',
-    cv_chatbot_heading: 'Ask the model assistant',
     };
 
     TRANSLATIONS.sv = {
@@ -1164,11 +1072,10 @@
         cv_extra_0: ' \u2014 En m\u00e5nad i Paris med studier av Frankrikes kulturella och historiska arv.',
         cv_extra_1: ' \u2014 En m\u00e5nad i \u00f6stra Frankrike med studier av franska spr\u00e5ket.',
         cv_extra_2: 'Jag har k\u00f6rkort och bil.',
-        cv_nav_home: 'HEM',
-        cv_nav_work: 'ARBETE',
-        cv_nav_edu: 'UTB',
-        cv_location_gothenburg: 'G\u00f6teborg',
-        cv_chatbot_heading: 'Fråga modellens assistent',
+    cv_nav_home: 'HEM',
+    cv_nav_work: 'ARBETE',
+    cv_nav_edu: 'UTB',
+    cv_location_gothenburg: 'Göteborg',
     };
 
     var STORAGE_KEY = 'cv_lang';
@@ -1279,15 +1186,6 @@
         }
     });
 })();
-</script>
-
-<script src="chatbot.js?v=1"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.Chatbot) {
-        window.Chatbot.init('chatbot-container');
-    }
-});
 </script>
 
 </body>
