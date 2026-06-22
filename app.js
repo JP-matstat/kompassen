@@ -1136,6 +1136,38 @@ function computeLiveAnnualizedReturn(liveDate) {
     return { formatted, cssClass, numericValue: annReturn };
 }
 
+function computeEquitySinceLive(liveDate, curveKey) {
+    if (!equityCurveData || !equityCurveData.dates || !equityCurveData[curveKey]) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const dates = equityCurveData.dates;
+    const values = equityCurveData[curveKey];
+    const liveIdx = dates.indexOf(liveDate);
+    if (liveIdx === -1 || liveIdx >= values.length - 1) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const eqLive = values[liveIdx];
+    const eqLast = values[values.length - 1];
+    if (!eqLive || eqLive === 0) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const equityValue = (eqLast / eqLive) * 100;
+    const cssClass = equityValue >= 100 ? 'success' : 'danger';
+    const formatted = equityValue.toFixed(2);
+    return { formatted, cssClass, numericValue: equityValue };
+}
+
+function computeEquitySinceStart(curveKey) {
+    if (!equityCurveData || !equityCurveData[curveKey] || equityCurveData[curveKey].length === 0) {
+        return { formatted: '-', cssClass: '', numericValue: null };
+    }
+    const values = equityCurveData[curveKey];
+    const eqLast = values[values.length - 1];
+    const cssClass = eqLast >= 100 ? 'success' : 'danger';
+    const formatted = eqLast.toFixed(2);
+    return { formatted, cssClass, numericValue: eqLast };
+}
+
 function renderPerformanceStats() {
     const container = document.getElementById('performanceStats');
     container.innerHTML = '';
@@ -1182,6 +1214,13 @@ function renderPerformanceStats() {
     livePerfCard.id = 'livePortfolioCard';
     container.appendChild(livePerfCard);
     
+    // Live equity value (last / live * 100)
+    const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
+    const liveEqValue = computeEquitySinceLive('2026-06-09', curveKey);
+    const liveEqCard = createStatCard(t('livePortfolioValue'), liveEqValue.formatted, liveEqValue.cssClass, liveEqValue.numericValue);
+    liveEqCard.id = 'liveEqCard';
+    container.appendChild(liveEqCard);
+    
     // Test statistics (date < LIVE_DATE within filteredData)
     let testTotalPredictions = 0;
     let testCorrectPredictions = 0;
@@ -1222,6 +1261,12 @@ function renderPerformanceStats() {
         currentAnnRet);
     testPerfCard.id = 'testPortfolioCard';
     container.appendChild(testPerfCard);
+    
+    // Training equity value (last value, starts at ~100)
+    const trainEqValue = computeEquitySinceStart(curveKey);
+    const trainEqCard = createStatCard(t('trainPortfolioValue'), trainEqValue.formatted, trainEqValue.cssClass, trainEqValue.numericValue);
+    trainEqCard.id = 'trainEqCard';
+    container.appendChild(trainEqCard);
 
     drawPerformanceChart();
 }
@@ -1610,11 +1655,11 @@ function displayRelatedStocks(commodities) {
     container.innerHTML = '';
 
     // ── Broker cell renderer ──
-    const BROKER_LABELS = { A: 'Avanza', N: 'Nordnet', S: 'Savr', M: 'Montrose' };
+    const BROKER_LABELS = { A: 'Avanza', N: 'Nordnet', M: 'Montrose' };
     function renderBrokerCell(brokers) {
         if (!brokers || brokers.length === 0) return '<span class="inst-none">—</span>';
         return brokers.map(b => {
-            const cls = b === 'A' ? 'brk-avanza' : b === 'N' ? 'brk-nordnet' : b === 'S' ? 'brk-savr' : 'brk-montrose';
+            const cls = b === 'A' ? 'brk-avanza' : b === 'N' ? 'brk-nordnet' : 'brk-montrose';
             return `<span class="brk-pill ${cls}" title="${BROKER_LABELS[b] || b}">${b}</span>`;
         }).join(' ');
     }
@@ -1681,7 +1726,7 @@ function displayRelatedStocks(commodities) {
             }
             if (!hasRegionalPicks) {
                 // Fall back to platform-based lookup
-                const platforms = ['avanza', 'nordnet', 'savr', 'montrose'];
+                const platforms = ['avanza', 'nordnet', 'montrose'];
                 platforms.forEach(platform => {
                     if (commodityData[cat.key] && commodityData[cat.key][platform]) {
                         commodityData[cat.key][platform].forEach(inst => {
@@ -1691,16 +1736,18 @@ function displayRelatedStocks(commodities) {
                 });
             }
 
-            if (allInstruments.length === 0) return;
+            // For ETCs/Trackers, always show a row even without data
+            const noData = allInstruments.length === 0;
+            if (noData && cat.key === 'stocks') return;
 
             // Best instrument = highest absolute correlation
-            const best = allInstruments.reduce((a, b) =>
+            const best = noData ? null : allInstruments.reduce((a, b) =>
                 Math.abs(a.correlation) > Math.abs(b.correlation) ? a : b
             );
 
             // Regional picks for stocks (up to 3, sorted by |correlation| desc)
             let regionalPicks = [];
-            if (cat.key === 'stocks') {
+            if (cat.key === 'stocks' && !noData) {
                 const regionOrder = ['nordic', 'european', 'world'];
                 regionOrder.forEach(region => {
                     const pick = commodityData.regional?.[region];
@@ -1715,7 +1762,7 @@ function displayRelatedStocks(commodities) {
                 regionalPicks.sort((a, b) => Math.abs(b.correlation) - Math.abs(a.correlation));
                 // If no explicit regional picks, infer region from ticker suffix
                 if (regionalPicks.length === 0) {
-                    const platforms = ['avanza', 'nordnet', 'savr', 'montrose'];
+                    const platforms = ['avanza', 'nordnet', 'montrose'];
                     const all = [];
                     platforms.forEach(p => {
                         if (commodityData.stocks?.[p]) {
@@ -1739,9 +1786,11 @@ function displayRelatedStocks(commodities) {
 
             // Store globally for click selection
             const instKey = `${commodity}-${cat.key}`;
-            globalTickerData[instKey] = { allInstruments, best };
+            if (!noData) {
+                globalTickerData[instKey] = { allInstruments, best };
+            }
 
-            rows.push({ commodity, allInstruments, best, regionalPicks, instKey });
+            rows.push({ commodity, allInstruments, best, regionalPicks, instKey, noData });
         });
 
         if (rows.length === 0) return;
@@ -1762,11 +1811,15 @@ function displayRelatedStocks(commodities) {
         tbody.appendChild(sepRow);
 
         // ── Data rows ──
-        rows.forEach(({ commodity, allInstruments, best, regionalPicks, instKey }) => {
+        rows.forEach(({ commodity, allInstruments, best, regionalPicks, instKey, noData }) => {
             const row = document.createElement('tr');
-            row.className = 'data-row';
+            row.className = 'data-row' + (noData ? ' row-no-data' : '');
             row.dataset.commodity = commodity;
             row.dataset.category = cat.key;
+            if (noData) {
+                const missingKey = cat.key === 'etfs' ? 'noEtfDataTooltip' : 'noTrackerDataTooltip';
+                row.title = t(missingKey);
+            }
 
             // Commodity name
             const commCell = document.createElement('td');
@@ -2064,6 +2117,25 @@ async function loadModelPerformance() {
             const valueDiv = livePerfCardEl.querySelector('.stat-value');
             if (valueDiv) {
                 const result = computeLiveAnnualizedReturn('2026-06-09');
+                valueDiv.textContent = result.formatted;
+                valueDiv.className = `stat-value ${result.cssClass}`;
+            }
+        }
+        const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
+        const liveEqCardEl = document.getElementById('liveEqCard');
+        if (liveEqCardEl) {
+            const valueDiv = liveEqCardEl.querySelector('.stat-value');
+            if (valueDiv) {
+                const result = computeEquitySinceLive('2026-06-09', curveKey);
+                valueDiv.textContent = result.formatted;
+                valueDiv.className = `stat-value ${result.cssClass}`;
+            }
+        }
+        const trainEqCardEl = document.getElementById('trainEqCard');
+        if (trainEqCardEl) {
+            const valueDiv = trainEqCardEl.querySelector('.stat-value');
+            if (valueDiv) {
+                const result = computeEquitySinceStart(curveKey);
                 valueDiv.textContent = result.formatted;
                 valueDiv.className = `stat-value ${result.cssClass}`;
             }

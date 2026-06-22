@@ -1,11 +1,10 @@
 {
   "metadata": {
-    "analysis_date": "2026-06-07T20:21:07.220077",
+    "analysis_date": "2026-06-21T15:55:16.679173",
     "period": "5 years",
     "platforms": [
       "avanza",
       "nordnet",
-      "savr",
       "montrose"
     ]
   },
@@ -19,13 +18,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.3019,
-          "beta": 0.6181,
-          "r_squared": 0.0912,
-          "n_observations": 1222
+          "correlation": 0.3092,
+          "beta": 0.6315,
+          "r_squared": 0.0956,
+          "n_observations": 1221
         },
         "european": {
           "ticker": "AAL.L",
@@ -33,12 +31,11 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.2953,
-          "beta": 0.6542,
-          "r_squared": 0.0872,
+          "correlation": 0.3007,
+          "beta": 0.6614,
+          "r_squared": 0.0904,
           "n_observations": 1231
         },
         "world": {
@@ -48,10 +45,10 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.6372,
-          "beta": 1.3188,
-          "r_squared": 0.4061,
-          "n_observations": 1255
+          "correlation": 0.6349,
+          "beta": 1.31,
+          "r_squared": 0.4031,
+          "n_observations": 1254
         },
         "negatives": []
       },
@@ -63,13 +60,12 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.3019,
-            "beta": 0.6181,
-            "r_squared": 0.0912,
-            "n_observations": 1222
+            "correlation": 0.3092,
+            "beta": 0.6315,
+            "r_squared": 0.0956,
+            "n_observations": 1221
           }
         ],
         "nordnet": [
@@ -79,13 +75,12 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.3019,
-            "beta": 0.6181,
-            "r_squared": 0.0912,
-            "n_observations": 1222
+            "correlation": 0.3092,
+            "beta": 0.6315,
+            "r_squared": 0.0956,
+            "n_observations": 1221
           },
           {
             "ticker": "NEM",
@@ -94,10 +89,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6372,
-            "beta": 1.3188,
-            "r_squared": 0.4061,
-            "n_observations": 1255
+            "correlation": 0.6349,
+            "beta": 1.31,
+            "r_squared": 0.4031,
+            "n_observations": 1254
           },
           {
             "ticker": "AEM",
@@ -106,10 +101,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6921,
-            "beta": 1.3996,
-            "r_squared": 0.479,
-            "n_observations": 1255
+            "correlation": 0.6929,
+            "beta": 1.3957,
+            "r_squared": 0.4801,
+            "n_observations": 1254
           },
           {
             "ticker": "WPM",
@@ -118,10 +113,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6862,
-            "beta": 1.3265,
-            "r_squared": 0.4709,
-            "n_observations": 1255
+            "correlation": 0.6874,
+            "beta": 1.3279,
+            "r_squared": 0.4725,
+            "n_observations": 1254
           },
           {
             "ticker": "AGI",
@@ -130,10 +125,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6485,
-            "beta": 1.4644,
-            "r_squared": 0.4206,
-            "n_observations": 1255
+            "correlation": 0.6474,
+            "beta": 1.4549,
+            "r_squared": 0.4192,
+            "n_observations": 1254
           },
           {
             "ticker": "KGC",
@@ -142,10 +137,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6398,
-            "beta": 1.5424,
-            "r_squared": 0.4093,
-            "n_observations": 1255
+            "correlation": 0.6422,
+            "beta": 1.5394,
+            "r_squared": 0.4124,
+            "n_observations": 1254
           },
           {
             "ticker": "AU",
@@ -154,10 +149,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6747,
-            "beta": 1.8087,
-            "r_squared": 0.4552,
-            "n_observations": 1255
+            "correlation": 0.6739,
+            "beta": 1.8013,
+            "r_squared": 0.4542,
+            "n_observations": 1254
           },
           {
             "ticker": "FCX",
@@ -166,26 +161,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3326,
-            "beta": 0.8189,
-            "r_squared": 0.1106,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "BOL.ST",
-            "name": "Boliden",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.3019,
-            "beta": 0.6181,
-            "r_squared": 0.0912,
-            "n_observations": 1222
+            "correlation": 0.3305,
+            "beta": 0.8085,
+            "r_squared": 0.1092,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -200,9 +179,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.9151,
-            "beta": 0.8779,
-            "r_squared": 0.8374,
+            "correlation": 0.9159,
+            "beta": 0.88,
+            "r_squared": 0.839,
             "n_observations": 1231
           },
           {
@@ -213,9 +192,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.8274,
-            "beta": 0.7347,
-            "r_squared": 0.6846,
+            "correlation": 0.8307,
+            "beta": 0.7406,
+            "r_squared": 0.6901,
             "n_observations": 1238
           }
         ],
@@ -228,9 +207,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.9151,
-            "beta": 0.8779,
-            "r_squared": 0.8374,
+            "correlation": 0.9159,
+            "beta": 0.88,
+            "r_squared": 0.839,
             "n_observations": 1231
           },
           {
@@ -241,9 +220,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.8274,
-            "beta": 0.7347,
-            "r_squared": 0.6846,
+            "correlation": 0.8307,
+            "beta": 0.7406,
+            "r_squared": 0.6901,
             "n_observations": 1238
           },
           {
@@ -253,13 +232,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.7393,
-            "beta": 1.4803,
-            "r_squared": 0.5465,
-            "n_observations": 1255
+            "correlation": 0.738,
+            "beta": 1.4761,
+            "r_squared": 0.5447,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
@@ -272,9 +250,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.9151,
-            "beta": 0.8779,
-            "r_squared": 0.8374,
+            "correlation": 0.9159,
+            "beta": 0.88,
+            "r_squared": 0.839,
             "n_observations": 1231
           },
           {
@@ -284,9 +262,9 @@
             "brokers": [
               "A"
             ],
-            "correlation": 0.9142,
-            "beta": 0.8746,
-            "r_squared": 0.8359,
+            "correlation": 0.9151,
+            "beta": 0.8766,
+            "r_squared": 0.8374,
             "n_observations": 1231
           },
           {
@@ -296,9 +274,9 @@
             "brokers": [
               "A"
             ],
-            "correlation": 0.9125,
-            "beta": 0.8711,
-            "r_squared": 0.8326,
+            "correlation": 0.9132,
+            "beta": 0.8732,
+            "r_squared": 0.8339,
             "n_observations": 1231
           },
           {
@@ -307,13 +285,12 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.9259,
-            "beta": 0.9153,
-            "r_squared": 0.8572,
-            "n_observations": 1255
+            "correlation": 0.9178,
+            "beta": 0.9084,
+            "r_squared": 0.8424,
+            "n_observations": 1254
           }
         ],
         "nordnet": [
@@ -323,29 +300,12 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.9259,
-            "beta": 0.9153,
-            "r_squared": 0.8572,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "GLD",
-            "name": "SPDR Gold Trust",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.9259,
-            "beta": 0.9153,
-            "r_squared": 0.8572,
-            "n_observations": 1255
+            "correlation": 0.9178,
+            "beta": 0.9084,
+            "r_squared": 0.8424,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -360,13 +320,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.4001,
-          "beta": 0.3912,
-          "r_squared": 0.1601,
-          "n_observations": 1222
+          "correlation": 0.404,
+          "beta": 0.3948,
+          "r_squared": 0.1632,
+          "n_observations": 1221
         },
         "european": {
           "ticker": "AAL.L",
@@ -374,12 +333,11 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.3883,
-          "beta": 0.4056,
-          "r_squared": 0.1508,
+          "correlation": 0.3936,
+          "beta": 0.4091,
+          "r_squared": 0.1549,
           "n_observations": 1231
         },
         "world": {
@@ -389,10 +347,10 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.5863,
-          "beta": 0.5744,
-          "r_squared": 0.3437,
-          "n_observations": 1255
+          "correlation": 0.5806,
+          "beta": 0.5684,
+          "r_squared": 0.3371,
+          "n_observations": 1254
         },
         "negatives": []
       },
@@ -404,13 +362,12 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4001,
-            "beta": 0.3912,
-            "r_squared": 0.1601,
-            "n_observations": 1222
+            "correlation": 0.404,
+            "beta": 0.3948,
+            "r_squared": 0.1632,
+            "n_observations": 1221
           }
         ],
         "nordnet": [
@@ -420,13 +377,12 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4001,
-            "beta": 0.3912,
-            "r_squared": 0.1601,
-            "n_observations": 1222
+            "correlation": 0.404,
+            "beta": 0.3948,
+            "r_squared": 0.1632,
+            "n_observations": 1221
           },
           {
             "ticker": "AEM",
@@ -435,10 +391,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6064,
-            "beta": 0.5805,
-            "r_squared": 0.3677,
-            "n_observations": 1255
+            "correlation": 0.6053,
+            "beta": 0.5785,
+            "r_squared": 0.3664,
+            "n_observations": 1254
           },
           {
             "ticker": "WPM",
@@ -447,10 +403,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6463,
-            "beta": 0.5915,
-            "r_squared": 0.4177,
-            "n_observations": 1255
+            "correlation": 0.644,
+            "beta": 0.5903,
+            "r_squared": 0.4148,
+            "n_observations": 1254
           },
           {
             "ticker": "PAAS",
@@ -459,10 +415,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6522,
-            "beta": 0.809,
-            "r_squared": 0.4253,
-            "n_observations": 1255
+            "correlation": 0.6503,
+            "beta": 0.8048,
+            "r_squared": 0.4229,
+            "n_observations": 1254
           },
           {
             "ticker": "FCX",
@@ -471,10 +427,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4436,
-            "beta": 0.5171,
-            "r_squared": 0.1968,
-            "n_observations": 1255
+            "correlation": 0.4393,
+            "beta": 0.5098,
+            "r_squared": 0.193,
+            "n_observations": 1254
           },
           {
             "ticker": "HL",
@@ -483,26 +439,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.61,
-            "beta": 0.9367,
-            "r_squared": 0.3721,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "BOL.ST",
-            "name": "Boliden",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.4001,
-            "beta": 0.3912,
-            "r_squared": 0.1601,
-            "n_observations": 1222
+            "correlation": 0.6061,
+            "beta": 0.9265,
+            "r_squared": 0.3674,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -517,9 +457,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.8991,
-            "beta": 0.8345,
-            "r_squared": 0.8085,
+            "correlation": 0.9001,
+            "beta": 0.8366,
+            "r_squared": 0.8101,
             "n_observations": 1231
           }
         ],
@@ -532,9 +472,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.8991,
-            "beta": 0.8345,
-            "r_squared": 0.8085,
+            "correlation": 0.9001,
+            "beta": 0.8366,
+            "r_squared": 0.8101,
             "n_observations": 1231
           },
           {
@@ -544,13 +484,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.71,
-            "beta": 0.726,
-            "r_squared": 0.5041,
-            "n_observations": 1255
+            "correlation": 0.7058,
+            "beta": 0.7231,
+            "r_squared": 0.4981,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
@@ -563,9 +502,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.8991,
-            "beta": 0.8345,
-            "r_squared": 0.8085,
+            "correlation": 0.9001,
+            "beta": 0.8366,
+            "r_squared": 0.8101,
             "n_observations": 1231
           },
           {
@@ -574,13 +513,12 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.9108,
-            "beta": 0.8569,
-            "r_squared": 0.8296,
-            "n_observations": 1255
+            "correlation": 0.9035,
+            "beta": 0.8501,
+            "r_squared": 0.8163,
+            "n_observations": 1254
           }
         ],
         "nordnet": [
@@ -590,29 +528,12 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.9108,
-            "beta": 0.8569,
-            "r_squared": 0.8296,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "SLV",
-            "name": "iShares Silver Trust",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.9108,
-            "beta": 0.8569,
-            "r_squared": 0.8296,
-            "n_observations": 1255
+            "correlation": 0.9035,
+            "beta": 0.8501,
+            "r_squared": 0.8163,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -627,13 +548,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.5209,
-          "beta": 0.6961,
-          "r_squared": 0.2714,
-          "n_observations": 1223
+          "correlation": 0.5171,
+          "beta": 0.6967,
+          "r_squared": 0.2674,
+          "n_observations": 1222
         },
         "european": {
           "ticker": "AAL.L",
@@ -641,12 +561,11 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.5084,
-          "beta": 0.7367,
-          "r_squared": 0.2585,
+          "correlation": 0.5085,
+          "beta": 0.7397,
+          "r_squared": 0.2586,
           "n_observations": 1232
         },
         "world": {
@@ -656,10 +575,10 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.5686,
-          "beta": 0.916,
-          "r_squared": 0.3234,
-          "n_observations": 1255
+          "correlation": 0.5658,
+          "beta": 0.915,
+          "r_squared": 0.3201,
+          "n_observations": 1254
         },
         "negatives": []
       },
@@ -671,13 +590,12 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.5209,
-            "beta": 0.6961,
-            "r_squared": 0.2714,
-            "n_observations": 1223
+            "correlation": 0.5171,
+            "beta": 0.6967,
+            "r_squared": 0.2674,
+            "n_observations": 1222
           },
           {
             "ticker": "ANTO.L",
@@ -685,12 +603,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.6094,
-            "beta": 0.8782,
-            "r_squared": 0.3714,
+            "correlation": 0.6078,
+            "beta": 0.8836,
+            "r_squared": 0.3694,
             "n_observations": 1232
           },
           {
@@ -699,12 +616,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.5084,
-            "beta": 0.7367,
-            "r_squared": 0.2585,
+            "correlation": 0.5085,
+            "beta": 0.7397,
+            "r_squared": 0.2586,
             "n_observations": 1232
           },
           {
@@ -713,12 +629,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4746,
-            "beta": 0.4634,
-            "r_squared": 0.2253,
+            "correlation": 0.4744,
+            "beta": 0.466,
+            "r_squared": 0.225,
             "n_observations": 1231
           },
           {
@@ -727,12 +642,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.49,
-            "beta": 0.575,
-            "r_squared": 0.2401,
+            "correlation": 0.4886,
+            "beta": 0.5756,
+            "r_squared": 0.2387,
             "n_observations": 1229
           }
         ],
@@ -743,13 +657,12 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.5209,
-            "beta": 0.6961,
-            "r_squared": 0.2714,
-            "n_observations": 1223
+            "correlation": 0.5171,
+            "beta": 0.6967,
+            "r_squared": 0.2674,
+            "n_observations": 1222
           },
           {
             "ticker": "ANTO.L",
@@ -757,12 +670,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.6094,
-            "beta": 0.8782,
-            "r_squared": 0.3714,
+            "correlation": 0.6078,
+            "beta": 0.8836,
+            "r_squared": 0.3694,
             "n_observations": 1232
           },
           {
@@ -771,12 +683,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.5084,
-            "beta": 0.7367,
-            "r_squared": 0.2585,
+            "correlation": 0.5085,
+            "beta": 0.7398,
+            "r_squared": 0.2586,
             "n_observations": 1232
           },
           {
@@ -785,12 +696,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4746,
-            "beta": 0.4634,
-            "r_squared": 0.2253,
+            "correlation": 0.4744,
+            "beta": 0.466,
+            "r_squared": 0.225,
             "n_observations": 1231
           },
           {
@@ -799,12 +709,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.49,
-            "beta": 0.575,
-            "r_squared": 0.2401,
+            "correlation": 0.4886,
+            "beta": 0.5756,
+            "r_squared": 0.2387,
             "n_observations": 1229
           },
           {
@@ -814,10 +723,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4435,
-            "beta": 0.5621,
-            "r_squared": 0.1967,
-            "n_observations": 1255
+            "correlation": 0.4448,
+            "beta": 0.5661,
+            "r_squared": 0.1978,
+            "n_observations": 1254
           },
           {
             "ticker": "FCX",
@@ -826,10 +735,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5686,
-            "beta": 0.916,
-            "r_squared": 0.3234,
-            "n_observations": 1255
+            "correlation": 0.5658,
+            "beta": 0.915,
+            "r_squared": 0.3201,
+            "n_observations": 1254
           },
           {
             "ticker": "SCCO",
@@ -838,10 +747,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5826,
-            "beta": 0.8279,
-            "r_squared": 0.3394,
-            "n_observations": 1255
+            "correlation": 0.5778,
+            "beta": 0.8269,
+            "r_squared": 0.3339,
+            "n_observations": 1254
           },
           {
             "ticker": "BHP",
@@ -850,82 +759,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.524,
-            "beta": 0.588,
-            "r_squared": 0.2746,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "BOL.ST",
-            "name": "Boliden",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.5209,
-            "beta": 0.6961,
-            "r_squared": 0.2714,
-            "n_observations": 1223
-          },
-          {
-            "ticker": "ANTO.L",
-            "name": "Antofagasta",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.6094,
-            "beta": 0.8782,
-            "r_squared": 0.3714,
-            "n_observations": 1232
-          },
-          {
-            "ticker": "AAL.L",
-            "name": "Anglo American",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.5084,
-            "beta": 0.7367,
-            "r_squared": 0.2585,
-            "n_observations": 1232
-          },
-          {
-            "ticker": "RIO.L",
-            "name": "Rio Tinto",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.4746,
-            "beta": 0.4634,
-            "r_squared": 0.2253,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "GLEN.L",
-            "name": "Glencore",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.49,
-            "beta": 0.575,
-            "r_squared": 0.2401,
-            "n_observations": 1229
+            "correlation": 0.5231,
+            "beta": 0.5905,
+            "r_squared": 0.2736,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -940,10 +777,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4493,
-            "beta": 0.5262,
-            "r_squared": 0.2019,
-            "n_observations": 1255
+            "correlation": 0.4472,
+            "beta": 0.5253,
+            "r_squared": 0.2,
+            "n_observations": 1254
           },
           {
             "ticker": "COPX",
@@ -952,10 +789,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6586,
-            "beta": 0.8672,
-            "r_squared": 0.4337,
-            "n_observations": 1255
+            "correlation": 0.6554,
+            "beta": 0.8691,
+            "r_squared": 0.4295,
+            "n_observations": 1254
           },
           {
             "ticker": "PICK",
@@ -964,42 +801,17 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6023,
-            "beta": 0.6029,
-            "r_squared": 0.3628,
-            "n_observations": 1255
-          },
-          {
-            "ticker": "JJC",
-            "name": "iPath Bloomberg Copper",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.9075,
-            "beta": 0.8775,
-            "r_squared": 0.8235,
-            "n_observations": 534
+            "correlation": 0.6,
+            "beta": 0.6049,
+            "r_squared": 0.36,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
         "avanza": [],
         "nordnet": [
-          {
-            "ticker": "JJC",
-            "name": "iPath Bloomberg Copper",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.9075,
-            "beta": 0.8775,
-            "r_squared": 0.8235,
-            "n_observations": 534
-          },
           {
             "ticker": "CPER",
             "name": "United States Copper Index Fund",
@@ -1007,13 +819,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.8308,
-            "beta": 0.8035,
-            "r_squared": 0.6902,
-            "n_observations": 1255
+            "correlation": 0.828,
+            "beta": 0.8034,
+            "r_squared": 0.6855,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1026,13 +837,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.1491,
-          "beta": 0.184,
-          "r_squared": 0.0222,
-          "n_observations": 1225
+          "correlation": 0.1434,
+          "beta": 0.1783,
+          "r_squared": 0.0206,
+          "n_observations": 1224
         },
         "european": {
           "ticker": "BP.L",
@@ -1041,10 +851,10 @@
           "brokers": [
             "A"
           ],
-          "correlation": 0.1718,
-          "beta": 0.19,
-          "r_squared": 0.0295,
-          "n_observations": 1231
+          "correlation": 0.1679,
+          "beta": 0.1866,
+          "r_squared": 0.0282,
+          "n_observations": 1230
         },
         "world": {
           "ticker": "XOM",
@@ -1053,17 +863,16 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.1691,
-          "beta": 0.1719,
-          "r_squared": 0.0286,
-          "n_observations": 1255
+          "correlation": 0.1637,
+          "beta": 0.1665,
+          "r_squared": 0.0268,
+          "n_observations": 1254
         },
         "negatives": []
       },
       "stocks": {
         "avanza": [],
         "nordnet": [],
-        "savr": [],
         "montrose": []
       },
       "etfs": {
@@ -1076,25 +885,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.9078,
-            "beta": 0.7266,
-            "r_squared": 0.8241,
-            "n_observations": 1255
-          },
-          {
-            "ticker": "SGG",
-            "name": "iPath Bloomberg Sugar",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.7663,
-            "beta": 0.7921,
-            "r_squared": 0.5872,
-            "n_observations": 534
+            "correlation": 0.9053,
+            "beta": 0.7234,
+            "r_squared": 0.8196,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
@@ -1107,10 +903,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.5125,
-            "beta": 0.4184,
-            "r_squared": 0.2626,
-            "n_observations": 1232
+            "correlation": 0.5072,
+            "beta": 0.4145,
+            "r_squared": 0.2572,
+            "n_observations": 1231
           }
         ],
         "nordnet": [
@@ -1121,10 +917,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3658,
-            "beta": 0.1959,
-            "r_squared": 0.1338,
-            "n_observations": 1255
+            "correlation": 0.3621,
+            "beta": 0.1921,
+            "r_squared": 0.1311,
+            "n_observations": 1254
           },
           {
             "ticker": "CANE",
@@ -1133,22 +929,22 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.9078,
-            "beta": 0.7266,
-            "r_squared": 0.8241,
-            "n_observations": 1255
+            "correlation": 0.9053,
+            "beta": 0.7234,
+            "r_squared": 0.8196,
+            "n_observations": 1254
           },
           {
-            "ticker": "SGG",
-            "name": "iPath Bloomberg Sugar",
+            "ticker": "SUGA.L",
+            "name": "WisdomTree Sugar",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.7663,
-            "beta": 0.7921,
-            "r_squared": 0.5872,
-            "n_observations": 534
+            "correlation": 0.8177,
+            "beta": 0.7876,
+            "r_squared": 0.6686,
+            "n_observations": 1231
           },
           {
             "ticker": "AIGS.L",
@@ -1158,13 +954,12 @@
               "A",
               "N"
             ],
-            "correlation": 0.5125,
-            "beta": 0.4184,
-            "r_squared": 0.2626,
-            "n_observations": 1232
+            "correlation": 0.5072,
+            "beta": 0.4145,
+            "r_squared": 0.2572,
+            "n_observations": 1231
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1177,12 +972,11 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.4896,
-          "beta": 0.4191,
-          "r_squared": 0.2397,
+          "correlation": 0.4932,
+          "beta": 0.4223,
+          "r_squared": 0.2432,
           "n_observations": 1225
         },
         "european": {
@@ -1192,9 +986,9 @@
           "brokers": [
             "A"
           ],
-          "correlation": 0.5329,
-          "beta": 0.4056,
-          "r_squared": 0.284,
+          "correlation": 0.5342,
+          "beta": 0.4061,
+          "r_squared": 0.2854,
           "n_observations": 1231
         },
         "world": {
@@ -1204,10 +998,10 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.596,
-          "beta": 0.4204,
-          "r_squared": 0.3553,
-          "n_observations": 1255
+          "correlation": 0.5969,
+          "beta": 0.4182,
+          "r_squared": 0.3563,
+          "n_observations": 1254
         },
         "negatives": []
       },
@@ -1219,12 +1013,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4896,
-            "beta": 0.4191,
-            "r_squared": 0.2397,
+            "correlation": 0.4932,
+            "beta": 0.4223,
+            "r_squared": 0.2432,
             "n_observations": 1225
           }
         ],
@@ -1235,12 +1028,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4896,
-            "beta": 0.4191,
-            "r_squared": 0.2397,
+            "correlation": 0.4932,
+            "beta": 0.4223,
+            "r_squared": 0.2432,
             "n_observations": 1225
           },
           {
@@ -1250,10 +1042,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.596,
-            "beta": 0.4204,
-            "r_squared": 0.3553,
-            "n_observations": 1255
+            "correlation": 0.5969,
+            "beta": 0.4182,
+            "r_squared": 0.3563,
+            "n_observations": 1254
           },
           {
             "ticker": "CVX",
@@ -1262,10 +1054,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5354,
-            "beta": 0.3548,
-            "r_squared": 0.2867,
-            "n_observations": 1255
+            "correlation": 0.5368,
+            "beta": 0.3537,
+            "r_squared": 0.2882,
+            "n_observations": 1254
           },
           {
             "ticker": "COP",
@@ -1274,10 +1066,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5903,
-            "beta": 0.5096,
-            "r_squared": 0.3485,
-            "n_observations": 1255
+            "correlation": 0.5909,
+            "beta": 0.5078,
+            "r_squared": 0.3491,
+            "n_observations": 1254
           },
           {
             "ticker": "CNQ.TO",
@@ -1286,9 +1078,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.615,
-            "beta": 0.4975,
-            "r_squared": 0.3783,
+            "correlation": 0.6162,
+            "beta": 0.4954,
+            "r_squared": 0.3797,
             "n_observations": 1231
           },
           {
@@ -1298,9 +1090,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5911,
-            "beta": 0.5995,
-            "r_squared": 0.3494,
+            "correlation": 0.5927,
+            "beta": 0.5976,
+            "r_squared": 0.3513,
             "n_observations": 1231
           },
           {
@@ -1310,26 +1102,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5806,
-            "beta": 0.5041,
-            "r_squared": 0.337,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "EQNR.OL",
-            "name": "Equinor",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.4896,
-            "beta": 0.4191,
-            "r_squared": 0.2397,
-            "n_observations": 1225
+            "correlation": 0.5826,
+            "beta": 0.5014,
+            "r_squared": 0.3394,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -1344,10 +1120,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5977,
-            "beta": 0.4103,
-            "r_squared": 0.3572,
-            "n_observations": 1255
+            "correlation": 0.5991,
+            "beta": 0.4082,
+            "r_squared": 0.359,
+            "n_observations": 1254
           },
           {
             "ticker": "CRUD.L",
@@ -1356,13 +1132,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.8054,
-            "beta": 0.7494,
-            "r_squared": 0.6486,
+            "correlation": 0.8046,
+            "beta": 0.7503,
+            "r_squared": 0.6474,
             "n_observations": 1232
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
@@ -1375,10 +1150,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.9006,
-            "beta": 0.8577,
-            "r_squared": 0.8111,
-            "n_observations": 1255
+            "correlation": 0.9012,
+            "beta": 0.8583,
+            "r_squared": 0.8122,
+            "n_observations": 1254
           },
           {
             "ticker": "BNO",
@@ -1387,13 +1162,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.9136,
-            "beta": 0.8535,
-            "r_squared": 0.8346,
-            "n_observations": 1255
+            "correlation": 0.914,
+            "beta": 0.8544,
+            "r_squared": 0.8355,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1406,12 +1180,11 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.1032,
-          "beta": 0.04,
-          "r_squared": 0.0106,
+          "correlation": 0.0995,
+          "beta": 0.0388,
+          "r_squared": 0.0099,
           "n_observations": 1225
         },
         "european": {
@@ -1420,12 +1193,11 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.0504,
-          "beta": 0.0163,
-          "r_squared": 0.0025,
+          "correlation": 0.0488,
+          "beta": 0.0159,
+          "r_squared": 0.0024,
           "n_observations": 1231
         },
         "world": {
@@ -1435,10 +1207,10 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.1466,
-          "beta": 0.044,
-          "r_squared": 0.0215,
-          "n_observations": 1255
+          "correlation": 0.1475,
+          "beta": 0.0442,
+          "r_squared": 0.0217,
+          "n_observations": 1254
         },
         "negatives": []
       },
@@ -1452,10 +1224,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4514,
-            "beta": 0.2308,
-            "r_squared": 0.2038,
-            "n_observations": 1255
+            "correlation": 0.4533,
+            "beta": 0.2306,
+            "r_squared": 0.2054,
+            "n_observations": 1254
           },
           {
             "ticker": "AR",
@@ -1464,13 +1236,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4354,
-            "beta": 0.2511,
-            "r_squared": 0.1896,
-            "n_observations": 1255
+            "correlation": 0.4362,
+            "beta": 0.2509,
+            "r_squared": 0.1903,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "etfs": {
@@ -1483,13 +1254,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.621,
-            "beta": 0.4353,
-            "r_squared": 0.3856,
+            "correlation": 0.6214,
+            "beta": 0.4357,
+            "r_squared": 0.3861,
             "n_observations": 1232
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
@@ -1502,13 +1272,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.8164,
-            "beta": 0.6255,
-            "r_squared": 0.6665,
-            "n_observations": 1255
+            "correlation": 0.8165,
+            "beta": 0.6253,
+            "r_squared": 0.6666,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1521,13 +1290,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.1595,
-          "beta": 0.2176,
-          "r_squared": 0.0254,
-          "n_observations": 1223
+          "correlation": 0.1621,
+          "beta": 0.2214,
+          "r_squared": 0.0263,
+          "n_observations": 1222
         },
         "european": {
           "ticker": "AAL.L",
@@ -1535,13 +1303,12 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.1941,
-          "beta": 0.2656,
-          "r_squared": 0.0377,
-          "n_observations": 1232
+          "correlation": 0.1955,
+          "beta": 0.2666,
+          "r_squared": 0.0382,
+          "n_observations": 1231
         },
         "world": {
           "ticker": "BHP",
@@ -1550,36 +1317,21 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.202,
-          "beta": 0.215,
-          "r_squared": 0.0408,
-          "n_observations": 1255
+          "correlation": 0.1996,
+          "beta": 0.2124,
+          "r_squared": 0.0399,
+          "n_observations": 1254
         },
         "negatives": []
       },
       "stocks": {
         "avanza": [],
         "nordnet": [],
-        "savr": [],
         "montrose": []
       },
       "etfs": {
         "avanza": [],
-        "nordnet": [
-          {
-            "ticker": "BAL",
-            "name": "iPath Bloomberg Cotton",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.7777,
-            "beta": 0.7483,
-            "r_squared": 0.6048,
-            "n_observations": 534
-          }
-        ],
-        "savr": [],
+        "nordnet": [],
         "montrose": []
       },
       "trackers": {
@@ -1592,24 +1344,24 @@
               "A",
               "N"
             ],
-            "correlation": 0.3484,
-            "beta": 0.2525,
-            "r_squared": 0.1214,
-            "n_observations": 1232
+            "correlation": 0.348,
+            "beta": 0.2513,
+            "r_squared": 0.1211,
+            "n_observations": 1231
           }
         ],
         "nordnet": [
           {
-            "ticker": "BAL",
-            "name": "iPath Bloomberg Cotton",
+            "ticker": "COTN.L",
+            "name": "WisdomTree Cotton",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.7777,
-            "beta": 0.7483,
-            "r_squared": 0.6048,
-            "n_observations": 534
+            "correlation": 0.7044,
+            "beta": 0.6617,
+            "r_squared": 0.4962,
+            "n_observations": 1231
           },
           {
             "ticker": "AIGS.L",
@@ -1619,13 +1371,12 @@
               "A",
               "N"
             ],
-            "correlation": 0.3484,
-            "beta": 0.2525,
-            "r_squared": 0.1214,
-            "n_observations": 1232
+            "correlation": 0.348,
+            "beta": 0.2513,
+            "r_squared": 0.1211,
+            "n_observations": 1231
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1638,13 +1389,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.1431,
-          "beta": 0.1458,
-          "r_squared": 0.0205,
-          "n_observations": 1223
+          "correlation": 0.1463,
+          "beta": 0.1487,
+          "r_squared": 0.0214,
+          "n_observations": 1222
         },
         "european": {
           "ticker": "RIO.L",
@@ -1652,13 +1402,12 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.1493,
-          "beta": 0.1107,
-          "r_squared": 0.0223,
-          "n_observations": 1231
+          "correlation": 0.1534,
+          "beta": 0.1132,
+          "r_squared": 0.0235,
+          "n_observations": 1230
         },
         "world": {
           "ticker": "VALE",
@@ -1667,36 +1416,21 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.173,
-          "beta": 0.1673,
+          "correlation": 0.1728,
+          "beta": 0.1661,
           "r_squared": 0.0299,
-          "n_observations": 1255
+          "n_observations": 1254
         },
         "negatives": []
       },
       "stocks": {
         "avanza": [],
         "nordnet": [],
-        "savr": [],
         "montrose": []
       },
       "etfs": {
         "avanza": [],
-        "nordnet": [
-          {
-            "ticker": "JO",
-            "name": "iPath Bloomberg Coffee",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.9269,
-            "beta": 0.8767,
-            "r_squared": 0.8592,
-            "n_observations": 534
-          }
-        ],
-        "savr": [],
+        "nordnet": [],
         "montrose": []
       },
       "trackers": {
@@ -1709,10 +1443,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.6993,
-            "beta": 0.4073,
-            "r_squared": 0.489,
-            "n_observations": 1232
+            "correlation": 0.6988,
+            "beta": 0.4041,
+            "r_squared": 0.4883,
+            "n_observations": 1231
           }
         ],
         "nordnet": [
@@ -1723,22 +1457,22 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4595,
-            "beta": 0.1767,
-            "r_squared": 0.2111,
-            "n_observations": 1255
+            "correlation": 0.4607,
+            "beta": 0.1741,
+            "r_squared": 0.2122,
+            "n_observations": 1254
           },
           {
-            "ticker": "JO",
-            "name": "iPath Bloomberg Coffee",
+            "ticker": "COFF.L",
+            "name": "WisdomTree Coffee",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.9269,
-            "beta": 0.8767,
-            "r_squared": 0.8592,
-            "n_observations": 534
+            "correlation": 0.8738,
+            "beta": 0.8259,
+            "r_squared": 0.7635,
+            "n_observations": 1231
           },
           {
             "ticker": "AIGS.L",
@@ -1748,13 +1482,12 @@
               "A",
               "N"
             ],
-            "correlation": 0.6993,
-            "beta": 0.4073,
-            "r_squared": 0.489,
-            "n_observations": 1232
+            "correlation": 0.6988,
+            "beta": 0.4041,
+            "r_squared": 0.4883,
+            "n_observations": 1231
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1767,13 +1500,12 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.0654,
-          "beta": 0.0517,
+          "correlation": 0.0658,
+          "beta": 0.0521,
           "r_squared": 0.0043,
-          "n_observations": 1222
+          "n_observations": 1221
         },
         "european": {
           "ticker": "RIO.L",
@@ -1781,13 +1513,12 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.0801,
-          "beta": 0.0457,
-          "r_squared": 0.0064,
-          "n_observations": 1230
+          "correlation": 0.077,
+          "beta": 0.0438,
+          "r_squared": 0.0059,
+          "n_observations": 1229
         },
         "world": {
           "ticker": "BHP",
@@ -1796,36 +1527,21 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.0896,
-          "beta": 0.0588,
-          "r_squared": 0.008,
-          "n_observations": 1255
+          "correlation": 0.0864,
+          "beta": 0.0567,
+          "r_squared": 0.0075,
+          "n_observations": 1254
         },
         "negatives": []
       },
       "stocks": {
         "avanza": [],
         "nordnet": [],
-        "savr": [],
         "montrose": []
       },
       "etfs": {
         "avanza": [],
-        "nordnet": [
-          {
-            "ticker": "NIB",
-            "name": "iPath Bloomberg Cocoa",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.8431,
-            "beta": 0.8613,
-            "r_squared": 0.7109,
-            "n_observations": 534
-          }
-        ],
-        "savr": [],
+        "nordnet": [],
         "montrose": []
       },
       "trackers": {
@@ -1838,25 +1554,12 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4767,
-            "beta": 0.1407,
-            "r_squared": 0.2273,
-            "n_observations": 1255
-          },
-          {
-            "ticker": "NIB",
-            "name": "iPath Bloomberg Cocoa",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.8431,
-            "beta": 0.8613,
-            "r_squared": 0.7109,
-            "n_observations": 534
+            "correlation": 0.4796,
+            "beta": 0.1395,
+            "r_squared": 0.23,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       }
     },
@@ -1869,12 +1572,11 @@
           "region": "nordic",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.5412,
-          "beta": 0.7677,
-          "r_squared": 0.2929,
+          "correlation": 0.544,
+          "beta": 0.7749,
+          "r_squared": 0.296,
           "n_observations": 1223
         },
         "european": {
@@ -1883,12 +1585,11 @@
           "region": "european",
           "brokers": [
             "A",
-            "N",
-            "S"
+            "N"
           ],
-          "correlation": 0.4452,
-          "beta": 0.4843,
-          "r_squared": 0.1982,
+          "correlation": 0.442,
+          "beta": 0.483,
+          "r_squared": 0.1953,
           "n_observations": 1229
         },
         "world": {
@@ -1898,10 +1599,10 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.4905,
-          "beta": 1.1068,
-          "r_squared": 0.2406,
-          "n_observations": 1255
+          "correlation": 0.4903,
+          "beta": 1.1196,
+          "r_squared": 0.2404,
+          "n_observations": 1254
         },
         "negatives": []
       },
@@ -1913,12 +1614,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.5412,
-            "beta": 0.7677,
-            "r_squared": 0.2929,
+            "correlation": 0.544,
+            "beta": 0.7749,
+            "r_squared": 0.296,
             "n_observations": 1223
           },
           {
@@ -1927,12 +1627,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4452,
-            "beta": 0.4843,
-            "r_squared": 0.1982,
+            "correlation": 0.442,
+            "beta": 0.483,
+            "r_squared": 0.1953,
             "n_observations": 1229
           },
           {
@@ -1941,12 +1640,11 @@
             "platform": "avanza",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4376,
-            "beta": 0.5721,
-            "r_squared": 0.1915,
+            "correlation": 0.4365,
+            "beta": 0.572,
+            "r_squared": 0.1905,
             "n_observations": 1227
           }
         ],
@@ -1957,12 +1655,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.5412,
-            "beta": 0.7677,
-            "r_squared": 0.2929,
+            "correlation": 0.544,
+            "beta": 0.7749,
+            "r_squared": 0.296,
             "n_observations": 1223
           },
           {
@@ -1971,12 +1668,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4452,
-            "beta": 0.4843,
-            "r_squared": 0.1982,
+            "correlation": 0.442,
+            "beta": 0.483,
+            "r_squared": 0.1953,
             "n_observations": 1229
           },
           {
@@ -1985,12 +1681,11 @@
             "platform": "nordnet",
             "brokers": [
               "A",
-              "N",
-              "S"
+              "N"
             ],
-            "correlation": 0.4376,
-            "beta": 0.5721,
-            "r_squared": 0.1915,
+            "correlation": 0.4365,
+            "beta": 0.572,
+            "r_squared": 0.1905,
             "n_observations": 1227
           },
           {
@@ -2000,10 +1695,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3481,
-            "beta": 0.4962,
-            "r_squared": 0.1212,
-            "n_observations": 1255
+            "correlation": 0.3432,
+            "beta": 0.4933,
+            "r_squared": 0.1178,
+            "n_observations": 1254
           },
           {
             "ticker": "BHP",
@@ -2012,10 +1707,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3971,
-            "beta": 0.501,
-            "r_squared": 0.1577,
-            "n_observations": 1255
+            "correlation": 0.3833,
+            "beta": 0.4886,
+            "r_squared": 0.1469,
+            "n_observations": 1254
           },
           {
             "ticker": "AA",
@@ -2024,10 +1719,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4905,
-            "beta": 1.1068,
-            "r_squared": 0.2406,
-            "n_observations": 1255
+            "correlation": 0.4903,
+            "beta": 1.1196,
+            "r_squared": 0.2404,
+            "n_observations": 1254
           },
           {
             "ticker": "CENX",
@@ -2036,54 +1731,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4305,
-            "beta": 1.2484,
-            "r_squared": 0.1854,
-            "n_observations": 1255
-          }
-        ],
-        "savr": [
-          {
-            "ticker": "NHY.OL",
-            "name": "Norsk Hydro",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.5412,
-            "beta": 0.7677,
-            "r_squared": 0.2929,
-            "n_observations": 1223
-          },
-          {
-            "ticker": "RIO.L",
-            "name": "Rio Tinto",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.4452,
-            "beta": 0.4843,
-            "r_squared": 0.1982,
-            "n_observations": 1229
-          },
-          {
-            "ticker": "GLEN.L",
-            "name": "Glencore",
-            "platform": "savr",
-            "brokers": [
-              "A",
-              "N",
-              "S"
-            ],
-            "correlation": 0.4376,
-            "beta": 0.5721,
-            "r_squared": 0.1915,
-            "n_observations": 1227
+            "correlation": 0.4307,
+            "beta": 1.2605,
+            "r_squared": 0.1855,
+            "n_observations": 1254
           }
         ],
         "montrose": []
@@ -2098,10 +1749,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3388,
-            "beta": 0.4461,
-            "r_squared": 0.1148,
-            "n_observations": 1255
+            "correlation": 0.3278,
+            "beta": 0.4348,
+            "r_squared": 0.1074,
+            "n_observations": 1254
           },
           {
             "ticker": "PICK",
@@ -2110,44 +1761,45 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4405,
-            "beta": 0.4958,
-            "r_squared": 0.1941,
-            "n_observations": 1255
-          },
-          {
-            "ticker": "JJU",
-            "name": "iPath Bloomberg Aluminum",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.839,
-            "beta": 0.8948,
-            "r_squared": 0.7039,
-            "n_observations": 534
+            "correlation": 0.425,
+            "beta": 0.4838,
+            "r_squared": 0.1806,
+            "n_observations": 1254
           }
         ],
-        "savr": [],
         "montrose": []
       },
       "trackers": {
-        "avanza": [],
-        "nordnet": [
+        "avanza": [
           {
-            "ticker": "JJU",
-            "name": "iPath Bloomberg Aluminum",
-            "platform": "nordnet",
+            "ticker": "B4NP.DE",
+            "name": "BNPP Aluminium ETC",
+            "platform": "avanza",
             "brokers": [
+              "A",
               "N"
             ],
-            "correlation": 0.839,
-            "beta": 0.8948,
-            "r_squared": 0.7039,
-            "n_observations": 534
+            "correlation": 0.8633,
+            "beta": 0.7919,
+            "r_squared": 0.7453,
+            "n_observations": 1239
           }
         ],
-        "savr": [],
+        "nordnet": [
+          {
+            "ticker": "B4NP.DE",
+            "name": "BNPP Aluminium ETC",
+            "platform": "nordnet",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.8633,
+            "beta": 0.7919,
+            "r_squared": 0.7453,
+            "n_observations": 1239
+          }
+        ],
         "montrose": []
       }
     }
