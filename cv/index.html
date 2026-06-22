@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johan Persson — CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --bg-page: #0d9488;
+    --bg-dark: #1a1d23;
+    --bg-card: #23262e;
+    --bg-card-hover: #2a2e38;
+    --text: #f4f4f5;
+    --muted: #9ca3af;
+    --accent: #2dd4bf;
+    --accent-dim: #0891b2;
+    --sidebar-w: 280px;
+    --rail-w: 56px;
+    --font: "Poppins", system-ui, sans-serif;
+}
+
+.lang-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+    display: flex;
+    gap: 0.35rem;
+    padding: 0.35rem;
+    background: var(--bg-dark);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgb(255 255 255 / 0.1);
+    border-radius: 0.75rem;
+}
+
+.lang-btn {
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 2.75rem;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.15s, background 0.2s;
+    font-family: var(--font);
+}
+
+.lang-btn:hover {
+    background: rgb(255 255 255 / 0.08);
+    transform: scale(1.05);
+}
+
+.lang-btn.active {
+    border-color: var(--accent);
+    background: rgb(45 212 191 / 0.15);
+}
+
+.cv-preview-root * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-preview-root {
+    scroll-behavior: smooth;
+    font-family: var(--font);
+    background: var(--bg-page);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.cv-preview-root a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.cv-preview-root a:hover {
+    text-decoration: underline;
+}
+
+.cv-preview-root .page-frame {
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr var(--rail-w);
+    max-width: 1280px;
+    min-height: calc(100vh - 3rem);
+    margin: 0 auto;
+    background: var(--bg-dark);
+    box-shadow: 0 24px 60px rgb(0 0 0 / 0.35);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cv-preview-root .sidebar {
+    background: var(--bg-dark);
+    border-right: 1px solid rgb(255 255 255 / 0.06);
+    padding: 2rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.cv-preview-root .profile {
+    text-align: center;
+}
+
+.cv-preview-root .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dim) 100%);
+    color: #111;
+    font-size: 2rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border: 3px solid rgb(45 212 191 / 0.35);
+}
+
+.cv-preview-root .name {
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.cv-preview-root .role {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.35rem;
+    line-height: 1.4;
+}
+
+.cv-preview-root .info-list {
+    font-size: 0.78rem;
+    text-align: left;
+}
+
+.cv-preview-root .info-row {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 0.25rem;
+    justify-items: start;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgb(255 255 255 / 0.05);
+}
+
+.cv-preview-root .info-row dt {
+    color: var(--text);
+    font-weight: 500;
+    text-align: left;
+}
+
+.cv-preview-root .info-row dd {
+    color: var(--muted);
+    text-align: left;
+    margin: 0;
+    display: block;
+}
+
+.cv-preview-root .info-row a {
+    color: var(--muted);
+    display: block;
+    text-align: left;
+}
+
+.cv-preview-root .info-row a:hover {
+    color: var(--accent);
+}
+
+.cv-preview-root .sidebar-block h2 {
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.85rem;
+}
+
+.cv-preview-root .lang-rings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem 0.5rem;
+}
+
+.cv-preview-root .ring-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.68rem;
+    color: var(--muted);
+}
+
+.cv-preview-root .ring {
+    width: 56px;
+    height: 56px;
+}
+
+.cv-preview-root .ring-bg {
+    fill: none;
+    stroke: rgb(255 255 255 / 0.08);
+    stroke-width: 2.8;
+}
+
+.cv-preview-root .ring-fill {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.cv-preview-root .ring-text {
+    fill: var(--text);
+    font-size: 0.45rem;
+    font-weight: 600;
+    text-anchor: middle;
+}
+
+.cv-preview-root .skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.cv-preview-root .skill {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr 2rem;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.68rem;
+    color: var(--muted);
+}
+
+.cv-preview-root .skill > span:last-child {
+    text-align: right;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.cv-preview-root .bar {
+    height: 4px;
+    background: rgb(255 255 255 / 0.08);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.cv-preview-root .bar > div {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.cv-preview-root .social {
+    margin-top: auto;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.cv-preview-root .social a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.06);
+    color: var(--muted);
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+}
+
+.cv-preview-root .social a:hover {
+    background: var(--accent);
+    color: #111;
+    text-decoration: none;
+}
+
+.cv-preview-root .content {
+    overflow-y: auto;
+    padding-bottom: 2rem;
+}
+
+.cv-preview-root .hero {
+    position: relative;
+    min-height: 280px;
+    background:
+        linear-gradient(120deg, rgb(26 29 35 / 0.92), rgb(26 29 35 / 0.55)),
+        url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80")
+        center / cover no-repeat;
+}
+
+.cv-preview-root .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgb(26 29 35 / 0.9) 45%, transparent 100%);
+}
+
+.cv-preview-root .hero-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem 2rem 2.5rem;
+    min-height: 280px;
+}
+
+.cv-preview-root .hero-cta-circle {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    flex-shrink: 0;
+    margin-left: 2rem;
+}
+
+.cv-preview-root .hero-cta-circle p {
+    font-size: 0.94rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--muted);
+    margin: 0;
+}
+
+.cv-preview-root .hero-cta-circle a {
+    color: var(--accent);
+}
+
+.cv-preview-root .hero-copy h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600;
+    line-height: 1.25;
+    max-width: 18ch;
+    margin-bottom: 1rem;
+}
+
+.cv-preview-root .typing-line {
+    margin-bottom: 1.25rem;
+}
+
+.cv-preview-root .typing-line code {
+    display: inline-block;
+    background: var(--accent);
+    color: #111;
+    padding: 0.35rem 0.65rem;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 0.85rem;
+    border-radius: 2px;
+    min-width: 16ch;
+}
+
+.cv-preview-root .typing-line code::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: #111;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.cv-preview-root .btn-primary {
+    display: inline-block;
+    background: var(--accent);
+    color: #111;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 0.75rem 1.4rem;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.cv-preview-root .btn-primary:hover {
+    background: #5eead4;
+    text-decoration: none;
+}
+
+.cv-preview-root .hero-badge {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+    color: #111;
+    font-size: 3rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    box-shadow: 0 12px 40px rgb(0 0 0 / 0.4);
+}
+
+.cv-preview-root .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgb(255 255 255 / 0.06);
+    border-bottom: 1px solid rgb(255 255 255 / 0.06);
+}
+
+.cv-preview-root .stat {
+    background: var(--bg-dark);
+    padding: 1.25rem 1rem;
+    text-align: center;
+}
+
+.cv-preview-root .stat strong {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.cv-preview-root .stat span {
+    font-size: 0.68rem;
+    color: var(--muted);
+    text-transform: capitalize;
+}
+
+.services,
+.timeline,
+.cv-preview-root .extras {
+    padding: 2rem 2.5rem 0;
+}
+
+.services h2,
+.timeline h2,
+.cv-preview-root .extras h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    text-transform: capitalize;
+}
+
+.cv-preview-root .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.cv-preview-root .card {
+    background: var(--bg-card);
+    padding: 1.35rem;
+    transition: background 0.15s;
+}
+
+.cv-preview-root .card:hover {
+    background: var(--bg-card-hover);
+}
+
+.cv-preview-root .card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.65rem;
+}
+
+.cv-preview-root .card p {
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+
+.cv-preview-root .card a {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+}
+
+.cv-preview-root .entry {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(255 255 255 / 0.06);
+}
+
+.cv-preview-root .entry time {
+    font-size: 0.72rem;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.cv-preview-root .entry h3 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.cv-preview-root .entry .meta {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+}
+
+.cv-preview-root .entry p {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.cv-preview-root .footnote {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+.cv-preview-root .extras ul {
+    list-style: none;
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.cv-preview-root .extras strong {
+    color: var(--text);
+}
+
+.cv-preview-root .rail {
+    background: var(--bg-dark);
+    border-left: 1px solid rgb(255 255 255 / 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 0;
+    gap: 1.5rem;
+}
+
+.cv-preview-root .menu-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.cv-preview-root .menu-btn:hover {
+    color: var(--accent);
+}
+
+.cv-preview-root .rail-link {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.rail-link:hover,
+.cv-preview-root .rail-link.active {
+    color: var(--accent);
+}
+
+.cv-preview-root .lang-toggle {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.cv-preview-root .lang-toggle .active {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #111;
+    display: grid;
+    place-items: center;
+}
+
+.cv-preview-root .avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 960px) {
+.cv-preview-root .page-frame {
+        grid-template-columns: 1fr;
+    }
+
+.cv-preview-root .sidebar {
+        border-right: none;
+        border-bottom: 1px solid rgb(255 255 255 / 0.06);
+    }
+
+.cv-preview-root .rail {
+        display: none;
+    }
+
+.cv-preview-root .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+.cv-preview-root .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+.cv-preview-root .hero-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+.cv-preview-root .hero-badge {
+        margin: 1.5rem 0 0;
+    }
+
+.cv-preview-root .entry {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+.cv-preview-root { padding: 0.75rem; }
+}
+
+@media (max-width: 480px) {
+.cv-preview-root { padding: 0.5rem; }
+.cv-preview-root .sidebar { padding: 1rem 0.75rem; }
+.cv-preview-root .name { font-size: 1.1rem; }
+.cv-preview-root .role { font-size: 0.65rem; }
+.cv-preview-root .info-list { font-size: 0.7rem; }
+.cv-preview-root .info-row { grid-template-columns: 1fr; gap: 0.1rem; padding: 0.25rem 0; }
+.cv-preview-root .ring { width: 28px; height: 28px; }
+.cv-preview-root .hero-body { padding: 1.5rem 1rem; }
+.cv-preview-root .hero-cta-circle { padding: 1rem; }
+.cv-preview-root .entry { gap: 0.5rem; }
+.cv-preview-root .entry time { font-size: 0.7rem; }
+}
+
+.chatbot-disclaimer {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-style: italic;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    background: rgb(255 255 255 / 0.04);
+    border-radius: 6px;
+    line-height: 1.4;
+}
+
+.chatbot-messages {
+    max-height: 320px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: var(--bg-card);
+    border-radius: 8px;
+    border: 1px solid rgb(255 255 255 / 0.08);
+}
+
+.chat-message {
+    max-width: 85%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    word-wrap: break-word;
+}
+
+.chat-message-bot {
+    align-self: flex-start;
+    background: rgb(45 212 191 / 0.1);
+    color: var(--text);
+    border-bottom-left-radius: 4px;
+}
+
+.chat-message-user {
+    align-self: flex-end;
+    background: rgb(6 182 212 / 0.15);
+    color: var(--text);
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-input-area {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid rgb(255 255 255 / 0.15);
+    border-radius: 8px;
+    background: var(--bg-card);
+    color: var(--text);
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.chatbot-input:focus {
+    border-color: var(--accent);
+}
+
+.chatbot-send-btn {
+    padding: 0.55rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #111;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.chatbot-send-btn:hover {
+    background: #5eead4;
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+    </style>
+</head>
+<body>
+
+<div class="ls" role="group" aria-label="Language">
+    <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
+    <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English">EN</button>
+</div>
+
+<div class="cv-preview-root">
+<div class="page-frame">
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="avatar"><img src="img/profile.jpg" alt="Johan Persson" class="avatar-img"></div>
+            <h1 class="name" data-i18n="cv_name">Johan Persson</h1>
+            <p class="role" data-i18n="cv_role">Data Scientist / AI Developer</p>
+        </div>
+
+        <dl class="info-list">
+            <div class="info-row">
+                <dt data-i18n="cv_email">Email</dt>
+                <dd><a href="mailto:jpmatstat@gmail.com">jpmatstat@gmail.com</a></dd>
+            </div>
+        </dl>
+
+        <section class="sidebar-block">
+            <h2 data-i18n="cv_languages_heading">Languages</h2>
+            <div class="lang-rings">
+                <div class="ring-item">
+                    <svg viewBox="0 0 36 36" class="ring" aria-label="Swedish 100%">
+                        <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="ring-fill" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="ring-text">100%</text>
+                    </svg>
+                    <span data-i18n="cv_lang_swedish">Swedish</span>
+                </div>
+                <div class="ring-item">
+                    <svg viewBox="0 0 36 36" class="ring" aria-label="English 90%">
+                        <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="ring-fill" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="ring-text">90%</text>
+                    </svg>
+                    <span data-i18n="cv_lang_english">English</span>
+                </div>
+                <div class="ring-item">
+                    <svg viewBox="0 0 36 36" class="ring" aria-label="French 80%">
+                        <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="ring-fill" stroke-dasharray="60, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="ring-text">80%</text>
+                    </svg>
+                    <span data-i18n="cv_lang_french">French</span>
+                </div>
+                <div class="ring-item">
+                    <svg viewBox="0 0 36 36" class="ring" aria-label="German 60%">
+                        <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="ring-fill" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="ring-text">60%</text>
+                    </svg>
+                    <span data-i18n="cv_lang_german">German</span>
+                </div>
+                <div class="ring-item">
+                    <svg viewBox="0 0 36 36" class="ring" aria-label="Italian 30%">
+                        <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="ring-fill" stroke-dasharray="30, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="ring-text">30%</text>
+                    </svg>
+                    <span data-i18n="cv_lang_italian">Italian</span>
+                </div>
+                <div class="ring-item">
+                    <svg viewBox="0 0 36 36" class="ring" aria-label="Dutch 30%">
+                        <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="ring-fill" stroke-dasharray="30, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.5" class="ring-text">30%</text>
+                    </svg>
+                    <span data-i18n="cv_lang_dutch">Dutch</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sidebar-block">
+            <h2 data-i18n="cv_programming_heading">Programming</h2>
+            <div class="skill-bars">
+                <div class="skill"><span>Python</span><div class="bar"><div style="width:95%"></div></div><span>95%</span></div>
+                <div class="skill"><span>SQL</span><div class="bar"><div style="width:75%"></div></div><span>75%</span></div>
+                <div class="skill"><span>C#</span><div class="bar"><div style="width:50%"></div></div><span>50%</span></div>
+                <div class="skill"><span>R</span><div class="bar"><div style="width:50%"></div></div><span>50%</span></div>
+                <div class="skill"><span>Julia</span><div class="bar"><div style="width:70%"></div></div><span>70%</span></div>
+                <div class="skill"><span>MATLAB</span><div class="bar"><div style="width:40%"></div></div><span>40%</span></div>
+                <div class="skill"><span>Office</span><div class="bar"><div style="width:80%"></div></div><span>80%</span></div>
+                <div class="skill"><span>Linux</span><div class="bar"><div style="width:60%"></div></div><span>60%</span></div>
+                <div class="skill"><span>Git</span><div class="bar"><div style="width:75%"></div></div><span>75%</span></div>
+                <div class="skill"><span>LaTeX</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
+            </div>
+        </section>
+    </aside>
+
+    <main class="content">
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-body">
+                <div class="hero-copy">
+                    <h2 data-i18n="cv_hero_title">Discover my work in data &amp; AI</h2>
+                    <p class="typing-line"><code id="typing"></code></p>
+                </div>
+                <div class="hero-cta-circle">
+                    <p data-i18n-html="cv_cta">Do you want to run my model as a trading robot? Then <a href="mailto:jpmatstat@gmail.com">send me an email!</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="card-grid">
+                <article class="card">
+                    <h3 data-i18n="cv_ml_title">ML &amp; AI</h3>
+                    <p data-i18n="cv_ml_desc">Forecasting, inventory optimisation, ensemble models, and LLM/RAG projects — full pipeline from data engineering to deployment.</p>
+                </article>
+                <article class="card">
+                    <h3 data-i18n="cv_teaching_title">Teaching</h3>
+                    <p data-i18n="cv_teaching_desc">University and high-school teaching in mathematics, statistics, linear algebra, and technology.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline" id="experience">
+            <h2 data-i18n="cv_exp_heading">Professional experience</h2>
+            <article class="entry">
+                <time>Mar 2024 —</time>
+                <div>
+                    <h3 data-i18n="cv_exp_0_title">Data Scientist / AI Developer · IMI</h3>
+                    <p class="meta" data-i18n="cv_location_gothenburg">Gothenburg</p>
+                    <p data-i18n="cv_exp_0_desc">ML/AI models for sales forecasting and inventory levels. Python end-to-end: data engineering, traditional stats, modern ML, ensembles. RAG and LLM techniques in smaller projects.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>Nov 2023 — Feb 2024</time>
+                <div>
+                    <h3 data-i18n="cv_exp_1_title">Developer · Independent project</h3>
+                    <p data-i18n="cv_exp_1_desc">ML model for MMA fight outcome probabilities vs. betting odds.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2023</time>
+                <div>
+                    <h3 data-i18n="cv_exp_2_title">Novelist · Independent writer</h3>
+                    <p data-i18n="cv_exp_2_desc">I wrote a novel.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2021 — 2022</time>
+                <div>
+                    <h3 data-i18n="cv_exp_3_title">Teacher · Tokarpsskolan</h3>
+                    <p class="meta" data-i18n="cv_exp_3_meta">Linköping</p>
+                    <p data-i18n="cv_exp_3_desc">High school, mathematics, technology, class mentor.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>Autumn 2020</time>
+                <div>
+                    <h3 data-i18n="cv_exp_4_title">Teacher · Linköping University</h3>
+                    <p class="meta" data-i18n="cv_exp_4_meta">Linköping</p>
+                    <p data-i18n="cv_exp_4_desc">Linear algebra.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>Feb — Jun 2020</time>
+                <div>
+                    <h3 data-i18n="cv_exp_5_title">Biostatistician · AstraZeneca</h3>
+                    <p class="meta" data-i18n="cv_location_gothenburg">Gothenburg</p>
+                    <p data-i18n-html="cv_exp_5_desc"><i>R</i> programs for patient sample-size calculations in clinical studies.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2018 — 2019</time>
+                <div>
+                    <h3 data-i18n="cv_exp_6_title">Teacher · Chalmers</h3>
+                    <p class="meta" data-i18n="cv_exp_6_meta">Gothenburg</p>
+                    <p data-i18n="cv_exp_6_desc">Exercise leader in statistics and discrete mathematics.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2013 — 2019</time>
+                <div>
+                    <h3 data-i18n="cv_exp_7_title">Tutor · Läxhjälp Örgryte (own company)</h3>
+                    <p class="meta" data-i18n="cv_exp_7_meta">Gothenburg</p>
+                    <p data-i18n="cv_exp_7_desc">Private tutoring in mathematics, French, German, and Swedish.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2010 — 2012</time>
+                <div>
+                    <h3 data-i18n="cv_exp_8_title">Substitute teacher · Lärarpartner</h3>
+                    <p class="meta" data-i18n="cv_exp_8_meta">Gothenburg</p>
+                    <p data-i18n="cv_exp_8_desc">High school and elementary school.</p>
+                </div>
+            </article>
+            <p class="footnote" data-i18n="cv_footnote">2008–2013: carpentry, waiter, construction, nurse's assistant.</p>
+        </section>
+
+        <section class="timeline" id="education">
+            <h2 data-i18n="cv_education_heading">Education</h2>
+            <article class="entry">
+                <time>2017 — 2020</time>
+                <div>
+                    <h3 data-i18n="cv_edu_0_title">Master's · Mathematical statistics</h3>
+                    <p class="meta" data-i18n="cv_edu_0_meta">Gothenburg University</p>
+                    <p data-i18n="cv_edu_0_desc">Thesis on opinion dynamics — discrete mathematics and probability, analytical and numerical approaches.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2015 — 2017</time>
+                <div>
+                    <h3 data-i18n="cv_edu_1_title">Bachelor's · Mathematics</h3>
+                    <p class="meta" data-i18n="cv_edu_1_meta">Linköping University — focus on mathematical statistics</p>
+                    <p data-i18n="cv_edu_1_desc">Thesis on experimental design.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2012</time>
+                <div>
+                    <h3 data-i18n="cv_edu_2_title">German · Freestanding course</h3>
+                    <p class="meta" data-i18n="cv_edu_2_meta">Umeå University</p>
+                    <p data-i18n="cv_edu_2_desc">German.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2009 — 2011</time>
+                <div>
+                    <h3 data-i18n="cv_edu_3_title">Freestanding courses</h3>
+                    <p class="meta" data-i18n="cv_edu_3_meta">Gothenburg University</p>
+                    <p data-i18n="cv_edu_3_desc">Mathematics, history, history of ideas, philosophy.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2008</time>
+                <div>
+                    <h3 data-i18n="cv_edu_4_title">Lycée Jules Viette</h3>
+                    <p class="meta" data-i18n="cv_edu_4_meta">Montbéliard, France — natural sciences</p>
+                    <p data-i18n="cv_edu_4_desc">Studied for one semester in a French high school, natural sciences' program.</p>
+                </div>
+            </article>
+            <article class="entry">
+                <time>2006 — 2009</time>
+                <div>
+                    <h3 data-i18n="cv_edu_5_title">Hvitfeldtska high school</h3>
+                    <p class="meta" data-i18n="cv_edu_5_meta">Gothenburg — natural sciences, French orientation</p>
+                    <p data-i18n="cv_edu_5_desc">Natural sciences' program, French orientation.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="extras" id="other">
+            <h2 data-i18n="cv_extras_heading">Scholarships</h2>
+            <ul>
+                <li><strong>2012</strong><span data-i18n="cv_extra_0"> — Month in Paris studying French culture.</span></li>
+                <li><strong>2009</strong><span data-i18n="cv_extra_1"> — Month in eastern France studying French.</span></li>
+                <li data-i18n="cv_extra_2">I have a driver's license and a car.</li>
+            </ul>
+        </section>
+
+        <section class="services" style="padding-top:0">
+            <h2 data-i18n="cv_chatbot_heading">Ask the model assistant</h2>
+            <div id="chatbot-container"></div>
+        </section>
+    </main>
+
+    <nav class="rail" aria-label="Section navigation">
+        <a href="#home" class="rail-link active" data-i18n="cv_nav_home">HOME</a>
+        <a href="#experience" class="rail-link" data-i18n="cv_nav_work">WORK</a>
+        <a href="#education" class="rail-link" data-i18n="cv_nav_edu">EDU</a>
+    </nav>
+</div>
+</div>
+
+<script>
+(function() {
+    var TRANSLATIONS = { en: {}, sv: {} };
+
+    TRANSLATIONS.en = {
+        cv_name: 'Johan Persson',
+        cv_role: 'Data Scientist / AI Developer',
+        cv_email: 'Email',
+        cv_cta: 'Do you want to run my model as a trading robot? Then <a href="mailto:jpmatstat@gmail.com">send me an email!</a>',
+        cv_languages_heading: 'Languages',
+        cv_lang_swedish: 'Swedish',
+        cv_lang_english: 'English',
+        cv_lang_french: 'French',
+        cv_lang_german: 'German',
+        cv_lang_italian: 'Italian',
+        cv_lang_dutch: 'Dutch',
+        cv_programming_heading: 'Programming',
+        cv_hero_title: 'Discover my work in data & AI',
+        cv_ml_title: 'ML & AI',
+        cv_ml_desc: 'Forecasting, inventory optimisation, ensemble models, and LLM/RAG projects — full pipeline from data engineering to deployment.',
+        cv_teaching_title: 'Teaching',
+        cv_teaching_desc: 'University and high-school teaching in mathematics, statistics, linear algebra, and technology.',
+        cv_exp_heading: 'Professional experience',
+        cv_exp_0_title: 'Data Scientist / AI Developer \u00b7 IMI',
+        cv_exp_0_desc: 'ML/AI models for sales forecasting and inventory levels. Python end-to-end: data engineering, traditional stats, modern ML, ensembles. RAG and LLM techniques in smaller projects.',
+        cv_exp_1_title: 'Developer \u00b7 Independent project',
+        cv_exp_1_desc: 'ML model for MMA fight outcome probabilities vs. betting odds.',
+        cv_exp_2_title: 'Novelist \u00b7 Independent writer',
+        cv_exp_2_desc: 'I wrote a novel.',
+        cv_exp_3_title: 'Teacher \u00b7 Tokarpsskolan',
+        cv_exp_3_meta: 'Link\u00f6ping',
+        cv_exp_3_desc: 'High school, mathematics, technology, class mentor.',
+        cv_exp_4_title: 'Teacher \u00b7 Link\u00f6ping University',
+        cv_exp_4_meta: 'Link\u00f6ping',
+        cv_exp_4_desc: 'Linear algebra.',
+        cv_exp_5_title: 'Biostatistician \u00b7 AstraZeneca',
+        cv_exp_5_desc: '<i>R</i> programs for patient sample-size calculations in clinical studies.',
+        cv_exp_6_title: 'Teacher \u00b7 Chalmers',
+        cv_exp_6_meta: 'Gothenburg',
+        cv_exp_6_desc: 'Exercise leader in statistics and discrete mathematics.',
+        cv_exp_7_title: 'Tutor \u00b7 L\u00e4xhj\u00e4lp \u00d6rgryte (own company)',
+        cv_exp_7_meta: 'Gothenburg',
+        cv_exp_7_desc: 'Private tutoring in mathematics, French, German, and Swedish.',
+        cv_exp_8_title: 'Substitute teacher \u00b7 L\u00e4rarpartner',
+        cv_exp_8_meta: 'Gothenburg',
+        cv_exp_8_desc: 'High school and elementary school.',
+        cv_footnote: '2008\u20132013: carpentry, waiter, construction, nurse\'s assistant.',
+        cv_education_heading: 'Education',
+        cv_edu_0_title: 'Master\'s \u00b7 Mathematical statistics',
+        cv_edu_0_meta: 'Gothenburg University',
+        cv_edu_0_desc: 'Thesis on opinion dynamics \u2014 discrete mathematics and probability, analytical and numerical approaches.',
+        cv_edu_1_title: 'Bachelor\'s \u00b7 Mathematics',
+        cv_edu_1_meta: 'Link\u00f6ping University \u2014 focus on mathematical statistics',
+        cv_edu_1_desc: 'Thesis on experimental design.',
+        cv_edu_2_title: 'German \u00b7 Freestanding course',
+        cv_edu_2_meta: 'Ume\u00e5 University',
+        cv_edu_2_desc: 'German.',
+        cv_edu_3_title: 'Freestanding courses',
+        cv_edu_3_meta: 'Gothenburg University',
+        cv_edu_3_desc: 'Mathematics, history, history of ideas, philosophy.',
+        cv_edu_4_title: 'Lyc\u00e9e Jules Viette',
+        cv_edu_4_meta: 'Montb\u00e9liard, France \u2014 natural sciences',
+        cv_edu_4_desc: 'Studied for one semester in a French high school, natural sciences\' program.',
+        cv_edu_5_title: 'Hvitfeldtska high school',
+        cv_edu_5_meta: 'Gothenburg \u2014 natural sciences, French orientation',
+        cv_edu_5_desc: 'Natural sciences\' program, French orientation.',
+        cv_extras_heading: 'Scholarships',
+        cv_extra_0: ' \u2014 Month in Paris studying French culture.',
+        cv_extra_1: ' \u2014 Month in eastern France studying French.',
+        cv_extra_2: 'I have a driver\'s license and a car.',
+    cv_nav_home: 'HOME',
+    cv_nav_work: 'WORK',
+    cv_nav_edu: 'EDU',
+    cv_location_gothenburg: 'Gothenburg',
+    cv_chatbot_heading: 'Ask the model assistant',
+    };
+
+    TRANSLATIONS.sv = {
+        cv_name: 'Johan Persson',
+        cv_role: 'Data Scientist / AI-utvecklare',
+        cv_email: 'E-post',
+        cv_cta: 'Vill du k\u00f6ra min modell som en tradingrobot? <a href="mailto:jpmatstat@gmail.com">Sl\u00e4ng d\u00e5 iv\u00e4g ett mejl!</a>',
+        cv_languages_heading: 'Spr\u00e5k',
+        cv_lang_swedish: 'Svenska',
+        cv_lang_english: 'Engelska',
+        cv_lang_french: 'Franska',
+        cv_lang_german: 'Tyska',
+        cv_lang_italian: 'Italienska',
+        cv_lang_dutch: 'Holl\u00e4ndska',
+        cv_programming_heading: 'Programmering',
+        cv_hero_title: 'Uppt\u00e4ck mitt arbete inom data & AI',
+        cv_ml_title: 'ML & AI',
+        cv_ml_desc: 'Forecasting, inventory optimisation, ensemble models, and LLM/RAG projects \u2014 full pipeline from data engineering to deployment.',
+        cv_teaching_title: 'Undervisning',
+        cv_teaching_desc: 'University and high-school teaching in mathematics, statistics, linear algebra, and technology.',
+        cv_exp_heading: 'Yrkeserfarenhet',
+        cv_exp_0_title: 'Data Scientist / AI-utvecklare \u00b7 IMI',
+        cv_exp_0_desc: 'Jag har implementerat ML-/AI-modeller f\u00f6r att prognostisera f\u00f6rs\u00e4ljning och ber\u00e4kna l\u00e4mpliga lagerniv\u00e5er f\u00f6r v\u00e5ra kunder. Jag arbetar i Python och g\u00f6r allt i pipelinen: fr\u00e5n dataengineering till prognoser. Jag beh\u00e4rskar b\u00e5de traditionella statistiska modeller och moderna ML-modeller, vilket jag har haft stor nytta av i mitt arbete genom att skapa ensemblemodeler. F\u00f6rutom min f\u00f6rk\u00e4rlek till vibe coding har jag anv\u00e4nt RAG och andra tekniker direkt kopplade till LLM i b\u00e5de st\u00f6rre och mindre projekt.',
+        cv_exp_1_title: 'Utvecklare \u00b7 Eget projekt',
+        cv_exp_1_desc: 'ML-modell f\u00f6r sannolikhetsber\u00e4kning av MMA-matchutfall j\u00e4mf\u00f6rt med bettingodds, i syfte att hitta odds d\u00e4r marknaden inte var effektiv.',
+        cv_exp_2_title: 'Romanf\u00f6rfattare \u00b7 Oberoende skribent',
+        cv_exp_2_desc: 'Jag skrev en roman.',
+        cv_exp_3_title: 'L\u00e4rare \u00b7 Tokarpsskolan',
+        cv_exp_3_meta: 'Link\u00f6ping',
+        cv_exp_3_desc: 'H\u00f6gstadiet, matematik, teknik, klassmentor.',
+        cv_exp_4_title: 'L\u00e4rare \u00b7 Link\u00f6pings universitet',
+        cv_exp_4_meta: 'Link\u00f6ping',
+        cv_exp_4_desc: 'Linj\u00e4r algebra och geometri.',
+        cv_exp_5_title: 'Biostatistiker \u00b7 AstraZeneca',
+        cv_exp_5_desc: 'Heltidsanst\u00e4llning som statistiker. P\u00e5 Astra skrev jag bl a program i <i>R</i> f\u00f6r att ber\u00e4kna antalet f\u00f6rs\u00f6ksdeltagare till nya studier.',
+        cv_exp_6_title: 'L\u00e4rare \u00b7 Chalmers',
+        cv_exp_6_meta: 'G\u00f6teborg',
+        cv_exp_6_desc: '\u00d6vningsledare i statistik och diskret matematik.',
+        cv_exp_7_title: 'Privatl\u00e4rare \u00b7 L\u00e4xhj\u00e4lp \u00d6rgryte (eget f\u00f6retag)',
+        cv_exp_7_meta: 'G\u00f6teborg',
+        cv_exp_7_desc: 'Privatundervisning och l\u00e4xhj\u00e4lp i framf\u00f6rallt matematik, franska, tyska och svenska.',
+        cv_exp_8_title: 'Vikarierande l\u00e4rare \u00b7 L\u00e4rarpartner',
+        cv_exp_8_meta: 'G\u00f6teborg',
+        cv_exp_8_desc: 'L\u00e4rarvikarie p\u00e5 gymnasie- och grundskoleniv\u00e5.',
+        cv_footnote: '2008\u20132013: snickeri, servit\u00f6r, bygg, v\u00e5rdbitr\u00e4de, handelstr\u00e4dg\u00e5rd, mm.',
+        cv_education_heading: 'Utbildning',
+        cv_edu_0_title: 'Masterexamen i matematisk statistik',
+        cv_edu_0_meta: 'G\u00f6teborgs universitet',
+        cv_edu_0_desc: 'Mitt examensarbete handlade om \u00e5siktsdynamik, vilket kombinerar diskret matematik med sannolikhetsteori. Jag angrep problemet b\u00e5de analytiskt och numeriskt.',
+        cv_edu_1_title: 'Kandidatexamen i matematik',
+        cv_edu_1_meta: 'Link\u00f6pings universitet',
+        cv_edu_1_desc: 'Med inriktning mot matematisk statistik och ett examensarbete om f\u00f6rs\u00f6ksplanering.',
+        cv_edu_2_title: 'Frist\u00e5ende kurs',
+        cv_edu_2_meta: 'Ume\u00e5 universitet',
+        cv_edu_2_desc: 'Tyska.',
+        cv_edu_3_title: 'Frist\u00e5ende kurser',
+        cv_edu_3_meta: 'G\u00f6teborgs universitet',
+        cv_edu_3_desc: 'Matematik, historia, id\u00e9historia, filosofi.',
+        cv_edu_4_title: 'Lyc\u00e9e Jules Viette',
+        cv_edu_4_meta: 'Montb\u00e9liard, Frankrike',
+        cv_edu_4_desc: 'Studerade en termin p\u00e5 ett franskt gymnasium, naturvetenskapligt program.',
+        cv_edu_5_title: 'Hvitfeldtska gymnasiet',
+        cv_edu_5_meta: 'G\u00f6teborg',
+        cv_edu_5_desc: 'Naturvetenskapligt program, fransk inriktning.',
+        cv_extras_heading: 'Stipendier',
+        cv_extra_0: ' \u2014 En m\u00e5nad i Paris med studier av Frankrikes kulturella och historiska arv.',
+        cv_extra_1: ' \u2014 En m\u00e5nad i \u00f6stra Frankrike med studier av franska spr\u00e5ket.',
+        cv_extra_2: 'Jag har k\u00f6rkort och bil.',
+        cv_nav_home: 'HEM',
+        cv_nav_work: 'ARBETE',
+        cv_nav_edu: 'UTB',
+        cv_location_gothenburg: 'G\u00f6teborg',
+        cv_chatbot_heading: 'Fråga modellens assistent',
+    };
+
+    var STORAGE_KEY = 'cv_lang';
+    var currentLang = 'sv';
+    var listeners = [];
+
+    function detectDefaultLang() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored === 'en' || stored === 'sv') return stored;
+        var nav = (navigator.language || '').toLowerCase();
+        return nav.startsWith('sv') ? 'sv' : 'en';
+    }
+
+    function t(key) {
+        var dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
+        return dict[key] !== undefined ? dict[key] : (TRANSLATIONS.en[key] !== undefined ? TRANSLATIONS.en[key] : key);
+    }
+
+    function applyTranslations() {
+        document.documentElement.lang = currentLang;
+        var titleEl = document.querySelector('title');
+        if (titleEl) titleEl.textContent = t('cv_name') + ' \u2014 CV';
+
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+            el.textContent = t(el.dataset.i18n);
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+            el.innerHTML = t(el.dataset.i18nHtml);
+        });
+        document.querySelectorAll('.lang-btn').forEach(function(btn) {
+            var active = btn.dataset.lang === currentLang;
+            btn.classList.toggle('active', active);
+            btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+    }
+
+    function setLang(lang) {
+        if (lang !== 'en' && lang !== 'sv') return;
+        currentLang = lang;
+        localStorage.setItem(STORAGE_KEY, lang);
+        applyTranslations();
+        listeners.forEach(function(fn) { fn(lang); });
+    }
+
+    function getLang() { return currentLang; }
+
+    function onLangChange(fn) { listeners.push(fn); }
+
+    currentLang = detectDefaultLang();
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() { setLang(btn.dataset.lang); });
+    });
+    applyTranslations();
+
+    window.I18n = { getLang: getLang, onLangChange: onLangChange, t: t };
+
+    function getTypingPhrases() {
+        var lang = getLang();
+        if (lang === 'sv') {
+            return [
+                "Jag bygger ML-pipelines |",
+                "Jag prognostiserar & optimerar |",
+                "Jag undervisar i matematik |",
+                "Jag utf\u00f6r statistiska tester |",
+            ];
+        }
+        return [
+            "I build ML pipelines |",
+            "I forecast & optimise |",
+            "I teach mathematics |",
+            "I perform statistical tests |",
+        ];
+    }
+
+    var el = document.getElementById("typing");
+    var pi = 0;
+    var ci = 0;
+    var deleting = false;
+    var hold = false;
+
+    function tick() {
+        var arr = getTypingPhrases();
+        var phrase = arr[pi];
+        if (hold) { setTimeout(tick, 1400); hold = false; return; }
+        if (!deleting) {
+            el.textContent = phrase.slice(0, ++ci);
+            if (ci === phrase.length) {
+                deleting = true;
+                hold = true;
+            }
+        } else {
+            el.textContent = phrase.slice(0, --ci);
+            if (ci === 0) {
+                deleting = false;
+                pi = (pi + 1) % arr.length;
+            }
+        }
+        setTimeout(tick, deleting ? 40 : 80);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        tick();
+        if (window.I18n && window.I18n.onLangChange) {
+            window.I18n.onLangChange(function() {
+                pi = 0; ci = 0; deleting = false; hold = false;
+                el.textContent = '';
+            });
+        }
+    });
+})();
+</script>
+
+<script src="chatbot.js?v=1"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.Chatbot) {
+        window.Chatbot.init('chatbot-container');
+    }
+});
+</script>
+
+</body>
+</html>

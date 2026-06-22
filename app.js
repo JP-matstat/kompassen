@@ -426,7 +426,7 @@ async function init() {
         loadSignalHistory();
         setupEventListeners();
         setupTabNavigation();
-        setupPersonalPage();
+        setupAboutModelPage();
         setupRiskModelBar();
         initSiteUpdateButton();
         await initializeHistoricalPerformance();
@@ -796,23 +796,10 @@ function setupTabNavigation() {
     }
 }
 
-const PERSONAL_NOTES_KEY = 'portfolio_personal_notes';
-
-function setupPersonalPage() {
-    const notes = document.getElementById('personalNotes');
-    const saveBtn = document.getElementById('savePersonalNotes');
-    const status = document.getElementById('personalNotesStatus');
-    if (!notes || !saveBtn) return;
-
-    notes.value = localStorage.getItem(PERSONAL_NOTES_KEY) || '';
-
-    saveBtn.addEventListener('click', () => {
-        localStorage.setItem(PERSONAL_NOTES_KEY, notes.value);
-        if (status) {
-            status.textContent = t('savedNotes');
-            setTimeout(() => { status.textContent = ''; }, 2000);
-        }
-    });
+function setupAboutModelPage() {
+    if (window.Chatbot && document.getElementById('chatbot-container')) {
+        window.Chatbot.init('chatbot-container');
+    }
 }
 
 // Initialize historical performance tab
