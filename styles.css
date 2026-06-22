@@ -1077,6 +1077,12 @@ tr:hover td {
 .stat-value.success { color: var(--success-color); }
 .stat-value.danger { color: var(--danger-color); }
 
+.stat-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
 .position-change-warning {
     font-size: 0.75rem;
     color: var(--warning-color);

@@ -1087,9 +1087,8 @@ function renderHistoryTable() {
 }
 
 function computeLiveAnnualizedReturn(liveDate) {
-    if (!equityCurveData || !equityCurveData.dates || equityCurveData.dates.length < 2) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
+    return { formatted: '-', cssClass: '', numericValue: null };
+}
     const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
     const dates = equityCurveData.dates;
     const values = equityCurveData[curveKey];
@@ -1198,6 +1197,10 @@ function renderPerformanceStats() {
     const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
     const liveEqValue = computeEquitySinceLive('2026-06-09', curveKey);
     const liveEqCard = createStatCard(t('livePortfolioValue'), liveEqValue.formatted, liveEqValue.cssClass, liveEqValue.numericValue);
+    const subDiv = document.createElement('div');
+    subDiv.className = 'stat-subtitle';
+    subDiv.textContent = t('livePortfolioValueSubtitle');
+    liveEqCard.querySelector('.stat-value').after(subDiv);
     liveEqCard.id = 'liveEqCard';
     container.appendChild(liveEqCard);
     
@@ -1245,6 +1248,10 @@ function renderPerformanceStats() {
     // Training equity value (last value, starts at ~100)
     const trainEqValue = computeEquitySinceStart(curveKey);
     const trainEqCard = createStatCard(t('trainPortfolioValue'), trainEqValue.formatted, trainEqValue.cssClass, trainEqValue.numericValue);
+    const trainSubDiv = document.createElement('div');
+    trainSubDiv.className = 'stat-subtitle';
+    trainSubDiv.textContent = t('trainPortfolioValueSubtitle');
+    trainEqCard.querySelector('.stat-value').after(trainSubDiv);
     trainEqCard.id = 'trainEqCard';
     container.appendChild(trainEqCard);
 
