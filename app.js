@@ -426,6 +426,7 @@ async function init() {
         loadSignalHistory();
         setupEventListeners();
         setupTabNavigation();
+        setupAboutModelPage();
         setupRiskModelBar();
         initSiteUpdateButton();
         await initializeHistoricalPerformance();
@@ -795,6 +796,12 @@ function setupTabNavigation() {
     }
 }
 
+function setupAboutModelPage() {
+    if (window.Chatbot && document.getElementById('chatbot-container')) {
+        window.Chatbot.init('chatbot-container');
+    }
+}
+
 // Initialize historical performance tab
 async function initializeHistoricalPerformance() {
     try {
@@ -1087,8 +1094,6 @@ function renderHistoryTable() {
 }
 
 function computeLiveAnnualizedReturn(liveDate) {
-    return { formatted: '-', cssClass: '', numericValue: null };
-}
     const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
     const dates = equityCurveData.dates;
     const values = equityCurveData[curveKey];
