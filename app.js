@@ -1411,7 +1411,7 @@ function drawPerformanceChart() {
     ctx.restore();
 
     // Vertical dashed line for "Went live" date
-    const GO_LIVE_DATE = '2026-06-09';
+    const GO_LIVE_DATE = '2026-06-24';
     const liveIdx = dates.indexOf(GO_LIVE_DATE);
     if (liveIdx !== -1) {
         const liveX = xScale(liveIdx);
