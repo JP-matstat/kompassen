@@ -2035,6 +2035,14 @@ async function loadModelPerformance() {
                     metricsData.avg_trades_per_year != null ? metricsData.avg_trades_per_year.toFixed(1) : '—',
                     metricsData.avg_trades_per_year_sym != null ? metricsData.avg_trades_per_year_sym.toFixed(1) : '—',
                     '', ''],
+                [t('metricAvgHold'),
+                    metricsData.avg_hold_days != null ? metricsData.avg_hold_days.toFixed(1) : '—',
+                    metricsData.avg_hold_days_sym != null ? metricsData.avg_hold_days_sym.toFixed(1) : '—',
+                    '', ''],
+                [t('metricStdHold'),
+                    metricsData.std_hold_days != null ? metricsData.std_hold_days.toFixed(1) : '—',
+                    metricsData.std_hold_days_sym != null ? metricsData.std_hold_days_sym.toFixed(1) : '—',
+                    '', ''],
             ];
             html += `<div class="model-perf-block">`;
             html += `<table class="model-perf-table" style="width:100%">`;
