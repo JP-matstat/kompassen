@@ -1158,7 +1158,7 @@ function renderPerformanceStats() {
 
     const activeData = getActiveHistoricalData();
     const filteredData = getFilteredHistoricalData(activeData);
-    const LIVE_DATE = '2026-06-09';
+    const LIVE_DATE = '2026-06-24';
     
     // Live statistics (date >= LIVE_DATE)
     let liveTotalPredictions = 0;
