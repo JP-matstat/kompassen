@@ -1,27 +1,27 @@
 {
   "date": "2026-06-24",
-  "timestamp": "2026-06-24T00:27:33Z",
-  "window_days": 1340,
-  "avg_trades_per_year": 119.8,
-  "avg_trades_per_year_sym": 23.3,
-  "avg_hold_days": 88.8,
-  "std_hold_days": 123.6,
-  "avg_hold_days_sym": 108.9,
-  "std_hold_days_sym": 139.2,
+  "timestamp": "2026-06-24T20:01:34Z",
+  "window_days": 1341,
+  "avg_trades_per_year": 121.8,
+  "avg_trades_per_year_sym": 24.8,
+  "avg_hold_days": 89.5,
+  "std_hold_days": 123.8,
+  "avg_hold_days_sym": 105.7,
+  "std_hold_days_sym": 136.3,
   "metrics": {
-    "cumulative_return": 14.8062,
-    "annualized_return": 0.6805,
-    "sharpe_ratio": 4.052,
+    "cumulative_return": 13.5231,
+    "annualized_return": 0.6534,
+    "sharpe_ratio": 3.9528,
     "max_drawdown": -0.0699,
-    "win_rate": 0.6261,
-    "profit_factor": 1.925
+    "win_rate": 0.6204,
+    "profit_factor": 1.8895
   },
   "metrics_symmetric": {
-    "cumulative_return": 11.1029,
-    "annualized_return": 0.5983,
-    "sharpe_ratio": 4.0864,
+    "cumulative_return": 10.2417,
+    "annualized_return": 0.5757,
+    "sharpe_ratio": 3.9817,
     "max_drawdown": -0.0541,
-    "win_rate": 0.6284,
-    "profit_factor": 1.9328
+    "win_rate": 0.6212,
+    "profit_factor": 1.8959
   }
 }
