@@ -18,18 +18,20 @@ function tPos(pos) {
     return window.I18n ? window.I18n.positionLabel(pos) : pos;
 }
 
+const LIVE_DATE = '2026-06-24';
+
 // Commodity list
 const COMMODITIES = [
-    'Gold',
-    'Silver',
-    'Copper',
-    'Sugar',
-    'Oil Brent',
-    'Natural Gas',
+    'Aluminium',
     'Cotton',
+    'Gold',
     'Coffee',
     'Cocoa',
-    'Aluminium'
+    'Copper',
+    'Natural Gas',
+    'Oil Brent',
+    'Silver',
+    'Sugar'
 ];
 
 // Yahoo Finance ticker mapping
@@ -730,7 +732,7 @@ function calculateLongOnly(signalsToUse = signals) {
         });
     });
     
-    return allocations.filter(a => a.allocation !== 0).sort((a, b) => b.allocation - a.allocation);
+    return allocations.filter(a => a.allocation !== 0).sort((a, b) => COMMODITIES.indexOf(a.commodity) - COMMODITIES.indexOf(b.commodity));
 }
 
 // Calculate long/short portfolio (use all signals)
@@ -757,7 +759,7 @@ function calculateLongShort(signalsToUse = signals) {
         });
     });
     
-    return allocations.filter(a => a.allocation !== 0).sort((a, b) => Math.abs(b.allocation) - Math.abs(a.allocation));
+    return allocations.filter(a => a.allocation !== 0).sort((a, b) => COMMODITIES.indexOf(a.commodity) - COMMODITIES.indexOf(b.commodity));
 }
 
 function activateTab(targetTab) {
@@ -1158,11 +1160,10 @@ function renderPerformanceStats() {
 
     const activeData = getActiveHistoricalData();
     const filteredData = getFilteredHistoricalData(activeData);
-    const LIVE_DATE = '2026-06-24';
-    
     // Live statistics (date >= LIVE_DATE)
     let liveTotalPredictions = 0;
     let liveCorrectPredictions = 0;
+    const liveDatesWithActuals = new Set();
     
     activeData.forEach(entry => {
         if (entry.date < LIVE_DATE) return;
@@ -1175,6 +1176,7 @@ function renderPerformanceStats() {
             if (actual == null) return;
             
             liveTotalPredictions++;
+            liveDatesWithActuals.add(entry.date);
             if (Math.sign(prediction) === Math.sign(actual)) {
                 liveCorrectPredictions++;
             }
@@ -1182,6 +1184,7 @@ function renderPerformanceStats() {
     });
     
     const liveAccuracy = liveTotalPredictions > 0 ? (liveCorrectPredictions / liveTotalPredictions * 100) : 0;
+    const liveDaysCount = liveDatesWithActuals.size;
     
     // Row 1: Live stats
     const liveValue = liveTotalPredictions > 0 ? `${liveAccuracy.toFixed(1)}%` : '-';
@@ -1190,10 +1193,7 @@ function renderPerformanceStats() {
     liveCard.querySelector('.stat-label').title = t('liveAccuracyHint');
     container.appendChild(liveCard);
     
-    const totalCard = createStatCard(t('totalPredictions'), liveTotalPredictions.toString(), '', liveTotalPredictions, t('livePredictionsHint'));
-    container.appendChild(totalCard);
-    
-    // Live portfolio value (third box) from portfolio_value.json
+    // Card 2: Live portfolio value from portfolio_value.json
     const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null);
     liveValCard.id = 'livePortfolioValueCard';
     container.appendChild(liveValCard);
@@ -1213,6 +1213,14 @@ function renderPerformanceStats() {
         }
     })();
     
+    // Card 3: Days since Live
+    const daysCard = createStatCard(t('liveDaysSinceLive'), liveDaysCount.toString(), '', liveDaysCount, t('liveDaysSinceLiveHint'));
+    container.appendChild(daysCard);
+    
+    // Card 4: Total Predictions
+    const totalCard = createStatCard(t('totalPredictions'), liveTotalPredictions.toString(), '', liveTotalPredictions, t('livePredictionsHint'));
+    container.appendChild(totalCard);
+    
     const liveAnnRet = computeLiveAnnualizedReturn(LIVE_DATE);
     const livePerfCard = createStatCard(t('liveAvgPortfolioPerf'), liveAnnRet.formatted, liveAnnRet.cssClass, liveAnnRet.numericValue);
     livePerfCard.id = 'livePortfolioCard';
@@ -1220,7 +1228,7 @@ function renderPerformanceStats() {
     
     // Live equity value (last / live * 100)
     const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
-    const liveEqValue = computeEquitySinceLive('2026-06-09', curveKey);
+    const liveEqValue = computeEquitySinceLive(LIVE_DATE, curveKey);
     const liveEqCard = createStatCard(t('livePortfolioValue'), liveEqValue.formatted, liveEqValue.cssClass, liveEqValue.numericValue);
     const subDiv = document.createElement('div');
     subDiv.className = 'stat-subtitle';
@@ -1431,8 +1439,7 @@ function drawPerformanceChart() {
     ctx.restore();
 
     // Vertical dashed line for "Went live" date
-    const GO_LIVE_DATE = '2026-06-24';
-    const liveIdx = dates.indexOf(GO_LIVE_DATE);
+    const liveIdx = dates.indexOf(LIVE_DATE);
     if (liveIdx !== -1) {
         const liveX = xScale(liveIdx);
         ctx.save();
@@ -1453,6 +1460,49 @@ function drawPerformanceChart() {
         ctx.fillText(t('goLiveLabel'), liveX, pad.top - 4);
         ctx.restore();
     }
+
+    // Year-boundary vertical lines with annual return
+    function nearestIdx(datesArr, targetDate) {
+        const t = new Date(targetDate).getTime();
+        let best = -1, bestDiff = Infinity;
+        for (let i = 0; i < datesArr.length; i++) {
+            const diff = Math.abs(new Date(datesArr[i]).getTime() - t);
+            if (diff < bestDiff) { bestDiff = diff; best = i; }
+        }
+        return bestDiff < 86400000 * 14 ? best : -1;
+    }
+    const YEAR_BOUNDARY_DATES = ['2022-02-22', '2023-02-22', '2024-02-22', '2025-02-22', '2026-02-22'];
+    const activeCurveRet = currentRiskModel === 'high' ? highRisk : lowRisk;
+    const dataStartIdx = 0;
+    const yearRetLabels = [];
+    YEAR_BOUNDARY_DATES.forEach((bd, bi) => {
+        const boundaryIdx = nearestIdx(dates, bd);
+        if (boundaryIdx === -1) return;
+        const prevDate = bi === 0 ? dates[dataStartIdx] : YEAR_BOUNDARY_DATES[bi - 1];
+        const prevIdx = bi === 0 ? dataStartIdx : nearestIdx(dates, prevDate);
+        if (prevIdx === -1) return;
+        const annRet = ((activeCurveRet[boundaryIdx] / activeCurveRet[prevIdx]) - 1) * 100;
+        const bx = xScale(boundaryIdx);
+        yearRetLabels.push({ x: bx, ret: annRet, date: bd });
+        ctx.save();
+        ctx.strokeStyle = textColor;
+        ctx.globalAlpha = 0.3;
+        ctx.lineWidth = 1;
+        ctx.setLineDash([3, 3]);
+        ctx.beginPath();
+        ctx.moveTo(bx, pad.top);
+        ctx.lineTo(bx, pad.top + chartH);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = textColor;
+        ctx.font = 'bold 10px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        const retLabel = `${annRet >= 0 ? '+' : ''}${annRet.toFixed(1)}%`;
+        ctx.fillText(retLabel, bx, pad.top - 4);
+        ctx.restore();
+    });
 
     ctx.textAlign = 'right';
     ctx.font = '10px system-ui, sans-serif';
@@ -1542,7 +1592,7 @@ function drawPerformanceChart() {
     ctx.fillText(yLabel, pad.left + chartW / 2, h - 1);
 
     // Store chart state for hover
-    canvas._chartState = { dates, highRisk, lowRisk, xScale, yScale, pad, h, w };
+    canvas._chartState = { dates, highRisk, lowRisk, xScale, yScale, pad, h, w, yearRetLabels };
     setupPerformanceChartHover(canvas);
 }
 
@@ -1577,7 +1627,24 @@ function drawPerformanceChart() {
         const mx = e.clientX - rect.left;
         const my = e.clientY - rect.top;
 
-        if (mx < state.pad.left || mx > state.w - state.pad.right || my < state.pad.top || my > state.h - state.pad.bottom) {
+        if (mx < state.pad.left || mx > state.w - state.pad.right || my > state.h - state.pad.bottom) {
+            tooltip.style.display = 'none';
+            return;
+        }
+
+        // Check hover near year-boundary labels (top margin area)
+        if (my < state.pad.top + 4) {
+            if (state.yearRetLabels) {
+                const found = state.yearRetLabels.find(l => Math.abs(l.x - mx) < 20);
+                if (found) {
+                    const sign = found.ret >= 0 ? '+' : '';
+                    tooltip.innerHTML = '<div>' + t('yearReturn') + ': ' + sign + found.ret.toFixed(1) + '%</div>';
+                    tooltip.style.display = 'block';
+                    tooltip.style.left = Math.min(found.x + 12, state.w - 130) + 'px';
+                    tooltip.style.top = '4px';
+                    return;
+                }
+            }
             tooltip.style.display = 'none';
             return;
         }
@@ -1620,7 +1687,6 @@ function formatDate(dateString) {
     const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
     return date.toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' });
 }
-
 
 
 
@@ -2137,7 +2203,7 @@ async function loadModelPerformance() {
         if (livePerfCardEl) {
             const valueDiv = livePerfCardEl.querySelector('.stat-value');
             if (valueDiv) {
-                const result = computeLiveAnnualizedReturn('2026-06-09');
+                const result = computeLiveAnnualizedReturn(LIVE_DATE);
                 valueDiv.textContent = result.formatted;
                 valueDiv.className = `stat-value ${result.cssClass}`;
             }
@@ -2147,7 +2213,7 @@ async function loadModelPerformance() {
         if (liveEqCardEl) {
             const valueDiv = liveEqCardEl.querySelector('.stat-value');
             if (valueDiv) {
-                const result = computeEquitySinceLive('2026-06-09', curveKey);
+                const result = computeEquitySinceLive(LIVE_DATE, curveKey);
                 valueDiv.textContent = result.formatted;
                 valueDiv.className = `stat-value ${result.cssClass}`;
             }
