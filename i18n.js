@@ -399,7 +399,7 @@ const TRANSLATIONS = {
         liveAccuracy: 'Träffsäkerhet sedan live',
         totalPredictions: 'Antal prognoser sedan live',
         totalPredictionsHint: 'Handelsdagar per år: ~252',
-        liveAccuracyHint: 'Riktningsträffsäkerhet endast på aktiva signaldagar. Neutrala prognoser (ingen trend) exkluderas. Sedan 2026-06-24. 51,2% av dagarna sedan år 2000 har priset gått upp, så om man gissat upp varje dag, så hade den träffsäkerheten uppnåtts.',
+        liveAccuracyHint: 'Riktningsträffsäkerhet på aktiva signaldagar sedan 2026-06-25. Neutrala prognoser exkluderas, eftersom vi inte handlar på neutral prognos. Sedan år 2000 så har 51,2% av dagarna haft ett uppåtgående pris, så om man gissat upp varje dag, hade den träffsäkerheten uppnåtts.',
         livePredictionsHint: 'Totalt antal prognoser sedan 2026-06-24.',
         liveDaysSinceLive: 'Antal dagar sedan live',
         liveDaysSinceLiveHint: 'Antalet dagar som prognostiserats och fått utfallet uppmätt efter dagens slut.',
