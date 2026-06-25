@@ -25,9 +25,9 @@
     },
     {
       "commodity": "Copper",
-      "signal": 0.4173,
-      "signal_low_risk": 0.3483,
-      "dom_prob": 0.4173,
+      "signal": 0.6384,
+      "signal_low_risk": 0.5445,
+      "dom_prob": 0.6384,
       "actual_yesterday": -3.166059
     },
     {
