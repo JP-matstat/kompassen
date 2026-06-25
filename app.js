@@ -1193,6 +1193,26 @@ function renderPerformanceStats() {
     const totalCard = createStatCard(t('totalPredictions'), liveTotalPredictions.toString(), '', liveTotalPredictions, t('livePredictionsHint'));
     container.appendChild(totalCard);
     
+    // Live portfolio value (third box) from portfolio_value.json
+    const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null);
+    liveValCard.id = 'livePortfolioValueCard';
+    container.appendChild(liveValCard);
+    (async () => {
+        try {
+            const resp = await fetch('portfolio_value.json?v=' + Date.now());
+            if (resp.ok) {
+                const pv = await resp.json();
+                const val = pv.latest_value;
+                const cssClass = val >= 100 ? 'success' : 'danger';
+                liveValCard.querySelector('.stat-value').textContent = val.toFixed(2);
+                liveValCard.querySelector('.stat-value').className = `stat-value ${cssClass}`;
+                liveValCard._numericTarget = val;
+            }
+        } catch (e) {
+            console.warn('Failed to load portfolio_value.json:', e);
+        }
+    })();
+    
     const liveAnnRet = computeLiveAnnualizedReturn(LIVE_DATE);
     const livePerfCard = createStatCard(t('liveAvgPortfolioPerf'), liveAnnRet.formatted, liveAnnRet.cssClass, liveAnnRet.numericValue);
     livePerfCard.id = 'livePortfolioCard';
@@ -1600,6 +1620,7 @@ function formatDate(dateString) {
     const locale = window.I18n && I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US';
     return date.toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' });
 }
+
 
 
 
