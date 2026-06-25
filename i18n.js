@@ -402,7 +402,7 @@ const TRANSLATIONS = {
         testPredictions: 'Antal prognoser test',
         liveAvgPortfolioPerf: 'Genomsnittligt portföljresultat per år (Live)',
         testAvgPortfolioPerf: 'Genomsnittligt portföljresultat per år (Test)',
-        livePortfolioValue: 'Portföljvärde sedan live',
+        livePortfolioValue: 'Portföljvärde sedan live, start 100',
         livePortfolioValueSubtitle: 'Med start 100',
         trainPortfolioValue: 'Portföljvärde sedan start',
         trainPortfolioValueSubtitle: 'Med start 100',
