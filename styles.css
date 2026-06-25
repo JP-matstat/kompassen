@@ -78,6 +78,8 @@ body.dark {
     --bar-positive: linear-gradient(135deg, #34d399 0%, #10b981 100%);
     --bar-negative: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
 
+    --success-color: #7ec8e3;
+    --success-bg: rgba(126, 200, 227, 0.15);
     --theme-toggle-icon: '☀️';
     --scrollbar-thumb: #475569;
     --scrollbar-track: transparent;
@@ -101,6 +103,13 @@ body {
 body.dark {
     background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-mid) 45%, var(--bg-gradient-end) 100%);
     background-attachment: fixed;
+}
+
+body.dark #personalTab.about-themed {
+    --bg-page: #1e293b;
+    --accent: #7ec8e3;
+    --accent-dim: #2c6b9e;
+    background: #1e293b;
 }
 
 ::-webkit-scrollbar {
@@ -972,6 +981,10 @@ tr:hover td {
 
 .strip-cell.strip-correct {
     background: var(--success-color);
+}
+
+body.dark .strip-cell.strip-correct {
+    background: #2c5f8a;
 }
 
 .strip-cell.strip-incorrect {
