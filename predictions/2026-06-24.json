@@ -25,16 +25,16 @@
     },
     {
       "commodity": "Copper",
-      "signal": 0.6384,
-      "signal_low_risk": 0.5445,
-      "dom_prob": 0.6384,
+      "signal": 0.6389,
+      "signal_low_risk": 0.5333,
+      "dom_prob": 0.6389,
       "actual_yesterday": -3.166059
     },
     {
       "commodity": "Aluminium",
-      "signal": 0.0,
-      "signal_low_risk": 0.0,
-      "dom_prob": 0.0,
+      "signal": 0.2409,
+      "signal_low_risk": 0.1998,
+      "dom_prob": 0.3997,
       "actual_yesterday": -4.96835
     },
     {
@@ -53,9 +53,9 @@
     },
     {
       "commodity": "Coffee",
-      "signal": -0.669,
-      "signal_low_risk": -0.669,
-      "dom_prob": 0.669,
+      "signal": -0.6772,
+      "signal_low_risk": -0.6772,
+      "dom_prob": 0.6772,
       "actual_yesterday": 0.725295
     },
     {
