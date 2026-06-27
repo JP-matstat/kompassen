@@ -75,7 +75,7 @@ const TRANSLATIONS = {
         thBeta: 'β',
         thR2: 'R²',
         adviceTitle: 'Consulting',
-        adviceText: 'If you would like consulting on how to use the model, please <a href="javascript:void(0)" class="advice-link" onclick="activateTab(\'personal\');window.scrollTo(0,0)">contact me</a>.',
+        adviceText: 'If you would like consulting on how to use the model, please <a href="https://kompassen.men/cv/index.html">contact me</a>.',
         posLong: 'Long',
         posShort: 'Short',
         posNeutral: 'Neutral',
