@@ -84,8 +84,6 @@ let bestAnnualizedReturn = 0;
 // Pre-computed equity curves from Python pipeline
 let equityCurveData = null;
 let metricsDataGlobal = null; // cached portfolio_metrics.json for risk model switching
-let annReturnHigh = 0;
-let annReturnLow = 0;
 
 // Load signal history from localStorage
 function loadSignalHistory() {
@@ -1095,71 +1093,11 @@ function renderHistoryTable() {
     container.appendChild(accordion);
 }
 
-function computeLiveAnnualizedReturn(liveDate) {
-    const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
-    const dates = equityCurveData.dates;
-    const values = equityCurveData[curveKey];
-    if (!values || values.length < 2) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const liveIdx = dates.indexOf(liveDate);
-    if (liveIdx === -1 || liveIdx >= values.length - 1) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const eqLive = values[liveIdx];
-    const eqLast = values[values.length - 1];
-    if (!eqLive || eqLive === 0) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const days = values.length - 1 - liveIdx;
-    if (days <= 0) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const totalReturn = eqLast / eqLive - 1;
-    const annReturn = Math.pow(1 + totalReturn, 252 / days) - 1;
-    const cssClass = annReturn >= 0 ? 'success' : 'danger';
-    const formatted = `${annReturn >= 0 ? '+' : ''}${(annReturn * 100).toFixed(2)}%`;
-    return { formatted, cssClass, numericValue: annReturn };
-}
-
-function computeEquitySinceLive(liveDate, curveKey) {
-    if (!equityCurveData || !equityCurveData.dates || !equityCurveData[curveKey]) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const dates = equityCurveData.dates;
-    const values = equityCurveData[curveKey];
-    const liveIdx = dates.indexOf(liveDate);
-    if (liveIdx === -1 || liveIdx >= values.length - 1) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const eqLive = values[liveIdx];
-    const eqLast = values[values.length - 1];
-    if (!eqLive || eqLive === 0) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const equityValue = (eqLast / eqLive) * 100;
-    const cssClass = equityValue >= 100 ? 'success' : 'danger';
-    const formatted = equityValue.toFixed(2);
-    return { formatted, cssClass, numericValue: equityValue };
-}
-
-function computeEquitySinceStart(curveKey) {
-    if (!equityCurveData || !equityCurveData[curveKey] || equityCurveData[curveKey].length === 0) {
-        return { formatted: '-', cssClass: '', numericValue: null };
-    }
-    const values = equityCurveData[curveKey];
-    const eqLast = values[values.length - 1];
-    const cssClass = eqLast >= 100 ? 'success' : 'danger';
-    const formatted = eqLast.toFixed(2);
-    return { formatted, cssClass, numericValue: eqLast };
-}
-
 function renderPerformanceStats() {
     const container = document.getElementById('performanceStats');
     container.innerHTML = '';
 
     const activeData = getActiveHistoricalData();
-    const filteredData = getFilteredHistoricalData(activeData);
     // Live statistics (date >= LIVE_DATE)
     let liveTotalPredictions = 0;
     let liveCorrectPredictions = 0;
@@ -1194,7 +1132,7 @@ function renderPerformanceStats() {
     container.appendChild(liveCard);
     
     // Card 2: Live portfolio value from portfolio_value.json
-    const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null);
+    const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null, t('livePortfolioValueHint'));
     liveValCard.id = 'livePortfolioValueCard';
     container.appendChild(liveValCard);
     (async () => {
@@ -1220,73 +1158,6 @@ function renderPerformanceStats() {
     // Card 4: Total Predictions
     const totalCard = createStatCard(t('totalPredictions'), liveTotalPredictions.toString(), '', liveTotalPredictions, t('livePredictionsHint'));
     container.appendChild(totalCard);
-    
-    const liveAnnRet = computeLiveAnnualizedReturn(LIVE_DATE);
-    const livePerfCard = createStatCard(t('liveAvgPortfolioPerf'), liveAnnRet.formatted, liveAnnRet.cssClass, liveAnnRet.numericValue);
-    livePerfCard.id = 'livePortfolioCard';
-    container.appendChild(livePerfCard);
-    
-    // Live equity value (last / live * 100)
-    const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
-    const liveEqValue = computeEquitySinceLive(LIVE_DATE, curveKey);
-    const liveEqCard = createStatCard(t('livePortfolioValue'), liveEqValue.formatted, liveEqValue.cssClass, liveEqValue.numericValue);
-    const subDiv = document.createElement('div');
-    subDiv.className = 'stat-subtitle';
-    subDiv.textContent = t('livePortfolioValueSubtitle');
-    liveEqCard.querySelector('.stat-value').after(subDiv);
-    liveEqCard.id = 'liveEqCard';
-    container.appendChild(liveEqCard);
-    
-    // Test statistics (date < LIVE_DATE within filteredData)
-    let testTotalPredictions = 0;
-    let testCorrectPredictions = 0;
-    
-    filteredData.forEach(entry => {
-        if (entry.date >= LIVE_DATE) return;
-        if (!entry.actuals) return;
-        
-        COMMODITIES.forEach(commodity => {
-            const prediction = entry.predictions[commodity] || 0;
-            if (prediction === 0) return;
-            const actual = entry.actuals[commodity];
-            if (actual == null) return;
-            
-            testTotalPredictions++;
-            if (Math.sign(prediction) === Math.sign(actual)) {
-                testCorrectPredictions++;
-            }
-        });
-    });
-    
-    const testAccuracy = testTotalPredictions > 0 ? (testCorrectPredictions / testTotalPredictions * 100) : 0;
-    
-    // Row 2: Test stats
-    const testValue = testTotalPredictions > 0 ? `${testAccuracy.toFixed(1)}%` : '-';
-    const testClass = testTotalPredictions > 0 ? (testAccuracy >= 50 ? 'success' : 'danger') : '';
-    const testCard = createStatCard(t('testAccuracy'), testValue, testClass, testTotalPredictions > 0 ? testAccuracy : null);
-    testCard.querySelector('.stat-label').title = t('testAccuracyHint');
-    container.appendChild(testCard);
-    
-    const testCountCard = createStatCard(t('testPredictions'), testTotalPredictions.toString(), '', testTotalPredictions);
-    container.appendChild(testCountCard);
-    
-    const currentAnnRet = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
-    const testPerfCard = createStatCard(t('testAvgPortfolioPerf'),
-        `${currentAnnRet >= 0 ? '+' : ''}${(currentAnnRet * 100).toFixed(2)}%`,
-        currentAnnRet >= 0 ? 'success' : 'danger',
-        currentAnnRet);
-    testPerfCard.id = 'testPortfolioCard';
-    container.appendChild(testPerfCard);
-    
-    // Training equity value (last value, starts at ~100)
-    const trainEqValue = computeEquitySinceStart(curveKey);
-    const trainEqCard = createStatCard(t('trainPortfolioValue'), trainEqValue.formatted, trainEqValue.cssClass, trainEqValue.numericValue);
-    const trainSubDiv = document.createElement('div');
-    trainSubDiv.className = 'stat-subtitle';
-    trainSubDiv.textContent = t('trainPortfolioValueSubtitle');
-    trainEqCard.querySelector('.stat-value').after(trainSubDiv);
-    trainEqCard.id = 'trainEqCard';
-    container.appendChild(trainEqCard);
 
     drawPerformanceChart();
 }
@@ -2075,8 +1946,6 @@ async function loadModelPerformance() {
 
         const metricsData = await metricsResp.json();
         metricsDataGlobal = metricsData;
-        annReturnHigh = metricsData.metrics ? (metricsData.metrics.annualized_return || 0) : 0;
-        annReturnLow = metricsData.metrics_symmetric ? (metricsData.metrics_symmetric.annualized_return || 0) : 0;
         const commData = commResp.ok ? await commResp.json() : null;
         if (eqResp.ok) {
             equityCurveData = await eqResp.json();
@@ -2189,44 +2058,7 @@ async function loadModelPerformance() {
         hideSkeletons();
         container.innerHTML = html;
 
-        bestAnnualizedReturn = Math.max(annReturnHigh, annReturnLow);
-        const testPerfCardEl = document.getElementById('testPortfolioCard');
-        if (testPerfCardEl) {
-            const valueDiv = testPerfCardEl.querySelector('.stat-value');
-            if (valueDiv) {
-                const r = currentRiskModel === 'high' ? annReturnHigh : annReturnLow;
-                valueDiv.textContent = `${r >= 0 ? '+' : ''}${(r * 100).toFixed(2)}%`;
-                valueDiv.className = `stat-value ${r >= 0 ? 'success' : 'danger'}`;
-            }
-        }
-        const livePerfCardEl = document.getElementById('livePortfolioCard');
-        if (livePerfCardEl) {
-            const valueDiv = livePerfCardEl.querySelector('.stat-value');
-            if (valueDiv) {
-                const result = computeLiveAnnualizedReturn(LIVE_DATE);
-                valueDiv.textContent = result.formatted;
-                valueDiv.className = `stat-value ${result.cssClass}`;
-            }
-        }
-        const curveKey = currentRiskModel === 'high' ? 'high_risk' : 'low_risk';
-        const liveEqCardEl = document.getElementById('liveEqCard');
-        if (liveEqCardEl) {
-            const valueDiv = liveEqCardEl.querySelector('.stat-value');
-            if (valueDiv) {
-                const result = computeEquitySinceLive(LIVE_DATE, curveKey);
-                valueDiv.textContent = result.formatted;
-                valueDiv.className = `stat-value ${result.cssClass}`;
-            }
-        }
-        const trainEqCardEl = document.getElementById('trainEqCard');
-        if (trainEqCardEl) {
-            const valueDiv = trainEqCardEl.querySelector('.stat-value');
-            if (valueDiv) {
-                const result = computeEquitySinceStart(curveKey);
-                valueDiv.textContent = result.formatted;
-                valueDiv.className = `stat-value ${result.cssClass}`;
-            }
-        }
+
 
         drawPerformanceChart();
 

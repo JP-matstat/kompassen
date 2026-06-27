@@ -78,7 +78,7 @@ body.dark {
     --bar-positive: linear-gradient(135deg, #34d399 0%, #10b981 100%);
     --bar-negative: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
 
-    --success-color: #7ec8e3;
+    --success-color: #34d399;
     --success-bg: rgba(126, 200, 227, 0.15);
     --theme-toggle-icon: '☀️';
     --scrollbar-thumb: #475569;
@@ -984,7 +984,7 @@ tr:hover td {
 }
 
 body.dark .strip-cell.strip-correct {
-    background: #2c5f8a;
+    background: #1b8a3f;
 }
 
 .strip-cell.strip-incorrect {
