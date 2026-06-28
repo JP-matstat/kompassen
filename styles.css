@@ -14,7 +14,7 @@
     --danger-bg: rgba(239, 68, 68, 0.1);
     --neutral-color: #6b7280;
     --neutral-bg: rgba(107, 114, 128, 0.1);
-    --pending-color: #4F8DA6;
+    --pending-color: #6B7280;
     --warning-color: #f59e0b;
     --warning-bg: rgba(245, 158, 11, 0.12);
 
@@ -53,7 +53,7 @@ body.dark {
     --primary-color: #4682B4;
     --primary-hover: #5A7E8B;
     --primary-light: rgba(118, 158, 171, 0.1);
-    --pending-color: #4682B4;
+    --pending-color: #4B5563;
 
     --bg-gradient-start: #0f172a;
     --bg-gradient-mid: #1e293b;
@@ -1036,14 +1036,7 @@ body.dark .strip-cell.strip-correct {
     line-height: 1.2;
 }
 
-.strip-cell.strip-pending .strip-pred,
-.strip-cell.strip-na .strip-pred {
-    color: var(--text-secondary);
-}
 
-.strip-cell.strip-pending .strip-act {
-    color: var(--text-secondary);
-}
 
 .history-stats {
     margin-top: 2rem;

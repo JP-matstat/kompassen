@@ -23,14 +23,15 @@
 }
 
 html[data-theme="light"] .cv-preview-root {
-    --bg-page: #DBE9F4;
-    --bg-dark: #ffffff;
-    --bg-card: #f0f5fa;
-    --bg-card-hover: #e6edf4;
+    --bg-page: #2dd4bf;
+    --bg-dark: #DBE9F4;
+    --bg-card: rgba(245, 248, 250, 0.4);
+    --bg-card-hover: rgba(240, 245, 250, 0.5);
     --text: #1e293b;
-    --muted: #769EAB;
-    --accent: #41E0E0;
-    --accent-dim: #769EAB;
+    --muted: #64748b;
+    --accent: #0d9488;
+    --accent-dim: #0891b2;
+    background: linear-gradient(135deg, var(--bg-page) 0%, var(--accent-dim) 100%);
 }
 
 .lang-switcher {
@@ -107,9 +108,23 @@ html[data-theme="light"] .cv-preview-root {
     min-height: calc(100vh - 3rem);
     margin: 0 auto;
     background: var(--bg-dark);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 24px 60px rgb(0 0 0 / 0.35);
     border-radius: 4px;
     overflow: hidden;
+}
+
+html[data-theme="light"] .cv-preview-root .page-frame {
+    box-shadow: 0 8px 32px rgb(0 0 0 / 0.08);
+}
+
+html[data-theme="light"] .cv-preview-root .sidebar {
+    border-right: 1px solid rgb(0 0 0 / 0.06);
+}
+
+html[data-theme="light"] .cv-preview-root .rail {
+    border-left: 1px solid rgb(0 0 0 / 0.06);
 }
 
 .cv-preview-root .sidebar {
@@ -769,16 +784,16 @@ html[data-theme="light"] .cv-preview-root {
 </head>
 <body>
 
+<div class="lang-switcher" role="group" aria-label="Language" style="position:fixed;top:1rem;right:1rem;z-index:1100;display:flex;gap:0.35rem;padding:0.35rem;background:var(--bg-dark);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgb(255 255 255 / 0.1);border-radius:0.75rem;">
+    <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
+    <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English">EN</button>
+    <button type="button" class="lang-btn" id="cvThemeToggle" title="Toggle dark mode" aria-label="Toggle dark mode" style="font-size:0.9rem;">☀️</button>
+</div>
+
 <div class="cv-preview-root">
 <div class="page-frame">
     <aside class="sidebar">
-        <div class="lang-switcher" style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
-            <div class="lang-switcher" role="group" aria-label="Language" style="position:static;background:transparent;border:none;padding:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;">
-                <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
-                <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English">EN</button>
-                <button type="button" class="lang-btn" id="cvThemeToggle" title="Toggle dark mode" aria-label="Toggle dark mode" style="font-size:0.9rem;">☀️</button>
-            </div>
-        </div>
+
         <div class="profile">
             <div class="avatar"><img src="img/profile.jpg" alt="Johan Persson" class="avatar-img"></div>
             <h1 class="name" data-i18n="cv_name">Johan Persson</h1>

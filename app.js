@@ -1990,11 +1990,11 @@ async function loadModelPerformance() {
                 [t('metricAvgTrades'),
                     metricsData.avg_trades_per_year != null ? metricsData.avg_trades_per_year.toFixed(1) : '—',
                     metricsData.avg_trades_per_year_sym != null ? metricsData.avg_trades_per_year_sym.toFixed(1) : '—',
-                    '', ''],
+                    '', '', t('metricAvgTradesHint')],
                 [t('metricAvgHold'),
                     metricsData.avg_hold_days != null ? metricsData.avg_hold_days.toFixed(1) : '—',
                     metricsData.avg_hold_days_sym != null ? metricsData.avg_hold_days_sym.toFixed(1) : '—',
-                    '', ''],
+                    '', '', t('metricAvgHoldHint')],
                 [t('metricStdHold'),
                     metricsData.std_hold_days != null ? metricsData.std_hold_days.toFixed(1) : '—',
                     metricsData.std_hold_days_sym != null ? metricsData.std_hold_days_sym.toFixed(1) : '—',
@@ -2004,7 +2004,7 @@ async function loadModelPerformance() {
             html += `<table class="model-perf-table" style="width:100%">`;
             html += `<thead><tr><th style="text-align:left;width:55%">${t('metricColumn')}</th><th style="text-align:right;width:22.5%">${highRiskLabel}</th><th style="text-align:right;width:22.5%">${lowRiskLabel}</th></tr></thead><tbody>`;
             rows.forEach(r => {
-                html += `<tr><td>${r[0]}</td><td class="${r[3]}" style="text-align:right">${r[1]}</td><td class="${r[4]}" style="text-align:right">${r[2]}</td></tr>`;
+                html += `<tr><td${r[5] ? ` title="${r[5].replace(/"/g,'&quot;')}"` : ''}>${r[0]}</td><td class="${r[3]}" style="text-align:right">${r[1]}</td><td class="${r[4]}" style="text-align:right">${r[2]}</td></tr>`;
             });
             html += `</tbody></table></div>`;
         }
