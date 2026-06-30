@@ -687,93 +687,6 @@ html[data-theme="light"] .cv-preview-root .rail {
 .cv-preview-root .entry time { font-size: 0.7rem; }
 }
 
-.chatbot-disclaimer {
-    font-size: 0.75rem;
-    color: var(--muted);
-    font-style: italic;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0.5rem;
-    background: rgb(255 255 255 / 0.04);
-    border-radius: 6px;
-    line-height: 1.4;
-}
-
-.chatbot-messages {
-    max-height: 320px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    background: var(--bg-card);
-    border-radius: 8px;
-    border: 1px solid rgb(255 255 255 / 0.08);
-}
-
-.chat-message {
-    max-width: 85%;
-    padding: 0.5rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    line-height: 1.45;
-    word-wrap: break-word;
-}
-
-.chat-message-bot {
-    align-self: flex-start;
-    background: rgb(45 212 191 / 0.1);
-    color: var(--text);
-    border-bottom-left-radius: 4px;
-}
-
-.chat-message-user {
-    align-self: flex-end;
-    background: rgb(6 182 212 / 0.15);
-    color: var(--text);
-    border-bottom-right-radius: 4px;
-}
-
-.chatbot-input-area {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.chatbot-input {
-    flex: 1;
-    padding: 0.55rem 0.75rem;
-    border: 1px solid rgb(255 255 255 / 0.15);
-    border-radius: 8px;
-    background: var(--bg-card);
-    color: var(--text);
-    font-size: 0.85rem;
-    outline: none;
-}
-
-.chatbot-input:focus {
-    border-color: var(--accent);
-}
-
-.chatbot-send-btn {
-    padding: 0.55rem 1rem;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent);
-    color: #111;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.chatbot-send-btn:hover {
-    background: #5eead4;
-}
-
-.chatbot-send-btn:disabled {
-    opacity: 0.5;
-    cursor: default;
-}
     </style>
     <script>
     (function() {
@@ -872,6 +785,7 @@ html[data-theme="light"] .cv-preview-root .rail {
                 <div class="skill"><span>MATLAB</span><div class="bar"><div style="width:40%"></div></div><span>40%</span></div>
                 <div class="skill"><span>Office</span><div class="bar"><div style="width:80%"></div></div><span>80%</span></div>
                 <div class="skill"><span>Linux</span><div class="bar"><div style="width:60%"></div></div><span>60%</span></div>
+                <div class="skill"><span>Docker</span><div class="bar"><div style="width:80%"></div></div><span>80%</span></div>
                 <div class="skill"><span>Git</span><div class="bar"><div style="width:75%"></div></div><span>75%</span></div>
                 <div class="skill"><span>LaTeX</span><div class="bar"><div style="width:85%"></div></div><span>85%</span></div>
             </div>
@@ -1041,10 +955,6 @@ html[data-theme="light"] .cv-preview-root .rail {
             </ul>
         </section>
 
-        <section class="services" style="padding-top:0">
-            <h2 data-i18n="cv_chatbot_heading">Ask the model assistant</h2>
-            <div id="chatbot-container"></div>
-        </section>
         </main>
 
     <nav class="rail" aria-label="Section navigation">
@@ -1129,7 +1039,6 @@ html[data-theme="light"] .cv-preview-root .rail {
     cv_nav_work: 'WORK',
     cv_nav_edu: 'EDU',
     cv_location_gothenburg: 'Gothenburg',
-    cv_chatbot_heading: 'Ask the model assistant',
     };
 
     TRANSLATIONS.sv = {
@@ -1202,7 +1111,6 @@ html[data-theme="light"] .cv-preview-root .rail {
     cv_nav_work: 'ARBETE',
     cv_nav_edu: 'UTB',
     cv_location_gothenburg: 'Göteborg',
-    cv_chatbot_heading: 'Fråga modellens assistent',
     };
 
     var STORAGE_KEY = 'cv_lang';
@@ -1338,15 +1246,6 @@ html[data-theme="light"] .cv-preview-root .rail {
 
     updateBtn();
 })();
-</script>
-
-<script src="chatbot.js?v=1"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.Chatbot) {
-        window.Chatbot.init('chatbot-container');
-    }
-});
 </script>
 
 </body>

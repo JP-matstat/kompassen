@@ -797,9 +797,6 @@ function setupTabNavigation() {
 }
 
 function setupAboutModelPage() {
-    if (window.Chatbot && document.getElementById('chatbot-container')) {
-        window.Chatbot.init('chatbot-container');
-    }
 }
 
 // Initialize historical performance tab
