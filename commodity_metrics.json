@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-02",
-  "timestamp": "2026-07-02T16:54:50Z",
+  "date": "2026-07-03",
+  "timestamp": "2026-07-03T22:27:03Z",
   "commodities": [
     {
       "key": "oil_brent",
@@ -99,7 +99,7 @@
       "label": "Aluminium",
       "in_market_pct": 0,
       "trades": 20,
-      "avg_hold": 143.4,
+      "avg_hold": 143.5,
       "std_hold": 200.1,
       "trades_sym": 14,
       "avg_hold_sym": 97.9,
