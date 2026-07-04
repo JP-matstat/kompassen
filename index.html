@@ -6,8 +6,14 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Portfolio Signal Analyzer</title>
-    <link rel="stylesheet" href="styles.css?v=10">
+    <title>Portfolio Compass — Commodity Signals & Portfolio Allocation</title>
+    <meta name="description" content="Daily machine-learning trading signals for ten commodities, with portfolio allocation, tradable instruments and five years of verified performance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kompassen.men/">
+    <meta property="og:title" content="Portfolio Compass — Commodity Signals & Portfolio Allocation">
+    <meta property="og:description" content="Daily machine-learning trading signals for ten commodities, with portfolio allocation, tradable instruments and five years of verified performance.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css?v=18">
 </head>
 <body>
     <div class="lang-switcher" role="group" aria-label="Language">
@@ -35,6 +41,16 @@
         <main>
             <!-- Portfolio Tab -->
             <div id="portfolioTab" class="tab-content active">
+            <!-- How to use -->
+            <section class="card howto-card">
+                <h2 data-i18n="howtoTitle">How to use this page</h2>
+                <ol class="howto-steps">
+                    <li><span class="howto-num">1</span><span data-i18n-html="howtoStep1">Check today's <strong>signals</strong> below — green means long, red means short, gray means stay out.</span></li>
+                    <li><span class="howto-num">2</span><span data-i18n-html="howtoStep2">Look at the <strong>portfolio allocation</strong> to see how much weight the model gives each commodity.</span></li>
+                    <li><span class="howto-num">3</span><span data-i18n-html="howtoStep3">Pick an instrument under <strong>Related Instruments</strong> — trackers follow the commodity price most closely.</span></li>
+                    <li><span class="howto-num">4</span><span data-i18n-html="howtoStep4">You don't need to adjust your position day to day just because the allocation changes marginally — only change your position when a commodity goes from green to red/gray, or from red to green/gray.</span></li>
+                </ol>
+            </section>
             <!-- Signal Strength Section -->
             <section class="card" id="signalStrengthCard">
                 <div class="signal-strength-header">
@@ -146,6 +162,10 @@
                         </div>
                     </div>
                     <div class="advice-section">
+                        <h4 data-i18n="verifiedTitle">Verifiable forecasts</h4>
+                        <p data-i18n-html="verifiedText">Every forecast is published daily to <a href="https://github.com/JP-matstat/kompassen/tree/main/predictions" target="_blank" rel="noopener">a public GitHub repository</a>. Each file is timestamped by GitHub the day before the trading day, so you can verify that the forecasts were made in advance and never edited afterwards.</p>
+                    </div>
+                    <div class="advice-section">
                         <h4 data-i18n="courtageTitle">Courtage</h4>
                         <p data-i18n="courtageText">I beräkningarna har jag inkluderat courtage på 0,15% per köp/sälj, dvs 0,3% totalt per position. Detta motsvarar ett typiskt courtage på Avanza och Nordnet. Du kan få betydligt lägre courtage hos internationella mäklare, och dessutom tillgå fler instrument som följer råvarupriser, men skattereglerna blir då komplicerade jämfört med ISK eller KF.</p>
                     </div>
@@ -157,14 +177,16 @@
             <!-- About the model Tab -->
             <style>
 #personalTab.about-themed {
-    --bg-page: #0d9488;
-    --bg-dark: #1a1d23;
-    --bg-card: #23262e;
-    --bg-card-hover: #2a2e38;
-    --text: #f4f4f5;
-    --muted: #9ca3af;
-    --accent: #2dd4bf;
+    --bg-page: transparent;
+    --bg-dark: #ffffff;
+    --bg-card: #f1f5f9;
+    --bg-card-hover: #e8eef5;
+    --text: #0f172a;
+    --muted: #5b6b83;
+    --accent: #0d9488;
     --accent-dim: #0891b2;
+    --card-glow: 0 1px 2px rgb(15 23 42 / 0.04), 0 10px 30px -12px rgb(15 23 42 / 0.12);
+    --divider: rgb(15 23 42 / 0.08);
     background: var(--bg-page);
     color: var(--text);
     padding: 1.5rem;
@@ -175,7 +197,8 @@
     max-width: 880px;
     margin: 0 auto;
     background: var(--bg-dark);
-    box-shadow: 0 24px 60px rgb(0 0 0 / 0.35);
+    border: 1px solid var(--divider);
+    box-shadow: var(--card-glow);
     border-radius: 4px;
     padding: 2.5rem 2rem;
 }
@@ -199,7 +222,7 @@
 #personalTab.about-themed .about-model-links {
     color: var(--muted);
     margin-top: 1.5rem;
-    border-top: 1px solid rgb(255 255 255 / 0.08);
+    border-top: 1px solid var(--divider);
     padding-top: 1.5rem;
 }
             </style>
@@ -231,8 +254,8 @@
         </div>
     </div>
 
-    <script src="i18n.js"></script>
-    <script src="app.js?v=8"></script>
+    <script src="i18n.js?v=6"></script>
+    <script src="app.js?v=14"></script>
 
 <!-- Forecast Date Explanation Modal -->
 <div id="siteUpdateModal" class="modal-overlay hidden">

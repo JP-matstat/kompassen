@@ -296,6 +296,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// On phones, long info paragraphs collapse behind a "show more" toggle and the
+// how-to card collapses to its heading. Desktop layout is unaffected (the
+// collapsed states only exist in the ≤768px media query).
+function initMobileCollapsibles() {
+    if (!window.matchMedia('(max-width: 768px)').matches) return;
+
+    document.querySelectorAll('main p.info').forEach(p => {
+        if (p.dataset.collapsibleInit) return;
+        p.dataset.collapsibleInit = '1';
+        if ((p.textContent || '').length < 220) return;
+        p.classList.add('info-collapsed');
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'info-toggle-btn';
+        toggle.setAttribute('data-i18n', 'showMore');
+        toggle.textContent = t('showMore');
+        toggle.addEventListener('click', () => {
+            const collapsed = p.classList.toggle('info-collapsed');
+            toggle.setAttribute('data-i18n', collapsed ? 'showMore' : 'showLess');
+            toggle.textContent = t(collapsed ? 'showMore' : 'showLess');
+        });
+        p.insertAdjacentElement('afterend', toggle);
+    });
+
+    const howtoCard = document.querySelector('.howto-card');
+    const howtoHeading = howtoCard && howtoCard.querySelector('h2');
+    if (howtoHeading && !howtoHeading._handlerAttached) {
+        howtoHeading._handlerAttached = true;
+        howtoHeading.addEventListener('click', () => {
+            howtoCard.classList.toggle('howto-expanded');
+        });
+    }
+}
+
 // Hide all skeleton loaders
 function hideSkeletons() {
     document.querySelectorAll('.skeleton').forEach(el => el.remove());
@@ -422,6 +456,7 @@ async function init() {
             I18n.init();
             I18n.onLangChange(refreshLanguageUI);
         }
+        initMobileCollapsibles();
         setupThemeToggle();
         loadSignalHistory();
         setupEventListeners();
@@ -904,6 +939,90 @@ function getFilteredHistoricalData(data) {
     return src.filter(e => new Date(e.date) >= cutoffDate);
 }
 
+// Build the day-by-day strip table for one month (called lazily on expansion)
+function buildMonthStrip(monthGroup) {
+    const stripWrapper = document.createElement('div');
+    stripWrapper.className = 'hist-strip-wrapper';
+
+    const table = document.createElement('table');
+    table.className = 'hist-strip-table';
+
+    // Header row
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    const dateTh = document.createElement('th');
+    dateTh.className = 'hist-strip-date';
+    dateTh.textContent = t('thDate');
+    headerRow.appendChild(dateTh);
+    COMMODITIES.forEach(c => {
+        const th = document.createElement('th');
+        th.textContent = tCommodity(c);
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Body rows
+    const tbody = document.createElement('tbody');
+    monthGroup.entries.forEach(entry => {
+        const row = document.createElement('tr');
+
+        const dateCell = document.createElement('td');
+        dateCell.className = 'hist-strip-date-cell';
+        const d = (() => { const x = new Date(entry.date); const w = x.getDay(); if (w === 5) x.setDate(x.getDate() + 3); else if (w === 6) x.setDate(x.getDate() + 2); else x.setDate(x.getDate() + 1); return x; })();
+        dateCell.innerHTML = `
+            <span class="strip-date-dow">${d.toLocaleDateString('en-US', { weekday: 'short' })}</span>
+            <span class="strip-date-num">${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+        `;
+        row.appendChild(dateCell);
+
+        COMMODITIES.forEach(c => {
+            const cell = document.createElement('td');
+            const prediction = entry.predictions[c] || 0;
+            const actual = entry.actuals != null ? entry.actuals[c] : null;
+            const predStr = `${prediction >= 0 ? '+' : ''}${prediction.toFixed(2)}`;
+
+            if (prediction === 0 && (actual === null || actual === undefined)) {
+                cell.className = 'strip-cell strip-na';
+                cell.innerHTML = `<span class="strip-pred">0.00</span>`;
+            } else if (prediction === 0) {
+                cell.className = 'strip-cell strip-zero';
+                const actStr = actual != null ? `${actual >= 0 ? '+' : ''}${actual.toFixed(2)}%` : '';
+                cell.innerHTML = `
+                    <span class="strip-arrow">−</span>
+                    <span class="strip-pred">0.00</span>
+                    ${actual != null ? `<span class="strip-act">${actStr}</span>` : ''}
+                `;
+            } else if (actual === null || actual === undefined) {
+                cell.className = 'strip-cell strip-pending';
+                cell.innerHTML = `
+                    <span class="strip-arrow">→</span>
+                    <span class="strip-pred">${predStr}</span>
+                    <span class="strip-act">⏳</span>
+                `;
+            } else {
+                const predDir = Math.sign(prediction);
+                const actDir = Math.sign(actual);
+                const isCorrect = predDir === actDir || (predDir === 0 && actDir === 0);
+                cell.className = `strip-cell ${isCorrect ? 'strip-correct' : 'strip-incorrect'}`;
+                const arrow = prediction >= 0 ? '▲' : '▼';
+                const actStr = `${actual >= 0 ? '+' : ''}${actual.toFixed(2)}%`;
+                cell.innerHTML = `
+                    <span class="strip-arrow">${arrow}</span>
+                    <span class="strip-pred">${predStr}</span>
+                    <span class="strip-act">${actStr}</span>
+                `;
+            }
+            row.appendChild(cell);
+        });
+
+        tbody.appendChild(row);
+    });
+    table.appendChild(tbody);
+    stripWrapper.appendChild(table);
+    return stripWrapper;
+}
+
 // Render the historical performance table with year→month accordion
 function renderHistoryTable() {
     const container = document.querySelector('.history-table-container');
@@ -962,93 +1081,21 @@ function renderHistoryTable() {
             const dayContainer = document.createElement('div');
             dayContainer.className = 'history-day-container';
 
-            // ── Scrolling Commodity Strips ──
-            const stripWrapper = document.createElement('div');
-            stripWrapper.className = 'hist-strip-wrapper';
-
-            const table = document.createElement('table');
-            table.className = 'hist-strip-table';
-
-            // Header row
-            const thead = document.createElement('thead');
-            const headerRow = document.createElement('tr');
-            const dateTh = document.createElement('th');
-            dateTh.className = 'hist-strip-date';
-            dateTh.textContent = t('thDate');
-            headerRow.appendChild(dateTh);
-            COMMODITIES.forEach(c => {
-                const th = document.createElement('th');
-                th.textContent = tCommodity(c);
-                headerRow.appendChild(th);
-            });
-            thead.appendChild(headerRow);
-            table.appendChild(thead);
-
-            // Body rows
-            const tbody = document.createElement('tbody');
-            monthGroup.entries.forEach(entry => {
-                const row = document.createElement('tr');
-
-                const dateCell = document.createElement('td');
-                dateCell.className = 'hist-strip-date-cell';
-                const d = (() => { const x = new Date(entry.date); const w = x.getDay(); if (w === 5) x.setDate(x.getDate() + 3); else if (w === 6) x.setDate(x.getDate() + 2); else x.setDate(x.getDate() + 1); return x; })();
-                dateCell.innerHTML = `
-                    <span class="strip-date-dow">${d.toLocaleDateString('en-US', { weekday: 'short' })}</span>
-                    <span class="strip-date-num">${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
-                `;
-                row.appendChild(dateCell);
-
-                COMMODITIES.forEach(c => {
-                    const cell = document.createElement('td');
-                    const prediction = entry.predictions[c] || 0;
-                    const actual = entry.actuals != null ? entry.actuals[c] : null;
-                    const predStr = `${prediction >= 0 ? '+' : ''}${prediction.toFixed(2)}`;
-
-                    if (prediction === 0 && (actual === null || actual === undefined)) {
-                        cell.className = 'strip-cell strip-na';
-                        cell.innerHTML = `<span class="strip-pred">0.00</span>`;
-                    } else if (prediction === 0) {
-                        cell.className = 'strip-cell strip-zero';
-                        const actStr = actual != null ? `${actual >= 0 ? '+' : ''}${actual.toFixed(2)}%` : '';
-                        cell.innerHTML = `
-                            <span class="strip-arrow">−</span>
-                            <span class="strip-pred">0.00</span>
-                            ${actual != null ? `<span class="strip-act">${actStr}</span>` : ''}
-                        `;
-                    } else if (actual === null || actual === undefined) {
-                        cell.className = 'strip-cell strip-pending';
-                        cell.innerHTML = `
-                            <span class="strip-arrow">→</span>
-                            <span class="strip-pred">${predStr}</span>
-                            <span class="strip-act">⏳</span>
-                        `;
-                    } else {
-                        const predDir = Math.sign(prediction);
-                        const actDir = Math.sign(actual);
-                        const isCorrect = predDir === actDir || (predDir === 0 && actDir === 0);
-                        cell.className = `strip-cell ${isCorrect ? 'strip-correct' : 'strip-incorrect'}`;
-                        const arrow = prediction >= 0 ? '▲' : '▼';
-                        const actStr = `${actual >= 0 ? '+' : ''}${actual.toFixed(2)}%`;
-                        cell.innerHTML = `
-                            <span class="strip-arrow">${arrow}</span>
-                            <span class="strip-pred">${predStr}</span>
-                            <span class="strip-act">${actStr}</span>
-                        `;
-                    }
-                    row.appendChild(cell);
-                });
-
-                tbody.appendChild(row);
-            });
-            table.appendChild(tbody);
-            stripWrapper.appendChild(table);
-            dayContainer.appendChild(stripWrapper);
+            // The strip table is expensive (dozens of rows × 11 columns), so it
+            // is only built the first time its month is expanded.
+            let stripBuilt = false;
+            const ensureStripBuilt = () => {
+                if (stripBuilt) return;
+                stripBuilt = true;
+                dayContainer.appendChild(buildMonthStrip(monthGroup));
+            };
 
             // Accordion expand/collapse
             const now = new Date();
             const isCurrentMonth = yearGroup.year === now.getFullYear() && monthGroup.month === now.getMonth();
 
             if (isCurrentMonth) {
+                ensureStripBuilt();
                 monthHeader.classList.add('expanded');
                 dayContainer.classList.add('expanded');
                 monthHeader.querySelector('.accordion-chevron').textContent = '▼';
@@ -1059,6 +1106,7 @@ function renderHistoryTable() {
             monthContainer.appendChild(monthDiv);
 
             monthHeader.addEventListener('click', () => {
+                ensureStripBuilt();
                 const isExpanded = dayContainer.classList.contains('expanded');
                 dayContainer.classList.toggle('expanded');
                 monthHeader.classList.toggle('expanded');
@@ -1132,6 +1180,11 @@ function renderPerformanceStats() {
     const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null, t('livePortfolioValueHint'));
     liveValCard.id = 'livePortfolioValueCard';
     container.appendChild(liveValCard);
+
+    // Card 3 (middle): annualized return implied by the live portfolio value
+    const annRetCard = createStatCard(t('liveAnnualizedReturn'), '...', '', null, t('liveAnnualizedReturnHint'));
+    container.appendChild(annRetCard);
+
     (async () => {
         try {
             const resp = await fetch('portfolio_value.json?v=' + Date.now());
@@ -1142,17 +1195,27 @@ function renderPerformanceStats() {
                 liveValCard.querySelector('.stat-value').textContent = val.toFixed(2);
                 liveValCard.querySelector('.stat-value').className = `stat-value ${cssClass}`;
                 liveValCard._numericTarget = val;
+
+                if (liveDaysCount > 0 && val > 0) {
+                    const annPct = (Math.pow(val / 100, 252 / liveDaysCount) - 1) * 100;
+                    const annStr = `${annPct >= 0 ? '+' : ''}${annPct.toFixed(1)}%`;
+                    const annClass = annPct >= 0 ? 'success' : 'danger';
+                    annRetCard.querySelector('.stat-value').textContent = annStr;
+                    annRetCard.querySelector('.stat-value').className = `stat-value ${annClass}`;
+                } else {
+                    annRetCard.querySelector('.stat-value').textContent = '—';
+                }
             }
         } catch (e) {
             console.warn('Failed to load portfolio_value.json:', e);
         }
     })();
     
-    // Card 3: Days since Live
+    // Card 4: Days since Live
     const daysCard = createStatCard(t('liveDaysSinceLive'), liveDaysCount.toString(), '', liveDaysCount, t('liveDaysSinceLiveHint'));
     container.appendChild(daysCard);
     
-    // Card 4: Total Predictions
+    // Card 5: Total Predictions
     const totalCard = createStatCard(t('totalPredictions'), liveTotalPredictions.toString(), '', liveTotalPredictions, t('livePredictionsHint'));
     container.appendChild(totalCard);
 
@@ -1229,9 +1292,11 @@ function drawPerformanceChart() {
     const LOW_COLOR = '#4682B4';
     const zeroLineColor = isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.08)';
 
+    const parentStyle = getComputedStyle(canvas.parentElement);
+    const parentPad = (parseFloat(parentStyle.paddingLeft) || 0) + (parseFloat(parentStyle.paddingRight) || 0);
     const rect = canvas.parentElement.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
-    const w = rect.width - 32;
+    const w = rect.width - parentPad;
     const h = 300;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
@@ -1253,7 +1318,10 @@ function drawPerformanceChart() {
     const highRisk = equityCurveData.high_risk;
     const lowRisk = equityCurveData.low_risk;
 
-    const pad = { top: 20, bottom: 64, left: 55, right: 30 };
+    const isNarrow = w < 500;
+    const pad = isNarrow
+        ? { top: 20, bottom: 56, left: 44, right: 14 }
+        : { top: 20, bottom: 64, left: 55, right: 30 };
     const chartW = w - pad.left - pad.right;
     const chartH = h - pad.top - pad.bottom;
 
@@ -1975,10 +2043,10 @@ async function loadModelPerformance() {
         const m2 = metricsData.metrics_symmetric;
         if (m1 && m2) {
             const rows = [
-                [t('metricCumRet'), fmtPct(m1.cumulative_return), fmtPct(m2.cumulative_return), riskClass(m1.cumulative_return), riskClass(m2.cumulative_return)],
-                [t('metricAnnRet'), fmtPct(m1.annualized_return), fmtPct(m2.annualized_return), riskClass(m1.annualized_return), riskClass(m2.annualized_return)],
+                [t('metricCumRet'), fmtPct(m1.cumulative_return), fmtPct(m2.cumulative_return), riskClass(m1.cumulative_return), riskClass(m2.cumulative_return), t('metricCumRetHint')],
+                [t('metricAnnRet'), fmtPct(m1.annualized_return), fmtPct(m2.annualized_return), riskClass(m1.annualized_return), riskClass(m2.annualized_return), t('metricAnnRetHint')],
                 [t('metricTestPeriod'), (metricsData.window_days / 252).toFixed(2) + ' ' + t('years'), (metricsData.window_days / 252).toFixed(2) + ' ' + t('years'), '', ''],
-                [t('metricSharpe'), fmtNum(m1.sharpe_ratio), fmtNum(m2.sharpe_ratio), riskClass(m1.sharpe_ratio), riskClass(m2.sharpe_ratio)],
+                [t('metricSharpe'), fmtNum(m1.sharpe_ratio), fmtNum(m2.sharpe_ratio), riskClass(m1.sharpe_ratio), riskClass(m2.sharpe_ratio), t('metricSharpeHint')],
                 [t('metricMaxDD'),
                     fmtPct(m1.max_drawdown), fmtPct(m2.max_drawdown), riskClass(m1.max_drawdown), riskClass(m2.max_drawdown)],
                 [t('metricWinRate'), fmtPct(m1.win_rate), fmtPct(m2.win_rate), '', ''],
