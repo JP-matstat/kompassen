@@ -395,8 +395,12 @@ header h1 {
     white-space: nowrap;
 }
 
-.monitor-link {
+.monitor-link-wrap {
     margin-left: auto;
+    flex-shrink: 0;
+}
+
+.monitor-link {
     display: inline-flex;
     align-items: center;
     padding: 0.5rem 1rem;
@@ -2219,6 +2223,11 @@ body.dark .strip-cell.strip-correct {
     .allocation-header {
         flex-wrap: wrap;
         gap: 0.5rem;
+    }
+
+    .monitor-link-wrap {
+        flex-basis: 100%;
+        margin-left: 0;
     }
 
     .signal-dots-grid {
