@@ -5,10 +5,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portföljövervakning — Kompassen</title>
     <meta name="robots" content="noindex">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="../styles.css?v=20">
+    <style>
+        .pm-container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .pm-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .pm-header h1 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+        }
+
+        .pm-header .subtitle {
+            color: var(--text-secondary);
+        }
+
+        .pm-field {
+            margin-bottom: 1.25rem;
+        }
+
+        .pm-field > label,
+        .pm-field > .pm-label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+            color: var(--text-primary);
+        }
+
+        .pm-field input[type="email"] {
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.6rem;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+
+        .pm-field input[type="email"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        .pm-lang-choice {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .pm-lang-choice label {
+            padding: 0.5rem 1.1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            user-select: none;
+            transition: border-color 0.15s, color 0.15s, background 0.15s;
+        }
+
+        .pm-lang-choice input {
+            display: none;
+        }
+
+        .pm-lang-choice label:has(input:checked) {
+            border-color: var(--primary-color);
+            background: var(--primary-light);
+            color: var(--primary-color);
+        }
+
+        .pm-pos-hint {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .pm-pos-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding: 0.45rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pm-pos-row:last-child {
+            border-bottom: none;
+        }
+
+        .pm-pos-name {
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+
+        .pm-seg {
+            display: inline-flex;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .pm-seg label {
+            padding: 0.4rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            user-select: none;
+            border-right: 1px solid var(--border-color);
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .pm-seg label:last-child {
+            border-right: none;
+        }
+
+        .pm-seg input {
+            display: none;
+        }
+
+        .pm-seg label:has(input[value="long"]:checked) {
+            background: var(--success-color);
+            color: #fff;
+        }
+
+        .pm-seg label:has(input[value="short"]:checked) {
+            background: var(--danger-color);
+            color: #fff;
+        }
+
+        .pm-seg label:has(input[value="none"]:checked) {
+            background: var(--neutral-color);
+            color: #fff;
+        }
+
+        .pm-gdpr {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 1rem 0 1.25rem;
+        }
+
+        .pm-status {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.85rem 1rem;
+            border-radius: 0.6rem;
+            font-size: 0.92rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .pm-status.success {
+            display: block;
+            background: var(--success-bg);
+            color: var(--success-color);
+        }
+
+        .pm-status.error {
+            display: block;
+            background: var(--danger-bg);
+            color: var(--danger-color);
+        }
+
+        .pm-back {
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Honeypot: hidden from humans, present for bots */
+        .pm-website-field {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 480px) {
+            .pm-pos-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.35rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Portföljövervakning</h1>
-    <p>Denna sida är under utveckling.</p>
-    <p><a href="/">Tillbaka till Kompassen</a></p>
+    <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="sv" title="Svenska" aria-label="Svenska">SV</button>
+        <button type="button" class="lang-btn" data-lang="en" title="English" aria-label="English">EN</button>
+        <button type="button" class="theme-toggle" id="themeToggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+    </div>
+
+    <div class="pm-container">
+        <header class="pm-header">
+            <h1 data-i18n="pmTitle">Automatisk portföljövervakning</h1>
+            <p class="subtitle" data-i18n="pmSubtitle"></p>
+        </header>
+
+        <section class="card">
+            <p class="info" id="pmIntro" data-i18n="pmIntro"></p>
+
+            <form id="pmForm" novalidate>
+                <div class="pm-field" id="emailField">
+                    <label for="pmEmail" data-i18n="pmEmailLabel">E-postadress</label>
+                    <input type="email" id="pmEmail" name="email" required maxlength="254" autocomplete="email">
+                </div>
+
+                <div class="pm-field" id="langField">
+                    <span class="pm-label" data-i18n="pmLangLabel">Språk för mejlen</span>
+                    <div class="pm-lang-choice">
+                        <label><input type="radio" name="mailLang" value="sv" checked><span>Svenska</span></label>
+                        <label><input type="radio" name="mailLang" value="en"><span>English</span></label>
+                    </div>
+                </div>
+
+                <div class="pm-field">
+                    <span class="pm-label" data-i18n="pmPositionsLabel">Dina nuvarande positioner</span>
+                    <p class="pm-pos-hint" data-i18n="pmPositionsHint"></p>
+                    <div id="pmPositions"></div>
+                </div>
+
+                <div class="pm-website-field" aria-hidden="true">
+                    <label for="pmWebsite">Website</label>
+                    <input type="text" id="pmWebsite" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
+                <p class="pm-gdpr" id="pmGdpr" data-i18n="pmGdpr"></p>
+
+                <button type="submit" class="btn-primary" id="pmSubmit" data-i18n="pmSubmit">Prenumerera</button>
+            </form>
+
+            <div class="pm-status" id="pmStatus" role="status"></div>
+        </section>
+
+        <a class="pm-back" href="/" data-i18n="pmBack">Tillbaka till Kompassen</a>
+    </div>
+
+    <script src="../i18n.js?v=8"></script>
+    <script>
+        (function () {
+            if (localStorage.getItem('theme') !== 'light') {
+                document.body.classList.add('dark');
+            }
+            const themeBtn = document.getElementById('themeToggle');
+            function syncThemeBtn() {
+                themeBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+            }
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark');
+                localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+                syncThemeBtn();
+            });
+            syncThemeBtn();
+        })();
+
+        const API_BASE = 'https://api.kompassen.dev';
+        const COMMODITIES = ['Oil Brent', 'Gold', 'Silver', 'Copper', 'Aluminium',
+            'Cocoa', 'Cotton', 'Coffee', 'Natural Gas', 'Sugar'];
+
+        const form = document.getElementById('pmForm');
+        const statusBox = document.getElementById('pmStatus');
+        const submitBtn = document.getElementById('pmSubmit');
+
+        function buildPositionRows() {
+            const container = document.getElementById('pmPositions');
+            container.innerHTML = '';
+            COMMODITIES.forEach((commodity) => {
+                const row = document.createElement('div');
+                row.className = 'pm-pos-row';
+
+                const name = document.createElement('span');
+                name.className = 'pm-pos-name';
+                name.dataset.commodity = commodity;
+                row.appendChild(name);
+
+                const seg = document.createElement('div');
+                seg.className = 'pm-seg';
+                ['long', 'short', 'none'].forEach((value) => {
+                    const label = document.createElement('label');
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+                    input.name = 'pos:' + commodity;
+                    input.value = value;
+                    input.checked = value === 'none';
+                    const text = document.createElement('span');
+                    text.dataset.posOption = value;
+                    label.appendChild(input);
+                    label.appendChild(text);
+                    seg.appendChild(label);
+                });
+                row.appendChild(seg);
+                container.appendChild(row);
+            });
+        }
+
+        function refreshDynamicLabels() {
+            document.title = I18n.t('pmPageTitle');
+            document.querySelectorAll('[data-commodity]').forEach((el) => {
+                el.textContent = I18n.commodityLabel(el.dataset.commodity);
+            });
+            const optionKeys = { long: 'pmPosLong', short: 'pmPosShort', none: 'pmPosNone' };
+            document.querySelectorAll('[data-pos-option]').forEach((el) => {
+                el.textContent = I18n.t(optionKeys[el.dataset.posOption]);
+            });
+        }
+
+        function readPositions() {
+            const positions = {};
+            COMMODITIES.forEach((commodity) => {
+                positions[commodity] = form.querySelector(
+                    'input[name="pos:' + commodity + '"]:checked'
+                ).value;
+            });
+            return positions;
+        }
+
+        function showStatus(kind, key) {
+            statusBox.className = 'pm-status ' + kind;
+            statusBox.dataset.i18n = key;
+            statusBox.textContent = I18n.t(key);
+        }
+
+        function clearStatus() {
+            statusBox.className = 'pm-status';
+            delete statusBox.dataset.i18n;
+            statusBox.textContent = '';
+        }
+
+        async function submitSubscribe() {
+            const email = document.getElementById('pmEmail').value.trim();
+            if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+                showStatus('error', 'pmErrorEmail');
+                return;
+            }
+            const payload = {
+                email: email,
+                language: form.querySelector('input[name="mailLang"]:checked').value,
+                positions: readPositions(),
+                website: document.getElementById('pmWebsite').value,
+            };
+            clearStatus();
+            submitBtn.disabled = true;
+            submitBtn.textContent = I18n.t('pmSubmitting');
+            try {
+                const response = await fetch(API_BASE + '/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                });
+                if (response.ok) {
+                    showStatus('success', 'pmSuccess');
+                    form.reset();
+                } else if (response.status === 429) {
+                    showStatus('error', 'pmErrorRate');
+                } else {
+                    showStatus('error', 'pmErrorGeneric');
+                }
+            } catch (err) {
+                showStatus('error', 'pmErrorGeneric');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = I18n.t('pmSubmit');
+            }
+        }
+
+        buildPositionRows();
+
+        I18n.init();
+        refreshDynamicLabels();
+        I18n.onLangChange(refreshDynamicLabels);
+
+        // Default mail language follows the UI language on first load.
+        const uiLang = I18n.getLang();
+        const mailLangInput = form.querySelector('input[name="mailLang"][value="' + uiLang + '"]');
+        if (mailLangInput) mailLangInput.checked = true;
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            submitSubscribe();
+        });
+    </script>
 </body>
 </html>
