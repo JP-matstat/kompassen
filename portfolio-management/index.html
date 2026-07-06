@@ -188,6 +188,61 @@
             font-size: 0.9rem;
         }
 
+        .pm-invest-amount {
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.6rem;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+
+        .pm-invest-amount:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        .pm-invest-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding: 0.45rem 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.92rem;
+        }
+
+        .pm-invest-row:last-child {
+            border-bottom: none;
+        }
+
+        .pm-invest-row .dir-long {
+            color: var(--success-color);
+            font-weight: 700;
+        }
+
+        .pm-invest-row .dir-short {
+            color: var(--danger-color);
+            font-weight: 700;
+        }
+
+        .pm-invest-amount-cell {
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .pm-invest-total {
+            font-weight: 700;
+        }
+
+        .pm-invest-date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 0.6rem;
+        }
+
         /* Honeypot: hidden from humans, present for bots */
         .pm-website-field {
             position: absolute;
@@ -229,6 +284,14 @@
                     <input type="email" id="pmEmail" name="email" required maxlength="254" autocomplete="email">
                 </div>
 
+                <div class="pm-field">
+                    <label for="pmInvest" data-i18n="pmInvestLabel">Investeringsbelopp i SEK (valfritt)</label>
+                    <p class="pm-pos-hint" data-i18n="pmInvestHint"></p>
+                    <input type="number" class="pm-invest-amount" id="pmInvest" min="0" step="1000" inputmode="numeric">
+                    <div id="pmInvestResult"></div>
+                    <p class="pm-invest-date" id="pmInvestDate" hidden></p>
+                </div>
+
                 <div class="pm-field" id="langField">
                     <span class="pm-label" data-i18n="pmLangLabel">Språk för mejlen</span>
                     <div class="pm-lang-choice">
@@ -259,7 +322,7 @@
         <a class="pm-back" href="/" data-i18n="pmBack">Tillbaka till Kompassen</a>
     </div>
 
-    <script src="../i18n.js?v=8"></script>
+    <script src="../i18n.js?v=9"></script>
     <script>
         (function () {
             if (localStorage.getItem('theme') !== 'light') {
@@ -387,11 +450,98 @@
             }
         }
 
+        // Optional helper: split an investment amount according to today's signals
+        // (same long/short allocation as the main page: signal / sum of |signals|).
+        let todaySignals = null;
+        let todaySignalsDate = '';
+
+        async function loadSignals() {
+            try {
+                const response = await fetch('../signals.json', { cache: 'no-store' });
+                if (!response.ok) return;
+                const data = await response.json();
+                todaySignals = data.signals || null;
+                todaySignalsDate = data.date || '';
+                renderInvestmentSplit();
+            } catch (err) { /* helper stays hidden without signals */ }
+        }
+
+        function renderInvestmentSplit() {
+            const container = document.getElementById('pmInvestResult');
+            const dateEl = document.getElementById('pmInvestDate');
+            container.innerHTML = '';
+            dateEl.hidden = true;
+            const amount = parseFloat(document.getElementById('pmInvest').value);
+            if (!todaySignals || !(amount > 0)) return;
+
+            const totalAbs = COMMODITIES.reduce(
+                (sum, c) => sum + Math.abs(todaySignals[c] || 0), 0
+            );
+            if (totalAbs === 0) {
+                const row = document.createElement('div');
+                row.className = 'pm-invest-row';
+                row.textContent = I18n.t('pmInvestNoSignals');
+                container.appendChild(row);
+                return;
+            }
+
+            const fmt = new Intl.NumberFormat(
+                I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US',
+                { maximumFractionDigits: 0 }
+            );
+            let totalLong = 0;
+            let totalShort = 0;
+            COMMODITIES.forEach((commodity) => {
+                const signal = todaySignals[commodity] || 0;
+                if (signal === 0) return;
+                const share = Math.abs(signal) / totalAbs;
+                const sek = amount * share;
+                if (signal > 0) totalLong += sek; else totalShort += sek;
+
+                const row = document.createElement('div');
+                row.className = 'pm-invest-row';
+
+                const name = document.createElement('span');
+                name.className = 'pm-pos-name';
+                name.textContent = I18n.commodityLabel(commodity);
+
+                const dir = document.createElement('span');
+                dir.className = signal > 0 ? 'dir-long' : 'dir-short';
+                dir.textContent = I18n.t(signal > 0 ? 'pmPosLong' : 'pmPosShort');
+
+                const value = document.createElement('span');
+                value.className = 'pm-invest-amount-cell';
+                value.textContent = fmt.format(sek) + ' SEK';
+
+                row.appendChild(name);
+                row.appendChild(dir);
+                row.appendChild(value);
+                container.appendChild(row);
+            });
+
+            const totals = document.createElement('div');
+            totals.className = 'pm-invest-row pm-invest-total';
+            totals.textContent = I18n.t('pmInvestTotals', {
+                long: fmt.format(totalLong),
+                short: fmt.format(totalShort),
+            });
+            container.appendChild(totals);
+
+            if (todaySignalsDate) {
+                dateEl.textContent = I18n.t('pmInvestDate', { date: todaySignalsDate });
+                dateEl.hidden = false;
+            }
+        }
+
+        document.getElementById('pmInvest').addEventListener('input', renderInvestmentSplit);
+
         buildPositionRows();
+        loadSignals();
 
         I18n.init();
         refreshDynamicLabels();
         I18n.onLangChange(refreshDynamicLabels);
+        I18n.onLangChange(renderInvestmentSplit);
 
         // Default mail language follows the UI language on first load.
         const uiLang = I18n.getLang();
