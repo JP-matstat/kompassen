@@ -87,7 +87,7 @@ const TRANSLATIONS = {
         totalPredictionsHint: 'Trading days per year: ~252',
         liveAccuracyHint: 'Direction accuracy on active signal days since 2026-06-25. Flat predictions (no trend) are excluded because we do not trade on neutral signals. Since 2000, 51.2% of days have had an upward price movement, so guessing up every day would achieve that baseline accuracy. Backtesting achieved 55-56% accuracy.',
         livePredictionsHint: 'Total predictions since 2026-06-24.',
-        liveDaysSinceLive: 'Days since Live',
+        liveDaysSinceLive: 'Trading days since live',
         liveDaysSinceLiveHint: 'Number of days with forecast and measured outcome after market close.',
         testAccuracy: 'Test Accuracy',
         testPredictions: 'Test Predictions',
