@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portföljövervakning — Kompassen</title>
-    <meta name="robots" content="noindex">
+    <meta name="description" id="pmMetaDesc" content="Registrera din portfölj och få ett mejl när en råvarusignal ändras och en position behöver stängas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kompassen.dev/portfolio-management/">
+    <link rel="canonical" href="https://kompassen.dev/portfolio-management/">
+    <meta property="og:title" content="Portföljövervakning — Kompassen">
+    <meta property="og:description" content="Registrera din portfölj och få ett mejl när en råvarusignal ändras och en position behöver stängas.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="../styles.css?v=20">
     <style>
@@ -107,6 +112,58 @@
         .pm-pos-name {
             font-weight: 600;
             font-size: 0.92rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .pm-signal-dot {
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+            flex-shrink: 0;
+            background: var(--neutral-color);
+        }
+
+        .pm-signal-dot.sig-long { background: var(--success-color); }
+        .pm-signal-dot.sig-short { background: var(--danger-color); }
+
+        .pm-fill-btn {
+            display: none;
+            margin-bottom: 0.75rem;
+            padding: 0.45rem 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 0.5rem;
+            background: var(--primary-light);
+            color: var(--primary-color);
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .pm-fill-btn:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .pm-faq h2 {
+            font-size: 1.15rem;
+        }
+
+        .pm-faq dt {
+            font-weight: 600;
+            font-size: 0.92rem;
+            margin-top: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .pm-faq dd {
+            margin: 0.25rem 0 0;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: var(--text-secondary);
         }
 
         .pm-seg {
@@ -303,6 +360,7 @@
                 <div class="pm-field">
                     <span class="pm-label" data-i18n="pmPositionsLabel">Dina nuvarande positioner</span>
                     <p class="pm-pos-hint" data-i18n="pmPositionsHint"></p>
+                    <button type="button" class="pm-fill-btn" id="pmFillBtn" data-i18n="pmFillFromSignals">Fyll i enligt dagens signaler</button>
                     <div id="pmPositions"></div>
                 </div>
 
@@ -319,10 +377,22 @@
             <div class="pm-status" id="pmStatus" role="status"></div>
         </section>
 
+        <section class="card pm-faq">
+            <h2 data-i18n="pmFaqTitle">Vanliga frågor</h2>
+            <dl>
+                <dt data-i18n="pmFaqQ1"></dt>
+                <dd data-i18n="pmFaqA1"></dd>
+                <dt data-i18n="pmFaqQ2"></dt>
+                <dd data-i18n="pmFaqA2"></dd>
+                <dt data-i18n="pmFaqQ3"></dt>
+                <dd data-i18n="pmFaqA3"></dd>
+            </dl>
+        </section>
+
         <a class="pm-back" href="/" data-i18n="pmBack">Tillbaka till Kompassen</a>
     </div>
 
-    <script src="../i18n.js?v=9"></script>
+    <script src="../i18n.js?v=10"></script>
     <script>
         (function () {
             if (localStorage.getItem('theme') !== 'light') {
@@ -357,7 +427,16 @@
 
                 const name = document.createElement('span');
                 name.className = 'pm-pos-name';
-                name.dataset.commodity = commodity;
+
+                const dot = document.createElement('span');
+                dot.className = 'pm-signal-dot';
+                dot.dataset.signalDot = commodity;
+
+                const text = document.createElement('span');
+                text.dataset.commodity = commodity;
+
+                name.appendChild(dot);
+                name.appendChild(text);
                 row.appendChild(name);
 
                 const seg = document.createElement('div');
@@ -382,12 +461,45 @@
 
         function refreshDynamicLabels() {
             document.title = I18n.t('pmPageTitle');
+            document.getElementById('pmMetaDesc').content = I18n.t('pmMetaDesc');
             document.querySelectorAll('[data-commodity]').forEach((el) => {
                 el.textContent = I18n.commodityLabel(el.dataset.commodity);
             });
             const optionKeys = { long: 'pmPosLong', short: 'pmPosShort', none: 'pmPosNone' };
             document.querySelectorAll('[data-pos-option]').forEach((el) => {
                 el.textContent = I18n.t(optionKeys[el.dataset.posOption]);
+            });
+            refreshSignalDots();
+        }
+
+        function signalDirection(commodity) {
+            const signal = todaySignals ? (todaySignals[commodity] || 0) : 0;
+            if (signal > 0) return 'long';
+            if (signal < 0) return 'short';
+            return 'none';
+        }
+
+        function refreshSignalDots() {
+            if (!todaySignals) return;
+            document.querySelectorAll('[data-signal-dot]').forEach((el) => {
+                const commodity = el.dataset.signalDot;
+                const direction = signalDirection(commodity);
+                el.className = 'pm-signal-dot'
+                    + (direction === 'long' ? ' sig-long' : direction === 'short' ? ' sig-short' : '');
+                const signal = todaySignals[commodity] || 0;
+                el.title = I18n.t('pmSignalToday') + ' '
+                    + I18n.t(direction === 'long' ? 'pmPosLong' : direction === 'short' ? 'pmPosShort' : 'pmPosNone')
+                    + ' (' + (signal >= 0 ? '+' : '') + signal.toFixed(2) + ')';
+            });
+        }
+
+        function fillFromSignals() {
+            if (!todaySignals) return;
+            COMMODITIES.forEach((commodity) => {
+                const input = form.querySelector(
+                    'input[name="pos:' + commodity + '"][value="' + signalDirection(commodity) + '"]'
+                );
+                if (input) input.checked = true;
             });
         }
 
@@ -413,10 +525,19 @@
             statusBox.textContent = '';
         }
 
+        const pageLoadedAt = Date.now();
+
         async function submitSubscribe() {
             const email = document.getElementById('pmEmail').value.trim();
             if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
                 showStatus('error', 'pmErrorEmail');
+                return;
+            }
+            // Bot check: humans need more than 3 s to fill in the form.
+            // Pretend success like the honeypot does.
+            if (Date.now() - pageLoadedAt < 3000) {
+                showStatus('success', 'pmSuccess');
+                form.reset();
                 return;
             }
             const payload = {
@@ -463,6 +584,10 @@
                 todaySignals = data.signals || null;
                 todaySignalsDate = data.date || '';
                 renderInvestmentSplit();
+                refreshSignalDots();
+                if (todaySignals) {
+                    document.getElementById('pmFillBtn').style.display = 'inline-block';
+                }
             } catch (err) { /* helper stays hidden without signals */ }
         }
 
@@ -534,6 +659,7 @@
         }
 
         document.getElementById('pmInvest').addEventListener('input', renderInvestmentSplit);
+        document.getElementById('pmFillBtn').addEventListener('click', fillFromSignals);
 
         buildPositionRows();
         loadSignals();
