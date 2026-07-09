@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-08",
-  "timestamp": "2026-07-08T15:40:09Z",
+  "date": "2026-07-09",
+  "timestamp": "2026-07-09T15:40:19Z",
   "commodities": [
     {
       "key": "oil_brent",
@@ -14,14 +14,14 @@
       "std_hold_sym": 80.2,
       "semi_vol": {
         "cum_ret": 3.149,
-        "ann_ret": 0.3042,
-        "sharpe": 1.0379,
+        "ann_ret": 0.304,
+        "sharpe": 1.0375,
         "max_dd": -0.2716
       },
       "symmetric_vol": {
         "cum_ret": 3.1117,
-        "ann_ret": 0.302,
-        "sharpe": 1.085,
+        "ann_ret": 0.3018,
+        "sharpe": 1.0846,
         "max_dd": -0.2304
       }
     },
@@ -37,14 +37,14 @@
       "std_hold_sym": 293.9,
       "semi_vol": {
         "cum_ret": 2.2272,
-        "ann_ret": 0.2445,
-        "sharpe": 1.6071,
+        "ann_ret": 0.2443,
+        "sharpe": 1.6065,
         "max_dd": -0.1339
       },
       "symmetric_vol": {
         "cum_ret": 2.1571,
-        "ann_ret": 0.2394,
-        "sharpe": 1.7148,
+        "ann_ret": 0.2392,
+        "sharpe": 1.7141,
         "max_dd": -0.1022
       }
     },
@@ -60,14 +60,14 @@
       "std_hold_sym": 135.1,
       "semi_vol": {
         "cum_ret": 4.4967,
-        "ann_ret": 0.3745,
-        "sharpe": 1.2859,
+        "ann_ret": 0.3742,
+        "sharpe": 1.2854,
         "max_dd": -0.2151
       },
       "symmetric_vol": {
         "cum_ret": 4.1178,
-        "ann_ret": 0.3563,
-        "sharpe": 1.3785,
+        "ann_ret": 0.356,
+        "sharpe": 1.378,
         "max_dd": -0.1612
       }
     },
@@ -82,15 +82,15 @@
       "avg_hold_sym": 63.8,
       "std_hold_sym": 64.6,
       "semi_vol": {
-        "cum_ret": 1.5847,
-        "ann_ret": 0.1939,
-        "sharpe": 0.9455,
+        "cum_ret": 1.6684,
+        "ann_ret": 0.2009,
+        "sharpe": 0.9717,
         "max_dd": -0.1656
       },
       "symmetric_vol": {
-        "cum_ret": 1.4999,
-        "ann_ret": 0.1865,
-        "sharpe": 1.0049,
+        "cum_ret": 1.5692,
+        "ann_ret": 0.1925,
+        "sharpe": 1.0301,
         "max_dd": -0.1565
       }
     },
@@ -98,22 +98,22 @@
       "key": "aluminium",
       "label": "Aluminium",
       "in_market_pct": 0,
-      "trades": 19,
-      "avg_hold": 152.3,
-      "std_hold": 204.2,
-      "trades_sym": 13,
-      "avg_hold_sym": 107.2,
-      "std_hold_sym": 93.5,
+      "trades": 20,
+      "avg_hold": 144.8,
+      "std_hold": 201.7,
+      "trades_sym": 14,
+      "avg_hold_sym": 99.8,
+      "std_hold_sym": 94.0,
       "semi_vol": {
-        "cum_ret": 3.1721,
-        "ann_ret": 0.3056,
-        "sharpe": 1.4426,
+        "cum_ret": 3.2002,
+        "ann_ret": 0.3069,
+        "sharpe": 1.4483,
         "max_dd": -0.2155
       },
       "symmetric_vol": {
-        "cum_ret": 2.0412,
-        "ann_ret": 0.2307,
-        "sharpe": 1.4576,
+        "cum_ret": 2.0572,
+        "ann_ret": 0.2318,
+        "sharpe": 1.4636,
         "max_dd": -0.1543
       }
     },
@@ -128,15 +128,15 @@
       "avg_hold_sym": 103.5,
       "std_hold_sym": 168.5,
       "semi_vol": {
-        "cum_ret": 16.7656,
-        "ann_ret": 0.711,
-        "sharpe": 1.9078,
+        "cum_ret": 17.712,
+        "ann_ret": 0.727,
+        "sharpe": 1.9345,
         "max_dd": -0.2556
       },
       "symmetric_vol": {
-        "cum_ret": 10.199,
-        "ann_ret": 0.5698,
-        "sharpe": 2.0547,
+        "cum_ret": 10.454,
+        "ann_ret": 0.5759,
+        "sharpe": 2.0706,
         "max_dd": -0.1807
       }
     },
@@ -148,18 +148,18 @@
       "avg_hold": 111.5,
       "std_hold": 150.0,
       "trades_sym": 8,
-      "avg_hold_sym": 170.6,
-      "std_hold_sym": 121.6,
+      "avg_hold_sym": 170.8,
+      "std_hold_sym": 121.5,
       "semi_vol": {
-        "cum_ret": 2.776,
-        "ann_ret": 0.2815,
-        "sharpe": 1.184,
+        "cum_ret": 2.7098,
+        "ann_ret": 0.277,
+        "sharpe": 1.1688,
         "max_dd": -0.2041
       },
       "symmetric_vol": {
-        "cum_ret": 2.3031,
-        "ann_ret": 0.2499,
-        "sharpe": 1.1822,
+        "cum_ret": 2.2536,
+        "ann_ret": 0.2461,
+        "sharpe": 1.1675,
         "max_dd": -0.1891
       }
     },
@@ -175,14 +175,14 @@
       "std_hold_sym": 148.9,
       "semi_vol": {
         "cum_ret": 13.0561,
-        "ann_ret": 0.6378,
-        "sharpe": 1.7285,
+        "ann_ret": 0.6372,
+        "sharpe": 1.7279,
         "max_dd": -0.2215
       },
       "symmetric_vol": {
         "cum_ret": 10.9079,
-        "ann_ret": 0.5879,
-        "sharpe": 1.7791,
+        "ann_ret": 0.5874,
+        "sharpe": 1.7785,
         "max_dd": -0.2097
       }
     },
@@ -198,14 +198,14 @@
       "std_hold_sym": 94.7,
       "semi_vol": {
         "cum_ret": 22.1924,
-        "ann_ret": 0.7983,
-        "sharpe": 1.2088,
+        "ann_ret": 0.7975,
+        "sharpe": 1.2083,
         "max_dd": -0.5057
       },
       "symmetric_vol": {
         "cum_ret": 14.7657,
-        "ann_ret": 0.6733,
-        "sharpe": 1.3198,
+        "ann_ret": 0.6727,
+        "sharpe": 1.3193,
         "max_dd": -0.3154
       }
     },
@@ -221,14 +221,14 @@
       "std_hold_sym": 128.4,
       "semi_vol": {
         "cum_ret": 2.2352,
-        "ann_ret": 0.245,
-        "sharpe": 1.035,
+        "ann_ret": 0.2448,
+        "sharpe": 1.0346,
         "max_dd": -0.1823
       },
       "symmetric_vol": {
         "cum_ret": 2.1374,
-        "ann_ret": 0.2379,
-        "sharpe": 1.0204,
+        "ann_ret": 0.2377,
+        "sharpe": 1.0201,
         "max_dd": -0.1807
       }
     }
