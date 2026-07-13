@@ -852,12 +852,12 @@ async function loadHistoricalData() {
         }
         historicalData = data.entries.map(e => ({
             date: e.date,
-            predictions: e.predictions,
+            predictions: e.predictions_high_risk,
             actuals: e.actuals,
         }));
         historicalDataLowRisk = data.entries.map(e => ({
             date: e.date,
-            predictions: e.predictions_low_risk || e.predictions,
+            predictions: e.predictions_low_risk,
             actuals: e.actuals,
         }));
     } catch (e) {
