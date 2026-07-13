@@ -14,6 +14,10 @@ function tCommodity(name) {
     return window.I18n ? window.I18n.commodityLabel(name) : name;
 }
 
+function tAbbr(name) {
+    return window.I18n ? window.I18n.commodityAbbr(name) : name.slice(0, 2).toUpperCase();
+}
+
 function tPos(pos) {
     return window.I18n ? window.I18n.positionLabel(pos) : pos;
 }
@@ -519,20 +523,6 @@ function calculatePortfolio(signalsToUse = signals) {
     };
 }
 
-// Commodity abbreviation map for signal dots
-const COMMODITY_ABBR = {
-    'Gold': 'GC',
-    'Silver': 'SI',
-    'Copper': 'HG',
-    'Sugar': 'SB',
-    'Oil Brent': 'BZ',
-    'Natural Gas': 'NG',
-    'Cotton': 'CT',
-    'Coffee': 'KC',
-    'Cocoa': 'CC',
-    'Aluminium': 'ALI'
-};
-
 // Render signal strength dots
 function getActiveSignals() {
     return currentRiskModel === 'high' ? signals : signalsLowRisk;
@@ -603,7 +593,7 @@ function renderSignalDots() {
             bgColor = '#6b7280';
         }
         circle.style.background = bgColor;
-        circle.textContent = COMMODITY_ABBR[commodity] || commodity.slice(0, 2).toUpperCase();
+        circle.textContent = tAbbr(commodity);
 
         const label = document.createElement('div');
         label.className = 'signal-dot-label';

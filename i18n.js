@@ -288,7 +288,7 @@ const TRANSLATIONS = {
         cv_extra_2: 'I have a driver\'s license and a car.',
         personalModelHeading: 'About the model',
         personalModelDesc: 'This model uses machine learning and statistical analysis to generate trading signals for ten commodities. It analyzes historical market data to identify trends and make daily predictions about price movements. The model evaluates multiple data sources and combines them into a single signal for each commodity.',
-        personalCvLink: 'More about the man behind the model.',
+        personalCvLink: 'The man behind the model.',
         personalCta: 'Do you want to run the model as a trading robot? <a href="mailto:jpmatstat@gmail.com">Then send me an email!</a>',
         cv_nav_home: 'HOME',
         cv_nav_work: 'WORK',
@@ -399,7 +399,7 @@ const TRANSLATIONS = {
         cv_extra_2: 'Jag har körkort och bil.',
         personalModelHeading: 'Om modellen',
         personalModelDesc: 'Modellen använder maskininlärning och statistisk analys för att generera handelssignaler för tio råvaror. Den analyserar historisk marknadsdata för att identifiera trender och göra dagliga prognoser om prisrörelser. Modellen utvärderar flera datakällor och kombinerar dem till en enda signal per råvara.',
-        personalCvLink: 'Mer om mannen bakom modellen.',
+        personalCvLink: 'Mannen bakom modellen.',
         personalCta: 'Vill du köra modellen som en tradingrobot? <a href="mailto:jpmatstat@gmail.com">Släng då iväg ett mejl!</a>',
         cv_nav_home: 'HEM',
         cv_nav_work: 'ARBETE',
@@ -614,6 +614,33 @@ const COMMODITY_LABELS = {
     },
 };
 
+const COMMODITY_ABBR = {
+    en: {
+        Gold: 'GD',
+        Silver: 'SV',
+        Copper: 'CP',
+        Sugar: 'SG',
+        'Oil Brent': 'OI',
+        'Natural Gas': 'NG',
+        Cotton: 'CT',
+        Coffee: 'CF',
+        Cocoa: 'CO',
+        Aluminium: 'AL',
+    },
+    sv: {
+        Gold: 'GD',
+        Silver: 'SV',
+        Copper: 'KP',
+        Sugar: 'SK',
+        'Oil Brent': 'OB',
+        'Natural Gas': 'NG',
+        Cotton: 'BM',
+        Coffee: 'KF',
+        Cocoa: 'KK',
+        Aluminium: 'AL',
+    },
+};
+
 let currentLang = 'sv';
 const langChangeListeners = [];
 
@@ -636,6 +663,11 @@ function t(key, vars = {}) {
 function commodityLabel(name) {
     const map = COMMODITY_LABELS[currentLang] || COMMODITY_LABELS.en;
     return map[name] || name;
+}
+
+function commodityAbbr(name) {
+    const map = COMMODITY_ABBR[currentLang] || COMMODITY_ABBR.en;
+    return map[name] || name.slice(0, 2).toUpperCase();
 }
 
 function positionLabel(pos) {
@@ -692,6 +724,7 @@ function initI18n() {
 window.I18n = {
     t,
     commodityLabel,
+    commodityAbbr,
     positionLabel,
     apply: applyTranslations,
     setLang,
