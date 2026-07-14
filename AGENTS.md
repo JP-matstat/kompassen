@@ -17,4 +17,3 @@
 
 - Bump the `?v=` cache-busting query parameters in `index.html` when changing `styles.css`, `app.js`, or `i18n.js`.
 - All user-visible text lives in `i18n.js` (English + Swedish); keep both languages in sync.
-- A local preview copy is kept in `/home/persson/trading/TrendPlus/portfolio_sheet/` (and `/home/persson/trading/TrendPlus/cv/`); sync changed files there after editing.
