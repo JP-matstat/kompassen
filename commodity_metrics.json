@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-13",
-  "timestamp": "2026-07-13T15:40:25Z",
+  "date": "2026-07-14",
+  "timestamp": "2026-07-14T15:40:31Z",
   "commodities": [
     {
       "key": "oil_brent",
@@ -14,14 +14,14 @@
       "std_hold_sym": 80.2,
       "semi_vol": {
         "cum_ret": 3.149,
-        "ann_ret": 0.3035,
-        "sharpe": 1.0368,
+        "ann_ret": 0.3032,
+        "sharpe": 1.0364,
         "max_dd": -0.2716
       },
       "symmetric_vol": {
         "cum_ret": 3.1117,
-        "ann_ret": 0.3013,
-        "sharpe": 1.0838,
+        "ann_ret": 0.301,
+        "sharpe": 1.0834,
         "max_dd": -0.2304
       }
     },
@@ -37,14 +37,14 @@
       "std_hold_sym": 293.9,
       "semi_vol": {
         "cum_ret": 2.2272,
-        "ann_ret": 0.2439,
-        "sharpe": 1.6053,
+        "ann_ret": 0.2437,
+        "sharpe": 1.6047,
         "max_dd": -0.1339
       },
       "symmetric_vol": {
         "cum_ret": 2.1571,
-        "ann_ret": 0.2388,
-        "sharpe": 1.7128,
+        "ann_ret": 0.2386,
+        "sharpe": 1.7122,
         "max_dd": -0.1022
       }
     },
@@ -60,14 +60,14 @@
       "std_hold_sym": 135.1,
       "semi_vol": {
         "cum_ret": 4.4967,
-        "ann_ret": 0.3736,
-        "sharpe": 1.2844,
+        "ann_ret": 0.3732,
+        "sharpe": 1.2839,
         "max_dd": -0.2151
       },
       "symmetric_vol": {
         "cum_ret": 4.1178,
-        "ann_ret": 0.3554,
-        "sharpe": 1.377,
+        "ann_ret": 0.3551,
+        "sharpe": 1.3765,
         "max_dd": -0.1612
       }
     },
@@ -79,18 +79,18 @@
       "avg_hold": 61.9,
       "std_hold": 107.5,
       "trades_sym": 19,
-      "avg_hold_sym": 63.9,
-      "std_hold_sym": 64.6,
+      "avg_hold_sym": 64.1,
+      "std_hold_sym": 64.7,
       "semi_vol": {
-        "cum_ret": 1.6924,
-        "ann_ret": 0.2026,
-        "sharpe": 0.9788,
+        "cum_ret": 1.7318,
+        "ann_ret": 0.2057,
+        "sharpe": 0.9909,
         "max_dd": -0.1656
       },
       "symmetric_vol": {
-        "cum_ret": 1.5889,
-        "ann_ret": 0.1938,
-        "sharpe": 1.0368,
+        "cum_ret": 1.6213,
+        "ann_ret": 0.1964,
+        "sharpe": 1.0484,
         "max_dd": -0.1565
       }
     },
@@ -99,44 +99,44 @@
       "label": "Aluminium",
       "in_market_pct": 0,
       "trades": 20,
-      "avg_hold": 144.8,
-      "std_hold": 201.7,
+      "avg_hold": 145.1,
+      "std_hold": 201.5,
       "trades_sym": 14,
-      "avg_hold_sym": 99.7,
-      "std_hold_sym": 94.1,
+      "avg_hold_sym": 100.1,
+      "std_hold_sym": 93.7,
       "semi_vol": {
-        "cum_ret": 3.1491,
-        "ann_ret": 0.3035,
-        "sharpe": 1.4356,
-        "max_dd": -0.2201
+        "cum_ret": 3.1969,
+        "ann_ret": 0.306,
+        "sharpe": 1.4458,
+        "max_dd": -0.2155
       },
       "symmetric_vol": {
-        "cum_ret": 2.028,
-        "ann_ret": 0.2292,
-        "sharpe": 1.4505,
-        "max_dd": -0.1581
+        "cum_ret": 2.0555,
+        "ann_ret": 0.2311,
+        "sharpe": 1.4611,
+        "max_dd": -0.1543
       }
     },
     {
       "key": "cocoa",
       "label": "Cocoa",
       "in_market_pct": 0,
-      "trades": 77,
-      "avg_hold": 80.1,
-      "std_hold": 118.0,
-      "trades_sym": 13,
-      "avg_hold_sym": 103.7,
-      "std_hold_sym": 168.4,
+      "trades": 76,
+      "avg_hold": 81.1,
+      "std_hold": 118.5,
+      "trades_sym": 12,
+      "avg_hold_sym": 111.5,
+      "std_hold_sym": 173.0,
       "semi_vol": {
-        "cum_ret": 16.1865,
-        "ann_ret": 0.6985,
-        "sharpe": 1.8752,
+        "cum_ret": 13.7445,
+        "ann_ret": 0.6501,
+        "sharpe": 1.818,
         "max_dd": -0.2556
       },
       "symmetric_vol": {
-        "cum_ret": 10.0512,
-        "ann_ret": 0.5644,
-        "sharpe": 2.0379,
+        "cum_ret": 9.309,
+        "ann_ret": 0.5437,
+        "sharpe": 1.9949,
         "max_dd": -0.1807
       }
     },
@@ -145,21 +145,21 @@
       "label": "Cotton",
       "in_market_pct": 0,
       "trades": 59,
-      "avg_hold": 111.5,
+      "avg_hold": 111.6,
       "std_hold": 150.0,
       "trades_sym": 8,
-      "avg_hold_sym": 171.0,
-      "std_hold_sym": 121.5,
+      "avg_hold_sym": 171.4,
+      "std_hold_sym": 121.3,
       "semi_vol": {
-        "cum_ret": 2.8645,
-        "ann_ret": 0.2863,
-        "sharpe": 1.1987,
+        "cum_ret": 2.7774,
+        "ann_ret": 0.2806,
+        "sharpe": 1.1791,
         "max_dd": -0.2041
       },
       "symmetric_vol": {
-        "cum_ret": 2.3695,
-        "ann_ret": 0.2539,
-        "sharpe": 1.1963,
+        "cum_ret": 2.3058,
+        "ann_ret": 0.2492,
+        "sharpe": 1.1779,
         "max_dd": -0.1891
       }
     },
@@ -167,22 +167,22 @@
       "key": "coffee",
       "label": "Coffee",
       "in_market_pct": 0,
-      "trades": 80,
-      "avg_hold": 74.2,
-      "std_hold": 94.3,
-      "trades_sym": 10,
-      "avg_hold_sym": 140.3,
-      "std_hold_sym": 148.9,
+      "trades": 81,
+      "avg_hold": 73.4,
+      "std_hold": 94.0,
+      "trades_sym": 11,
+      "avg_hold_sym": 128.7,
+      "std_hold_sym": 146.6,
       "semi_vol": {
-        "cum_ret": 13.0561,
-        "ann_ret": 0.636,
-        "sharpe": 1.7266,
+        "cum_ret": 14.0417,
+        "ann_ret": 0.6562,
+        "sharpe": 1.7354,
         "max_dd": -0.2215
       },
       "symmetric_vol": {
-        "cum_ret": 10.9079,
-        "ann_ret": 0.5863,
-        "sharpe": 1.7771,
+        "cum_ret": 11.5234,
+        "ann_ret": 0.6007,
+        "sharpe": 1.7813,
         "max_dd": -0.2097
       }
     },
@@ -194,18 +194,18 @@
       "avg_hold": 94.8,
       "std_hold": 99.7,
       "trades_sym": 15,
-      "avg_hold_sym": 99.3,
-      "std_hold_sym": 94.5,
+      "avg_hold_sym": 99.5,
+      "std_hold_sym": 94.3,
       "semi_vol": {
-        "cum_ret": 24.6425,
-        "ann_ret": 0.8299,
-        "sharpe": 1.2343,
+        "cum_ret": 24.5448,
+        "ann_ret": 0.8278,
+        "sharpe": 1.2327,
         "max_dd": -0.5057
       },
       "symmetric_vol": {
-        "cum_ret": 16.4312,
-        "ann_ret": 0.7029,
-        "sharpe": 1.3556,
+        "cum_ret": 16.3648,
+        "ann_ret": 0.7011,
+        "sharpe": 1.3535,
         "max_dd": -0.3154
       }
     },
@@ -214,21 +214,21 @@
       "label": "Sugar",
       "in_market_pct": 0,
       "trades": 74,
-      "avg_hold": 94.0,
+      "avg_hold": 93.9,
       "std_hold": 138.2,
       "trades_sym": 16,
-      "avg_hold_sym": 100.6,
+      "avg_hold_sym": 100.0,
       "std_hold_sym": 128.4,
       "semi_vol": {
-        "cum_ret": 2.3131,
-        "ann_ret": 0.25,
-        "sharpe": 1.0507,
+        "cum_ret": 2.2352,
+        "ann_ret": 0.2442,
+        "sharpe": 1.0335,
         "max_dd": -0.1823
       },
       "symmetric_vol": {
-        "cum_ret": 2.213,
-        "ann_ret": 0.2428,
-        "sharpe": 1.0364,
+        "cum_ret": 2.1374,
+        "ann_ret": 0.2371,
+        "sharpe": 1.0189,
         "max_dd": -0.1807
       }
     }
