@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local design experiments (per AGENTS.md, never commit)
+index2.html
+styles2.css
+cv/index2.html
