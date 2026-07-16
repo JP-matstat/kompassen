@@ -1,7 +1,7 @@
 // Dark mode — apply immediately to prevent flash
 (function() {
     const stored = localStorage.getItem('theme');
-    if (stored === 'dark') {
+    if (stored !== 'light') {
         document.body.classList.add('dark');
     }
 })();
