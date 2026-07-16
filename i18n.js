@@ -254,7 +254,7 @@ const TRANSLATIONS = {
         cv_exp_4_meta: 'Linköping',
         cv_exp_4_desc: 'Linear algebra and geometry.',
         cv_exp_5_title: 'Biostatistician · AstraZeneca',
-        cv_exp_5_desc: 'Full-time position as a statistician. At Astra I wrote <i>R</i> programs to calculate the number of trial participants for new studies',
+        cv_exp_5_desc: 'Full-time position as a statistician. At Astra I wrote <i>R</i> programs to calculate the number of trial participants for new studies. Because of an accident in which I hurt my left eye, I couldn\'t work in front of a screen for longer sessions for over a year. Thus I went back to teaching when I moved to Linköping.',
         cv_exp_6_title: 'Teacher · Chalmers',
         cv_exp_6_meta: 'Gothenburg',
         cv_exp_6_desc: 'Exercise leader in statistics and discrete mathematics.',
