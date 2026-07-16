@@ -396,7 +396,7 @@
     <script src="../i18n.js?v=16"></script>
     <script>
         (function () {
-            if (localStorage.getItem('theme') !== 'light') {
+            if (localStorage.getItem('theme') === 'dark') {
                 document.body.classList.add('dark');
             }
             const themeBtn = document.getElementById('themeToggle');

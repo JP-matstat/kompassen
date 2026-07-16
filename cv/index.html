@@ -38,6 +38,17 @@ html[data-theme="light"] .cv-preview-root {
         var(--bg-page);
 }
 
+html[data-theme="light"] .cv-preview-root .hero {
+    background:
+        linear-gradient(120deg, rgb(244 246 250 / 0.92), rgb(244 246 250 / 0.55)),
+        url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80")
+        center / cover no-repeat;
+}
+
+html[data-theme="light"] .cv-preview-root .hero-overlay {
+    background: linear-gradient(90deg, rgb(244 246 250 / 0.9) 45%, transparent 100%);
+}
+
 .lang-switcher {
     position: fixed;
     top: 1rem;
@@ -719,7 +730,7 @@ html[data-theme="light"] .cv-preview-root .rail {
     <script>
     (function() {
         var stored = localStorage.getItem('theme');
-        document.documentElement.dataset.theme = stored !== 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = stored === 'dark' ? 'dark' : 'light';
     })();
     </script>
 </head>
