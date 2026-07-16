@@ -231,6 +231,7 @@ const TRANSLATIONS = {
         cv_lang_dutch: 'Dutch',
         cv_programming_heading: 'Programming',
         cv_misc_heading: 'Miscellaneous',
+        cv_back_link: '\u2190 Back to Kompassen',
         cv_hero_title: 'Discover my work in data & AI',
         cv_view_experience: 'VIEW EXPERIENCE',
 
@@ -344,6 +345,7 @@ const TRANSLATIONS = {
         cv_lang_dutch: 'Holländska',
         cv_programming_heading: 'Programmering',
         cv_misc_heading: 'Övrigt',
+        cv_back_link: '\u2190 Tillbaka till Kompassen',
         cv_hero_title: 'Upptäck mitt arbete inom data & AI',
 
         cv_services_heading: 'Vad jag gör',
