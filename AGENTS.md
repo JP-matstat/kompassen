@@ -16,4 +16,4 @@
 ## Conventions
 
 - Bump the `?v=` cache-busting query parameters in `index.html` when changing `styles.css`, `app.js`, or `i18n.js`.
-- All user-visible text lives in `i18n.js` (English + Swedish); keep both languages in sync.
+- All user-visible text lives in `i18n.js` (English + Swedish); when changing a string in one language, always update the corresponding string in the other language too.
