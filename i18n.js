@@ -58,7 +58,7 @@ const TRANSLATIONS = {
         noPositions: 'No positions',
         siteUpdatedBtn: 'When is the site updated?',
         siteUpdatedTitle: 'When is the site updated?',
-        siteUpdatedDesc: 'New signals for tomorrow\'s trading appear around 17.40-18.00.',
+        siteUpdatedDesc: 'Trading data for commodity futures is available a few minutes after 17:00 CET each trading day. Loading and processing currently takes around 2 hours, so new signals should appear no later than 20:00 CET. In the near future the signals will probably appear before 19:00.',
 
         thCommodity: 'Commodity',
         thSignal: 'Signal',
@@ -431,7 +431,7 @@ const TRANSLATIONS = {
         noPositions: 'Inga positioner',
         siteUpdatedBtn: 'När uppdateras hemsidan?',
         siteUpdatedTitle: 'När uppdateras hemsidan?',
-        siteUpdatedDesc: 'Nya signaler för morgondagens handel dyker upp runt 17.40-18.00.',
+        siteUpdatedDesc: 'Handelsdata för råvaruterminer finns tillgänglig några minuter efter 17:00 CET varje handelsdag. Inläsning och bearbetning tar för närvarande cirka 2 timmar, så nya signaler bör dyka upp senast 20:00 CET. Inom en snar framtid kommer signalerna förmodligen att visas före 19:00.',
 
         thCommodity: 'Råvara',
         thSignal: 'Signal',
