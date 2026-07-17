@@ -2535,6 +2535,36 @@ body.dark .strip-cell.strip-correct {
     }
 }
 
+/* How-to card collapses to its heading (all screen sizes) */
+.howto-card h2 {
+    margin-bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.howto-card h2::after {
+    content: '▾';
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: transform 0.2s;
+}
+
+.howto-card.howto-expanded h2::after {
+    transform: rotate(180deg);
+}
+
+.howto-card .howto-steps {
+    display: none;
+}
+
+.howto-card.howto-expanded .howto-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0.75rem;
+}
+
 /* ── Mobile refinements (≤768px only; desktop untouched) ── */
 .info-toggle-btn {
     display: none;
@@ -2640,35 +2670,6 @@ body.dark .strip-cell.strip-correct {
         display: inline-block;
     }
 
-    /* How-to card collapses to its heading */
-    .howto-card h2 {
-        margin-bottom: 0;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .howto-card h2::after {
-        content: '▾';
-        font-size: 0.9rem;
-        color: var(--text-secondary);
-        transition: transform 0.2s;
-    }
-
-    .howto-card.howto-expanded h2::after {
-        transform: rotate(180deg);
-    }
-
-    .howto-card .howto-steps {
-        display: none;
-    }
-
-    .howto-card.howto-expanded .howto-steps {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 0.75rem;
-    }
 }
 
 /* ── Touch / iOS improvements ── */

@@ -300,29 +300,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// On phones, long info paragraphs collapse behind a "show more" toggle and the
-// how-to card collapses to its heading. Desktop layout is unaffected (the
-// collapsed states only exist in the ≤768px media query).
+// On phones, long info paragraphs collapse behind a "show more" toggle.
+// The how-to card collapses to its heading on all screen sizes.
 function initMobileCollapsibles() {
-    if (!window.matchMedia('(max-width: 768px)').matches) return;
-
-    document.querySelectorAll('main p.info').forEach(p => {
-        if (p.dataset.collapsibleInit) return;
-        p.dataset.collapsibleInit = '1';
-        if ((p.textContent || '').length < 220) return;
-        p.classList.add('info-collapsed');
-        const toggle = document.createElement('button');
-        toggle.type = 'button';
-        toggle.className = 'info-toggle-btn';
-        toggle.setAttribute('data-i18n', 'showMore');
-        toggle.textContent = t('showMore');
-        toggle.addEventListener('click', () => {
-            const collapsed = p.classList.toggle('info-collapsed');
-            toggle.setAttribute('data-i18n', collapsed ? 'showMore' : 'showLess');
-            toggle.textContent = t(collapsed ? 'showMore' : 'showLess');
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        document.querySelectorAll('main p.info').forEach(p => {
+            if (p.dataset.collapsibleInit) return;
+            p.dataset.collapsibleInit = '1';
+            if ((p.textContent || '').length < 220) return;
+            p.classList.add('info-collapsed');
+            const toggle = document.createElement('button');
+            toggle.type = 'button';
+            toggle.className = 'info-toggle-btn';
+            toggle.setAttribute('data-i18n', 'showMore');
+            toggle.textContent = t('showMore');
+            toggle.addEventListener('click', () => {
+                const collapsed = p.classList.toggle('info-collapsed');
+                toggle.setAttribute('data-i18n', collapsed ? 'showMore' : 'showLess');
+                toggle.textContent = t(collapsed ? 'showMore' : 'showLess');
+            });
+            p.insertAdjacentElement('afterend', toggle);
         });
-        p.insertAdjacentElement('afterend', toggle);
-    });
+    }
 
     const howtoCard = document.querySelector('.howto-card');
     const howtoHeading = howtoCard && howtoCard.querySelector('h2');
