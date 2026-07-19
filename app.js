@@ -1692,7 +1692,7 @@ function displayRelatedStocks(commodities) {
     const categories = [
         { key: 'stocks',   title: t('stocksTitle'),   desc: t('stocksDesc'),   icon: '', cssClass: 'cat-stocks',   typeLabel: 'STK' },
         { key: 'etfs',     title: t('etfsTitle'),      desc: t('etfsDesc'),      icon: '', cssClass: 'cat-etfs',    typeLabel: 'ETF' },
-        { key: 'trackers', title: t('trackersTitle'),  desc: t('trackersDesc'),  help: t('trackersHelp'), icon: '', cssClass: 'cat-trackers', typeLabel: 'ETC' },
+        { key: 'trackers', title: t('trackersTitle'),  desc: t('trackersDesc'),  icon: '', cssClass: 'cat-trackers', typeLabel: 'ETC' },
     ];
 
     const globalTickerData = {};
@@ -1809,7 +1809,6 @@ function displayRelatedStocks(commodities) {
                     ${cat.icon ? `<span class="cat-sep-icon">${cat.icon}</span>` : ''}
                     <span class="cat-sep-title">${cat.title}</span>
                     <span class="cat-sep-count">${t('countCommodities', { n: rows.length })}</span>
-                    ${cat.help ? `<div class="cat-sep-help">${cat.help}</div>` : ''}
                 </div>
             </td>
         `;
