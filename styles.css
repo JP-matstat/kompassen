@@ -1285,6 +1285,7 @@ body.dark .strip-cell.strip-correct {
 
 .cat-sep-inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem;
     padding: 0.7rem 1rem;
@@ -1323,6 +1324,15 @@ body.dark .strip-cell.strip-correct {
     font-weight: 400;
     opacity: 0.6;
     margin-left: auto;
+}
+
+.cat-sep-help {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 1.4;
+    margin-top: 0.3rem;
+    width: 100%;
 }
 
 /* Data rows in unified table */
