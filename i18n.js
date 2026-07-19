@@ -217,6 +217,15 @@ const TRANSLATIONS = {
         pmFaqQ3: 'How do I unsubscribe?',
         pmFaqA3: 'Every email contains a one-click unsubscribe link. Unsubscribing deletes all your data permanently.',
 
+        experimentalSummary: 'Experimental Model',
+        experimentalWarning: 'The experimental model achieves the highest return in backtesting, but there is a significant risk that it has been overfitted and it is therefore not yet recommended.',
+        experimentalAccuracy: 'Experimental Accuracy',
+        experimentalPortfolioValue: 'Exp. Portfolio Value (Live)',
+        experimentalAnnualizedReturn: 'Est. Ann. Return (Exp.)',
+        experimentalDaysSinceLive: 'Exp. Days since Live',
+        experimentalTotalPredictions: 'Exp. Live Predictions',
+        experimentalModelLabel: 'Exp. model',
+
         cv_name: 'Johan Persson',
         cv_role: 'Data Scientist / AI Developer',
 
@@ -590,6 +599,15 @@ const TRANSLATIONS = {
         pmFaqA2: 'Vi antar att du följer rekommendationen, så din registrerade portfölj uppdateras automatiskt till det nya signalläget. Om du inte följer den, använd länken i mejlet för att ange de positioner du faktiskt kommer att ha.',
         pmFaqQ3: 'Hur avslutar jag prenumerationen?',
         pmFaqA3: 'Varje mejl innehåller en avregistreringslänk. När du avregistrerar dig raderas alla dina uppgifter permanent.',
+
+        experimentalSummary: 'Experimentell modell',
+        experimentalWarning: 'Den experimentella modellen ger högst avkastning i backtesting, men det finns en betydande risk för att den har överanpassats och den rekommenderas således inte än.',
+        experimentalAccuracy: 'Träffsäkerhet experimentell',
+        experimentalPortfolioValue: 'Exp. portföljvärde sedan live',
+        experimentalAnnualizedReturn: 'Est. årlig avkastning (exp.)',
+        experimentalDaysSinceLive: 'Exp. dagar sedan live',
+        experimentalTotalPredictions: 'Exp. prognoser sedan live',
+        experimentalModelLabel: 'Exp. modell',
     },
 };
 

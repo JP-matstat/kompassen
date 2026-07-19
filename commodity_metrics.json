@@ -1,28 +1,28 @@
 {
-  "date": "2026-07-18",
-  "timestamp": "2026-07-18T15:40:44Z",
+  "date": "2026-07-19",
+  "timestamp": "2026-07-19T12:58:36Z",
   "commodities": [
     {
       "key": "oil_brent",
       "label": "Oil Brent",
       "in_market_pct": 0,
-      "trades": 50,
-      "avg_hold": 88.2,
-      "std_hold": 106.4,
-      "trades_sym": 10,
-      "avg_hold_sym": 97.5,
-      "std_hold_sym": 83.1,
+      "trades": 61,
+      "avg_hold": 96.3,
+      "std_hold": 113.4,
+      "trades_sym": 18,
+      "avg_hold_sym": 80.1,
+      "std_hold_sym": 80.2,
       "semi_vol": {
-        "cum_ret": 3.0581,
-        "ann_ret": 0.2971,
-        "sharpe": 1.1281,
-        "max_dd": -0.2439
+        "cum_ret": 3.149,
+        "ann_ret": 0.3024,
+        "sharpe": 1.0352,
+        "max_dd": -0.2716
       },
       "symmetric_vol": {
-        "cum_ret": 3.1037,
-        "ann_ret": 0.2998,
-        "sharpe": 1.2021,
-        "max_dd": -0.2052
+        "cum_ret": 3.1117,
+        "ann_ret": 0.3003,
+        "sharpe": 1.0822,
+        "max_dd": -0.2304
       }
     },
     {

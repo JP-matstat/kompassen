@@ -88,6 +88,7 @@ let bestAnnualizedReturn = 0;
 // Pre-computed equity curves from Python pipeline
 let equityCurveData = null;
 let metricsDataGlobal = null; // cached portfolio_metrics.json for risk model switching
+let experimentalEquityCurveData = null;
 
 // Load signal history from localStorage
 function loadSignalHistory() {
@@ -1209,6 +1210,57 @@ function renderPerformanceStats() {
     container.appendChild(totalCard);
 
     drawPerformanceChart();
+    loadExperimentalData();
+}
+
+// Load experimental model data and render its stats
+async function loadExperimentalData() {
+    const container = document.getElementById('experimentalStats');
+    if (!container) return;
+
+    try {
+        const [eqResp, liveResp] = await Promise.all([
+            fetch('experimental_equity_curve.json?v=' + Date.now()),
+            fetch('experimental_live.json?v=' + Date.now()),
+        ]);
+
+        if (eqResp.ok) {
+            experimentalEquityCurveData = await eqResp.json();
+        }
+
+        if (!liveResp.ok) return;
+        const live = await liveResp.json();
+
+        container.innerHTML = '';
+
+        const accVal = live.live_total_predictions > 0 ? live.live_accuracy.toFixed(1) + '%' : '-';
+        const accClass = live.live_accuracy >= 50 ? 'success' : 'danger';
+        const accCard = createStatCard(t('experimentalAccuracy'), accVal, accClass, live.live_total_predictions > 0 ? live.live_accuracy : null);
+        container.appendChild(accCard);
+
+        const pvCard = createStatCard(t('experimentalPortfolioValue'), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null);
+        pvCard.id = 'expPortfolioValueCard';
+        container.appendChild(pvCard);
+
+        const annPct = live.live_annualized_return_pct;
+        const annStr = annPct != null ? `${annPct >= 0 ? '+' : ''}${annPct.toFixed(1)}%` : '—';
+        const annClass = annPct >= 0 ? 'success' : 'danger';
+        const annCard = createStatCard(t('experimentalAnnualizedReturn'), annStr, annClass, null);
+        container.appendChild(annCard);
+
+        const daysCard = createStatCard(t('experimentalDaysSinceLive'), String(live.live_days), '', live.live_days);
+        container.appendChild(daysCard);
+
+        const totalCard = createStatCard(t('experimentalTotalPredictions'), String(live.live_total_predictions), '', live.live_total_predictions);
+        container.appendChild(totalCard);
+
+        if (live.live_total_predictions > 0) {
+            drawPerformanceChart();
+        }
+    } catch (e) {
+        console.warn('Failed to load experimental model data:', e);
+        container.innerHTML = `<p class="no-stock">${t('modelNotAvailable')}</p>`;
+    }
 }
 
 // Create a stat card element with optional counter animation
@@ -1314,8 +1366,9 @@ function drawPerformanceChart() {
     const chartW = w - pad.left - pad.right;
     const chartH = h - pad.top - pad.bottom;
 
-    let minVal = Math.min(...highRisk, ...lowRisk);
-    let maxVal = Math.max(...highRisk, ...lowRisk);
+    const expValues = experimentalEquityCurveData?.values || [];
+    let minVal = Math.min(...highRisk, ...lowRisk, ...expValues);
+    let maxVal = Math.max(...highRisk, ...lowRisk, ...expValues);
     const range = maxVal - minVal || 1;
     const yPadding = range * 0.1;
     const yMin = minVal - yPadding;
@@ -1447,8 +1500,13 @@ function drawPerformanceChart() {
         ctx.restore();
     }
 
-    function drawCurve(data, color) {
-        const points = data.map((v, i) => ({ x: xScale(i), y: yScale(v) }));
+    function drawCurve(data, color, skipNull) {
+        const points = [];
+        for (let i = 0; i < data.length; i++) {
+            if (skipNull && data[i] == null) continue;
+            points.push({ x: xScale(i), y: yScale(data[i]) });
+        }
+        if (points.length < 2) return;
         ctx.beginPath();
         ctx.moveTo(points[0].x, points[0].y);
         for (let i = 1; i < points.length - 1; i++) {
@@ -1474,6 +1532,8 @@ function drawPerformanceChart() {
         ctx.fill();
     }
 
+    const EXP_COLOR = '#22c55e';
+    const isSv = window.I18n && I18n.getLang() === 'sv';
     const highAlpha = currentRiskModel === 'high' ? 1 : 0.5;
     const lowAlpha = currentRiskModel === 'low' ? 1 : 0.5;
     ctx.globalAlpha = highAlpha;
@@ -1482,7 +1542,23 @@ function drawPerformanceChart() {
     drawCurve(lowRisk, LOW_COLOR);
     ctx.globalAlpha = 1;
 
-    // Legend
+    // Experimental model curve (filter out nulls)
+    if (expValues.length > 0) {
+        const expNonNull = expValues.filter(v => v != null);
+        if (expNonNull.length > 0) {
+            ctx.globalAlpha = 0.85;
+            drawCurve(expValues, EXP_COLOR, true);
+            ctx.globalAlpha = 1;
+        }
+    }
+
+    const legendEntries = [];
+    legendEntries.push({ label: isSv ? 'Högriskmodell' : 'High risk', color: HIGH_COLOR, alpha: highAlpha });
+    legendEntries.push({ label: isSv ? 'Lågriskmodell' : 'Low risk', color: LOW_COLOR, alpha: lowAlpha });
+    if (expValues.some(v => v != null)) {
+        legendEntries.push({ label: isSv ? 'Exp. modell' : 'Exp. model', color: EXP_COLOR, alpha: 0.85 });
+    }
+
     const legendX = pad.left + 8;
     const legendY = pad.top + 8;
     ctx.font = '12px system-ui, sans-serif';
@@ -1490,25 +1566,19 @@ function drawPerformanceChart() {
     ctx.lineCap = 'round';
     ctx.lineWidth = 2.5;
 
-    ctx.globalAlpha = highAlpha;
-    ctx.strokeStyle = HIGH_COLOR;
-    ctx.beginPath();
-    ctx.moveTo(legendX, legendY + 6);
-    ctx.lineTo(legendX + 20, legendY + 6);
-    ctx.stroke();
-    const isSv = window.I18n && I18n.getLang() === 'sv';
-    ctx.fillStyle = textColor;
-    ctx.textAlign = 'left';
-    ctx.fillText(isSv ? 'Högriskmodell' : 'High risk', legendX + 24, legendY + 10);
-
-    ctx.globalAlpha = lowAlpha;
-    ctx.strokeStyle = LOW_COLOR;
-    ctx.beginPath();
-    ctx.moveTo(legendX, legendY + 22);
-    ctx.lineTo(legendX + 20, legendY + 22);
-    ctx.stroke();
-    ctx.globalAlpha = 1;
-    ctx.fillText(isSv ? 'Lågriskmodell' : 'Low risk', legendX + 24, legendY + 26);
+    legendEntries.forEach((entry, idx) => {
+        const ly = legendY + idx * 16;
+        ctx.globalAlpha = entry.alpha;
+        ctx.strokeStyle = entry.color;
+        ctx.beginPath();
+        ctx.moveTo(legendX, ly + 6);
+        ctx.lineTo(legendX + 20, ly + 6);
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = textColor;
+        ctx.textAlign = 'left';
+        ctx.fillText(entry.label, legendX + 24, ly + 10);
+    });
 
     ctx.fillStyle = textColor;
     ctx.font = '11px system-ui, sans-serif';
@@ -1517,7 +1587,7 @@ function drawPerformanceChart() {
     ctx.fillText(yLabel, pad.left + chartW / 2, h - 1);
 
     // Store chart state for hover
-    canvas._chartState = { dates, highRisk, lowRisk, xScale, yScale, pad, h, w, yearRetLabels };
+    canvas._chartState = { dates, highRisk, lowRisk, expValues, xScale, yScale, pad, h, w, yearRetLabels };
     setupPerformanceChartHover(canvas);
 }
 
@@ -1590,13 +1660,21 @@ function drawPerformanceChart() {
         const lrLabel = isSv ? 'Lågrisk' : 'Low';
         const hVal = state.highRisk[closest];
         const lVal = state.lowRisk[closest];
+        const expLabel = isSv ? 'Exp. modell' : 'Exp. model';
+        const eVal = state.expValues && state.expValues[closest];
+        let expHtml = '';
+        if (eVal != null) {
+            expHtml = '<div style="color:#22c55e">' + expLabel + ': ' + eVal.toFixed(2) + '</div>';
+        }
+        const maxDisplay = Math.max(...[hVal, lVal, eVal != null ? eVal : -Infinity].filter(v => v != null && isFinite(v)));
         tooltip.innerHTML =
             '<div>' + state.dates[closest] + '</div>'
             + '<div style="color:#dc2626">' + hrLabel + ': ' + hVal.toFixed(2) + '</div>'
-            + '<div style="color:#4682B4">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>';
+            + '<div style="color:#4682B4">' + lrLabel + ': ' + lVal.toFixed(2) + '</div>'
+            + expHtml;
         tooltip.style.display = 'block';
         tooltip.style.left = Math.min(xVal + 12, state.w - 130) + 'px';
-        tooltip.style.top = Math.max(0, state.yScale(Math.max(hVal, lVal)) - 8) + 'px';
+        tooltip.style.top = Math.max(0, state.yScale(maxDisplay) - 8) + 'px';
     }
 
     function onLeave() {
@@ -1986,10 +2064,11 @@ async function loadModelPerformance() {
     if (!container) return;
 
     try {
-        const [metricsResp, commResp, eqResp] = await Promise.all([
+        const [metricsResp, commResp, eqResp, expMetricsResp] = await Promise.all([
             fetch('portfolio_metrics.json?v=' + Date.now()),
             fetch('commodity_metrics.json?v=' + Date.now()),
             fetch('equity_curves.json?v=' + Date.now()),
+            fetch('experimental_metrics.json?v=' + Date.now()),
         ]);
 
         if (!metricsResp.ok) {
@@ -2006,6 +2085,7 @@ async function loadModelPerformance() {
         } else {
             equityCurveData = null;
         }
+        const expMetrics = expMetricsResp.ok ? await expMetricsResp.json() : null;
 
         const signalDate = new Date(metricsData.date);
         const today = new Date();
@@ -2022,6 +2102,7 @@ async function loadModelPerformance() {
         const isSv = window.I18n && I18n.getLang() === 'sv';
         const highRiskLabel = isSv ? 'Högriskmodell' : 'High risk model';
         const lowRiskLabel = isSv ? 'Lågriskmodell' : 'Low risk model';
+        const expLabel = t('experimentalModelLabel');
         const sharpeHint = isSv
             ? 'Sharpe-kvot: riskjusterad avkastning. Högre är bättre, >1 är bra, >2 är utmärkt'
             : 'Sharpe ratio: risk-adjusted return. Higher is better, >1 is good, >2 is excellent';
@@ -2030,35 +2111,27 @@ async function loadModelPerformance() {
 
         const m1 = metricsData.metrics;
         const m2 = metricsData.metrics_symmetric;
+        const me = expMetrics;
         if (m1 && m2) {
+            const e = (fn, key) => me ? fn(me[key]) : '—';
+            const ec = (key) => me ? riskClass(me[key]) : '';
             const rows = [
-                [t('metricCumRet'), fmtPct(m1.cumulative_return), fmtPct(m2.cumulative_return), riskClass(m1.cumulative_return), riskClass(m2.cumulative_return), t('metricCumRetHint')],
-                [t('metricAnnRet'), fmtPct(m1.annualized_return), fmtPct(m2.annualized_return), riskClass(m1.annualized_return), riskClass(m2.annualized_return), t('metricAnnRetHint')],
-                [t('metricTestPeriod'), (metricsData.window_days / 252).toFixed(2) + ' ' + t('years'), (metricsData.window_days / 252).toFixed(2) + ' ' + t('years'), '', ''],
-                [t('metricSharpe'), fmtNum(m1.sharpe_ratio), fmtNum(m2.sharpe_ratio), riskClass(m1.sharpe_ratio), riskClass(m2.sharpe_ratio), t('metricSharpeHint')],
+                [t('metricCumRet'), fmtPct(m1.cumulative_return), fmtPct(m2.cumulative_return), e(fmtPct, 'cumulative_return'), riskClass(m1.cumulative_return), riskClass(m2.cumulative_return), ec('cumulative_return'), t('metricCumRetHint')],
+                [t('metricAnnRet'), fmtPct(m1.annualized_return), fmtPct(m2.annualized_return), e(fmtPct, 'annualized_return'), riskClass(m1.annualized_return), riskClass(m2.annualized_return), ec('annualized_return'), t('metricAnnRetHint')],
+                [t('metricTestPeriod'), (metricsData.window_days / 252).toFixed(2) + ' ' + t('years'), (metricsData.window_days / 252).toFixed(2) + ' ' + t('years'), me ? (me.window_days / 252).toFixed(2) + ' ' + t('years') : '—', '', '', ''],
+                [t('metricSharpe'), fmtNum(m1.sharpe_ratio), fmtNum(m2.sharpe_ratio), e(fmtNum, 'sharpe_ratio'), riskClass(m1.sharpe_ratio), riskClass(m2.sharpe_ratio), ec('sharpe_ratio'), t('metricSharpeHint')],
                 [t('metricMaxDD'),
-                    fmtPct(m1.max_drawdown), fmtPct(m2.max_drawdown), riskClass(m1.max_drawdown), riskClass(m2.max_drawdown)],
-                [t('metricWinRate'), fmtPct(m1.win_rate), fmtPct(m2.win_rate), '', ''],
+                    fmtPct(m1.max_drawdown), fmtPct(m2.max_drawdown), e(fmtPct, 'max_drawdown'), riskClass(m1.max_drawdown), riskClass(m2.max_drawdown), ec('max_drawdown')],
+                [t('metricWinRate'), fmtPct(m1.win_rate), fmtPct(m2.win_rate), e(fmtPct, 'win_rate'), '', '', ''],
                 [t('metricProfitFactor'),
-                    fmtNum(m1.profit_factor), fmtNum(m2.profit_factor), riskClass(m1.profit_factor - 1), riskClass(m2.profit_factor - 1)],
-                [t('metricAvgTrades'),
-                    metricsData.avg_trades_per_year != null ? metricsData.avg_trades_per_year.toFixed(1) : '—',
-                    metricsData.avg_trades_per_year_sym != null ? metricsData.avg_trades_per_year_sym.toFixed(1) : '—',
-                    '', '', t('metricAvgTradesHint')],
-                [t('metricAvgHold'),
-                    metricsData.avg_hold_days != null ? metricsData.avg_hold_days.toFixed(1) : '—',
-                    metricsData.avg_hold_days_sym != null ? metricsData.avg_hold_days_sym.toFixed(1) : '—',
-                    '', '', t('metricAvgHoldHint')],
-                [t('metricStdHold'),
-                    metricsData.std_hold_days != null ? metricsData.std_hold_days.toFixed(1) : '—',
-                    metricsData.std_hold_days_sym != null ? metricsData.std_hold_days_sym.toFixed(1) : '—',
-                    '', ''],
+                    fmtNum(m1.profit_factor), fmtNum(m2.profit_factor), e(fmtNum, 'profit_factor'), riskClass(m1.profit_factor - 1), riskClass(m2.profit_factor - 1), me ? riskClass(me.profit_factor - 1) : ''],
             ];
             html += `<div class="model-perf-block">`;
             html += `<table class="model-perf-table" style="width:100%">`;
-            html += `<thead><tr><th style="text-align:left;width:55%">${t('metricColumn')}</th><th style="text-align:right;width:22.5%">${highRiskLabel}</th><th style="text-align:right;width:22.5%">${lowRiskLabel}</th></tr></thead><tbody>`;
+            html += `<thead><tr><th style="text-align:left;width:40%">${t('metricColumn')}</th><th style="text-align:right;width:20%">${highRiskLabel}</th><th style="text-align:right;width:20%">${lowRiskLabel}</th><th style="text-align:right;width:20%">${expLabel}</th></tr></thead><tbody>`;
             rows.forEach(r => {
-                html += `<tr><td${r[5] ? ` title="${r[5].replace(/"/g,'&quot;')}"` : ''}>${r[0]}</td><td class="${r[3]}" style="text-align:right">${r[1]}</td><td class="${r[4]}" style="text-align:right">${r[2]}</td></tr>`;
+                const hint = r[7] || r[6] || '';
+                html += `<tr><td${hint ? ` title="${hint.replace(/"/g,'&quot;')}"` : ''}>${r[0]}</td><td class="${r[4]}" style="text-align:right">${r[1]}</td><td class="${r[5]}" style="text-align:right">${r[2]}</td><td class="${r[6] || ''}" style="text-align:right">${r[3]}</td></tr>`;
             });
             html += `</tbody></table></div>`;
         }
