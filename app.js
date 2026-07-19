@@ -1385,8 +1385,12 @@ function drawPerformanceChart() {
     const chartH = h - pad.top - pad.bottom;
 
     const expValues = experimentalEquityCurveData?.values || [];
-    let minVal = Math.min(...highRisk, ...lowRisk, ...expValues);
-    let maxVal = Math.max(...highRisk, ...lowRisk, ...expValues);
+    let minVal = showExperimentalModel
+        ? Math.min(...highRisk, ...lowRisk, ...expValues)
+        : Math.min(...highRisk, ...lowRisk);
+    let maxVal = showExperimentalModel
+        ? Math.max(...highRisk, ...lowRisk, ...expValues)
+        : Math.max(...highRisk, ...lowRisk);
     const range = maxVal - minVal || 1;
     const yPadding = range * 0.1;
     const yMin = minVal - yPadding;
