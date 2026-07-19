@@ -1,6 +1,6 @@
 {
   "date": "2026-07-19",
-  "timestamp": "2026-07-19T15:19:51Z",
+  "timestamp": "2026-07-19T15:33:54Z",
   "commodities": [
     {
       "key": "oil_brent",
@@ -16,12 +16,16 @@
         "cum_ret": 3.149,
         "ann_ret": 0.3024,
         "sharpe": 1.0352,
+        "sharpe_ci_95_lo": 0.3169,
+        "sharpe_ci_95_hi": 1.7132,
         "max_dd": -0.2716
       },
       "symmetric_vol": {
         "cum_ret": 3.1117,
         "ann_ret": 0.3003,
         "sharpe": 1.0822,
+        "sharpe_sym_ci_95_lo": 0.3703,
+        "sharpe_sym_ci_95_hi": 1.7905,
         "max_dd": -0.2304
       }
     },
@@ -39,12 +43,16 @@
         "cum_ret": 2.2272,
         "ann_ret": 0.2431,
         "sharpe": 1.6029,
+        "sharpe_ci_95_lo": 0.887,
+        "sharpe_ci_95_hi": 2.3626,
         "max_dd": -0.1339
       },
       "symmetric_vol": {
         "cum_ret": 2.1571,
         "ann_ret": 0.238,
         "sharpe": 1.7103,
+        "sharpe_sym_ci_95_lo": 0.9654,
+        "sharpe_sym_ci_95_hi": 2.475,
         "max_dd": -0.1022
       }
     },
@@ -62,12 +70,16 @@
         "cum_ret": 4.4967,
         "ann_ret": 0.3723,
         "sharpe": 1.2825,
+        "sharpe_ci_95_lo": 0.6101,
+        "sharpe_ci_95_hi": 2.0485,
         "max_dd": -0.2151
       },
       "symmetric_vol": {
         "cum_ret": 4.1178,
         "ann_ret": 0.3542,
         "sharpe": 1.375,
+        "sharpe_sym_ci_95_lo": 0.6841,
+        "sharpe_sym_ci_95_hi": 2.1605,
         "max_dd": -0.1612
       }
     },
@@ -85,12 +97,16 @@
         "cum_ret": 1.6671,
         "ann_ret": 0.1998,
         "sharpe": 0.9682,
+        "sharpe_ci_95_lo": 0.2856,
+        "sharpe_ci_95_hi": 1.6782,
         "max_dd": -0.1656
       },
       "symmetric_vol": {
         "cum_ret": 1.5684,
         "ann_ret": 0.1915,
         "sharpe": 1.0266,
+        "sharpe_sym_ci_95_lo": 0.3313,
+        "sharpe_sym_ci_95_hi": 1.7862,
         "max_dd": -0.1565
       }
     },
@@ -108,12 +124,16 @@
         "cum_ret": 3.1748,
         "ann_ret": 0.3039,
         "sharpe": 1.4376,
+        "sharpe_ci_95_lo": 0.7134,
+        "sharpe_ci_95_hi": 2.1862,
         "max_dd": -0.231
       },
       "symmetric_vol": {
         "cum_ret": 2.0443,
         "ann_ret": 0.2297,
         "sharpe": 1.4531,
+        "sharpe_sym_ci_95_lo": 0.7317,
+        "sharpe_sym_ci_95_hi": 2.1573,
         "max_dd": -0.1672
       }
     },
@@ -131,12 +151,16 @@
         "cum_ret": 13.7445,
         "ann_ret": 0.6482,
         "sharpe": 1.816,
+        "sharpe_ci_95_lo": 0.8994,
+        "sharpe_ci_95_hi": 2.6505,
         "max_dd": -0.2556
       },
       "symmetric_vol": {
         "cum_ret": 9.309,
         "ann_ret": 0.5423,
         "sharpe": 1.9926,
+        "sharpe_sym_ci_95_lo": 1.1395,
+        "sharpe_sym_ci_95_hi": 2.8053,
         "max_dd": -0.1807
       }
     },
@@ -154,12 +178,16 @@
         "cum_ret": 2.6544,
         "ann_ret": 0.2721,
         "sharpe": 1.1502,
+        "sharpe_ci_95_lo": 0.4413,
+        "sharpe_ci_95_hi": 1.9589,
         "max_dd": -0.2041
       },
       "symmetric_vol": {
         "cum_ret": 2.2163,
         "ann_ret": 0.2423,
         "sharpe": 1.151,
+        "sharpe_sym_ci_95_lo": 0.4494,
+        "sharpe_sym_ci_95_hi": 1.9885,
         "max_dd": -0.1891
       }
     },
@@ -177,12 +205,16 @@
         "cum_ret": 13.0561,
         "ann_ret": 0.6337,
         "sharpe": 1.724,
+        "sharpe_ci_95_lo": 1.0459,
+        "sharpe_ci_95_hi": 2.5884,
         "max_dd": -0.2215
       },
       "symmetric_vol": {
         "cum_ret": 10.9079,
         "ann_ret": 0.5841,
         "sharpe": 1.7745,
+        "sharpe_sym_ci_95_lo": 1.0462,
+        "sharpe_sym_ci_95_hi": 2.6643,
         "max_dd": -0.2097
       }
     },
@@ -200,12 +232,16 @@
         "cum_ret": 24.5175,
         "ann_ret": 0.825,
         "sharpe": 1.231,
+        "sharpe_ci_95_lo": 0.6733,
+        "sharpe_ci_95_hi": 1.8374,
         "max_dd": -0.5057
       },
       "symmetric_vol": {
         "cum_ret": 16.3462,
         "ann_ret": 0.6987,
         "sharpe": 1.3514,
+        "sharpe_sym_ci_95_lo": 0.7883,
+        "sharpe_sym_ci_95_hi": 1.9747,
         "max_dd": -0.3154
       }
     },
@@ -223,12 +259,16 @@
         "cum_ret": 2.2352,
         "ann_ret": 0.2436,
         "sharpe": 1.0323,
+        "sharpe_ci_95_lo": 0.3932,
+        "sharpe_ci_95_hi": 1.8799,
         "max_dd": -0.1823
       },
       "symmetric_vol": {
         "cum_ret": 2.1374,
         "ann_ret": 0.2366,
         "sharpe": 1.0178,
+        "sharpe_sym_ci_95_lo": 0.377,
+        "sharpe_sym_ci_95_hi": 1.8555,
         "max_dd": -0.1807
       }
     }
