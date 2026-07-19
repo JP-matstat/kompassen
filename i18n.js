@@ -337,7 +337,7 @@ const TRANSLATIONS = {
         howLsP: 'Fördelning = signal / summa absoluta signaler. Negativa ger kortpositioner.',
         historyTitle: 'Historisk utveckling',
          historyInfo: 'Prognosträffsäkerhet över tid. Första siffran för en given dag och råvara är prognosen, den uppdateras under natten före handelsdagen. Den andra siffran, strax där under, är det faktiska utfallet och uppdateras vid handelsdagens slut.<br>Grönt = prognosen hade rätt riktning.<br>Rött = prognosen hade fel riktning.<br>Blått = signalen var inte tillräckligt stark för en position, så ingen prognos gjordes.',
-        perfSummary: 'Sammanfattning',
+        perfSummary: 'Sammanfattning för låg- respektive högriskmodellen',
         dailyForecastTitle: 'Prognos och resultat på dagsnivå',
         modelPerf: 'Modeller',
         personalTagline: 'Trendhandel · råvarusignaler · portföljfördelning',
