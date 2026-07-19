@@ -89,6 +89,7 @@ let bestAnnualizedReturn = 0;
 let equityCurveData = null;
 let metricsDataGlobal = null; // cached portfolio_metrics.json for risk model switching
 let experimentalEquityCurveData = null;
+let showExperimentalModel = false;
 
 // Load signal history from localStorage
 function loadSignalHistory() {
@@ -452,6 +453,14 @@ function refreshLanguageUI() {
     const closeBtn = document.getElementById('modalCloseBtn');
     if (closeBtn) closeBtn.setAttribute('aria-label', t('modalCancel'));
     updateAllocModeLabel();
+
+    // Update toggle button text
+    const toggleBtn = document.getElementById('toggleExperimentalBtn');
+    if (toggleBtn) {
+        toggleBtn.textContent = showExperimentalModel
+            ? t('experimentalModelLabel') + ' ✓'
+            : t('includeExperimental');
+    }
 }
 
 async function init() {
@@ -1263,6 +1272,15 @@ async function loadExperimentalData() {
     }
 }
 
+// Toggle experimental model visibility on the performance chart
+document.getElementById('toggleExperimentalBtn')?.addEventListener('click', function() {
+    showExperimentalModel = !showExperimentalModel;
+    this.textContent = showExperimentalModel
+        ? (window.I18n ? I18n.t('experimentalModelLabel') + ' ✓' : 'Exp. model ✓')
+        : (window.I18n ? I18n.t('includeExperimental') : 'Include Experimental Model');
+    drawPerformanceChart();
+});
+
 // Create a stat card element with optional counter animation
 function createStatCard(label, displayValue, valueClass, numericTarget, tooltip) {
     const card = document.createElement('div');
@@ -1542,8 +1560,8 @@ function drawPerformanceChart() {
     drawCurve(lowRisk, LOW_COLOR);
     ctx.globalAlpha = 1;
 
-    // Experimental model curve (filter out nulls)
-    if (expValues.length > 0) {
+    // Experimental model curve (filter out nulls) — only if toggled on
+    if (showExperimentalModel && expValues.length > 0) {
         const expNonNull = expValues.filter(v => v != null);
         if (expNonNull.length > 0) {
             ctx.globalAlpha = 0.85;
@@ -1555,7 +1573,7 @@ function drawPerformanceChart() {
     const legendEntries = [];
     legendEntries.push({ label: isSv ? 'Högriskmodell' : 'High risk', color: HIGH_COLOR, alpha: highAlpha });
     legendEntries.push({ label: isSv ? 'Lågriskmodell' : 'Low risk', color: LOW_COLOR, alpha: lowAlpha });
-    if (expValues.some(v => v != null)) {
+    if (showExperimentalModel && expValues.some(v => v != null)) {
         legendEntries.push({ label: isSv ? 'Exp. modell' : 'Exp. model', color: EXP_COLOR, alpha: 0.85 });
     }
 
@@ -1663,10 +1681,10 @@ function drawPerformanceChart() {
         const expLabel = isSv ? 'Exp. modell' : 'Exp. model';
         const eVal = state.expValues && state.expValues[closest];
         let expHtml = '';
-        if (eVal != null) {
+        if (showExperimentalModel && eVal != null) {
             expHtml = '<div style="color:#22c55e">' + expLabel + ': ' + eVal.toFixed(2) + '</div>';
         }
-        const maxDisplay = Math.max(...[hVal, lVal, eVal != null ? eVal : -Infinity].filter(v => v != null && isFinite(v)));
+        const maxDisplay = Math.max(...[hVal, lVal, showExperimentalModel && eVal != null ? eVal : -Infinity].filter(v => v != null && isFinite(v)));
         tooltip.innerHTML =
             '<div>' + state.dates[closest] + '</div>'
             + '<div style="color:#dc2626">' + hrLabel + ': ' + hVal.toFixed(2) + '</div>'

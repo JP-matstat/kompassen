@@ -225,6 +225,7 @@ const TRANSLATIONS = {
         experimentalDaysSinceLive: 'Exp. Days since Live',
         experimentalTotalPredictions: 'Exp. Live Predictions',
         experimentalModelLabel: 'Exp. model',
+        includeExperimental: 'Include Experimental Model',
 
         cv_name: 'Johan Persson',
         cv_role: 'Data Scientist / AI Developer',
@@ -608,6 +609,7 @@ const TRANSLATIONS = {
         experimentalDaysSinceLive: 'Exp. dagar sedan live',
         experimentalTotalPredictions: 'Exp. prognoser sedan live',
         experimentalModelLabel: 'Exp. modell',
+        includeExperimental: 'Inkludera Experimentell modell',
     },
 };
 
