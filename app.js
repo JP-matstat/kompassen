@@ -2125,6 +2125,18 @@ async function loadModelPerformance() {
                 [t('metricWinRate'), fmtPct(m1.win_rate), fmtPct(m2.win_rate), e(fmtPct, 'win_rate'), '', '', ''],
                 [t('metricProfitFactor'),
                     fmtNum(m1.profit_factor), fmtNum(m2.profit_factor), e(fmtNum, 'profit_factor'), riskClass(m1.profit_factor - 1), riskClass(m2.profit_factor - 1), me ? riskClass(me.profit_factor - 1) : ''],
+                [t('metricAvgTrades'),
+                    metricsData.avg_trades_per_year != null ? metricsData.avg_trades_per_year.toFixed(1) : '—',
+                    metricsData.avg_trades_per_year_sym != null ? metricsData.avg_trades_per_year_sym.toFixed(1) : '—',
+                    '—', '', '', '', t('metricAvgTradesHint')],
+                [t('metricAvgHold'),
+                    metricsData.avg_hold_days != null ? metricsData.avg_hold_days.toFixed(1) : '—',
+                    metricsData.avg_hold_days_sym != null ? metricsData.avg_hold_days_sym.toFixed(1) : '—',
+                    '—', '', '', '', t('metricAvgHoldHint')],
+                [t('metricStdHold'),
+                    metricsData.std_hold_days != null ? metricsData.std_hold_days.toFixed(1) : '—',
+                    metricsData.std_hold_days_sym != null ? metricsData.std_hold_days_sym.toFixed(1) : '—',
+                    '—', '', '', ''],
             ];
             html += `<div class="model-perf-block">`;
             html += `<table class="model-perf-table" style="width:100%">`;
