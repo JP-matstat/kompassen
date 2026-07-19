@@ -2128,15 +2128,15 @@ async function loadModelPerformance() {
                 [t('metricAvgTrades'),
                     metricsData.avg_trades_per_year != null ? metricsData.avg_trades_per_year.toFixed(1) : '—',
                     metricsData.avg_trades_per_year_sym != null ? metricsData.avg_trades_per_year_sym.toFixed(1) : '—',
-                    '—', '', '', '', t('metricAvgTradesHint')],
+                    me && me.avg_trades_per_year != null ? me.avg_trades_per_year.toFixed(1) : '—', '', '', '', t('metricAvgTradesHint')],
                 [t('metricAvgHold'),
                     metricsData.avg_hold_days != null ? metricsData.avg_hold_days.toFixed(1) : '—',
                     metricsData.avg_hold_days_sym != null ? metricsData.avg_hold_days_sym.toFixed(1) : '—',
-                    '—', '', '', '', t('metricAvgHoldHint')],
+                    me && me.avg_hold_days != null ? me.avg_hold_days.toFixed(1) : '—', '', '', '', t('metricAvgHoldHint')],
                 [t('metricStdHold'),
                     metricsData.std_hold_days != null ? metricsData.std_hold_days.toFixed(1) : '—',
                     metricsData.std_hold_days_sym != null ? metricsData.std_hold_days_sym.toFixed(1) : '—',
-                    '—', '', '', ''],
+                    me && me.std_hold_days != null ? me.std_hold_days.toFixed(1) : '—', '', '', ''],
             ];
             html += `<div class="model-perf-block">`;
             html += `<table class="model-perf-table" style="width:100%">`;

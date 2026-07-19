@@ -2182,14 +2182,14 @@ body.dark .strip-cell.strip-correct {
 
 .performance-canvas {
     width: 100%;
-    height: 300px;
+    height: 600px;
     display: block;
     border-radius: 0.5rem;
 }
 
 @media (max-width: 768px) {
     .performance-canvas {
-        height: 220px;
+        height: 440px;
     }
 }
 
@@ -2246,7 +2246,7 @@ body.dark .strip-cell.strip-correct {
     }
 
     .performance-canvas {
-        height: 180px;
+        height: 360px;
     }
 
     .stats-grid {
@@ -2328,7 +2328,7 @@ body.dark .strip-cell.strip-correct {
     }
 
     .performance-canvas {
-        height: 150px;
+        height: 300px;
     }
 
     .stats-grid {
