@@ -5,5 +5,8 @@
   "max_drawdown": -0.16959355515026805,
   "win_rate": 0.6237037037037036,
   "profit_factor": 1.8561942028240337,
-  "window_days": 1351
+  "window_days": 1351,
+  "avg_trades_per_year": 24.6,
+  "avg_hold_days": 68.2,
+  "std_hold_days": 81.9
 }
