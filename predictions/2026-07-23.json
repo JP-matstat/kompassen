@@ -1,0 +1,76 @@
+{
+  "date": "2026-07-23",
+  "prediction_based_on": "2026-07-23",
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -7.401496
+    },
+    {
+      "commodity": "Gold",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -2.57347
+    },
+    {
+      "commodity": "Silver",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -4.669964
+    },
+    {
+      "commodity": "Copper",
+      "signal": 0.7767,
+      "signal_low_risk": 0.6378,
+      "dom_prob": 0.7767,
+      "actual_yesterday": -2.686105
+    },
+    {
+      "commodity": "Aluminium",
+      "signal": 0.3691,
+      "signal_low_risk": 0.3036,
+      "dom_prob": 0.7249,
+      "actual_yesterday": 0.15084
+    },
+    {
+      "commodity": "Cocoa",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -2.434457
+    },
+    {
+      "commodity": "Cotton",
+      "signal": 0.7351,
+      "signal_low_risk": 0.6097,
+      "dom_prob": 0.7351,
+      "actual_yesterday": 1.317913
+    },
+    {
+      "commodity": "Coffee",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -1.75215
+    },
+    {
+      "commodity": "Natural Gas",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": 1.062368
+    },
+    {
+      "commodity": "Sugar",
+      "signal": -0.7216,
+      "signal_low_risk": -0.7216,
+      "dom_prob": 0.7216,
+      "actual_yesterday": -0.339438
+    }
+  ]
+}
