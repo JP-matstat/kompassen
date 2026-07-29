@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-28",
-  "timestamp": "2026-07-28T15:40:54Z",
+  "date": "2026-07-29",
+  "timestamp": "2026-07-29T15:40:51Z",
   "commodities": [
     {
       "key": "oil_brent",
@@ -14,18 +14,18 @@
       "std_hold_sym": 80.2,
       "semi_vol": {
         "cum_ret": 3.149,
-        "ann_ret": 0.3007,
-        "sharpe": 1.0326,
-        "sharpe_ci_95_lo": 0.3577,
-        "sharpe_ci_95_hi": 1.7209,
+        "ann_ret": 0.3004,
+        "sharpe": 1.0322,
+        "sharpe_ci_95_lo": 0.3573,
+        "sharpe_ci_95_hi": 1.6842,
         "max_dd": -0.2716
       },
       "symmetric_vol": {
         "cum_ret": 3.1117,
-        "ann_ret": 0.2985,
-        "sharpe": 1.0794,
-        "sharpe_sym_ci_95_lo": 0.3949,
-        "sharpe_sym_ci_95_hi": 1.7667,
+        "ann_ret": 0.2983,
+        "sharpe": 1.079,
+        "sharpe_sym_ci_95_lo": 0.4045,
+        "sharpe_sym_ci_95_hi": 1.7764,
         "max_dd": -0.2304
       }
     },
@@ -41,18 +41,18 @@
       "std_hold_sym": 293.9,
       "semi_vol": {
         "cum_ret": 2.2272,
-        "ann_ret": 0.2417,
-        "sharpe": 1.5988,
-        "sharpe_ci_95_lo": 0.8938,
-        "sharpe_ci_95_hi": 2.37,
+        "ann_ret": 0.2415,
+        "sharpe": 1.5982,
+        "sharpe_ci_95_lo": 0.8827,
+        "sharpe_ci_95_hi": 2.3883,
         "max_dd": -0.1339
       },
       "symmetric_vol": {
         "cum_ret": 2.1571,
-        "ann_ret": 0.2366,
-        "sharpe": 1.7058,
-        "sharpe_sym_ci_95_lo": 0.967,
-        "sharpe_sym_ci_95_hi": 2.4483,
+        "ann_ret": 0.2364,
+        "sharpe": 1.7052,
+        "sharpe_sym_ci_95_lo": 0.9761,
+        "sharpe_sym_ci_95_hi": 2.4633,
         "max_dd": -0.1022
       }
     },
@@ -68,18 +68,18 @@
       "std_hold_sym": 135.1,
       "semi_vol": {
         "cum_ret": 4.4967,
-        "ann_ret": 0.37,
-        "sharpe": 1.2792,
-        "sharpe_ci_95_lo": 0.6274,
-        "sharpe_ci_95_hi": 2.0574,
+        "ann_ret": 0.3697,
+        "sharpe": 1.2787,
+        "sharpe_ci_95_lo": 0.6271,
+        "sharpe_ci_95_hi": 2.0154,
         "max_dd": -0.2151
       },
       "symmetric_vol": {
         "cum_ret": 4.1178,
-        "ann_ret": 0.3521,
-        "sharpe": 1.3714,
-        "sharpe_sym_ci_95_lo": 0.7031,
-        "sharpe_sym_ci_95_hi": 2.1294,
+        "ann_ret": 0.3518,
+        "sharpe": 1.3709,
+        "sharpe_sym_ci_95_lo": 0.7305,
+        "sharpe_sym_ci_95_hi": 2.1021,
         "max_dd": -0.1612
       }
     },
@@ -91,22 +91,22 @@
       "avg_hold": 62.1,
       "std_hold": 107.6,
       "trades_sym": 19,
-      "avg_hold_sym": 64.8,
+      "avg_hold_sym": 64.9,
       "std_hold_sym": 65.3,
       "semi_vol": {
-        "cum_ret": 1.7016,
-        "ann_ret": 0.2016,
-        "sharpe": 0.974,
-        "sharpe_ci_95_lo": 0.2513,
-        "sharpe_ci_95_hi": 1.7091,
+        "cum_ret": 1.6839,
+        "ann_ret": 0.1999,
+        "sharpe": 0.9678,
+        "sharpe_ci_95_lo": 0.2881,
+        "sharpe_ci_95_hi": 1.7004,
         "max_dd": -0.1656
       },
       "symmetric_vol": {
-        "cum_ret": 1.5973,
-        "ann_ret": 0.1928,
-        "sharpe": 1.032,
-        "sharpe_sym_ci_95_lo": 0.3199,
-        "sharpe_sym_ci_95_hi": 1.7821,
+        "cum_ret": 1.5833,
+        "ann_ret": 0.1915,
+        "sharpe": 1.0262,
+        "sharpe_sym_ci_95_lo": 0.3537,
+        "sharpe_sym_ci_95_hi": 1.802,
         "max_dd": -0.1565
       }
     },
@@ -114,27 +114,27 @@
       "key": "aluminium",
       "label": "Aluminium",
       "in_market_pct": 0,
-      "trades": 19,
-      "avg_hold": 153.7,
-      "std_hold": 205.6,
-      "trades_sym": 13,
-      "avg_hold_sym": 109.3,
-      "std_hold_sym": 98.7,
+      "trades": 20,
+      "avg_hold": 145.8,
+      "std_hold": 201.0,
+      "trades_sym": 14,
+      "avg_hold_sym": 101.2,
+      "std_hold_sym": 92.7,
       "semi_vol": {
-        "cum_ret": 3.1711,
-        "ann_ret": 0.3019,
-        "sharpe": 1.4327,
-        "sharpe_ci_95_lo": 0.6655,
-        "sharpe_ci_95_hi": 2.2198,
-        "max_dd": -0.231
+        "cum_ret": 3.1999,
+        "ann_ret": 0.3033,
+        "sharpe": 1.4396,
+        "sharpe_ci_95_lo": 0.6787,
+        "sharpe_ci_95_hi": 2.2737,
+        "max_dd": -0.2155
       },
       "symmetric_vol": {
-        "cum_ret": 2.042,
-        "ann_ret": 0.2282,
-        "sharpe": 1.448,
-        "sharpe_sym_ci_95_lo": 0.7003,
-        "sharpe_sym_ci_95_hi": 2.2315,
-        "max_dd": -0.1672
+        "cum_ret": 2.0563,
+        "ann_ret": 0.2291,
+        "sharpe": 1.4542,
+        "sharpe_sym_ci_95_lo": 0.6955,
+        "sharpe_sym_ci_95_hi": 2.2252,
+        "max_dd": -0.1543
       }
     },
     {
@@ -149,18 +149,18 @@
       "std_hold_sym": 173.0,
       "semi_vol": {
         "cum_ret": 13.7445,
-        "ann_ret": 0.644,
-        "sharpe": 1.8112,
-        "sharpe_ci_95_lo": 0.9015,
-        "sharpe_ci_95_hi": 2.6551,
+        "ann_ret": 0.6434,
+        "sharpe": 1.8106,
+        "sharpe_ci_95_lo": 0.8692,
+        "sharpe_ci_95_hi": 2.6897,
         "max_dd": -0.2556
       },
       "symmetric_vol": {
         "cum_ret": 9.309,
-        "ann_ret": 0.5388,
-        "sharpe": 1.9874,
-        "sharpe_sym_ci_95_lo": 1.0496,
-        "sharpe_sym_ci_95_hi": 2.811,
+        "ann_ret": 0.5384,
+        "sharpe": 1.9867,
+        "sharpe_sym_ci_95_lo": 1.0914,
+        "sharpe_sym_ci_95_hi": 2.8058,
         "max_dd": -0.1807
       }
     },
@@ -172,22 +172,22 @@
       "avg_hold": 111.8,
       "std_hold": 150.1,
       "trades_sym": 8,
-      "avg_hold_sym": 173.1,
+      "avg_hold_sym": 173.2,
       "std_hold_sym": 120.9,
       "semi_vol": {
-        "cum_ret": 2.7233,
-        "ann_ret": 0.2749,
-        "sharpe": 1.1602,
-        "sharpe_ci_95_lo": 0.4061,
-        "sharpe_ci_95_hi": 1.975,
+        "cum_ret": 2.7224,
+        "ann_ret": 0.2746,
+        "sharpe": 1.1596,
+        "sharpe_ci_95_lo": 0.4121,
+        "sharpe_ci_95_hi": 1.9916,
         "max_dd": -0.2041
       },
       "symmetric_vol": {
-        "cum_ret": 2.2659,
-        "ann_ret": 0.2444,
-        "sharpe": 1.16,
-        "sharpe_sym_ci_95_lo": 0.4422,
-        "sharpe_sym_ci_95_hi": 2.0087,
+        "cum_ret": 2.2652,
+        "ann_ret": 0.2442,
+        "sharpe": 1.1594,
+        "sharpe_sym_ci_95_lo": 0.436,
+        "sharpe_sym_ci_95_hi": 2.0078,
         "max_dd": -0.1891
       }
     },
@@ -203,18 +203,18 @@
       "std_hold_sym": 148.9,
       "semi_vol": {
         "cum_ret": 13.0561,
-        "ann_ret": 0.6296,
-        "sharpe": 1.7196,
-        "sharpe_ci_95_lo": 1.0383,
-        "sharpe_ci_95_hi": 2.5051,
+        "ann_ret": 0.629,
+        "sharpe": 1.7189,
+        "sharpe_ci_95_lo": 1.0363,
+        "sharpe_ci_95_hi": 2.4817,
         "max_dd": -0.2215
       },
       "symmetric_vol": {
         "cum_ret": 10.9079,
-        "ann_ret": 0.5804,
-        "sharpe": 1.7699,
-        "sharpe_sym_ci_95_lo": 1.0491,
-        "sharpe_sym_ci_95_hi": 2.579,
+        "ann_ret": 0.5798,
+        "sharpe": 1.7692,
+        "sharpe_sym_ci_95_lo": 1.0534,
+        "sharpe_sym_ci_95_hi": 2.577,
         "max_dd": -0.2097
       }
     },
@@ -226,22 +226,22 @@
       "avg_hold": 95.0,
       "std_hold": 99.5,
       "trades_sym": 15,
-      "avg_hold_sym": 100.4,
+      "avg_hold_sym": 100.5,
       "std_hold_sym": 93.5,
       "semi_vol": {
-        "cum_ret": 26.4103,
-        "ann_ret": 0.8436,
-        "sharpe": 1.2468,
-        "sharpe_ci_95_lo": 0.6863,
-        "sharpe_ci_95_hi": 1.8951,
+        "cum_ret": 25.9713,
+        "ann_ret": 0.8372,
+        "sharpe": 1.2419,
+        "sharpe_ci_95_lo": 0.6824,
+        "sharpe_ci_95_hi": 1.8942,
         "max_dd": -0.5057
       },
       "symmetric_vol": {
-        "cum_ret": 17.6329,
-        "ann_ret": 0.7167,
-        "sharpe": 1.374,
-        "sharpe_sym_ci_95_lo": 0.7627,
-        "sharpe_sym_ci_95_hi": 2.0155,
+        "cum_ret": 17.3345,
+        "ann_ret": 0.7109,
+        "sharpe": 1.3671,
+        "sharpe_sym_ci_95_lo": 0.7786,
+        "sharpe_sym_ci_95_hi": 2.0192,
         "max_dd": -0.3154
       }
     },
@@ -253,22 +253,22 @@
       "avg_hold": 94.3,
       "std_hold": 138.2,
       "trades_sym": 16,
-      "avg_hold_sym": 101.7,
-      "std_hold_sym": 128.4,
+      "avg_hold_sym": 101.8,
+      "std_hold_sym": 128.5,
       "semi_vol": {
-        "cum_ret": 2.3283,
-        "ann_ret": 0.2488,
-        "sharpe": 1.0471,
-        "sharpe_ci_95_lo": 0.371,
-        "sharpe_ci_95_hi": 1.8586,
+        "cum_ret": 2.3352,
+        "ann_ret": 0.249,
+        "sharpe": 1.0483,
+        "sharpe_ci_95_lo": 0.3493,
+        "sharpe_ci_95_hi": 1.875,
         "max_dd": -0.1823
       },
       "symmetric_vol": {
-        "cum_ret": 2.2277,
-        "ann_ret": 0.2417,
-        "sharpe": 1.0328,
-        "sharpe_sym_ci_95_lo": 0.3669,
-        "sharpe_sym_ci_95_hi": 1.8536,
+        "cum_ret": 2.2344,
+        "ann_ret": 0.242,
+        "sharpe": 1.034,
+        "sharpe_sym_ci_95_lo": 0.3332,
+        "sharpe_sym_ci_95_hi": 1.8572,
         "max_dd": -0.1807
       }
     }
