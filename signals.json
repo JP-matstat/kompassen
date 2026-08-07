@@ -1,28 +1,28 @@
 {
-  "date": "2026-08-05",
-  "timestamp": "2026-08-05T15:41:11Z",
+  "date": "2026-08-07",
+  "timestamp": "2026-08-07T15:41:09Z",
   "signals": {
     "Oil Brent": 0.0,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.8013,
-    "Aluminium": 0.3295,
-    "Cocoa": 0.4228,
+    "Copper": 0.7988,
+    "Aluminium": 0.3115,
+    "Cocoa": 0.432,
     "Cotton": 0.7351,
     "Coffee": 0.0,
-    "Natural Gas": -0.7606,
-    "Sugar": 0.0
+    "Natural Gas": -0.7568,
+    "Sugar": 0.7785
   },
   "signals_low_risk": {
     "Oil Brent": 0.0,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.6854,
-    "Aluminium": 0.2773,
-    "Cocoa": 0.181,
-    "Cotton": 0.626,
+    "Copper": 0.6947,
+    "Aluminium": 0.2635,
+    "Cocoa": 0.1876,
+    "Cotton": 0.6297,
     "Coffee": 0.0,
-    "Natural Gas": -0.7606,
-    "Sugar": 0.0
+    "Natural Gas": -0.7568,
+    "Sugar": 0.7785
   }
 }
