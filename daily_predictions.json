@@ -315097,11 +315097,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7946,
-        "Aluminium": 0.347,
-        "Cocoa": 0.3576,
+        "Aluminium": 0.3292,
+        "Cocoa": 0.3555,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7047,
+        "Natural Gas": -0.686,
         "Sugar": 0.7758
       },
       "predictions_low_risk": {
@@ -315109,11 +315109,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6692,
-        "Aluminium": 0.2856,
-        "Cocoa": 0.1487,
+        "Aluminium": 0.271,
+        "Cocoa": 0.1478,
         "Cotton": 0.6249,
         "Coffee": 0.0,
-        "Natural Gas": -0.7047,
+        "Natural Gas": -0.686,
         "Sugar": 0.7758
       },
       "actuals": {
@@ -315133,11 +315133,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7946,
-        "Aluminium": 0.6781,
-        "Cocoa": 0.3576,
+        "Aluminium": 0.6433,
+        "Cocoa": 0.3555,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7047,
+        "Natural Gas": 0.686,
         "Sugar": 0.7758
       }
     },
@@ -315148,11 +315148,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8036,
-        "Aluminium": 0.3351,
-        "Cocoa": 0.3583,
+        "Aluminium": 0.3174,
+        "Cocoa": 0.3561,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7085,
+        "Natural Gas": -0.6898,
         "Sugar": 0.775
       },
       "predictions_low_risk": {
@@ -315160,11 +315160,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6877,
-        "Aluminium": 0.2823,
-        "Cocoa": 0.1522,
+        "Aluminium": 0.2674,
+        "Cocoa": 0.1513,
         "Cotton": 0.6218,
         "Coffee": 0.0,
-        "Natural Gas": -0.7085,
+        "Natural Gas": -0.6898,
         "Sugar": 0.775
       },
       "actuals": {
@@ -315184,11 +315184,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8036,
-        "Aluminium": 0.6679,
-        "Cocoa": 0.3583,
+        "Aluminium": 0.6326,
+        "Cocoa": 0.3561,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7085,
+        "Natural Gas": 0.6898,
         "Sugar": 0.775
       }
     },
@@ -315199,11 +315199,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8013,
-        "Aluminium": 0.3388,
-        "Cocoa": 0.3589,
+        "Aluminium": 0.3213,
+        "Cocoa": 0.3568,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7092,
+        "Natural Gas": -0.6906,
         "Sugar": 0.7759
       },
       "predictions_low_risk": {
@@ -315211,11 +315211,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6854,
-        "Aluminium": 0.2851,
-        "Cocoa": 0.1536,
+        "Aluminium": 0.2704,
+        "Cocoa": 0.1527,
         "Cotton": 0.6261,
         "Coffee": 0.0,
-        "Natural Gas": -0.7092,
+        "Natural Gas": -0.6906,
         "Sugar": 0.7759
       },
       "actuals": {
@@ -315235,11 +315235,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8013,
-        "Aluminium": 0.6746,
-        "Cocoa": 0.3589,
+        "Aluminium": 0.6397,
+        "Cocoa": 0.3568,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7092,
+        "Natural Gas": 0.6906,
         "Sugar": 0.7759
       }
     },
@@ -315250,11 +315250,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.79,
-        "Aluminium": 0.3322,
-        "Cocoa": 0.3588,
+        "Aluminium": 0.3143,
+        "Cocoa": 0.3567,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7073,
+        "Natural Gas": -0.6886,
         "Sugar": 0.7771
       },
       "predictions_low_risk": {
@@ -315262,11 +315262,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6816,
-        "Aluminium": 0.2799,
-        "Cocoa": 0.1532,
+        "Aluminium": 0.2648,
+        "Cocoa": 0.1523,
         "Cotton": 0.6266,
         "Coffee": 0.0,
-        "Natural Gas": -0.7073,
+        "Natural Gas": -0.6886,
         "Sugar": 0.7771
       },
       "actuals": {
@@ -315286,11 +315286,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.79,
-        "Aluminium": 0.6616,
-        "Cocoa": 0.3588,
+        "Aluminium": 0.626,
+        "Cocoa": 0.3567,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7073,
+        "Natural Gas": 0.6886,
         "Sugar": 0.7771
       }
     },
@@ -315301,11 +315301,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7988,
-        "Aluminium": 0.3251,
-        "Cocoa": 0.3586,
+        "Aluminium": 0.3068,
+        "Cocoa": 0.3565,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7057,
+        "Natural Gas": -0.6871,
         "Sugar": 0.7785
       },
       "predictions_low_risk": {
@@ -315313,11 +315313,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6947,
-        "Aluminium": 0.275,
-        "Cocoa": 0.1557,
+        "Aluminium": 0.2595,
+        "Cocoa": 0.1548,
         "Cotton": 0.6297,
         "Coffee": 0.0,
-        "Natural Gas": -0.7057,
+        "Natural Gas": -0.6871,
         "Sugar": 0.7785
       },
       "actuals": {
@@ -315337,11 +315337,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7988,
-        "Aluminium": 0.6456,
-        "Cocoa": 0.3586,
+        "Aluminium": 0.6093,
+        "Cocoa": 0.3565,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7057,
+        "Natural Gas": 0.6871,
         "Sugar": 0.7785
       }
     },
@@ -315352,11 +315352,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8035,
-        "Aluminium": 0.3287,
-        "Cocoa": 0.359,
+        "Aluminium": 0.3105,
+        "Cocoa": 0.3568,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7082,
+        "Natural Gas": -0.6896,
         "Sugar": 0.7742
       },
       "predictions_low_risk": {
@@ -315364,11 +315364,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7006,
-        "Aluminium": 0.2778,
-        "Cocoa": 0.1587,
+        "Aluminium": 0.2625,
+        "Cocoa": 0.1577,
         "Cotton": 0.6288,
         "Coffee": 0.0,
-        "Natural Gas": -0.7082,
+        "Natural Gas": -0.6896,
         "Sugar": 0.7742
       },
       "actuals": {
@@ -315388,11 +315388,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8035,
-        "Aluminium": 0.6527,
-        "Cocoa": 0.359,
+        "Aluminium": 0.6167,
+        "Cocoa": 0.3568,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7082,
+        "Natural Gas": 0.6896,
         "Sugar": 0.7742
       }
     },
@@ -315403,11 +315403,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7906,
-        "Aluminium": 0.3296,
-        "Cocoa": 0.3589,
+        "Aluminium": 0.3116,
+        "Cocoa": 0.3568,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7094,
+        "Natural Gas": -0.6908,
         "Sugar": 0.7742
       },
       "predictions_low_risk": {
@@ -315415,11 +315415,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6995,
-        "Aluminium": 0.2862,
-        "Cocoa": 0.1672,
+        "Aluminium": 0.2705,
+        "Cocoa": 0.1662,
         "Cotton": 0.646,
         "Coffee": 0.0,
-        "Natural Gas": -0.7094,
+        "Natural Gas": -0.6908,
         "Sugar": 0.7742
       },
       "actuals": {
@@ -315439,11 +315439,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7906,
-        "Aluminium": 0.6546,
-        "Cocoa": 0.3589,
+        "Aluminium": 0.6187,
+        "Cocoa": 0.3568,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7094,
+        "Natural Gas": 0.6908,
         "Sugar": 0.7742
       }
     },
@@ -315454,11 +315454,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7917,
-        "Aluminium": 0.334,
-        "Cocoa": 0.3587,
+        "Aluminium": 0.3155,
+        "Cocoa": 0.3565,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7109,
+        "Natural Gas": -0.6924,
         "Sugar": 0.7739
       },
       "predictions_low_risk": {
@@ -315466,11 +315466,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7027,
-        "Aluminium": 0.285,
-        "Cocoa": 0.1679,
+        "Aluminium": 0.2693,
+        "Cocoa": 0.1669,
         "Cotton": 0.6494,
         "Coffee": 0.0,
-        "Natural Gas": -0.7109,
+        "Natural Gas": -0.6924,
         "Sugar": 0.7739
       },
       "actuals": {
@@ -315490,11 +315490,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7917,
-        "Aluminium": 0.6514,
-        "Cocoa": 0.3587,
+        "Aluminium": 0.6154,
+        "Cocoa": 0.3565,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": 0.7109,
+        "Natural Gas": 0.6924,
         "Sugar": 0.7739
       }
     },
@@ -315505,11 +315505,11 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7858,
-        "Aluminium": 0.34,
-        "Cocoa": 0.3576,
+        "Aluminium": 0.3219,
+        "Cocoa": 0.3554,
         "Cotton": 0.7351,
         "Coffee": 0.0,
-        "Natural Gas": -0.7111,
+        "Natural Gas": -0.6925,
         "Sugar": 0.7729
       },
       "predictions_low_risk": {
@@ -315517,12 +315517,63 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7535,
-        "Aluminium": 0.2926,
-        "Cocoa": 0.1695,
+        "Aluminium": 0.277,
+        "Cocoa": 0.1685,
         "Cotton": 0.6435,
         "Coffee": 0.0,
-        "Natural Gas": -0.7111,
+        "Natural Gas": -0.6925,
         "Sugar": 0.7729
+      },
+      "actuals": {
+        "Oil Brent": -0.352359,
+        "Gold": 0.445231,
+        "Silver": 0.717421,
+        "Copper": -0.332726,
+        "Aluminium": -0.692622,
+        "Cocoa": -0.087002,
+        "Cotton": 1.858109,
+        "Coffee": 0.847591,
+        "Natural Gas": 0.911406,
+        "Sugar": -0.896591
+      },
+      "dom_prob": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7858,
+        "Aluminium": 0.6292,
+        "Cocoa": 0.3554,
+        "Cotton": 0.7351,
+        "Coffee": 0.0,
+        "Natural Gas": 0.6925,
+        "Sugar": 0.7729
+      }
+    },
+    {
+      "date": "2026-08-14",
+      "predictions_high_risk": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7807,
+        "Aluminium": 0.3243,
+        "Cocoa": 0.3601,
+        "Cotton": 0.7355,
+        "Coffee": 0.0,
+        "Natural Gas": -0.6952,
+        "Sugar": 0.7707
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7485,
+        "Aluminium": 0.2769,
+        "Cocoa": 0.1717,
+        "Cotton": 0.6548,
+        "Coffee": 0.0,
+        "Natural Gas": -0.6952,
+        "Sugar": 0.7707
       },
       "actuals": {
         "Oil Brent": null,
@@ -315540,13 +315591,13 @@
         "Oil Brent": 0.0,
         "Gold": 0.0,
         "Silver": 0.0,
-        "Copper": 0.7858,
-        "Aluminium": 0.6646,
-        "Cocoa": 0.3576,
-        "Cotton": 0.7351,
+        "Copper": 0.7807,
+        "Aluminium": 0.6268,
+        "Cocoa": 0.3601,
+        "Cotton": 0.7355,
         "Coffee": 0.0,
-        "Natural Gas": 0.7111,
-        "Sugar": 0.7729
+        "Natural Gas": 0.6952,
+        "Sugar": 0.7707
       }
     }
   ]
