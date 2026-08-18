@@ -1,0 +1,86 @@
+{
+  "date": "2026-08-18",
+  "prediction_based_on": "2026-08-18",
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": 3.063409,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Gold",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -1.611539,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Silver",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -4.294935,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Copper",
+      "signal": 0.7525,
+      "signal_low_risk": 0.7285,
+      "dom_prob": 0.7525,
+      "actual_yesterday": -1.951732,
+      "signal_experimental": 0.4665
+    },
+    {
+      "commodity": "Aluminium",
+      "signal": 0.2918,
+      "signal_low_risk": 0.2438,
+      "dom_prob": 0.5543,
+      "actual_yesterday": -2.306293,
+      "signal_experimental": 0.0617
+    },
+    {
+      "commodity": "Cocoa",
+      "signal": 0.4672,
+      "signal_low_risk": 0.2298,
+      "dom_prob": 0.4672,
+      "actual_yesterday": 1.011804,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Cotton",
+      "signal": 0.7355,
+      "signal_low_risk": 0.7034,
+      "dom_prob": 0.7355,
+      "actual_yesterday": 0.645383,
+      "signal_experimental": 0.4341
+    },
+    {
+      "commodity": "Coffee",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": 1.276266,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Natural Gas",
+      "signal": -0.7266,
+      "signal_low_risk": -0.7266,
+      "dom_prob": 0.7266,
+      "actual_yesterday": 1.832462,
+      "signal_experimental": -0.1492
+    },
+    {
+      "commodity": "Sugar",
+      "signal": 0.7727,
+      "signal_low_risk": 0.7727,
+      "dom_prob": 0.7727,
+      "actual_yesterday": 3.214291,
+      "signal_experimental": 0.5055
+    }
+  ]
+}
