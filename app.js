@@ -1220,7 +1220,7 @@ function renderPerformanceStats() {
     container.appendChild(liveCard);
     
     // Card 2: Live portfolio value from portfolio_value.json
-    const liveValCard = createStatCard(t('livePortfolioValue', { date: LIVE_DATE }), '...', '', null, t('livePortfolioValueHint', { date: LIVE_DATE }));
+    const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null, t('livePortfolioValueHint', { date: LIVE_DATE }));
     liveValCard.id = 'livePortfolioValueCard';
     container.appendChild(liveValCard);
 
@@ -1282,7 +1282,7 @@ async function renderExperimentalPerformanceStats(container) {
         accCard.querySelector('.stat-label').title = t('liveAccuracyHint');
         container.appendChild(accCard);
 
-        const pvCard = createStatCard(t('experimentalPortfolioValue', { date: EXPERIMENTAL_LIVE_DATE }), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: EXPERIMENTAL_LIVE_DATE }));
+        const pvCard = createStatCard(t('experimentalPortfolioValue'), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: live.live_date }));
         container.appendChild(pvCard);
 
         const annPct = live.live_annualized_return_pct;
@@ -1320,10 +1320,10 @@ async function loadExperimentalData() {
 
         const accVal = live.live_total_predictions > 0 ? live.live_accuracy.toFixed(1) + '%' : '-';
         const accClass = live.live_accuracy >= 50 ? 'success' : 'danger';
-        const         accCard = createStatCard(t('experimentalAccuracy'), accVal, accClass, live.live_total_predictions > 0 ? live.live_accuracy : null);
+        const accCard = createStatCard(t('experimentalAccuracy'), accVal, accClass, live.live_total_predictions > 0 ? live.live_accuracy : null);
         container.appendChild(accCard);
 
-        const pvCard = createStatCard(t('experimentalPortfolioValue', { date: EXPERIMENTAL_LIVE_DATE }), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: EXPERIMENTAL_LIVE_DATE }));
+        const pvCard = createStatCard(t('experimentalPortfolioValue'), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: live.live_date }));
         pvCard.id = 'expPortfolioValueCard';
         container.appendChild(pvCard);
 
@@ -1532,28 +1532,46 @@ function drawPerformanceChart() {
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.globalAlpha = 1;
+        ctx.font = '11px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        const goliveText = t('goLiveLabel');
+        const goliveW = ctx.measureText(goliveText).width + 8;
+        const goliveH = 16;
+        ctx.fillStyle = isDark ? 'rgba(30,41,59,0.85)' : 'rgba(255,255,255,0.85)';
+        ctx.fillRect(liveX - goliveW / 2, pad.top - 4 - goliveH, goliveW, goliveH);
+        ctx.fillStyle = textColor;
+        ctx.fillText(goliveText, liveX, pad.top - 4);
         ctx.restore();
     }
 
-    // Experimental model went live — dark green dashed line (only when shown)
-    let expLiveX = null;
-    if (expShown) {
-        const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
-        if (expLiveIdx !== -1) {
-            expLiveX = xScale(expLiveIdx);
-            ctx.save();
-            ctx.strokeStyle = '#166534';
-            ctx.globalAlpha = 0.9;
-            ctx.lineWidth = 1.5;
-            ctx.setLineDash([4, 4]);
-            ctx.beginPath();
-            ctx.moveTo(expLiveX, pad.top);
-            ctx.lineTo(expLiveX, pad.top + chartH);
-            ctx.stroke();
-            ctx.setLineDash([]);
-            ctx.globalAlpha = 1;
-            ctx.restore();
-        }
+    // Experimental model went live — dark green dashed line
+    const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
+    if (expLiveIdx !== -1) {
+        const expX = xScale(expLiveIdx);
+        const expLabelY = pad.top - 4;
+        ctx.save();
+        ctx.strokeStyle = '#166534';
+        ctx.globalAlpha = 0.9;
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath();
+        ctx.moveTo(expX, pad.top);
+        ctx.lineTo(expX, pad.top + chartH);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.globalAlpha = 1;
+        ctx.font = '11px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        const goLiveExpText = t('goLiveExpLabel');
+        const goLiveExpW = ctx.measureText(goLiveExpText).width + 8;
+        const goLiveExpH = 16;
+        ctx.fillStyle = isDark ? 'rgba(30,41,59,0.85)' : 'rgba(255,255,255,0.85)';
+        ctx.fillRect(expX - goLiveExpW / 2, expLabelY - goLiveExpH, goLiveExpW, goLiveExpH);
+        ctx.fillStyle = '#166534';
+        ctx.fillText(goLiveExpText, expX, expLabelY);
+        ctx.restore();
     }
 
     // Year-boundary vertical lines with annual return
@@ -1705,8 +1723,7 @@ function drawPerformanceChart() {
     ctx.fillText(yLabel, pad.left + chartW / 2, h - 1);
 
     // Store chart state for hover
-    canvas._chartState = { dates, highRisk, lowRisk, expValues, xScale, yScale, pad, h, w,
-        liveX, expLiveX, yearRetLabels };
+    canvas._chartState = { dates, highRisk, lowRisk, expValues, xScale, yScale, pad, h, w, yearRetLabels };
     setupPerformanceChartHover(canvas);
 }
 
@@ -1743,25 +1760,6 @@ function drawPerformanceChart() {
 
         if (mx < state.pad.left || mx > state.w - state.pad.right || my > state.h - state.pad.bottom) {
             tooltip.style.display = 'none';
-            return;
-        }
-
-        // Check hover near go-live vertical lines
-        const liveThreshold = 12;
-        if (state.liveX != null && Math.abs(mx - state.liveX) < liveThreshold) {
-            tooltip.innerHTML = '<div>' + t('goLiveLabel') + '</div>'
-                + '<div style="font-size:10px;color:#94a3b8">' + LIVE_DATE + '</div>';
-            tooltip.style.display = 'block';
-            tooltip.style.left = Math.min(state.liveX + 12, state.w - 130) + 'px';
-            tooltip.style.top = Math.max(0, state.pad.top - 4) + 'px';
-            return;
-        }
-        if (state.expLiveX != null && Math.abs(mx - state.expLiveX) < liveThreshold) {
-            tooltip.innerHTML = '<div style="color:#22c55e">' + t('goLiveExpLabel') + '</div>'
-                + '<div style="font-size:10px;color:#94a3b8">' + EXPERIMENTAL_LIVE_DATE + '</div>';
-            tooltip.style.display = 'block';
-            tooltip.style.left = Math.min(state.expLiveX + 12, state.w - 130) + 'px';
-            tooltip.style.top = Math.max(0, state.pad.top - 4) + 'px';
             return;
         }
 
