@@ -1220,7 +1220,7 @@ function renderPerformanceStats() {
     container.appendChild(liveCard);
     
     // Card 2: Live portfolio value from portfolio_value.json
-    const liveValCard = createStatCard(t('livePortfolioValue'), '...', '', null, t('livePortfolioValueHint', { date: LIVE_DATE }));
+    const liveValCard = createStatCard(t('livePortfolioValue', { date: LIVE_DATE }), '...', '', null, t('livePortfolioValueHint', { date: LIVE_DATE }));
     liveValCard.id = 'livePortfolioValueCard';
     container.appendChild(liveValCard);
 
@@ -1282,7 +1282,7 @@ async function renderExperimentalPerformanceStats(container) {
         accCard.querySelector('.stat-label').title = t('liveAccuracyHint');
         container.appendChild(accCard);
 
-        const pvCard = createStatCard(t('experimentalPortfolioValue'), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: live.live_date }));
+        const pvCard = createStatCard(t('experimentalPortfolioValue', { date: EXPERIMENTAL_LIVE_DATE }), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: EXPERIMENTAL_LIVE_DATE }));
         container.appendChild(pvCard);
 
         const annPct = live.live_annualized_return_pct;
@@ -1320,10 +1320,10 @@ async function loadExperimentalData() {
 
         const accVal = live.live_total_predictions > 0 ? live.live_accuracy.toFixed(1) + '%' : '-';
         const accClass = live.live_accuracy >= 50 ? 'success' : 'danger';
-        const accCard = createStatCard(t('experimentalAccuracy'), accVal, accClass, live.live_total_predictions > 0 ? live.live_accuracy : null);
+        const         accCard = createStatCard(t('experimentalAccuracy'), accVal, accClass, live.live_total_predictions > 0 ? live.live_accuracy : null);
         container.appendChild(accCard);
 
-        const pvCard = createStatCard(t('experimentalPortfolioValue'), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: live.live_date }));
+        const pvCard = createStatCard(t('experimentalPortfolioValue', { date: EXPERIMENTAL_LIVE_DATE }), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: EXPERIMENTAL_LIVE_DATE }));
         pvCard.id = 'expPortfolioValueCard';
         container.appendChild(pvCard);
 
