@@ -26,15 +26,15 @@
     "Sugar": 0.7711
   },
   "signals_experimental": {
-    "Oil Brent": 0.378,
-    "Gold": 0.6727,
-    "Silver": 0.3126,
-    "Copper": 0.7539,
-    "Aluminium": 0.3546,
-    "Cocoa": 0.477,
-    "Cotton": 0.7355,
+    "Oil Brent": 0.0,
+    "Gold": 0.388,
+    "Silver": 0.0,
+    "Copper": 0.4691,
+    "Aluminium": 0.1626,
+    "Cocoa": 0.0,
+    "Cotton": 0.4341,
     "Coffee": 0.0,
-    "Natural Gas": -0.6642,
-    "Sugar": 0.7711
+    "Natural Gas": -0.0716,
+    "Sugar": 0.5024
   }
 }
