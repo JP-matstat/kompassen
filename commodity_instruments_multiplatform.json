@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_date": "2026-06-21T15:55:16.679173",
+    "analysis_date": "2026-08-22T16:00:51.246958",
     "period": "5 years",
     "platforms": [
       "avanza",
@@ -20,9 +20,9 @@
             "A",
             "N"
           ],
-          "correlation": 0.3092,
-          "beta": 0.6315,
-          "r_squared": 0.0956,
+          "correlation": 0.3248,
+          "beta": 0.6551,
+          "r_squared": 0.1055,
           "n_observations": 1221
         },
         "european": {
@@ -33,10 +33,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.3007,
-          "beta": 0.6614,
-          "r_squared": 0.0904,
-          "n_observations": 1231
+          "correlation": 0.3174,
+          "beta": 0.6834,
+          "r_squared": 0.1007,
+          "n_observations": 1229
         },
         "world": {
           "ticker": "NEM",
@@ -45,9 +45,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.6349,
-          "beta": 1.31,
-          "r_squared": 0.4031,
+          "correlation": 0.6464,
+          "beta": 1.3365,
+          "r_squared": 0.4179,
           "n_observations": 1254
         },
         "negatives": []
@@ -62,9 +62,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.3092,
-            "beta": 0.6315,
-            "r_squared": 0.0956,
+            "correlation": 0.3248,
+            "beta": 0.6551,
+            "r_squared": 0.1055,
             "n_observations": 1221
           }
         ],
@@ -77,9 +77,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.3092,
-            "beta": 0.6315,
-            "r_squared": 0.0956,
+            "correlation": 0.3248,
+            "beta": 0.6551,
+            "r_squared": 0.1055,
             "n_observations": 1221
           },
           {
@@ -89,9 +89,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6349,
-            "beta": 1.31,
-            "r_squared": 0.4031,
+            "correlation": 0.6464,
+            "beta": 1.3365,
+            "r_squared": 0.4179,
             "n_observations": 1254
           },
           {
@@ -101,9 +101,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6929,
-            "beta": 1.3957,
-            "r_squared": 0.4801,
+            "correlation": 0.7023,
+            "beta": 1.4204,
+            "r_squared": 0.4932,
             "n_observations": 1254
           },
           {
@@ -113,9 +113,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6874,
-            "beta": 1.3279,
-            "r_squared": 0.4725,
+            "correlation": 0.6943,
+            "beta": 1.3504,
+            "r_squared": 0.4821,
             "n_observations": 1254
           },
           {
@@ -125,9 +125,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6474,
-            "beta": 1.4549,
-            "r_squared": 0.4192,
+            "correlation": 0.6576,
+            "beta": 1.4759,
+            "r_squared": 0.4324,
             "n_observations": 1254
           },
           {
@@ -137,9 +137,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6422,
-            "beta": 1.5394,
-            "r_squared": 0.4124,
+            "correlation": 0.6534,
+            "beta": 1.5631,
+            "r_squared": 0.4269,
             "n_observations": 1254
           },
           {
@@ -149,9 +149,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6739,
-            "beta": 1.8013,
-            "r_squared": 0.4542,
+            "correlation": 0.6833,
+            "beta": 1.8086,
+            "r_squared": 0.4669,
             "n_observations": 1254
           },
           {
@@ -161,9 +161,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3305,
-            "beta": 0.8085,
-            "r_squared": 0.1092,
+            "correlation": 0.3555,
+            "beta": 0.8576,
+            "r_squared": 0.1264,
             "n_observations": 1254
           }
         ],
@@ -172,70 +172,32 @@
       "etfs": {
         "avanza": [
           {
-            "ticker": "SGLD.L",
-            "name": "Invesco Physical Gold ETC",
+            "ticker": "G2X.DE",
+            "name": "VanEck Gold Miners UCITS ETF",
             "platform": "avanza",
             "brokers": [
               "A",
               "N"
             ],
-            "correlation": 0.9159,
-            "beta": 0.88,
-            "r_squared": 0.839,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "4GLD.DE",
-            "name": "Xetra-Gold EUR",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "correlation": 0.8307,
-            "beta": 0.7406,
-            "r_squared": 0.6901,
-            "n_observations": 1238
+            "correlation": 0.7675,
+            "beta": 1.435,
+            "r_squared": 0.5891,
+            "n_observations": 1236
           }
         ],
         "nordnet": [
           {
-            "ticker": "SGLD.L",
-            "name": "Invesco Physical Gold ETC",
+            "ticker": "G2X.DE",
+            "name": "VanEck Gold Miners UCITS ETF",
             "platform": "nordnet",
             "brokers": [
               "A",
               "N"
             ],
-            "correlation": 0.9159,
-            "beta": 0.88,
-            "r_squared": 0.839,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "4GLD.DE",
-            "name": "Xetra-Gold EUR",
-            "platform": "nordnet",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "correlation": 0.8307,
-            "beta": 0.7406,
-            "r_squared": 0.6901,
-            "n_observations": 1238
-          },
-          {
-            "ticker": "GDX",
-            "name": "VanEck Gold Miners ETF",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.738,
-            "beta": 1.4761,
-            "r_squared": 0.5447,
-            "n_observations": 1254
+            "correlation": 0.7675,
+            "beta": 1.435,
+            "r_squared": 0.5891,
+            "n_observations": 1236
           }
         ],
         "montrose": []
@@ -243,69 +205,44 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "SGLD.L",
-            "name": "Invesco Physical Gold ETC",
+            "ticker": "4GLD.DE",
+            "name": "Xetra-Gold EUR",
             "platform": "avanza",
             "brokers": [
               "A",
               "N"
             ],
-            "correlation": 0.9159,
-            "beta": 0.88,
-            "r_squared": 0.839,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "PHAU.L",
-            "name": "WisdomTree Physical Gold",
-            "platform": "avanza",
-            "brokers": [
-              "A"
-            ],
-            "correlation": 0.9151,
-            "beta": 0.8766,
-            "r_squared": 0.8374,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "XGLD.L",
-            "name": "Xtrackers Physical Gold ETC",
-            "platform": "avanza",
-            "brokers": [
-              "A"
-            ],
-            "correlation": 0.9132,
-            "beta": 0.8732,
-            "r_squared": 0.8339,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "GLD",
-            "name": "SPDR Gold Trust",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "correlation": 0.9178,
-            "beta": 0.9084,
-            "r_squared": 0.8424,
-            "n_observations": 1254
+            "correlation": 0.8353,
+            "beta": 0.7482,
+            "r_squared": 0.6977,
+            "n_observations": 1236
           }
         ],
         "nordnet": [
           {
-            "ticker": "GLD",
-            "name": "SPDR Gold Trust",
+            "ticker": "4GLD.DE",
+            "name": "Xetra-Gold EUR",
             "platform": "nordnet",
             "brokers": [
               "A",
               "N"
             ],
-            "correlation": 0.9178,
-            "beta": 0.9084,
-            "r_squared": 0.8424,
-            "n_observations": 1254
+            "correlation": 0.8353,
+            "beta": 0.7482,
+            "r_squared": 0.6977,
+            "n_observations": 1236
+          },
+          {
+            "ticker": "IGLN.L",
+            "name": "iShares Physical Gold ETC",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.9184,
+            "beta": 0.8909,
+            "r_squared": 0.8435,
+            "n_observations": 1229
           }
         ],
         "montrose": []
@@ -322,9 +259,9 @@
             "A",
             "N"
           ],
-          "correlation": 0.404,
-          "beta": 0.3948,
-          "r_squared": 0.1632,
+          "correlation": 0.4145,
+          "beta": 0.4027,
+          "r_squared": 0.1718,
           "n_observations": 1221
         },
         "european": {
@@ -335,10 +272,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.3936,
-          "beta": 0.4091,
-          "r_squared": 0.1549,
-          "n_observations": 1231
+          "correlation": 0.4075,
+          "beta": 0.4174,
+          "r_squared": 0.166,
+          "n_observations": 1229
         },
         "world": {
           "ticker": "NEM",
@@ -347,9 +284,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.5806,
-          "beta": 0.5684,
-          "r_squared": 0.3371,
+          "correlation": 0.5871,
+          "beta": 0.5804,
+          "r_squared": 0.3447,
           "n_observations": 1254
         },
         "negatives": []
@@ -364,9 +301,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.404,
-            "beta": 0.3948,
-            "r_squared": 0.1632,
+            "correlation": 0.4145,
+            "beta": 0.4027,
+            "r_squared": 0.1718,
             "n_observations": 1221
           }
         ],
@@ -379,9 +316,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.404,
-            "beta": 0.3948,
-            "r_squared": 0.1632,
+            "correlation": 0.4145,
+            "beta": 0.4027,
+            "r_squared": 0.1718,
             "n_observations": 1221
           },
           {
@@ -391,9 +328,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6053,
-            "beta": 0.5785,
-            "r_squared": 0.3664,
+            "correlation": 0.6098,
+            "beta": 0.5898,
+            "r_squared": 0.3719,
             "n_observations": 1254
           },
           {
@@ -403,9 +340,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.644,
-            "beta": 0.5903,
-            "r_squared": 0.4148,
+            "correlation": 0.645,
+            "beta": 0.5998,
+            "r_squared": 0.416,
             "n_observations": 1254
           },
           {
@@ -415,9 +352,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6503,
-            "beta": 0.8048,
-            "r_squared": 0.4229,
+            "correlation": 0.6529,
+            "beta": 0.8072,
+            "r_squared": 0.4263,
             "n_observations": 1254
           },
           {
@@ -427,9 +364,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4393,
-            "beta": 0.5098,
-            "r_squared": 0.193,
+            "correlation": 0.456,
+            "beta": 0.526,
+            "r_squared": 0.2079,
             "n_observations": 1254
           },
           {
@@ -439,101 +376,45 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6061,
-            "beta": 0.9265,
-            "r_squared": 0.3674,
+            "correlation": 0.6104,
+            "beta": 0.9325,
+            "r_squared": 0.3726,
             "n_observations": 1254
           }
         ],
         "montrose": []
       },
       "etfs": {
-        "avanza": [
-          {
-            "ticker": "PHAG.L",
-            "name": "WisdomTree Physical Silver",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "correlation": 0.9001,
-            "beta": 0.8366,
-            "r_squared": 0.8101,
-            "n_observations": 1231
-          }
-        ],
-        "nordnet": [
-          {
-            "ticker": "PHAG.L",
-            "name": "WisdomTree Physical Silver",
-            "platform": "nordnet",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "correlation": 0.9001,
-            "beta": 0.8366,
-            "r_squared": 0.8101,
-            "n_observations": 1231
-          },
-          {
-            "ticker": "SIL",
-            "name": "Global X Silver Miners ETF",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.7058,
-            "beta": 0.7231,
-            "r_squared": 0.4981,
-            "n_observations": 1254
-          }
-        ],
+        "avanza": [],
+        "nordnet": [],
         "montrose": []
       },
       "trackers": {
-        "avanza": [
+        "avanza": [],
+        "nordnet": [
           {
             "ticker": "PHAG.L",
             "name": "WisdomTree Physical Silver",
-            "platform": "avanza",
+            "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "correlation": 0.9001,
-            "beta": 0.8366,
+            "beta": 0.8437,
             "r_squared": 0.8101,
-            "n_observations": 1231
+            "n_observations": 1229
           },
           {
-            "ticker": "SLV",
-            "name": "iShares Silver Trust",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "correlation": 0.9035,
-            "beta": 0.8501,
-            "r_squared": 0.8163,
-            "n_observations": 1254
-          }
-        ],
-        "nordnet": [
-          {
-            "ticker": "SLV",
-            "name": "iShares Silver Trust",
+            "ticker": "ISLN.L",
+            "name": "iShares Physical Silver ETC",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
-            "correlation": 0.9035,
-            "beta": 0.8501,
-            "r_squared": 0.8163,
-            "n_observations": 1254
+            "correlation": 0.9007,
+            "beta": 0.8425,
+            "r_squared": 0.8112,
+            "n_observations": 1229
           }
         ],
         "montrose": []
@@ -550,9 +431,9 @@
             "A",
             "N"
           ],
-          "correlation": 0.5171,
-          "beta": 0.6967,
-          "r_squared": 0.2674,
+          "correlation": 0.5115,
+          "beta": 0.6946,
+          "r_squared": 0.2616,
           "n_observations": 1222
         },
         "european": {
@@ -563,10 +444,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.5085,
-          "beta": 0.7397,
-          "r_squared": 0.2586,
-          "n_observations": 1232
+          "correlation": 0.5148,
+          "beta": 0.7478,
+          "r_squared": 0.265,
+          "n_observations": 1230
         },
         "world": {
           "ticker": "FCX",
@@ -575,9 +456,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.5658,
-          "beta": 0.915,
-          "r_squared": 0.3201,
+          "correlation": 0.5657,
+          "beta": 0.9211,
+          "r_squared": 0.32,
           "n_observations": 1254
         },
         "negatives": []
@@ -592,9 +473,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.5171,
-            "beta": 0.6967,
-            "r_squared": 0.2674,
+            "correlation": 0.5115,
+            "beta": 0.6946,
+            "r_squared": 0.2616,
             "n_observations": 1222
           },
           {
@@ -605,10 +486,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.6078,
-            "beta": 0.8836,
-            "r_squared": 0.3694,
-            "n_observations": 1232
+            "correlation": 0.6104,
+            "beta": 0.9011,
+            "r_squared": 0.3725,
+            "n_observations": 1230
           },
           {
             "ticker": "AAL.L",
@@ -618,10 +499,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.5085,
-            "beta": 0.7397,
-            "r_squared": 0.2586,
-            "n_observations": 1232
+            "correlation": 0.5148,
+            "beta": 0.7478,
+            "r_squared": 0.265,
+            "n_observations": 1230
           },
           {
             "ticker": "RIO.L",
@@ -631,10 +512,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4744,
-            "beta": 0.466,
-            "r_squared": 0.225,
-            "n_observations": 1231
+            "correlation": 0.4763,
+            "beta": 0.4644,
+            "r_squared": 0.2269,
+            "n_observations": 1229
           },
           {
             "ticker": "GLEN.L",
@@ -644,10 +525,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4886,
-            "beta": 0.5756,
-            "r_squared": 0.2387,
-            "n_observations": 1229
+            "correlation": 0.487,
+            "beta": 0.5751,
+            "r_squared": 0.2372,
+            "n_observations": 1227
           }
         ],
         "nordnet": [
@@ -659,9 +540,9 @@
               "A",
               "N"
             ],
-            "correlation": 0.5171,
-            "beta": 0.6967,
-            "r_squared": 0.2674,
+            "correlation": 0.5115,
+            "beta": 0.6946,
+            "r_squared": 0.2616,
             "n_observations": 1222
           },
           {
@@ -672,10 +553,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.6078,
-            "beta": 0.8836,
-            "r_squared": 0.3694,
-            "n_observations": 1232
+            "correlation": 0.6104,
+            "beta": 0.9011,
+            "r_squared": 0.3725,
+            "n_observations": 1230
           },
           {
             "ticker": "AAL.L",
@@ -685,10 +566,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.5085,
-            "beta": 0.7398,
-            "r_squared": 0.2586,
-            "n_observations": 1232
+            "correlation": 0.5148,
+            "beta": 0.7478,
+            "r_squared": 0.265,
+            "n_observations": 1230
           },
           {
             "ticker": "RIO.L",
@@ -698,10 +579,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4744,
-            "beta": 0.466,
-            "r_squared": 0.225,
-            "n_observations": 1231
+            "correlation": 0.4763,
+            "beta": 0.4644,
+            "r_squared": 0.2269,
+            "n_observations": 1229
           },
           {
             "ticker": "GLEN.L",
@@ -711,10 +592,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4886,
-            "beta": 0.5756,
-            "r_squared": 0.2387,
-            "n_observations": 1229
+            "correlation": 0.487,
+            "beta": 0.5751,
+            "r_squared": 0.2372,
+            "n_observations": 1227
           },
           {
             "ticker": "VALE",
@@ -723,9 +604,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4448,
-            "beta": 0.5661,
-            "r_squared": 0.1978,
+            "correlation": 0.4453,
+            "beta": 0.5628,
+            "r_squared": 0.1983,
             "n_observations": 1254
           },
           {
@@ -735,9 +616,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5658,
-            "beta": 0.915,
-            "r_squared": 0.3201,
+            "correlation": 0.5657,
+            "beta": 0.9211,
+            "r_squared": 0.32,
             "n_observations": 1254
           },
           {
@@ -747,10 +628,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5778,
-            "beta": 0.8269,
-            "r_squared": 0.3339,
-            "n_observations": 1254
+            "correlation": 0.5776,
+            "beta": 0.8446,
+            "r_squared": 0.3336,
+            "n_observations": 1253
           },
           {
             "ticker": "BHP",
@@ -759,52 +640,43 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5231,
-            "beta": 0.5905,
-            "r_squared": 0.2736,
+            "correlation": 0.517,
+            "beta": 0.5841,
+            "r_squared": 0.2672,
             "n_observations": 1254
           }
         ],
         "montrose": []
       },
       "etfs": {
-        "avanza": [],
+        "avanza": [
+          {
+            "ticker": "COPM.MI",
+            "name": "iShares Copper Miners UCITS ETF",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.5607,
+            "beta": 0.573,
+            "r_squared": 0.3144,
+            "n_observations": 452
+          }
+        ],
         "nordnet": [
           {
-            "ticker": "XME",
-            "name": "SPDR S&P Metals & Mining ETF",
+            "ticker": "COPM.MI",
+            "name": "iShares Copper Miners UCITS ETF",
             "platform": "nordnet",
             "brokers": [
+              "A",
               "N"
             ],
-            "correlation": 0.4472,
-            "beta": 0.5253,
-            "r_squared": 0.2,
-            "n_observations": 1254
-          },
-          {
-            "ticker": "COPX",
-            "name": "Global X Copper Miners ETF",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.6554,
-            "beta": 0.8691,
-            "r_squared": 0.4295,
-            "n_observations": 1254
-          },
-          {
-            "ticker": "PICK",
-            "name": "iShares MSCI Global Metals & Mining",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.6,
-            "beta": 0.6049,
-            "r_squared": 0.36,
-            "n_observations": 1254
+            "correlation": 0.5607,
+            "beta": 0.573,
+            "r_squared": 0.3144,
+            "n_observations": 452
           }
         ],
         "montrose": []
@@ -813,16 +685,16 @@
         "avanza": [],
         "nordnet": [
           {
-            "ticker": "CPER",
-            "name": "United States Copper Index Fund",
+            "ticker": "COPA.L",
+            "name": "WisdomTree Copper",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.828,
-            "beta": 0.8034,
-            "r_squared": 0.6855,
-            "n_observations": 1254
+            "correlation": 0.8875,
+            "beta": 0.842,
+            "r_squared": 0.7877,
+            "n_observations": 1230
           }
         ],
         "montrose": []
@@ -839,10 +711,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.1434,
-          "beta": 0.1783,
-          "r_squared": 0.0206,
-          "n_observations": 1224
+          "correlation": 0.1417,
+          "beta": 0.1774,
+          "r_squared": 0.0201,
+          "n_observations": 1223
         },
         "european": {
           "ticker": "BP.L",
@@ -851,10 +723,10 @@
           "brokers": [
             "A"
           ],
-          "correlation": 0.1679,
-          "beta": 0.1866,
-          "r_squared": 0.0282,
-          "n_observations": 1230
+          "correlation": 0.1576,
+          "beta": 0.175,
+          "r_squared": 0.0248,
+          "n_observations": 1229
         },
         "world": {
           "ticker": "XOM",
@@ -863,9 +735,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.1637,
-          "beta": 0.1665,
-          "r_squared": 0.0268,
+          "correlation": 0.1534,
+          "beta": 0.1555,
+          "r_squared": 0.0235,
           "n_observations": 1254
         },
         "negatives": []
@@ -877,20 +749,7 @@
       },
       "etfs": {
         "avanza": [],
-        "nordnet": [
-          {
-            "ticker": "CANE",
-            "name": "Teucrium Sugar Fund",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.9053,
-            "beta": 0.7234,
-            "r_squared": 0.8196,
-            "n_observations": 1254
-          }
-        ],
+        "nordnet": [],
         "montrose": []
       },
       "trackers": {
@@ -903,37 +762,13 @@
               "A",
               "N"
             ],
-            "correlation": 0.5072,
-            "beta": 0.4145,
-            "r_squared": 0.2572,
-            "n_observations": 1231
+            "correlation": 0.5073,
+            "beta": 0.4158,
+            "r_squared": 0.2574,
+            "n_observations": 1230
           }
         ],
         "nordnet": [
-          {
-            "ticker": "DBA",
-            "name": "Invesco DB Agriculture Fund",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.3621,
-            "beta": 0.1921,
-            "r_squared": 0.1311,
-            "n_observations": 1254
-          },
-          {
-            "ticker": "CANE",
-            "name": "Teucrium Sugar Fund",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.9053,
-            "beta": 0.7234,
-            "r_squared": 0.8196,
-            "n_observations": 1254
-          },
           {
             "ticker": "SUGA.L",
             "name": "WisdomTree Sugar",
@@ -941,10 +776,22 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.8177,
-            "beta": 0.7876,
-            "r_squared": 0.6686,
-            "n_observations": 1231
+            "correlation": 0.8167,
+            "beta": 0.7881,
+            "r_squared": 0.667,
+            "n_observations": 1230
+          },
+          {
+            "ticker": "SUGA.MI",
+            "name": "WisdomTree Sugar EUR",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.8019,
+            "beta": 0.7911,
+            "r_squared": 0.643,
+            "n_observations": 1233
           },
           {
             "ticker": "AIGS.L",
@@ -954,10 +801,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.5072,
-            "beta": 0.4145,
-            "r_squared": 0.2572,
-            "n_observations": 1231
+            "correlation": 0.5073,
+            "beta": 0.4158,
+            "r_squared": 0.2574,
+            "n_observations": 1230
           }
         ],
         "montrose": []
@@ -974,10 +821,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.4932,
-          "beta": 0.4223,
-          "r_squared": 0.2432,
-          "n_observations": 1225
+          "correlation": 0.5108,
+          "beta": 0.428,
+          "r_squared": 0.2609,
+          "n_observations": 1223
         },
         "european": {
           "ticker": "BP.L",
@@ -986,10 +833,10 @@
           "brokers": [
             "A"
           ],
-          "correlation": 0.5342,
-          "beta": 0.4061,
-          "r_squared": 0.2854,
-          "n_observations": 1231
+          "correlation": 0.5479,
+          "beta": 0.4042,
+          "r_squared": 0.3002,
+          "n_observations": 1229
         },
         "world": {
           "ticker": "XOM",
@@ -998,9 +845,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.5969,
-          "beta": 0.4182,
-          "r_squared": 0.3563,
+          "correlation": 0.593,
+          "beta": 0.4029,
+          "r_squared": 0.3517,
           "n_observations": 1254
         },
         "negatives": []
@@ -1015,10 +862,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4932,
-            "beta": 0.4223,
-            "r_squared": 0.2432,
-            "n_observations": 1225
+            "correlation": 0.5108,
+            "beta": 0.428,
+            "r_squared": 0.2609,
+            "n_observations": 1223
           }
         ],
         "nordnet": [
@@ -1030,10 +877,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4932,
-            "beta": 0.4223,
-            "r_squared": 0.2432,
-            "n_observations": 1225
+            "correlation": 0.5108,
+            "beta": 0.428,
+            "r_squared": 0.2609,
+            "n_observations": 1223
           },
           {
             "ticker": "XOM",
@@ -1042,9 +889,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5969,
-            "beta": 0.4182,
-            "r_squared": 0.3563,
+            "correlation": 0.593,
+            "beta": 0.4029,
+            "r_squared": 0.3517,
             "n_observations": 1254
           },
           {
@@ -1054,9 +901,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5368,
-            "beta": 0.3537,
-            "r_squared": 0.2882,
+            "correlation": 0.5372,
+            "beta": 0.3452,
+            "r_squared": 0.2886,
             "n_observations": 1254
           },
           {
@@ -1066,9 +913,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5909,
-            "beta": 0.5078,
-            "r_squared": 0.3491,
+            "correlation": 0.5896,
+            "beta": 0.4921,
+            "r_squared": 0.3476,
             "n_observations": 1254
           },
           {
@@ -1078,10 +925,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6162,
-            "beta": 0.4954,
-            "r_squared": 0.3797,
-            "n_observations": 1231
+            "correlation": 0.6208,
+            "beta": 0.4883,
+            "r_squared": 0.3854,
+            "n_observations": 1230
           },
           {
             "ticker": "CVE.TO",
@@ -1090,10 +937,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5927,
-            "beta": 0.5976,
-            "r_squared": 0.3513,
-            "n_observations": 1231
+            "correlation": 0.5932,
+            "beta": 0.5816,
+            "r_squared": 0.3519,
+            "n_observations": 1230
           },
           {
             "ticker": "EOG",
@@ -1102,40 +949,43 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.5826,
-            "beta": 0.5014,
-            "r_squared": 0.3394,
+            "correlation": 0.5802,
+            "beta": 0.4844,
+            "r_squared": 0.3366,
             "n_observations": 1254
           }
         ],
         "montrose": []
       },
       "etfs": {
-        "avanza": [],
+        "avanza": [
+          {
+            "ticker": "ZPDE.DE",
+            "name": "SPDR S&P U.S. Energy Select Sector UCITS",
+            "platform": "avanza",
+            "brokers": [
+              "A",
+              "N"
+            ],
+            "correlation": 0.5911,
+            "beta": 0.4103,
+            "r_squared": 0.3494,
+            "n_observations": 1237
+          }
+        ],
         "nordnet": [
           {
-            "ticker": "XLE",
-            "name": "Energy Select Sector SPDR",
+            "ticker": "ZPDE.DE",
+            "name": "SPDR S&P U.S. Energy Select Sector UCITS",
             "platform": "nordnet",
             "brokers": [
+              "A",
               "N"
             ],
-            "correlation": 0.5991,
-            "beta": 0.4082,
-            "r_squared": 0.359,
-            "n_observations": 1254
-          },
-          {
-            "ticker": "CRUD.L",
-            "name": "WisdomTree WTI Crude Oil",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.8046,
-            "beta": 0.7503,
-            "r_squared": 0.6474,
-            "n_observations": 1232
+            "correlation": 0.5911,
+            "beta": 0.4103,
+            "r_squared": 0.3494,
+            "n_observations": 1237
           }
         ],
         "montrose": []
@@ -1144,28 +994,28 @@
         "avanza": [],
         "nordnet": [
           {
-            "ticker": "USO",
-            "name": "United States Oil Fund",
+            "ticker": "BRNT.L",
+            "name": "WisdomTree Brent Crude Oil",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.9012,
-            "beta": 0.8583,
-            "r_squared": 0.8122,
-            "n_observations": 1254
+            "correlation": 0.8044,
+            "beta": 0.7341,
+            "r_squared": 0.6471,
+            "n_observations": 1230
           },
           {
-            "ticker": "BNO",
-            "name": "United States Brent Oil Fund",
+            "ticker": "CRUD.L",
+            "name": "WisdomTree WTI Crude Oil",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.914,
-            "beta": 0.8544,
-            "r_squared": 0.8355,
-            "n_observations": 1254
+            "correlation": 0.8062,
+            "beta": 0.736,
+            "r_squared": 0.65,
+            "n_observations": 1230
           }
         ],
         "montrose": []
@@ -1182,23 +1032,23 @@
             "A",
             "N"
           ],
-          "correlation": 0.0995,
-          "beta": 0.0388,
-          "r_squared": 0.0099,
-          "n_observations": 1225
+          "correlation": 0.1023,
+          "beta": 0.0401,
+          "r_squared": 0.0105,
+          "n_observations": 1223
         },
         "european": {
-          "ticker": "RIO.L",
-          "name": "Rio Tinto",
+          "ticker": "GLEN.L",
+          "name": "Glencore",
           "region": "european",
           "brokers": [
             "A",
             "N"
           ],
-          "correlation": 0.0488,
-          "beta": 0.0159,
-          "r_squared": 0.0024,
-          "n_observations": 1231
+          "correlation": 0.0479,
+          "beta": 0.0186,
+          "r_squared": 0.0023,
+          "n_observations": 1227
         },
         "world": {
           "ticker": "CVX",
@@ -1207,9 +1057,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.1475,
-          "beta": 0.0442,
-          "r_squared": 0.0217,
+          "correlation": 0.1491,
+          "beta": 0.0448,
+          "r_squared": 0.0222,
           "n_observations": 1254
         },
         "negatives": []
@@ -1224,9 +1074,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4533,
-            "beta": 0.2306,
-            "r_squared": 0.2054,
+            "correlation": 0.4601,
+            "beta": 0.2303,
+            "r_squared": 0.2117,
             "n_observations": 1254
           },
           {
@@ -1236,15 +1086,20 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4362,
-            "beta": 0.2509,
-            "r_squared": 0.1903,
+            "correlation": 0.4426,
+            "beta": 0.2507,
+            "r_squared": 0.1959,
             "n_observations": 1254
           }
         ],
         "montrose": []
       },
       "etfs": {
+        "avanza": [],
+        "nordnet": [],
+        "montrose": []
+      },
+      "trackers": {
         "avanza": [],
         "nordnet": [
           {
@@ -1254,28 +1109,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.6214,
-            "beta": 0.4357,
-            "r_squared": 0.3861,
-            "n_observations": 1232
-          }
-        ],
-        "montrose": []
-      },
-      "trackers": {
-        "avanza": [],
-        "nordnet": [
-          {
-            "ticker": "UNG",
-            "name": "United States Natural Gas Fund",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.8165,
-            "beta": 0.6253,
-            "r_squared": 0.6666,
-            "n_observations": 1254
+            "correlation": 0.6229,
+            "beta": 0.4363,
+            "r_squared": 0.3881,
+            "n_observations": 1230
           }
         ],
         "montrose": []
@@ -1292,9 +1129,9 @@
             "A",
             "N"
           ],
-          "correlation": 0.1621,
-          "beta": 0.2214,
-          "r_squared": 0.0263,
+          "correlation": 0.1629,
+          "beta": 0.2231,
+          "r_squared": 0.0265,
           "n_observations": 1222
         },
         "european": {
@@ -1305,10 +1142,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.1955,
-          "beta": 0.2666,
-          "r_squared": 0.0382,
-          "n_observations": 1231
+          "correlation": 0.195,
+          "beta": 0.2643,
+          "r_squared": 0.038,
+          "n_observations": 1230
         },
         "world": {
           "ticker": "BHP",
@@ -1317,9 +1154,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.1996,
-          "beta": 0.2124,
-          "r_squared": 0.0399,
+          "correlation": 0.2089,
+          "beta": 0.2214,
+          "r_squared": 0.0436,
           "n_observations": 1254
         },
         "negatives": []
@@ -1344,10 +1181,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.348,
-            "beta": 0.2513,
-            "r_squared": 0.1211,
-            "n_observations": 1231
+            "correlation": 0.3421,
+            "beta": 0.2467,
+            "r_squared": 0.1171,
+            "n_observations": 1230
           }
         ],
         "nordnet": [
@@ -1358,10 +1195,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.7044,
-            "beta": 0.6617,
-            "r_squared": 0.4962,
-            "n_observations": 1231
+            "correlation": 0.7065,
+            "beta": 0.6625,
+            "r_squared": 0.4991,
+            "n_observations": 1230
           },
           {
             "ticker": "AIGS.L",
@@ -1371,10 +1208,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.348,
-            "beta": 0.2513,
-            "r_squared": 0.1211,
-            "n_observations": 1231
+            "correlation": 0.3421,
+            "beta": 0.2467,
+            "r_squared": 0.1171,
+            "n_observations": 1230
           }
         ],
         "montrose": []
@@ -1391,9 +1228,9 @@
             "A",
             "N"
           ],
-          "correlation": 0.1463,
-          "beta": 0.1487,
-          "r_squared": 0.0214,
+          "correlation": 0.1398,
+          "beta": 0.1413,
+          "r_squared": 0.0196,
           "n_observations": 1222
         },
         "european": {
@@ -1404,10 +1241,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.1534,
-          "beta": 0.1132,
-          "r_squared": 0.0235,
-          "n_observations": 1230
+          "correlation": 0.1496,
+          "beta": 0.1082,
+          "r_squared": 0.0224,
+          "n_observations": 1229
         },
         "world": {
           "ticker": "VALE",
@@ -1416,9 +1253,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.1728,
-          "beta": 0.1661,
-          "r_squared": 0.0299,
+          "correlation": 0.1551,
+          "beta": 0.1462,
+          "r_squared": 0.0241,
           "n_observations": 1254
         },
         "negatives": []
@@ -1443,25 +1280,13 @@
               "A",
               "N"
             ],
-            "correlation": 0.6988,
-            "beta": 0.4041,
-            "r_squared": 0.4883,
-            "n_observations": 1231
+            "correlation": 0.6931,
+            "beta": 0.3969,
+            "r_squared": 0.4804,
+            "n_observations": 1230
           }
         ],
         "nordnet": [
-          {
-            "ticker": "DBA",
-            "name": "Invesco DB Agriculture Fund",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.4607,
-            "beta": 0.1741,
-            "r_squared": 0.2122,
-            "n_observations": 1254
-          },
           {
             "ticker": "COFF.L",
             "name": "WisdomTree Coffee",
@@ -1469,10 +1294,10 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.8738,
-            "beta": 0.8259,
-            "r_squared": 0.7635,
-            "n_observations": 1231
+            "correlation": 0.8659,
+            "beta": 0.8197,
+            "r_squared": 0.7499,
+            "n_observations": 1230
           },
           {
             "ticker": "AIGS.L",
@@ -1482,10 +1307,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.6988,
-            "beta": 0.4041,
-            "r_squared": 0.4883,
-            "n_observations": 1231
+            "correlation": 0.6931,
+            "beta": 0.3969,
+            "r_squared": 0.4804,
+            "n_observations": 1230
           }
         ],
         "montrose": []
@@ -1502,9 +1327,9 @@
             "A",
             "N"
           ],
-          "correlation": 0.0658,
-          "beta": 0.0521,
-          "r_squared": 0.0043,
+          "correlation": 0.0592,
+          "beta": 0.0457,
+          "r_squared": 0.0035,
           "n_observations": 1221
         },
         "european": {
@@ -1515,21 +1340,21 @@
             "A",
             "N"
           ],
-          "correlation": 0.077,
-          "beta": 0.0438,
-          "r_squared": 0.0059,
-          "n_observations": 1229
+          "correlation": 0.0701,
+          "beta": 0.0383,
+          "r_squared": 0.0049,
+          "n_observations": 1228
         },
         "world": {
-          "ticker": "BHP",
-          "name": "BHP Group",
+          "ticker": "FCX",
+          "name": "Freeport-McMoRan",
           "region": "world",
           "brokers": [
             "N"
           ],
-          "correlation": 0.0864,
-          "beta": 0.0567,
-          "r_squared": 0.0075,
+          "correlation": 0.0829,
+          "beta": 0.076,
+          "r_squared": 0.0069,
           "n_observations": 1254
         },
         "negatives": []
@@ -1548,16 +1373,28 @@
         "avanza": [],
         "nordnet": [
           {
-            "ticker": "DBA",
-            "name": "Invesco DB Agriculture Fund",
+            "ticker": "COCO.L",
+            "name": "WisdomTree Cocoa",
             "platform": "nordnet",
             "brokers": [
               "N"
             ],
-            "correlation": 0.4796,
-            "beta": 0.1395,
-            "r_squared": 0.23,
-            "n_observations": 1254
+            "correlation": 0.8698,
+            "beta": 0.802,
+            "r_squared": 0.7566,
+            "n_observations": 1229
+          },
+          {
+            "ticker": "COCO.MI",
+            "name": "WisdomTree Cocoa EUR",
+            "platform": "nordnet",
+            "brokers": [
+              "N"
+            ],
+            "correlation": 0.862,
+            "beta": 0.8052,
+            "r_squared": 0.7431,
+            "n_observations": 1232
           }
         ],
         "montrose": []
@@ -1574,10 +1411,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.544,
-          "beta": 0.7749,
-          "r_squared": 0.296,
-          "n_observations": 1223
+          "correlation": 0.5249,
+          "beta": 0.7332,
+          "r_squared": 0.2755,
+          "n_observations": 1221
         },
         "european": {
           "ticker": "RIO.L",
@@ -1587,10 +1424,10 @@
             "A",
             "N"
           ],
-          "correlation": 0.442,
-          "beta": 0.483,
-          "r_squared": 0.1953,
-          "n_observations": 1229
+          "correlation": 0.4317,
+          "beta": 0.4618,
+          "r_squared": 0.1864,
+          "n_observations": 1227
         },
         "world": {
           "ticker": "AA",
@@ -1599,9 +1436,9 @@
           "brokers": [
             "N"
           ],
-          "correlation": 0.4903,
-          "beta": 1.1196,
-          "r_squared": 0.2404,
+          "correlation": 0.4818,
+          "beta": 1.0669,
+          "r_squared": 0.2321,
           "n_observations": 1254
         },
         "negatives": []
@@ -1616,10 +1453,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.544,
-            "beta": 0.7749,
-            "r_squared": 0.296,
-            "n_observations": 1223
+            "correlation": 0.5249,
+            "beta": 0.7332,
+            "r_squared": 0.2755,
+            "n_observations": 1221
           },
           {
             "ticker": "RIO.L",
@@ -1629,10 +1466,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.442,
-            "beta": 0.483,
-            "r_squared": 0.1953,
-            "n_observations": 1229
+            "correlation": 0.4317,
+            "beta": 0.4618,
+            "r_squared": 0.1864,
+            "n_observations": 1227
           },
           {
             "ticker": "GLEN.L",
@@ -1642,10 +1479,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4365,
-            "beta": 0.572,
-            "r_squared": 0.1905,
-            "n_observations": 1227
+            "correlation": 0.4263,
+            "beta": 0.5523,
+            "r_squared": 0.1817,
+            "n_observations": 1225
           }
         ],
         "nordnet": [
@@ -1657,10 +1494,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.544,
-            "beta": 0.7749,
-            "r_squared": 0.296,
-            "n_observations": 1223
+            "correlation": 0.5249,
+            "beta": 0.7332,
+            "r_squared": 0.2755,
+            "n_observations": 1221
           },
           {
             "ticker": "RIO.L",
@@ -1670,10 +1507,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.442,
-            "beta": 0.483,
-            "r_squared": 0.1953,
-            "n_observations": 1229
+            "correlation": 0.4317,
+            "beta": 0.4618,
+            "r_squared": 0.1864,
+            "n_observations": 1227
           },
           {
             "ticker": "GLEN.L",
@@ -1683,10 +1520,10 @@
               "A",
               "N"
             ],
-            "correlation": 0.4365,
-            "beta": 0.572,
-            "r_squared": 0.1905,
-            "n_observations": 1227
+            "correlation": 0.4263,
+            "beta": 0.5523,
+            "r_squared": 0.1817,
+            "n_observations": 1225
           },
           {
             "ticker": "VALE",
@@ -1695,9 +1532,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3432,
-            "beta": 0.4933,
-            "r_squared": 0.1178,
+            "correlation": 0.3368,
+            "beta": 0.47,
+            "r_squared": 0.1134,
             "n_observations": 1254
           },
           {
@@ -1707,9 +1544,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.3833,
-            "beta": 0.4886,
-            "r_squared": 0.1469,
+            "correlation": 0.3674,
+            "beta": 0.4583,
+            "r_squared": 0.135,
             "n_observations": 1254
           },
           {
@@ -1719,9 +1556,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4903,
-            "beta": 1.1196,
-            "r_squared": 0.2404,
+            "correlation": 0.4818,
+            "beta": 1.0669,
+            "r_squared": 0.2321,
             "n_observations": 1254
           },
           {
@@ -1731,9 +1568,9 @@
             "brokers": [
               "N"
             ],
-            "correlation": 0.4307,
-            "beta": 1.2605,
-            "r_squared": 0.1855,
+            "correlation": 0.4221,
+            "beta": 1.1925,
+            "r_squared": 0.1781,
             "n_observations": 1254
           }
         ],
@@ -1741,63 +1578,35 @@
       },
       "etfs": {
         "avanza": [],
-        "nordnet": [
-          {
-            "ticker": "XME",
-            "name": "SPDR S&P Metals & Mining ETF",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.3278,
-            "beta": 0.4348,
-            "r_squared": 0.1074,
-            "n_observations": 1254
-          },
-          {
-            "ticker": "PICK",
-            "name": "iShares MSCI Global Metals & Mining",
-            "platform": "nordnet",
-            "brokers": [
-              "N"
-            ],
-            "correlation": 0.425,
-            "beta": 0.4838,
-            "r_squared": 0.1806,
-            "n_observations": 1254
-          }
-        ],
+        "nordnet": [],
         "montrose": []
       },
       "trackers": {
-        "avanza": [
+        "avanza": [],
+        "nordnet": [
           {
-            "ticker": "B4NP.DE",
-            "name": "BNPP Aluminium ETC",
-            "platform": "avanza",
+            "ticker": "ALUM.L",
+            "name": "WisdomTree Aluminium",
+            "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
-            "correlation": 0.8633,
-            "beta": 0.7919,
-            "r_squared": 0.7453,
-            "n_observations": 1239
-          }
-        ],
-        "nordnet": [
+            "correlation": 0.9017,
+            "beta": 0.8232,
+            "r_squared": 0.813,
+            "n_observations": 1228
+          },
           {
             "ticker": "B4NP.DE",
             "name": "BNPP Aluminium ETC",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
-            "correlation": 0.8633,
-            "beta": 0.7919,
-            "r_squared": 0.7453,
-            "n_observations": 1239
+            "correlation": 0.8572,
+            "beta": 0.7764,
+            "r_squared": 0.7348,
+            "n_observations": 1237
           }
         ],
         "montrose": []
