@@ -1532,11 +1532,16 @@ function drawPerformanceChart() {
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.globalAlpha = 1;
-        ctx.fillStyle = textColor;
         ctx.font = '11px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'bottom';
-        ctx.fillText(t('goLiveLabel'), liveX, pad.top - 4);
+        const goliveText = t('goLiveLabel');
+        const goliveW = ctx.measureText(goliveText).width + 8;
+        const goliveH = 16;
+        ctx.fillStyle = isDark ? 'rgba(30,41,59,0.85)' : 'rgba(255,255,255,0.85)';
+        ctx.fillRect(liveX - goliveW / 2, pad.top - 4 - goliveH, goliveW, goliveH);
+        ctx.fillStyle = textColor;
+        ctx.fillText(goliveText, liveX, pad.top - 4);
         ctx.restore();
     }
 
@@ -1557,11 +1562,16 @@ function drawPerformanceChart() {
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.globalAlpha = 1;
-        ctx.fillStyle = '#166534';
         ctx.font = '11px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'bottom';
-        ctx.fillText(t('goLiveExpLabel'), expX, expLabelY);
+        const goLiveExpText = t('goLiveExpLabel');
+        const goLiveExpW = ctx.measureText(goLiveExpText).width + 8;
+        const goLiveExpH = 16;
+        ctx.fillStyle = isDark ? 'rgba(30,41,59,0.85)' : 'rgba(255,255,255,0.85)';
+        ctx.fillRect(expX - goLiveExpW / 2, expLabelY - goLiveExpH, goLiveExpW, goLiveExpH);
+        ctx.fillStyle = '#166534';
+        ctx.fillText(goLiveExpText, expX, expLabelY);
         ctx.restore();
     }
 
