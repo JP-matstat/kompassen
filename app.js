@@ -1532,16 +1532,17 @@ function drawPerformanceChart() {
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.globalAlpha = 1;
-        ctx.font = '11px system-ui, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'bottom';
+        ctx.font = 'bold 11px system-ui, sans-serif';
         const goliveText = t('goLiveLabel');
-        const goliveW = ctx.measureText(goliveText).width + 8;
-        const goliveH = 16;
-        ctx.fillStyle = isDark ? 'rgba(30,41,59,0.85)' : 'rgba(255,255,255,0.85)';
-        ctx.fillRect(liveX - goliveW / 2, pad.top - 4 - goliveH, goliveW, goliveH);
+        const labelW = ctx.measureText(goliveText).width + 10;
+        const labelH = 18;
+        const labelY = pad.top + 4;
+        ctx.fillStyle = isDark ? '#1e293b' : '#ffffff';
+        ctx.fillRect(liveX - labelW / 2, labelY, labelW, labelH);
         ctx.fillStyle = textColor;
-        ctx.fillText(goliveText, liveX, pad.top - 4);
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(goliveText, liveX, labelY + labelH / 2);
         ctx.restore();
     }
 
@@ -1549,7 +1550,7 @@ function drawPerformanceChart() {
     const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
     if (expLiveIdx !== -1) {
         const expX = xScale(expLiveIdx);
-        const expLabelY = pad.top - 4;
+        const overlaps = liveX !== null && Math.abs(expX - liveX) < 90;
         ctx.save();
         ctx.strokeStyle = '#166534';
         ctx.globalAlpha = 0.9;
@@ -1561,16 +1562,17 @@ function drawPerformanceChart() {
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.globalAlpha = 1;
-        ctx.font = '11px system-ui, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'bottom';
+        ctx.font = 'bold 11px system-ui, sans-serif';
         const goLiveExpText = t('goLiveExpLabel');
-        const goLiveExpW = ctx.measureText(goLiveExpText).width + 8;
-        const goLiveExpH = 16;
-        ctx.fillStyle = isDark ? 'rgba(30,41,59,0.85)' : 'rgba(255,255,255,0.85)';
-        ctx.fillRect(expX - goLiveExpW / 2, expLabelY - goLiveExpH, goLiveExpW, goLiveExpH);
+        const expLabelW = ctx.measureText(goLiveExpText).width + 10;
+        const expLabelH = 18;
+        const expLabelY = overlaps ? pad.top + 24 : pad.top + 4;
+        ctx.fillStyle = isDark ? '#1e293b' : '#ffffff';
+        ctx.fillRect(expX - expLabelW / 2, expLabelY, expLabelW, expLabelH);
         ctx.fillStyle = '#166534';
-        ctx.fillText(goLiveExpText, expX, expLabelY);
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(goLiveExpText, expX, expLabelY + expLabelH / 2);
         ctx.restore();
     }
 
