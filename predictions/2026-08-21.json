@@ -1,0 +1,86 @@
+{
+  "date": "2026-08-21",
+  "prediction_based_on": "2026-08-21",
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "signal": 0.378,
+      "signal_low_risk": 0.2383,
+      "dom_prob": 0.4186,
+      "actual_yesterday": 0.92166,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Gold",
+      "signal": 0.6727,
+      "signal_low_risk": 0.4162,
+      "dom_prob": 0.7278,
+      "actual_yesterday": 1.414342,
+      "signal_experimental": 0.388
+    },
+    {
+      "commodity": "Silver",
+      "signal": 0.3126,
+      "signal_low_risk": 0.2176,
+      "dom_prob": 0.3706,
+      "actual_yesterday": 0.711121,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Copper",
+      "signal": 0.7539,
+      "signal_low_risk": 0.7291,
+      "dom_prob": 0.7539,
+      "actual_yesterday": 1.569022,
+      "signal_experimental": 0.4691
+    },
+    {
+      "commodity": "Aluminium",
+      "signal": 0.3546,
+      "signal_low_risk": 0.2926,
+      "dom_prob": 0.6641,
+      "actual_yesterday": 1.837466,
+      "signal_experimental": 0.1626
+    },
+    {
+      "commodity": "Cocoa",
+      "signal": 0.477,
+      "signal_low_risk": 0.2372,
+      "dom_prob": 0.477,
+      "actual_yesterday": -0.971353,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Cotton",
+      "signal": 0.7355,
+      "signal_low_risk": 0.7355,
+      "dom_prob": 0.7355,
+      "actual_yesterday": 0.976386,
+      "signal_experimental": 0.4341
+    },
+    {
+      "commodity": "Coffee",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": 0.535414,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Natural Gas",
+      "signal": -0.6642,
+      "signal_low_risk": -0.6642,
+      "dom_prob": 0.6642,
+      "actual_yesterday": 3.191485,
+      "signal_experimental": -0.0716
+    },
+    {
+      "commodity": "Sugar",
+      "signal": 0.7711,
+      "signal_low_risk": 0.7711,
+      "dom_prob": 0.7711,
+      "actual_yesterday": 0.507615,
+      "signal_experimental": 0.5024
+    }
+  ]
+}

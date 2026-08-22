@@ -76,9 +76,11 @@ let relatedStocksData = null; // Cache for related stocks data
 let signalHistory = []; // Historical signals from localStorage: [{date, signals}]
 
 // Risk model toggle
-let currentRiskModel = 'high'; // 'high' | 'low'
+let currentRiskModel = 'high'; // 'high' | 'low' | 'exp'
 let signalsLowRisk = { ...DEFAULT_SIGNALS };
+let signalsExperimental = { ...DEFAULT_SIGNALS };
 let historicalDataLowRisk = [];
+let historicalDataExperimental = [];
 
 // Historical performance data
 // Format: { date: 'YYYY-MM-DD', predictions: { commodity: signal }, actuals: { commodity: priceChange } }
@@ -183,6 +185,14 @@ async function loadDailySignals() {
             COMMODITIES.forEach(commodity => {
                 if (data.signals_low_risk.hasOwnProperty(commodity)) {
                     signalsLowRisk[commodity] = data.signals_low_risk[commodity];
+                }
+            });
+        }
+        // Update experimental-model signals
+        if (data.signals_experimental) {
+            COMMODITIES.forEach(commodity => {
+                if (data.signals_experimental.hasOwnProperty(commodity)) {
+                    signalsExperimental[commodity] = data.signals_experimental[commodity];
                 }
             });
         }
@@ -534,10 +544,12 @@ function calculatePortfolio(signalsToUse = signals) {
 
 // Render signal strength dots
 function getActiveSignals() {
+    if (currentRiskModel === 'exp') return signalsExperimental;
     return currentRiskModel === 'high' ? signals : signalsLowRisk;
 }
 
 function getActiveHistoricalData() {
+    if (currentRiskModel === 'exp') return historicalDataExperimental;
     return currentRiskModel === 'high' ? historicalData : historicalDataLowRisk;
 }
 
@@ -851,12 +863,14 @@ async function loadHistoricalData() {
         if (!resp.ok) {
             historicalData = [];
             historicalDataLowRisk = [];
+            historicalDataExperimental = [];
             return;
         }
         const data = await resp.json();
         if (!data.entries || data.entries.length === 0) {
             historicalData = [];
             historicalDataLowRisk = [];
+            historicalDataExperimental = [];
             return;
         }
         historicalData = data.entries.map(e => ({
@@ -869,6 +883,27 @@ async function loadHistoricalData() {
             predictions: e.predictions_low_risk,
             actuals: e.actuals,
         }));
+
+        // Experimental model: daily scaled signals live in a separate file,
+        // actuals come from the main series (they are price moves, model-independent)
+        const actualsByDate = {};
+        data.entries.forEach(e => { actualsByDate[e.date] = e.actuals || null; });
+        try {
+            const expResp = await fetch('experimental_daily_signals.json?v=' + Date.now());
+            if (expResp.ok) {
+                const expData = await expResp.json();
+                historicalDataExperimental = expData.entries.map(e => ({
+                    date: e.date,
+                    predictions: e.signal,
+                    actuals: actualsByDate[e.date] || null,
+                }));
+            } else {
+                historicalDataExperimental = [];
+            }
+        } catch (e) {
+            console.warn('Failed to load experimental daily signals:', e);
+            historicalDataExperimental = [];
+        }
     } catch (e) {
         console.warn('Failed to load historical data:', e);
         const fallback = [
@@ -879,6 +914,7 @@ async function loadHistoricalData() {
         ];
         historicalData = fallback;
         historicalDataLowRisk = fallback;
+        historicalDataExperimental = [];
     }
 }
 
@@ -1141,6 +1177,13 @@ function renderPerformanceStats() {
     const container = document.getElementById('performanceStats');
     container.innerHTML = '';
 
+    if (currentRiskModel === 'exp') {
+        renderExperimentalPerformanceStats(container);
+        drawPerformanceChart();
+        loadExperimentalData();
+        return;
+    }
+
     const activeData = getActiveHistoricalData();
     // Live statistics (date >= LIVE_DATE)
     let liveTotalPredictions = 0;
@@ -1220,6 +1263,38 @@ function renderPerformanceStats() {
 
     drawPerformanceChart();
     loadExperimentalData();
+}
+
+// Summary cards for the experimental model (from experimental_live.json)
+async function renderExperimentalPerformanceStats(container) {
+    try {
+        const resp = await fetch('experimental_live.json?v=' + Date.now());
+        if (!resp.ok) {
+            container.innerHTML = `<p class="no-stock">${t('modelNotAvailable')}</p>`;
+            return;
+        }
+        const live = await resp.json();
+
+        const accVal = live.live_total_predictions > 0 ? live.live_accuracy.toFixed(1) + '%' : '-';
+        const accClass = live.live_accuracy >= 50 ? 'success' : 'danger';
+        const accCard = createStatCard(t('experimentalAccuracy'), accVal, accClass, live.live_total_predictions > 0 ? live.live_accuracy : null);
+        accCard.querySelector('.stat-label').title = t('liveAccuracyHint');
+        container.appendChild(accCard);
+
+        const pvCard = createStatCard(t('experimentalPortfolioValue'), live.live_portfolio_value.toFixed(2), live.live_portfolio_value >= 100 ? 'success' : 'danger', null, t('experimentalPortfolioValueHint', { date: live.live_date }));
+        container.appendChild(pvCard);
+
+        const annPct = live.live_annualized_return_pct;
+        const annStr = annPct != null ? `${annPct >= 0 ? '+' : ''}${annPct.toFixed(1)}%` : '—';
+        const annClass = annPct >= 0 ? 'success' : 'danger';
+        container.appendChild(createStatCard(t('experimentalAnnualizedReturn'), annStr, annClass, null));
+
+        container.appendChild(createStatCard(t('experimentalDaysSinceLive'), String(live.live_days), '', live.live_days));
+        container.appendChild(createStatCard(t('experimentalTotalPredictions'), String(live.live_total_predictions), '', live.live_total_predictions));
+    } catch (e) {
+        console.warn('Failed to load experimental_live.json:', e);
+        container.innerHTML = `<p class="no-stock">${t('modelNotAvailable')}</p>`;
+    }
 }
 
 // Load experimental model data and render its stats
@@ -1385,11 +1460,13 @@ function drawPerformanceChart() {
     const chartH = h - pad.top - pad.bottom;
 
     const expValues = experimentalEquityCurveData?.values || [];
-    let minVal = showExperimentalModel
-        ? Math.min(...highRisk, ...lowRisk, ...expValues)
+    const expNonNull = expValues.filter(v => v != null);
+    const expShown = (showExperimentalModel || currentRiskModel === 'exp') && expNonNull.length > 0;
+    let minVal = expShown
+        ? Math.min(...highRisk, ...lowRisk, ...expNonNull)
         : Math.min(...highRisk, ...lowRisk);
-    let maxVal = showExperimentalModel
-        ? Math.max(...highRisk, ...lowRisk, ...expValues)
+    let maxVal = expShown
+        ? Math.max(...highRisk, ...lowRisk, ...expNonNull)
         : Math.max(...highRisk, ...lowRisk);
     const range = maxVal - minVal || 1;
     const yPadding = range * 0.1;
@@ -1472,7 +1549,7 @@ function drawPerformanceChart() {
         return bestDiff < 86400000 * 14 ? best : -1;
     }
     const YEAR_BOUNDARY_DATES = ['2022-02-22', '2023-02-22', '2024-02-22', '2025-02-22', '2026-02-22'];
-    const activeCurveRet = currentRiskModel === 'high' ? highRisk : lowRisk;
+    const activeCurveRet = currentRiskModel === 'high' ? highRisk : (currentRiskModel === 'low' ? lowRisk : expValues);
     const dataStartIdx = 0;
     const yearRetLabels = [];
     YEAR_BOUNDARY_DATES.forEach((bd, bi) => {
@@ -1481,7 +1558,10 @@ function drawPerformanceChart() {
         const prevDate = bi === 0 ? dates[dataStartIdx] : YEAR_BOUNDARY_DATES[bi - 1];
         const prevIdx = bi === 0 ? dataStartIdx : nearestIdx(dates, prevDate);
         if (prevIdx === -1) return;
-        const annRet = ((activeCurveRet[boundaryIdx] / activeCurveRet[prevIdx]) - 1) * 100;
+        const curVal = activeCurveRet[boundaryIdx];
+        const prevVal = activeCurveRet[prevIdx];
+        if (curVal == null || prevVal == null || prevVal === 0) return;
+        const annRet = ((curVal / prevVal) - 1) * 100;
         const bx = xScale(boundaryIdx);
         yearRetLabels.push({ x: bx, ret: annRet, date: bd });
         ctx.save();
@@ -1558,27 +1638,25 @@ function drawPerformanceChart() {
     const isSv = window.I18n && I18n.getLang() === 'sv';
     const highAlpha = currentRiskModel === 'high' ? 1 : 0.5;
     const lowAlpha = currentRiskModel === 'low' ? 1 : 0.5;
+    const expAlpha = currentRiskModel === 'exp' ? 0.85 : 0.5;
     ctx.globalAlpha = highAlpha;
     drawCurve(highRisk, HIGH_COLOR);
     ctx.globalAlpha = lowAlpha;
     drawCurve(lowRisk, LOW_COLOR);
     ctx.globalAlpha = 1;
 
-    // Experimental model curve (filter out nulls) — only if toggled on
-    if (showExperimentalModel && expValues.length > 0) {
-        const expNonNull = expValues.filter(v => v != null);
-        if (expNonNull.length > 0) {
-            ctx.globalAlpha = 0.85;
-            drawCurve(expValues, EXP_COLOR, true);
-            ctx.globalAlpha = 1;
-        }
+    // Experimental model curve (filter out nulls) — when toggled on or selected
+    if (expShown) {
+        ctx.globalAlpha = expAlpha;
+        drawCurve(expValues, EXP_COLOR, true);
+        ctx.globalAlpha = 1;
     }
 
     const legendEntries = [];
     legendEntries.push({ label: isSv ? 'Högriskmodell' : 'High risk', color: HIGH_COLOR, alpha: highAlpha });
     legendEntries.push({ label: isSv ? 'Lågriskmodell' : 'Low risk', color: LOW_COLOR, alpha: lowAlpha });
-    if (showExperimentalModel && expValues.some(v => v != null)) {
-        legendEntries.push({ label: isSv ? 'Exp. modell' : 'Exp. model', color: EXP_COLOR, alpha: 0.85 });
+    if (expShown) {
+        legendEntries.push({ label: isSv ? 'Exp. modell' : 'Exp. model', color: EXP_COLOR, alpha: expAlpha });
     }
 
     const legendX = pad.left + 8;
@@ -1684,11 +1762,12 @@ function drawPerformanceChart() {
         const lVal = state.lowRisk[closest];
         const expLabel = isSv ? 'Exp. modell' : 'Exp. model';
         const eVal = state.expValues && state.expValues[closest];
+        const expShown = showExperimentalModel || currentRiskModel === 'exp';
         let expHtml = '';
-        if (showExperimentalModel && eVal != null) {
+        if (expShown && eVal != null) {
             expHtml = '<div style="color:#22c55e">' + expLabel + ': ' + eVal.toFixed(2) + '</div>';
         }
-        const maxDisplay = Math.max(...[hVal, lVal, showExperimentalModel && eVal != null ? eVal : -Infinity].filter(v => v != null && isFinite(v)));
+        const maxDisplay = Math.max(...[hVal, lVal, expShown && eVal != null ? eVal : -Infinity].filter(v => v != null && isFinite(v)));
         tooltip.innerHTML =
             '<div>' + state.dates[closest] + '</div>'
             + '<div style="color:#dc2626">' + hrLabel + ': ' + hVal.toFixed(2) + '</div>'
@@ -2238,8 +2317,10 @@ function switchRiskModel(model) {
     document.querySelectorAll('.risk-panel').forEach(p => {
         p.style.display = 'none';
     });
-    const panel = document.getElementById(model === 'high' ? 'riskPanelHigh' : 'riskPanelLow');
-    if (panel) panel.style.display = '';
+    if (model === 'high' || model === 'low') {
+        const panel = document.getElementById(model === 'high' ? 'riskPanelHigh' : 'riskPanelLow');
+        if (panel) panel.style.display = '';
+    }
     renderSignalDots();
     renderAllocation();
     renderPerformanceStats();
@@ -2264,8 +2345,10 @@ function setupRiskModelBar() {
     const isSv = window.I18n && I18n.getLang() === 'sv';
     const highLabel = isSv ? 'Högriskmodell' : 'High risk model';
     const lowLabel = isSv ? 'Lågriskmodell' : 'Low risk model';
+    const expLabel = t('riskModelExperimental');
     bar.innerHTML = `
-        <button class="risk-tab risk-tab-active" data-model="high" onclick="switchRiskModel('high')">${highLabel}</button>
-        <button class="risk-tab" data-model="low" onclick="switchRiskModel('low')">${lowLabel}</button>
+        <button class="risk-tab ${currentRiskModel === 'high' ? 'risk-tab-active' : ''}" data-model="high" onclick="switchRiskModel('high')">${highLabel}</button>
+        <button class="risk-tab ${currentRiskModel === 'low' ? 'risk-tab-active' : ''}" data-model="low" onclick="switchRiskModel('low')">${lowLabel}</button>
+        <button class="risk-tab ${currentRiskModel === 'exp' ? 'risk-tab-active' : ''}" data-model="exp" onclick="switchRiskModel('exp')">${expLabel}</button>
     `;
 }
