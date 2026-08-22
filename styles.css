@@ -1753,11 +1753,10 @@ body.dark .strip-cell.strip-correct {
     color: var(--text-secondary);
 }
 
-.model-perf-table td:last-child {
-    text-align: right;
-    font-weight: 600;
-    font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
-}
+.model-perf-table td:nth-child(2),
+.model-perf-table td:nth-child(3),
+.model-perf-table td:nth-child(4) {
+
 
 .metric-cell {
     font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Consolas', 'Courier New', monospace;

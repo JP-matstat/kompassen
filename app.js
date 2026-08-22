@@ -1532,48 +1532,28 @@ function drawPerformanceChart() {
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.globalAlpha = 1;
-        ctx.font = 'bold 11px system-ui, sans-serif';
-        const goliveText = t('goLiveLabel');
-        const labelW = ctx.measureText(goliveText).width + 10;
-        const labelH = 18;
-        const labelY = pad.top + 4;
-        ctx.fillStyle = isDark ? '#1e293b' : '#ffffff';
-        ctx.fillRect(liveX - labelW / 2, labelY, labelW, labelH);
-        ctx.fillStyle = textColor;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(goliveText, liveX, labelY + labelH / 2);
         ctx.restore();
     }
 
-    // Experimental model went live — dark green dashed line
-    const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
-    if (expLiveIdx !== -1) {
-        const expX = xScale(expLiveIdx);
-        const overlaps = liveX !== null && Math.abs(expX - liveX) < 90;
-        ctx.save();
-        ctx.strokeStyle = '#166534';
-        ctx.globalAlpha = 0.9;
-        ctx.lineWidth = 1.5;
-        ctx.setLineDash([4, 4]);
-        ctx.beginPath();
-        ctx.moveTo(expX, pad.top);
-        ctx.lineTo(expX, pad.top + chartH);
-        ctx.stroke();
-        ctx.setLineDash([]);
-        ctx.globalAlpha = 1;
-        ctx.font = 'bold 11px system-ui, sans-serif';
-        const goLiveExpText = t('goLiveExpLabel');
-        const expLabelW = ctx.measureText(goLiveExpText).width + 10;
-        const expLabelH = 18;
-        const expLabelY = overlaps ? pad.top + 24 : pad.top + 4;
-        ctx.fillStyle = isDark ? '#1e293b' : '#ffffff';
-        ctx.fillRect(expX - expLabelW / 2, expLabelY, expLabelW, expLabelH);
-        ctx.fillStyle = '#166534';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(goLiveExpText, expX, expLabelY + expLabelH / 2);
-        ctx.restore();
+    // Experimental model went live — dark green dashed line (only when shown)
+    let expLiveX = null;
+    if (expShown) {
+        const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
+        if (expLiveIdx !== -1) {
+            expLiveX = xScale(expLiveIdx);
+            ctx.save();
+            ctx.strokeStyle = '#166534';
+            ctx.globalAlpha = 0.9;
+            ctx.lineWidth = 1.5;
+            ctx.setLineDash([4, 4]);
+            ctx.beginPath();
+            ctx.moveTo(expLiveX, pad.top);
+            ctx.lineTo(expLiveX, pad.top + chartH);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.globalAlpha = 1;
+            ctx.restore();
+        }
     }
 
     // Year-boundary vertical lines with annual return
@@ -1725,7 +1705,8 @@ function drawPerformanceChart() {
     ctx.fillText(yLabel, pad.left + chartW / 2, h - 1);
 
     // Store chart state for hover
-    canvas._chartState = { dates, highRisk, lowRisk, expValues, xScale, yScale, pad, h, w, yearRetLabels };
+    canvas._chartState = { dates, highRisk, lowRisk, expValues, xScale, yScale, pad, h, w,
+        liveX, expLiveX, yearRetLabels };
     setupPerformanceChartHover(canvas);
 }
 
@@ -1762,6 +1743,25 @@ function drawPerformanceChart() {
 
         if (mx < state.pad.left || mx > state.w - state.pad.right || my > state.h - state.pad.bottom) {
             tooltip.style.display = 'none';
+            return;
+        }
+
+        // Check hover near go-live vertical lines
+        const liveThreshold = 12;
+        if (state.liveX != null && Math.abs(mx - state.liveX) < liveThreshold) {
+            tooltip.innerHTML = '<div>' + t('goLiveLabel') + '</div>'
+                + '<div style="font-size:10px;color:#94a3b8">' + LIVE_DATE + '</div>';
+            tooltip.style.display = 'block';
+            tooltip.style.left = Math.min(state.liveX + 12, state.w - 130) + 'px';
+            tooltip.style.top = Math.max(0, state.pad.top - 4) + 'px';
+            return;
+        }
+        if (state.expLiveX != null && Math.abs(mx - state.expLiveX) < liveThreshold) {
+            tooltip.innerHTML = '<div style="color:#22c55e">' + t('goLiveExpLabel') + '</div>'
+                + '<div style="font-size:10px;color:#94a3b8">' + EXPERIMENTAL_LIVE_DATE + '</div>';
+            tooltip.style.display = 'block';
+            tooltip.style.left = Math.min(state.expLiveX + 12, state.w - 130) + 'px';
+            tooltip.style.top = Math.max(0, state.pad.top - 4) + 'px';
             return;
         }
 
