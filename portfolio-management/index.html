@@ -11,7 +11,7 @@
     <meta property="og:title" content="Portföljövervakning — Kompassen">
     <meta property="og:description" content="Registrera din portfölj och få ett mejl när en råvarusignal ändras och en position behöver stängas.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="../styles.css?v=20">
+    <link rel="stylesheet" href="../styles.css?v=21">
     <style>
         .pm-container {
             max-width: 640px;
@@ -66,6 +66,7 @@
         .pm-lang-choice {
             display: flex;
             gap: 0.5rem;
+            flex-wrap: wrap;
         }
 
         .pm-lang-choice label {
@@ -341,6 +342,25 @@
                     <input type="email" id="pmEmail" name="email" required maxlength="254" autocomplete="email">
                 </div>
 
+                <div class="pm-field" id="modelField">
+                    <span class="pm-label" data-i18n="pmModelLabel">Modell</span>
+                    <p class="pm-pos-hint" data-i18n="pmModelHint"></p>
+                    <div class="pm-lang-choice" id="pmModelChoice">
+                        <label><input type="radio" name="riskModel" value="high" checked><span data-i18n="pmModelHigh">High risk</span></label>
+                        <label><input type="radio" name="riskModel" value="low"><span data-i18n="pmModelLow">Low risk</span></label>
+                        <label><input type="radio" name="riskModel" value="exp"><span data-i18n="pmModelExp">Experimental</span></label>
+                    </div>
+                </div>
+
+                <div class="pm-field" id="allocModeField">
+                    <span class="pm-label" data-i18n="pmAllocModeLabel">Allocation mode</span>
+                    <p class="pm-pos-hint" data-i18n="pmAllocModeHint"></p>
+                    <div class="pm-lang-choice" id="pmAllocModeChoice">
+                        <label><input type="radio" name="allocMode" value="longShort" checked><span data-i18n="pmAllocModeLongShort">Long &amp; short</span></label>
+                        <label><input type="radio" name="allocMode" value="longOnly"><span data-i18n="pmAllocModeLongOnly">Long only</span></label>
+                    </div>
+                </div>
+
                 <div class="pm-field">
                     <label for="pmInvest" data-i18n="pmInvestLabel">Investeringsbelopp i SEK (valfritt)</label>
                     <p class="pm-pos-hint" data-i18n="pmInvestHint"></p>
@@ -392,7 +412,7 @@
         <a class="pm-back" href="/" data-i18n="pmBack">Tillbaka till Kompassen</a>
     </div>
 
-    <script src="../i18n.js?v=18"></script>
+    <script src="../i18n.js?v=19"></script>
     <script>
         (function () {
             if (localStorage.getItem('theme') !== 'light') {
@@ -470,34 +490,86 @@
                 el.textContent = I18n.t(optionKeys[el.dataset.posOption]);
             });
             refreshSignalDots();
+            renderInvestmentSplit();
         }
 
+        // Model and allocation state
+        let todaySignals = null;
+        let todaySignalsLowRisk = null;
+        let todaySignalsExperimental = null;
+        let todaySignalsDate = '';
+
+        function getSelectedModel() {
+            const el = form.querySelector('input[name="riskModel"]:checked');
+            return el ? el.value : 'high';
+        }
+        function getSelectedAllocMode() {
+            const el = form.querySelector('input[name="allocMode"]:checked');
+            return el ? el.value : 'longShort';
+        }
+        function getActiveSignalsRaw() {
+            const model = getSelectedModel();
+            if (model === 'exp') return todaySignalsExperimental;
+            if (model === 'low') return todaySignalsLowRisk;
+            return todaySignals;
+        }
+        function getEffectiveSignals() {
+            const raw = getActiveSignalsRaw();
+            if (!raw) return null;
+            const mode = getSelectedAllocMode();
+            if (mode === 'longOnly') {
+                const eff = {};
+                COMMODITIES.forEach((c) => {
+                    const v = raw[c] || 0;
+                    eff[c] = v > 0 ? v : 0;
+                });
+                return eff;
+            }
+            return raw;
+        }
         function signalDirection(commodity) {
-            const signal = todaySignals ? (todaySignals[commodity] || 0) : 0;
+            const signals = getEffectiveSignals();
+            const signal = signals ? (signals[commodity] || 0) : 0;
             if (signal > 0) return 'long';
             if (signal < 0) return 'short';
             return 'none';
         }
+        function getRawSignalForDot(commodity) {
+            // For tooltip show raw signal, but direction follows effective
+            const raw = getActiveSignalsRaw();
+            return raw ? (raw[commodity] || 0) : 0;
+        }
 
         function refreshSignalDots() {
-            if (!todaySignals) return;
+            const raw = getActiveSignalsRaw();
+            if (!raw) return;
+            const effective = getEffectiveSignals();
             document.querySelectorAll('[data-signal-dot]').forEach((el) => {
                 const commodity = el.dataset.signalDot;
                 const direction = signalDirection(commodity);
                 el.className = 'pm-signal-dot'
                     + (direction === 'long' ? ' sig-long' : direction === 'short' ? ' sig-short' : '');
-                const signal = todaySignals[commodity] || 0;
-                el.title = I18n.t('pmSignalToday') + ' '
+                const rawSignal = raw[commodity] || 0;
+                const effSignal = effective ? (effective[commodity] || 0) : rawSignal;
+                const displaySignal = getSelectedAllocMode() === 'longOnly' && rawSignal < 0 ? 0 : rawSignal;
+                // Show raw value in tooltip but indicate longOnly handling
+                let tip = I18n.t('pmSignalToday') + ' '
                     + I18n.t(direction === 'long' ? 'pmPosLong' : direction === 'short' ? 'pmPosShort' : 'pmPosNone')
-                    + ' (' + (signal >= 0 ? '+' : '') + signal.toFixed(2) + ')';
+                    + ' (' + (rawSignal >= 0 ? '+' : '') + rawSignal.toFixed(2) + ')';
+                if (getSelectedAllocMode() === 'longOnly' && rawSignal < 0) {
+                    tip += ' → ' + I18n.t('pmPosNone') + ' (long only)';
+                }
+                el.title = tip;
             });
         }
 
         function fillFromSignals() {
-            if (!todaySignals) return;
+            const sigs = getEffectiveSignals();
+            if (!sigs) return;
             COMMODITIES.forEach((commodity) => {
+                const dir = signalDirection(commodity);
                 const input = form.querySelector(
-                    'input[name="pos:' + commodity + '"][value="' + signalDirection(commodity) + '"]'
+                    'input[name="pos:' + commodity + '"][value="' + dir + '"]'
                 );
                 if (input) input.checked = true;
             });
@@ -544,6 +616,8 @@
                 email: email,
                 language: form.querySelector('input[name="mailLang"]:checked').value,
                 positions: readPositions(),
+                risk_model: getSelectedModel(),
+                long_only: getSelectedAllocMode() === 'longOnly',
                 website: document.getElementById('pmWebsite').value,
             };
             clearStatus();
@@ -558,6 +632,10 @@
                 if (response.ok) {
                     showStatus('success', 'pmSuccess');
                     form.reset();
+                    // restore model/alloc defaults after reset (reset clears to first radio)
+                    // trigger refresh
+                    refreshSignalDots();
+                    renderInvestmentSplit();
                 } else if (response.status === 429) {
                     showStatus('error', 'pmErrorRate');
                 } else {
@@ -573,15 +651,17 @@
 
         // Optional helper: split an investment amount according to today's signals
         // (same long/short allocation as the main page: signal / sum of |signals|).
-        let todaySignals = null;
-        let todaySignalsDate = '';
-
         async function loadSignals() {
             try {
                 const response = await fetch('../signals.json', { cache: 'no-store' });
                 if (!response.ok) return;
                 const data = await response.json();
                 todaySignals = data.signals || null;
+                todaySignalsLowRisk = data.signals_low_risk || null;
+                todaySignalsExperimental = data.signals_experimental || null;
+                // Fallbacks for older signals.json that lacks low/exp
+                if (!todaySignalsLowRisk) todaySignalsLowRisk = todaySignals;
+                if (!todaySignalsExperimental) todaySignalsExperimental = null;
                 todaySignalsDate = data.date || '';
                 renderInvestmentSplit();
                 refreshSignalDots();
@@ -596,13 +676,27 @@
             const dateEl = document.getElementById('pmInvestDate');
             container.innerHTML = '';
             dateEl.hidden = true;
-            const amount = parseFloat(document.getElementById('pmInvest').value);
-            if (!todaySignals || !(amount > 0)) return;
+            const raw = getActiveSignalsRaw();
+            const effective = getEffectiveSignals();
+            const amountStr = document.getElementById('pmInvest').value;
+            const amount = parseFloat(amountStr);
+            const hasAmount = amount > 0 && isFinite(amount);
+            if (!effective) {
+                if (hasAmount) {
+                    const row = document.createElement('div');
+                    row.className = 'pm-invest-row';
+                    row.textContent = I18n.t('pmInvestNoSignals');
+                    container.appendChild(row);
+                }
+                return;
+            }
 
-            const totalAbs = COMMODITIES.reduce(
-                (sum, c) => sum + Math.abs(todaySignals[c] || 0), 0
-            );
-            if (totalAbs === 0) {
+            const allocMode = getSelectedAllocMode();
+            const total = allocMode === 'longOnly'
+                ? COMMODITIES.reduce((sum, c) => sum + Math.max(0, effective[c] || 0), 0)
+                : COMMODITIES.reduce((sum, c) => sum + Math.abs(effective[c] || 0), 0);
+
+            if (total === 0) {
                 const row = document.createElement('div');
                 row.className = 'pm-invest-row';
                 row.textContent = I18n.t('pmInvestNoSignals');
@@ -610,18 +704,28 @@
                 return;
             }
 
-            const fmt = new Intl.NumberFormat(
+            const fmt0 = new Intl.NumberFormat(
                 I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US',
                 { maximumFractionDigits: 0 }
             );
+            const fmt1 = new Intl.NumberFormat(
+                I18n.getLang() === 'sv' ? 'sv-SE' : 'en-US',
+                { maximumFractionDigits: 1 }
+            );
             let totalLong = 0;
             let totalShort = 0;
+            let totalLongPct = 0;
+            let totalShortPct = 0;
+
+            // If no amount entered, still show allocation percentages
             COMMODITIES.forEach((commodity) => {
-                const signal = todaySignals[commodity] || 0;
+                const signal = effective[commodity] || 0;
                 if (signal === 0) return;
-                const share = Math.abs(signal) / totalAbs;
-                const sek = amount * share;
-                if (signal > 0) totalLong += sek; else totalShort += sek;
+                const absSignal = Math.abs(signal);
+                const share = absSignal / total;
+                const pct = share * 100;
+                const sek = hasAmount ? amount * share : 0;
+                if (signal > 0) { totalLong += sek; totalLongPct += pct; } else { totalShort += sek; totalShortPct += pct; }
 
                 const row = document.createElement('div');
                 row.className = 'pm-invest-row';
@@ -634,22 +738,57 @@
                 dir.className = signal > 0 ? 'dir-long' : 'dir-short';
                 dir.textContent = I18n.t(signal > 0 ? 'pmPosLong' : 'pmPosShort');
 
-                const value = document.createElement('span');
-                value.className = 'pm-invest-amount-cell';
-                value.textContent = fmt.format(sek) + ' SEK';
+                const alloc = document.createElement('span');
+                alloc.className = 'pm-invest-amount-cell';
+                // Show both pct and amount when amount present
+                if (hasAmount) {
+                    alloc.textContent = fmt1.format(pct) + '% · ' + fmt0.format(sek) + ' SEK';
+                } else {
+                    alloc.textContent = fmt1.format(pct) + '%';
+                }
 
                 row.appendChild(name);
                 row.appendChild(dir);
-                row.appendChild(value);
+                row.appendChild(alloc);
                 container.appendChild(row);
             });
 
             const totals = document.createElement('div');
             totals.className = 'pm-invest-row pm-invest-total';
-            totals.textContent = I18n.t('pmInvestTotals', {
-                long: fmt.format(totalLong),
-                short: fmt.format(totalShort),
-            });
+            if (allocMode === 'longOnly') {
+                if (hasAmount) {
+                    totals.textContent = I18n.t('pmInvestTotalsLongOnlyWithAmount', {
+                        pct: fmt1.format(totalLongPct),
+                        amount: fmt0.format(totalLong),
+                    });
+                } else {
+                    totals.textContent = I18n.t('pmInvestTotalsLongOnlyPct', {
+                        pct: fmt1.format(totalLongPct),
+                    });
+                }
+            } else {
+                if (hasAmount) {
+                    totals.textContent = I18n.t('pmInvestTotalsWithAmount', {
+                        longPct: fmt1.format(totalLongPct),
+                        shortPct: fmt1.format(totalShortPct),
+                        long: fmt0.format(totalLong),
+                        short: fmt0.format(totalShort),
+                    });
+                } else {
+                    // fallback to older key if new keys missing
+                    try {
+                        totals.textContent = I18n.t('pmInvestTotalsPct', {
+                            longPct: fmt1.format(totalLongPct),
+                            shortPct: fmt1.format(totalShortPct),
+                        });
+                    } catch(e) {
+                        totals.textContent = I18n.t('pmInvestTotals', {
+                            long: fmt0.format(totalLong),
+                            short: fmt0.format(totalShort),
+                        });
+                    }
+                }
+            }
             container.appendChild(totals);
 
             if (todaySignalsDate) {
@@ -660,6 +799,19 @@
 
         document.getElementById('pmInvest').addEventListener('input', renderInvestmentSplit);
         document.getElementById('pmFillBtn').addEventListener('click', fillFromSignals);
+        // Model and alloc mode changes
+        form.querySelectorAll('input[name="riskModel"]').forEach((el) => {
+            el.addEventListener('change', () => {
+                refreshSignalDots();
+                renderInvestmentSplit();
+            });
+        });
+        form.querySelectorAll('input[name="allocMode"]').forEach((el) => {
+            el.addEventListener('change', () => {
+                refreshSignalDots();
+                renderInvestmentSplit();
+            });
+        });
 
         buildPositionRows();
         loadSignals();
