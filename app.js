@@ -23,6 +23,7 @@ function tPos(pos) {
 }
 
 const LIVE_DATE = '2026-06-24';
+const EXPERIMENTAL_LIVE_DATE = '2026-07-20';
 
 // Commodity list
 const COMMODITIES = [
@@ -1515,10 +1516,11 @@ function drawPerformanceChart() {
     ctx.fillText(t('startEqual100'), startLabelX, startLabelY);
     ctx.restore();
 
-    // Vertical dashed line for "Went live" date
+    // Vertical dashed line for "Went live" date (high/low risk models)
     const liveIdx = dates.indexOf(LIVE_DATE);
+    let liveX = null;
     if (liveIdx !== -1) {
-        const liveX = xScale(liveIdx);
+        liveX = xScale(liveIdx);
         ctx.save();
         ctx.strokeStyle = textColor;
         ctx.globalAlpha = 0.6;
@@ -1535,6 +1537,31 @@ function drawPerformanceChart() {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'bottom';
         ctx.fillText(t('goLiveLabel'), liveX, pad.top - 4);
+        ctx.restore();
+    }
+
+    // Experimental model went live — dark green dashed line
+    const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
+    if (expLiveIdx !== -1) {
+        const expX = xScale(expLiveIdx);
+        // Offset label vertically if it would overlap the "Went live" label
+        const expLabelY = (liveX !== null && Math.abs(expX - liveX) < 90) ? pad.top - 16 : pad.top - 4;
+        ctx.save();
+        ctx.strokeStyle = '#166534';
+        ctx.globalAlpha = 0.9;
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath();
+        ctx.moveTo(expX, pad.top);
+        ctx.lineTo(expX, pad.top + chartH);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = '#166534';
+        ctx.font = '11px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(t('goLiveExpLabel'), expX, expLabelY);
         ctx.restore();
     }
 
