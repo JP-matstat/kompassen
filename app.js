@@ -1455,8 +1455,8 @@ function drawPerformanceChart() {
 
     const isNarrow = w < 500;
     const pad = isNarrow
-        ? { top: 20, bottom: 56, left: 44, right: 14 }
-        : { top: 20, bottom: 64, left: 55, right: 30 };
+        ? { top: 30, bottom: 56, left: 44, right: 14 }
+        : { top: 30, bottom: 64, left: 55, right: 30 };
     const chartW = w - pad.left - pad.right;
     const chartH = h - pad.top - pad.bottom;
 
@@ -1549,8 +1549,7 @@ function drawPerformanceChart() {
     const expLiveIdx = dates.indexOf(EXPERIMENTAL_LIVE_DATE);
     if (expLiveIdx !== -1) {
         const expX = xScale(expLiveIdx);
-        // Offset label vertically if it would overlap the "Went live" label
-        const expLabelY = (liveX !== null && Math.abs(expX - liveX) < 90) ? pad.top - 16 : pad.top - 4;
+        const expLabelY = pad.top - 4;
         ctx.save();
         ctx.strokeStyle = '#166534';
         ctx.globalAlpha = 0.9;
