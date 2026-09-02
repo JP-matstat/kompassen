@@ -20839,12 +20839,27 @@
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.4212,
-        "Aluminium": 0.2337,
-        "Cocoa": 0.1856,
+        "Aluminium": 0.2727,
+        "Cocoa": 0.0,
         "Cotton": 0.4341,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.518
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "signal": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.419,
+        "Aluminium": 0.274,
+        "Cocoa": 0.0,
+        "Cotton": 0.4341,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.5205
       }
     }
   ]
