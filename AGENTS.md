@@ -8,6 +8,7 @@
 ## Site structure
 
 - Static site served via GitHub Pages from the repo root (`index.html`, `styles.css`, `app.js`, `i18n.js`).
+- Mirror: web assets + JSON are mirrored from `TrendPlus/portfolio_sheet/` via `sync-pages.yml`. Never edit them here — edit only `TrendPlus/portfolio_sheet/*` and let sync mirror. Direct pushes here race with sync and fail it with `main -> main (fetch first)` (seen 2026-09-06).
 - Single-page app with hash tabs: `#portfolio`, `#history`, `#personal`.
 - CV page at `cv/index.html`.
 - `predictions/` contains daily forecast JSON files written by the pipeline. Never edit or commit changes to these by hand — their untouched GitHub timestamps are the public proof that forecasts were made in advance.
