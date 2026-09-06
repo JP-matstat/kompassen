@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_date": "2026-09-06T11:49:56.012628",
+    "analysis_date": "2026-09-06T13:44:20.343853",
     "period": "5 years",
     "platforms": [
       "avanza",
@@ -205,20 +205,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "IGLN.L",
-            "name": "iShares Physical Gold ETC",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.916,
-            "beta": 0.8926,
-            "r_squared": 0.839,
-            "n_observations": 1230
-          },
-          {
             "ticker": "4GLD.DE",
             "name": "Xetra-Gold EUR",
             "platform": "avanza",
@@ -239,7 +225,6 @@
             "name": "iShares Physical Gold ETC",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -410,20 +395,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "ISLN.L",
-            "name": "iShares Physical Silver ETC",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.8985,
-            "beta": 0.8417,
-            "r_squared": 0.8074,
-            "n_observations": 1230
-          },
-          {
             "ticker": "PHAG.MI",
             "name": "WisdomTree Physical Silver EUR",
             "platform": "avanza",
@@ -444,7 +415,6 @@
             "name": "iShares Physical Silver ETC",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -735,20 +705,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "COPA.L",
-            "name": "WisdomTree Copper",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.8877,
-            "beta": 0.841,
-            "r_squared": 0.7879,
-            "n_observations": 1231
-          },
-          {
             "ticker": "COPA.MI",
             "name": "WisdomTree Copper EUR",
             "platform": "avanza",
@@ -769,7 +725,6 @@
             "name": "WisdomTree Copper",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -851,20 +806,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "SUGA.L",
-            "name": "WisdomTree Sugar",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.818,
-            "beta": 0.7892,
-            "r_squared": 0.6692,
-            "n_observations": 1231
-          },
-          {
             "ticker": "SUGA.MI",
             "name": "WisdomTree Sugar EUR",
             "platform": "avanza",
@@ -885,7 +826,6 @@
             "name": "WisdomTree Sugar",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -1095,20 +1035,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "BRNT.L",
-            "name": "WisdomTree Brent Crude Oil",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.8045,
-            "beta": 0.735,
-            "r_squared": 0.6472,
-            "n_observations": 1231
-          },
-          {
             "ticker": "EBRT.MI",
             "name": "WisdomTree Brent Crude Oil EUR Hedged",
             "platform": "avanza",
@@ -1129,7 +1055,6 @@
             "name": "WisdomTree Brent Crude Oil",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -1237,20 +1162,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "NGAS.L",
-            "name": "WisdomTree Natural Gas",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.6224,
-            "beta": 0.4361,
-            "r_squared": 0.3873,
-            "n_observations": 1231
-          },
-          {
             "ticker": "ENGS.MI",
             "name": "WisdomTree Natural Gas EUR Hedged",
             "platform": "avanza",
@@ -1271,7 +1182,6 @@
             "name": "WisdomTree Natural Gas",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -1354,20 +1264,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "COTN.L",
-            "name": "WisdomTree Cotton",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.7066,
-            "beta": 0.6602,
-            "r_squared": 0.4992,
-            "n_observations": 1231
-          },
-          {
             "ticker": "COTN.MI",
             "name": "WisdomTree Cotton EUR",
             "platform": "avanza",
@@ -1388,7 +1284,6 @@
             "name": "WisdomTree Cotton",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -1471,20 +1366,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "COFF.L",
-            "name": "WisdomTree Coffee",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.8621,
-            "beta": 0.809,
-            "r_squared": 0.7432,
-            "n_observations": 1231
-          },
-          {
             "ticker": "COFF.MI",
             "name": "WisdomTree Coffee EUR",
             "platform": "avanza",
@@ -1505,7 +1386,6 @@
             "name": "WisdomTree Coffee",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -1588,20 +1468,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "COCO.L",
-            "name": "WisdomTree Cocoa",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.8701,
-            "beta": 0.8025,
-            "r_squared": 0.757,
-            "n_observations": 1230
-          },
-          {
             "ticker": "COCO.MI",
             "name": "WisdomTree Cocoa EUR",
             "platform": "avanza",
@@ -1622,7 +1488,6 @@
             "name": "WisdomTree Cocoa",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
@@ -1833,20 +1698,6 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "ALUM.L",
-            "name": "WisdomTree Aluminium",
-            "platform": "avanza",
-            "brokers": [
-              "A",
-              "N"
-            ],
-            "currency": "USD",
-            "correlation": 0.8991,
-            "beta": 0.8162,
-            "r_squared": 0.8084,
-            "n_observations": 1229
-          },
-          {
             "ticker": "ALUM.MI",
             "name": "WisdomTree Aluminium EUR",
             "platform": "avanza",
@@ -1867,7 +1718,6 @@
             "name": "WisdomTree Aluminium",
             "platform": "nordnet",
             "brokers": [
-              "A",
               "N"
             ],
             "currency": "USD",
