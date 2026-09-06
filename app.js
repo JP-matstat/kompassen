@@ -1895,6 +1895,7 @@ function displayRelatedStocks(commodities) {
             <th>${t('thCommodity')}</th>
             <th title="${t('thInstrumentsTitle')}">${t('thInstruments')}</th>
             <th>${t('thType')}</th>
+            <th title="${t('thCurrencyTitle')}">${t('thCurrency')}</th>
             <th title="${t('thBrokerTitle')}">${t('thBroker')}</th>
             <th title="${t('thCorrTitle')}"><span class="greek-symbol">ρ</span></th>
             <th title="${t('thBetaTitle')}"><span class="greek-symbol">β</span></th>
@@ -2048,7 +2049,7 @@ function displayRelatedStocks(commodities) {
         // ── Category separator row ──
         const sepRow = document.createElement('tr');
         sepRow.className = 'cat-separator';
-        const sepColspan = 7;
+        const sepColspan = 8;
         sepRow.innerHTML = `
             <td colspan="${sepColspan}">
                 <div class="cat-sep-inner ${cat.cssClass}" title="${cat.desc}">
@@ -2143,6 +2144,16 @@ function displayRelatedStocks(commodities) {
             }
             row.appendChild(typeCell);
 
+            // Currency (USD/EUR) — updates when tracker is switched
+            const currencyCell = document.createElement('td');
+            currencyCell.className = 'currency-cell';
+            if (best && best.currency) {
+                currencyCell.innerHTML = `<span class="metric-val">${best.currency}</span>`;
+            } else {
+                currencyCell.innerHTML = '<span class="metric-val">—</span>';
+            }
+            row.appendChild(currencyCell);
+
             // Broker
             const brokerCell = document.createElement('td');
             brokerCell.className = 'broker-cell';
@@ -2203,15 +2214,25 @@ function displayRelatedStocks(commodities) {
         row.querySelectorAll('.inst-pick').forEach(el => el.classList.remove('selected'));
         if (pickEl) pickEl.classList.add('selected');
 
-        // Update metric cells in this row (column order: Commodity, Instruments, Type, Broker, ρ, β, R²)
+        // Update metric cells in this row (column order: Commodity, Instruments, Type, Currency, Broker, ρ, β, R²)
         const cls = instrumentData.correlation >= 0 ? 'pos' : 'neg';
         const sign = instrumentData.correlation >= 0 ? '+' : '';
-        row.cells[4].innerHTML = `<span class="metric-val ${cls}">${sign}${instrumentData.correlation.toFixed(3)}</span>`;
-        row.cells[5].innerHTML = `<span class="metric-val">${instrumentData.beta.toFixed(3)}</span>`;
-        row.cells[6].innerHTML = `<span class="metric-val">${(instrumentData.r_squared * 100).toFixed(1)}%</span>`;
+        row.cells[5].innerHTML = `<span class="metric-val ${cls}">${sign}${instrumentData.correlation.toFixed(3)}</span>`;
+        row.cells[6].innerHTML = `<span class="metric-val">${instrumentData.beta.toFixed(3)}</span>`;
+        row.cells[7].innerHTML = `<span class="metric-val">${(instrumentData.r_squared * 100).toFixed(1)}%</span>`;
+
+        // Update Currency cell (USD/EUR) — for trackers/etfs
+        const currencyCell = row.cells[3];
+        if (currencyCell && currencyCell.classList.contains('currency-cell')) {
+            if (instrumentData.currency) {
+                currencyCell.innerHTML = `<span class="metric-val">${instrumentData.currency}</span>`;
+            } else {
+                currencyCell.innerHTML = '<span class="metric-val">—</span>';
+            }
+        }
 
         // Update Broker cell
-        const brokerCell = row.cells[3];
+        const brokerCell = row.cells[4];
         if (brokerCell && brokerCell.classList.contains('broker-cell')) {
             brokerCell.innerHTML = renderBrokerCell(instrumentData.brokers || []);
         }
