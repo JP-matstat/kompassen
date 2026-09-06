@@ -1967,6 +1967,7 @@ function displayRelatedStocks(commodities) {
             );
 
             // Regional picks for stocks (up to 3, sorted by |correlation| desc)
+            // Tracker picks for ETCs (2: USD + EUR, highest |r| first — no SEK)
             let regionalPicks = [];
             if (cat.key === 'stocks' && !noData) {
                 const regionOrder = ['nordic', 'european', 'world'];
@@ -2003,6 +2004,34 @@ function displayRelatedStocks(commodities) {
                     });
                     regionalPicks.sort((a, b) => Math.abs(b.correlation) - Math.abs(a.correlation));
                 }
+            } else if (cat.key === 'trackers' && !noData) {
+                // 2 examples per commodity: 1x USD + 1x EUR, highest |r| first (like stocks)
+                const byCurrency = { USD: [], EUR: [] };
+                const other = [];
+                allInstruments.forEach(inst => {
+                    const cur = (inst.currency || '').toUpperCase();
+                    if (cur === 'USD') byCurrency.USD.push(inst);
+                    else if (cur === 'EUR') byCurrency.EUR.push(inst);
+                    else {
+                        // fallback: infer from suffix if currency missing
+                        if (inst.ticker.endsWith('.DE') || inst.ticker.endsWith('.MI') || inst.ticker.endsWith('.PA') || inst.ticker.endsWith('.AS') || inst.ticker.endsWith('.SW')) byCurrency.EUR.push(inst);
+                        else if (inst.ticker.endsWith('.L')) {
+                            other.push(inst);
+                        } else other.push(inst);
+                    }
+                });
+                ['USD','EUR'].forEach(cur => {
+                    if (byCurrency[cur].length > 0) {
+                        byCurrency[cur].sort((a,b)=> Math.abs(b.correlation)-Math.abs(a.correlation));
+                        regionalPicks.push({ ...byCurrency[cur][0], region: cur });
+                    }
+                });
+                if (regionalPicks.length === 0 && other.length > 0) {
+                    other.sort((a,b)=> Math.abs(b.correlation)-Math.abs(a.correlation));
+                    regionalPicks.push({ ...other[0], region: 'other' });
+                }
+                // Highest |correlation| first, like stocks
+                regionalPicks.sort((a,b)=> Math.abs(b.correlation)-Math.abs(a.correlation));
             }
 
             // Store globally for click selection
@@ -2049,8 +2078,8 @@ function displayRelatedStocks(commodities) {
 
             // Instruments cell
             const instCell = document.createElement('td');
-            if (cat.key === 'stocks' && regionalPicks.length > 0) {
-                // Show up to 3 regional picks in a compact row
+            if ((cat.key === 'stocks' || cat.key === 'trackers') && regionalPicks.length > 0) {
+                // Show up to 3 picks (stocks: nordic/european/world, trackers: USD/EUR)
                 const wrapper = document.createElement('div');
                 wrapper.className = 'inst-cell';
                 regionalPicks.forEach((pick, i) => {
@@ -2069,7 +2098,12 @@ function displayRelatedStocks(commodities) {
                     pickEl.innerHTML = `
                         <span class="inst-ticker">${pick.ticker}</span>
                     `;
-                    pickEl.title = `${pick.name} · ρ: ${pick.correlation >= 0 ? '+' : ''}${pick.correlation.toFixed(3)} · β: ${pick.beta.toFixed(3)}`;
+                    // For trackers show currency in tooltip, for stocks show name
+                    if (cat.key === 'trackers') {
+                        pickEl.title = `${pick.name} [${pick.region}] · ρ: ${pick.correlation >= 0 ? '+' : ''}${pick.correlation.toFixed(3)} · β: ${pick.beta.toFixed(3)}`;
+                    } else {
+                        pickEl.title = `${pick.name} · ρ: ${pick.correlation >= 0 ? '+' : ''}${pick.correlation.toFixed(3)} · β: ${pick.beta.toFixed(3)}`;
+                    }
                     wrapper.appendChild(pickEl);
                 });
                 instCell.appendChild(wrapper);
@@ -2183,7 +2217,8 @@ function displayRelatedStocks(commodities) {
         }
 
         // Update Type badge for stocks when a different regional pick is clicked
-        if (pickEl && pickEl.dataset.region) {
+        // For trackers the type stays ETC regardless of USD/EUR/SEK pick
+        if (pickEl && pickEl.dataset.region && row.dataset.category === 'stocks') {
             const regionLabels =                 { nordic: t('thNordic'), european: t('thEuropean'), world: t('thWorld') };
             const region = pickEl.dataset.region;
             row.cells[2].innerHTML = `<span class="type-badge stk">${regionLabels[region] || region}</span>`;
