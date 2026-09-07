@@ -316215,11 +316215,11 @@
     {
       "date": "2026-09-01",
       "predictions_high_risk": {
-        "Oil Brent": 0.3973,
-        "Gold": 0.3426,
+        "Oil Brent": 0.4419,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
-        "Aluminium": 0.4502,
+        "Aluminium": 0.4559,
         "Cocoa": 0.4416,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316227,11 +316227,11 @@
         "Sugar": 0.7791
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.254,
-        "Gold": 0.2092,
+        "Oil Brent": 0.2825,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
-        "Aluminium": 0.3659,
+        "Aluminium": 0.3705,
         "Cocoa": 0.223,
         "Cotton": 0.7056,
         "Coffee": 0.0,
@@ -316251,11 +316251,11 @@
         "Sugar": 3.316752
       },
       "dom_prob": {
-        "Oil Brent": 0.4457,
-        "Gold": 0.3704,
+        "Oil Brent": 0.4957,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
-        "Aluminium": 0.7663,
+        "Aluminium": 0.7759,
         "Cocoa": 0.4416,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316266,11 +316266,11 @@
     {
       "date": "2026-09-02",
       "predictions_high_risk": {
-        "Oil Brent": 0.3943,
-        "Gold": 0.3518,
+        "Oil Brent": 0.4383,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
-        "Aluminium": 0.4509,
+        "Aluminium": 0.4565,
         "Cocoa": 0.4414,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316278,11 +316278,11 @@
         "Sugar": 0.7804
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.255,
-        "Gold": 0.2139,
+        "Oil Brent": 0.2834,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
-        "Aluminium": 0.366,
+        "Aluminium": 0.3706,
         "Cocoa": 0.2193,
         "Cotton": 0.6925,
         "Coffee": 0.0,
@@ -316302,11 +316302,11 @@
         "Sugar": -3.584805
       },
       "dom_prob": {
-        "Oil Brent": 0.4489,
-        "Gold": 0.3681,
+        "Oil Brent": 0.4989,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
-        "Aluminium": 0.7674,
+        "Aluminium": 0.777,
         "Cocoa": 0.4414,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316317,11 +316317,11 @@
     {
       "date": "2026-09-03",
       "predictions_high_risk": {
-        "Oil Brent": 0.3969,
-        "Gold": 0.3599,
+        "Oil Brent": 0.4403,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7329,
-        "Aluminium": 0.4511,
+        "Aluminium": 0.4564,
         "Cocoa": 0.4415,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316329,11 +316329,11 @@
         "Sugar": 0.7805
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.2565,
-        "Gold": 0.2095,
+        "Oil Brent": 0.2846,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7329,
-        "Aluminium": 0.373,
+        "Aluminium": 0.3774,
         "Cocoa": 0.2206,
         "Cotton": 0.6912,
         "Coffee": 0.0,
@@ -316353,11 +316353,11 @@
         "Sugar": 0.610426
       },
       "dom_prob": {
-        "Oil Brent": 0.4517,
-        "Gold": 0.3706,
+        "Oil Brent": 0.5011,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7329,
-        "Aluminium": 0.7808,
+        "Aluminium": 0.79,
         "Cocoa": 0.4415,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316368,11 +316368,11 @@
     {
       "date": "2026-09-04",
       "predictions_high_risk": {
-        "Oil Brent": 0.3921,
-        "Gold": 0.3586,
+        "Oil Brent": 0.4353,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
-        "Aluminium": 0.4448,
+        "Aluminium": 0.4503,
         "Cocoa": 0.4414,
         "Cotton": 0.721,
         "Coffee": 0.0,
@@ -316380,16 +316380,67 @@
         "Sugar": 0.7763
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.2556,
-        "Gold": 0.209,
+        "Oil Brent": 0.2838,
+        "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
-        "Aluminium": 0.3713,
+        "Aluminium": 0.3759,
         "Cocoa": 0.2252,
         "Cotton": 0.697,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
+      },
+      "actuals": {
+        "Oil Brent": 1.230153,
+        "Gold": -0.396044,
+        "Silver": -0.152576,
+        "Copper": -0.089707,
+        "Aluminium": 0.216403,
+        "Cocoa": null,
+        "Cotton": null,
+        "Coffee": null,
+        "Natural Gas": -0.067185,
+        "Sugar": null
+      },
+      "dom_prob": {
+        "Oil Brent": 0.4977,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7223,
+        "Aluminium": 0.7802,
+        "Cocoa": 0.4414,
+        "Cotton": 0.721,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.7763
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "predictions_high_risk": {
+        "Oil Brent": 0.4434,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7109,
+        "Aluminium": 0.4544,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.0
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.2894,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7109,
+        "Aluminium": 0.3794,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.0
       },
       "actuals": {
         "Oil Brent": null,
@@ -316404,16 +316455,16 @@
         "Sugar": null
       },
       "dom_prob": {
-        "Oil Brent": 0.4483,
-        "Gold": 0.3684,
+        "Oil Brent": 0.5069,
+        "Gold": 0.0,
         "Silver": 0.0,
-        "Copper": 0.7223,
-        "Aluminium": 0.7707,
-        "Cocoa": 0.4414,
-        "Cotton": 0.721,
+        "Copper": 0.7109,
+        "Aluminium": 0.7871,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
-        "Sugar": 0.7763
+        "Sugar": 0.0
       }
     }
   ]
