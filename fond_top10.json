@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "analysis_date": "2026-09-06",
+    "source": "Nordnet fondlista (ordinary fund offering, 1700 funds, buyable in fondförsäkring)",
+    "sort": "yield_1y desc",
+    "universe": "Nordnet ordinary fund offering (1700 funds)",
+    "note": "Momentum snapshot, not a recommendation. Returns change daily; re-check Nordnet fondlista before trading."
+  },
+  "funds": [
+    {
+      "rank": 1,
+      "name": "JPM Korea Equity A acc USD",
+      "isin": "LU0301634860",
+      "slug": "jpm-korea-equity-a-usd-357dafc1",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/jpm-korea-equity-a-usd-357dafc1",
+      "category": "Korea Equity",
+      "currency": "USD",
+      "avg_fee_pct": 1.8,
+      "yield_1y_pct": 110.01,
+      "yield_1m_pct": 10.45,
+      "yield_ytd_pct": 69.44
+    },
+    {
+      "rank": 2,
+      "name": "JPM Taiwan A acc USD",
+      "isin": "LU0210528419",
+      "slug": "jpm-taiwan-a-acc-usd-e891d35b",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/jpm-taiwan-a-acc-usd-e891d35b",
+      "category": "Greater China Equity",
+      "currency": "USD",
+      "avg_fee_pct": 1.81,
+      "yield_1y_pct": 104.76,
+      "yield_1m_pct": 13.92,
+      "yield_ytd_pct": 85.72
+    },
+    {
+      "rank": 3,
+      "name": "AuAg Silver Bullet A",
+      "isin": "SE0013358181",
+      "slug": "au-ag-silver-bullet-a-sek-c46f9a14",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/au-ag-silver-bullet-a-sek-c46f9a14",
+      "category": "Precious Metals Sector Equity",
+      "currency": "SEK",
+      "avg_fee_pct": 1.4,
+      "yield_1y_pct": 92.7,
+      "yield_1m_pct": 34.33,
+      "yield_ytd_pct": 25.66
+    },
+    {
+      "rank": 4,
+      "name": "Evli Silver and Gold B",
+      "isin": "FI4000188982",
+      "slug": "evli-silver-gold-eur-a8c91646",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/evli-silver-gold-eur-a8c91646",
+      "category": "Precious Metals Sector Equity",
+      "currency": "EUR",
+      "avg_fee_pct": 1.02,
+      "yield_1y_pct": 77.4,
+      "yield_1m_pct": 35.52,
+      "yield_ytd_pct": 23.09
+    },
+    {
+      "rank": 5,
+      "name": "Allianz Asia Ex China Equity A (USD)",
+      "isin": "LU0348788117",
+      "slug": "allianz-asia-ex-china-usd-44fd1c25",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/allianz-asia-ex-china-usd-44fd1c25",
+      "category": "Asia ex-Japan Equity",
+      "currency": "USD",
+      "avg_fee_pct": 2.21,
+      "yield_1y_pct": 76.45,
+      "yield_1m_pct": 11.06,
+      "yield_ytd_pct": 65.42
+    },
+    {
+      "rank": 6,
+      "name": "Polar Capital Smart Energy R Acc",
+      "isin": "IE000YNVQMZ5",
+      "slug": "polar-capital-smart-energy-sek-598e21fd",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/polar-capital-smart-energy-sek-598e21fd",
+      "category": "Energy Sector Equity",
+      "currency": "SEK",
+      "avg_fee_pct": 1.59,
+      "yield_1y_pct": 71.45,
+      "yield_1m_pct": 2.45,
+      "yield_ytd_pct": 43.53
+    },
+    {
+      "rank": 7,
+      "name": "Franklin Gold and Prec Mtls A(acc)USD",
+      "isin": "LU0496367417",
+      "slug": "franklin-gold-prec-usd-fd1a2428",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/franklin-gold-prec-usd-fd1a2428",
+      "category": "Precious Metals Sector Equity",
+      "currency": "USD",
+      "avg_fee_pct": 1.81,
+      "yield_1y_pct": 70.43,
+      "yield_1m_pct": 27.6,
+      "yield_ytd_pct": 20.93
+    },
+    {
+      "rank": 8,
+      "name": "Allianz Global Metals and Mining A EUR",
+      "isin": "LU0589944643",
+      "slug": "allianz-global-metals-eur-44103538",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/allianz-global-metals-eur-44103538",
+      "category": "Natural Resources Sector Equity",
+      "currency": "EUR",
+      "avg_fee_pct": 1.85,
+      "yield_1y_pct": 67.92,
+      "yield_1m_pct": 18.31,
+      "yield_ytd_pct": 31.27
+    },
+    {
+      "rank": 9,
+      "name": "Nordea 1 - EM ex CHN Sust Str Eq BP SEK",
+      "isin": "LU2696222533",
+      "slug": "nordea-1-em-sek-2159f989",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/nordea-1-em-sek-2159f989",
+      "category": "Global Emerging Markets Equity",
+      "currency": "SEK",
+      "avg_fee_pct": 1.83,
+      "yield_1y_pct": 66.92,
+      "yield_1m_pct": 6.57,
+      "yield_ytd_pct": 53.14
+    },
+    {
+      "rank": 10,
+      "name": "Invesco Emerg Mkts ex-China Eq A USD AD",
+      "isin": "LU1775963454",
+      "slug": "invesco-emerg-mkts-ex-china-usd-7125dbb1",
+      "nordnet_url": "https://www.nordnet.se/fonder/lista/invesco-emerg-mkts-ex-china-usd-7125dbb1",
+      "category": "Global Emerging Markets Equity",
+      "currency": "USD",
+      "avg_fee_pct": 1.74,
+      "yield_1y_pct": 66.46,
+      "yield_1m_pct": 6.9,
+      "yield_ytd_pct": 48.81
+    }
+  ]
+}
