@@ -587,7 +587,7 @@ function renderSignalDots() {
                 infoEl.insertAdjacentElement('afterend', closedEl);
             }
             const names = signalsMarketClosed.map(c => tCommodity(c)).join(', ');
-            closedEl.textContent = t('marketClosedNote', { commodities: names });
+            closedEl.textContent = t('marketClosedNote', { commodities: names, dates: signalsDate });
             closedEl.style.display = '';
         } else if (closedEl) {
             closedEl.style.display = 'none';
