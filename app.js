@@ -76,6 +76,7 @@ let signalsAsOf = {}; // Per-commodity last bar date
 
 let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
+let fundTop10Data = null; // Cache for separate fund project data
 let signalHistory = []; // Historical signals from localStorage: [{date, signals}]
 
 // Risk model toggle
@@ -456,6 +457,9 @@ function refreshLanguageUI() {
     if (relatedStocksData) {
         displayRelatedStocks(relatedStocksData);
     }
+    if (fundTop10Data) {
+        displayFundTop10(fundTop10Data);
+    }
     drawPerformanceChart();
 
     // Update HTML title/aria-label attributes
@@ -494,6 +498,7 @@ async function init() {
         initSiteUpdateButton();
         await initializeHistoricalPerformance();
         loadRelatedStocks();
+        loadFundTop10();
         loadDailySignals();
         loadModelPerformance();
         renderAllocation();
@@ -2270,6 +2275,89 @@ function displayRelatedStocks(commodities) {
         }
     });
 
+    table.appendChild(tbody);
+    container.appendChild(table);
+}
+
+// Load and display the separate fund project (top 10 funds by 1-year return)
+async function loadFundTop10() {
+    const container = document.getElementById('fundTop10Container');
+    try {
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`fond_top10.json?v=${cacheBuster}`);
+        if (!response.ok) throw new Error('no fund data');
+        const data = await response.json();
+        fundTop10Data = data.funds || [];
+        const dateEl = document.getElementById('fundUpdatedDate');
+        if (dateEl && data.metadata && data.metadata.analysis_date) {
+            dateEl.textContent = data.metadata.analysis_date;
+        }
+        displayFundTop10(fundTop10Data);
+    } catch (error) {
+        console.error('Error loading fund top 10:', error);
+        if (container) {
+            container.innerHTML = `<p class="no-stock">${t('dataNotAvailable')}</p>`;
+        }
+    }
+}
+
+function escHtml(s) {
+    return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function displayFundTop10(funds) {
+    const container = document.getElementById('fundTop10Container');
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (!funds || funds.length === 0) {
+        container.innerHTML = `<p class="no-stock">${t('dataNotAvailable')}</p>`;
+        return;
+    }
+
+    const table = document.createElement('table');
+    table.className = 'unified-related-table';
+
+    const thead = document.createElement('thead');
+    thead.innerHTML = `
+        <tr>
+            <th>#</th>
+            <th>${t('thFund')}</th>
+            <th>${t('thCategory')}</th>
+            <th title="${t('thCurrencyTitle')}">${t('thCurrency')}</th>
+            <th title="${t('thBrokerTitle')}">${t('thBroker')}</th>
+            <th>${t('thFee')}</th>
+            <th>${t('th1y')}</th>
+            <th>Nordnet</th>
+        </tr>
+    `;
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    funds.forEach((f) => {
+        const row = document.createElement('tr');
+        row.className = 'data-row';
+
+        const ret = f.yield_1y_pct;
+        const retCls = ret >= 0 ? 'pos' : 'neg';
+        const retSign = ret >= 0 ? '+' : '';
+
+        row.innerHTML = `
+            <td><span class="metric-val">${f.rank}</span></td>
+            <td><span class="comm-name">${escHtml(f.name)}</span><br><span class="inst-name">${escHtml(f.isin)}</span></td>
+            <td><span class="type-badge etc">${escHtml(f.category)}</span></td>
+            <td><span class="metric-val">${escHtml(f.currency)}</span></td>
+            <td class="broker-cell"><span class="brk-pill brk-nordnet" title="Nordnet">N</span></td>
+            <td><span class="metric-val">${f.avg_fee_pct != null ? f.avg_fee_pct.toFixed(2) + '%' : '—'}</span></td>
+            <td><span class="metric-val ${retCls}">${retSign}${ret.toFixed(2)}%</span></td>
+            <td><a href="${escHtml(f.nordnet_url)}" target="_blank" rel="noopener">→</a></td>
+        `;
+        tbody.appendChild(row);
+    });
     table.appendChild(tbody);
     container.appendChild(table);
 }
