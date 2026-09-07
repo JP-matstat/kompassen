@@ -343,6 +343,14 @@ header h1 {
     line-height: 1.6;
 }
 
+.market-closed-note {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: -0.75rem 0 1.5rem 0;
+}
+
 .allocation-header {
     display: flex;
     align-items: center;

@@ -71,6 +71,8 @@ const DEFAULT_SIGNALS = {
 let signals = { ...DEFAULT_SIGNALS };
 let signalsDate = '';
 let signalsTimestamp = ''; // Full ISO timestamp from signals.json
+let signalsMarketClosed = []; // Commodities with no bar on the max signal date (forward-filled)
+let signalsAsOf = {}; // Per-commodity last bar date
 
 let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
@@ -174,6 +176,8 @@ async function loadDailySignals() {
         const data = await response.json();
         signalsDate = data.date;
         signalsTimestamp = data.timestamp || data.date;
+        signalsMarketClosed = Array.isArray(data.market_closed) ? data.market_closed : [];
+        signalsAsOf = data.as_of || {};
         
         // Update signals (high risk)
         COMMODITIES.forEach(commodity => {
@@ -564,6 +568,26 @@ function renderSignalDots() {
     const infoEl = document.getElementById('signalStrengthInfo');
     if (headingEl) headingEl.textContent = t('signalStrength');
     if (infoEl) infoEl.textContent = t('signalStrengthInfo');
+
+    // Market-closed note (red, directly after signalStrengthInfo): shown when
+    // one or more commodities had no bar today and their signal is
+    // forward-filled from the previous trading day.
+    if (infoEl) {
+        let closedEl = document.getElementById('marketClosedNote');
+        if (signalsMarketClosed && signalsMarketClosed.length > 0) {
+            if (!closedEl) {
+                closedEl = document.createElement('p');
+                closedEl.id = 'marketClosedNote';
+                closedEl.className = 'market-closed-note';
+                infoEl.insertAdjacentElement('afterend', closedEl);
+            }
+            const names = signalsMarketClosed.map(c => tCommodity(c)).join(', ');
+            closedEl.textContent = t('marketClosedNote', { commodities: names });
+            closedEl.style.display = '';
+        } else if (closedEl) {
+            closedEl.style.display = 'none';
+        }
+    }
 
     // Add update timestamp info next to heading
     if (headingEl && signalsDate) {
