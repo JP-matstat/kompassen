@@ -1035,18 +1035,18 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "EBRT.MI",
-            "name": "WisdomTree Brent Crude Oil EUR Hedged",
+            "ticker": "BRNT.MI",
+            "name": "WisdomTree Brent Crude Oil EUR",
             "platform": "avanza",
             "brokers": [
               "A",
               "N"
             ],
             "currency": "EUR",
-            "correlation": 0.729,
-            "beta": 0.5991,
-            "r_squared": 0.5315,
-            "n_observations": 1236
+            "correlation": 0.7845,
+            "beta": 0.7568,
+            "r_squared": 0.6154,
+            "n_observations": 1233
           }
         ],
         "nordnet": [
@@ -1064,18 +1064,18 @@
             "n_observations": 1231
           },
           {
-            "ticker": "EBRT.MI",
-            "name": "WisdomTree Brent Crude Oil EUR Hedged",
+            "ticker": "BRNT.MI",
+            "name": "WisdomTree Brent Crude Oil EUR",
             "platform": "nordnet",
             "brokers": [
               "A",
               "N"
             ],
             "currency": "EUR",
-            "correlation": 0.729,
-            "beta": 0.5991,
-            "r_squared": 0.5315,
-            "n_observations": 1236
+            "correlation": 0.7845,
+            "beta": 0.7568,
+            "r_squared": 0.6154,
+            "n_observations": 1233
           }
         ],
         "montrose": []
@@ -1162,18 +1162,18 @@
       "trackers": {
         "avanza": [
           {
-            "ticker": "ENGS.MI",
-            "name": "WisdomTree Natural Gas EUR Hedged",
+            "ticker": "NGAS.MI",
+            "name": "WisdomTree Natural Gas EUR",
             "platform": "avanza",
             "brokers": [
               "A",
               "N"
             ],
             "currency": "EUR",
-            "correlation": 0.6163,
-            "beta": 0.4299,
-            "r_squared": 0.3799,
-            "n_observations": 1236
+            "correlation": 0.6123,
+            "beta": 0.4317,
+            "r_squared": 0.375,
+            "n_observations": 1233
           }
         ],
         "nordnet": [
@@ -1191,18 +1191,18 @@
             "n_observations": 1231
           },
           {
-            "ticker": "ENGS.MI",
-            "name": "WisdomTree Natural Gas EUR Hedged",
+            "ticker": "NGAS.MI",
+            "name": "WisdomTree Natural Gas EUR",
             "platform": "nordnet",
             "brokers": [
               "A",
               "N"
             ],
             "currency": "EUR",
-            "correlation": 0.6163,
-            "beta": 0.4299,
-            "r_squared": 0.3799,
-            "n_observations": 1236
+            "correlation": 0.6123,
+            "beta": 0.4317,
+            "r_squared": 0.375,
+            "n_observations": 1233
           }
         ],
         "montrose": []

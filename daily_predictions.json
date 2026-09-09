@@ -465015,25 +465015,25 @@
     {
       "date": "2026-09-01",
       "predictions_high_risk": {
-        "Oil Brent": 0.5026,
+        "Oil Brent": 0.6202,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
-        "Aluminium": 0.4874,
+        "Aluminium": 0.5009,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7791
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3213,
+        "Oil Brent": 0.3965,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
-        "Aluminium": 0.3961,
+        "Aluminium": 0.4071,
         "Cocoa": 0.0,
-        "Cotton": 0.6824,
+        "Cotton": 0.7049,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7791
@@ -465051,13 +465051,13 @@
         "Sugar": 3.316752
       },
       "dom_prob": {
-        "Oil Brent": 0.5638,
+        "Oil Brent": 0.6957,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
-        "Aluminium": 0.8295,
+        "Aluminium": 0.8525,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7791
@@ -465090,25 +465090,25 @@
     {
       "date": "2026-09-02",
       "predictions_high_risk": {
-        "Oil Brent": 0.4981,
+        "Oil Brent": 0.6136,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
-        "Aluminium": 0.4879,
+        "Aluminium": 0.5014,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7804
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3221,
+        "Oil Brent": 0.3968,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
-        "Aluminium": 0.3961,
+        "Aluminium": 0.407,
         "Cocoa": 0.0,
-        "Cotton": 0.6698,
+        "Cotton": 0.6919,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7804
@@ -465126,13 +465126,13 @@
         "Sugar": -3.584805
       },
       "dom_prob": {
-        "Oil Brent": 0.5669,
+        "Oil Brent": 0.6984,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
-        "Aluminium": 0.8304,
+        "Aluminium": 0.8533,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7804
@@ -465165,25 +465165,25 @@
     {
       "date": "2026-09-03",
       "predictions_high_risk": {
-        "Oil Brent": 0.4992,
+        "Oil Brent": 0.6131,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7329,
-        "Aluminium": 0.4858,
+        "Aluminium": 0.4983,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7805
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3227,
+        "Oil Brent": 0.3963,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7329,
-        "Aluminium": 0.4017,
+        "Aluminium": 0.4121,
         "Cocoa": 0.0,
-        "Cotton": 0.6684,
+        "Cotton": 0.6905,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7805
@@ -465201,13 +465201,13 @@
         "Sugar": 0.610426
       },
       "dom_prob": {
-        "Oil Brent": 0.5681,
+        "Oil Brent": 0.6978,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7329,
-        "Aluminium": 0.8409,
+        "Aluminium": 0.8626,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7805
@@ -465240,25 +465240,25 @@
     {
       "date": "2026-09-04",
       "predictions_high_risk": {
-        "Oil Brent": 0.494,
+        "Oil Brent": 0.6078,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
-        "Aluminium": 0.4808,
+        "Aluminium": 0.4938,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3221,
+        "Oil Brent": 0.3963,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
-        "Aluminium": 0.4014,
+        "Aluminium": 0.4123,
         "Cocoa": 0.0,
-        "Cotton": 0.6741,
+        "Cotton": 0.6964,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
@@ -465276,13 +465276,13 @@
         "Sugar": -0.165465
       },
       "dom_prob": {
-        "Oil Brent": 0.5648,
+        "Oil Brent": 0.6949,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
-        "Aluminium": 0.833,
+        "Aluminium": 0.8556,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
@@ -465315,25 +465315,25 @@
     {
       "date": "2026-09-07",
       "predictions_high_risk": {
-        "Oil Brent": 0.5019,
+        "Oil Brent": 0.6145,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7109,
-        "Aluminium": 0.4841,
+        "Aluminium": 0.4968,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3276,
+        "Oil Brent": 0.4011,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7109,
-        "Aluminium": 0.4042,
+        "Aluminium": 0.4148,
         "Cocoa": 0.0,
-        "Cotton": 0.6741,
+        "Cotton": 0.6964,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
@@ -465351,13 +465351,13 @@
         "Sugar": null
       },
       "dom_prob": {
-        "Oil Brent": 0.5738,
+        "Oil Brent": 0.7026,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7109,
-        "Aluminium": 0.8386,
+        "Aluminium": 0.8606,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7763
@@ -465390,49 +465390,49 @@
     {
       "date": "2026-09-08",
       "predictions_high_risk": {
-        "Oil Brent": 0.4902,
+        "Oil Brent": 0.6012,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7249,
-        "Aluminium": 0.4893,
+        "Aluminium": 0.5014,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7767
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3273,
+        "Oil Brent": 0.4014,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7249,
-        "Aluminium": 0.4092,
+        "Aluminium": 0.4193,
         "Cocoa": 0.0,
-        "Cotton": 0.6732,
+        "Cotton": 0.6955,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7767
       },
       "actuals": {
-        "Oil Brent": null,
-        "Gold": null,
-        "Silver": null,
-        "Copper": null,
-        "Aluminium": null,
-        "Cocoa": null,
-        "Cotton": null,
-        "Coffee": null,
-        "Natural Gas": null,
-        "Sugar": null
+        "Oil Brent": 3.554643,
+        "Gold": -0.388943,
+        "Silver": 0.656965,
+        "Copper": -0.547844,
+        "Aluminium": 0.709975,
+        "Cocoa": 1.156069,
+        "Cotton": 0.742717,
+        "Coffee": 2.186164,
+        "Natural Gas": -0.5909,
+        "Sugar": 6.243089
       },
       "dom_prob": {
-        "Oil Brent": 0.5707,
+        "Oil Brent": 0.6999,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7249,
-        "Aluminium": 0.8474,
+        "Aluminium": 0.8683,
         "Cocoa": 0.0,
-        "Cotton": 0.6973,
+        "Cotton": 0.7203,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7767
@@ -465460,6 +465460,81 @@
         "Coffee": "2026-09-08",
         "Natural Gas": "2026-09-08",
         "Sugar": "2026-09-08"
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "predictions_high_risk": {
+        "Oil Brent": 0.5849,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7292,
+        "Aluminium": 0.5057,
+        "Cocoa": 0.0,
+        "Cotton": 0.7203,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.7946
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.3981,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7292,
+        "Aluminium": 0.4275,
+        "Cocoa": 0.0,
+        "Cotton": 0.7153,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.7946
+      },
+      "actuals": {
+        "Oil Brent": null,
+        "Gold": null,
+        "Silver": null,
+        "Copper": null,
+        "Aluminium": null,
+        "Cocoa": null,
+        "Cotton": null,
+        "Coffee": null,
+        "Natural Gas": null,
+        "Sugar": null
+      },
+      "dom_prob": {
+        "Oil Brent": 0.6933,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.7292,
+        "Aluminium": 0.8631,
+        "Cocoa": 0.0,
+        "Cotton": 0.7203,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.7946
+      },
+      "market_open": {
+        "Oil Brent": true,
+        "Gold": true,
+        "Silver": true,
+        "Copper": true,
+        "Aluminium": true,
+        "Cocoa": true,
+        "Cotton": true,
+        "Coffee": true,
+        "Natural Gas": true,
+        "Sugar": true
+      },
+      "as_of": {
+        "Oil Brent": "2026-09-09",
+        "Gold": "2026-09-09",
+        "Silver": "2026-09-09",
+        "Copper": "2026-09-09",
+        "Aluminium": "2026-09-09",
+        "Cocoa": "2026-09-09",
+        "Cotton": "2026-09-09",
+        "Coffee": "2026-09-09",
+        "Natural Gas": "2026-09-09",
+        "Sugar": "2026-09-09"
       }
     }
   ]
