@@ -50,7 +50,7 @@
     },
     {
       "rank": 4,
-      "prev_rank": 5,
+      "prev_rank": 4,
       "name": "Allianz Asia Ex China Equity A (USD)",
       "isin": "LU0348788117",
       "slug": "allianz-asia-ex-china-usd-44fd1c25",
@@ -64,7 +64,7 @@
     },
     {
       "rank": 5,
-      "prev_rank": 6,
+      "prev_rank": 5,
       "name": "Polar Capital Smart Energy R Acc",
       "isin": "IE000YNVQMZ5",
       "slug": "polar-capital-smart-energy-sek-598e21fd",
@@ -78,7 +78,7 @@
     },
     {
       "rank": 6,
-      "prev_rank": 9,
+      "prev_rank": 6,
       "name": "Nordea 1 - EM ex CHN Sust Str Eq BP SEK",
       "isin": "LU2696222533",
       "slug": "nordea-1-em-sek-2159f989",
@@ -92,7 +92,7 @@
     },
     {
       "rank": 7,
-      "prev_rank": 4,
+      "prev_rank": 7,
       "name": "Evli Silver and Gold B",
       "isin": "FI4000188982",
       "slug": "evli-silver-gold-eur-a8c91646",
@@ -106,7 +106,7 @@
     },
     {
       "rank": 8,
-      "prev_rank": 10,
+      "prev_rank": 8,
       "name": "Invesco Emerg Mkts ex-China Eq A USD AD",
       "isin": "LU1775963454",
       "slug": "invesco-emerg-mkts-ex-china-usd-7125dbb1",
@@ -120,7 +120,7 @@
     },
     {
       "rank": 9,
-      "prev_rank": null,
+      "prev_rank": 9,
       "name": "Polar Cptl PLCArtfclIntllgncRXAcc",
       "isin": "IE0003BWGFN3",
       "slug": "polar-cptl-plcartfcl-intllgnc-rxacc-usd-629bd3ae",
@@ -134,7 +134,7 @@
     },
     {
       "rank": 10,
-      "prev_rank": 8,
+      "prev_rank": 10,
       "name": "Allianz Global Metals and Mining A EUR",
       "isin": "LU0589944643",
       "slug": "allianz-global-metals-eur-44103538",
@@ -148,7 +148,7 @@
     },
     {
       "rank": 11,
-      "prev_rank": null,
+      "prev_rank": 11,
       "name": "BGF World Mining A2",
       "isin": "LU0172157280",
       "slug": "bgf-world-mining-a2-eur-da223775",
@@ -162,7 +162,7 @@
     },
     {
       "rank": 12,
-      "prev_rank": null,
+      "prev_rank": 12,
       "name": "BGF World Mining A2",
       "isin": "LU0075056555",
       "slug": "bgf-world-mining-a2-usd-25d38a9c",
@@ -176,7 +176,7 @@
     },
     {
       "rank": 13,
-      "prev_rank": null,
+      "prev_rank": 13,
       "name": "Fidelity Asian Special Sits A-Dis-USD",
       "isin": "LU0054237671",
       "slug": "fidelity-asian-special-sits-usd-358312bb",
@@ -190,7 +190,7 @@
     },
     {
       "rank": 14,
-      "prev_rank": null,
+      "prev_rank": 14,
       "name": "Pictet-Biotech R USD",
       "isin": "LU0112497440",
       "slug": "pictet-biotech-r-usd-9967073b",
@@ -204,7 +204,7 @@
     },
     {
       "rank": 15,
-      "prev_rank": null,
+      "prev_rank": 15,
       "name": "Carmignac Pf Tech Solutions A EUR Acc",
       "isin": "LU2809794220",
       "slug": "carmignac-pf-tech-solutions-eur-70ff59cc",
@@ -218,7 +218,7 @@
     },
     {
       "rank": 16,
-      "prev_rank": null,
+      "prev_rank": 16,
       "name": "Mirae Asset ESG Emerg Asia ex-CHN EqAUSD",
       "isin": "LU0336300859",
       "slug": "mirae-asset-esg-emerg-usd-56c947d0",
@@ -232,7 +232,7 @@
     },
     {
       "rank": 17,
-      "prev_rank": null,
+      "prev_rank": 17,
       "name": "Franklin Biotechnology Discv A(acc)USD",
       "isin": "LU0109394709",
       "slug": "franklin-biotechnology-discv-a-acc-usd-ba3fe86b",
@@ -246,7 +246,7 @@
     },
     {
       "rank": 18,
-      "prev_rank": null,
+      "prev_rank": 18,
       "name": "abrdn-Emerg Mkts ex China Eq A Acc USD",
       "isin": "LU1581387781",
       "slug": "abrdn-emerg-mkts-ex-china-usd-25db94e8",
@@ -260,7 +260,7 @@
     },
     {
       "rank": 19,
-      "prev_rank": null,
+      "prev_rank": 19,
       "name": "BGF Emerging Markets Ex-China A2 H",
       "isin": "LU2719174067",
       "slug": "bgf-emerging-markets-ex-china-eur-bdf27a49",
@@ -274,7 +274,7 @@
     },
     {
       "rank": 20,
-      "prev_rank": null,
+      "prev_rank": 20,
       "name": "Nordea Globala Tillväxtmarknader",
       "isin": "FI0008813324",
       "slug": "nordea-em-equities-a-sek-31444955",
