@@ -2320,7 +2320,7 @@ function displayFundTop10(funds) {
     }
 
     const table = document.createElement('table');
-    table.className = 'unified-related-table';
+    table.className = 'unified-related-table fund-table';
 
     const thead = document.createElement('thead');
     thead.innerHTML = `

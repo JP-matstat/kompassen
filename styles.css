@@ -1363,6 +1363,23 @@ body.dark .strip-cell.strip-correct {
     white-space: nowrap;
 }
 
+/* Fund top-20 table: 10 columns must fit the card — allow wrapping, tighter cells */
+.fund-table {
+    min-width: 0;
+}
+.fund-table thead th {
+    white-space: normal;
+}
+.fund-table tbody tr.data-row td {
+    padding: 0.5rem 0.5rem;
+}
+.fund-table .comm-name {
+    white-space: normal;
+}
+.fund-table .type-badge {
+    white-space: normal;
+}
+
 /* Fund top-20: divider line between rank 10 and rank 11 */
 .unified-related-table tbody tr.fund-divider td {
     border-top: 2px solid var(--text-primary);
