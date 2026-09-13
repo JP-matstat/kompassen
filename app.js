@@ -2279,7 +2279,7 @@ function displayRelatedStocks(commodities) {
     container.appendChild(table);
 }
 
-// Load and display the separate fund project (top 10 funds by 1-year return)
+// Load and display the separate fund project (top 20 funds by 1-year return)
 async function loadFundTop10() {
     const container = document.getElementById('fundTop10Container');
     try {
@@ -2326,11 +2326,13 @@ function displayFundTop10(funds) {
     thead.innerHTML = `
         <tr>
             <th>#</th>
+            <th>${t('thChange')}</th>
             <th>${t('thFund')}</th>
             <th>${t('thCategory')}</th>
             <th title="${t('thCurrencyTitle')}">${t('thCurrency')}</th>
             <th title="${t('thBrokerTitle')}">${t('thBroker')}</th>
             <th>${t('thFee')}</th>
+            <th>${t('th1m')}</th>
             <th>${t('th1y')}</th>
             <th>Nordnet</th>
         </tr>
@@ -2340,19 +2342,30 @@ function displayFundTop10(funds) {
     const tbody = document.createElement('tbody');
     funds.forEach((f) => {
         const row = document.createElement('tr');
-        row.className = 'data-row';
+        row.className = 'data-row'
+            + (f.rank > 10 ? ' fund-lower' : '')
+            + (f.rank === 11 ? ' fund-divider' : '');
 
         const ret = f.yield_1y_pct;
         const retCls = ret >= 0 ? 'pos' : 'neg';
         const retSign = ret >= 0 ? '+' : '';
 
+        const ret1m = f.yield_1m_pct;
+        const ret1mHtml = ret1m != null
+            ? `<span class="metric-val ${ret1m >= 0 ? 'pos' : 'neg'}">${ret1m >= 0 ? '+' : ''}${ret1m.toFixed(2)}%</span>`
+            : '<span class="metric-val">—</span>';
+
+        const changeTxt = `${f.prev_rank != null ? f.prev_rank : 'X'}-->${f.rank}`;
+
         row.innerHTML = `
             <td><span class="metric-val">${f.rank}</span></td>
+            <td><span class="metric-val">${changeTxt}</span></td>
             <td><span class="comm-name">${escHtml(f.name)}</span><br><span class="inst-name">${escHtml(f.isin)}</span></td>
             <td><span class="type-badge etc">${escHtml(f.category)}</span></td>
             <td><span class="metric-val">${escHtml(f.currency)}</span></td>
             <td class="broker-cell"><span class="brk-pill brk-nordnet" title="Nordnet">N</span></td>
             <td><span class="metric-val">${f.avg_fee_pct != null ? f.avg_fee_pct.toFixed(2) + '%' : '—'}</span></td>
+            <td>${ret1mHtml}</td>
             <td><span class="metric-val ${retCls}">${retSign}${ret.toFixed(2)}%</span></td>
             <td><a href="${escHtml(f.nordnet_url)}" target="_blank" rel="noopener">→</a></td>
         `;

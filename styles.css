@@ -1363,6 +1363,23 @@ body.dark .strip-cell.strip-correct {
     white-space: nowrap;
 }
 
+/* Fund top-20: divider line between rank 10 and rank 11 */
+.unified-related-table tbody tr.fund-divider td {
+    border-top: 2px solid var(--text-primary);
+}
+
+/* Fund ranks 11-20: de-emphasized grey text */
+.unified-related-table tbody tr.fund-lower td,
+.unified-related-table tbody tr.fund-lower td span,
+.unified-related-table tbody tr.fund-lower td a {
+    color: #8a8f98 !important;
+}
+.unified-related-table tbody tr.fund-lower .type-badge,
+.unified-related-table tbody tr.fund-lower .brk-pill {
+    background: transparent !important;
+    border: 1px solid #8a8f98;
+}
+
 /* Instruments cell — multiple regional picks inline */
 .inst-cell {
     display: flex;
