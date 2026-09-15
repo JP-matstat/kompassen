@@ -1,41 +1,41 @@
 {
-  "date": "2026-09-14",
-  "timestamp": "2026-09-14T15:42:18Z",
+  "date": "2026-09-15",
+  "timestamp": "2026-09-15T15:42:29Z",
   "signals": {
-    "Oil Brent": 0.7229,
+    "Oil Brent": 0.61,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.619,
-    "Aluminium": 0.4147,
-    "Cocoa": 0.3748,
-    "Cotton": 0.6635,
-    "Coffee": 0.0,
+    "Copper": 0.6847,
+    "Aluminium": 0.4434,
+    "Cocoa": 0.0,
+    "Cotton": 0.6119,
+    "Coffee": -0.6137,
     "Natural Gas": 0.0,
-    "Sugar": 0.812
+    "Sugar": 0.8252
   },
   "signals_low_risk": {
-    "Oil Brent": 0.5009,
+    "Oil Brent": 0.4137,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.6189,
-    "Aluminium": 0.3403,
-    "Cocoa": 0.1887,
-    "Cotton": 0.6497,
-    "Coffee": 0.0,
+    "Copper": 0.6847,
+    "Aluminium": 0.3506,
+    "Cocoa": 0.0,
+    "Cotton": 0.595,
+    "Coffee": -0.4237,
     "Natural Gas": 0.0,
-    "Sugar": 0.8114
+    "Sugar": 0.763
   },
   "as_of": {
-    "Oil Brent": "2026-09-14",
-    "Gold": "2026-09-14",
-    "Silver": "2026-09-14",
-    "Copper": "2026-09-14",
-    "Aluminium": "2026-09-14",
-    "Cocoa": "2026-09-14",
-    "Cotton": "2026-09-14",
-    "Coffee": "2026-09-14",
-    "Natural Gas": "2026-09-14",
-    "Sugar": "2026-09-14"
+    "Oil Brent": "2026-09-15",
+    "Gold": "2026-09-15",
+    "Silver": "2026-09-15",
+    "Copper": "2026-09-15",
+    "Aluminium": "2026-09-15",
+    "Cocoa": "2026-09-15",
+    "Cotton": "2026-09-15",
+    "Coffee": "2026-09-15",
+    "Natural Gas": "2026-09-15",
+    "Sugar": "2026-09-15"
   },
   "market_open": {
     "Oil Brent": true,
@@ -51,15 +51,15 @@
   },
   "market_closed": [],
   "signals_experimental": {
-    "Oil Brent": 0.5668,
+    "Oil Brent": 0.3418,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.2266,
-    "Aluminium": 0.2133,
+    "Copper": 0.3411,
+    "Aluminium": 0.2124,
     "Cocoa": 0.0,
-    "Cotton": 0.3034,
-    "Coffee": 0.0,
+    "Cotton": 0.2146,
+    "Coffee": -0.0839,
     "Natural Gas": 0.0,
-    "Sugar": 0.5837
+    "Sugar": 0.6106
   }
 }
