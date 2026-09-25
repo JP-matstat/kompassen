@@ -1,8 +1,8 @@
 {
-  "live_accuracy": 58.0,
-  "live_portfolio_value": 116.87,
-  "live_annualized_return_pct": 123.0,
-  "live_days": 49,
-  "live_total_predictions": 255,
+  "live_accuracy": 57.5,
+  "live_portfolio_value": 116.2,
+  "live_annualized_return_pct": 113.1,
+  "live_days": 50,
+  "live_total_predictions": 261,
   "live_date": "2026-07-20"
 }

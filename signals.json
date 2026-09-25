@@ -1,41 +1,41 @@
 {
-  "date": "2026-09-24",
-  "timestamp": "2026-09-24T15:42:34Z",
+  "date": "2026-09-25",
+  "timestamp": "2026-09-25T15:43:11Z",
   "signals": {
-    "Oil Brent": 0.562,
+    "Oil Brent": 0.4675,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.8268,
-    "Aluminium": 0.7514,
+    "Copper": 0.8309,
+    "Aluminium": 0.7671,
     "Cocoa": 0.0,
-    "Cotton": 0.5983,
-    "Coffee": -0.7003,
+    "Cotton": 0.5424,
+    "Coffee": -0.6697,
     "Natural Gas": 0.0,
-    "Sugar": 0.8268
+    "Sugar": 0.8225
   },
   "signals_low_risk": {
-    "Oil Brent": 0.3847,
+    "Oil Brent": 0.3132,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.8268,
-    "Aluminium": 0.7268,
+    "Copper": 0.8309,
+    "Aluminium": 0.7518,
     "Cocoa": 0.0,
-    "Cotton": 0.5983,
-    "Coffee": -0.4983,
+    "Cotton": 0.5424,
+    "Coffee": -0.4675,
     "Natural Gas": 0.0,
-    "Sugar": 0.7265
+    "Sugar": 0.7318
   },
   "as_of": {
-    "Oil Brent": "2026-09-24",
-    "Gold": "2026-09-24",
-    "Silver": "2026-09-24",
-    "Copper": "2026-09-24",
-    "Aluminium": "2026-09-24",
-    "Cocoa": "2026-09-24",
-    "Cotton": "2026-09-24",
-    "Coffee": "2026-09-24",
-    "Natural Gas": "2026-09-24",
-    "Sugar": "2026-09-24"
+    "Oil Brent": "2026-09-25",
+    "Gold": "2026-09-25",
+    "Silver": "2026-09-25",
+    "Copper": "2026-09-25",
+    "Aluminium": "2026-09-25",
+    "Cocoa": "2026-09-25",
+    "Cotton": "2026-09-25",
+    "Coffee": "2026-09-25",
+    "Natural Gas": "2026-09-25",
+    "Sugar": "2026-09-25"
   },
   "market_open": {
     "Oil Brent": true,
@@ -51,15 +51,15 @@
   },
   "market_closed": [],
   "signals_experimental": {
-    "Oil Brent": 0.2503,
+    "Oil Brent": 0.0763,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.6139,
-    "Aluminium": 0.4643,
+    "Copper": 0.6223,
+    "Aluminium": 0.4946,
     "Cocoa": 0.0,
-    "Cotton": 0.1917,
-    "Coffee": -0.2272,
+    "Cotton": 0.0964,
+    "Coffee": -0.1525,
     "Natural Gas": 0.0,
-    "Sugar": 0.6139
+    "Sugar": 0.6051
   }
 }
