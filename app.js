@@ -77,6 +77,13 @@ let signalsAsOf = {}; // Per-commodity last bar date
 let longOnlyMode = false; // Toggle for Long-Only allocation mode
 let relatedStocksData = null; // Cache for related stocks data
 let fundTop10Data = null; // Cache for separate fund project data
+let fundsUnlocked = false; // Separate fund project tab is password gated
+
+// Shared password for the #funds tab. Anyone with it can open the tab.
+// This is a soft gate only — the constant is public and fond_top10.json is not protected.
+const FUNDS_PASSWORD = 'vogeldernacht';
+const FUNDS_UNLOCK_KEY = 'funds_unlocked';
+
 let signalHistory = []; // Historical signals from localStorage: [{date, signals}]
 
 // Risk model toggle
@@ -291,6 +298,7 @@ function closeSiteUpdateModal() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeSiteUpdateModal();
+        closeFundsLockModal();
     }
 });
 
@@ -298,6 +306,9 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('click', (e) => {
     if (e.target.id === 'siteUpdateModal') {
         closeSiteUpdateModal();
+    }
+    if (e.target.id === 'fundsLockModal') {
+        closeFundsLockModal();
     }
 });
 
@@ -487,11 +498,13 @@ async function init() {
         if (window.I18n) {
             I18n.init();
             I18n.onLangChange(refreshLanguageUI);
+            I18n.onLangChange(updateFundsLockUI);
         }
         initMobileCollapsibles();
         setupThemeToggle();
         loadSignalHistory();
         setupEventListeners();
+        setupFundsLock();
         setupTabNavigation();
         setupAboutModelPage();
         setupRiskModelBar();
@@ -861,13 +874,21 @@ function setupTabNavigation() {
 
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
+            if (btn.dataset.tab === 'funds' && !requestFundsTab()) return;
             activateTab(btn.dataset.tab);
             history.replaceState(null, '', `#${btn.dataset.tab}`);
+            // Retry the fetch if the tab is opened unlocked but init's
+            // loadFundTop10() failed or had not completed (no-op when locked).
+            if (btn.dataset.tab === 'funds' && fundsUnlocked && !fundTop10Data) loadFundTop10();
         });
     });
 
     const hashTab = window.location.hash.replace('#', '');
-    if (hashTab && document.getElementById(`${hashTab}Tab`)) {
+    if (hashTab === 'funds' && !requestFundsTab()) {
+        // Locked: show the prompt, but don't leave a #funds URL behind while
+        // the portfolio tab is the one actually on screen.
+        history.replaceState(null, '', '#portfolio');
+    } else if (hashTab && document.getElementById(`${hashTab}Tab`)) {
         activateTab(hashTab);
     }
 }
@@ -2279,9 +2300,150 @@ function displayRelatedStocks(commodities) {
     container.appendChild(table);
 }
 
+// ---------------------------------------------------------------------------
+// Password gate for the separate fund project tab (#funds)
+// ---------------------------------------------------------------------------
+function restoreFundsLock() {
+    try {
+        fundsUnlocked = localStorage.getItem(FUNDS_UNLOCK_KEY) === '1';
+    } catch (e) {
+        fundsUnlocked = false;
+    }
+    if (!fundsUnlocked) setFundsLockedPlaceholder();
+    updateFundsLockUI();
+}
+
+// Deliberately not a .skeleton — the site-wide hideSkeletons() strips those
+// once the main data loads, which would leave an empty bordered box here.
+function setFundsLockedPlaceholder() {
+    const container = document.getElementById('fundTop10Container');
+    if (container) {
+        container.innerHTML = `<p class="funds-locked-note">${t('fundsLockedNote')}</p>`;
+    }
+    const dateEl = document.getElementById('fundUpdatedDate');
+    if (dateEl) dateEl.textContent = '';
+}
+
+function updateFundsLockUI() {
+    const icon = document.getElementById('fundsLockIcon');
+    if (icon) {
+        icon.textContent = fundsUnlocked ? '🔓' : '🔒';
+    }
+    const btn = document.getElementById('fundsTabBtn');
+    if (btn) {
+        btn.classList.toggle('is-unlocked', fundsUnlocked);
+        btn.title = fundsUnlocked ? t('fundsUnlockTitle') : t('fundsLockTitle');
+    }
+    const relock = document.getElementById('fundsRelockBtn');
+    if (relock) {
+        relock.classList.toggle('hidden', !fundsUnlocked);
+    }
+    // refreshLanguageUI() only re-renders the fund table when unlocked, so
+    // re-apply the locked note here (this runs on I18n.onLangChange) to keep
+    // it in the current language.
+    if (!fundsUnlocked) setFundsLockedPlaceholder();
+}
+
+function openFundsLockModal() {
+    const modal = document.getElementById('fundsLockModal');
+    if (!modal) return;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    const err = document.getElementById('fundsLockError');
+    if (err) err.classList.add('hidden');
+    const input = document.getElementById('fundsLockInput');
+    if (input) {
+        input.value = '';
+        input.focus();
+    }
+}
+
+function closeFundsLockModal() {
+    const modal = document.getElementById('fundsLockModal');
+    if (!modal) return;
+    if (modal.classList.contains('hidden')) return;
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+function showFundsLockError() {
+    const err = document.getElementById('fundsLockError');
+    if (err) err.classList.remove('hidden');
+    const input = document.getElementById('fundsLockInput');
+    if (input) {
+        input.value = '';
+        input.focus();
+    }
+}
+
+// Pure credential check — navigation is the caller's job.
+function unlockFunds(password) {
+    if (password !== FUNDS_PASSWORD) return false;
+    fundsUnlocked = true;
+    try {
+        localStorage.setItem(FUNDS_UNLOCK_KEY, '1');
+    } catch (e) {
+        // Storage unavailable — stay unlocked for this page view only
+    }
+    updateFundsLockUI();
+    return true;
+}
+
+function lockFunds() {
+    fundsUnlocked = false;
+    try {
+        localStorage.removeItem(FUNDS_UNLOCK_KEY);
+    } catch (e) {
+        // ignore
+    }
+    // Drop the rendered table too, so it does not linger in the DOM while locked
+    fundTop10Data = null;
+    setFundsLockedPlaceholder();
+    updateFundsLockUI();
+    activateTab('portfolio');
+    history.replaceState(null, '', '#portfolio');
+}
+
+// Returns true if the funds tab may be opened.
+function requestFundsTab() {
+    if (fundsUnlocked) return true;
+    openFundsLockModal();
+    return false;
+}
+
+function setupFundsLock() {
+    restoreFundsLock();
+
+    const form = document.getElementById('fundsLockForm');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = document.getElementById('fundsLockInput');
+            if (unlockFunds(input ? input.value : '')) {
+                closeFundsLockModal();
+                activateTab('funds');
+                history.replaceState(null, '', '#funds');
+                loadFundTop10();
+            } else {
+                showFundsLockError();
+            }
+        });
+    }
+
+    const cancelBtn = document.getElementById('fundsLockCancelBtn');
+    if (cancelBtn) cancelBtn.addEventListener('click', closeFundsLockModal);
+
+    const closeBtn = document.getElementById('fundsLockCloseBtn');
+    if (closeBtn) closeBtn.addEventListener('click', closeFundsLockModal);
+
+    const relockBtn = document.getElementById('fundsRelockBtn');
+    if (relockBtn) relockBtn.addEventListener('click', lockFunds);
+}
+
 // Load and display the separate fund project (top 20 funds by 1-year return)
 async function loadFundTop10() {
     const container = document.getElementById('fundTop10Container');
+    if (!fundsUnlocked) return;
     try {
         const cacheBuster = new Date().getTime();
         const response = await fetch(`fond_top10.json?v=${cacheBuster}`);
