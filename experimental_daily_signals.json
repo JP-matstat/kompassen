@@ -21150,16 +21150,31 @@
     {
       "date": "2026-10-01",
       "signal": {
-        "Oil Brent": 0.101,
+        "Oil Brent": 0.0462,
         "Gold": 0.0,
         "Silver": 0.0,
-        "Copper": 0.6164,
+        "Copper": 0.6094,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0992,
+        "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.5872
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "signal": {
+        "Oil Brent": 0.0415,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.6084,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.5902
       }
     }
   ]
