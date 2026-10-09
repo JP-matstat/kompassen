@@ -21150,14 +21150,14 @@
     {
       "date": "2026-10-01",
       "signal": {
-        "Oil Brent": 0.3255,
+        "Oil Brent": 0.2822,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6164,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0593,
+        "Coffee": -0.0578,
         "Natural Gas": 0.0,
         "Sugar": 0.5869
       }
@@ -21165,14 +21165,14 @@
     {
       "date": "2026-10-02",
       "signal": {
-        "Oil Brent": 0.3239,
+        "Oil Brent": 0.2802,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6154,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0644,
+        "Coffee": -0.0628,
         "Natural Gas": 0.0,
         "Sugar": 0.5898
       }
@@ -21180,14 +21180,14 @@
     {
       "date": "2026-10-05",
       "signal": {
-        "Oil Brent": 0.3266,
+        "Oil Brent": 0.283,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6334,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0623,
+        "Coffee": -0.0607,
         "Natural Gas": 0.0,
         "Sugar": 0.5962
       }
@@ -21195,14 +21195,14 @@
     {
       "date": "2026-10-06",
       "signal": {
-        "Oil Brent": 0.3214,
+        "Oil Brent": 0.2778,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.6108,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0588,
+        "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.5994
       }
@@ -21210,14 +21210,14 @@
     {
       "date": "2026-10-07",
       "signal": {
-        "Oil Brent": 0.322,
+        "Oil Brent": 0.2791,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.614,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.065,
+        "Coffee": -0.0633,
         "Natural Gas": 0.0,
         "Sugar": 0.5667
       }
@@ -21225,16 +21225,31 @@
     {
       "date": "2026-10-08",
       "signal": {
-        "Oil Brent": 0.3181,
+        "Oil Brent": 0.2751,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.5916,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0611,
+        "Coffee": -0.0595,
         "Natural Gas": 0.0,
         "Sugar": 0.5419
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "signal": {
+        "Oil Brent": 0.2837,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.6141,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": -0.0607,
+        "Natural Gas": 0.0,
+        "Sugar": 0.4858
       }
     }
   ]
