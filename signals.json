@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "timestamp": "2026-10-13T08:37:26Z",
+  "timestamp": "2026-10-13T15:35:43Z",
   "signals": {
     "Oil Brent": 0.608,
     "Gold": 0.0,
@@ -31,9 +31,9 @@
     "Silver": "2026-10-13",
     "Copper": "2026-10-13",
     "Aluminium": "2026-10-13",
-    "Cocoa": "2026-10-12",
+    "Cocoa": "2026-10-13",
     "Cotton": "2026-10-13",
-    "Coffee": "2026-10-12",
+    "Coffee": "2026-10-13",
     "Natural Gas": "2026-10-13",
     "Sugar": "2026-10-13"
   },
@@ -43,16 +43,13 @@
     "Silver": true,
     "Copper": true,
     "Aluminium": true,
-    "Cocoa": false,
+    "Cocoa": true,
     "Cotton": true,
-    "Coffee": false,
+    "Coffee": true,
     "Natural Gas": true,
     "Sugar": true
   },
-  "market_closed": [
-    "Cocoa",
-    "Coffee"
-  ],
+  "market_closed": [],
   "signals_experimental": {
     "Oil Brent": 0.3078,
     "Gold": 0.0,

@@ -467219,9 +467219,9 @@
         "Silver": 1.062503,
         "Copper": 0.828544,
         "Aluminium": 0.047858,
-        "Cocoa": null,
+        "Cocoa": 2.202255,
         "Cotton": -0.186106,
-        "Coffee": null,
+        "Coffee": 0.791462,
         "Natural Gas": -0.631512,
         "Sugar": -1.247003
       },
@@ -467318,9 +467318,9 @@
         "Silver": true,
         "Copper": true,
         "Aluminium": true,
-        "Cocoa": false,
+        "Cocoa": true,
         "Cotton": true,
-        "Coffee": false,
+        "Coffee": true,
         "Natural Gas": true,
         "Sugar": true
       },
@@ -467330,9 +467330,9 @@
         "Silver": "2026-10-13",
         "Copper": "2026-10-13",
         "Aluminium": "2026-10-13",
-        "Cocoa": "2026-10-12",
+        "Cocoa": "2026-10-13",
         "Cotton": "2026-10-13",
-        "Coffee": "2026-10-12",
+        "Coffee": "2026-10-13",
         "Natural Gas": "2026-10-13",
         "Sugar": "2026-10-13"
       }
