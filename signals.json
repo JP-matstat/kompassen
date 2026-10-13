@@ -1,41 +1,41 @@
 {
-  "date": "2026-10-11",
-  "timestamp": "2026-10-11T15:40:57Z",
+  "date": "2026-10-13",
+  "timestamp": "2026-10-13T08:37:26Z",
   "signals": {
-    "Oil Brent": 0.5886,
+    "Oil Brent": 0.608,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.8269,
+    "Copper": 0.8119,
     "Aluminium": 0.0,
     "Cocoa": 0.0,
-    "Cotton": 0.4247,
-    "Coffee": -0.6525,
+    "Cotton": 0.4022,
+    "Coffee": 0.0,
     "Natural Gas": 0.0,
-    "Sugar": 0.7626
+    "Sugar": 0.7685
   },
   "signals_low_risk": {
-    "Oil Brent": 0.4121,
+    "Oil Brent": 0.4189,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.8269,
+    "Copper": 0.8119,
     "Aluminium": 0.0,
     "Cocoa": 0.0,
-    "Cotton": 0.4247,
-    "Coffee": -0.486,
+    "Cotton": 0.4022,
+    "Coffee": 0.0,
     "Natural Gas": 0.0,
-    "Sugar": 0.6551
+    "Sugar": 0.6526
   },
   "as_of": {
-    "Oil Brent": "2026-10-09",
-    "Gold": "2026-10-09",
-    "Silver": "2026-10-09",
-    "Copper": "2026-10-09",
-    "Aluminium": "2026-10-09",
-    "Cocoa": "2026-10-09",
-    "Cotton": "2026-10-09",
-    "Coffee": "2026-10-09",
-    "Natural Gas": "2026-10-09",
-    "Sugar": "2026-10-09"
+    "Oil Brent": "2026-10-13",
+    "Gold": "2026-10-13",
+    "Silver": "2026-10-13",
+    "Copper": "2026-10-13",
+    "Aluminium": "2026-10-13",
+    "Cocoa": "2026-10-12",
+    "Cotton": "2026-10-13",
+    "Coffee": "2026-10-12",
+    "Natural Gas": "2026-10-13",
+    "Sugar": "2026-10-13"
   },
   "market_open": {
     "Oil Brent": true,
@@ -43,23 +43,26 @@
     "Silver": true,
     "Copper": true,
     "Aluminium": true,
-    "Cocoa": true,
+    "Cocoa": false,
     "Cotton": true,
-    "Coffee": true,
+    "Coffee": false,
     "Natural Gas": true,
     "Sugar": true
   },
-  "market_closed": [],
+  "market_closed": [
+    "Cocoa",
+    "Coffee"
+  ],
   "signals_experimental": {
-    "Oil Brent": 0.2837,
+    "Oil Brent": 0.3078,
     "Gold": 0.0,
     "Silver": 0.0,
-    "Copper": 0.6141,
+    "Copper": 0.5835,
     "Aluminium": 0.0,
     "Cocoa": 0.0,
     "Cotton": 0.0,
-    "Coffee": -0.0607,
+    "Coffee": 0.0,
     "Natural Gas": 0.0,
-    "Sugar": 0.4858
+    "Sugar": 0.4973
   }
 }
