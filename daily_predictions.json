@@ -432015,7 +432015,7 @@
     {
       "date": "2024-12-04",
       "predictions_high_risk": {
-        "Oil Brent": -0.7475,
+        "Oil Brent": -0.7473,
         "Gold": 0.5196,
         "Silver": 0.0,
         "Copper": -0.6633,
@@ -432027,7 +432027,7 @@
         "Sugar": -0.7311
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7096,
+        "Oil Brent": -0.7093,
         "Gold": 0.4888,
         "Silver": 0.0,
         "Copper": -0.6366,
@@ -432051,7 +432051,7 @@
         "Sugar": -0.282218
       },
       "dom_prob": {
-        "Oil Brent": 0.7475,
+        "Oil Brent": 0.7473,
         "Gold": 0.5196,
         "Silver": 0.0,
         "Copper": 0.6633,
@@ -432090,7 +432090,7 @@
     {
       "date": "2024-12-05",
       "predictions_high_risk": {
-        "Oil Brent": -0.7486,
+        "Oil Brent": -0.7483,
         "Gold": 0.5196,
         "Silver": 0.0,
         "Copper": -0.6594,
@@ -432102,7 +432102,7 @@
         "Sugar": -0.7432
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7171,
+        "Oil Brent": -0.7169,
         "Gold": 0.4865,
         "Silver": 0.0,
         "Copper": -0.6385,
@@ -432126,7 +432126,7 @@
         "Sugar": 2.877352
       },
       "dom_prob": {
-        "Oil Brent": 0.7486,
+        "Oil Brent": 0.7483,
         "Gold": 0.5196,
         "Silver": 0.0,
         "Copper": 0.6594,
@@ -432165,7 +432165,7 @@
     {
       "date": "2024-12-06",
       "predictions_high_risk": {
-        "Oil Brent": -0.7532,
+        "Oil Brent": -0.7529,
         "Gold": 0.5184,
         "Silver": 0.0,
         "Copper": -0.6505,
@@ -432177,7 +432177,7 @@
         "Sugar": -0.7303
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7207,
+        "Oil Brent": -0.7204,
         "Gold": 0.4851,
         "Silver": 0.0,
         "Copper": -0.6365,
@@ -432201,7 +432201,7 @@
         "Sugar": -1.421364
       },
       "dom_prob": {
-        "Oil Brent": 0.7532,
+        "Oil Brent": 0.7529,
         "Gold": 0.5184,
         "Silver": 0.0,
         "Copper": 0.6505,
@@ -432240,7 +432240,7 @@
     {
       "date": "2024-12-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.7522,
+        "Oil Brent": -0.7519,
         "Gold": 0.5211,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432252,7 +432252,7 @@
         "Sugar": -0.7328
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7364,
+        "Oil Brent": -0.7361,
         "Gold": 0.485,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432276,7 +432276,7 @@
         "Sugar": -2.139531
       },
       "dom_prob": {
-        "Oil Brent": 0.7522,
+        "Oil Brent": 0.7519,
         "Gold": 0.5211,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432315,7 +432315,7 @@
     {
       "date": "2024-12-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.7472,
+        "Oil Brent": -0.747,
         "Gold": 0.5209,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432327,7 +432327,7 @@
         "Sugar": -0.7314
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.737,
+        "Oil Brent": -0.7368,
         "Gold": 0.4802,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432351,7 +432351,7 @@
         "Sugar": 1.140683
       },
       "dom_prob": {
-        "Oil Brent": 0.7472,
+        "Oil Brent": 0.747,
         "Gold": 0.5209,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432390,7 +432390,7 @@
     {
       "date": "2024-12-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.7551,
+        "Oil Brent": -0.7548,
         "Gold": 0.5225,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432402,7 +432402,7 @@
         "Sugar": -0.719
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7453,
+        "Oil Brent": -0.7449,
         "Gold": 0.4838,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432426,7 +432426,7 @@
         "Sugar": -1.832713
       },
       "dom_prob": {
-        "Oil Brent": 0.7551,
+        "Oil Brent": 0.7548,
         "Gold": 0.5225,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432465,7 +432465,7 @@
     {
       "date": "2024-12-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.7537,
+        "Oil Brent": -0.7534,
         "Gold": 0.5216,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432477,7 +432477,7 @@
         "Sugar": -0.7081
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7443,
+        "Oil Brent": -0.744,
         "Gold": 0.4757,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432501,7 +432501,7 @@
         "Sugar": -0.813787
       },
       "dom_prob": {
-        "Oil Brent": 0.7537,
+        "Oil Brent": 0.7534,
         "Gold": 0.5216,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432540,7 +432540,7 @@
     {
       "date": "2024-12-13",
       "predictions_high_risk": {
-        "Oil Brent": -0.7575,
+        "Oil Brent": -0.757,
         "Gold": 0.5224,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432552,7 +432552,7 @@
         "Sugar": -0.7032
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7485,
+        "Oil Brent": -0.7481,
         "Gold": 0.4711,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432576,7 +432576,7 @@
         "Sugar": -0.193045
       },
       "dom_prob": {
-        "Oil Brent": 0.7575,
+        "Oil Brent": 0.757,
         "Gold": 0.5224,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432615,7 +432615,7 @@
     {
       "date": "2024-12-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.7562,
+        "Oil Brent": -0.7558,
         "Gold": 0.5249,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432627,7 +432627,7 @@
         "Sugar": -0.6987
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7487,
+        "Oil Brent": -0.7484,
         "Gold": 0.4747,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432651,7 +432651,7 @@
         "Sugar": -4.061896
       },
       "dom_prob": {
-        "Oil Brent": 0.7562,
+        "Oil Brent": 0.7558,
         "Gold": 0.5249,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432690,7 +432690,7 @@
     {
       "date": "2024-12-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.7516,
+        "Oil Brent": -0.7513,
         "Gold": 0.5226,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432702,7 +432702,7 @@
         "Sugar": -0.6978
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7429,
+        "Oil Brent": -0.7426,
         "Gold": 0.4725,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432726,7 +432726,7 @@
         "Sugar": -0.957664
       },
       "dom_prob": {
-        "Oil Brent": 0.7516,
+        "Oil Brent": 0.7513,
         "Gold": 0.5226,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432765,7 +432765,7 @@
     {
       "date": "2024-12-18",
       "predictions_high_risk": {
-        "Oil Brent": -0.751,
+        "Oil Brent": -0.7507,
         "Gold": 0.5205,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432777,7 +432777,7 @@
         "Sugar": -0.6925
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7463,
+        "Oil Brent": -0.746,
         "Gold": 0.4716,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432801,7 +432801,7 @@
         "Sugar": -1.272265
       },
       "dom_prob": {
-        "Oil Brent": 0.751,
+        "Oil Brent": 0.7507,
         "Gold": 0.5205,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432840,7 +432840,7 @@
     {
       "date": "2024-12-19",
       "predictions_high_risk": {
-        "Oil Brent": -0.7473,
+        "Oil Brent": -0.747,
         "Gold": 0.5177,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432852,7 +432852,7 @@
         "Sugar": -0.6979
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7425,
+        "Oil Brent": -0.7422,
         "Gold": 0.4643,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432876,7 +432876,7 @@
         "Sugar": 0.567013
       },
       "dom_prob": {
-        "Oil Brent": 0.7473,
+        "Oil Brent": 0.747,
         "Gold": 0.5177,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432915,7 +432915,7 @@
     {
       "date": "2024-12-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.7417,
+        "Oil Brent": -0.7415,
         "Gold": 0.5181,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432927,7 +432927,7 @@
         "Sugar": -0.7132
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7378,
+        "Oil Brent": -0.7377,
         "Gold": 0.4584,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432951,7 +432951,7 @@
         "Sugar": 0.153771
       },
       "dom_prob": {
-        "Oil Brent": 0.7417,
+        "Oil Brent": 0.7415,
         "Gold": 0.5181,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -432990,7 +432990,7 @@
     {
       "date": "2024-12-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.7386,
+        "Oil Brent": -0.7385,
         "Gold": 0.5162,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433002,7 +433002,7 @@
         "Sugar": -0.7126
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7386,
+        "Oil Brent": -0.7385,
         "Gold": 0.4584,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433026,7 +433026,7 @@
         "Sugar": 0.0
       },
       "dom_prob": {
-        "Oil Brent": 0.7386,
+        "Oil Brent": 0.7385,
         "Gold": 0.5162,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433065,7 +433065,7 @@
     {
       "date": "2024-12-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.7369,
+        "Oil Brent": -0.7368,
         "Gold": 0.5147,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433077,7 +433077,7 @@
         "Sugar": -0.7292
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7369,
+        "Oil Brent": -0.7368,
         "Gold": 0.4571,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433101,7 +433101,7 @@
         "Sugar": -1.432961
       },
       "dom_prob": {
-        "Oil Brent": 0.7369,
+        "Oil Brent": 0.7368,
         "Gold": 0.5147,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433140,7 +433140,7 @@
     {
       "date": "2024-12-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.7397,
+        "Oil Brent": -0.7396,
         "Gold": 0.5144,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433152,7 +433152,7 @@
         "Sugar": -0.7287
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7397,
+        "Oil Brent": -0.7396,
         "Gold": 0.4557,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433176,7 +433176,7 @@
         "Sugar": 0.571135
       },
       "dom_prob": {
-        "Oil Brent": 0.7397,
+        "Oil Brent": 0.7396,
         "Gold": 0.5144,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433215,7 +433215,7 @@
     {
       "date": "2024-12-27",
       "predictions_high_risk": {
-        "Oil Brent": -0.7466,
+        "Oil Brent": -0.7463,
         "Gold": 0.5152,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433227,7 +433227,7 @@
         "Sugar": -0.7159
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7466,
+        "Oil Brent": -0.7463,
         "Gold": 0.4573,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433251,7 +433251,7 @@
         "Sugar": -1.239038
       },
       "dom_prob": {
-        "Oil Brent": 0.7466,
+        "Oil Brent": 0.7463,
         "Gold": 0.5152,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433290,7 +433290,7 @@
     {
       "date": "2024-12-30",
       "predictions_high_risk": {
-        "Oil Brent": -0.7476,
+        "Oil Brent": -0.7474,
         "Gold": 0.5153,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433302,7 +433302,7 @@
         "Sugar": -0.7283
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7476,
+        "Oil Brent": -0.7474,
         "Gold": 0.4571,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433326,7 +433326,7 @@
         "Sugar": 0.679567
       },
       "dom_prob": {
-        "Oil Brent": 0.7476,
+        "Oil Brent": 0.7474,
         "Gold": 0.5153,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433365,7 +433365,7 @@
     {
       "date": "2024-12-31",
       "predictions_high_risk": {
-        "Oil Brent": -0.7519,
+        "Oil Brent": -0.7516,
         "Gold": 0.5169,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433377,7 +433377,7 @@
         "Sugar": -0.7158
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7519,
+        "Oil Brent": -0.7516,
         "Gold": 0.4606,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -433401,7 +433401,7 @@
         "Sugar": 2.440287
       },
       "dom_prob": {
-        "Oil Brent": 0.7519,
+        "Oil Brent": 0.7516,
         "Gold": 0.5169,
         "Silver": 0.0,
         "Copper": 0.0,
@@ -435015,7 +435015,7 @@
     {
       "date": "2025-02-03",
       "predictions_high_risk": {
-        "Oil Brent": -0.7866,
+        "Oil Brent": -0.7863,
         "Gold": 0.6949,
         "Silver": 0.6835,
         "Copper": 0.7482,
@@ -435027,7 +435027,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7866,
+        "Oil Brent": -0.7863,
         "Gold": 0.6063,
         "Silver": 0.6505,
         "Copper": 0.7482,
@@ -435051,7 +435051,7 @@
         "Sugar": 2.076841
       },
       "dom_prob": {
-        "Oil Brent": 0.7866,
+        "Oil Brent": 0.7863,
         "Gold": 0.6949,
         "Silver": 0.6835,
         "Copper": 0.7482,
@@ -435090,7 +435090,7 @@
     {
       "date": "2025-02-04",
       "predictions_high_risk": {
-        "Oil Brent": -0.7873,
+        "Oil Brent": -0.7869,
         "Gold": 0.6968,
         "Silver": 0.697,
         "Copper": 0.7609,
@@ -435102,7 +435102,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7873,
+        "Oil Brent": -0.7869,
         "Gold": 0.6064,
         "Silver": 0.6597,
         "Copper": 0.7609,
@@ -435126,7 +435126,7 @@
         "Sugar": 0.508649
       },
       "dom_prob": {
-        "Oil Brent": 0.7873,
+        "Oil Brent": 0.7869,
         "Gold": 0.6968,
         "Silver": 0.697,
         "Copper": 0.7609,
@@ -435165,7 +435165,7 @@
     {
       "date": "2025-02-05",
       "predictions_high_risk": {
-        "Oil Brent": -0.7891,
+        "Oil Brent": -0.7887,
         "Gold": 0.6965,
         "Silver": 0.7007,
         "Copper": 0.7874,
@@ -435177,7 +435177,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7891,
+        "Oil Brent": -0.7887,
         "Gold": 0.6049,
         "Silver": 0.6634,
         "Copper": 0.7874,
@@ -435201,7 +435201,7 @@
         "Sugar": -0.961541
       },
       "dom_prob": {
-        "Oil Brent": 0.7891,
+        "Oil Brent": 0.7887,
         "Gold": 0.6965,
         "Silver": 0.7007,
         "Copper": 0.7874,
@@ -435240,7 +435240,7 @@
     {
       "date": "2025-02-06",
       "predictions_high_risk": {
-        "Oil Brent": -0.7862,
+        "Oil Brent": -0.7859,
         "Gold": 0.696,
         "Silver": 0.6997,
         "Copper": 0.7824,
@@ -435252,7 +435252,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7862,
+        "Oil Brent": -0.7859,
         "Gold": 0.603,
         "Silver": 0.6612,
         "Copper": 0.7824,
@@ -435276,7 +435276,7 @@
         "Sugar": -1.073066
       },
       "dom_prob": {
-        "Oil Brent": 0.7862,
+        "Oil Brent": 0.7859,
         "Gold": 0.696,
         "Silver": 0.6997,
         "Copper": 0.7824,
@@ -435315,7 +435315,7 @@
     {
       "date": "2025-02-07",
       "predictions_high_risk": {
-        "Oil Brent": -0.7864,
+        "Oil Brent": -0.7861,
         "Gold": 0.6938,
         "Silver": 0.6979,
         "Copper": 0.7964,
@@ -435327,7 +435327,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7864,
+        "Oil Brent": -0.7861,
         "Gold": 0.6347,
         "Silver": 0.6944,
         "Copper": 0.7964,
@@ -435351,7 +435351,7 @@
         "Sugar": 0.723137
       },
       "dom_prob": {
-        "Oil Brent": 0.7864,
+        "Oil Brent": 0.7861,
         "Gold": 0.6938,
         "Silver": 0.6979,
         "Copper": 0.7964,
@@ -435390,7 +435390,7 @@
     {
       "date": "2025-02-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.788,
+        "Oil Brent": -0.7877,
         "Gold": 0.6952,
         "Silver": 0.6979,
         "Copper": 0.7864,
@@ -435402,7 +435402,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.788,
+        "Oil Brent": -0.7877,
         "Gold": 0.6304,
         "Silver": 0.6979,
         "Copper": 0.7864,
@@ -435426,7 +435426,7 @@
         "Sugar": 1.89744
       },
       "dom_prob": {
-        "Oil Brent": 0.788,
+        "Oil Brent": 0.7877,
         "Gold": 0.6952,
         "Silver": 0.6979,
         "Copper": 0.7864,
@@ -435465,7 +435465,7 @@
     {
       "date": "2025-02-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.788,
+        "Oil Brent": -0.7877,
         "Gold": 0.692,
         "Silver": 0.6848,
         "Copper": 0.7812,
@@ -435477,7 +435477,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.788,
+        "Oil Brent": -0.7877,
         "Gold": 0.6288,
         "Silver": 0.6848,
         "Copper": 0.7812,
@@ -435501,7 +435501,7 @@
         "Sugar": -0.553601
       },
       "dom_prob": {
-        "Oil Brent": 0.788,
+        "Oil Brent": 0.7877,
         "Gold": 0.692,
         "Silver": 0.6848,
         "Copper": 0.7812,
@@ -435540,7 +435540,7 @@
     {
       "date": "2025-02-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.7886,
+        "Oil Brent": -0.7883,
         "Gold": 0.6918,
         "Silver": 0.6835,
         "Copper": 0.7685,
@@ -435552,7 +435552,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7886,
+        "Oil Brent": -0.7883,
         "Gold": 0.6759,
         "Silver": 0.6835,
         "Copper": 0.7685,
@@ -435576,7 +435576,7 @@
         "Sugar": 2.074898
       },
       "dom_prob": {
-        "Oil Brent": 0.7886,
+        "Oil Brent": 0.7883,
         "Gold": 0.6918,
         "Silver": 0.6835,
         "Copper": 0.7685,
@@ -435615,7 +435615,7 @@
     {
       "date": "2025-02-13",
       "predictions_high_risk": {
-        "Oil Brent": -0.7841,
+        "Oil Brent": -0.7839,
         "Gold": 0.6898,
         "Silver": 0.677,
         "Copper": 0.7611,
@@ -435627,7 +435627,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7841,
+        "Oil Brent": -0.7839,
         "Gold": 0.6752,
         "Silver": 0.677,
         "Copper": 0.7611,
@@ -435651,7 +435651,7 @@
         "Sugar": 1.239465
       },
       "dom_prob": {
-        "Oil Brent": 0.7841,
+        "Oil Brent": 0.7839,
         "Gold": 0.6898,
         "Silver": 0.677,
         "Copper": 0.7611,
@@ -435690,7 +435690,7 @@
     {
       "date": "2025-02-14",
       "predictions_high_risk": {
-        "Oil Brent": -0.7828,
+        "Oil Brent": -0.7825,
         "Gold": 0.6897,
         "Silver": 0.6822,
         "Copper": 0.7381,
@@ -435702,7 +435702,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7828,
+        "Oil Brent": -0.7825,
         "Gold": 0.6647,
         "Silver": 0.6822,
         "Copper": 0.7381,
@@ -435726,7 +435726,7 @@
         "Sugar": 0.489718
       },
       "dom_prob": {
-        "Oil Brent": 0.7828,
+        "Oil Brent": 0.7825,
         "Gold": 0.6897,
         "Silver": 0.6822,
         "Copper": 0.7381,
@@ -435765,7 +435765,7 @@
     {
       "date": "2025-02-18",
       "predictions_high_risk": {
-        "Oil Brent": -0.785,
+        "Oil Brent": -0.7847,
         "Gold": 0.6918,
         "Silver": 0.6817,
         "Copper": 0.7242,
@@ -435777,7 +435777,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.785,
+        "Oil Brent": -0.7847,
         "Gold": 0.6578,
         "Silver": 0.6817,
         "Copper": 0.7242,
@@ -435801,7 +435801,7 @@
         "Sugar": 0.82846
       },
       "dom_prob": {
-        "Oil Brent": 0.785,
+        "Oil Brent": 0.7847,
         "Gold": 0.6918,
         "Silver": 0.6817,
         "Copper": 0.7242,
@@ -435840,7 +435840,7 @@
     {
       "date": "2025-02-19",
       "predictions_high_risk": {
-        "Oil Brent": -0.7819,
+        "Oil Brent": -0.7816,
         "Gold": 0.6934,
         "Silver": 0.6824,
         "Copper": 0.7233,
@@ -435852,7 +435852,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7819,
+        "Oil Brent": -0.7816,
         "Gold": 0.6578,
         "Silver": 0.6824,
         "Copper": 0.7233,
@@ -435876,7 +435876,7 @@
         "Sugar": 1.739965
       },
       "dom_prob": {
-        "Oil Brent": 0.7819,
+        "Oil Brent": 0.7816,
         "Gold": 0.6934,
         "Silver": 0.6824,
         "Copper": 0.7233,
@@ -435915,7 +435915,7 @@
     {
       "date": "2025-02-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.7821,
+        "Oil Brent": -0.7818,
         "Gold": 0.691,
         "Silver": 0.6656,
         "Copper": 0.7514,
@@ -435927,7 +435927,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7821,
+        "Oil Brent": -0.7818,
         "Gold": 0.6671,
         "Silver": 0.6656,
         "Copper": 0.7514,
@@ -435951,7 +435951,7 @@
         "Sugar": 1.235156
       },
       "dom_prob": {
-        "Oil Brent": 0.7821,
+        "Oil Brent": 0.7818,
         "Gold": 0.691,
         "Silver": 0.6656,
         "Copper": 0.7514,
@@ -435990,7 +435990,7 @@
     {
       "date": "2025-02-21",
       "predictions_high_risk": {
-        "Oil Brent": -0.7862,
+        "Oil Brent": -0.7859,
         "Gold": 0.6906,
         "Silver": 0.6656,
         "Copper": 0.7486,
@@ -436002,7 +436002,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7862,
+        "Oil Brent": -0.7859,
         "Gold": 0.6674,
         "Silver": 0.6656,
         "Copper": 0.7486,
@@ -436026,7 +436026,7 @@
         "Sugar": -1.032376
       },
       "dom_prob": {
-        "Oil Brent": 0.7862,
+        "Oil Brent": 0.7859,
         "Gold": 0.6906,
         "Silver": 0.6656,
         "Copper": 0.7486,
@@ -436065,7 +436065,7 @@
     {
       "date": "2025-02-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.7897,
+        "Oil Brent": -0.7893,
         "Gold": 0.6908,
         "Silver": 0.671,
         "Copper": 0.7417,
@@ -436077,7 +436077,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7897,
+        "Oil Brent": -0.7893,
         "Gold": 0.6696,
         "Silver": 0.671,
         "Copper": 0.7417,
@@ -436101,7 +436101,7 @@
         "Sugar": 1.754381
       },
       "dom_prob": {
-        "Oil Brent": 0.7897,
+        "Oil Brent": 0.7893,
         "Gold": 0.6908,
         "Silver": 0.671,
         "Copper": 0.7417,
@@ -436140,7 +436140,7 @@
     {
       "date": "2025-02-25",
       "predictions_high_risk": {
-        "Oil Brent": -0.7912,
+        "Oil Brent": -0.7908,
         "Gold": 0.6895,
         "Silver": 0.6795,
         "Copper": 0.7201,
@@ -436152,7 +436152,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7912,
+        "Oil Brent": -0.7908,
         "Gold": 0.6568,
         "Silver": 0.6795,
         "Copper": 0.7201,
@@ -436176,7 +436176,7 @@
         "Sugar": -3.821061
       },
       "dom_prob": {
-        "Oil Brent": 0.7912,
+        "Oil Brent": 0.7908,
         "Gold": 0.6895,
         "Silver": 0.6795,
         "Copper": 0.7201,
@@ -436215,7 +436215,7 @@
     {
       "date": "2025-02-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.7939,
+        "Oil Brent": -0.7935,
         "Gold": 0.6887,
         "Silver": 0.6626,
         "Copper": 0.7016,
@@ -436227,7 +436227,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7939,
+        "Oil Brent": -0.7935,
         "Gold": 0.6646,
         "Silver": 0.6625,
         "Copper": 0.7016,
@@ -436251,7 +436251,7 @@
         "Sugar": -4.602708
       },
       "dom_prob": {
-        "Oil Brent": 0.7939,
+        "Oil Brent": 0.7935,
         "Gold": 0.6887,
         "Silver": 0.6626,
         "Copper": 0.7016,
@@ -436290,7 +436290,7 @@
     {
       "date": "2025-02-27",
       "predictions_high_risk": {
-        "Oil Brent": -0.794,
+        "Oil Brent": -0.7935,
         "Gold": 0.6916,
         "Silver": 0.6716,
         "Copper": 0.6911,
@@ -436302,7 +436302,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.794,
+        "Oil Brent": -0.7935,
         "Gold": 0.6916,
         "Silver": 0.6716,
         "Copper": 0.6911,
@@ -436326,7 +436326,7 @@
         "Sugar": -0.914171
       },
       "dom_prob": {
-        "Oil Brent": 0.794,
+        "Oil Brent": 0.7935,
         "Gold": 0.6916,
         "Silver": 0.6716,
         "Copper": 0.6911,
@@ -436365,7 +436365,7 @@
     {
       "date": "2025-02-28",
       "predictions_high_risk": {
-        "Oil Brent": -0.7997,
+        "Oil Brent": -0.7992,
         "Gold": 0.6919,
         "Silver": 0.6691,
         "Copper": 0.6902,
@@ -436377,7 +436377,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7997,
+        "Oil Brent": -0.7992,
         "Gold": 0.6919,
         "Silver": 0.6691,
         "Copper": 0.6902,
@@ -436401,7 +436401,7 @@
         "Sugar": -6.611998
       },
       "dom_prob": {
-        "Oil Brent": 0.7997,
+        "Oil Brent": 0.7992,
         "Gold": 0.6919,
         "Silver": 0.6691,
         "Copper": 0.6902,
@@ -438015,7 +438015,7 @@
     {
       "date": "2025-04-01",
       "predictions_high_risk": {
-        "Oil Brent": -0.9016,
+        "Oil Brent": -0.9018,
         "Gold": 0.6939,
         "Silver": 0.7904,
         "Copper": 0.3632,
@@ -438027,7 +438027,7 @@
         "Sugar": -0.7244
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9016,
+        "Oil Brent": -0.9018,
         "Gold": 0.6939,
         "Silver": 0.7904,
         "Copper": 0.3577,
@@ -438051,7 +438051,7 @@
         "Sugar": 1.240309
       },
       "dom_prob": {
-        "Oil Brent": 0.9016,
+        "Oil Brent": 0.9018,
         "Gold": 0.6939,
         "Silver": 0.7904,
         "Copper": 0.3632,
@@ -438090,7 +438090,7 @@
     {
       "date": "2025-04-02",
       "predictions_high_risk": {
-        "Oil Brent": -0.9002,
+        "Oil Brent": -0.9004,
         "Gold": 0.6953,
         "Silver": 0.7828,
         "Copper": 0.0,
@@ -438102,7 +438102,7 @@
         "Sugar": -0.7142
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9002,
+        "Oil Brent": -0.9004,
         "Gold": 0.6953,
         "Silver": 0.7828,
         "Copper": 0.0,
@@ -438126,7 +438126,7 @@
         "Sugar": -2.450227
       },
       "dom_prob": {
-        "Oil Brent": 0.9002,
+        "Oil Brent": 0.9004,
         "Gold": 0.6953,
         "Silver": 0.7828,
         "Copper": 0.0,
@@ -438165,7 +438165,7 @@
     {
       "date": "2025-04-03",
       "predictions_high_risk": {
-        "Oil Brent": -0.9036,
+        "Oil Brent": -0.9037,
         "Gold": 0.6937,
         "Silver": 0.7923,
         "Copper": 0.3537,
@@ -438177,7 +438177,7 @@
         "Sugar": -0.7078
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9036,
+        "Oil Brent": -0.9037,
         "Gold": 0.6937,
         "Silver": 0.7463,
         "Copper": 0.3268,
@@ -438201,7 +438201,7 @@
         "Sugar": -1.412875
       },
       "dom_prob": {
-        "Oil Brent": 0.9036,
+        "Oil Brent": 0.9037,
         "Gold": 0.6937,
         "Silver": 0.7923,
         "Copper": 0.3537,
@@ -438240,7 +438240,7 @@
     {
       "date": "2025-04-04",
       "predictions_high_risk": {
-        "Oil Brent": -0.9046,
+        "Oil Brent": -0.9047,
         "Gold": 0.6999,
         "Silver": 0.6702,
         "Copper": 0.2861,
@@ -438252,7 +438252,7 @@
         "Sugar": -0.6935
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9046,
+        "Oil Brent": -0.9047,
         "Gold": 0.6999,
         "Silver": 0.6348,
         "Copper": 0.266,
@@ -438276,7 +438276,7 @@
         "Sugar": -0.849256
       },
       "dom_prob": {
-        "Oil Brent": 0.9046,
+        "Oil Brent": 0.9047,
         "Gold": 0.6999,
         "Silver": 0.7955,
         "Copper": 0.3622,
@@ -438315,7 +438315,7 @@
     {
       "date": "2025-04-07",
       "predictions_high_risk": {
-        "Oil Brent": -0.9024,
+        "Oil Brent": -0.9026,
         "Gold": 0.7003,
         "Silver": 0.6675,
         "Copper": 0.2848,
@@ -438327,7 +438327,7 @@
         "Sugar": -0.7048
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9024,
+        "Oil Brent": -0.9026,
         "Gold": 0.6869,
         "Silver": 0.6338,
         "Copper": 0.2653,
@@ -438351,7 +438351,7 @@
         "Sugar": -1.980733
       },
       "dom_prob": {
-        "Oil Brent": 0.9024,
+        "Oil Brent": 0.9026,
         "Gold": 0.7003,
         "Silver": 0.7923,
         "Copper": 0.3771,
@@ -438390,7 +438390,7 @@
     {
       "date": "2025-04-08",
       "predictions_high_risk": {
-        "Oil Brent": -0.9038,
+        "Oil Brent": -0.9039,
         "Gold": 0.6994,
         "Silver": 0.6627,
         "Copper": 0.2829,
@@ -438402,7 +438402,7 @@
         "Sugar": -0.7013
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9038,
+        "Oil Brent": -0.9039,
         "Gold": 0.6867,
         "Silver": 0.6293,
         "Copper": 0.2591,
@@ -438426,7 +438426,7 @@
         "Sugar": -2.184597
       },
       "dom_prob": {
-        "Oil Brent": 0.9038,
+        "Oil Brent": 0.9039,
         "Gold": 0.6994,
         "Silver": 0.7864,
         "Copper": 0.3686,
@@ -438465,7 +438465,7 @@
     {
       "date": "2025-04-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.9031,
+        "Oil Brent": -0.9032,
         "Gold": 0.6986,
         "Silver": 0.6643,
         "Copper": 0.2712,
@@ -438477,7 +438477,7 @@
         "Sugar": -0.6831
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9031,
+        "Oil Brent": -0.9032,
         "Gold": 0.6456,
         "Silver": 0.6242,
         "Copper": 0.249,
@@ -438501,7 +438501,7 @@
         "Sugar": 1.172535
       },
       "dom_prob": {
-        "Oil Brent": 0.9031,
+        "Oil Brent": 0.9032,
         "Gold": 0.6986,
         "Silver": 0.7883,
         "Copper": 0.3533,
@@ -438540,7 +438540,7 @@
     {
       "date": "2025-04-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.9026,
+        "Oil Brent": -0.9028,
         "Gold": 0.6984,
         "Silver": 0.6679,
         "Copper": 0.2798,
@@ -438552,7 +438552,7 @@
         "Sugar": -0.6877
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9026,
+        "Oil Brent": -0.9028,
         "Gold": 0.6074,
         "Silver": 0.6275,
         "Copper": 0.2519,
@@ -438576,7 +438576,7 @@
         "Sugar": -0.662256
       },
       "dom_prob": {
-        "Oil Brent": 0.9026,
+        "Oil Brent": 0.9028,
         "Gold": 0.6984,
         "Silver": 0.7924,
         "Copper": 0.3644,
@@ -438615,7 +438615,7 @@
     {
       "date": "2025-04-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.9024,
+        "Oil Brent": -0.9026,
         "Gold": 0.7014,
         "Silver": 0.6774,
         "Copper": 0.2825,
@@ -438627,7 +438627,7 @@
         "Sugar": -0.6818
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9024,
+        "Oil Brent": -0.9026,
         "Gold": 0.5982,
         "Silver": 0.623,
         "Copper": 0.2479,
@@ -438651,7 +438651,7 @@
         "Sugar": -0.722218
       },
       "dom_prob": {
-        "Oil Brent": 0.9024,
+        "Oil Brent": 0.9026,
         "Gold": 0.7014,
         "Silver": 0.8036,
         "Copper": 0.3698,
@@ -438690,7 +438690,7 @@
     {
       "date": "2025-04-14",
       "predictions_high_risk": {
-        "Oil Brent": -0.901,
+        "Oil Brent": -0.9012,
         "Gold": 0.6998,
         "Silver": 0.6814,
         "Copper": 0.2781,
@@ -438702,7 +438702,7 @@
         "Sugar": -0.6973
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.901,
+        "Oil Brent": -0.9012,
         "Gold": 0.6041,
         "Silver": 0.6416,
         "Copper": 0.2421,
@@ -438726,7 +438726,7 @@
         "Sugar": -1.958592
       },
       "dom_prob": {
-        "Oil Brent": 0.901,
+        "Oil Brent": 0.9012,
         "Gold": 0.6998,
         "Silver": 0.813,
         "Copper": 0.364,
@@ -438765,7 +438765,7 @@
     {
       "date": "2025-04-15",
       "predictions_high_risk": {
-        "Oil Brent": -0.9011,
+        "Oil Brent": -0.9013,
         "Gold": 0.6988,
         "Silver": 0.6768,
         "Copper": 0.0,
@@ -438777,7 +438777,7 @@
         "Sugar": -0.6816
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9011,
+        "Oil Brent": -0.9013,
         "Gold": 0.6032,
         "Silver": 0.6372,
         "Copper": 0.0,
@@ -438801,7 +438801,7 @@
         "Sugar": 1.94064
       },
       "dom_prob": {
-        "Oil Brent": 0.9011,
+        "Oil Brent": 0.9013,
         "Gold": 0.6988,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -438840,7 +438840,7 @@
     {
       "date": "2025-04-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.9015,
+        "Oil Brent": -0.9016,
         "Gold": 0.7022,
         "Silver": 0.6703,
         "Copper": 0.0,
@@ -438852,7 +438852,7 @@
         "Sugar": -0.6696
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9015,
+        "Oil Brent": -0.9016,
         "Gold": 0.5763,
         "Silver": 0.6422,
         "Copper": 0.0,
@@ -438876,7 +438876,7 @@
         "Sugar": 0.391936
       },
       "dom_prob": {
-        "Oil Brent": 0.9015,
+        "Oil Brent": 0.9016,
         "Gold": 0.7022,
         "Silver": 0.7996,
         "Copper": 0.0,
@@ -438915,7 +438915,7 @@
     {
       "date": "2025-04-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.9025,
+        "Oil Brent": -0.9026,
         "Gold": 0.7025,
         "Silver": 0.6754,
         "Copper": 0.0,
@@ -438927,7 +438927,7 @@
         "Sugar": -0.6842
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9025,
+        "Oil Brent": -0.9026,
         "Gold": 0.577,
         "Silver": 0.6333,
         "Copper": 0.0,
@@ -438951,7 +438951,7 @@
         "Sugar": -0.669274
       },
       "dom_prob": {
-        "Oil Brent": 0.9025,
+        "Oil Brent": 0.9026,
         "Gold": 0.7025,
         "Silver": 0.7916,
         "Copper": 0.0,
@@ -438990,7 +438990,7 @@
     {
       "date": "2025-04-21",
       "predictions_high_risk": {
-        "Oil Brent": -0.9051,
+        "Oil Brent": -0.9052,
         "Gold": 0.704,
         "Silver": 0.6696,
         "Copper": 0.2865,
@@ -439002,7 +439002,7 @@
         "Sugar": -0.6909
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9051,
+        "Oil Brent": -0.9052,
         "Gold": 0.5567,
         "Silver": 0.6428,
         "Copper": 0.2536,
@@ -439026,7 +439026,7 @@
         "Sugar": 1.01067
       },
       "dom_prob": {
-        "Oil Brent": 0.9051,
+        "Oil Brent": 0.9052,
         "Gold": 0.704,
         "Silver": 0.7985,
         "Copper": 0.3796,
@@ -439065,7 +439065,7 @@
     {
       "date": "2025-04-22",
       "predictions_high_risk": {
-        "Oil Brent": -0.905,
+        "Oil Brent": -0.9051,
         "Gold": 0.7023,
         "Silver": 0.6591,
         "Copper": 0.2991,
@@ -439077,7 +439077,7 @@
         "Sugar": -0.7013
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.905,
+        "Oil Brent": -0.9051,
         "Gold": 0.5546,
         "Silver": 0.6327,
         "Copper": 0.2645,
@@ -439101,7 +439101,7 @@
         "Sugar": -0.277928
       },
       "dom_prob": {
-        "Oil Brent": 0.905,
+        "Oil Brent": 0.9051,
         "Gold": 0.7023,
         "Silver": 0.7858,
         "Copper": 0.4013,
@@ -439140,7 +439140,7 @@
     {
       "date": "2025-04-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.9067,
+        "Oil Brent": -0.9068,
         "Gold": 0.7018,
         "Silver": 0.6541,
         "Copper": 0.2805,
@@ -439152,7 +439152,7 @@
         "Sugar": -0.7098
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9067,
+        "Oil Brent": -0.9068,
         "Gold": 0.5098,
         "Silver": 0.6305,
         "Copper": 0.2487,
@@ -439176,7 +439176,7 @@
         "Sugar": -0.111485
       },
       "dom_prob": {
-        "Oil Brent": 0.9067,
+        "Oil Brent": 0.9068,
         "Gold": 0.7018,
         "Silver": 0.7877,
         "Copper": 0.3771,
@@ -439215,7 +439215,7 @@
     {
       "date": "2025-04-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.9056,
+        "Oil Brent": -0.9057,
         "Gold": 0.7004,
         "Silver": 0.6493,
         "Copper": 0.279,
@@ -439227,7 +439227,7 @@
         "Sugar": -0.7154
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9056,
+        "Oil Brent": -0.9057,
         "Gold": 0.5045,
         "Silver": 0.6361,
         "Copper": 0.2475,
@@ -439251,7 +439251,7 @@
         "Sugar": 1.450894
       },
       "dom_prob": {
-        "Oil Brent": 0.9056,
+        "Oil Brent": 0.9057,
         "Gold": 0.7004,
         "Silver": 0.7893,
         "Copper": 0.375,
@@ -439290,7 +439290,7 @@
     {
       "date": "2025-04-25",
       "predictions_high_risk": {
-        "Oil Brent": -0.9061,
+        "Oil Brent": -0.9062,
         "Gold": 0.7002,
         "Silver": 0.6612,
         "Copper": 0.2843,
@@ -439302,7 +439302,7 @@
         "Sugar": -0.7066
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9061,
+        "Oil Brent": -0.9062,
         "Gold": 0.4972,
         "Silver": 0.6343,
         "Copper": 0.2518,
@@ -439326,7 +439326,7 @@
         "Sugar": -1.870188
       },
       "dom_prob": {
-        "Oil Brent": 0.9061,
+        "Oil Brent": 0.9062,
         "Gold": 0.7002,
         "Silver": 0.7893,
         "Copper": 0.3817,
@@ -439365,7 +439365,7 @@
     {
       "date": "2025-04-28",
       "predictions_high_risk": {
-        "Oil Brent": -0.9069,
+        "Oil Brent": -0.907,
         "Gold": 0.7017,
         "Silver": 0.6422,
         "Copper": 0.2916,
@@ -439377,7 +439377,7 @@
         "Sugar": -0.7014
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9069,
+        "Oil Brent": -0.907,
         "Gold": 0.5018,
         "Silver": 0.6327,
         "Copper": 0.2657,
@@ -439401,7 +439401,7 @@
         "Sugar": -1.23318
       },
       "dom_prob": {
-        "Oil Brent": 0.9069,
+        "Oil Brent": 0.907,
         "Gold": 0.7017,
         "Silver": 0.7775,
         "Copper": 0.3993,
@@ -439440,7 +439440,7 @@
     {
       "date": "2025-04-29",
       "predictions_high_risk": {
-        "Oil Brent": -0.9063,
+        "Oil Brent": -0.9064,
         "Gold": 0.7011,
         "Silver": 0.6395,
         "Copper": 0.282,
@@ -439452,7 +439452,7 @@
         "Sugar": -0.6956
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9063,
+        "Oil Brent": -0.9064,
         "Gold": 0.5017,
         "Silver": 0.6317,
         "Copper": 0.2544,
@@ -439476,7 +439476,7 @@
         "Sugar": -0.908069
       },
       "dom_prob": {
-        "Oil Brent": 0.9063,
+        "Oil Brent": 0.9064,
         "Gold": 0.7011,
         "Silver": 0.7742,
         "Copper": 0.3823,
@@ -439590,7 +439590,7 @@
     {
       "date": "2025-05-01",
       "predictions_high_risk": {
-        "Oil Brent": -0.8273,
+        "Oil Brent": -0.8278,
         "Gold": 0.7292,
         "Silver": 0.6471,
         "Copper": 0.4907,
@@ -439602,7 +439602,7 @@
         "Sugar": -0.8889
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8273,
+        "Oil Brent": -0.8278,
         "Gold": 0.5142,
         "Silver": 0.6281,
         "Copper": 0.4428,
@@ -439626,7 +439626,7 @@
         "Sugar": 0.233106
       },
       "dom_prob": {
-        "Oil Brent": 0.8273,
+        "Oil Brent": 0.8278,
         "Gold": 0.7432,
         "Silver": 0.7584,
         "Copper": 0.7011,
@@ -439665,7 +439665,7 @@
     {
       "date": "2025-05-02",
       "predictions_high_risk": {
-        "Oil Brent": -0.8237,
+        "Oil Brent": -0.8242,
         "Gold": 0.7199,
         "Silver": 0.6416,
         "Copper": 0.4838,
@@ -439677,7 +439677,7 @@
         "Sugar": -0.8926
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8237,
+        "Oil Brent": -0.8242,
         "Gold": 0.514,
         "Silver": 0.6235,
         "Copper": 0.4419,
@@ -439701,7 +439701,7 @@
         "Sugar": 1.569759
       },
       "dom_prob": {
-        "Oil Brent": 0.8237,
+        "Oil Brent": 0.8242,
         "Gold": 0.7424,
         "Silver": 0.7526,
         "Copper": 0.6999,
@@ -439740,7 +439740,7 @@
     {
       "date": "2025-05-05",
       "predictions_high_risk": {
-        "Oil Brent": -0.821,
+        "Oil Brent": -0.8215,
         "Gold": 0.7202,
         "Silver": 0.6357,
         "Copper": 0.4647,
@@ -439752,7 +439752,7 @@
         "Sugar": -0.8952
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.821,
+        "Oil Brent": -0.8215,
         "Gold": 0.5045,
         "Silver": 0.618,
         "Copper": 0.4246,
@@ -439776,7 +439776,7 @@
         "Sugar": -0.171716
       },
       "dom_prob": {
-        "Oil Brent": 0.821,
+        "Oil Brent": 0.8215,
         "Gold": 0.7426,
         "Silver": 0.7457,
         "Copper": 0.6723,
@@ -439815,7 +439815,7 @@
     {
       "date": "2025-05-06",
       "predictions_high_risk": {
-        "Oil Brent": -0.8251,
+        "Oil Brent": -0.8255,
         "Gold": 0.7202,
         "Silver": 0.6404,
         "Copper": 0.4693,
@@ -439827,7 +439827,7 @@
         "Sugar": -0.8958
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.825,
+        "Oil Brent": -0.8255,
         "Gold": 0.4901,
         "Silver": 0.6162,
         "Copper": 0.4278,
@@ -439851,7 +439851,7 @@
         "Sugar": -1.777531
       },
       "dom_prob": {
-        "Oil Brent": 0.8251,
+        "Oil Brent": 0.8255,
         "Gold": 0.7426,
         "Silver": 0.7511,
         "Copper": 0.6789,
@@ -439890,7 +439890,7 @@
     {
       "date": "2025-05-07",
       "predictions_high_risk": {
-        "Oil Brent": -0.825,
+        "Oil Brent": -0.8255,
         "Gold": 0.7343,
         "Silver": 0.6489,
         "Copper": 0.4852,
@@ -439902,7 +439902,7 @@
         "Sugar": -0.8948
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.825,
+        "Oil Brent": -0.8255,
         "Gold": 0.4881,
         "Silver": 0.6152,
         "Copper": 0.4325,
@@ -439926,7 +439926,7 @@
         "Sugar": 2.159958
       },
       "dom_prob": {
-        "Oil Brent": 0.825,
+        "Oil Brent": 0.8255,
         "Gold": 0.743,
         "Silver": 0.7542,
         "Copper": 0.6895,
@@ -439965,7 +439965,7 @@
     {
       "date": "2025-05-08",
       "predictions_high_risk": {
-        "Oil Brent": -0.8268,
+        "Oil Brent": -0.8273,
         "Gold": 0.705,
         "Silver": 0.6425,
         "Copper": 0.4968,
@@ -439977,7 +439977,7 @@
         "Sugar": -0.8961
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8139,
+        "Oil Brent": -0.8143,
         "Gold": 0.4757,
         "Silver": 0.6125,
         "Copper": 0.4346,
@@ -440001,7 +440001,7 @@
         "Sugar": 1.600004
       },
       "dom_prob": {
-        "Oil Brent": 0.8268,
+        "Oil Brent": 0.8273,
         "Gold": 0.7437,
         "Silver": 0.7497,
         "Copper": 0.6942,
@@ -440040,7 +440040,7 @@
     {
       "date": "2025-05-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.826,
+        "Oil Brent": -0.8264,
         "Gold": 0.7055,
         "Silver": 0.6222,
         "Copper": 0.4869,
@@ -440052,7 +440052,7 @@
         "Sugar": -0.8965
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8081,
+        "Oil Brent": -0.8086,
         "Gold": 0.4745,
         "Silver": 0.6004,
         "Copper": 0.4304,
@@ -440076,7 +440076,7 @@
         "Sugar": -0.449943
       },
       "dom_prob": {
-        "Oil Brent": 0.826,
+        "Oil Brent": 0.8264,
         "Gold": 0.7442,
         "Silver": 0.7355,
         "Copper": 0.6805,
@@ -440115,7 +440115,7 @@
     {
       "date": "2025-05-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.8241,
+        "Oil Brent": -0.8246,
         "Gold": 0.6501,
         "Silver": 0.6213,
         "Copper": 0.499,
@@ -440127,7 +440127,7 @@
         "Sugar": -0.8941
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8062,
+        "Oil Brent": -0.8067,
         "Gold": 0.4555,
         "Silver": 0.5896,
         "Copper": 0.4399,
@@ -440151,7 +440151,7 @@
         "Sugar": 2.937845
       },
       "dom_prob": {
-        "Oil Brent": 0.8241,
+        "Oil Brent": 0.8246,
         "Gold": 0.7445,
         "Silver": 0.7232,
         "Copper": 0.6889,
@@ -440190,7 +440190,7 @@
     {
       "date": "2025-05-13",
       "predictions_high_risk": {
-        "Oil Brent": -0.8294,
+        "Oil Brent": -0.8298,
         "Gold": 0.6504,
         "Silver": 0.6115,
         "Copper": 0.4991,
@@ -440202,7 +440202,7 @@
         "Sugar": -0.8899
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8041,
+        "Oil Brent": -0.8045,
         "Gold": 0.4553,
         "Silver": 0.5854,
         "Copper": 0.4478,
@@ -440226,7 +440226,7 @@
         "Sugar": -0.878155
       },
       "dom_prob": {
-        "Oil Brent": 0.8294,
+        "Oil Brent": 0.8298,
         "Gold": 0.7445,
         "Silver": 0.7205,
         "Copper": 0.7011,
@@ -440265,7 +440265,7 @@
     {
       "date": "2025-05-14",
       "predictions_high_risk": {
-        "Oil Brent": -0.831,
+        "Oil Brent": -0.8314,
         "Gold": 0.6596,
         "Silver": 0.6231,
         "Copper": 0.5074,
@@ -440277,7 +440277,7 @@
         "Sugar": -0.8938
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8123,
+        "Oil Brent": -0.8127,
         "Gold": 0.4501,
         "Silver": 0.5845,
         "Copper": 0.4491,
@@ -440301,7 +440301,7 @@
         "Sugar": -2.159465
       },
       "dom_prob": {
-        "Oil Brent": 0.831,
+        "Oil Brent": 0.8314,
         "Gold": 0.7454,
         "Silver": 0.7218,
         "Copper": 0.7002,
@@ -440340,7 +440340,7 @@
     {
       "date": "2025-05-15",
       "predictions_high_risk": {
-        "Oil Brent": -0.8318,
+        "Oil Brent": -0.8322,
         "Gold": 0.6589,
         "Silver": 0.6137,
         "Copper": 0.5027,
@@ -440352,7 +440352,7 @@
         "Sugar": -0.8939
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8059,
+        "Oil Brent": -0.8063,
         "Gold": 0.4482,
         "Silver": 0.5792,
         "Copper": 0.4462,
@@ -440376,7 +440376,7 @@
         "Sugar": -0.848894
       },
       "dom_prob": {
-        "Oil Brent": 0.8318,
+        "Oil Brent": 0.8322,
         "Gold": 0.7446,
         "Silver": 0.716,
         "Copper": 0.6937,
@@ -440415,7 +440415,7 @@
     {
       "date": "2025-05-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.8297,
+        "Oil Brent": -0.8301,
         "Gold": 0.66,
         "Silver": 0.6225,
         "Copper": 0.5089,
@@ -440427,7 +440427,7 @@
         "Sugar": -0.891
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8002,
+        "Oil Brent": -0.8006,
         "Gold": 0.4497,
         "Silver": 0.5776,
         "Copper": 0.4524,
@@ -440451,7 +440451,7 @@
         "Sugar": -0.399542
       },
       "dom_prob": {
-        "Oil Brent": 0.8297,
+        "Oil Brent": 0.8301,
         "Gold": 0.7453,
         "Silver": 0.715,
         "Copper": 0.7012,
@@ -440490,7 +440490,7 @@
     {
       "date": "2025-05-19",
       "predictions_high_risk": {
-        "Oil Brent": -0.8258,
+        "Oil Brent": -0.8263,
         "Gold": 0.6588,
         "Silver": 0.6201,
         "Copper": 0.4941,
@@ -440502,7 +440502,7 @@
         "Sugar": -0.8901
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8004,
+        "Oil Brent": -0.8009,
         "Gold": 0.4496,
         "Silver": 0.5778,
         "Copper": 0.4467,
@@ -440526,7 +440526,7 @@
         "Sugar": -0.630376
       },
       "dom_prob": {
-        "Oil Brent": 0.8258,
+        "Oil Brent": 0.8263,
         "Gold": 0.7439,
         "Silver": 0.7121,
         "Copper": 0.693,
@@ -440565,7 +440565,7 @@
     {
       "date": "2025-05-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.8231,
+        "Oil Brent": -0.8236,
         "Gold": 0.6555,
         "Silver": 0.6225,
         "Copper": 0.4753,
@@ -440577,7 +440577,7 @@
         "Sugar": -0.8913
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7982,
+        "Oil Brent": -0.7987,
         "Gold": 0.4484,
         "Silver": 0.5855,
         "Copper": 0.4315,
@@ -440601,7 +440601,7 @@
         "Sugar": 2.076128
       },
       "dom_prob": {
-        "Oil Brent": 0.8231,
+        "Oil Brent": 0.8236,
         "Gold": 0.7458,
         "Silver": 0.7259,
         "Copper": 0.6689,
@@ -440640,7 +440640,7 @@
     {
       "date": "2025-05-21",
       "predictions_high_risk": {
-        "Oil Brent": -0.8214,
+        "Oil Brent": -0.822,
         "Gold": 0.6561,
         "Silver": 0.6197,
         "Copper": 0.4766,
@@ -440652,7 +440652,7 @@
         "Sugar": -0.8839
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7973,
+        "Oil Brent": -0.7978,
         "Gold": 0.4485,
         "Silver": 0.5825,
         "Copper": 0.4335,
@@ -440676,7 +440676,7 @@
         "Sugar": -1.694922
       },
       "dom_prob": {
-        "Oil Brent": 0.8214,
+        "Oil Brent": 0.822,
         "Gold": 0.7464,
         "Silver": 0.7225,
         "Copper": 0.6707,
@@ -440715,7 +440715,7 @@
     {
       "date": "2025-05-22",
       "predictions_high_risk": {
-        "Oil Brent": -0.8205,
+        "Oil Brent": -0.821,
         "Gold": 0.6663,
         "Silver": 0.6156,
         "Copper": 0.4829,
@@ -440727,7 +440727,7 @@
         "Sugar": -0.8791
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8053,
+        "Oil Brent": -0.8059,
         "Gold": 0.4483,
         "Silver": 0.5794,
         "Copper": 0.4472,
@@ -440751,7 +440751,7 @@
         "Sugar": -0.632176
       },
       "dom_prob": {
-        "Oil Brent": 0.8205,
+        "Oil Brent": 0.821,
         "Gold": 0.7472,
         "Silver": 0.7181,
         "Copper": 0.6908,
@@ -440790,7 +440790,7 @@
     {
       "date": "2025-05-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.8222,
+        "Oil Brent": -0.8228,
         "Gold": 0.6665,
         "Silver": 0.6155,
         "Copper": 0.4692,
@@ -440802,7 +440802,7 @@
         "Sugar": -0.8893
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8069,
+        "Oil Brent": -0.8074,
         "Gold": 0.4431,
         "Silver": 0.5896,
         "Copper": 0.4348,
@@ -440826,7 +440826,7 @@
         "Sugar": -0.404868
       },
       "dom_prob": {
-        "Oil Brent": 0.8222,
+        "Oil Brent": 0.8228,
         "Gold": 0.7475,
         "Silver": 0.7304,
         "Copper": 0.682,
@@ -440865,7 +440865,7 @@
     {
       "date": "2025-05-27",
       "predictions_high_risk": {
-        "Oil Brent": -0.8215,
+        "Oil Brent": -0.822,
         "Gold": 0.6613,
         "Silver": 0.6192,
         "Copper": 0.4802,
@@ -440877,7 +440877,7 @@
         "Sugar": -0.8911
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8124,
+        "Oil Brent": -0.8129,
         "Gold": 0.4402,
         "Silver": 0.5988,
         "Copper": 0.4395,
@@ -440901,7 +440901,7 @@
         "Sugar": -1.858303
       },
       "dom_prob": {
-        "Oil Brent": 0.8215,
+        "Oil Brent": 0.822,
         "Gold": 0.7466,
         "Silver": 0.735,
         "Copper": 0.6934,
@@ -440940,7 +440940,7 @@
     {
       "date": "2025-05-28",
       "predictions_high_risk": {
-        "Oil Brent": -0.8186,
+        "Oil Brent": -0.8192,
         "Gold": 0.6587,
         "Silver": 0.6332,
         "Copper": 0.5017,
@@ -440952,7 +440952,7 @@
         "Sugar": -0.8855
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8066,
+        "Oil Brent": -0.8072,
         "Gold": 0.439,
         "Silver": 0.6069,
         "Copper": 0.4503,
@@ -440976,7 +440976,7 @@
         "Sugar": 0.591718
       },
       "dom_prob": {
-        "Oil Brent": 0.8186,
+        "Oil Brent": 0.8192,
         "Gold": 0.7447,
         "Silver": 0.7426,
         "Copper": 0.7112,
@@ -441015,7 +441015,7 @@
     {
       "date": "2025-05-29",
       "predictions_high_risk": {
-        "Oil Brent": -0.818,
+        "Oil Brent": -0.8186,
         "Gold": 0.6469,
         "Silver": 0.6226,
         "Copper": 0.4954,
@@ -441027,7 +441027,7 @@
         "Sugar": -0.8866
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8127,
+        "Oil Brent": -0.8133,
         "Gold": 0.4415,
         "Silver": 0.6093,
         "Copper": 0.445,
@@ -441051,7 +441051,7 @@
         "Sugar": 0.294113
       },
       "dom_prob": {
-        "Oil Brent": 0.818,
+        "Oil Brent": 0.8186,
         "Gold": 0.7452,
         "Silver": 0.7435,
         "Copper": 0.7022,
@@ -441090,7 +441090,7 @@
     {
       "date": "2025-05-30",
       "predictions_high_risk": {
-        "Oil Brent": -0.8164,
+        "Oil Brent": -0.8171,
         "Gold": 0.646,
         "Silver": 0.6297,
         "Copper": 0.49,
@@ -441102,7 +441102,7 @@
         "Sugar": -0.8916
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8125,
+        "Oil Brent": -0.8131,
         "Gold": 0.4441,
         "Silver": 0.6189,
         "Copper": 0.4481,
@@ -441126,7 +441126,7 @@
         "Sugar": -0.997068
       },
       "dom_prob": {
-        "Oil Brent": 0.8164,
+        "Oil Brent": 0.8171,
         "Gold": 0.7442,
         "Silver": 0.7523,
         "Copper": 0.7047,
@@ -441165,7 +441165,7 @@
     {
       "date": "2025-06-02",
       "predictions_high_risk": {
-        "Oil Brent": -0.7408,
+        "Oil Brent": -0.7415,
         "Gold": 0.648,
         "Silver": 0.6335,
         "Copper": 0.5837,
@@ -441177,7 +441177,7 @@
         "Sugar": -0.8873
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7404,
+        "Oil Brent": -0.7411,
         "Gold": 0.4423,
         "Silver": 0.6034,
         "Copper": 0.5238,
@@ -441201,7 +441201,7 @@
         "Sugar": 0.118486
       },
       "dom_prob": {
-        "Oil Brent": 0.7408,
+        "Oil Brent": 0.7415,
         "Gold": 0.7464,
         "Silver": 0.7568,
         "Copper": 0.8393,
@@ -441240,7 +441240,7 @@
     {
       "date": "2025-06-03",
       "predictions_high_risk": {
-        "Oil Brent": -0.7419,
+        "Oil Brent": -0.7426,
         "Gold": 0.6555,
         "Silver": 0.6457,
         "Copper": 0.5815,
@@ -441252,7 +441252,7 @@
         "Sugar": -0.8921
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.738,
+        "Oil Brent": -0.7387,
         "Gold": 0.4409,
         "Silver": 0.609,
         "Copper": 0.5252,
@@ -441276,7 +441276,7 @@
         "Sugar": -0.887572
       },
       "dom_prob": {
-        "Oil Brent": 0.7419,
+        "Oil Brent": 0.7426,
         "Gold": 0.7453,
         "Silver": 0.7639,
         "Copper": 0.8403,
@@ -441315,7 +441315,7 @@
     {
       "date": "2025-06-04",
       "predictions_high_risk": {
-        "Oil Brent": -0.7395,
+        "Oil Brent": -0.7402,
         "Gold": 0.6552,
         "Silver": 0.6474,
         "Copper": 0.5765,
@@ -441327,7 +441327,7 @@
         "Sugar": -0.8865
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7395,
+        "Oil Brent": -0.7402,
         "Gold": 0.4404,
         "Silver": 0.6159,
         "Copper": 0.541,
@@ -441351,7 +441351,7 @@
         "Sugar": -1.074629
       },
       "dom_prob": {
-        "Oil Brent": 0.7395,
+        "Oil Brent": 0.7402,
         "Gold": 0.745,
         "Silver": 0.7659,
         "Copper": 0.8332,
@@ -441390,7 +441390,7 @@
     {
       "date": "2025-06-05",
       "predictions_high_risk": {
-        "Oil Brent": -0.739,
+        "Oil Brent": -0.7397,
         "Gold": 0.6634,
         "Silver": 0.6484,
         "Copper": 0.5678,
@@ -441402,7 +441402,7 @@
         "Sugar": -0.8894
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.739,
+        "Oil Brent": -0.7397,
         "Gold": 0.4387,
         "Silver": 0.606,
         "Copper": 0.532,
@@ -441426,7 +441426,7 @@
         "Sugar": -0.4828
       },
       "dom_prob": {
-        "Oil Brent": 0.739,
+        "Oil Brent": 0.7397,
         "Gold": 0.7438,
         "Silver": 0.7671,
         "Copper": 0.8205,
@@ -441465,7 +441465,7 @@
     {
       "date": "2025-06-06",
       "predictions_high_risk": {
-        "Oil Brent": -0.7387,
+        "Oil Brent": -0.7394,
         "Gold": 0.6681,
         "Silver": 0.6356,
         "Copper": 0.5731,
@@ -441477,7 +441477,7 @@
         "Sugar": -0.8948
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7384,
+        "Oil Brent": -0.7391,
         "Gold": 0.4374,
         "Silver": 0.6074,
         "Copper": 0.538,
@@ -441501,7 +441501,7 @@
         "Sugar": 1.091573
       },
       "dom_prob": {
-        "Oil Brent": 0.7387,
+        "Oil Brent": 0.7394,
         "Gold": 0.7431,
         "Silver": 0.7658,
         "Copper": 0.828,
@@ -441540,7 +441540,7 @@
     {
       "date": "2025-06-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.7383,
+        "Oil Brent": -0.739,
         "Gold": 0.66,
         "Silver": 0.6251,
         "Copper": 0.5698,
@@ -441552,7 +441552,7 @@
         "Sugar": -0.8955
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7383,
+        "Oil Brent": -0.739,
         "Gold": 0.4367,
         "Silver": 0.6057,
         "Copper": 0.5423,
@@ -441576,7 +441576,7 @@
         "Sugar": -1.139775
       },
       "dom_prob": {
-        "Oil Brent": 0.7383,
+        "Oil Brent": 0.739,
         "Gold": 0.7409,
         "Silver": 0.7658,
         "Copper": 0.8365,
@@ -441615,7 +441615,7 @@
     {
       "date": "2025-06-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.7371,
+        "Oil Brent": -0.7378,
         "Gold": 0.6625,
         "Silver": 0.6413,
         "Copper": 0.5724,
@@ -441627,7 +441627,7 @@
         "Sugar": -0.8952
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7371,
+        "Oil Brent": -0.7378,
         "Gold": 0.4359,
         "Silver": 0.6159,
         "Copper": 0.5416,
@@ -441651,7 +441651,7 @@
         "Sugar": -0.364074
       },
       "dom_prob": {
-        "Oil Brent": 0.7371,
+        "Oil Brent": 0.7378,
         "Gold": 0.7395,
         "Silver": 0.7752,
         "Copper": 0.8302,
@@ -441690,7 +441690,7 @@
     {
       "date": "2025-06-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.7382,
+        "Oil Brent": -0.7389,
         "Gold": 0.6623,
         "Silver": 0.6477,
         "Copper": 0.5754,
@@ -441702,7 +441702,7 @@
         "Sugar": -0.9024
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7198,
+        "Oil Brent": -0.7205,
         "Gold": 0.4363,
         "Silver": 0.6129,
         "Copper": 0.5341,
@@ -441726,7 +441726,7 @@
         "Sugar": -0.913518
       },
       "dom_prob": {
-        "Oil Brent": 0.7382,
+        "Oil Brent": 0.7389,
         "Gold": 0.7391,
         "Silver": 0.7696,
         "Copper": 0.8189,
@@ -441765,7 +441765,7 @@
     {
       "date": "2025-06-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.738,
+        "Oil Brent": -0.7386,
         "Gold": 0.661,
         "Silver": 0.6584,
         "Copper": 0.5854,
@@ -441777,7 +441777,7 @@
         "Sugar": -0.9005
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7223,
+        "Oil Brent": -0.7229,
         "Gold": 0.4345,
         "Silver": 0.6256,
         "Copper": 0.5455,
@@ -441801,7 +441801,7 @@
         "Sugar": -0.860487
       },
       "dom_prob": {
-        "Oil Brent": 0.738,
+        "Oil Brent": 0.7386,
         "Gold": 0.7376,
         "Silver": 0.7822,
         "Copper": 0.8332,
@@ -441840,7 +441840,7 @@
     {
       "date": "2025-06-13",
       "predictions_high_risk": {
-        "Oil Brent": -0.7375,
+        "Oil Brent": -0.7382,
         "Gold": 0.6609,
         "Silver": 0.6657,
         "Copper": 0.5816,
@@ -441852,7 +441852,7 @@
         "Sugar": -0.9012
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6673,
+        "Oil Brent": -0.6679,
         "Gold": 0.4323,
         "Silver": 0.6327,
         "Copper": 0.5434,
@@ -441876,7 +441876,7 @@
         "Sugar": 2.417863
       },
       "dom_prob": {
-        "Oil Brent": 0.7375,
+        "Oil Brent": 0.7382,
         "Gold": 0.7375,
         "Silver": 0.7909,
         "Copper": 0.8297,
@@ -441915,7 +441915,7 @@
     {
       "date": "2025-06-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.7365,
+        "Oil Brent": -0.7372,
         "Gold": 0.6722,
         "Silver": 0.6672,
         "Copper": 0.5845,
@@ -441927,7 +441927,7 @@
         "Sugar": -0.8988
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6647,
+        "Oil Brent": -0.6653,
         "Gold": 0.4302,
         "Silver": 0.6419,
         "Copper": 0.5475,
@@ -441951,7 +441951,7 @@
         "Sugar": -2.663441
       },
       "dom_prob": {
-        "Oil Brent": 0.7365,
+        "Oil Brent": 0.7372,
         "Gold": 0.7373,
         "Silver": 0.8022,
         "Copper": 0.8337,
@@ -441990,7 +441990,7 @@
     {
       "date": "2025-06-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.7422,
+        "Oil Brent": -0.7428,
         "Gold": 0.6756,
         "Silver": 0.6701,
         "Copper": 0.5823,
@@ -442002,7 +442002,7 @@
         "Sugar": -0.8945
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.652,
+        "Oil Brent": -0.6525,
         "Gold": 0.4314,
         "Silver": 0.643,
         "Copper": 0.5402,
@@ -442026,7 +442026,7 @@
         "Sugar": -1.24378
       },
       "dom_prob": {
-        "Oil Brent": 0.7422,
+        "Oil Brent": 0.7428,
         "Gold": 0.7377,
         "Silver": 0.8056,
         "Copper": 0.8207,
@@ -442065,7 +442065,7 @@
     {
       "date": "2025-06-18",
       "predictions_high_risk": {
-        "Oil Brent": -0.7422,
+        "Oil Brent": -0.7428,
         "Gold": 0.6739,
         "Silver": 0.6692,
         "Copper": 0.5831,
@@ -442077,7 +442077,7 @@
         "Sugar": -0.8957
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.652,
+        "Oil Brent": -0.6526,
         "Gold": 0.4303,
         "Silver": 0.6478,
         "Copper": 0.5427,
@@ -442101,7 +442101,7 @@
         "Sugar": 1.385392
       },
       "dom_prob": {
-        "Oil Brent": 0.7422,
+        "Oil Brent": 0.7428,
         "Gold": 0.7357,
         "Silver": 0.8073,
         "Copper": 0.8218,
@@ -442140,7 +442140,7 @@
     {
       "date": "2025-06-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.7423,
+        "Oil Brent": -0.7429,
         "Gold": 0.6822,
         "Silver": 0.6717,
         "Copper": 0.5841,
@@ -442152,7 +442152,7 @@
         "Sugar": -0.9045
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6546,
+        "Oil Brent": -0.6552,
         "Gold": 0.4295,
         "Silver": 0.643,
         "Copper": 0.5381,
@@ -442176,7 +442176,7 @@
         "Sugar": -0.372667
       },
       "dom_prob": {
-        "Oil Brent": 0.7423,
+        "Oil Brent": 0.7429,
         "Gold": 0.7356,
         "Silver": 0.8099,
         "Copper": 0.8149,
@@ -442215,7 +442215,7 @@
     {
       "date": "2025-06-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.7473,
+        "Oil Brent": -0.7479,
         "Gold": 0.6715,
         "Silver": 0.6579,
         "Copper": 0.5746,
@@ -442227,7 +442227,7 @@
         "Sugar": -0.9091
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6084,
+        "Oil Brent": -0.6088,
         "Gold": 0.4295,
         "Silver": 0.6444,
         "Copper": 0.5292,
@@ -442251,7 +442251,7 @@
         "Sugar": -1.683295
       },
       "dom_prob": {
-        "Oil Brent": 0.7473,
+        "Oil Brent": 0.7479,
         "Gold": 0.7339,
         "Silver": 0.8082,
         "Copper": 0.8016,
@@ -442290,7 +442290,7 @@
     {
       "date": "2025-06-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.7511,
+        "Oil Brent": -0.7516,
         "Gold": 0.6779,
         "Silver": 0.662,
         "Copper": 0.5676,
@@ -442302,7 +442302,7 @@
         "Sugar": -0.9055
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.5838,
+        "Oil Brent": -0.5843,
         "Gold": 0.4243,
         "Silver": 0.6402,
         "Copper": 0.5284,
@@ -442326,7 +442326,7 @@
         "Sugar": 1.331637
       },
       "dom_prob": {
-        "Oil Brent": 0.7511,
+        "Oil Brent": 0.7516,
         "Gold": 0.7333,
         "Silver": 0.8055,
         "Copper": 0.8005,
@@ -442365,7 +442365,7 @@
     {
       "date": "2025-06-25",
       "predictions_high_risk": {
-        "Oil Brent": -0.7484,
+        "Oil Brent": -0.749,
         "Gold": 0.6763,
         "Silver": 0.659,
         "Copper": 0.5684,
@@ -442377,7 +442377,7 @@
         "Sugar": -0.9032
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.5812,
+        "Oil Brent": -0.5817,
         "Gold": 0.4233,
         "Silver": 0.6411,
         "Copper": 0.5333,
@@ -442401,7 +442401,7 @@
         "Sugar": -2.065081
       },
       "dom_prob": {
-        "Oil Brent": 0.7484,
+        "Oil Brent": 0.749,
         "Gold": 0.7315,
         "Silver": 0.8018,
         "Copper": 0.8016,
@@ -442440,7 +442440,7 @@
     {
       "date": "2025-06-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.7454,
+        "Oil Brent": -0.746,
         "Gold": 0.6826,
         "Silver": 0.6615,
         "Copper": 0.5675,
@@ -442452,7 +442452,7 @@
         "Sugar": -0.9058
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.5798,
+        "Oil Brent": -0.5803,
         "Gold": 0.4256,
         "Silver": 0.6416,
         "Copper": 0.5243,
@@ -442476,7 +442476,7 @@
         "Sugar": 1.022369
       },
       "dom_prob": {
-        "Oil Brent": 0.7454,
+        "Oil Brent": 0.746,
         "Gold": 0.7352,
         "Silver": 0.8047,
         "Copper": 0.8002,
@@ -442515,7 +442515,7 @@
     {
       "date": "2025-06-27",
       "predictions_high_risk": {
-        "Oil Brent": -0.7426,
+        "Oil Brent": -0.7432,
         "Gold": 0.6919,
         "Silver": 0.6745,
         "Copper": 0.551,
@@ -442527,7 +442527,7 @@
         "Sugar": -0.9043
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.5778,
+        "Oil Brent": -0.5782,
         "Gold": 0.4232,
         "Silver": 0.6458,
         "Copper": 0.522,
@@ -442551,7 +442551,7 @@
         "Sugar": -2.087292
       },
       "dom_prob": {
-        "Oil Brent": 0.7426,
+        "Oil Brent": 0.7432,
         "Gold": 0.7363,
         "Silver": 0.8053,
         "Copper": 0.79,
@@ -442590,7 +442590,7 @@
     {
       "date": "2025-06-30",
       "predictions_high_risk": {
-        "Oil Brent": -0.7455,
+        "Oil Brent": -0.7461,
         "Gold": 0.6922,
         "Silver": 0.6634,
         "Copper": 0.5678,
@@ -442602,7 +442602,7 @@
         "Sugar": -0.9039
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.5801,
+        "Oil Brent": -0.5806,
         "Gold": 0.4238,
         "Silver": 0.6367,
         "Copper": 0.5298,
@@ -442626,7 +442626,7 @@
         "Sugar": 1.42119
       },
       "dom_prob": {
-        "Oil Brent": 0.7455,
+        "Oil Brent": 0.7461,
         "Gold": 0.7366,
         "Silver": 0.7933,
         "Copper": 0.8024,
@@ -444390,7 +444390,7 @@
     {
       "date": "2025-08-01",
       "predictions_high_risk": {
-        "Oil Brent": -0.7206,
+        "Oil Brent": -0.7211,
         "Gold": 0.7418,
         "Silver": 0.7935,
         "Copper": 0.0,
@@ -444402,7 +444402,7 @@
         "Sugar": -0.7557
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6545,
+        "Oil Brent": -0.655,
         "Gold": 0.5682,
         "Silver": 0.7935,
         "Copper": 0.0,
@@ -444426,7 +444426,7 @@
         "Sugar": 0.432631
       },
       "dom_prob": {
-        "Oil Brent": 0.7206,
+        "Oil Brent": 0.7211,
         "Gold": 0.7418,
         "Silver": 0.7935,
         "Copper": 0.0,
@@ -444465,7 +444465,7 @@
     {
       "date": "2025-08-04",
       "predictions_high_risk": {
-        "Oil Brent": -0.7147,
+        "Oil Brent": -0.7153,
         "Gold": 0.7396,
         "Silver": 0.7911,
         "Copper": 0.0,
@@ -444477,7 +444477,7 @@
         "Sugar": -0.7506
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6508,
+        "Oil Brent": -0.6513,
         "Gold": 0.5824,
         "Silver": 0.7911,
         "Copper": 0.0,
@@ -444501,7 +444501,7 @@
         "Sugar": -0.984614
       },
       "dom_prob": {
-        "Oil Brent": 0.7147,
+        "Oil Brent": 0.7153,
         "Gold": 0.7396,
         "Silver": 0.7911,
         "Copper": 0.0,
@@ -444540,7 +444540,7 @@
     {
       "date": "2025-08-05",
       "predictions_high_risk": {
-        "Oil Brent": -0.7189,
+        "Oil Brent": -0.7195,
         "Gold": 0.7381,
         "Silver": 0.7976,
         "Copper": 0.0,
@@ -444552,7 +444552,7 @@
         "Sugar": -0.7505
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6606,
+        "Oil Brent": -0.6611,
         "Gold": 0.6116,
         "Silver": 0.7976,
         "Copper": 0.0,
@@ -444576,7 +444576,7 @@
         "Sugar": -0.497203
       },
       "dom_prob": {
-        "Oil Brent": 0.7189,
+        "Oil Brent": 0.7195,
         "Gold": 0.7381,
         "Silver": 0.7976,
         "Copper": 0.0,
@@ -444615,7 +444615,7 @@
     {
       "date": "2025-08-06",
       "predictions_high_risk": {
-        "Oil Brent": -0.7192,
+        "Oil Brent": -0.7197,
         "Gold": 0.7357,
         "Silver": 0.8065,
         "Copper": 0.0,
@@ -444627,7 +444627,7 @@
         "Sugar": -0.7511
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6627,
+        "Oil Brent": -0.6633,
         "Gold": 0.6125,
         "Silver": 0.8065,
         "Copper": 0.0,
@@ -444651,7 +444651,7 @@
         "Sugar": 0.0
       },
       "dom_prob": {
-        "Oil Brent": 0.7192,
+        "Oil Brent": 0.7197,
         "Gold": 0.7357,
         "Silver": 0.8065,
         "Copper": 0.0,
@@ -444690,7 +444690,7 @@
     {
       "date": "2025-08-07",
       "predictions_high_risk": {
-        "Oil Brent": -0.7149,
+        "Oil Brent": -0.7155,
         "Gold": 0.736,
         "Silver": 0.8099,
         "Copper": 0.0,
@@ -444702,7 +444702,7 @@
         "Sugar": -0.7513
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6661,
+        "Oil Brent": -0.6666,
         "Gold": 0.6378,
         "Silver": 0.8099,
         "Copper": 0.0,
@@ -444726,7 +444726,7 @@
         "Sugar": 1.499062
       },
       "dom_prob": {
-        "Oil Brent": 0.7149,
+        "Oil Brent": 0.7155,
         "Gold": 0.736,
         "Silver": 0.8099,
         "Copper": 0.0,
@@ -444765,7 +444765,7 @@
     {
       "date": "2025-08-08",
       "predictions_high_risk": {
-        "Oil Brent": -0.7101,
+        "Oil Brent": -0.7108,
         "Gold": 0.7336,
         "Silver": 0.8032,
         "Copper": 0.0,
@@ -444777,7 +444777,7 @@
         "Sugar": -0.7496
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6646,
+        "Oil Brent": -0.6652,
         "Gold": 0.6362,
         "Silver": 0.8032,
         "Copper": 0.0,
@@ -444801,7 +444801,7 @@
         "Sugar": 1.476922
       },
       "dom_prob": {
-        "Oil Brent": 0.7101,
+        "Oil Brent": 0.7108,
         "Gold": 0.7336,
         "Silver": 0.8032,
         "Copper": 0.0,
@@ -444840,7 +444840,7 @@
     {
       "date": "2025-08-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.7081,
+        "Oil Brent": -0.7088,
         "Gold": 0.7347,
         "Silver": 0.8055,
         "Copper": 0.0,
@@ -444852,7 +444852,7 @@
         "Sugar": -0.7531
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6656,
+        "Oil Brent": -0.6662,
         "Gold": 0.6648,
         "Silver": 0.8055,
         "Copper": 0.0,
@@ -444876,7 +444876,7 @@
         "Sugar": 2.728931
       },
       "dom_prob": {
-        "Oil Brent": 0.7081,
+        "Oil Brent": 0.7088,
         "Gold": 0.7347,
         "Silver": 0.8055,
         "Copper": 0.0,
@@ -444915,7 +444915,7 @@
     {
       "date": "2025-08-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.709,
+        "Oil Brent": -0.7097,
         "Gold": 0.732,
         "Silver": 0.8095,
         "Copper": 0.0,
@@ -444927,7 +444927,7 @@
         "Sugar": -0.7537
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6733,
+        "Oil Brent": -0.6739,
         "Gold": 0.6638,
         "Silver": 0.8095,
         "Copper": 0.0,
@@ -444951,7 +444951,7 @@
         "Sugar": -0.531288
       },
       "dom_prob": {
-        "Oil Brent": 0.709,
+        "Oil Brent": 0.7097,
         "Gold": 0.732,
         "Silver": 0.8095,
         "Copper": 0.0,
@@ -444990,7 +444990,7 @@
     {
       "date": "2025-08-13",
       "predictions_high_risk": {
-        "Oil Brent": -0.7094,
+        "Oil Brent": -0.71,
         "Gold": 0.7303,
         "Silver": 0.8149,
         "Copper": 0.0,
@@ -445002,7 +445002,7 @@
         "Sugar": -0.7448
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6738,
+        "Oil Brent": -0.6744,
         "Gold": 0.6802,
         "Silver": 0.8149,
         "Copper": 0.0,
@@ -445026,7 +445026,7 @@
         "Sugar": -1.602377
       },
       "dom_prob": {
-        "Oil Brent": 0.7094,
+        "Oil Brent": 0.71,
         "Gold": 0.7303,
         "Silver": 0.8149,
         "Copper": 0.0,
@@ -445065,7 +445065,7 @@
     {
       "date": "2025-08-14",
       "predictions_high_risk": {
-        "Oil Brent": -0.7106,
+        "Oil Brent": -0.7112,
         "Gold": 0.7282,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -445077,7 +445077,7 @@
         "Sugar": -0.7399
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6781,
+        "Oil Brent": -0.6787,
         "Gold": 0.6822,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -445101,7 +445101,7 @@
         "Sugar": -0.844387
       },
       "dom_prob": {
-        "Oil Brent": 0.7106,
+        "Oil Brent": 0.7112,
         "Gold": 0.7282,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -445140,7 +445140,7 @@
     {
       "date": "2025-08-15",
       "predictions_high_risk": {
-        "Oil Brent": -0.7155,
+        "Oil Brent": -0.7161,
         "Gold": 0.7282,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -445152,7 +445152,7 @@
         "Sugar": -0.7307
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6821,
+        "Oil Brent": -0.6826,
         "Gold": 0.691,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -445176,7 +445176,7 @@
         "Sugar": -1.155721
       },
       "dom_prob": {
-        "Oil Brent": 0.7155,
+        "Oil Brent": 0.7161,
         "Gold": 0.7282,
         "Silver": 0.8075,
         "Copper": 0.0,
@@ -445215,7 +445215,7 @@
     {
       "date": "2025-08-18",
       "predictions_high_risk": {
-        "Oil Brent": -0.7194,
+        "Oil Brent": -0.72,
         "Gold": 0.7254,
         "Silver": 0.7972,
         "Copper": 0.0,
@@ -445227,7 +445227,7 @@
         "Sugar": -0.7337
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6844,
+        "Oil Brent": -0.6849,
         "Gold": 0.6992,
         "Silver": 0.7972,
         "Copper": 0.0,
@@ -445251,7 +445251,7 @@
         "Sugar": 0.369227
       },
       "dom_prob": {
-        "Oil Brent": 0.7194,
+        "Oil Brent": 0.72,
         "Gold": 0.7254,
         "Silver": 0.7972,
         "Copper": 0.0,
@@ -445290,7 +445290,7 @@
     {
       "date": "2025-08-19",
       "predictions_high_risk": {
-        "Oil Brent": -0.7225,
+        "Oil Brent": -0.723,
         "Gold": 0.7251,
         "Silver": 0.791,
         "Copper": 0.0,
@@ -445302,7 +445302,7 @@
         "Sugar": -0.733
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6857,
+        "Oil Brent": -0.6862,
         "Gold": 0.7112,
         "Silver": 0.791,
         "Copper": 0.0,
@@ -445326,7 +445326,7 @@
         "Sugar": 1.594115
       },
       "dom_prob": {
-        "Oil Brent": 0.7225,
+        "Oil Brent": 0.723,
         "Gold": 0.7251,
         "Silver": 0.791,
         "Copper": 0.0,
@@ -445365,7 +445365,7 @@
     {
       "date": "2025-08-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.7274,
+        "Oil Brent": -0.7279,
         "Gold": 0.7259,
         "Silver": 0.795,
         "Copper": 0.0,
@@ -445377,7 +445377,7 @@
         "Sugar": -0.7186
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6881,
+        "Oil Brent": -0.6886,
         "Gold": 0.7117,
         "Silver": 0.795,
         "Copper": 0.0,
@@ -445401,7 +445401,7 @@
         "Sugar": -1.327697
       },
       "dom_prob": {
-        "Oil Brent": 0.7274,
+        "Oil Brent": 0.7279,
         "Gold": 0.7259,
         "Silver": 0.795,
         "Copper": 0.0,
@@ -445440,7 +445440,7 @@
     {
       "date": "2025-08-21",
       "predictions_high_risk": {
-        "Oil Brent": -0.7296,
+        "Oil Brent": -0.7301,
         "Gold": 0.7241,
         "Silver": 0.7932,
         "Copper": 0.0,
@@ -445452,7 +445452,7 @@
         "Sugar": -0.714
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6894,
+        "Oil Brent": -0.6898,
         "Gold": 0.7115,
         "Silver": 0.7932,
         "Copper": 0.0,
@@ -445476,7 +445476,7 @@
         "Sugar": 0.795102
       },
       "dom_prob": {
-        "Oil Brent": 0.7296,
+        "Oil Brent": 0.7301,
         "Gold": 0.7241,
         "Silver": 0.7932,
         "Copper": 0.0,
@@ -445515,7 +445515,7 @@
     {
       "date": "2025-08-22",
       "predictions_high_risk": {
-        "Oil Brent": -0.7266,
+        "Oil Brent": -0.7271,
         "Gold": 0.7255,
         "Silver": 0.7818,
         "Copper": 0.0,
@@ -445527,7 +445527,7 @@
         "Sugar": -0.7185
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6869,
+        "Oil Brent": -0.6873,
         "Gold": 0.7255,
         "Silver": 0.7818,
         "Copper": 0.0,
@@ -445551,7 +445551,7 @@
         "Sugar": -0.485436
       },
       "dom_prob": {
-        "Oil Brent": 0.7266,
+        "Oil Brent": 0.7271,
         "Gold": 0.7255,
         "Silver": 0.7818,
         "Copper": 0.0,
@@ -445590,7 +445590,7 @@
     {
       "date": "2025-08-25",
       "predictions_high_risk": {
-        "Oil Brent": -0.7256,
+        "Oil Brent": -0.7261,
         "Gold": 0.7241,
         "Silver": 0.7777,
         "Copper": 0.0,
@@ -445602,7 +445602,7 @@
         "Sugar": -0.727
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.685,
+        "Oil Brent": -0.6854,
         "Gold": 0.7241,
         "Silver": 0.7777,
         "Copper": 0.0,
@@ -445626,7 +445626,7 @@
         "Sugar": 0.060977
       },
       "dom_prob": {
-        "Oil Brent": 0.7256,
+        "Oil Brent": 0.7261,
         "Gold": 0.7241,
         "Silver": 0.7777,
         "Copper": 0.0,
@@ -445665,7 +445665,7 @@
     {
       "date": "2025-08-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.728,
+        "Oil Brent": -0.7285,
         "Gold": 0.7256,
         "Silver": 0.7824,
         "Copper": 0.0,
@@ -445677,7 +445677,7 @@
         "Sugar": -0.7302
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6819,
+        "Oil Brent": -0.6824,
         "Gold": 0.7256,
         "Silver": 0.7824,
         "Copper": 0.0,
@@ -445701,7 +445701,7 @@
         "Sugar": 0.365627
       },
       "dom_prob": {
-        "Oil Brent": 0.728,
+        "Oil Brent": 0.7285,
         "Gold": 0.7256,
         "Silver": 0.7824,
         "Copper": 0.0,
@@ -445740,7 +445740,7 @@
     {
       "date": "2025-08-27",
       "predictions_high_risk": {
-        "Oil Brent": -0.7314,
+        "Oil Brent": -0.7319,
         "Gold": 0.7252,
         "Silver": 0.7765,
         "Copper": 0.0,
@@ -445752,7 +445752,7 @@
         "Sugar": -0.7403
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6854,
+        "Oil Brent": -0.6858,
         "Gold": 0.7252,
         "Silver": 0.7765,
         "Copper": 0.0,
@@ -445776,7 +445776,7 @@
         "Sugar": 0.060718
       },
       "dom_prob": {
-        "Oil Brent": 0.7314,
+        "Oil Brent": 0.7319,
         "Gold": 0.7252,
         "Silver": 0.7765,
         "Copper": 0.0,
@@ -445815,7 +445815,7 @@
     {
       "date": "2025-08-28",
       "predictions_high_risk": {
-        "Oil Brent": -0.7306,
+        "Oil Brent": -0.7311,
         "Gold": 0.7258,
         "Silver": 0.7732,
         "Copper": 0.0,
@@ -445827,7 +445827,7 @@
         "Sugar": -0.7472
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6843,
+        "Oil Brent": -0.6847,
         "Gold": 0.7258,
         "Silver": 0.7732,
         "Copper": 0.0,
@@ -445851,7 +445851,7 @@
         "Sugar": -0.667468
       },
       "dom_prob": {
-        "Oil Brent": 0.7306,
+        "Oil Brent": 0.7311,
         "Gold": 0.7258,
         "Silver": 0.7732,
         "Copper": 0.0,
@@ -445890,7 +445890,7 @@
     {
       "date": "2025-08-29",
       "predictions_high_risk": {
-        "Oil Brent": -0.7272,
+        "Oil Brent": -0.7277,
         "Gold": 0.726,
         "Silver": 0.7697,
         "Copper": 0.0,
@@ -445902,7 +445902,7 @@
         "Sugar": -0.7457
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.6815,
+        "Oil Brent": -0.682,
         "Gold": 0.726,
         "Silver": 0.7697,
         "Copper": 0.0,
@@ -445926,7 +445926,7 @@
         "Sugar": -1.343929
       },
       "dom_prob": {
-        "Oil Brent": 0.7272,
+        "Oil Brent": 0.7277,
         "Gold": 0.726,
         "Silver": 0.7697,
         "Copper": 0.0,
@@ -445965,7 +445965,7 @@
     {
       "date": "2025-09-02",
       "predictions_high_risk": {
-        "Oil Brent": -0.7708,
+        "Oil Brent": -0.7713,
         "Gold": 0.7287,
         "Silver": 0.7762,
         "Copper": 0.2347,
@@ -445977,7 +445977,7 @@
         "Sugar": -0.763
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7227,
+        "Oil Brent": -0.7231,
         "Gold": 0.7287,
         "Silver": 0.7762,
         "Copper": 0.2875,
@@ -446001,7 +446001,7 @@
         "Sugar": -0.743027
       },
       "dom_prob": {
-        "Oil Brent": 0.7708,
+        "Oil Brent": 0.7713,
         "Gold": 0.7287,
         "Silver": 0.7762,
         "Copper": 0.7411,
@@ -446040,7 +446040,7 @@
     {
       "date": "2025-09-03",
       "predictions_high_risk": {
-        "Oil Brent": -0.7704,
+        "Oil Brent": -0.7709,
         "Gold": 0.7319,
         "Silver": 0.77,
         "Copper": 0.2358,
@@ -446052,7 +446052,7 @@
         "Sugar": -0.7596
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7175,
+        "Oil Brent": -0.7179,
         "Gold": 0.7319,
         "Silver": 0.77,
         "Copper": 0.2845,
@@ -446076,7 +446076,7 @@
         "Sugar": -2.12103
       },
       "dom_prob": {
-        "Oil Brent": 0.7704,
+        "Oil Brent": 0.7709,
         "Gold": 0.7319,
         "Silver": 0.77,
         "Copper": 0.7328,
@@ -446115,7 +446115,7 @@
     {
       "date": "2025-09-04",
       "predictions_high_risk": {
-        "Oil Brent": -0.7712,
+        "Oil Brent": -0.7716,
         "Gold": 0.7343,
         "Silver": 0.7624,
         "Copper": 0.2419,
@@ -446127,7 +446127,7 @@
         "Sugar": -0.757
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7177,
+        "Oil Brent": -0.7181,
         "Gold": 0.7343,
         "Silver": 0.7624,
         "Copper": 0.287,
@@ -446151,7 +446151,7 @@
         "Sugar": -0.892284
       },
       "dom_prob": {
-        "Oil Brent": 0.7712,
+        "Oil Brent": 0.7716,
         "Gold": 0.7343,
         "Silver": 0.7624,
         "Copper": 0.7393,
@@ -446190,7 +446190,7 @@
     {
       "date": "2025-09-05",
       "predictions_high_risk": {
-        "Oil Brent": -0.7658,
+        "Oil Brent": -0.766,
         "Gold": 0.7364,
         "Silver": 0.7533,
         "Copper": 0.245,
@@ -446202,7 +446202,7 @@
         "Sugar": -0.7489
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7101,
+        "Oil Brent": -0.7103,
         "Gold": 0.7364,
         "Silver": 0.7533,
         "Copper": 0.2916,
@@ -446226,7 +446226,7 @@
         "Sugar": 0.514469
       },
       "dom_prob": {
-        "Oil Brent": 0.7658,
+        "Oil Brent": 0.766,
         "Gold": 0.7364,
         "Silver": 0.7533,
         "Copper": 0.7501,
@@ -446265,7 +446265,7 @@
     {
       "date": "2025-09-08",
       "predictions_high_risk": {
-        "Oil Brent": -0.766,
+        "Oil Brent": -0.7662,
         "Gold": 0.7395,
         "Silver": 0.7554,
         "Copper": 0.2398,
@@ -446277,7 +446277,7 @@
         "Sugar": -0.7629
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7104,
+        "Oil Brent": -0.7106,
         "Gold": 0.7395,
         "Silver": 0.7554,
         "Copper": 0.286,
@@ -446301,7 +446301,7 @@
         "Sugar": 1.34357
       },
       "dom_prob": {
-        "Oil Brent": 0.766,
+        "Oil Brent": 0.7662,
         "Gold": 0.7395,
         "Silver": 0.7554,
         "Copper": 0.7342,
@@ -446340,7 +446340,7 @@
     {
       "date": "2025-09-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.7648,
+        "Oil Brent": -0.765,
         "Gold": 0.7366,
         "Silver": 0.7554,
         "Copper": 0.232,
@@ -446352,7 +446352,7 @@
         "Sugar": -0.7616
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.709,
+        "Oil Brent": -0.7092,
         "Gold": 0.7366,
         "Silver": 0.7554,
         "Copper": 0.281,
@@ -446376,7 +446376,7 @@
         "Sugar": 0.568183
       },
       "dom_prob": {
-        "Oil Brent": 0.7648,
+        "Oil Brent": 0.765,
         "Gold": 0.7366,
         "Silver": 0.7554,
         "Copper": 0.7216,
@@ -446415,7 +446415,7 @@
     {
       "date": "2025-09-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.7667,
+        "Oil Brent": -0.7669,
         "Gold": 0.7376,
         "Silver": 0.7404,
         "Copper": 0.2336,
@@ -446427,7 +446427,7 @@
         "Sugar": -0.7749
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7303,
+        "Oil Brent": -0.7305,
         "Gold": 0.7376,
         "Silver": 0.7404,
         "Copper": 0.2882,
@@ -446451,7 +446451,7 @@
         "Sugar": -0.690525
       },
       "dom_prob": {
-        "Oil Brent": 0.7667,
+        "Oil Brent": 0.7669,
         "Gold": 0.7376,
         "Silver": 0.7404,
         "Copper": 0.7394,
@@ -446490,7 +446490,7 @@
     {
       "date": "2025-09-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.771,
+        "Oil Brent": -0.7712,
         "Gold": 0.7383,
         "Silver": 0.7402,
         "Copper": 0.2318,
@@ -446502,7 +446502,7 @@
         "Sugar": -0.7742
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7314,
+        "Oil Brent": -0.7316,
         "Gold": 0.7383,
         "Silver": 0.7402,
         "Copper": 0.2858,
@@ -446526,7 +446526,7 @@
         "Sugar": -0.189632
       },
       "dom_prob": {
-        "Oil Brent": 0.771,
+        "Oil Brent": 0.7712,
         "Gold": 0.7383,
         "Silver": 0.7402,
         "Copper": 0.7336,
@@ -446565,7 +446565,7 @@
     {
       "date": "2025-09-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.7671,
+        "Oil Brent": -0.7672,
         "Gold": 0.7383,
         "Silver": 0.7552,
         "Copper": 0.2239,
@@ -446577,7 +446577,7 @@
         "Sugar": -0.7895
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7671,
+        "Oil Brent": -0.7672,
         "Gold": 0.7383,
         "Silver": 0.7552,
         "Copper": 0.2763,
@@ -446601,7 +446601,7 @@
         "Sugar": 1.329956
       },
       "dom_prob": {
-        "Oil Brent": 0.7671,
+        "Oil Brent": 0.7672,
         "Gold": 0.7383,
         "Silver": 0.7552,
         "Copper": 0.709,
@@ -446640,7 +446640,7 @@
     {
       "date": "2025-09-15",
       "predictions_high_risk": {
-        "Oil Brent": -0.7629,
+        "Oil Brent": -0.7632,
         "Gold": 0.7377,
         "Silver": 0.7527,
         "Copper": 0.2245,
@@ -446652,7 +446652,7 @@
         "Sugar": -0.7905
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7629,
+        "Oil Brent": -0.7632,
         "Gold": 0.7377,
         "Silver": 0.7527,
         "Copper": 0.2768,
@@ -446676,7 +446676,7 @@
         "Sugar": -0.625002
       },
       "dom_prob": {
-        "Oil Brent": 0.7629,
+        "Oil Brent": 0.7632,
         "Gold": 0.7377,
         "Silver": 0.7527,
         "Copper": 0.711,
@@ -446715,7 +446715,7 @@
     {
       "date": "2025-09-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.7641,
+        "Oil Brent": -0.7644,
         "Gold": 0.7389,
         "Silver": 0.7527,
         "Copper": 0.2219,
@@ -446727,7 +446727,7 @@
         "Sugar": -0.8023
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7641,
+        "Oil Brent": -0.7644,
         "Gold": 0.7389,
         "Silver": 0.7527,
         "Copper": 0.2736,
@@ -446751,7 +446751,7 @@
         "Sugar": -2.264149
       },
       "dom_prob": {
-        "Oil Brent": 0.7641,
+        "Oil Brent": 0.7644,
         "Gold": 0.7389,
         "Silver": 0.7527,
         "Copper": 0.7028,
@@ -446790,7 +446790,7 @@
     {
       "date": "2025-09-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.7615,
+        "Oil Brent": -0.7618,
         "Gold": 0.7388,
         "Silver": 0.7579,
         "Copper": 0.2153,
@@ -446802,7 +446802,7 @@
         "Sugar": -0.7937
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7615,
+        "Oil Brent": -0.7618,
         "Gold": 0.7388,
         "Silver": 0.7579,
         "Copper": 0.2607,
@@ -446826,7 +446826,7 @@
         "Sugar": -1.0296
       },
       "dom_prob": {
-        "Oil Brent": 0.7615,
+        "Oil Brent": 0.7618,
         "Gold": 0.7388,
         "Silver": 0.7579,
         "Copper": 0.6701,
@@ -446865,7 +446865,7 @@
     {
       "date": "2025-09-18",
       "predictions_high_risk": {
-        "Oil Brent": -0.7584,
+        "Oil Brent": -0.7587,
         "Gold": 0.7366,
         "Silver": 0.7434,
         "Copper": 0.2139,
@@ -446877,7 +446877,7 @@
         "Sugar": -0.8001
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7584,
+        "Oil Brent": -0.7587,
         "Gold": 0.7366,
         "Silver": 0.7434,
         "Copper": 0.2589,
@@ -446901,7 +446901,7 @@
         "Sugar": 0.520156
       },
       "dom_prob": {
-        "Oil Brent": 0.7584,
+        "Oil Brent": 0.7587,
         "Gold": 0.7366,
         "Silver": 0.7434,
         "Copper": 0.6654,
@@ -446940,7 +446940,7 @@
     {
       "date": "2025-09-19",
       "predictions_high_risk": {
-        "Oil Brent": -0.7584,
+        "Oil Brent": -0.7586,
         "Gold": 0.7362,
         "Silver": 0.7523,
         "Copper": 0.2162,
@@ -446952,7 +446952,7 @@
         "Sugar": -0.8129
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7584,
+        "Oil Brent": -0.7586,
         "Gold": 0.7362,
         "Silver": 0.7523,
         "Copper": 0.2617,
@@ -446976,7 +446976,7 @@
         "Sugar": -1.358344
       },
       "dom_prob": {
-        "Oil Brent": 0.7584,
+        "Oil Brent": 0.7586,
         "Gold": 0.7362,
         "Silver": 0.7523,
         "Copper": 0.6727,
@@ -447015,7 +447015,7 @@
     {
       "date": "2025-09-22",
       "predictions_high_risk": {
-        "Oil Brent": -0.7574,
+        "Oil Brent": -0.7577,
         "Gold": 0.7362,
         "Silver": 0.7554,
         "Copper": 0.2129,
@@ -447027,7 +447027,7 @@
         "Sugar": -0.8153
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7574,
+        "Oil Brent": -0.7577,
         "Gold": 0.7362,
         "Silver": 0.7554,
         "Copper": 0.2576,
@@ -447051,7 +447051,7 @@
         "Sugar": 2.688524
       },
       "dom_prob": {
-        "Oil Brent": 0.7574,
+        "Oil Brent": 0.7577,
         "Gold": 0.7362,
         "Silver": 0.7554,
         "Copper": 0.6621,
@@ -447090,7 +447090,7 @@
     {
       "date": "2025-09-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.7564,
+        "Oil Brent": -0.7567,
         "Gold": 0.7365,
         "Silver": 0.7579,
         "Copper": 0.2127,
@@ -447102,7 +447102,7 @@
         "Sugar": -0.8037
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7564,
+        "Oil Brent": -0.7567,
         "Gold": 0.7365,
         "Silver": 0.7579,
         "Copper": 0.2576,
@@ -447126,7 +447126,7 @@
         "Sugar": -0.127711
       },
       "dom_prob": {
-        "Oil Brent": 0.7564,
+        "Oil Brent": 0.7567,
         "Gold": 0.7365,
         "Silver": 0.7579,
         "Copper": 0.6617,
@@ -447165,7 +447165,7 @@
     {
       "date": "2025-09-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.7552,
+        "Oil Brent": -0.7555,
         "Gold": 0.7385,
         "Silver": 0.7533,
         "Copper": 0.2107,
@@ -447177,7 +447177,7 @@
         "Sugar": -0.8055
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7552,
+        "Oil Brent": -0.7555,
         "Gold": 0.7385,
         "Silver": 0.7533,
         "Copper": 0.2546,
@@ -447201,7 +447201,7 @@
         "Sugar": 0.767263
       },
       "dom_prob": {
-        "Oil Brent": 0.7552,
+        "Oil Brent": 0.7555,
         "Gold": 0.7385,
         "Silver": 0.7533,
         "Copper": 0.6553,
@@ -447240,7 +447240,7 @@
     {
       "date": "2025-09-25",
       "predictions_high_risk": {
-        "Oil Brent": -0.7515,
+        "Oil Brent": -0.7519,
         "Gold": 0.7379,
         "Silver": 0.7642,
         "Copper": 0.2255,
@@ -447252,7 +447252,7 @@
         "Sugar": -0.7998
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7515,
+        "Oil Brent": -0.7519,
         "Gold": 0.7379,
         "Silver": 0.7642,
         "Copper": 0.2679,
@@ -447276,7 +447276,7 @@
         "Sugar": 0.697967
       },
       "dom_prob": {
-        "Oil Brent": 0.7515,
+        "Oil Brent": 0.7519,
         "Gold": 0.7379,
         "Silver": 0.7642,
         "Copper": 0.6897,
@@ -447315,7 +447315,7 @@
     {
       "date": "2025-09-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.7475,
+        "Oil Brent": -0.7479,
         "Gold": 0.7355,
         "Silver": 0.7675,
         "Copper": 0.2265,
@@ -447327,7 +447327,7 @@
         "Sugar": -0.7938
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7475,
+        "Oil Brent": -0.7479,
         "Gold": 0.7355,
         "Silver": 0.7675,
         "Copper": 0.2735,
@@ -447351,7 +447351,7 @@
         "Sugar": 0.945183
       },
       "dom_prob": {
-        "Oil Brent": 0.7475,
+        "Oil Brent": 0.7479,
         "Gold": 0.7355,
         "Silver": 0.7675,
         "Copper": 0.704,
@@ -447390,7 +447390,7 @@
     {
       "date": "2025-09-29",
       "predictions_high_risk": {
-        "Oil Brent": -0.7493,
+        "Oil Brent": -0.7497,
         "Gold": 0.7358,
         "Silver": 0.7654,
         "Copper": 0.2271,
@@ -447402,7 +447402,7 @@
         "Sugar": -0.7946
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7493,
+        "Oil Brent": -0.7497,
         "Gold": 0.7358,
         "Silver": 0.7654,
         "Copper": 0.2731,
@@ -447426,7 +447426,7 @@
         "Sugar": 0.499375
       },
       "dom_prob": {
-        "Oil Brent": 0.7493,
+        "Oil Brent": 0.7497,
         "Gold": 0.7358,
         "Silver": 0.7654,
         "Copper": 0.7056,
@@ -447465,7 +447465,7 @@
     {
       "date": "2025-09-30",
       "predictions_high_risk": {
-        "Oil Brent": -0.7505,
+        "Oil Brent": -0.7508,
         "Gold": 0.7333,
         "Silver": 0.7643,
         "Copper": 0.2262,
@@ -447477,7 +447477,7 @@
         "Sugar": -0.8079
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.7505,
+        "Oil Brent": -0.7508,
         "Gold": 0.7333,
         "Silver": 0.7643,
         "Copper": 0.2683,
@@ -447501,7 +447501,7 @@
         "Sugar": 0.186328
       },
       "dom_prob": {
-        "Oil Brent": 0.7505,
+        "Oil Brent": 0.7508,
         "Gold": 0.7333,
         "Silver": 0.7643,
         "Copper": 0.6918,
@@ -447540,7 +447540,7 @@
     {
       "date": "2025-10-01",
       "predictions_high_risk": {
-        "Oil Brent": -0.8181,
+        "Oil Brent": -0.8184,
         "Gold": 0.7301,
         "Silver": 0.7629,
         "Copper": 0.2666,
@@ -447552,7 +447552,7 @@
         "Sugar": -0.8973
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8181,
+        "Oil Brent": -0.8184,
         "Gold": 0.7301,
         "Silver": 0.7629,
         "Copper": 0.3215,
@@ -447576,7 +447576,7 @@
         "Sugar": 1.673902
       },
       "dom_prob": {
-        "Oil Brent": 0.8181,
+        "Oil Brent": 0.8184,
         "Gold": 0.7301,
         "Silver": 0.7629,
         "Copper": 0.8287,
@@ -447615,7 +447615,7 @@
     {
       "date": "2025-10-02",
       "predictions_high_risk": {
-        "Oil Brent": -0.8196,
+        "Oil Brent": -0.8199,
         "Gold": 0.7285,
         "Silver": 0.7637,
         "Copper": 0.2635,
@@ -447627,7 +447627,7 @@
         "Sugar": -0.9002
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8196,
+        "Oil Brent": -0.8199,
         "Gold": 0.7285,
         "Silver": 0.7637,
         "Copper": 0.3234,
@@ -447651,7 +447651,7 @@
         "Sugar": 0.426827
       },
       "dom_prob": {
-        "Oil Brent": 0.8196,
+        "Oil Brent": 0.8199,
         "Gold": 0.7285,
         "Silver": 0.7637,
         "Copper": 0.8335,
@@ -447690,7 +447690,7 @@
     {
       "date": "2025-10-03",
       "predictions_high_risk": {
-        "Oil Brent": -0.8169,
+        "Oil Brent": -0.8173,
         "Gold": 0.7273,
         "Silver": 0.7612,
         "Copper": 0.2601,
@@ -447702,7 +447702,7 @@
         "Sugar": -0.907
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8169,
+        "Oil Brent": -0.8173,
         "Gold": 0.7273,
         "Silver": 0.7612,
         "Copper": 0.3229,
@@ -447726,7 +447726,7 @@
         "Sugar": 2.06436
       },
       "dom_prob": {
-        "Oil Brent": 0.8169,
+        "Oil Brent": 0.8173,
         "Gold": 0.7273,
         "Silver": 0.7612,
         "Copper": 0.837,
@@ -447765,7 +447765,7 @@
     {
       "date": "2025-10-06",
       "predictions_high_risk": {
-        "Oil Brent": -0.8204,
+        "Oil Brent": -0.8207,
         "Gold": 0.726,
         "Silver": 0.7694,
         "Copper": 0.2663,
@@ -447777,7 +447777,7 @@
         "Sugar": -0.8987
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8204,
+        "Oil Brent": -0.8207,
         "Gold": 0.726,
         "Silver": 0.7694,
         "Copper": 0.3575,
@@ -447801,7 +447801,7 @@
         "Sugar": -1.070793
       },
       "dom_prob": {
-        "Oil Brent": 0.8204,
+        "Oil Brent": 0.8207,
         "Gold": 0.726,
         "Silver": 0.7694,
         "Copper": 0.8416,
@@ -447840,7 +447840,7 @@
     {
       "date": "2025-10-07",
       "predictions_high_risk": {
-        "Oil Brent": -0.8197,
+        "Oil Brent": -0.82,
         "Gold": 0.7272,
         "Silver": 0.759,
         "Copper": 0.2634,
@@ -447852,7 +447852,7 @@
         "Sugar": -0.903
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8197,
+        "Oil Brent": -0.82,
         "Gold": 0.7272,
         "Silver": 0.759,
         "Copper": 0.3614,
@@ -447876,7 +447876,7 @@
         "Sugar": -2.044487
       },
       "dom_prob": {
-        "Oil Brent": 0.8197,
+        "Oil Brent": 0.82,
         "Gold": 0.7272,
         "Silver": 0.759,
         "Copper": 0.845,
@@ -447915,7 +447915,7 @@
     {
       "date": "2025-10-08",
       "predictions_high_risk": {
-        "Oil Brent": -0.8183,
+        "Oil Brent": -0.8186,
         "Gold": 0.7286,
         "Silver": 0.7737,
         "Copper": 0.2622,
@@ -447927,7 +447927,7 @@
         "Sugar": -0.898
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8183,
+        "Oil Brent": -0.8186,
         "Gold": 0.7286,
         "Silver": 0.7737,
         "Copper": 0.3551,
@@ -447951,7 +447951,7 @@
         "Sugar": -0.184166
       },
       "dom_prob": {
-        "Oil Brent": 0.8183,
+        "Oil Brent": 0.8186,
         "Gold": 0.7286,
         "Silver": 0.7737,
         "Copper": 0.8277,
@@ -447990,7 +447990,7 @@
     {
       "date": "2025-10-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.8162,
+        "Oil Brent": -0.8166,
         "Gold": 0.7301,
         "Silver": 0.7666,
         "Copper": 0.2606,
@@ -448002,7 +448002,7 @@
         "Sugar": -0.8992
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8162,
+        "Oil Brent": -0.8166,
         "Gold": 0.7227,
         "Silver": 0.7666,
         "Copper": 0.3528,
@@ -448026,7 +448026,7 @@
         "Sugar": -0.984009
       },
       "dom_prob": {
-        "Oil Brent": 0.8162,
+        "Oil Brent": 0.8166,
         "Gold": 0.7301,
         "Silver": 0.7666,
         "Copper": 0.8225,
@@ -448065,7 +448065,7 @@
     {
       "date": "2025-10-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.8195,
+        "Oil Brent": -0.8199,
         "Gold": 0.7295,
         "Silver": 0.7518,
         "Copper": 0.2647,
@@ -448077,7 +448077,7 @@
         "Sugar": -0.8947
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8195,
+        "Oil Brent": -0.8199,
         "Gold": 0.7217,
         "Silver": 0.7518,
         "Copper": 0.3561,
@@ -448101,7 +448101,7 @@
         "Sugar": -3.043483
       },
       "dom_prob": {
-        "Oil Brent": 0.8195,
+        "Oil Brent": 0.8199,
         "Gold": 0.7295,
         "Silver": 0.7518,
         "Copper": 0.841,
@@ -448140,7 +448140,7 @@
     {
       "date": "2025-10-13",
       "predictions_high_risk": {
-        "Oil Brent": -0.8216,
+        "Oil Brent": -0.8219,
         "Gold": 0.73,
         "Silver": 0.7496,
         "Copper": 0.2658,
@@ -448152,7 +448152,7 @@
         "Sugar": -0.8906
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8216,
+        "Oil Brent": -0.8219,
         "Gold": 0.6767,
         "Silver": 0.7347,
         "Copper": 0.3513,
@@ -448176,7 +448176,7 @@
         "Sugar": 1.729663
       },
       "dom_prob": {
-        "Oil Brent": 0.8216,
+        "Oil Brent": 0.8219,
         "Gold": 0.73,
         "Silver": 0.7496,
         "Copper": 0.8445,
@@ -448215,7 +448215,7 @@
     {
       "date": "2025-10-14",
       "predictions_high_risk": {
-        "Oil Brent": -0.821,
+        "Oil Brent": -0.8213,
         "Gold": 0.7288,
         "Silver": 0.7537,
         "Copper": 0.2693,
@@ -448227,7 +448227,7 @@
         "Sugar": -0.8869
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.821,
+        "Oil Brent": -0.8213,
         "Gold": 0.6753,
         "Silver": 0.7392,
         "Copper": 0.3547,
@@ -448251,7 +448251,7 @@
         "Sugar": -1.196477
       },
       "dom_prob": {
-        "Oil Brent": 0.821,
+        "Oil Brent": 0.8213,
         "Gold": 0.7288,
         "Silver": 0.7537,
         "Copper": 0.8552,
@@ -448290,7 +448290,7 @@
     {
       "date": "2025-10-15",
       "predictions_high_risk": {
-        "Oil Brent": -0.8198,
+        "Oil Brent": -0.8202,
         "Gold": 0.7286,
         "Silver": 0.7444,
         "Copper": 0.2706,
@@ -448302,7 +448302,7 @@
         "Sugar": -0.8886
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8198,
+        "Oil Brent": -0.8202,
         "Gold": 0.6763,
         "Silver": 0.728,
         "Copper": 0.3565,
@@ -448326,7 +448326,7 @@
         "Sugar": 0.701087
       },
       "dom_prob": {
-        "Oil Brent": 0.8198,
+        "Oil Brent": 0.8202,
         "Gold": 0.7286,
         "Silver": 0.7444,
         "Copper": 0.8594,
@@ -448365,7 +448365,7 @@
     {
       "date": "2025-10-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.8222,
+        "Oil Brent": -0.8225,
         "Gold": 0.73,
         "Silver": 0.7499,
         "Copper": 0.2758,
@@ -448377,7 +448377,7 @@
         "Sugar": -0.888
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8222,
+        "Oil Brent": -0.8225,
         "Gold": 0.6565,
         "Silver": 0.7138,
         "Copper": 0.3584,
@@ -448401,7 +448401,7 @@
         "Sugar": -1.898735
       },
       "dom_prob": {
-        "Oil Brent": 0.8222,
+        "Oil Brent": 0.8225,
         "Gold": 0.73,
         "Silver": 0.7499,
         "Copper": 0.8619,
@@ -448440,7 +448440,7 @@
     {
       "date": "2025-10-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.8185,
+        "Oil Brent": -0.8188,
         "Gold": 0.7318,
         "Silver": 0.7547,
         "Copper": 0.2801,
@@ -448452,7 +448452,7 @@
         "Sugar": -0.8809
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8185,
+        "Oil Brent": -0.8188,
         "Gold": 0.6356,
         "Silver": 0.6558,
         "Copper": 0.3584,
@@ -448476,7 +448476,7 @@
         "Sugar": 1.419357
       },
       "dom_prob": {
-        "Oil Brent": 0.8185,
+        "Oil Brent": 0.8188,
         "Gold": 0.7318,
         "Silver": 0.7547,
         "Copper": 0.8615,
@@ -448515,7 +448515,7 @@
     {
       "date": "2025-10-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.8199,
+        "Oil Brent": -0.8202,
         "Gold": 0.7309,
         "Silver": 0.7598,
         "Copper": 0.2838,
@@ -448527,7 +448527,7 @@
         "Sugar": -0.8778
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8199,
+        "Oil Brent": -0.8202,
         "Gold": 0.5999,
         "Silver": 0.6545,
         "Copper": 0.3633,
@@ -448551,7 +448551,7 @@
         "Sugar": -3.053438
       },
       "dom_prob": {
-        "Oil Brent": 0.8199,
+        "Oil Brent": 0.8202,
         "Gold": 0.7309,
         "Silver": 0.7598,
         "Copper": 0.873,
@@ -448590,7 +448590,7 @@
     {
       "date": "2025-10-21",
       "predictions_high_risk": {
-        "Oil Brent": -0.8179,
+        "Oil Brent": -0.8182,
         "Gold": 0.5355,
         "Silver": 0.7251,
         "Copper": 0.2866,
@@ -448602,7 +448602,7 @@
         "Sugar": -0.878
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8179,
+        "Oil Brent": -0.8182,
         "Gold": 0.5016,
         "Silver": 0.5916,
         "Copper": 0.3615,
@@ -448626,7 +448626,7 @@
         "Sugar": -0.918631
       },
       "dom_prob": {
-        "Oil Brent": 0.8179,
+        "Oil Brent": 0.8182,
         "Gold": 0.7319,
         "Silver": 0.7672,
         "Copper": 0.8672,
@@ -448665,7 +448665,7 @@
     {
       "date": "2025-10-22",
       "predictions_high_risk": {
-        "Oil Brent": -0.8151,
+        "Oil Brent": -0.8154,
         "Gold": 0.5351,
         "Silver": 0.7135,
         "Copper": 0.2824,
@@ -448677,7 +448677,7 @@
         "Sugar": -0.8745
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8151,
+        "Oil Brent": -0.8154,
         "Gold": 0.4986,
         "Silver": 0.5901,
         "Copper": 0.3614,
@@ -448701,7 +448701,7 @@
         "Sugar": 1.258275
       },
       "dom_prob": {
-        "Oil Brent": 0.8151,
+        "Oil Brent": 0.8154,
         "Gold": 0.7302,
         "Silver": 0.7642,
         "Copper": 0.8674,
@@ -448740,7 +448740,7 @@
     {
       "date": "2025-10-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.8181,
+        "Oil Brent": -0.8184,
         "Gold": 0.5242,
         "Silver": 0.6879,
         "Copper": 0.2782,
@@ -448752,7 +448752,7 @@
         "Sugar": -0.8776
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8181,
+        "Oil Brent": -0.8184,
         "Gold": 0.4983,
         "Silver": 0.5851,
         "Copper": 0.3598,
@@ -448776,7 +448776,7 @@
         "Sugar": -2.092869
       },
       "dom_prob": {
-        "Oil Brent": 0.8181,
+        "Oil Brent": 0.8184,
         "Gold": 0.7321,
         "Silver": 0.7534,
         "Copper": 0.8673,
@@ -448815,7 +448815,7 @@
     {
       "date": "2025-10-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.8166,
+        "Oil Brent": -0.817,
         "Gold": 0.5197,
         "Silver": 0.685,
         "Copper": 0.2705,
@@ -448827,7 +448827,7 @@
         "Sugar": -0.8759
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8166,
+        "Oil Brent": -0.817,
         "Gold": 0.5003,
         "Silver": 0.5848,
         "Copper": 0.3574,
@@ -448851,7 +448851,7 @@
         "Sugar": -3.406815
       },
       "dom_prob": {
-        "Oil Brent": 0.8166,
+        "Oil Brent": 0.817,
         "Gold": 0.7322,
         "Silver": 0.7527,
         "Copper": 0.8571,
@@ -448890,7 +448890,7 @@
     {
       "date": "2025-10-27",
       "predictions_high_risk": {
-        "Oil Brent": -0.8152,
+        "Oil Brent": -0.8155,
         "Gold": 0.5087,
         "Silver": 0.6849,
         "Copper": 0.2677,
@@ -448902,7 +448902,7 @@
         "Sugar": -0.8734
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8152,
+        "Oil Brent": -0.8155,
         "Gold": 0.4795,
         "Silver": 0.5691,
         "Copper": 0.3534,
@@ -448926,7 +448926,7 @@
         "Sugar": -0.622408
       },
       "dom_prob": {
-        "Oil Brent": 0.8152,
+        "Oil Brent": 0.8155,
         "Gold": 0.7308,
         "Silver": 0.7532,
         "Copper": 0.8483,
@@ -448965,7 +448965,7 @@
     {
       "date": "2025-10-28",
       "predictions_high_risk": {
-        "Oil Brent": -0.8147,
+        "Oil Brent": -0.8151,
         "Gold": 0.5106,
         "Silver": 0.6751,
         "Copper": 0.2676,
@@ -448977,7 +448977,7 @@
         "Sugar": -0.8711
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8147,
+        "Oil Brent": -0.8151,
         "Gold": 0.4809,
         "Silver": 0.5748,
         "Copper": 0.3594,
@@ -449001,7 +449001,7 @@
         "Sugar": 0.347948
       },
       "dom_prob": {
-        "Oil Brent": 0.8147,
+        "Oil Brent": 0.8151,
         "Gold": 0.7333,
         "Silver": 0.7579,
         "Copper": 0.8624,
@@ -449040,7 +449040,7 @@
     {
       "date": "2025-10-29",
       "predictions_high_risk": {
-        "Oil Brent": -0.8134,
+        "Oil Brent": -0.8138,
         "Gold": 0.5054,
         "Silver": 0.6604,
         "Copper": 0.8737,
@@ -449052,7 +449052,7 @@
         "Sugar": -0.8802
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8134,
+        "Oil Brent": -0.8138,
         "Gold": 0.4809,
         "Silver": 0.5823,
         "Copper": 0.8737,
@@ -449076,7 +449076,7 @@
         "Sugar": -0.970876
       },
       "dom_prob": {
-        "Oil Brent": 0.8134,
+        "Oil Brent": 0.8138,
         "Gold": 0.7329,
         "Silver": 0.7568,
         "Copper": 0.8737,
@@ -449115,7 +449115,7 @@
     {
       "date": "2025-10-30",
       "predictions_high_risk": {
-        "Oil Brent": -0.81,
+        "Oil Brent": -0.8105,
         "Gold": 0.5057,
         "Silver": 0.6614,
         "Copper": 0.8719,
@@ -449127,7 +449127,7 @@
         "Sugar": -0.885
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.81,
+        "Oil Brent": -0.8105,
         "Gold": 0.4845,
         "Silver": 0.5822,
         "Copper": 0.8592,
@@ -449151,7 +449151,7 @@
         "Sugar": 1.050424
       },
       "dom_prob": {
-        "Oil Brent": 0.81,
+        "Oil Brent": 0.8105,
         "Gold": 0.7333,
         "Silver": 0.758,
         "Copper": 0.8719,
@@ -449190,7 +449190,7 @@
     {
       "date": "2025-10-31",
       "predictions_high_risk": {
-        "Oil Brent": -0.8103,
+        "Oil Brent": -0.8108,
         "Gold": 0.5153,
         "Silver": 0.6817,
         "Copper": 0.8615,
@@ -449202,7 +449202,7 @@
         "Sugar": -0.8856
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8103,
+        "Oil Brent": -0.8108,
         "Gold": 0.4843,
         "Silver": 0.5884,
         "Copper": 0.8483,
@@ -449226,7 +449226,7 @@
         "Sugar": 1.524597
       },
       "dom_prob": {
-        "Oil Brent": 0.8103,
+        "Oil Brent": 0.8108,
         "Gold": 0.7338,
         "Silver": 0.7676,
         "Copper": 0.8615,
@@ -449565,7 +449565,7 @@
     {
       "date": "2025-11-07",
       "predictions_high_risk": {
-        "Oil Brent": -0.8917,
+        "Oil Brent": -0.8918,
         "Gold": 0.5032,
         "Silver": 0.6869,
         "Copper": 0.7803,
@@ -449577,7 +449577,7 @@
         "Sugar": -0.7039
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8917,
+        "Oil Brent": -0.8918,
         "Gold": 0.4721,
         "Silver": 0.587,
         "Copper": 0.7619,
@@ -449601,7 +449601,7 @@
         "Sugar": 0.709216
       },
       "dom_prob": {
-        "Oil Brent": 0.8917,
+        "Oil Brent": 0.8918,
         "Gold": 0.6986,
         "Silver": 0.7641,
         "Copper": 0.7803,
@@ -449640,7 +449640,7 @@
     {
       "date": "2025-11-10",
       "predictions_high_risk": {
-        "Oil Brent": -0.8911,
+        "Oil Brent": -0.8912,
         "Gold": 0.4977,
         "Silver": 0.691,
         "Copper": 0.7802,
@@ -449652,7 +449652,7 @@
         "Sugar": -0.7218
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8911,
+        "Oil Brent": -0.8912,
         "Gold": 0.4612,
         "Silver": 0.576,
         "Copper": 0.7491,
@@ -449676,7 +449676,7 @@
         "Sugar": 0.352114
       },
       "dom_prob": {
-        "Oil Brent": 0.8911,
+        "Oil Brent": 0.8912,
         "Gold": 0.6987,
         "Silver": 0.7688,
         "Copper": 0.7802,
@@ -449715,7 +449715,7 @@
     {
       "date": "2025-11-11",
       "predictions_high_risk": {
-        "Oil Brent": -0.892,
+        "Oil Brent": -0.8921,
         "Gold": 0.5058,
         "Silver": 0.6932,
         "Copper": 0.7806,
@@ -449727,7 +449727,7 @@
         "Sugar": -0.7318
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.892,
+        "Oil Brent": -0.8921,
         "Gold": 0.4632,
         "Silver": 0.5788,
         "Copper": 0.7487,
@@ -449751,7 +449751,7 @@
         "Sugar": 1.89474
       },
       "dom_prob": {
-        "Oil Brent": 0.892,
+        "Oil Brent": 0.8921,
         "Gold": 0.7021,
         "Silver": 0.7712,
         "Copper": 0.7806,
@@ -449940,7 +449940,7 @@
     {
       "date": "2025-11-14",
       "predictions_high_risk": {
-        "Oil Brent": -0.8957,
+        "Oil Brent": -0.8958,
         "Gold": 0.4992,
         "Silver": 0.6673,
         "Copper": 0.7703,
@@ -449952,7 +449952,7 @@
         "Sugar": -0.7369
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8957,
+        "Oil Brent": -0.8958,
         "Gold": 0.4453,
         "Silver": 0.5447,
         "Copper": 0.7376,
@@ -449976,7 +449976,7 @@
         "Sugar": -1.069518
       },
       "dom_prob": {
-        "Oil Brent": 0.8957,
+        "Oil Brent": 0.8958,
         "Gold": 0.7025,
         "Silver": 0.7772,
         "Copper": 0.7703,
@@ -450015,7 +450015,7 @@
     {
       "date": "2025-11-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.8952,
+        "Oil Brent": -0.8953,
         "Gold": 0.4969,
         "Silver": 0.6475,
         "Copper": 0.7621,
@@ -450027,7 +450027,7 @@
         "Sugar": -0.7478
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8952,
+        "Oil Brent": -0.8953,
         "Gold": 0.444,
         "Silver": 0.5442,
         "Copper": 0.7303,
@@ -450051,7 +450051,7 @@
         "Sugar": -0.675678
       },
       "dom_prob": {
-        "Oil Brent": 0.8952,
+        "Oil Brent": 0.8953,
         "Gold": 0.7001,
         "Silver": 0.771,
         "Copper": 0.7621,
@@ -450090,7 +450090,7 @@
     {
       "date": "2025-11-18",
       "predictions_high_risk": {
-        "Oil Brent": -0.8968,
+        "Oil Brent": -0.8969,
         "Gold": 0.5019,
         "Silver": 0.6497,
         "Copper": 0.7651,
@@ -450102,7 +450102,7 @@
         "Sugar": -0.755
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8968,
+        "Oil Brent": -0.8969,
         "Gold": 0.4439,
         "Silver": 0.5408,
         "Copper": 0.7311,
@@ -450126,7 +450126,7 @@
         "Sugar": -0.272109
       },
       "dom_prob": {
-        "Oil Brent": 0.8968,
+        "Oil Brent": 0.8969,
         "Gold": 0.6995,
         "Silver": 0.7663,
         "Copper": 0.7651,
@@ -450240,7 +450240,7 @@
     {
       "date": "2025-11-20",
       "predictions_high_risk": {
-        "Oil Brent": -0.8954,
+        "Oil Brent": -0.8955,
         "Gold": 0.5029,
         "Silver": 0.6668,
         "Copper": 0.7372,
@@ -450252,7 +450252,7 @@
         "Sugar": -0.764
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8954,
+        "Oil Brent": -0.8955,
         "Gold": 0.4424,
         "Silver": 0.5466,
         "Copper": 0.7001,
@@ -450276,7 +450276,7 @@
         "Sugar": 0.818553
       },
       "dom_prob": {
-        "Oil Brent": 0.8954,
+        "Oil Brent": 0.8955,
         "Gold": 0.6965,
         "Silver": 0.7722,
         "Copper": 0.7372,
@@ -450315,7 +450315,7 @@
     {
       "date": "2025-11-21",
       "predictions_high_risk": {
-        "Oil Brent": -0.8971,
+        "Oil Brent": -0.8972,
         "Gold": 0.5022,
         "Silver": 0.6544,
         "Copper": 0.7565,
@@ -450327,7 +450327,7 @@
         "Sugar": -0.7709
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8971,
+        "Oil Brent": -0.8972,
         "Gold": 0.4445,
         "Silver": 0.5371,
         "Copper": 0.7169,
@@ -450351,7 +450351,7 @@
         "Sugar": 0.270636
       },
       "dom_prob": {
-        "Oil Brent": 0.8971,
+        "Oil Brent": 0.8972,
         "Gold": 0.6997,
         "Silver": 0.7585,
         "Copper": 0.7565,
@@ -450540,7 +450540,7 @@
     {
       "date": "2025-11-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.8972,
+        "Oil Brent": -0.8973,
         "Gold": 0.5034,
         "Silver": 0.6557,
         "Copper": 0.7413,
@@ -450552,7 +450552,7 @@
         "Sugar": -0.7723
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8972,
+        "Oil Brent": -0.8973,
         "Gold": 0.4448,
         "Silver": 0.5343,
         "Copper": 0.6956,
@@ -450576,7 +450576,7 @@
         "Sugar": 0.462349
       },
       "dom_prob": {
-        "Oil Brent": 0.8972,
+        "Oil Brent": 0.8973,
         "Gold": 0.7014,
         "Silver": 0.7658,
         "Copper": 0.7413,
@@ -451065,7 +451065,7 @@
     {
       "date": "2025-12-08",
       "predictions_high_risk": {
-        "Oil Brent": -0.8966,
+        "Oil Brent": -0.8967,
         "Gold": 0.5073,
         "Silver": 0.6862,
         "Copper": 0.7046,
@@ -451077,7 +451077,7 @@
         "Sugar": -0.7501
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8966,
+        "Oil Brent": -0.8967,
         "Gold": 0.4449,
         "Silver": 0.5188,
         "Copper": 0.6449,
@@ -451101,7 +451101,7 @@
         "Sugar": -1.012143
       },
       "dom_prob": {
-        "Oil Brent": 0.8966,
+        "Oil Brent": 0.8967,
         "Gold": 0.6924,
         "Silver": 0.7859,
         "Copper": 0.7046,
@@ -451140,7 +451140,7 @@
     {
       "date": "2025-12-09",
       "predictions_high_risk": {
-        "Oil Brent": -0.8976,
+        "Oil Brent": -0.8977,
         "Gold": 0.5055,
         "Silver": 0.6848,
         "Copper": 0.7046,
@@ -451152,7 +451152,7 @@
         "Sugar": -0.7432
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8976,
+        "Oil Brent": -0.8977,
         "Gold": 0.4434,
         "Silver": 0.5104,
         "Copper": 0.633,
@@ -451176,7 +451176,7 @@
         "Sugar": 1.63599
       },
       "dom_prob": {
-        "Oil Brent": 0.8976,
+        "Oil Brent": 0.8977,
         "Gold": 0.6899,
         "Silver": 0.7842,
         "Copper": 0.7046,
@@ -451365,7 +451365,7 @@
     {
       "date": "2025-12-12",
       "predictions_high_risk": {
-        "Oil Brent": -0.8942,
+        "Oil Brent": -0.8943,
         "Gold": 0.5031,
         "Silver": 0.6823,
         "Copper": 0.7108,
@@ -451377,7 +451377,7 @@
         "Sugar": -0.7308
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8942,
+        "Oil Brent": -0.8943,
         "Gold": 0.4357,
         "Silver": 0.4868,
         "Copper": 0.6143,
@@ -451401,7 +451401,7 @@
         "Sugar": -0.993381
       },
       "dom_prob": {
-        "Oil Brent": 0.8942,
+        "Oil Brent": 0.8943,
         "Gold": 0.6852,
         "Silver": 0.7872,
         "Copper": 0.7108,
@@ -451515,7 +451515,7 @@
     {
       "date": "2025-12-16",
       "predictions_high_risk": {
-        "Oil Brent": -0.8959,
+        "Oil Brent": -0.896,
         "Gold": 0.5011,
         "Silver": 0.6729,
         "Copper": 0.7093,
@@ -451527,7 +451527,7 @@
         "Sugar": -0.733
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8959,
+        "Oil Brent": -0.896,
         "Gold": 0.4358,
         "Silver": 0.4883,
         "Copper": 0.6147,
@@ -451551,7 +451551,7 @@
         "Sugar": -0.404855
       },
       "dom_prob": {
-        "Oil Brent": 0.8959,
+        "Oil Brent": 0.896,
         "Gold": 0.685,
         "Silver": 0.7882,
         "Copper": 0.7093,
@@ -451590,7 +451590,7 @@
     {
       "date": "2025-12-17",
       "predictions_high_risk": {
-        "Oil Brent": -0.895,
+        "Oil Brent": -0.8951,
         "Gold": 0.4903,
         "Silver": 0.6715,
         "Copper": 0.7182,
@@ -451602,7 +451602,7 @@
         "Sugar": -0.7261
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.895,
+        "Oil Brent": -0.8951,
         "Gold": 0.4377,
         "Silver": 0.4773,
         "Copper": 0.6214,
@@ -451626,7 +451626,7 @@
         "Sugar": -1.897024
       },
       "dom_prob": {
-        "Oil Brent": 0.895,
+        "Oil Brent": 0.8951,
         "Gold": 0.6852,
         "Silver": 0.7886,
         "Copper": 0.7182,
@@ -451740,7 +451740,7 @@
     {
       "date": "2025-12-19",
       "predictions_high_risk": {
-        "Oil Brent": -0.8974,
+        "Oil Brent": -0.8975,
         "Gold": 0.4986,
         "Silver": 0.694,
         "Copper": 0.7209,
@@ -451752,7 +451752,7 @@
         "Sugar": -0.6962
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8974,
+        "Oil Brent": -0.8975,
         "Gold": 0.4446,
         "Silver": 0.4789,
         "Copper": 0.6219,
@@ -451776,7 +451776,7 @@
         "Sugar": 1.147099
       },
       "dom_prob": {
-        "Oil Brent": 0.8974,
+        "Oil Brent": 0.8975,
         "Gold": 0.6893,
         "Silver": 0.7999,
         "Copper": 0.7209,
@@ -451815,7 +451815,7 @@
     {
       "date": "2025-12-22",
       "predictions_high_risk": {
-        "Oil Brent": -0.8996,
+        "Oil Brent": -0.8998,
         "Gold": 0.499,
         "Silver": 0.6993,
         "Copper": 0.6943,
@@ -451827,7 +451827,7 @@
         "Sugar": -0.6904
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8996,
+        "Oil Brent": -0.8998,
         "Gold": 0.4417,
         "Silver": 0.4821,
         "Copper": 0.5988,
@@ -451851,7 +451851,7 @@
         "Sugar": 1.400934
       },
       "dom_prob": {
-        "Oil Brent": 0.8996,
+        "Oil Brent": 0.8998,
         "Gold": 0.6898,
         "Silver": 0.806,
         "Copper": 0.6943,
@@ -451890,7 +451890,7 @@
     {
       "date": "2025-12-23",
       "predictions_high_risk": {
-        "Oil Brent": -0.8995,
+        "Oil Brent": -0.8996,
         "Gold": 0.4865,
         "Silver": 0.6884,
         "Copper": 0.6859,
@@ -451902,7 +451902,7 @@
         "Sugar": -0.6745
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8995,
+        "Oil Brent": -0.8996,
         "Gold": 0.4435,
         "Silver": 0.4787,
         "Copper": 0.6106,
@@ -451926,7 +451926,7 @@
         "Sugar": 0.592106
       },
       "dom_prob": {
-        "Oil Brent": 0.8995,
+        "Oil Brent": 0.8996,
         "Gold": 0.6873,
         "Silver": 0.8052,
         "Copper": 0.6859,
@@ -451965,7 +451965,7 @@
     {
       "date": "2025-12-24",
       "predictions_high_risk": {
-        "Oil Brent": -0.8984,
+        "Oil Brent": -0.8985,
         "Gold": 0.4924,
         "Silver": 0.6955,
         "Copper": 0.6725,
@@ -451977,7 +451977,7 @@
         "Sugar": -0.6661
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8984,
+        "Oil Brent": -0.8985,
         "Gold": 0.4449,
         "Silver": 0.4845,
         "Copper": 0.602,
@@ -452001,7 +452001,7 @@
         "Sugar": -0.784826
       },
       "dom_prob": {
-        "Oil Brent": 0.8984,
+        "Oil Brent": 0.8985,
         "Gold": 0.6896,
         "Silver": 0.8135,
         "Copper": 0.6725,
@@ -452040,7 +452040,7 @@
     {
       "date": "2025-12-26",
       "predictions_high_risk": {
-        "Oil Brent": -0.8998,
+        "Oil Brent": -0.9,
         "Gold": 0.4909,
         "Silver": 0.6906,
         "Copper": 0.6768,
@@ -452052,7 +452052,7 @@
         "Sugar": -0.6719
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8998,
+        "Oil Brent": -0.9,
         "Gold": 0.4434,
         "Silver": 0.4646,
         "Copper": 0.5723,
@@ -452076,7 +452076,7 @@
         "Sugar": 0.593277
       },
       "dom_prob": {
-        "Oil Brent": 0.8998,
+        "Oil Brent": 0.9,
         "Gold": 0.6875,
         "Silver": 0.8077,
         "Copper": 0.6768,
@@ -452115,7 +452115,7 @@
     {
       "date": "2025-12-29",
       "predictions_high_risk": {
-        "Oil Brent": -0.9019,
+        "Oil Brent": -0.902,
         "Gold": 0.4408,
         "Silver": 0.576,
         "Copper": 0.6949,
@@ -452127,7 +452127,7 @@
         "Sugar": -0.6762
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9019,
+        "Oil Brent": -0.902,
         "Gold": 0.411,
         "Silver": 0.4298,
         "Copper": 0.557,
@@ -452151,7 +452151,7 @@
         "Sugar": -2.752294
       },
       "dom_prob": {
-        "Oil Brent": 0.9019,
+        "Oil Brent": 0.902,
         "Gold": 0.6884,
         "Silver": 0.8094,
         "Copper": 0.6949,
@@ -452190,7 +452190,7 @@
     {
       "date": "2025-12-30",
       "predictions_high_risk": {
-        "Oil Brent": -0.9011,
+        "Oil Brent": -0.9013,
         "Gold": 0.4406,
         "Silver": 0.5685,
         "Copper": 0.719,
@@ -452202,7 +452202,7 @@
         "Sugar": -0.679
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.9011,
+        "Oil Brent": -0.9013,
         "Gold": 0.4101,
         "Silver": 0.4029,
         "Copper": 0.5566,
@@ -452226,7 +452226,7 @@
         "Sugar": 1.145553
       },
       "dom_prob": {
-        "Oil Brent": 0.9011,
+        "Oil Brent": 0.9013,
         "Gold": 0.688,
         "Silver": 0.8086,
         "Copper": 0.719,
@@ -452265,7 +452265,7 @@
     {
       "date": "2025-12-31",
       "predictions_high_risk": {
-        "Oil Brent": -0.8996,
+        "Oil Brent": -0.8997,
         "Gold": 0.448,
         "Silver": 0.5017,
         "Copper": 0.7172,
@@ -452277,7 +452277,7 @@
         "Sugar": -0.6858
       },
       "predictions_low_risk": {
-        "Oil Brent": -0.8996,
+        "Oil Brent": -0.8997,
         "Gold": 0.4072,
         "Silver": 0.3822,
         "Copper": 0.5505,
@@ -452301,7 +452301,7 @@
         "Sugar": -2.731511
       },
       "dom_prob": {
-        "Oil Brent": 0.8996,
+        "Oil Brent": 0.8997,
         "Gold": 0.6857,
         "Silver": 0.8218,
         "Copper": 0.7172,
@@ -452340,7 +452340,7 @@
     {
       "date": "2026-01-02",
       "predictions_high_risk": {
-        "Oil Brent": 0.4499,
+        "Oil Brent": 0.4496,
         "Gold": 0.4468,
         "Silver": 0.4885,
         "Copper": 0.7063,
@@ -452352,7 +452352,7 @@
         "Sugar": -0.6914
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4499,
+        "Oil Brent": 0.4496,
         "Gold": 0.4094,
         "Silver": 0.3824,
         "Copper": 0.5438,
@@ -452376,7 +452376,7 @@
         "Sugar": 0.890405
       },
       "dom_prob": {
-        "Oil Brent": 0.4499,
+        "Oil Brent": 0.4496,
         "Gold": 0.688,
         "Silver": 0.8166,
         "Copper": 0.7063,
@@ -452415,7 +452415,7 @@
     {
       "date": "2026-01-05",
       "predictions_high_risk": {
-        "Oil Brent": 0.4508,
+        "Oil Brent": 0.4504,
         "Gold": 0.4484,
         "Silver": 0.4882,
         "Copper": 0.7291,
@@ -452427,7 +452427,7 @@
         "Sugar": -0.6836
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4508,
+        "Oil Brent": 0.4504,
         "Gold": 0.4033,
         "Silver": 0.3731,
         "Copper": 0.5457,
@@ -452451,7 +452451,7 @@
         "Sugar": 0.203671
       },
       "dom_prob": {
-        "Oil Brent": 0.4508,
+        "Oil Brent": 0.4504,
         "Gold": 0.6904,
         "Silver": 0.8161,
         "Copper": 0.7291,
@@ -452490,7 +452490,7 @@
     {
       "date": "2026-01-06",
       "predictions_high_risk": {
-        "Oil Brent": 0.4489,
+        "Oil Brent": 0.4485,
         "Gold": 0.4505,
         "Silver": 0.4879,
         "Copper": 0.7202,
@@ -452502,7 +452502,7 @@
         "Sugar": -0.6857
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4489,
+        "Oil Brent": 0.4485,
         "Gold": 0.4073,
         "Silver": 0.3681,
         "Copper": 0.5408,
@@ -452526,7 +452526,7 @@
         "Sugar": 1.49051
       },
       "dom_prob": {
-        "Oil Brent": 0.4489,
+        "Oil Brent": 0.4485,
         "Gold": 0.6936,
         "Silver": 0.8156,
         "Copper": 0.7202,
@@ -452565,7 +452565,7 @@
     {
       "date": "2026-01-07",
       "predictions_high_risk": {
-        "Oil Brent": 0.4556,
+        "Oil Brent": 0.4553,
         "Gold": 0.46,
         "Silver": 0.4871,
         "Copper": 0.7423,
@@ -452577,7 +452577,7 @@
         "Sugar": -0.6697
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4556,
+        "Oil Brent": 0.4553,
         "Gold": 0.4078,
         "Silver": 0.3656,
         "Copper": 0.5431,
@@ -452601,7 +452601,7 @@
         "Sugar": -0.066751
       },
       "dom_prob": {
-        "Oil Brent": 0.4556,
+        "Oil Brent": 0.4553,
         "Gold": 0.6956,
         "Silver": 0.8184,
         "Copper": 0.7423,
@@ -452640,7 +452640,7 @@
     {
       "date": "2026-01-08",
       "predictions_high_risk": {
-        "Oil Brent": 0.4565,
+        "Oil Brent": 0.4561,
         "Gold": 0.4597,
         "Silver": 0.4944,
         "Copper": 0.7269,
@@ -452652,7 +452652,7 @@
         "Sugar": -0.678
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4565,
+        "Oil Brent": 0.4561,
         "Gold": 0.4102,
         "Silver": 0.3618,
         "Copper": 0.5302,
@@ -452676,7 +452676,7 @@
         "Sugar": -0.534402
       },
       "dom_prob": {
-        "Oil Brent": 0.4565,
+        "Oil Brent": 0.4561,
         "Gold": 0.6951,
         "Silver": 0.8142,
         "Copper": 0.7269,
@@ -452715,7 +452715,7 @@
     {
       "date": "2026-01-09",
       "predictions_high_risk": {
-        "Oil Brent": 0.4522,
+        "Oil Brent": 0.4518,
         "Gold": 0.4597,
         "Silver": 0.4897,
         "Copper": 0.7164,
@@ -452727,7 +452727,7 @@
         "Sugar": -0.6877
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4522,
+        "Oil Brent": 0.4518,
         "Gold": 0.4201,
         "Silver": 0.3645,
         "Copper": 0.5198,
@@ -452751,7 +452751,7 @@
         "Sugar": -0.335797
       },
       "dom_prob": {
-        "Oil Brent": 0.4522,
+        "Oil Brent": 0.4518,
         "Gold": 0.6979,
         "Silver": 0.8208,
         "Copper": 0.7164,
@@ -452790,7 +452790,7 @@
     {
       "date": "2026-01-12",
       "predictions_high_risk": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4583,
         "Gold": 0.4591,
         "Silver": 0.4878,
         "Copper": 0.7047,
@@ -452802,7 +452802,7 @@
         "Sugar": -0.6899
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4583,
         "Gold": 0.413,
         "Silver": 0.356,
         "Copper": 0.5328,
@@ -452826,7 +452826,7 @@
         "Sugar": 0.336929
       },
       "dom_prob": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4583,
         "Gold": 0.697,
         "Silver": 0.8175,
         "Copper": 0.7047,
@@ -452865,7 +452865,7 @@
     {
       "date": "2026-01-13",
       "predictions_high_risk": {
-        "Oil Brent": 0.456,
+        "Oil Brent": 0.4557,
         "Gold": 0.4656,
         "Silver": 0.4852,
         "Copper": 0.6985,
@@ -452877,7 +452877,7 @@
         "Sugar": -0.7005
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.456,
+        "Oil Brent": 0.4557,
         "Gold": 0.4254,
         "Silver": 0.3601,
         "Copper": 0.5556,
@@ -452901,7 +452901,7 @@
         "Sugar": -1.410343
       },
       "dom_prob": {
-        "Oil Brent": 0.456,
+        "Oil Brent": 0.4557,
         "Gold": 0.6971,
         "Silver": 0.8131,
         "Copper": 0.6985,
@@ -452940,7 +452940,7 @@
     {
       "date": "2026-01-14",
       "predictions_high_risk": {
-        "Oil Brent": 0.4578,
+        "Oil Brent": 0.4575,
         "Gold": 0.4671,
         "Silver": 0.4804,
         "Copper": 0.6907,
@@ -452952,7 +452952,7 @@
         "Sugar": -0.6982
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4578,
+        "Oil Brent": 0.4575,
         "Gold": 0.4266,
         "Silver": 0.3524,
         "Copper": 0.5587,
@@ -452976,7 +452976,7 @@
         "Sugar": -0.749323
       },
       "dom_prob": {
-        "Oil Brent": 0.4578,
+        "Oil Brent": 0.4575,
         "Gold": 0.6992,
         "Silver": 0.8049,
         "Copper": 0.6907,
@@ -453015,7 +453015,7 @@
     {
       "date": "2026-01-15",
       "predictions_high_risk": {
-        "Oil Brent": 0.4583,
+        "Oil Brent": 0.458,
         "Gold": 0.4735,
         "Silver": 0.4812,
         "Copper": 0.681,
@@ -453027,7 +453027,7 @@
         "Sugar": -0.7023
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4583,
+        "Oil Brent": 0.458,
         "Gold": 0.428,
         "Silver": 0.353,
         "Copper": 0.5488,
@@ -453051,7 +453051,7 @@
         "Sugar": 2.676735
       },
       "dom_prob": {
-        "Oil Brent": 0.4583,
+        "Oil Brent": 0.458,
         "Gold": 0.7004,
         "Silver": 0.8061,
         "Copper": 0.681,
@@ -453090,7 +453090,7 @@
     {
       "date": "2026-01-16",
       "predictions_high_risk": {
-        "Oil Brent": 0.4611,
+        "Oil Brent": 0.4607,
         "Gold": 0.4816,
         "Silver": 0.487,
         "Copper": 0.6586,
@@ -453102,7 +453102,7 @@
         "Sugar": -0.6977
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4611,
+        "Oil Brent": 0.4607,
         "Gold": 0.4351,
         "Silver": 0.3488,
         "Copper": 0.5199,
@@ -453126,7 +453126,7 @@
         "Sugar": -1.604277
       },
       "dom_prob": {
-        "Oil Brent": 0.4611,
+        "Oil Brent": 0.4607,
         "Gold": 0.7008,
         "Silver": 0.8036,
         "Copper": 0.6586,
@@ -453165,7 +453165,7 @@
     {
       "date": "2026-01-20",
       "predictions_high_risk": {
-        "Oil Brent": 0.4606,
+        "Oil Brent": 0.4602,
         "Gold": 0.4798,
         "Silver": 0.4909,
         "Copper": 0.6548,
@@ -453177,7 +453177,7 @@
         "Sugar": -0.6944
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4606,
+        "Oil Brent": 0.4602,
         "Gold": 0.4262,
         "Silver": 0.3509,
         "Copper": 0.5173,
@@ -453201,7 +453201,7 @@
         "Sugar": 0.135866
       },
       "dom_prob": {
-        "Oil Brent": 0.4606,
+        "Oil Brent": 0.4602,
         "Gold": 0.7027,
         "Silver": 0.8017,
         "Copper": 0.6548,
@@ -453240,7 +453240,7 @@
     {
       "date": "2026-01-21",
       "predictions_high_risk": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4583,
         "Gold": 0.4781,
         "Silver": 0.4974,
         "Copper": 0.6721,
@@ -453252,7 +453252,7 @@
         "Sugar": -0.7158
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4583,
         "Gold": 0.4374,
         "Silver": 0.3472,
         "Copper": 0.5313,
@@ -453276,7 +453276,7 @@
         "Sugar": 1.492539
       },
       "dom_prob": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4583,
         "Gold": 0.7002,
         "Silver": 0.7963,
         "Copper": 0.6721,
@@ -453315,7 +453315,7 @@
     {
       "date": "2026-01-22",
       "predictions_high_risk": {
-        "Oil Brent": 0.464,
+        "Oil Brent": 0.4637,
         "Gold": 0.6511,
         "Silver": 0.5264,
         "Copper": 0.6906,
@@ -453327,7 +453327,7 @@
         "Sugar": -0.7052
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.464,
+        "Oil Brent": 0.4637,
         "Gold": 0.5043,
         "Silver": 0.3616,
         "Copper": 0.5493,
@@ -453351,7 +453351,7 @@
         "Sugar": -1.537436
       },
       "dom_prob": {
-        "Oil Brent": 0.464,
+        "Oil Brent": 0.4637,
         "Gold": 0.7003,
         "Silver": 0.8018,
         "Copper": 0.6906,
@@ -453390,7 +453390,7 @@
     {
       "date": "2026-01-23",
       "predictions_high_risk": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4584,
         "Gold": 0.6402,
         "Silver": 0.5227,
         "Copper": 0.7026,
@@ -453402,7 +453402,7 @@
         "Sugar": -0.7006
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4584,
         "Gold": 0.5068,
         "Silver": 0.3564,
         "Copper": 0.5501,
@@ -453426,7 +453426,7 @@
         "Sugar": 0.407335
       },
       "dom_prob": {
-        "Oil Brent": 0.4587,
+        "Oil Brent": 0.4584,
         "Gold": 0.7013,
         "Silver": 0.7962,
         "Copper": 0.7026,
@@ -453465,7 +453465,7 @@
     {
       "date": "2026-01-26",
       "predictions_high_risk": {
-        "Oil Brent": 0.4569,
+        "Oil Brent": 0.4565,
         "Gold": 0.6385,
         "Silver": 0.5208,
         "Copper": 0.7032,
@@ -453477,7 +453477,7 @@
         "Sugar": -0.7146
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4569,
+        "Oil Brent": 0.4565,
         "Gold": 0.5049,
         "Silver": 0.3307,
         "Copper": 0.5554,
@@ -453501,7 +453501,7 @@
         "Sugar": 0.270453
       },
       "dom_prob": {
-        "Oil Brent": 0.4569,
+        "Oil Brent": 0.4565,
         "Gold": 0.6994,
         "Silver": 0.7932,
         "Copper": 0.7032,
@@ -453540,7 +453540,7 @@
     {
       "date": "2026-01-27",
       "predictions_high_risk": {
-        "Oil Brent": 0.4593,
+        "Oil Brent": 0.4589,
         "Gold": 0.6294,
         "Silver": 0.4748,
         "Copper": 0.6803,
@@ -453552,7 +453552,7 @@
         "Sugar": -0.721
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4593,
+        "Oil Brent": 0.4589,
         "Gold": 0.5044,
         "Silver": 0.3152,
         "Copper": 0.5273,
@@ -453576,7 +453576,7 @@
         "Sugar": -0.80917
       },
       "dom_prob": {
-        "Oil Brent": 0.4593,
+        "Oil Brent": 0.4589,
         "Gold": 0.6982,
         "Silver": 0.7899,
         "Copper": 0.6803,
@@ -453615,7 +453615,7 @@
     {
       "date": "2026-01-28",
       "predictions_high_risk": {
-        "Oil Brent": 0.4648,
+        "Oil Brent": 0.4644,
         "Gold": 0.6708,
         "Silver": 0.4646,
         "Copper": 0.6755,
@@ -453627,7 +453627,7 @@
         "Sugar": -0.7119
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4648,
+        "Oil Brent": 0.4644,
         "Gold": 0.4921,
         "Silver": 0.3135,
         "Copper": 0.5232,
@@ -453651,7 +453651,7 @@
         "Sugar": -0.067983
       },
       "dom_prob": {
-        "Oil Brent": 0.4648,
+        "Oil Brent": 0.4644,
         "Gold": 0.695,
         "Silver": 0.7871,
         "Copper": 0.6755,
@@ -453690,7 +453690,7 @@
     {
       "date": "2026-01-29",
       "predictions_high_risk": {
-        "Oil Brent": 0.4592,
+        "Oil Brent": 0.4588,
         "Gold": 0.6559,
         "Silver": 0.4592,
         "Copper": 0.648,
@@ -453702,7 +453702,7 @@
         "Sugar": -0.7321
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4592,
+        "Oil Brent": 0.4588,
         "Gold": 0.4957,
         "Silver": 0.3097,
         "Copper": 0.4811,
@@ -453726,7 +453726,7 @@
         "Sugar": -2.925166
       },
       "dom_prob": {
-        "Oil Brent": 0.4592,
+        "Oil Brent": 0.4588,
         "Gold": 0.6944,
         "Silver": 0.7778,
         "Copper": 0.648,
@@ -453765,7 +453765,7 @@
     {
       "date": "2026-01-30",
       "predictions_high_risk": {
-        "Oil Brent": 0.4597,
+        "Oil Brent": 0.4593,
         "Gold": 0.2632,
         "Silver": 0.176,
         "Copper": 0.6651,
@@ -453777,7 +453777,7 @@
         "Sugar": -0.7221
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4597,
+        "Oil Brent": 0.4593,
         "Gold": 0.3219,
         "Silver": 0.2041,
         "Copper": 0.4737,
@@ -453801,7 +453801,7 @@
         "Sugar": -0.070079
       },
       "dom_prob": {
-        "Oil Brent": 0.4597,
+        "Oil Brent": 0.4593,
         "Gold": 0.6974,
         "Silver": 0.7768,
         "Copper": 0.6651,
@@ -453840,7 +453840,7 @@
     {
       "date": "2026-02-02",
       "predictions_high_risk": {
-        "Oil Brent": 0.7089,
+        "Oil Brent": 0.7088,
         "Gold": 0.2676,
         "Silver": 0.1797,
         "Copper": 0.6589,
@@ -453852,7 +453852,7 @@
         "Sugar": -0.7378
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7089,
+        "Oil Brent": 0.7088,
         "Gold": 0.318,
         "Silver": 0.2043,
         "Copper": 0.4759,
@@ -453876,7 +453876,7 @@
         "Sugar": 2.59467
       },
       "dom_prob": {
-        "Oil Brent": 0.7089,
+        "Oil Brent": 0.7088,
         "Gold": 0.6951,
         "Silver": 0.7784,
         "Copper": 0.6589,
@@ -453915,7 +453915,7 @@
     {
       "date": "2026-02-03",
       "predictions_high_risk": {
-        "Oil Brent": 0.7099,
+        "Oil Brent": 0.7097,
         "Gold": 0.2623,
         "Silver": 0.1757,
         "Copper": 0.6565,
@@ -453927,7 +453927,7 @@
         "Sugar": -0.7314
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7099,
+        "Oil Brent": 0.7097,
         "Gold": 0.301,
         "Silver": 0.2013,
         "Copper": 0.4591,
@@ -453951,7 +453951,7 @@
         "Sugar": -1.298705
       },
       "dom_prob": {
-        "Oil Brent": 0.7099,
+        "Oil Brent": 0.7097,
         "Gold": 0.6946,
         "Silver": 0.7737,
         "Copper": 0.6565,
@@ -453990,7 +453990,7 @@
     {
       "date": "2026-02-04",
       "predictions_high_risk": {
-        "Oil Brent": 0.7101,
+        "Oil Brent": 0.71,
         "Gold": 0.261,
         "Silver": 0.1714,
         "Copper": 0.6713,
@@ -454002,7 +454002,7 @@
         "Sugar": -0.72
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7101,
+        "Oil Brent": 0.71,
         "Gold": 0.2994,
         "Silver": 0.1993,
         "Copper": 0.4551,
@@ -454026,7 +454026,7 @@
         "Sugar": -1.177279
       },
       "dom_prob": {
-        "Oil Brent": 0.7101,
+        "Oil Brent": 0.71,
         "Gold": 0.691,
         "Silver": 0.7659,
         "Copper": 0.6713,
@@ -454065,7 +454065,7 @@
     {
       "date": "2026-02-05",
       "predictions_high_risk": {
-        "Oil Brent": 0.7077,
+        "Oil Brent": 0.7076,
         "Gold": 0.2605,
         "Silver": 0.1702,
         "Copper": 0.6472,
@@ -454077,7 +454077,7 @@
         "Sugar": -0.7216
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7077,
+        "Oil Brent": 0.7076,
         "Gold": 0.2991,
         "Silver": 0.1955,
         "Copper": 0.4438,
@@ -454101,7 +454101,7 @@
         "Sugar": -1.121239
       },
       "dom_prob": {
-        "Oil Brent": 0.7077,
+        "Oil Brent": 0.7076,
         "Gold": 0.6896,
         "Silver": 0.7649,
         "Copper": 0.6472,
@@ -454140,7 +454140,7 @@
     {
       "date": "2026-02-06",
       "predictions_high_risk": {
-        "Oil Brent": 0.7109,
+        "Oil Brent": 0.7107,
         "Gold": 0.261,
         "Silver": 0.1708,
         "Copper": 0.666,
@@ -454152,7 +454152,7 @@
         "Sugar": -0.7111
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7109,
+        "Oil Brent": 0.7107,
         "Gold": 0.2987,
         "Silver": 0.1962,
         "Copper": 0.4564,
@@ -454176,7 +454176,7 @@
         "Sugar": 1.700927
       },
       "dom_prob": {
-        "Oil Brent": 0.7109,
+        "Oil Brent": 0.7107,
         "Gold": 0.6911,
         "Silver": 0.7678,
         "Copper": 0.666,
@@ -454215,7 +454215,7 @@
     {
       "date": "2026-02-09",
       "predictions_high_risk": {
-        "Oil Brent": 0.7069,
+        "Oil Brent": 0.7068,
         "Gold": 0.2559,
         "Silver": 0.1687,
         "Copper": 0.694,
@@ -454227,7 +454227,7 @@
         "Sugar": -0.7062
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7069,
+        "Oil Brent": 0.7068,
         "Gold": 0.2965,
         "Silver": 0.1954,
         "Copper": 0.4749,
@@ -454251,7 +454251,7 @@
         "Sugar": -1.602791
       },
       "dom_prob": {
-        "Oil Brent": 0.7069,
+        "Oil Brent": 0.7068,
         "Gold": 0.6887,
         "Silver": 0.769,
         "Copper": 0.694,
@@ -454290,7 +454290,7 @@
     {
       "date": "2026-02-10",
       "predictions_high_risk": {
-        "Oil Brent": 0.7063,
+        "Oil Brent": 0.7062,
         "Gold": 0.2612,
         "Silver": 0.1724,
         "Copper": 0.6905,
@@ -454302,7 +454302,7 @@
         "Sugar": -0.6974
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7063,
+        "Oil Brent": 0.7062,
         "Gold": 0.2953,
         "Silver": 0.1954,
         "Copper": 0.4717,
@@ -454326,7 +454326,7 @@
         "Sugar": -1.983001
       },
       "dom_prob": {
-        "Oil Brent": 0.7063,
+        "Oil Brent": 0.7062,
         "Gold": 0.6878,
         "Silver": 0.7706,
         "Copper": 0.6905,
@@ -454365,7 +454365,7 @@
     {
       "date": "2026-02-11",
       "predictions_high_risk": {
-        "Oil Brent": 0.7122,
+        "Oil Brent": 0.7121,
         "Gold": 0.2613,
         "Silver": 0.1742,
         "Copper": 0.7046,
@@ -454377,7 +454377,7 @@
         "Sugar": -0.6796
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7122,
+        "Oil Brent": 0.7121,
         "Gold": 0.2978,
         "Silver": 0.1975,
         "Copper": 0.4873,
@@ -454401,7 +454401,7 @@
         "Sugar": -0.65029
       },
       "dom_prob": {
-        "Oil Brent": 0.7122,
+        "Oil Brent": 0.7121,
         "Gold": 0.688,
         "Silver": 0.7785,
         "Copper": 0.7046,
@@ -454440,7 +454440,7 @@
     {
       "date": "2026-02-12",
       "predictions_high_risk": {
-        "Oil Brent": 0.7065,
+        "Oil Brent": 0.7064,
         "Gold": 0.2607,
         "Silver": 0.1781,
         "Copper": 0.7246,
@@ -454452,7 +454452,7 @@
         "Sugar": -0.6843
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7065,
+        "Oil Brent": 0.7064,
         "Gold": 0.2929,
         "Silver": 0.1956,
         "Copper": 0.4927,
@@ -454476,7 +454476,7 @@
         "Sugar": 0.21818
       },
       "dom_prob": {
-        "Oil Brent": 0.7065,
+        "Oil Brent": 0.7064,
         "Gold": 0.6885,
         "Silver": 0.7876,
         "Copper": 0.7246,
@@ -454515,7 +454515,7 @@
     {
       "date": "2026-02-13",
       "predictions_high_risk": {
-        "Oil Brent": 0.715,
+        "Oil Brent": 0.7148,
         "Gold": 0.2603,
         "Silver": 0.1799,
         "Copper": 0.721,
@@ -454527,7 +454527,7 @@
         "Sugar": -0.6866
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.715,
+        "Oil Brent": 0.7148,
         "Gold": 0.2931,
         "Silver": 0.1982,
         "Copper": 0.4905,
@@ -454551,7 +454551,7 @@
         "Sugar": 0.580551
       },
       "dom_prob": {
-        "Oil Brent": 0.715,
+        "Oil Brent": 0.7148,
         "Gold": 0.6873,
         "Silver": 0.7956,
         "Copper": 0.721,
@@ -454590,7 +454590,7 @@
     {
       "date": "2026-02-17",
       "predictions_high_risk": {
-        "Oil Brent": 0.7144,
+        "Oil Brent": 0.7143,
         "Gold": 0.2595,
         "Silver": 0.1816,
         "Copper": 0.7273,
@@ -454602,7 +454602,7 @@
         "Sugar": -0.6978
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7144,
+        "Oil Brent": 0.7143,
         "Gold": 0.2887,
         "Silver": 0.1971,
         "Copper": 0.4876,
@@ -454626,7 +454626,7 @@
         "Sugar": 2.236655
       },
       "dom_prob": {
-        "Oil Brent": 0.7144,
+        "Oil Brent": 0.7143,
         "Gold": 0.6866,
         "Silver": 0.7966,
         "Copper": 0.7273,
@@ -454665,7 +454665,7 @@
     {
       "date": "2026-02-18",
       "predictions_high_risk": {
-        "Oil Brent": 0.7129,
+        "Oil Brent": 0.7128,
         "Gold": 0.2545,
         "Silver": 0.1789,
         "Copper": 0.7378,
@@ -454677,7 +454677,7 @@
         "Sugar": -0.6915
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7129,
+        "Oil Brent": 0.7128,
         "Gold": 0.2905,
         "Silver": 0.1985,
         "Copper": 0.4897,
@@ -454701,7 +454701,7 @@
         "Sugar": -0.705719
       },
       "dom_prob": {
-        "Oil Brent": 0.7129,
+        "Oil Brent": 0.7128,
         "Gold": 0.6866,
         "Silver": 0.8013,
         "Copper": 0.7378,
@@ -454740,7 +454740,7 @@
     {
       "date": "2026-02-19",
       "predictions_high_risk": {
-        "Oil Brent": 0.7119,
+        "Oil Brent": 0.7117,
         "Gold": 0.2549,
         "Silver": 0.1781,
         "Copper": 0.7313,
@@ -454752,7 +454752,7 @@
         "Sugar": -0.6866
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7119,
+        "Oil Brent": 0.7117,
         "Gold": 0.2917,
         "Silver": 0.1977,
         "Copper": 0.4852,
@@ -454776,7 +454776,7 @@
         "Sugar": 1.634687
       },
       "dom_prob": {
-        "Oil Brent": 0.7119,
+        "Oil Brent": 0.7117,
         "Gold": 0.6893,
         "Silver": 0.7979,
         "Copper": 0.7313,
@@ -454815,7 +454815,7 @@
     {
       "date": "2026-02-20",
       "predictions_high_risk": {
-        "Oil Brent": 0.7192,
+        "Oil Brent": 0.7191,
         "Gold": 0.2501,
         "Silver": 0.1746,
         "Copper": 0.7315,
@@ -454827,7 +454827,7 @@
         "Sugar": -0.6965
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7192,
+        "Oil Brent": 0.7191,
         "Gold": 0.2904,
         "Silver": 0.1954,
         "Copper": 0.4843,
@@ -454851,7 +454851,7 @@
         "Sugar": 1.048948
       },
       "dom_prob": {
-        "Oil Brent": 0.7192,
+        "Oil Brent": 0.7191,
         "Gold": 0.6877,
         "Silver": 0.792,
         "Copper": 0.7315,
@@ -454890,7 +454890,7 @@
     {
       "date": "2026-02-23",
       "predictions_high_risk": {
-        "Oil Brent": 0.7275,
+        "Oil Brent": 0.7273,
         "Gold": 0.2505,
         "Silver": 0.1731,
         "Copper": 0.7325,
@@ -454902,7 +454902,7 @@
         "Sugar": -0.7095
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7275,
+        "Oil Brent": 0.7273,
         "Gold": 0.2881,
         "Silver": 0.1932,
         "Copper": 0.4842,
@@ -454926,7 +454926,7 @@
         "Sugar": 0.692044
       },
       "dom_prob": {
-        "Oil Brent": 0.7275,
+        "Oil Brent": 0.7273,
         "Gold": 0.6888,
         "Silver": 0.7852,
         "Copper": 0.7325,
@@ -454965,7 +454965,7 @@
     {
       "date": "2026-02-24",
       "predictions_high_risk": {
-        "Oil Brent": 0.7267,
+        "Oil Brent": 0.7265,
         "Gold": 0.2512,
         "Silver": 0.1714,
         "Copper": 0.7567,
@@ -454977,7 +454977,7 @@
         "Sugar": -0.7014
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7267,
+        "Oil Brent": 0.7265,
         "Gold": 0.2877,
         "Silver": 0.1942,
         "Copper": 0.4971,
@@ -455001,7 +455001,7 @@
         "Sugar": 0.274914
       },
       "dom_prob": {
-        "Oil Brent": 0.7267,
+        "Oil Brent": 0.7265,
         "Gold": 0.6888,
         "Silver": 0.7891,
         "Copper": 0.7567,
@@ -455040,7 +455040,7 @@
     {
       "date": "2026-02-25",
       "predictions_high_risk": {
-        "Oil Brent": 0.7313,
+        "Oil Brent": 0.7311,
         "Gold": 0.2526,
         "Silver": 0.1685,
         "Copper": 0.7709,
@@ -455052,7 +455052,7 @@
         "Sugar": -0.6921
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7313,
+        "Oil Brent": 0.7311,
         "Gold": 0.2892,
         "Silver": 0.1936,
         "Copper": 0.5066,
@@ -455076,7 +455076,7 @@
         "Sugar": -1.233724
       },
       "dom_prob": {
-        "Oil Brent": 0.7313,
+        "Oil Brent": 0.7311,
         "Gold": 0.6927,
         "Silver": 0.787,
         "Copper": 0.7709,
@@ -455115,7 +455115,7 @@
     {
       "date": "2026-02-26",
       "predictions_high_risk": {
-        "Oil Brent": 0.7349,
+        "Oil Brent": 0.7347,
         "Gold": 0.2577,
         "Silver": 0.1713,
         "Copper": 0.7627,
@@ -455127,7 +455127,7 @@
         "Sugar": -0.6998
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7349,
+        "Oil Brent": 0.7347,
         "Gold": 0.2888,
         "Silver": 0.1913,
         "Copper": 0.5019,
@@ -455151,7 +455151,7 @@
         "Sugar": -0.763356
       },
       "dom_prob": {
-        "Oil Brent": 0.7349,
+        "Oil Brent": 0.7347,
         "Gold": 0.6927,
         "Silver": 0.781,
         "Copper": 0.7627,
@@ -455190,7 +455190,7 @@
     {
       "date": "2026-02-27",
       "predictions_high_risk": {
-        "Oil Brent": 0.733,
+        "Oil Brent": 0.7328,
         "Gold": 0.258,
         "Silver": 0.173,
         "Copper": 0.771,
@@ -455202,7 +455202,7 @@
         "Sugar": -0.6832
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.733,
+        "Oil Brent": 0.7328,
         "Gold": 0.2893,
         "Silver": 0.1922,
         "Copper": 0.5072,
@@ -455226,7 +455226,7 @@
         "Sugar": -2.727275
       },
       "dom_prob": {
-        "Oil Brent": 0.733,
+        "Oil Brent": 0.7328,
         "Gold": 0.6936,
         "Silver": 0.7887,
         "Copper": 0.771,
@@ -455277,7 +455277,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.8193,
+        "Oil Brent": 0.8192,
         "Gold": 0.2289,
         "Silver": 0.1536,
         "Copper": 0.2994,
@@ -455352,7 +455352,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7956,
+        "Oil Brent": 0.7955,
         "Gold": 0.2244,
         "Silver": 0.1541,
         "Copper": 0.3069,
@@ -455415,7 +455415,7 @@
     {
       "date": "2026-03-04",
       "predictions_high_risk": {
-        "Oil Brent": 0.8558,
+        "Oil Brent": 0.8557,
         "Gold": 0.2057,
         "Silver": 0.1466,
         "Copper": 0.4602,
@@ -455427,7 +455427,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7972,
+        "Oil Brent": 0.7971,
         "Gold": 0.2235,
         "Silver": 0.1535,
         "Copper": 0.3,
@@ -455451,7 +455451,7 @@
         "Sugar": -0.072828
       },
       "dom_prob": {
-        "Oil Brent": 0.8558,
+        "Oil Brent": 0.8557,
         "Gold": 0.5482,
         "Silver": 0.6329,
         "Copper": 0.4602,
@@ -455490,7 +455490,7 @@
     {
       "date": "2026-03-05",
       "predictions_high_risk": {
-        "Oil Brent": 0.8552,
+        "Oil Brent": 0.8551,
         "Gold": 0.207,
         "Silver": 0.1484,
         "Copper": 0.4561,
@@ -455502,7 +455502,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.7749,
+        "Oil Brent": 0.7748,
         "Gold": 0.2252,
         "Silver": 0.1551,
         "Copper": 0.2964,
@@ -455526,7 +455526,7 @@
         "Sugar": 2.76968
       },
       "dom_prob": {
-        "Oil Brent": 0.8552,
+        "Oil Brent": 0.8551,
         "Gold": 0.552,
         "Silver": 0.6396,
         "Copper": 0.4561,
@@ -455565,7 +455565,7 @@
     {
       "date": "2026-03-06",
       "predictions_high_risk": {
-        "Oil Brent": 0.8548,
+        "Oil Brent": 0.8547,
         "Gold": 0.2065,
         "Silver": 0.1455,
         "Copper": 0.4677,
@@ -455577,7 +455577,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.71,
+        "Oil Brent": 0.7099,
         "Gold": 0.2242,
         "Silver": 0.1533,
         "Copper": 0.3074,
@@ -455601,7 +455601,7 @@
         "Sugar": 3.475176
       },
       "dom_prob": {
-        "Oil Brent": 0.8548,
+        "Oil Brent": 0.8547,
         "Gold": 0.5508,
         "Silver": 0.6324,
         "Copper": 0.4677,
@@ -455751,7 +455751,7 @@
         "Sugar": -0.904034
       },
       "dom_prob": {
-        "Oil Brent": 0.8564,
+        "Oil Brent": 0.8563,
         "Gold": 0.5539,
         "Silver": 0.6227,
         "Copper": 0.441,
@@ -455826,7 +455826,7 @@
         "Sugar": 0.912282
       },
       "dom_prob": {
-        "Oil Brent": 0.8586,
+        "Oil Brent": 0.8585,
         "Gold": 0.5565,
         "Silver": 0.6235,
         "Copper": 0.4445,
@@ -455940,7 +455940,7 @@
     {
       "date": "2026-03-13",
       "predictions_high_risk": {
-        "Oil Brent": 0.6633,
+        "Oil Brent": 0.6632,
         "Gold": 0.2195,
         "Silver": 0.1434,
         "Copper": 0.3984,
@@ -456102,7 +456102,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.53,
+        "Oil Brent": 0.5299,
         "Gold": 0.2229,
         "Silver": 0.1453,
         "Copper": 0.2847,
@@ -456177,7 +456177,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.5308,
+        "Oil Brent": 0.5307,
         "Gold": 0.2202,
         "Silver": 0.1416,
         "Copper": 0.2718,
@@ -456240,7 +456240,7 @@
     {
       "date": "2026-03-19",
       "predictions_high_risk": {
-        "Oil Brent": 0.6314,
+        "Oil Brent": 0.6313,
         "Gold": 0.2146,
         "Silver": 0.1428,
         "Copper": 0.4024,
@@ -456276,7 +456276,7 @@
         "Sugar": 2.147039
       },
       "dom_prob": {
-        "Oil Brent": 0.861,
+        "Oil Brent": 0.8609,
         "Gold": 0.5535,
         "Silver": 0.5897,
         "Copper": 0.4024,
@@ -456327,7 +456327,7 @@
         "Sugar": 0.0
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.5353,
+        "Oil Brent": 0.5352,
         "Gold": 0.2096,
         "Silver": 0.1439,
         "Copper": 0.2647,
@@ -456351,7 +456351,7 @@
         "Sugar": -1.146493
       },
       "dom_prob": {
-        "Oil Brent": 0.8562,
+        "Oil Brent": 0.8561,
         "Gold": 0.5552,
         "Silver": 0.6003,
         "Copper": 0.4034,
@@ -456540,7 +456540,7 @@
     {
       "date": "2026-03-25",
       "predictions_high_risk": {
-        "Oil Brent": 0.5225,
+        "Oil Brent": 0.5224,
         "Gold": 0.2181,
         "Silver": 0.1468,
         "Copper": 0.0,
@@ -456651,7 +456651,7 @@
         "Sugar": -0.69313
       },
       "dom_prob": {
-        "Oil Brent": 0.8422,
+        "Oil Brent": 0.8421,
         "Gold": 0.5552,
         "Silver": 0.6109,
         "Copper": 0.0,
@@ -456765,7 +456765,7 @@
     {
       "date": "2026-03-30",
       "predictions_high_risk": {
-        "Oil Brent": 0.4989,
+        "Oil Brent": 0.4988,
         "Gold": 0.2187,
         "Silver": 0.1528,
         "Copper": 0.0,
@@ -457101,7 +457101,7 @@
         "Sugar": -2.605213
       },
       "dom_prob": {
-        "Oil Brent": 0.8397,
+        "Oil Brent": 0.8396,
         "Gold": 0.3815,
         "Silver": 0.5236,
         "Copper": 0.6496,
@@ -457215,7 +457215,7 @@
     {
       "date": "2026-04-08",
       "predictions_high_risk": {
-        "Oil Brent": 0.3369,
+        "Oil Brent": 0.3368,
         "Gold": 0.1492,
         "Silver": 0.1292,
         "Copper": 0.6458,
@@ -457227,7 +457227,7 @@
         "Sugar": -0.6894
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3569,
+        "Oil Brent": 0.3568,
         "Gold": 0.1369,
         "Silver": 0.1295,
         "Copper": 0.478,
@@ -457515,7 +457515,7 @@
     {
       "date": "2026-04-14",
       "predictions_high_risk": {
-        "Oil Brent": 0.347,
+        "Oil Brent": 0.3469,
         "Gold": 0.151,
         "Silver": 0.1324,
         "Copper": 0.6617,
@@ -457551,7 +457551,7 @@
         "Sugar": -2.665705
       },
       "dom_prob": {
-        "Oil Brent": 0.8437,
+        "Oil Brent": 0.8436,
         "Gold": 0.3794,
         "Silver": 0.5371,
         "Copper": 0.6617,
@@ -457590,7 +457590,7 @@
     {
       "date": "2026-04-15",
       "predictions_high_risk": {
-        "Oil Brent": 0.3485,
+        "Oil Brent": 0.3484,
         "Gold": 0.1517,
         "Silver": 0.1348,
         "Copper": 0.654,
@@ -457626,7 +457626,7 @@
         "Sugar": 1.110286
       },
       "dom_prob": {
-        "Oil Brent": 0.8473,
+        "Oil Brent": 0.8472,
         "Gold": 0.3803,
         "Silver": 0.5469,
         "Copper": 0.654,
@@ -457677,7 +457677,7 @@
         "Sugar": -0.6807
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3541,
+        "Oil Brent": 0.354,
         "Gold": 0.1389,
         "Silver": 0.1449,
         "Copper": 0.4829,
@@ -458052,7 +458052,7 @@
         "Sugar": -0.7262
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3403,
+        "Oil Brent": 0.3402,
         "Gold": 0.1397,
         "Silver": 0.1558,
         "Copper": 0.5116,
@@ -458301,7 +458301,7 @@
         "Sugar": 4.039693
       },
       "dom_prob": {
-        "Oil Brent": 0.849,
+        "Oil Brent": 0.8489,
         "Gold": 0.3842,
         "Silver": 0.5572,
         "Copper": 0.697,
@@ -458376,7 +458376,7 @@
         "Sugar": -0.681201
       },
       "dom_prob": {
-        "Oil Brent": 0.8466,
+        "Oil Brent": 0.8465,
         "Gold": 0.3836,
         "Silver": 0.5504,
         "Copper": 0.6889,
@@ -458451,7 +458451,7 @@
         "Sugar": 2.537722
       },
       "dom_prob": {
-        "Oil Brent": 0.8458,
+        "Oil Brent": 0.8457,
         "Gold": 0.3827,
         "Silver": 0.5524,
         "Copper": 0.6921,
@@ -458565,7 +458565,7 @@
     {
       "date": "2026-05-04",
       "predictions_high_risk": {
-        "Oil Brent": 0.1494,
+        "Oil Brent": 0.1493,
         "Gold": 0.0,
         "Silver": 0.354,
         "Copper": 0.7715,
@@ -458601,7 +458601,7 @@
         "Sugar": 0.523217
       },
       "dom_prob": {
-        "Oil Brent": 0.3747,
+        "Oil Brent": 0.3746,
         "Gold": 0.0,
         "Silver": 0.5574,
         "Copper": 0.7715,
@@ -458715,7 +458715,7 @@
     {
       "date": "2026-05-06",
       "predictions_high_risk": {
-        "Oil Brent": 0.1494,
+        "Oil Brent": 0.1493,
         "Gold": 0.0,
         "Silver": 0.3618,
         "Copper": 0.7888,
@@ -458751,7 +458751,7 @@
         "Sugar": -1.823096
       },
       "dom_prob": {
-        "Oil Brent": 0.3607,
+        "Oil Brent": 0.3606,
         "Gold": 0.0,
         "Silver": 0.5697,
         "Copper": 0.7888,
@@ -458826,7 +458826,7 @@
         "Sugar": 1.031634
       },
       "dom_prob": {
-        "Oil Brent": 0.3593,
+        "Oil Brent": 0.3592,
         "Gold": 0.0,
         "Silver": 0.558,
         "Copper": 0.7707,
@@ -458877,7 +458877,7 @@
         "Sugar": -0.8761
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.1381,
+        "Oil Brent": 0.138,
         "Gold": 0.0,
         "Silver": 0.2427,
         "Copper": 0.7061,
@@ -458901,7 +458901,7 @@
         "Sugar": 1.497619
       },
       "dom_prob": {
-        "Oil Brent": 0.3556,
+        "Oil Brent": 0.3555,
         "Gold": 0.0,
         "Silver": 0.5481,
         "Copper": 0.7713,
@@ -459177,7 +459177,7 @@
         "Sugar": -0.878
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.1389,
+        "Oil Brent": 0.1388,
         "Gold": 0.0,
         "Silver": 0.2459,
         "Copper": 0.7462,
@@ -459351,7 +459351,7 @@
         "Sugar": 1.900887
       },
       "dom_prob": {
-        "Oil Brent": 0.3515,
+        "Oil Brent": 0.3514,
         "Gold": 0.0,
         "Silver": 0.5192,
         "Copper": 0.834,
@@ -459426,7 +459426,7 @@
         "Sugar": -1.865428
       },
       "dom_prob": {
-        "Oil Brent": 0.3518,
+        "Oil Brent": 0.3517,
         "Gold": 0.0,
         "Silver": 0.5146,
         "Copper": 0.8453,
@@ -459540,7 +459540,7 @@
     {
       "date": "2026-05-21",
       "predictions_high_risk": {
-        "Oil Brent": 0.1494,
+        "Oil Brent": 0.1493,
         "Gold": 0.0,
         "Silver": 0.3506,
         "Copper": 0.845,
@@ -459651,7 +459651,7 @@
         "Sugar": -1.088434
       },
       "dom_prob": {
-        "Oil Brent": 0.352,
+        "Oil Brent": 0.3519,
         "Gold": 0.0,
         "Silver": 0.5117,
         "Copper": 0.8338,
@@ -459690,7 +459690,7 @@
     {
       "date": "2026-05-26",
       "predictions_high_risk": {
-        "Oil Brent": 0.154,
+        "Oil Brent": 0.1539,
         "Gold": 0.0,
         "Silver": 0.37,
         "Copper": 0.816,
@@ -459702,7 +459702,7 @@
         "Sugar": -0.8803
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.1355,
+        "Oil Brent": 0.1354,
         "Gold": 0.0,
         "Silver": 0.2481,
         "Copper": 0.7306,
@@ -459726,7 +459726,7 @@
         "Sugar": -2.751029
       },
       "dom_prob": {
-        "Oil Brent": 0.356,
+        "Oil Brent": 0.3559,
         "Gold": 0.0,
         "Silver": 0.5199,
         "Copper": 0.816,
@@ -459876,7 +459876,7 @@
         "Sugar": 0.933238
       },
       "dom_prob": {
-        "Oil Brent": 0.3593,
+        "Oil Brent": 0.3592,
         "Gold": 0.0,
         "Silver": 0.5216,
         "Copper": 0.8378,
@@ -459915,7 +459915,7 @@
     {
       "date": "2026-05-29",
       "predictions_high_risk": {
-        "Oil Brent": 0.1609,
+        "Oil Brent": 0.1608,
         "Gold": 0.0,
         "Silver": 0.3614,
         "Copper": 0.8456,
@@ -465015,7 +465015,7 @@
     {
       "date": "2026-09-01",
       "predictions_high_risk": {
-        "Oil Brent": 0.5377,
+        "Oil Brent": 0.5376,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
@@ -465027,7 +465027,7 @@
         "Sugar": 0.7791
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3438,
+        "Oil Brent": 0.3437,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
@@ -465051,7 +465051,7 @@
         "Sugar": 3.316752
       },
       "dom_prob": {
-        "Oil Brent": 0.6031,
+        "Oil Brent": 0.603,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7285,
@@ -465102,7 +465102,7 @@
         "Sugar": 0.7804
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3444,
+        "Oil Brent": 0.3443,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
@@ -465126,7 +465126,7 @@
         "Sugar": -3.584805
       },
       "dom_prob": {
-        "Oil Brent": 0.6062,
+        "Oil Brent": 0.6061,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7274,
@@ -465240,7 +465240,7 @@
     {
       "date": "2026-09-04",
       "predictions_high_risk": {
-        "Oil Brent": 0.5279,
+        "Oil Brent": 0.5278,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
@@ -465252,7 +465252,7 @@
         "Sugar": 0.7763
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3442,
+        "Oil Brent": 0.3441,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7223,
@@ -465465,7 +465465,7 @@
     {
       "date": "2026-09-09",
       "predictions_high_risk": {
-        "Oil Brent": 0.5076,
+        "Oil Brent": 0.5075,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7292,
@@ -465477,7 +465477,7 @@
         "Sugar": 0.7946
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3455,
+        "Oil Brent": 0.3454,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7292,
@@ -465576,7 +465576,7 @@
         "Sugar": -2.797555
       },
       "dom_prob": {
-        "Oil Brent": 0.5936,
+        "Oil Brent": 0.5935,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7505,
@@ -465615,7 +465615,7 @@
     {
       "date": "2026-09-11",
       "predictions_high_risk": {
-        "Oil Brent": 0.4989,
+        "Oil Brent": 0.4988,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7521,
@@ -465690,7 +465690,7 @@
     {
       "date": "2026-09-14",
       "predictions_high_risk": {
-        "Oil Brent": 0.4948,
+        "Oil Brent": 0.4947,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7731,
@@ -465702,7 +465702,7 @@
         "Sugar": 0.8118
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3429,
+        "Oil Brent": 0.3428,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.773,
@@ -465726,7 +465726,7 @@
         "Sugar": -5.343917
       },
       "dom_prob": {
-        "Oil Brent": 0.584,
+        "Oil Brent": 0.5839,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7731,
@@ -465840,7 +465840,7 @@
     {
       "date": "2026-09-16",
       "predictions_high_risk": {
-        "Oil Brent": 0.478,
+        "Oil Brent": 0.4779,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7708,
@@ -465876,7 +465876,7 @@
         "Sugar": -2.546417
       },
       "dom_prob": {
-        "Oil Brent": 0.5631,
+        "Oil Brent": 0.563,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7708,
@@ -465915,7 +465915,7 @@
     {
       "date": "2026-09-17",
       "predictions_high_risk": {
-        "Oil Brent": 0.4766,
+        "Oil Brent": 0.4765,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7839,
@@ -465927,7 +465927,7 @@
         "Sugar": 0.8253
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3278,
+        "Oil Brent": 0.3277,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7726,
@@ -465951,7 +465951,7 @@
         "Sugar": -0.435492
       },
       "dom_prob": {
-        "Oil Brent": 0.5652,
+        "Oil Brent": 0.5651,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7839,
@@ -466026,7 +466026,7 @@
         "Sugar": 0.984136
       },
       "dom_prob": {
-        "Oil Brent": 0.5454,
+        "Oil Brent": 0.5453,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.7844,
@@ -466140,7 +466140,7 @@
     {
       "date": "2026-09-22",
       "predictions_high_risk": {
-        "Oil Brent": 0.4727,
+        "Oil Brent": 0.4726,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8034,
@@ -466176,7 +466176,7 @@
         "Sugar": 1.944898
       },
       "dom_prob": {
-        "Oil Brent": 0.5596,
+        "Oil Brent": 0.5595,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8034,
@@ -466227,7 +466227,7 @@
         "Sugar": 0.8258
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3302,
+        "Oil Brent": 0.3301,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.817,
@@ -466251,7 +466251,7 @@
         "Sugar": -1.165878
       },
       "dom_prob": {
-        "Oil Brent": 0.5589,
+        "Oil Brent": 0.5588,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.817,
@@ -466302,7 +466302,7 @@
         "Sugar": 0.8266
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3222,
+        "Oil Brent": 0.3221,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8268,
@@ -466377,7 +466377,7 @@
         "Sugar": 0.8223
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.2973,
+        "Oil Brent": 0.2972,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8309,
@@ -466452,7 +466452,7 @@
         "Sugar": 0.8202
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.2984,
+        "Oil Brent": 0.2983,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8385,
@@ -466476,7 +466476,7 @@
         "Sugar": 2.048523
       },
       "dom_prob": {
-        "Oil Brent": 0.51,
+        "Oil Brent": 0.5099,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8385,
@@ -466515,7 +466515,7 @@
     {
       "date": "2026-09-29",
       "predictions_high_risk": {
-        "Oil Brent": 0.4666,
+        "Oil Brent": 0.4665,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8307,
@@ -466551,7 +466551,7 @@
         "Sugar": -1.215
       },
       "dom_prob": {
-        "Oil Brent": 0.5336,
+        "Oil Brent": 0.5335,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8307,
@@ -466602,7 +466602,7 @@
         "Sugar": 0.8147
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.3035,
+        "Oil Brent": 0.3034,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8289,
@@ -466665,25 +466665,25 @@
     {
       "date": "2026-10-01",
       "predictions_high_risk": {
-        "Oil Brent": 0.62,
+        "Oil Brent": 0.6322,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.828,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8136
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4099,
+        "Oil Brent": 0.4179,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.828,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7466
@@ -466701,13 +466701,13 @@
         "Sugar": 4.901439
       },
       "dom_prob": {
-        "Oil Brent": 0.7088,
+        "Oil Brent": 0.7228,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.828,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8136
@@ -466740,25 +466740,25 @@
     {
       "date": "2026-10-02",
       "predictions_high_risk": {
-        "Oil Brent": 0.6218,
+        "Oil Brent": 0.6341,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8275,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.815
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4089,
+        "Oil Brent": 0.4171,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8275,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7245
@@ -466776,13 +466776,13 @@
         "Sugar": 5.180287
       },
       "dom_prob": {
-        "Oil Brent": 0.7066,
+        "Oil Brent": 0.7206,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8275,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.815
@@ -466815,25 +466815,25 @@
     {
       "date": "2026-10-05",
       "predictions_high_risk": {
-        "Oil Brent": 0.6233,
+        "Oil Brent": 0.6356,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8362,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8181
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4241,
+        "Oil Brent": 0.4325,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8362,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7001
@@ -466851,13 +466851,13 @@
         "Sugar": 0.676008
       },
       "dom_prob": {
-        "Oil Brent": 0.7083,
+        "Oil Brent": 0.7223,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8362,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8181
@@ -466890,25 +466890,25 @@
     {
       "date": "2026-10-06",
       "predictions_high_risk": {
-        "Oil Brent": 0.6187,
+        "Oil Brent": 0.631,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8253,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8197
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4215,
+        "Oil Brent": 0.4299,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8253,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.702
@@ -466926,13 +466926,13 @@
         "Sugar": 0.143879
       },
       "dom_prob": {
-        "Oil Brent": 0.7059,
+        "Oil Brent": 0.72,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8253,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8197
@@ -466965,25 +466965,25 @@
     {
       "date": "2026-10-07",
       "predictions_high_risk": {
-        "Oil Brent": 0.6132,
+        "Oil Brent": 0.6252,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8268,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8036
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4222,
+        "Oil Brent": 0.4305,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8268,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.6887
@@ -467001,13 +467001,13 @@
         "Sugar": -2.442521
       },
       "dom_prob": {
-        "Oil Brent": 0.7088,
+        "Oil Brent": 0.7228,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8268,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.8036
@@ -467040,25 +467040,25 @@
     {
       "date": "2026-10-08",
       "predictions_high_risk": {
-        "Oil Brent": 0.6111,
+        "Oil Brent": 0.6233,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8159,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7912
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4227,
+        "Oil Brent": 0.4311,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8159,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.6758
@@ -467076,13 +467076,13 @@
         "Sugar": -0.34365
       },
       "dom_prob": {
-        "Oil Brent": 0.7064,
+        "Oil Brent": 0.7205,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8159,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7912
@@ -467115,25 +467115,25 @@
     {
       "date": "2026-10-09",
       "predictions_high_risk": {
-        "Oil Brent": 0.6184,
+        "Oil Brent": 0.6306,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8269,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7626
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.433,
+        "Oil Brent": 0.4415,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8269,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.6551
@@ -467151,13 +467151,13 @@
         "Sugar": 2.709365
       },
       "dom_prob": {
-        "Oil Brent": 0.7106,
+        "Oil Brent": 0.7246,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8269,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7626
@@ -467190,25 +467190,25 @@
     {
       "date": "2026-10-12",
       "predictions_high_risk": {
-        "Oil Brent": 0.6178,
+        "Oil Brent": 0.6299,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8148,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7626
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4323,
+        "Oil Brent": 0.4408,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8148,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.6509
@@ -467226,13 +467226,13 @@
         "Sugar": -1.247003
       },
       "dom_prob": {
-        "Oil Brent": 0.7101,
+        "Oil Brent": 0.724,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8148,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7626
@@ -467265,25 +467265,25 @@
     {
       "date": "2026-10-13",
       "predictions_high_risk": {
-        "Oil Brent": 0.6305,
+        "Oil Brent": 0.6427,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8119,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7685
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4343,
+        "Oil Brent": 0.4427,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8119,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.6526
@@ -467301,13 +467301,13 @@
         "Sugar": 1.89412
       },
       "dom_prob": {
-        "Oil Brent": 0.7146,
+        "Oil Brent": 0.7284,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.8119,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7685
@@ -467340,49 +467340,49 @@
     {
       "date": "2026-10-14",
       "predictions_high_risk": {
-        "Oil Brent": 0.6379,
+        "Oil Brent": 0.6498,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.809,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7681
       },
       "predictions_low_risk": {
-        "Oil Brent": 0.4397,
+        "Oil Brent": 0.448,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.809,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.6661
       },
       "actuals": {
-        "Oil Brent": null,
-        "Gold": null,
-        "Silver": null,
-        "Copper": null,
-        "Aluminium": null,
-        "Cocoa": null,
-        "Cotton": null,
-        "Coffee": null,
-        "Natural Gas": null,
-        "Sugar": null
+        "Oil Brent": 0.415756,
+        "Gold": 1.5983,
+        "Silver": 1.911445,
+        "Copper": -1.506409,
+        "Aluminium": 0.317202,
+        "Cocoa": 0.570737,
+        "Cotton": -2.105652,
+        "Coffee": -2.965053,
+        "Natural Gas": 1.879109,
+        "Sugar": 0.428981
       },
       "dom_prob": {
-        "Oil Brent": 0.7229,
+        "Oil Brent": 0.7365,
         "Gold": 0.0,
         "Silver": 0.0,
         "Copper": 0.809,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.4914,
+        "Cotton": 0.4012,
         "Coffee": 0.0,
         "Natural Gas": 0.0,
         "Sugar": 0.7681
@@ -467410,6 +467410,81 @@
         "Coffee": "2026-10-14",
         "Natural Gas": "2026-10-14",
         "Sugar": "2026-10-14"
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "predictions_high_risk": {
+        "Oil Brent": 0.6529,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.8015,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.4012,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.7691
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.4513,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.8015,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.4012,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.6745
+      },
+      "actuals": {
+        "Oil Brent": null,
+        "Gold": null,
+        "Silver": null,
+        "Copper": null,
+        "Aluminium": null,
+        "Cocoa": null,
+        "Cotton": null,
+        "Coffee": null,
+        "Natural Gas": null,
+        "Sugar": null
+      },
+      "dom_prob": {
+        "Oil Brent": 0.7399,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.8015,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.4012,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.7691
+      },
+      "market_open": {
+        "Oil Brent": true,
+        "Gold": true,
+        "Silver": true,
+        "Copper": true,
+        "Aluminium": true,
+        "Cocoa": true,
+        "Cotton": true,
+        "Coffee": true,
+        "Natural Gas": true,
+        "Sugar": true
+      },
+      "as_of": {
+        "Oil Brent": "2026-10-15",
+        "Gold": "2026-10-15",
+        "Silver": "2026-10-15",
+        "Copper": "2026-10-15",
+        "Aluminium": "2026-10-15",
+        "Cocoa": "2026-10-15",
+        "Cotton": "2026-10-15",
+        "Coffee": "2026-10-15",
+        "Natural Gas": "2026-10-15",
+        "Sugar": "2026-10-15"
       }
     }
   ]
