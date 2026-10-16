@@ -1,31 +1,31 @@
 {
-  "date": "2026-10-15",
-  "timestamp": "2026-10-15T15:42:18Z",
-  "window_days": 1420,
-  "avg_trades_per_year": 116.1,
+  "date": "2026-10-16",
+  "timestamp": "2026-10-16T15:42:06Z",
+  "window_days": 1421,
+  "avg_trades_per_year": 116.0,
   "avg_trades_per_year_sym": 24.5,
   "avg_hold_days": 89.6,
   "std_hold_days": 123.6,
   "avg_hold_days_sym": 105.2,
   "std_hold_days_sym": 135.0,
   "metrics": {
-    "cumulative_return": 15.5697,
-    "annualized_return": 0.6458,
-    "sharpe_ratio": 3.8612,
-    "sharpe_ci_95_lo": 3.2255,
-    "sharpe_ci_95_hi": 4.6217,
+    "cumulative_return": 15.4957,
+    "annualized_return": 0.6439,
+    "sharpe_ratio": 3.853,
+    "sharpe_ci_95_lo": 3.2529,
+    "sharpe_ci_95_hi": 4.6072,
     "max_drawdown": -0.0768,
-    "win_rate": 0.6148,
-    "profit_factor": 1.8611
+    "win_rate": 0.6137,
+    "profit_factor": 1.8587
   },
   "metrics_symmetric": {
-    "cumulative_return": 11.3069,
-    "annualized_return": 0.5612,
-    "sharpe_ratio": 3.8626,
-    "sharpe_sym_ci_95_lo": 3.2228,
-    "sharpe_sym_ci_95_hi": 4.6292,
+    "cumulative_return": 11.2652,
+    "annualized_return": 0.5598,
+    "sharpe_ratio": 3.8554,
+    "sharpe_sym_ci_95_lo": 3.2572,
+    "sharpe_sym_ci_95_hi": 4.6157,
     "max_drawdown": -0.0732,
-    "win_rate": 0.6155,
-    "profit_factor": 1.8597
+    "win_rate": 0.6151,
+    "profit_factor": 1.8576
   }
 }
