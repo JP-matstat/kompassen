@@ -436,7 +436,7 @@ const TRANSLATIONS = {
         cv_exp_4_meta: 'Linköping',
         cv_exp_4_desc: 'Linjär algebra och geometri.',
         cv_exp_5_title: 'Biostatistiker · AstraZeneca',
-        cv_exp_5_desc: 'Heltidsanställning som statistiker. På Astra skrev jag bl a program i <i>R</i> för att beräkna antalet försöksdeltagare till nya studier. På grund av en olycka, i vilken jag skadade vänsterögat, så kunde jag inte arbeta framför skärm under längre tidsperioder under ett års tid. Jag återvände då till undervisning i samband med att jag flyttade till Linköping.',
+        cv_exp_5_desc: 'Heltidsanställning som statistiker. På Astra skrev jag bl a program i <i>R</i> för att beräkna antalet försöksdeltagare till nya studier. På grund av en olycka i vilken jag skadade vänsterögat, så kunde jag inte arbeta framför skärm under längre tidsperioder under ett års tid. Jag återvände då till undervisning i samband med att jag flyttade till Linköping.',
         cv_exp_6_title: 'Lärare · Chalmers',
         cv_exp_6_meta: 'Göteborg',
         cv_exp_6_desc: 'Övningsledare i statistik och diskret matematik.',
