@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-22",
+  "prediction_based_on": "2026-10-22",
+  "market_closed": [],
+  "as_of": {
+    "Oil Brent": "2026-10-22",
+    "Gold": "2026-10-22",
+    "Silver": "2026-10-22",
+    "Copper": "2026-10-22",
+    "Aluminium": "2026-10-22",
+    "Cocoa": "2026-10-22",
+    "Cotton": "2026-10-22",
+    "Coffee": "2026-10-22",
+    "Natural Gas": "2026-10-22",
+    "Sugar": "2026-10-22"
+  },
+  "signals": [
+    {
+      "commodity": "Oil Brent",
+      "signal": 0.8507,
+      "signal_low_risk": 0.6285,
+      "dom_prob": 0.8507,
+      "actual_yesterday": 1.870016,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.6637
+    },
+    {
+      "commodity": "Gold",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -1.753248,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Silver",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -3.993054,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Copper",
+      "signal": 0.5749,
+      "signal_low_risk": 0.5749,
+      "dom_prob": 0.5749,
+      "actual_yesterday": -2.374612,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.1523
+    },
+    {
+      "commodity": "Aluminium",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -0.978034,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Cocoa",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -4.150232,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Cotton",
+      "signal": 0.4436,
+      "signal_low_risk": 0.4436,
+      "dom_prob": 0.4436,
+      "actual_yesterday": 0.644198,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Coffee",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -0.815745,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Natural Gas",
+      "signal": 0.0,
+      "signal_low_risk": 0.0,
+      "dom_prob": 0.0,
+      "actual_yesterday": -0.495924,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.0
+    },
+    {
+      "commodity": "Sugar",
+      "signal": 0.7688,
+      "signal_low_risk": 0.6642,
+      "dom_prob": 0.7688,
+      "actual_yesterday": -0.638199,
+      "as_of": "2026-10-22",
+      "market_open": true,
+      "signal_experimental": 0.4979
+    }
+  ]
+}
