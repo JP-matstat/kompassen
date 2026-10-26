@@ -1,11 +1,11 @@
 {
-  "cumulative_return": 45.283308684443476,
-  "annualized_return": 0.9692942958126227,
-  "sharpe_ratio": 3.65142412797204,
-  "max_drawdown": -0.16959158223017273,
-  "win_rate": 0.6217543859649123,
-  "profit_factor": 1.8689431231411628,
-  "window_days": 1426,
+  "cumulative_return": 44.336781151280135,
+  "annualized_return": 0.961190008624679,
+  "sharpe_ratio": 3.627918521250985,
+  "max_drawdown": -0.1695717246441261,
+  "win_rate": 0.6213183730715287,
+  "profit_factor": 1.8610074491494555,
+  "window_days": 1427,
   "avg_trades_per_year": 23.5,
   "avg_hold_days": 70.2,
   "std_hold_days": 86.3
