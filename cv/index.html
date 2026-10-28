@@ -1219,6 +1219,13 @@ html[data-theme="light"] .cv-preview-root .rail {
         btn.addEventListener('click', function() { setLang(btn.dataset.lang); });
     });
     applyTranslations();
+    // This <script> sits above the page footer, so elements further down the
+    // document do not exist yet when applyTranslations() first runs. Re-apply
+    // once the document is fully parsed, or the footer link would keep its
+    // static text — or show the raw i18n key — until the language is toggled.
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', applyTranslations);
+    }
 
     window.I18n = { getLang: getLang, onLangChange: onLangChange, t: t };
 
