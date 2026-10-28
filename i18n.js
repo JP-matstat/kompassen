@@ -272,7 +272,7 @@ const TRANSLATIONS = {
 
         cv_email: 'Email',
         cv_phone: 'Phone',
-        cv_cta: 'Do you want to run my model as a trading robot? Then <a href="mailto:jpmatstat@gmail.com">send me an email!</a>',
+        cv_cta: '<a href="../index.html">Back to Kompassen.</a>',
         cv_languages_heading: 'Languages',
         cv_lang_swedish: 'Swedish',
         cv_lang_english: 'English',
@@ -404,7 +404,7 @@ const TRANSLATIONS = {
 
         cv_email: 'E-post',
         cv_phone: 'Telefon',
-        cv_cta: 'Vill du köra min modell som en tradingrobot? <a href="mailto:jpmatstat@gmail.com">Släng då iväg ett mejl!</a>',
+        cv_cta: '<a href="../index.html">Tillbaka till Kompassen.</a>',
         cv_languages_heading: 'Språk',
         cv_lang_swedish: 'Svenska',
         cv_lang_english: 'Engelska',
