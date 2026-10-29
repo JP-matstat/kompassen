@@ -21152,12 +21152,12 @@
       "signal": {
         "Oil Brent": 0.5208,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1023,
         "Copper": 0.6164,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0939,
+        "Coffee": -0.0808,
         "Natural Gas": 0.0,
         "Sugar": 0.5872
       }
@@ -21167,12 +21167,12 @@
       "signal": {
         "Oil Brent": 0.5211,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1028,
         "Copper": 0.6154,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.1014,
+        "Coffee": -0.0875,
         "Natural Gas": 0.0,
         "Sugar": 0.5902
       }
@@ -21182,12 +21182,12 @@
       "signal": {
         "Oil Brent": 0.5232,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1049,
         "Copper": 0.6334,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0988,
+        "Coffee": -0.085,
         "Natural Gas": 0.0,
         "Sugar": 0.5966
       }
@@ -21197,12 +21197,12 @@
       "signal": {
         "Oil Brent": 0.518,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1048,
         "Copper": 0.6108,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0942,
+        "Coffee": -0.0808,
         "Natural Gas": 0.0,
         "Sugar": 0.5998
       }
@@ -21212,12 +21212,12 @@
       "signal": {
         "Oil Brent": 0.5151,
         "Gold": 0.0,
-        "Silver": -0.0596,
+        "Silver": -0.1083,
         "Copper": 0.614,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.102,
+        "Coffee": -0.0881,
         "Natural Gas": 0.0,
         "Sugar": 0.5671
       }
@@ -21227,12 +21227,12 @@
       "signal": {
         "Oil Brent": 0.512,
         "Gold": 0.0,
-        "Silver": -0.0588,
+        "Silver": -0.1072,
         "Copper": 0.5916,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0973,
+        "Coffee": -0.0836,
         "Natural Gas": 0.0,
         "Sugar": 0.5422
       }
@@ -21242,12 +21242,12 @@
       "signal": {
         "Oil Brent": 0.5205,
         "Gold": 0.0,
-        "Silver": -0.0611,
+        "Silver": -0.1103,
         "Copper": 0.6141,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0988,
+        "Coffee": -0.0851,
         "Natural Gas": 0.0,
         "Sugar": 0.4859
       }
@@ -21257,12 +21257,12 @@
       "signal": {
         "Oil Brent": 0.5196,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1068,
         "Copper": 0.5894,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.1016,
+        "Coffee": -0.0877,
         "Natural Gas": 0.0,
         "Sugar": 0.4861
       }
@@ -21272,12 +21272,12 @@
       "signal": {
         "Oil Brent": 0.5328,
         "Gold": 0.0,
-        "Silver": -0.059,
+        "Silver": -0.1076,
         "Copper": 0.5835,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.1012,
+        "Coffee": -0.0872,
         "Natural Gas": 0.0,
         "Sugar": 0.4975
       }
@@ -21287,12 +21287,12 @@
       "signal": {
         "Oil Brent": 0.5435,
         "Gold": 0.0,
-        "Silver": -0.0602,
+        "Silver": -0.1091,
         "Copper": 0.5776,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0954,
+        "Coffee": -0.0819,
         "Natural Gas": 0.0,
         "Sugar": 0.4967
       }
@@ -21302,12 +21302,12 @@
       "signal": {
         "Oil Brent": 0.5481,
         "Gold": 0.0,
-        "Silver": -0.0602,
+        "Silver": -0.1091,
         "Copper": 0.5625,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0967,
+        "Coffee": -0.083,
         "Natural Gas": 0.0,
         "Sugar": 0.4987
       }
@@ -21317,12 +21317,12 @@
       "signal": {
         "Oil Brent": 0.5755,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.106,
         "Copper": 0.5507,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0963,
+        "Coffee": -0.0827,
         "Natural Gas": 0.0,
         "Sugar": 0.4954
       }
@@ -21332,12 +21332,12 @@
       "signal": {
         "Oil Brent": 0.5673,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1066,
         "Copper": 0.537,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0921,
+        "Coffee": -0.0788,
         "Natural Gas": 0.0,
         "Sugar": 0.4959
       }
@@ -21347,12 +21347,12 @@
       "signal": {
         "Oil Brent": 0.629,
         "Gold": 0.0,
-        "Silver": -0.0595,
+        "Silver": -0.1083,
         "Copper": 0.4862,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0935,
+        "Coffee": -0.0801,
         "Natural Gas": 0.0,
         "Sugar": 0.4971
       }
@@ -21362,12 +21362,12 @@
       "signal": {
         "Oil Brent": 0.6361,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1065,
         "Copper": 0.4729,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0977,
+        "Coffee": -0.084,
         "Natural Gas": 0.0,
         "Sugar": 0.4981
       }
@@ -21377,12 +21377,12 @@
       "signal": {
         "Oil Brent": 0.6637,
         "Gold": 0.0,
-        "Silver": -0.0589,
+        "Silver": -0.1073,
         "Copper": 0.4954,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0944,
+        "Coffee": -0.0809,
         "Natural Gas": 0.0,
         "Sugar": 0.4979
       }
@@ -21392,12 +21392,12 @@
       "signal": {
         "Oil Brent": 0.7021,
         "Gold": 0.0,
-        "Silver": -0.0595,
+        "Silver": -0.1081,
         "Copper": 0.5161,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.0992,
+        "Coffee": -0.0854,
         "Natural Gas": 0.0,
         "Sugar": 0.4994
       }
@@ -21407,12 +21407,12 @@
       "signal": {
         "Oil Brent": 0.7044,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.103,
         "Copper": 0.5071,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.1065,
+        "Coffee": -0.0921,
         "Natural Gas": 0.0,
         "Sugar": 0.4936
       }
@@ -21422,12 +21422,12 @@
       "signal": {
         "Oil Brent": 0.707,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1025,
         "Copper": 0.5447,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.1074,
+        "Coffee": -0.0931,
         "Natural Gas": 0.0,
         "Sugar": 0.4827
       }
@@ -21437,14 +21437,29 @@
       "signal": {
         "Oil Brent": 0.7049,
         "Gold": 0.0,
-        "Silver": 0.0,
+        "Silver": -0.1026,
         "Copper": 0.5349,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
         "Cotton": 0.0,
-        "Coffee": -0.1006,
+        "Coffee": -0.0867,
         "Natural Gas": 0.0,
         "Sugar": 0.4714
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "signal": {
+        "Oil Brent": 0.7102,
+        "Gold": 0.0,
+        "Silver": -0.1054,
+        "Copper": 0.5361,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": -0.09,
+        "Natural Gas": 0.0,
+        "Sugar": 0.4716
       }
     }
   ]
