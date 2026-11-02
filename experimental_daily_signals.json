@@ -21476,6 +21476,21 @@
         "Natural Gas": 0.0,
         "Sugar": 0.4762
       }
+    },
+    {
+      "date": "2026-11-02",
+      "signal": {
+        "Oil Brent": 0.1349,
+        "Gold": 0.0,
+        "Silver": -0.0664,
+        "Copper": 0.3637,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": 0.0,
+        "Natural Gas": 0.0,
+        "Sugar": 0.336
+      }
     }
   ]
 }
