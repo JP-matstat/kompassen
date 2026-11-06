@@ -21489,7 +21489,7 @@
         "Cotton": 0.0,
         "Coffee": -0.2897,
         "Natural Gas": 0.0,
-        "Sugar": 0.276
+        "Sugar": 0.1014
       }
     },
     {
@@ -21504,7 +21504,7 @@
         "Cotton": 0.0,
         "Coffee": -0.2921,
         "Natural Gas": 0.0,
-        "Sugar": 0.2728
+        "Sugar": 0.098
       }
     },
     {
@@ -21519,7 +21519,7 @@
         "Cotton": 0.0,
         "Coffee": -0.2797,
         "Natural Gas": 0.0,
-        "Sugar": 0.2741
+        "Sugar": 0.0994
       }
     },
     {
@@ -21534,7 +21534,22 @@
         "Cotton": 0.0,
         "Coffee": -0.2811,
         "Natural Gas": 0.0,
-        "Sugar": 0.2677
+        "Sugar": 0.0923
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "signal": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.0,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": -0.2784,
+        "Natural Gas": 0.0,
+        "Sugar": 0.0859
       }
     }
   ]
