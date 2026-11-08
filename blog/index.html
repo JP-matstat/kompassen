@@ -330,7 +330,7 @@
 
             <!-- 3. The bug -->
             <section class="card">
-                <h2>The bug that changed the result</h2>
+                <h2>A bug in our harness — not in Pi</h2>
                 <div class="stat-grid">
                     <div class="stat">
                         <div class="stat-title">Search-heavy rename — before / after</div>
@@ -343,7 +343,7 @@
                         <div class="vbar-row"><span class="vbar-name">After</span><div class="vbar-track"><div class="vbar-fill pi" style="width:38%"></div></div><span class="vbar-val">$0.0049</span></div>
                     </div>
                 </div>
-                <p class="caption">Pi's <span class="muted">grep</span>/<span class="muted">find</span> call ripgrep &amp; fd, but the launcher's directory wasn't on the child PATH — every search failed with <em>“ripgrep is not available”</em> and the model burned time compensating. One-line fix: prepend the launcher's dir to PATH. First result: a bug, not a verdict.</p>
+                <p class="caption">Our Chat-v2 harness spawned Pi with a child PATH that only contained the Node directory, so Pi's built-in grep/find couldn't reach the ripgrep &amp; fd binaries that ship beside the Pi launcher. Every search came back <em>“ripgrep is not available”</em> and the model burned time compensating. The fix — prepend the launcher's directory to the child PATH — lives in our harness (<code>pi_runtime.py</code>), not in Pi itself. A regular Pi user wouldn't hit this.</p>
             </section>
 
             <!-- 4. Safety -->
