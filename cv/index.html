@@ -391,6 +391,16 @@ html[data-theme="light"] .cv-preview-root .rail {
     min-height: 280px;
 }
 
+.cv-preview-root .hero-cta-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    flex-shrink: 0;
+}
+
 .cv-preview-root .hero-cta-circle {
     width: 184px;
     height: 184px;
@@ -402,7 +412,12 @@ html[data-theme="light"] .cv-preview-root .rail {
     text-align: center;
     padding: 1rem;
     flex-shrink: 0;
-    margin-left: 2rem;
+}
+
+.cv-preview-root .hero-cta-circle.small {
+    width: 120px;
+    height: 120px;
+    padding: 0.8rem;
 }
 
 .cv-preview-root .hero-cta-circle p {
@@ -411,6 +426,10 @@ html[data-theme="light"] .cv-preview-root .rail {
     line-height: 1.35;
     color: var(--muted);
     margin: 0;
+}
+
+.cv-preview-root .hero-cta-circle.small p {
+    font-size: 0.8rem;
 }
 
 .cv-preview-root .hero-cta-circle a {
@@ -855,8 +874,13 @@ html[data-theme="light"] .cv-preview-root .rail {
                     <h2 data-i18n="cv_hero_title">Discover my work in data &amp; AI</h2>
                     <p class="typing-line"><code id="typing"></code></p>
                 </div>
-                <div class="hero-cta-circle">
-                    <p data-i18n-html="cv_cta"><a href="../index.html">Tillbaka till Kompassen.</a></p>
+                <div class="hero-cta-group">
+                    <div class="hero-cta-circle small">
+                        <p data-i18n-html="cv_blog_cta"><a href="../blog/index.html">Blogg</a></p>
+                    </div>
+                    <div class="hero-cta-circle">
+                        <p data-i18n-html="cv_cta"><a href="../index.html">Tillbaka till Kompassen.</a></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1028,6 +1052,7 @@ html[data-theme="light"] .cv-preview-root .rail {
         cv_role: 'Data Scientist / AI Developer',
         cv_email: 'Email',
         cv_cta: '<a href="../index.html">Back to Kompassen.</a>',
+        cv_blog_cta: '<a href="../blog/index.html">Blog</a>',
         cv_languages_heading: 'Languages',
         cv_lang_swedish: 'Swedish',
         cv_lang_english: 'English',
@@ -1101,6 +1126,7 @@ html[data-theme="light"] .cv-preview-root .rail {
         cv_role: 'Data Scientist / AI-utvecklare',
         cv_email: 'E-post',
         cv_cta: '<a href="../index.html">Tillbaka till Kompassen.</a>',
+        cv_blog_cta: '<a href="../blog/index.html">Blogg</a>',
         cv_languages_heading: 'Spr\u00e5k',
         cv_lang_swedish: 'Svenska',
         cv_lang_english: 'Engelska',
