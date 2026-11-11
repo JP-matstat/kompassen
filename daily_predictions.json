@@ -468317,26 +468317,26 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.6503,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.8008,
-        "Natural Gas": 0.4259,
-        "Sugar": 0.5276
+        "Natural Gas": 0.4738,
+        "Sugar": 0.5989
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.4724,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.6919,
-        "Natural Gas": 0.4259,
-        "Sugar": 0.4238
+        "Natural Gas": 0.4738,
+        "Sugar": 0.4811
       },
       "actuals": {
         "Oil Brent": -1.811109,
@@ -468353,14 +468353,14 @@
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.6503,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.8008,
-        "Natural Gas": 0.4259,
-        "Sugar": 0.5276
+        "Natural Gas": 0.4738,
+        "Sugar": 0.5989
       },
       "market_open": {
         "Oil Brent": true,
@@ -468392,26 +468392,26 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.6516,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.8018,
-        "Natural Gas": 0.4256,
-        "Sugar": 0.5257
+        "Natural Gas": 0.4735,
+        "Sugar": 0.597
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.4707,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7055,
-        "Natural Gas": 0.4256,
-        "Sugar": 0.4112
+        "Natural Gas": 0.4735,
+        "Sugar": 0.467
       },
       "actuals": {
         "Oil Brent": -4.374704,
@@ -468428,14 +468428,14 @@
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.6516,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.8018,
-        "Natural Gas": 0.4256,
-        "Sugar": 0.5257
+        "Natural Gas": 0.4735,
+        "Sugar": 0.597
       },
       "market_open": {
         "Oil Brent": true,
@@ -468467,26 +468467,26 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.6501,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7963,
-        "Natural Gas": 0.4212,
-        "Sugar": 0.5265
+        "Natural Gas": 0.4689,
+        "Sugar": 0.5978
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.463,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7176,
-        "Natural Gas": 0.4212,
-        "Sugar": 0.4153
+        "Natural Gas": 0.4689,
+        "Sugar": 0.4716
       },
       "actuals": {
         "Oil Brent": -2.211669,
@@ -468503,14 +468503,14 @@
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.6501,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.7963,
-        "Natural Gas": 0.4212,
-        "Sugar": 0.5265
+        "Natural Gas": 0.4689,
+        "Sugar": 0.5978
       },
       "market_open": {
         "Oil Brent": true,
@@ -468542,26 +468542,26 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.6543,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7969,
-        "Natural Gas": 0.4205,
-        "Sugar": 0.5225
+        "Natural Gas": 0.4682,
+        "Sugar": 0.5939
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.4677,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7581,
-        "Natural Gas": 0.4205,
-        "Sugar": 0.4221
+        "Natural Gas": 0.4682,
+        "Sugar": 0.4797
       },
       "actuals": {
         "Oil Brent": 0.733243,
@@ -468578,14 +468578,14 @@
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.6543,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.7969,
-        "Natural Gas": 0.4205,
-        "Sugar": 0.5225
+        "Natural Gas": 0.4682,
+        "Sugar": 0.5939
       },
       "market_open": {
         "Oil Brent": true,
@@ -468617,26 +468617,26 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.651,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7957,
-        "Natural Gas": 0.4139,
-        "Sugar": 0.5189
+        "Natural Gas": 0.4613,
+        "Sugar": 0.5903
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.4656,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7569,
-        "Natural Gas": 0.4139,
-        "Sugar": 0.4111
+        "Natural Gas": 0.4613,
+        "Sugar": 0.4677
       },
       "actuals": {
         "Oil Brent": -3.465242,
@@ -468653,14 +468653,14 @@
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.651,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.7957,
-        "Natural Gas": 0.4139,
-        "Sugar": 0.5189
+        "Natural Gas": 0.4613,
+        "Sugar": 0.5903
       },
       "market_open": {
         "Oil Brent": true,
@@ -468692,26 +468692,26 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.6541,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7945,
-        "Natural Gas": 0.4254,
-        "Sugar": 0.5186
+        "Natural Gas": 0.4732,
+        "Sugar": 0.5901
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.4675,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7832,
-        "Natural Gas": 0.4254,
-        "Sugar": 0.4105
+        "Natural Gas": 0.4732,
+        "Sugar": 0.467
       },
       "actuals": {
         "Oil Brent": -3.058629,
@@ -468728,14 +468728,14 @@
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.6541,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.7945,
-        "Natural Gas": 0.4254,
-        "Sugar": 0.5186
+        "Natural Gas": 0.4732,
+        "Sugar": 0.5901
       },
       "market_open": {
         "Oil Brent": true,
@@ -468767,50 +468767,50 @@
       "predictions_high_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.6576,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7839,
-        "Natural Gas": 0.422,
-        "Sugar": 0.5201
+        "Natural Gas": 0.4698,
+        "Sugar": 0.5915
       },
       "predictions_low_risk": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": -0.4672,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": -0.7584,
-        "Natural Gas": 0.422,
-        "Sugar": 0.4096
+        "Natural Gas": 0.4698,
+        "Sugar": 0.4658
       },
       "actuals": {
-        "Oil Brent": null,
-        "Gold": null,
-        "Silver": null,
-        "Copper": null,
-        "Aluminium": null,
-        "Cocoa": null,
-        "Cotton": null,
-        "Coffee": null,
-        "Natural Gas": null,
-        "Sugar": null
+        "Oil Brent": 2.968886,
+        "Gold": -0.550253,
+        "Silver": 1.930392,
+        "Copper": 0.760063,
+        "Aluminium": 2.263573,
+        "Cocoa": 4.115822,
+        "Cotton": 5.542779,
+        "Coffee": -0.28132,
+        "Natural Gas": 1.414514,
+        "Sugar": 2.324295
       },
       "dom_prob": {
         "Oil Brent": 0.0,
         "Gold": 0.0,
-        "Silver": 0.6576,
+        "Silver": 0.0,
         "Copper": 0.0,
         "Aluminium": 0.0,
         "Cocoa": 0.0,
-        "Cotton": 0.0,
+        "Cotton": 0.5771,
         "Coffee": 0.7839,
-        "Natural Gas": 0.422,
-        "Sugar": 0.5201
+        "Natural Gas": 0.4698,
+        "Sugar": 0.5915
       },
       "market_open": {
         "Oil Brent": true,
@@ -468835,6 +468835,81 @@
         "Coffee": "2026-11-10",
         "Natural Gas": "2026-11-10",
         "Sugar": "2026-11-10"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "predictions_high_risk": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.0,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.5771,
+        "Coffee": -0.7844,
+        "Natural Gas": 0.4573,
+        "Sugar": 0.5897
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.0,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.5771,
+        "Coffee": -0.7595,
+        "Natural Gas": 0.4573,
+        "Sugar": 0.4613
+      },
+      "actuals": {
+        "Oil Brent": null,
+        "Gold": null,
+        "Silver": null,
+        "Copper": null,
+        "Aluminium": null,
+        "Cocoa": null,
+        "Cotton": null,
+        "Coffee": null,
+        "Natural Gas": null,
+        "Sugar": null
+      },
+      "dom_prob": {
+        "Oil Brent": 0.0,
+        "Gold": 0.0,
+        "Silver": 0.0,
+        "Copper": 0.0,
+        "Aluminium": 0.0,
+        "Cocoa": 0.0,
+        "Cotton": 0.5771,
+        "Coffee": 0.7844,
+        "Natural Gas": 0.4573,
+        "Sugar": 0.5897
+      },
+      "market_open": {
+        "Oil Brent": true,
+        "Gold": true,
+        "Silver": true,
+        "Copper": true,
+        "Aluminium": true,
+        "Cocoa": true,
+        "Cotton": true,
+        "Coffee": true,
+        "Natural Gas": true,
+        "Sugar": true
+      },
+      "as_of": {
+        "Oil Brent": "2026-11-11",
+        "Gold": "2026-11-11",
+        "Silver": "2026-11-11",
+        "Copper": "2026-11-11",
+        "Aluminium": "2026-11-11",
+        "Cocoa": "2026-11-11",
+        "Cotton": "2026-11-11",
+        "Coffee": "2026-11-11",
+        "Natural Gas": "2026-11-11",
+        "Sugar": "2026-11-11"
       }
     }
   ]
