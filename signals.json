@@ -1,41 +1,41 @@
 {
-  "date": "2026-11-11",
-  "timestamp": "2026-11-11T16:42:24Z",
+  "date": "2026-11-16",
+  "timestamp": "2026-11-16T17:05:48Z",
   "signals": {
     "Oil Brent": 0.0,
-    "Gold": 0.0,
-    "Silver": 0.0,
+    "Gold": -0.7261,
+    "Silver": -0.7971,
     "Copper": 0.0,
     "Aluminium": 0.0,
     "Cocoa": 0.0,
-    "Cotton": 0.5771,
-    "Coffee": -0.7844,
-    "Natural Gas": 0.4573,
-    "Sugar": 0.5897
+    "Cotton": 0.5132,
+    "Coffee": -0.783,
+    "Natural Gas": 0.0,
+    "Sugar": 0.5322
   },
   "signals_low_risk": {
     "Oil Brent": 0.0,
-    "Gold": 0.0,
-    "Silver": 0.0,
+    "Gold": -0.5132,
+    "Silver": -0.5631,
     "Copper": 0.0,
     "Aluminium": 0.0,
     "Cocoa": 0.0,
-    "Cotton": 0.5771,
-    "Coffee": -0.7595,
-    "Natural Gas": 0.4573,
-    "Sugar": 0.4613
+    "Cotton": 0.4763,
+    "Coffee": -0.7243,
+    "Natural Gas": 0.0,
+    "Sugar": 0.4176
   },
   "as_of": {
-    "Oil Brent": "2026-11-11",
-    "Gold": "2026-11-11",
-    "Silver": "2026-11-11",
-    "Copper": "2026-11-11",
-    "Aluminium": "2026-11-11",
-    "Cocoa": "2026-11-11",
-    "Cotton": "2026-11-11",
-    "Coffee": "2026-11-11",
-    "Natural Gas": "2026-11-11",
-    "Sugar": "2026-11-11"
+    "Oil Brent": "2026-11-16",
+    "Gold": "2026-11-16",
+    "Silver": "2026-11-16",
+    "Copper": "2026-11-16",
+    "Aluminium": "2026-11-16",
+    "Cocoa": "2026-11-16",
+    "Cotton": "2026-11-16",
+    "Coffee": "2026-11-16",
+    "Natural Gas": "2026-11-16",
+    "Sugar": "2026-11-16"
   },
   "market_open": {
     "Oil Brent": true,
@@ -52,14 +52,14 @@
   "market_closed": [],
   "signals_experimental": {
     "Oil Brent": 0.0,
-    "Gold": 0.0,
-    "Silver": 0.0,
+    "Gold": -0.1485,
+    "Silver": -0.2814,
     "Copper": 0.0,
     "Aluminium": 0.0,
     "Cocoa": 0.0,
-    "Cotton": 0.1559,
-    "Coffee": -0.2538,
+    "Cotton": 0.0403,
+    "Coffee": -0.2508,
     "Natural Gas": 0.0,
-    "Sugar": 0.1771
+    "Sugar": 0.078
   }
 }
