@@ -21481,180 +21481,195 @@
       "date": "2026-11-02",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.0652,
-        "Silver": -0.2264,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.3173,
+        "Silver": -0.3678,
+        "Copper": -0.2625,
+        "Aluminium": -0.2688,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2897,
         "Natural Gas": 0.0,
-        "Sugar": 0.1254
+        "Sugar": 0.0922
       }
     },
     {
       "date": "2026-11-03",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.0642,
-        "Silver": -0.2285,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.3154,
+        "Silver": -0.3703,
+        "Copper": -0.27,
+        "Aluminium": -0.2673,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2921,
         "Natural Gas": 0.0,
-        "Sugar": 0.122
+        "Sugar": 0.0886
       }
     },
     {
       "date": "2026-11-04",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.0604,
-        "Silver": -0.2262,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.3085,
+        "Silver": -0.3675,
+        "Copper": -0.2663,
+        "Aluminium": -0.2638,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2797,
         "Natural Gas": 0.0,
-        "Sugar": 0.1234
+        "Sugar": 0.0902
       }
     },
     {
       "date": "2026-11-05",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1402,
-        "Silver": -0.2328,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4263,
+        "Silver": -0.3748,
+        "Copper": -0.2697,
+        "Aluminium": -0.2738,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2811,
         "Natural Gas": 0.0,
-        "Sugar": 0.1167
+        "Sugar": 0.083
       }
     },
     {
       "date": "2026-11-06",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1244,
-        "Silver": -0.2276,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4062,
+        "Silver": -0.3692,
+        "Copper": -0.264,
+        "Aluminium": -0.2645,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2784,
         "Natural Gas": 0.0,
-        "Sugar": 0.1103
+        "Sugar": 0.0763
       }
     },
     {
       "date": "2026-11-09",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1363,
-        "Silver": -0.2326,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4215,
+        "Silver": -0.3746,
+        "Copper": -0.2719,
+        "Aluminium": -0.2553,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2756,
         "Natural Gas": 0.0,
-        "Sugar": 0.1098
+        "Sugar": 0.0758
       }
     },
     {
       "date": "2026-11-10",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1679,
-        "Silver": -0.2383,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4589,
+        "Silver": -0.3808,
+        "Copper": -0.2869,
+        "Aluminium": -0.2495,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2528,
         "Natural Gas": 0.0,
-        "Sugar": 0.1124
+        "Sugar": 0.0785
       }
     },
     {
       "date": "2026-11-11",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1513,
-        "Silver": -0.2342,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4399,
+        "Silver": -0.3763,
+        "Copper": -0.2855,
+        "Aluminium": -0.2488,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2538,
         "Natural Gas": 0.0,
-        "Sugar": 0.1092
+        "Sugar": 0.0751
       }
     },
     {
       "date": "2026-11-12",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1552,
-        "Silver": -0.2324,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4443,
+        "Silver": -0.3744,
+        "Copper": -0.2853,
+        "Aluminium": -0.2413,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2502,
         "Natural Gas": 0.0,
-        "Sugar": 0.1075
+        "Sugar": 0.0733
       }
     },
     {
       "date": "2026-11-13",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1497,
-        "Silver": -0.237,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4378,
+        "Silver": -0.3794,
+        "Copper": -0.2903,
+        "Aluminium": -0.2377,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2399,
         "Natural Gas": 0.0,
-        "Sugar": 0.1093
+        "Sugar": 0.0751
       }
     },
     {
       "date": "2026-11-16",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1341,
-        "Silver": -0.2407,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4186,
+        "Silver": -0.3834,
+        "Copper": -0.2947,
+        "Aluminium": -0.2239,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.2508,
         "Natural Gas": 0.0,
-        "Sugar": 0.106
+        "Sugar": 0.0715
       }
     },
     {
       "date": "2026-11-17",
       "signal": {
         "Oil Brent": 0.0,
-        "Gold": -0.1372,
-        "Silver": -0.2423,
-        "Copper": 0.0,
-        "Aluminium": 0.0,
+        "Gold": -0.4226,
+        "Silver": -0.3851,
+        "Copper": -0.2944,
+        "Aluminium": -0.2162,
         "Cocoa": 0.0,
         "Cotton": 0.0,
         "Coffee": -0.249,
         "Natural Gas": 0.0,
-        "Sugar": 0.104
+        "Sugar": 0.0694
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "signal": {
+        "Oil Brent": 0.0,
+        "Gold": -0.473,
+        "Silver": -0.3891,
+        "Copper": -0.3031,
+        "Aluminium": -0.2087,
+        "Cocoa": 0.0,
+        "Cotton": 0.0,
+        "Coffee": -0.2362,
+        "Natural Gas": 0.0,
+        "Sugar": 0.07
       }
     }
   ]
