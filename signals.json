@@ -1,41 +1,41 @@
 {
-  "date": "2026-11-18",
-  "timestamp": "2026-11-18T16:42:36Z",
+  "date": "2026-11-19",
+  "timestamp": "2026-11-19T16:41:10Z",
   "signals": {
     "Oil Brent": 0.0,
-    "Gold": -0.8689,
-    "Silver": -0.8403,
-    "Copper": -0.8065,
-    "Aluminium": -0.7617,
+    "Gold": -0.9007,
+    "Silver": -0.8435,
+    "Copper": -0.8087,
+    "Aluminium": -0.7625,
     "Cocoa": 0.0,
-    "Cotton": 0.4912,
-    "Coffee": -0.7759,
-    "Natural Gas": 0.4787,
-    "Sugar": 0.5279
+    "Cotton": 0.4477,
+    "Coffee": -0.7769,
+    "Natural Gas": 0.484,
+    "Sugar": 0.3684
   },
   "signals_low_risk": {
     "Oil Brent": 0.0,
-    "Gold": -0.6019,
-    "Silver": -0.5916,
-    "Copper": -0.8036,
-    "Aluminium": -0.6626,
+    "Gold": -0.6303,
+    "Silver": -0.5938,
+    "Copper": -0.8076,
+    "Aluminium": -0.6497,
     "Cocoa": 0.0,
-    "Cotton": 0.4608,
-    "Coffee": -0.7156,
-    "Natural Gas": 0.4787,
-    "Sugar": 0.4153
+    "Cotton": 0.4207,
+    "Coffee": -0.7104,
+    "Natural Gas": 0.484,
+    "Sugar": 0.2804
   },
   "as_of": {
-    "Oil Brent": "2026-11-18",
-    "Gold": "2026-11-18",
-    "Silver": "2026-11-18",
-    "Copper": "2026-11-18",
-    "Aluminium": "2026-11-18",
-    "Cocoa": "2026-11-18",
-    "Cotton": "2026-11-18",
-    "Coffee": "2026-11-18",
-    "Natural Gas": "2026-11-18",
-    "Sugar": "2026-11-18"
+    "Oil Brent": "2026-11-19",
+    "Gold": "2026-11-19",
+    "Silver": "2026-11-19",
+    "Copper": "2026-11-19",
+    "Aluminium": "2026-11-19",
+    "Cocoa": "2026-11-19",
+    "Cotton": "2026-11-19",
+    "Coffee": "2026-11-19",
+    "Natural Gas": "2026-11-19",
+    "Sugar": "2026-11-19"
   },
   "market_open": {
     "Oil Brent": true,
@@ -52,14 +52,14 @@
   "market_closed": [],
   "signals_experimental": {
     "Oil Brent": 0.0,
-    "Gold": -0.473,
-    "Silver": -0.3891,
-    "Copper": -0.3031,
-    "Aluminium": -0.2087,
+    "Gold": -0.5785,
+    "Silver": -0.3981,
+    "Copper": -0.3083,
+    "Aluminium": -0.2102,
     "Cocoa": 0.0,
     "Cotton": 0.0,
-    "Coffee": -0.2362,
+    "Coffee": -0.2383,
     "Natural Gas": 0.0,
-    "Sugar": 0.07
+    "Sugar": 0.0
   }
 }
