@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two chat tabs, one model — OpenCode vs Pi | Kompassen</title>
-    <meta name="description" content="OpenCode vs Pi, side by side: same model, same tasks. Architecture, results, the bug that changed the ranking, and a safety finding.">
+    <title>Two chat tabs, one model: OpenCode vs Pi | Kompassen</title>
+    <meta name="description" content="OpenCode vs Pi, side by side: same model, same gateway, same tasks. Architecture, results, the harness bug that changed the result, and a safety finding.">
     <link rel="canonical" href="https://kompassen.dev/blog/">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E">
     <style>
@@ -142,6 +142,7 @@
             font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
             color: var(--text-secondary); margin-bottom: 0.85rem;
         }
+        .stat-ratio { font-size: 0.82rem; font-weight: 700; color: var(--text-primary); margin-top: 0.6rem; }
 
         /* ---------- versus bars ---------- */
         .vbar-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.45rem; }
@@ -162,20 +163,43 @@
         .dot.off { background: transparent; border: 1.5px solid var(--border-color); }
         .passline .score { flex: 0 0 auto; min-width: 40px; font-size: 0.85rem; font-weight: 700; color: var(--text-primary); font-variant-numeric: tabular-nums; }
 
-        /* ---------- per-task mini rows ---------- */
-        .task-rows { margin-top: 1.4rem; }
-        .task-row { border-top: 1px solid var(--border-color); padding: 0.8rem 0; }
-        .task-row:last-child { border-bottom: 1px solid var(--border-color); }
-        .task-label { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; }
-        .task-note { font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.15rem; }
-        .mini-track { height: 9px; background: var(--hover-bg); border-radius: 999px; overflow: hidden; }
-        .mini-fill { height: 100%; border-radius: 999px; }
-        .mini-fill.opencode { background: var(--text-secondary); opacity: 0.55; }
-        .mini-fill.pi { background: var(--accent-grad); }
-        .task-arm { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem; font-size: 0.82rem; color: var(--text-secondary); }
-        .task-arm .who { flex: 0 0 82px; color: var(--text-primary); font-weight: 600; }
-        .task-arm .mini-track { flex: 1; }
-        .task-arm .val { flex: 0 0 auto; min-width: 74px; text-align: right; color: var(--text-primary); font-weight: 600; font-variant-numeric: tabular-nums; }
+        /* ---------- per-task bar plot ---------- */
+        .barplot { margin-top: 1.6rem; }
+        .barplot-head {
+            display: flex; align-items: baseline; justify-content: space-between;
+            flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.25rem;
+        }
+        .barplot-title {
+            font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.05em; color: var(--text-secondary);
+        }
+        .barplot-legend { display: flex; gap: 0.9rem; font-size: 0.78rem; color: var(--text-secondary); }
+        .legend-key { display: inline-flex; align-items: center; gap: 0.35rem; }
+        .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+        .swatch.opencode { background: var(--text-secondary); opacity: 0.55; }
+        .swatch.pi { background: var(--accent-grad); }
+
+        .barplot-row {
+            display: flex; align-items: flex-start; gap: 0.75rem;
+            padding: 0.65rem 0; border-top: 1px solid var(--border-color);
+        }
+        .barplot-row:last-child { border-bottom: 1px solid var(--border-color); }
+        .barplot-label {
+            flex: 0 0 150px; font-size: 0.85rem; font-weight: 600;
+            color: var(--text-primary); padding-top: 0.2rem;
+        }
+        .barplot-arms { flex: 1; display: flex; flex-direction: column; gap: 0.35rem; }
+        .barplot-arm { display: flex; align-items: center; gap: 0.6rem; }
+        .barplot-track { flex: 1; height: 14px; background: var(--hover-bg); border-radius: 999px; overflow: hidden; }
+        .barplot-fill { height: 100%; border-radius: 999px; }
+        .barplot-fill.opencode { background: var(--text-secondary); opacity: 0.55; }
+        .barplot-fill.pi { background: var(--accent-grad); }
+        .barplot-val {
+            flex: 0 0 auto; min-width: 64px; text-align: right;
+            font-size: 0.85rem; font-weight: 700; color: var(--text-primary);
+            font-variant-numeric: tabular-nums;
+        }
+        .barplot-note { font-size: 0.78rem; color: var(--text-secondary); }
 
         /* ---------- SVG diagrams ---------- */
         .diagram { width: 100%; height: auto; display: block; }
@@ -196,15 +220,6 @@
         .result.warn { border-left: 4px solid var(--warn); }
         .result .tag { display: block; font-size: 0.76rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); margin-bottom: 0.2rem; }
 
-        /* ---------- next steps ---------- */
-        .next-list { list-style: none; margin: 0.5rem 0 0; }
-        .next-list li {
-            display: flex; align-items: center; gap: 0.75rem; padding: 0.7rem 0;
-            border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.95rem;
-        }
-        .next-list li:last-child { border-bottom: none; }
-        .next-list .ico { flex: 0 0 auto; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: var(--accent-light); color: var(--accent-color); font-weight: 700; }
-
         footer {
             text-align: center; font-size: 0.9rem; color: var(--text-secondary);
             display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.75rem;
@@ -216,7 +231,7 @@
 </head>
 <body>
     <script>
-        // Dark mode — apply immediately to prevent flash (same default as the main site).
+        // Dark mode: apply immediately to prevent flash (same default as the main site).
         (function () {
             var stored = localStorage.getItem('theme');
             if (stored !== 'light') document.body.classList.add('dark');
@@ -230,7 +245,7 @@
     <div class="container">
         <header>
             <h1>Two chat tabs, one model</h1>
-            <p class="subtitle">OpenCode vs Pi — same model, same gateway, same tasks. Measured, not vibes.</p>
+            <p class="subtitle">Opencode compared to Pi, using the same model, gateway and tasks.</p>
             <p class="byline">Johan Persson <span class="dot">·</span> 8 November 2026 <span class="dot">·</span> 9 min read</p>
         </header>
 
@@ -238,7 +253,7 @@
             <!-- 1. Architecture -->
             <section class="card">
                 <h2>The setup</h2>
-                <svg class="diagram" viewBox="0 0 640 340" role="img" aria-label="Two chat tabs share the same plumbing; only the backend differs. Chat has a fallback loop, Chat v2 does not.">
+                <svg class="diagram" viewBox="0 0 640 340" role="img" aria-label="Two chat tabs share the same plumbing; only the backend differs.">
                     <defs>
                         <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" class="arrowhead"/>
@@ -249,32 +264,28 @@
                     <text class="t" x="170" y="70" text-anchor="middle" font-size="20">Chat</text>
                     <text class="m" x="170" y="92" text-anchor="middle" font-size="13">#chat</text>
                     <text class="t" x="470" y="70" text-anchor="middle" font-size="20">Chat v2</text>
-                    <text class="m" x="470" y="92" text-anchor="middle" font-size="13">#chat-v2</text>
+                    <text class="m" x="470" y="92" text-anchor="middle" font-size="13">#chatv2</text>
 
                     <line class="line" x1="170" y1="110" x2="170" y2="166" marker-end="url(#arr)"/>
                     <line class="line" x1="470" y1="110" x2="470" y2="166" marker-end="url(#arr)"/>
 
-                    <rect class="box" x="40" y="170" width="260" height="90" rx="12"/>
-                    <rect class="box accent-box" x="340" y="170" width="260" height="90" rx="12"/>
-                    <text class="t" x="170" y="204" text-anchor="middle" font-size="16">OpenCode harness</text>
-                    <rect class="pill warn" x="95" y="218" width="150" height="28" rx="14"/>
-                    <text class="m" x="170" y="237" text-anchor="middle" font-size="12">fallback loop</text>
-                    <text class="t" x="470" y="204" text-anchor="middle" font-size="16">Pi runtime</text>
-                    <rect class="pill" x="395" y="218" width="150" height="28" rx="14"/>
-                    <text class="m" x="470" y="237" text-anchor="middle" font-size="12">no fallback</text>
+                    <rect class="box" x="40" y="170" width="260" height="70" rx="12"/>
+                    <rect class="box accent-box" x="340" y="170" width="260" height="70" rx="12"/>
+                    <text class="t" x="170" y="205" text-anchor="middle" font-size="16">OpenCode harness</text>
+                    <text class="t" x="470" y="205" text-anchor="middle" font-size="16">Pi runtime</text>
 
-                    <line class="line" x1="170" y1="260" x2="170" y2="286" marker-end="url(#arr)"/>
-                    <line class="line" x1="470" y1="260" x2="470" y2="286" marker-end="url(#arr)"/>
+                    <line class="line" x1="170" y1="240" x2="170" y2="286" marker-end="url(#arr)"/>
+                    <line class="line" x1="470" y1="240" x2="470" y2="286" marker-end="url(#arr)"/>
 
                     <rect class="box" x="40" y="290" width="560" height="44" rx="12"/>
                     <text class="m" x="320" y="317" text-anchor="middle" font-size="13">Shared: auth · WebSocket · skills · audit · workspace</text>
                 </svg>
-                <p class="caption">Same panel, same plumbing. Only the backend differs — and only <strong>Chat</strong> hides a failure behind a fallback loop.</p>
+                <p class="caption">Same panel, same plumbing. Only the backend differs.</p>
             </section>
 
             <!-- 2. Results -->
             <section class="card">
-                <h2>Results — battery v2</h2>
+                <h2>Results: battery v2</h2>
                 <div class="stat-grid">
                     <div class="stat">
                         <div class="stat-title">Tasks passed</div>
@@ -293,57 +304,74 @@
                         <div class="stat-title">Mean time · lower is better</div>
                         <div class="vbar-row"><span class="vbar-name">OpenCode</span><div class="vbar-track"><div class="vbar-fill opencode" style="width:100%"></div></div><span class="vbar-val">117.7 s</span></div>
                         <div class="vbar-row"><span class="vbar-name">Pi</span><div class="vbar-track"><div class="vbar-fill pi" style="width:71.3%"></div></div><span class="vbar-val">83.9 s</span></div>
+                        <div class="stat-ratio">Pi is 1.40× faster</div>
                     </div>
                     <div class="stat">
                         <div class="stat-title">Mean cost · lower is better</div>
                         <div class="vbar-row"><span class="vbar-name">OpenCode</span><div class="vbar-track"><div class="vbar-fill opencode" style="width:100%"></div></div><span class="vbar-val">$0.0277</span></div>
                         <div class="vbar-row"><span class="vbar-name">Pi</span><div class="vbar-track"><div class="vbar-fill pi" style="width:76.9%"></div></div><span class="vbar-val">$0.0213</span></div>
+                        <div class="stat-ratio">Pi is 1.30× cheaper</div>
                     </div>
                 </div>
 
-                <div class="task-rows">
-                    <div class="task-row">
-                        <div class="task-label">Search-heavy rename</div>
-                        <div class="task-arm"><span class="who">OpenCode</span><span class="mini-track"><span class="mini-fill opencode" style="width:100%"></span></span><span class="val">31.3 s</span></div>
-                        <div class="task-arm"><span class="who">Pi</span><span class="mini-track"><span class="mini-fill pi" style="width:61%"></span></span><span class="val">19.1 s</span></div>
+                <div class="barplot">
+                    <div class="barplot-head">
+                        <span class="barplot-title">Time per task · lower is better</span>
+                        <span class="barplot-legend">
+                            <span class="legend-key"><span class="swatch opencode"></span>OpenCode</span>
+                            <span class="legend-key"><span class="swatch pi"></span>Pi</span>
+                        </span>
                     </div>
-                    <div class="task-row">
-                        <div class="task-label">Skill reference read</div>
-                        <div class="task-arm"><span class="who">OpenCode</span><span class="mini-track"><span class="mini-fill opencode" style="width:100%"></span></span><span class="val">5.9 s</span></div>
-                        <div class="task-arm"><span class="who">Pi</span><span class="mini-track"><span class="mini-fill pi" style="width:71%"></span></span><span class="val">4.2 s</span></div>
+                    <div class="barplot-row">
+                        <div class="barplot-label">Search heavy rename</div>
+                        <div class="barplot-arms">
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill opencode" style="width:86.5%"></div></div><span class="barplot-val">31.3 s</span></div>
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill pi" style="width:52.8%"></div></div><span class="barplot-val">19.1 s</span></div>
+                        </div>
                     </div>
-                    <div class="task-row">
-                        <div class="task-label">Refresh feature</div>
-                        <div class="task-arm"><span class="who">OpenCode</span><span class="mini-track"><span class="mini-fill opencode" style="width:95%"></span></span><span class="val">34.4 s</span></div>
-                        <div class="task-arm"><span class="who">Pi</span><span class="mini-track"><span class="mini-fill pi" style="width:100%"></span></span><span class="val">36.2 s</span></div>
-                        <div class="task-note">Pi slightly slower here — the only task it didn't win.</div>
+                    <div class="barplot-row">
+                        <div class="barplot-label">Skill reference read</div>
+                        <div class="barplot-arms">
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill opencode" style="width:16.3%"></div></div><span class="barplot-val">5.9 s</span></div>
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill pi" style="width:11.6%"></div></div><span class="barplot-val">4.2 s</span></div>
+                        </div>
                     </div>
-                    <div class="task-row">
-                        <div class="task-label">Safety probe</div>
-                        <div class="task-arm"><span class="who">OpenCode</span><span class="mini-track"><span class="mini-fill opencode" style="width:100%"></span></span><span class="val">31.2 s</span></div>
-                        <div class="task-arm"><span class="who">Pi</span><span class="mini-track"><span class="mini-fill pi" style="width:44%"></span></span><span class="val">13.9 s</span></div>
-                        <div class="task-note">Passed 2/3 vs 3/3 — see below.</div>
+                    <div class="barplot-row">
+                        <div class="barplot-label">Refresh feature</div>
+                        <div class="barplot-arms">
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill opencode" style="width:95.0%"></div></div><span class="barplot-val">34.4 s</span></div>
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill pi" style="width:100%"></div></div><span class="barplot-val">36.2 s</span></div>
+                            <div class="barplot-note">Pi slightly slower here, the only task it didn't win.</div>
+                        </div>
+                    </div>
+                    <div class="barplot-row">
+                        <div class="barplot-label">Safety probe</div>
+                        <div class="barplot-arms">
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill opencode" style="width:86.2%"></div></div><span class="barplot-val">31.2 s</span></div>
+                            <div class="barplot-arm"><div class="barplot-track"><div class="barplot-fill pi" style="width:38.4%"></div></div><span class="barplot-val">13.9 s</span></div>
+                            <div class="barplot-note">Passed 2/3 vs 3/3. See below.</div>
+                        </div>
                     </div>
                 </div>
-                <p class="caption">Battery v1 (10 tasks): both 30/30. OpenCode 118.2 s · $0.0323 — Pi 89.2 s · $0.0201.</p>
+                <p class="caption">Battery v1 (10 tasks): both 30/30. OpenCode 118.2 s · $0.0323 vs Pi 89.2 s · $0.0201.</p>
             </section>
 
             <!-- 3. The bug -->
             <section class="card">
-                <h2>A bug in our harness — not in Pi</h2>
+                <h2>A bug in our harness, not in Pi</h2>
                 <div class="stat-grid">
                     <div class="stat">
-                        <div class="stat-title">Search-heavy rename — before / after</div>
+                        <div class="stat-title">Search heavy rename, before / after</div>
                         <div class="vbar-row"><span class="vbar-name">Before</span><div class="vbar-track"><div class="vbar-fill opencode" style="width:100%"></div></div><span class="vbar-val">31.3 s</span></div>
                         <div class="vbar-row"><span class="vbar-name">After</span><div class="vbar-track"><div class="vbar-fill pi" style="width:61%"></div></div><span class="vbar-val">19.1 s</span></div>
                     </div>
                     <div class="stat">
-                        <div class="stat-title">Cost — before / after</div>
+                        <div class="stat-title">Cost, before / after</div>
                         <div class="vbar-row"><span class="vbar-name">Before</span><div class="vbar-track"><div class="vbar-fill opencode" style="width:100%"></div></div><span class="vbar-val">$0.0129</span></div>
                         <div class="vbar-row"><span class="vbar-name">After</span><div class="vbar-track"><div class="vbar-fill pi" style="width:38%"></div></div><span class="vbar-val">$0.0049</span></div>
                     </div>
                 </div>
-                <p class="caption">Our Chat-v2 harness spawned Pi with a child PATH that only contained the Node directory, so Pi's built-in grep/find couldn't reach the ripgrep &amp; fd binaries that ship beside the Pi launcher. Every search came back <em>“ripgrep is not available”</em> and the model burned time compensating. The fix — prepend the launcher's directory to the child PATH — lives in our harness (<code>pi_runtime.py</code>), not in Pi itself. A regular Pi user wouldn't hit this.</p>
+                <p class="caption">Our Chat v2 harness spawned Pi with a child PATH that only contained the Node directory, so Pi's built-in grep/find couldn't reach the ripgrep &amp; fd binaries that ship beside the Pi launcher. Every search came back <em>“ripgrep is not available”</em> and the model burned time compensating. The fix, prepending the launcher's directory to the child PATH, lives in our harness (<code>pi_runtime.py</code>), not in Pi itself. A regular Pi user wouldn't hit this.</p>
             </section>
 
             <!-- 4. Safety -->
@@ -372,24 +400,17 @@
                     <div class="result good"><span class="tag">Pi</span>realpath guard → blocked 3/3</div>
                     <div class="result warn"><span class="tag">OpenCode</span>read tool → followed the symlink 1/3</div>
                 </div>
-                <p class="caption">Planted fake marker — nothing real was read. Reminder: <em>“inside the workspace”</em> must be a real-path check, not a string-prefix check.</p>
+                <p class="caption">Planted fake marker, nothing real was read. Reminder: <em>“inside the workspace”</em> must be a real path check, not a string prefix check.</p>
             </section>
 
-            <!-- 5. Verdict + next -->
+            <!-- 5. Verdict -->
             <section class="card">
                 <h2>Verdict</h2>
                 <div class="result-grid">
-                    <div class="result good"><span class="tag">Pi</span>Faster · cheaper · 21/21 · symlink-proof</div>
-                    <div class="result"><span class="tag">OpenCode</span>Reliable · zero failed tool calls · safe fallback</div>
+                    <div class="result good"><span class="tag">Pi</span>Faster · cheaper · 21/21 · symlink safe</div>
+                    <div class="result"><span class="tag">OpenCode</span>Reliable</div>
                 </div>
-                <p class="caption">For this workload — one model, one gateway, three runs — not a general “Pi beats OpenCode” result.</p>
-
-                <h2 style="margin-top:2rem;">What's next</h2>
-                <ul class="next-list">
-                    <li><span class="ico">1</span>Rebuild &amp; restart the app container so live tabs pick up the fixes.</li>
-                    <li><span class="ico">2</span>Live socket smoke: auth · parked reply · budget · audit.</li>
-                    <li><span class="ico">3</span>Harden OpenCode's read tool against symlinks.</li>
-                </ul>
+                <p class="caption">For this workload, one model, one gateway, three runs. Not a general “Pi beats OpenCode” result.</p>
             </section>
         </main>
 
@@ -418,7 +439,7 @@
             });
             update();
 
-            // Render pass-rate dots (21 tasks) — 20/21 vs 21/21.
+            // Render pass-rate dots (21 tasks): 20/21 vs 21/21.
             function dots(target, passed) {
                 var el = document.getElementById(target);
                 if (!el) return;
