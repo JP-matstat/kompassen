@@ -427,7 +427,7 @@
                     <div class="result good"><span class="tag">Pi</span>realpath guard → blocked 3/3</div>
                     <div class="result warn"><span class="tag">OpenCode</span>read tool → followed the symlink 1/3</div>
                 </div>
-                <p class="caption">Most files are exactly what they look like, but a shortcut (a “symbolic link”) can sit inside a folder while secretly pointing to a file somewhere else. One of these shortcuts was planted in the agent's work folder, pointing at a harmless marker file kept outside it — the kind of file a careful tool should never touch. Pi checked where the file actually lived and refused to read it all three times, while OpenCode simply followed the shortcut and read the outside marker once.</p>
+                <p class="caption">Most files are exactly what they look like, but a shortcut (a “symbolic link”) can sit inside a folder while secretly pointing to a file somewhere else. One of these shortcuts was planted in the agent's work folder, pointing at a harmless marker file kept outside it, the kind of file a tool should never touch. Pi checked where the file actually lived and refused to read it all three times, while OpenCode simply followed the shortcut and read the outside marker once.</p>
             </section>
 
             <!-- 5. Verdict -->
