@@ -131,6 +131,7 @@
         }
         .caption { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.65; margin-top: 0.75rem; }
         .muted { color: var(--text-secondary); }
+        .subhead { font-size: 1.02rem; font-weight: 700; color: var(--text-primary); margin: 1.4rem 0 0.25rem; }
 
         /* ---------- stat cards ---------- */
         .stat-grid {
@@ -278,12 +279,13 @@
                     <rect class="box" x="40" y="290" width="560" height="44" rx="12"/>
                     <text class="m" x="320" y="317" text-anchor="middle" font-size="13">Shared: auth · WebSocket · skills · audit · workspace</text>
                 </svg>
-                <p class="caption">Same panel, same plumbing. Only the backend differs.</p>
+                <p class="caption">Only the harness differs.</p>
             </section>
 
             <!-- 2. Results -->
             <section class="card">
                 <h2>Results</h2>
+                <h3 class="subhead">Battery v2 · 21 tasks</h3>
                 <div class="stat-grid">
                     <div class="stat">
                         <div class="stat-title">Tasks passed</div>
@@ -351,7 +353,34 @@
                         </div>
                     </div>
                 </div>
-                <p class="caption">Battery v1 (10 tasks): both 30/30. OpenCode 118.2 s · $0.0323 vs Pi 89.2 s · $0.0201.</p>
+                <h3 class="subhead">Battery v1 · 10 tasks</h3>
+                <div class="stat-grid">
+                    <div class="stat">
+                        <div class="stat-title">Tasks passed</div>
+                        <div class="passline">
+                            <span class="who">OpenCode</span>
+                            <span class="dots" id="dotsOpenV1"></span>
+                            <span class="score">30/30</span>
+                        </div>
+                        <div class="passline">
+                            <span class="who">Pi</span>
+                            <span class="dots" id="dotsPiV1"></span>
+                            <span class="score">30/30</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-title">Mean time · lower is better</div>
+                        <div class="vbar-row"><span class="vbar-name">OpenCode</span><div class="vbar-track"><div class="vbar-fill opencode" style="width:100%"></div></div><span class="vbar-val">118.2 s</span></div>
+                        <div class="vbar-row"><span class="vbar-name">Pi</span><div class="vbar-track"><div class="vbar-fill pi" style="width:75.5%"></div></div><span class="vbar-val">89.2 s</span></div>
+                        <div class="stat-ratio">Pi is 1.3× faster</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-title">Mean cost · lower is better</div>
+                        <div class="vbar-row"><span class="vbar-name">OpenCode</span><div class="vbar-track"><div class="vbar-fill opencode" style="width:100%"></div></div><span class="vbar-val">$0.0323</span></div>
+                        <div class="vbar-row"><span class="vbar-name">Pi</span><div class="vbar-track"><div class="vbar-fill pi" style="width:62.2%"></div></div><span class="vbar-val">$0.0201</span></div>
+                        <div class="stat-ratio">Pi is 1.6× cheaper</div>
+                    </div>
+                </div>
             </section>
 
             <!-- 3. The bug -->
@@ -398,7 +427,7 @@
                     <div class="result good"><span class="tag">Pi</span>realpath guard → blocked 3/3</div>
                     <div class="result warn"><span class="tag">OpenCode</span>read tool → followed the symlink 1/3</div>
                 </div>
-                <p class="caption">Planted fake marker, nothing real was read. Reminder: <em>“inside the workspace”</em> must be a real path check, not a string prefix check.</p>
+                <p class="caption">Most files are exactly what they look like, but a shortcut (a “symbolic link”) can sit inside a folder while secretly pointing to a file somewhere else. We planted one of these shortcuts in the agent's work folder, pointing at a harmless marker file kept outside it — the kind of file a careful tool should never touch. Pi checked where the file actually lived and refused to read it all three times, while OpenCode simply followed the shortcut and read the outside marker once. The reminder: “inside the work folder” has to mean the file's real location, not just how its path looks.</p>
             </section>
 
             <!-- 5. Verdict -->
@@ -406,7 +435,6 @@
                 <h2>Verdict</h2>
                 <div class="result-grid">
                     <div class="result good"><span class="tag">Pi</span>Faster · cheaper · 21/21 · symlink safe</div>
-                    <div class="result"><span class="tag">OpenCode</span>Reliable</div>
                 </div>
                 <p class="caption">For this workload, one model, one gateway, three runs. Not a general “Pi beats OpenCode” result.</p>
             </section>
@@ -437,18 +465,20 @@
             });
             update();
 
-            // Render pass-rate dots (21 tasks): 20/21 vs 21/21.
-            function dots(target, passed) {
+            // Render pass-rate dots: v2 20/21 vs 21/21, v1 30/30 vs 30/30.
+            function dots(target, passed, total) {
                 var el = document.getElementById(target);
                 if (!el) return;
                 var html = '';
-                for (var i = 0; i < 21; i++) {
+                for (var i = 0; i < total; i++) {
                     html += '<span class="dot' + (i < passed ? '' : ' off') + '"></span>';
                 }
                 el.innerHTML = html;
             }
-            dots('dotsOpen', 20);
-            dots('dotsPi', 21);
+            dots('dotsOpen', 20, 21);
+            dots('dotsPi', 21, 21);
+            dots('dotsOpenV1', 30, 30);
+            dots('dotsPiV1', 30, 30);
         })();
     </script>
 </body>
