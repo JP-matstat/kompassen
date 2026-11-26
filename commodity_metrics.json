@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-25",
-  "timestamp": "2026-11-25T16:42:56Z",
+  "date": "2026-11-26",
+  "timestamp": "2026-11-26T16:39:47Z",
   "commodities": [
     {
       "key": "oil_brent",
@@ -61,7 +61,7 @@
       "label": "Silver",
       "in_market_pct": 0,
       "trades": 66,
-      "avg_hold": 87.3,
+      "avg_hold": 87.4,
       "std_hold": 94.4,
       "trades_sym": 15,
       "avg_hold_sym": 97.0,
@@ -115,7 +115,7 @@
       "label": "Aluminium",
       "in_market_pct": 0,
       "trades": 21,
-      "avg_hold": 143.1,
+      "avg_hold": 143.2,
       "std_hold": 196.5,
       "trades_sym": 15,
       "avg_hold_sym": 100.3,
@@ -224,7 +224,7 @@
       "in_market_pct": 0,
       "trades": 68,
       "avg_hold": 94.0,
-      "std_hold": 99.2,
+      "std_hold": 99.1,
       "trades_sym": 16,
       "avg_hold_sym": 95.8,
       "std_hold_sym": 92.3,

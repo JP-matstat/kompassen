@@ -468323,7 +468323,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.8008,
-        "Natural Gas": 0.776,
+        "Natural Gas": 0.7581,
         "Sugar": 0.5505
       },
       "predictions_low_risk": {
@@ -468335,7 +468335,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.6919,
-        "Natural Gas": 0.776,
+        "Natural Gas": 0.7581,
         "Sugar": 0.4422
       },
       "actuals": {
@@ -468359,7 +468359,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.8008,
-        "Natural Gas": 0.776,
+        "Natural Gas": 0.7581,
         "Sugar": 0.5505
       },
       "market_open": {
@@ -468398,7 +468398,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.8018,
-        "Natural Gas": 0.7758,
+        "Natural Gas": 0.7578,
         "Sugar": 0.5485
       },
       "predictions_low_risk": {
@@ -468410,7 +468410,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7055,
-        "Natural Gas": 0.7758,
+        "Natural Gas": 0.7578,
         "Sugar": 0.429
       },
       "actuals": {
@@ -468434,7 +468434,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.8018,
-        "Natural Gas": 0.7758,
+        "Natural Gas": 0.7578,
         "Sugar": 0.5485
       },
       "market_open": {
@@ -468473,7 +468473,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7963,
-        "Natural Gas": 0.7725,
+        "Natural Gas": 0.7543,
         "Sugar": 0.5493
       },
       "predictions_low_risk": {
@@ -468485,7 +468485,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7176,
-        "Natural Gas": 0.7725,
+        "Natural Gas": 0.7543,
         "Sugar": 0.4333
       },
       "actuals": {
@@ -468509,7 +468509,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.7963,
-        "Natural Gas": 0.7725,
+        "Natural Gas": 0.7543,
         "Sugar": 0.5493
       },
       "market_open": {
@@ -468548,7 +468548,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7969,
-        "Natural Gas": 0.772,
+        "Natural Gas": 0.7538,
         "Sugar": 0.5454
       },
       "predictions_low_risk": {
@@ -468560,7 +468560,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7581,
-        "Natural Gas": 0.772,
+        "Natural Gas": 0.7538,
         "Sugar": 0.4405
       },
       "actuals": {
@@ -468584,7 +468584,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.7969,
-        "Natural Gas": 0.772,
+        "Natural Gas": 0.7538,
         "Sugar": 0.5454
       },
       "market_open": {
@@ -468623,7 +468623,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7957,
-        "Natural Gas": 0.767,
+        "Natural Gas": 0.7485,
         "Sugar": 0.5417
       },
       "predictions_low_risk": {
@@ -468635,7 +468635,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7569,
-        "Natural Gas": 0.767,
+        "Natural Gas": 0.7485,
         "Sugar": 0.4292
       },
       "actuals": {
@@ -468659,7 +468659,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.7957,
-        "Natural Gas": 0.767,
+        "Natural Gas": 0.7485,
         "Sugar": 0.5417
       },
       "market_open": {
@@ -468698,7 +468698,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7945,
-        "Natural Gas": 0.7756,
+        "Natural Gas": 0.7576,
         "Sugar": 0.5415
       },
       "predictions_low_risk": {
@@ -468710,7 +468710,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7832,
-        "Natural Gas": 0.7756,
+        "Natural Gas": 0.7576,
         "Sugar": 0.4286
       },
       "actuals": {
@@ -468734,7 +468734,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.7945,
-        "Natural Gas": 0.7756,
+        "Natural Gas": 0.7576,
         "Sugar": 0.5415
       },
       "market_open": {
@@ -468773,7 +468773,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7839,
-        "Natural Gas": 0.7731,
+        "Natural Gas": 0.755,
         "Sugar": 0.5429
       },
       "predictions_low_risk": {
@@ -468785,7 +468785,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7584,
-        "Natural Gas": 0.7731,
+        "Natural Gas": 0.755,
         "Sugar": 0.4276
       },
       "actuals": {
@@ -468809,7 +468809,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.7839,
-        "Natural Gas": 0.7731,
+        "Natural Gas": 0.755,
         "Sugar": 0.5429
       },
       "market_open": {
@@ -468848,7 +468848,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7844,
-        "Natural Gas": 0.764,
+        "Natural Gas": 0.7454,
         "Sugar": 0.541
       },
       "predictions_low_risk": {
@@ -468860,7 +468860,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": -0.7595,
-        "Natural Gas": 0.764,
+        "Natural Gas": 0.7454,
         "Sugar": 0.4233
       },
       "actuals": {
@@ -468884,7 +468884,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5178,
         "Coffee": 0.7844,
-        "Natural Gas": 0.764,
+        "Natural Gas": 0.7454,
         "Sugar": 0.541
       },
       "market_open": {
@@ -468923,7 +468923,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7827,
-        "Natural Gas": 0.7662,
+        "Natural Gas": 0.7478,
         "Sugar": 0.5401
       },
       "predictions_low_risk": {
@@ -468935,7 +468935,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7225,
-        "Natural Gas": 0.7662,
+        "Natural Gas": 0.7478,
         "Sugar": 0.4208
       },
       "actuals": {
@@ -468959,7 +468959,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7827,
-        "Natural Gas": 0.7662,
+        "Natural Gas": 0.7478,
         "Sugar": 0.5401
       },
       "market_open": {
@@ -468998,7 +468998,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7777,
-        "Natural Gas": 0.7698,
+        "Natural Gas": 0.7515,
         "Sugar": 0.5411
       },
       "predictions_low_risk": {
@@ -469010,7 +469010,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4934,
         "Coffee": -0.7185,
-        "Natural Gas": 0.7698,
+        "Natural Gas": 0.7515,
         "Sugar": 0.4209
       },
       "actuals": {
@@ -469034,7 +469034,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7777,
-        "Natural Gas": 0.7698,
+        "Natural Gas": 0.7515,
         "Sugar": 0.5411
       },
       "market_open": {
@@ -469073,7 +469073,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.783,
-        "Natural Gas": 0.7749,
+        "Natural Gas": 0.7568,
         "Sugar": 0.5392
       },
       "predictions_low_risk": {
@@ -469085,7 +469085,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4883,
         "Coffee": -0.7243,
-        "Natural Gas": 0.7749,
+        "Natural Gas": 0.7568,
         "Sugar": 0.4231
       },
       "actuals": {
@@ -469109,7 +469109,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.783,
-        "Natural Gas": 0.7749,
+        "Natural Gas": 0.7568,
         "Sugar": 0.5392
       },
       "market_open": {
@@ -469148,7 +469148,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7821,
-        "Natural Gas": 0.7682,
+        "Natural Gas": 0.7498,
         "Sugar": 0.5381
       },
       "predictions_low_risk": {
@@ -469160,7 +469160,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4897,
         "Coffee": -0.723,
-        "Natural Gas": 0.7682,
+        "Natural Gas": 0.7498,
         "Sugar": 0.423
       },
       "actuals": {
@@ -469184,7 +469184,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7821,
-        "Natural Gas": 0.7682,
+        "Natural Gas": 0.7498,
         "Sugar": 0.5381
       },
       "market_open": {
@@ -469223,7 +469223,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7759,
-        "Natural Gas": 0.7648,
+        "Natural Gas": 0.7463,
         "Sugar": 0.5384
       },
       "predictions_low_risk": {
@@ -469235,7 +469235,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4936,
         "Coffee": -0.7156,
-        "Natural Gas": 0.7648,
+        "Natural Gas": 0.7463,
         "Sugar": 0.4236
       },
       "actuals": {
@@ -469259,7 +469259,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7759,
-        "Natural Gas": 0.7648,
+        "Natural Gas": 0.7463,
         "Sugar": 0.5384
       },
       "market_open": {
@@ -469298,7 +469298,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7769,
-        "Natural Gas": 0.7678,
+        "Natural Gas": 0.7494,
         "Sugar": 0.5364
       },
       "predictions_low_risk": {
@@ -469310,7 +469310,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4944,
         "Coffee": -0.7104,
-        "Natural Gas": 0.7678,
+        "Natural Gas": 0.7494,
         "Sugar": 0.4083
       },
       "actuals": {
@@ -469334,7 +469334,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7769,
-        "Natural Gas": 0.7678,
+        "Natural Gas": 0.7494,
         "Sugar": 0.5364
       },
       "market_open": {
@@ -469373,7 +469373,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7737,
-        "Natural Gas": 0.7844,
+        "Natural Gas": 0.7669,
         "Sugar": 0.5339
       },
       "predictions_low_risk": {
@@ -469385,7 +469385,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4938,
         "Coffee": -0.7207,
-        "Natural Gas": 0.7844,
+        "Natural Gas": 0.7669,
         "Sugar": 0.4059
       },
       "actuals": {
@@ -469409,7 +469409,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7737,
-        "Natural Gas": 0.7844,
+        "Natural Gas": 0.7669,
         "Sugar": 0.5339
       },
       "market_open": {
@@ -469448,7 +469448,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7703,
-        "Natural Gas": 0.7884,
+        "Natural Gas": 0.7712,
         "Sugar": 0.5358
       },
       "predictions_low_risk": {
@@ -469460,7 +469460,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4914,
         "Coffee": -0.7138,
-        "Natural Gas": 0.7884,
+        "Natural Gas": 0.7712,
         "Sugar": 0.3981
       },
       "actuals": {
@@ -469484,7 +469484,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7703,
-        "Natural Gas": 0.7884,
+        "Natural Gas": 0.7712,
         "Sugar": 0.5358
       },
       "market_open": {
@@ -469523,7 +469523,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.761,
-        "Natural Gas": 0.7949,
+        "Natural Gas": 0.778,
         "Sugar": 0.5455
       },
       "predictions_low_risk": {
@@ -469535,7 +469535,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.4925,
         "Coffee": -0.7219,
-        "Natural Gas": 0.7949,
+        "Natural Gas": 0.778,
         "Sugar": 0.4054
       },
       "actuals": {
@@ -469559,7 +469559,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.761,
-        "Natural Gas": 0.7949,
+        "Natural Gas": 0.778,
         "Sugar": 0.5455
       },
       "market_open": {
@@ -469598,7 +469598,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": -0.7648,
-        "Natural Gas": 0.7922,
+        "Natural Gas": 0.7752,
         "Sugar": 0.5521
       },
       "predictions_low_risk": {
@@ -469610,19 +469610,19 @@
         "Cocoa": 0.0,
         "Cotton": 0.4946,
         "Coffee": -0.7275,
-        "Natural Gas": 0.7922,
+        "Natural Gas": 0.7752,
         "Sugar": 0.4115
       },
       "actuals": {
-        "Oil Brent": null,
-        "Gold": null,
-        "Silver": null,
-        "Copper": null,
-        "Aluminium": null,
+        "Oil Brent": 1.939148,
+        "Gold": 3.491379,
+        "Silver": 6.768832,
+        "Copper": 1.787385,
+        "Aluminium": 0.95611,
         "Cocoa": null,
         "Cotton": null,
         "Coffee": null,
-        "Natural Gas": null,
+        "Natural Gas": -0.819447,
         "Sugar": null
       },
       "dom_prob": {
@@ -469634,7 +469634,7 @@
         "Cocoa": 0.0,
         "Cotton": 0.5261,
         "Coffee": 0.7648,
-        "Natural Gas": 0.7922,
+        "Natural Gas": 0.7752,
         "Sugar": 0.5521
       },
       "market_open": {
@@ -469659,6 +469659,81 @@
         "Cotton": "2026-11-25",
         "Coffee": "2026-11-25",
         "Natural Gas": "2026-11-25",
+        "Sugar": "2026-11-25"
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "predictions_high_risk": {
+        "Oil Brent": 0.0,
+        "Gold": -0.8111,
+        "Silver": -0.8453,
+        "Copper": -0.8402,
+        "Aluminium": -0.6836,
+        "Cocoa": 0.0,
+        "Cotton": 0.5261,
+        "Coffee": -0.7648,
+        "Natural Gas": 0.774,
+        "Sugar": 0.5521
+      },
+      "predictions_low_risk": {
+        "Oil Brent": 0.0,
+        "Gold": -0.5407,
+        "Silver": -0.5045,
+        "Copper": -0.7424,
+        "Aluminium": -0.5643,
+        "Cocoa": 0.0,
+        "Cotton": 0.4946,
+        "Coffee": -0.7275,
+        "Natural Gas": 0.774,
+        "Sugar": 0.4115
+      },
+      "actuals": {
+        "Oil Brent": null,
+        "Gold": null,
+        "Silver": null,
+        "Copper": null,
+        "Aluminium": null,
+        "Cocoa": null,
+        "Cotton": null,
+        "Coffee": null,
+        "Natural Gas": null,
+        "Sugar": null
+      },
+      "dom_prob": {
+        "Oil Brent": 0.0,
+        "Gold": 0.9092,
+        "Silver": 0.8453,
+        "Copper": 0.8402,
+        "Aluminium": 0.6836,
+        "Cocoa": 0.0,
+        "Cotton": 0.5261,
+        "Coffee": 0.7648,
+        "Natural Gas": 0.774,
+        "Sugar": 0.5521
+      },
+      "market_open": {
+        "Oil Brent": true,
+        "Gold": true,
+        "Silver": true,
+        "Copper": true,
+        "Aluminium": true,
+        "Cocoa": false,
+        "Cotton": false,
+        "Coffee": false,
+        "Natural Gas": true,
+        "Sugar": false
+      },
+      "as_of": {
+        "Oil Brent": "2026-11-26",
+        "Gold": "2026-11-26",
+        "Silver": "2026-11-26",
+        "Copper": "2026-11-26",
+        "Aluminium": "2026-11-26",
+        "Cocoa": "2026-11-25",
+        "Cotton": "2026-11-25",
+        "Coffee": "2026-11-25",
+        "Natural Gas": "2026-11-26",
         "Sugar": "2026-11-25"
       }
     }
